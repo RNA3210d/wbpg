@@ -23,6 +23,9 @@ body
    margin: 0;
    text-align: center;
 }
+</style>
+<link href="font-awesome.min.css" rel="stylesheet">
+<style>
 @keyframes animate-rotate-out-left
 {
    0% { opacity: 1; transform: rotate(0deg) ;  }
@@ -333,354 +336,171 @@ body
 {
    text-align: left;
 }
-#MenuBar1
+#wb_FontAwesomeIcon1
 {
-   background-color: transparent;
-   border: 1px solid #3168D5;
-}
-.MenuBar1SubMenu
-{
-   background-color: transparent;
-   border: 1px solid #3A3A3A;
-   position:	absolute;
-   visibility: hidden;
-   overflow: visible;
-   z-index: 100;
-}
-.MenuBar1SubMenuTable
-{
-   cursor: default;
-   border: 0;
-   padding: 0;
-}
-.MenuBar1SubMenuTable tr
-{
-   margin: 0;
-   padding: 0;
-}
-.MenuBar1Menu
-{
-   background-color: transparent;
-   margin: 0px 0 0px 0px;
-   padding: 0;
-}
-.MenuBar1MenuOuter
-{
-   background-color: transparent;
-   border: 0px solid #3168D5;
-}
-.MenuBar1Menu tr
-{
-   margin: 0;
-   padding: 0;
-}
-.MenuBar1MainItem .MenuBar1MainItemLeft,
-.MenuBar1MainItem .MenuBar1MainFolderLeft
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
+   background-color: rgba(0,0,0,0.50);
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
    text-align: center;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
+   margin: 0;
+   padding: 10px 10px 10px 10px;
+   vertical-align: top;
 }
-.MenuBar1MainItem .MenuBar1MainItemText, 
-.MenuBar1MainItem .MenuBar1MainItemText a,
-.MenuBar1MainItem .MenuBar1MainFolderText,
-.MenuBar1MainItem .MenuBar1MainFolderText a
+#wb_FontAwesomeIcon1:hover
 {
-   background-image: linear-gradient(to bottom, #3888E9 0%, #286ADD 14%, #245DD7 17%, #2561DE 86%, #1941A5 100%);
+   background-color: #000000;
+   background-image: none;
+   border: 0px solid #000000;
+}
+#FontAwesomeIcon1
+{
+   height: 28px;
+   width: 28px;
+}
+#FontAwesomeIcon1 i
+{
    color: #FFFFFF;
-   font-size: 13px;
+   display: inline-block;
+   font-size: 28px;
+   line-height: 28px;
+   vertical-align: middle;
+   width: 27px;
+}
+#wb_FontAwesomeIcon1:hover #FontAwesomeIcon1 i
+{
+   color: #FFFFFF;
+}
+#PanelLayer
+{
+   background-color: #242216;
+   background-image: none;
+}
+#PanelLayer_panel
+{
+   background-color: #242216;
+   background-image: none;
+   border-radius: 0px;
+   display: none;
+   position: fixed;
+   top: 0;
+   height: 100%;
+   width: 232px;
+   z-index: 9999;
+}
+#wb_CssMenu2
+{
+   border: 0px solid #C0C0C0;
+   border-radius: 0px;
+   background-color: transparent;
+   margin: 0;
+   text-align: left;
+}
+#wb_CssMenu2 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+#wb_CssMenu2 li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 0px 0px 0px;
+   width: 100%;
+}
+#wb_CssMenu2 a
+{
+   display: block;
+   color: #999999;
+   border: 0px solid #222222;
+   border-radius: 0px;
+   background-color: #242216;
+   background-image: none;
    font-family: Arial;
    font-weight: normal;
-   font-style: normal;
-   line-height: 16px;
-   text-align: left;
-   text-decoration: none;
-   white-space: nowrap;
-   margin: 0;
-   cursor: pointer;
-   border-bottom: 0px solid #3172DA;
-   border-right: 0px solid #3172DA;
-   border-top: 0px solid #3172DA;
-   border-left: 0px solid #3172DA;
-   padding: 4px 6px 4px 6px;
-   vertical-align: middle;
-}
-.MenuBar1MainItem .MenuBar1MainItemRight,
-.MenuBar1MainItem .MenuBar1MainFolderRight
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MainItemHover .MenuBar1MainItemLeft,
-.MenuBar1MainItemActive .MenuBar1MainItemLeft,
-.MenuBar1MainItemHover .MenuBar1MainFolderLeft,
-.MenuBar1MainItemActive .MenuBar1MainFolderLeft
-{
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MainItemHover .MenuBar1MainItemText,
-.MenuBar1MainItemActive .MenuBar1MainItemText,
-.MenuBar1MainItemHover .MenuBar1MainItemText a,
-.MenuBar1MainItemActive .MenuBar1MainItemText a,
-.MenuBar1MainItemHover .MenuBar1MainFolderText,
-.MenuBar1MainItemActive .MenuBar1MainFolderText,
-.MenuBar1MainItemHover .MenuBar1MainFolderText a,
-.MenuBar1MainItemActive .MenuBar1MainFolderText a
-{
-   background-image: linear-gradient(to bottom, #4892F7 0%, #4386F2 14%, #3980F4 84%, #316FE8 100%);
-   color: #FFFFFF;
    font-size: 13px;
-   font-family: Arial;
-   font-weight: normal;
    font-style: normal;
-   line-height: 16px;
-   text-align: left;
    text-decoration: none;
-   white-space: nowrap;
-   margin: 0;
-   cursor: pointer;
-   border-bottom: 1px solid #3172DA;
-   border-right: 1px solid #3172DA;
-   border-top: 1px solid #3172DA;
-   border-left: 1px solid #3172DA;
-   padding: 3px 5px 3px 5px;
+   width: 100%;
+   box-sizing: border-box;
+   height: 40px;
+   padding: 0 5px 0px 18px;
    vertical-align: middle;
+   line-height: 40px;
+   text-align: left;
 }
-.MenuBar1MainItemHover .MenuBar1MainItemRight,
-.MenuBar1MainItemActive .MenuBar1MainItemRight,
-.MenuBar1MainItemHover .MenuBar1MainFolderRight,
-.MenuBar1MainItemActive .MenuBar1MainFolderRight
+#wb_CssMenu2 li:hover a, #wb_CssMenu2 a:hover
 {
-   width: 0px;
-   cursor: pointer;
-   border-width: 0;
-   padding: 3px 0 3px 0;
+   color: #FFFFFF;
+   border: 0px solid #222222;
+   background-color: #7A6542;
+   background-image: none;
+}
+#wb_CssMenu2 .firstmain a
+{
+   margin-top: 0px;
+}
+#wb_CssMenu2 li.lastmain
+{
+   padding-bottom: 0px;
+}
+#wb_CssMenu2 br
+{
+   clear: both;
    font-size: 1px;
+   height: 0;
+   line-height: 0;
 }
-.MenuBar1MenuItem .MenuBar1MenuItemLeft,
-.MenuBar1MenuItem .MenuBar1MenuFolderLeft
+#wb_FontAwesomeIcon5
 {
-   background-color: #EBEBEB;
-   width: 25px;
-   cursor: pointer;
-   border-bottom: 0px solid #FFFFFF;
-   border-left: 0px solid #FFFFFF;
-   border-top: 0px solid #FFFFFF;
-   border-right: 0;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #616161;
+   border-radius: 0px;
    text-align: center;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
+   margin: 0;
+   padding: 10px 10px 10px 10px;
+   vertical-align: top;
 }
-.MenuBar1MenuItem .MenuBar1MenuItemText, 
-.MenuBar1MenuItem .MenuBar1MenuItemText a,
-.MenuBar1MenuItem .MenuBar1MenuFolderText,
-.MenuBar1MenuItem .MenuBar1MenuFolderText a
+#wb_FontAwesomeIcon5:hover
 {
-   background-color: #FFFFFF;
-   color: #000000;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
+   background-color: #D3D3D3;
+   background-image: none;
+   border: 0px solid #616161;
+}
+#FontAwesomeIcon5
+{
+   height: 28px;
+   width: 28px;
+}
+#FontAwesomeIcon5 i
+{
+   color: #616161;
+   display: inline-block;
+   font-size: 28px;
+   line-height: 28px;
+   vertical-align: middle;
+   width: 27px;
+}
+#wb_FontAwesomeIcon5:hover #FontAwesomeIcon5 i
+{
+   color: #616161;
+}
+#wb_Text12 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
    text-align: left;
-   text-decoration: none;
-   line-height: 16px;
-   white-space: nowrap;
-   margin: 0;
-   cursor: pointer;
-   border-bottom: 0px solid #FFFFFF;
-   border-top: 0px solid #FFFFFF;
-   border-right: 0px solid #FFFFFF;
-   border-left: 0px solid #FFFFFF;
-   padding: 3px 5px 3px 5px;
-   vertical-align: middle;
 }
-.MenuBar1MenuItem .MenuBar1MenuItemRight,
-.MenuBar1MenuItem .MenuBar1MenuFolderRight
+#wb_Text12 div
 {
-   background-color: #FFFFFF;
-   width: 12px;
-   cursor: pointer;
-   border-bottom: 0px solid #FFFFFF;
-   border-right: 0px solid #FFFFFF;
-   border-top: 0px solid #FFFFFF;
-   border-left: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MenuItemHover .MenuBar1MenuItemLeft, 
-.MenuBar1MenuItemActive .MenuBar1MenuItemLeft,
-.MenuBar1MenuItemHover .MenuBar1MenuFolderLeft,
-.MenuBar1MenuItemActive .MenuBar1MenuFolderLeft
-{
-   background-color: #316AC5;
-   width: 25px;
-   cursor: pointer;
-   border-bottom: 0px solid #FFFFFF;
-   border-left: 0px solid #FFFFFF;
-   border-top: 0px solid #FFFFFF;
-   border-right: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MenuItemHover .MenuBar1MenuItemText,
-.MenuBar1MenuItemActive .MenuBar1MenuItemText,
-.MenuBar1MenuItemHover .MenuBar1MenuItemText a,
-.MenuBar1MenuItemActive .MenuBar1MenuItemText a,
-.MenuBar1MenuItemHover .MenuBar1MenuFolderText,
-.MenuBar1MenuItemActive .MenuBar1MenuFolderText,
-.MenuBar1MenuItemHover .MenuBar1MenuFolderText a,
-.MenuBar1MenuItemActive .MenuBar1MenuFolderText a
-{
-   background-color: #316AC5;
-   color: #FFFFFF;
-   font-size: 13px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   line-height: 16px;
    text-align: left;
-   text-decoration: none;
-   white-space: nowrap;
-   margin: 0;
-   cursor: pointer;
-   border-bottom: 0px solid #FFFFFF;
-   border-top: 0px solid #FFFFFF;
-   border-right: 0px solid #FFFFFF;
-   border-left: 0px solid #FFFFFF;
-   padding: 3px 5px 3px 5px;
-   vertical-align: middle;
-}
-.MenuBar1MenuItemHover .MenuBar1MenuItemRight,
-.MenuBar1MenuItemActive .MenuBar1MenuItemRight,
-.MenuBar1MenuItemHover .MenuBar1MenuFolderRight,
-.MenuBar1MenuItemActive .MenuBar1MenuFolderRight
-{
-   background-color: #316AC5;
-   width: 12px;
-   cursor: pointer;
-   border-bottom: 0px solid #FFFFFF;
-   border-right: 0px solid #FFFFFF;
-   border-top: 0px solid #FFFFFF;
-   border-left: 0;
-   padding: 3px 0 3px 0;
-   font-size: 1px;
-}
-.MenuBar1MenuItem .MenuBar1MenuFolderRight
-{
-   background-image: url('images/index_MenuBar1_bkgrnd18.png');
-   background-position: left center;
-   background-repeat: no-repeat;
-}
-.MenuBar1MenuItemHover .MenuBar1MenuFolderRight,
-.MenuBar1MenuItemActive .MenuBar1MenuFolderRight
-{
-   background-image: url('images/index_MenuBar1_bkgrnd20.png');
-   background-position: left center;
-   background-repeat: no-repeat;
-}
-.MenuBar1SubMenu td,
-.MenuBar1Menu td,
-.MenuBar1Menu tr
-{
-   vertical-align: middle;
-}
-.MenuBar1MenuSplitText div
-{
-   height: 1px;
-   padding: 0;
-   background-color: #FFFFFF;
-   overflow: hidden;
-}
-.MenuBar1MenuItem .MenuBar1MenuSplitLeft
-{
-   background-color: #EBEBEB;
-   height: 7px;
-   padding: 0;
-}
-.MenuBar1MenuItem .MenuBar1MenuSplitText
-{
-   background-color: #FFFFFF;
-   height: 7px;
-   padding: 0 6px 0 6px;
-}
-.MenuBar1MenuItem .MenuBar1MenuSplitRight
-{
-   background-color: #FFFFFF;
-   height: 7px;
-   padding: 0;
-}
-.MenuBar1MainSplitText div
-{
-   background-color: #FFFFFF;
-   height: 1px;
-   padding: 0;
-   overflow: hidden;
-}
-.MenuBar1MainItem .MenuBar1MainSplitLeft 
-{
-   height: 9px;
-   padding: 0;
-}
-.MenuBar1MainItem .MenuBar1MainSplitText
-{
-   background-image: linear-gradient(to bottom, #3888E9 0%, #286ADD 14%, #245DD7 17%, #2561DE 86%, #1941A5 100%);
-   height: 9px;
-   padding: 0;
-}
-.MenuBar1MainItem .MenuBar1MainSplitRight
-{
-   height: 9px;
-   padding: 0;
-}
-.MenuBar1MainItem
-{
-   vertical-align: middle;
-}
-.MenuBar1HorizontalSplit
-{
-   border-right: 0 solid #8080FF;
-   border-left: 0 solid #8080FF;
-   width: 17px;
-   background-image: linear-gradient(to bottom, #3888E9 0%, #286ADD 14%, #245DD7 17%, #2561DE 86%, #1941A5 100%);
-   padding: 3px 0 3px 0;
-   vertical-align: middle;
-   text-align: center;
-   text-decoration: none;
-   color: #FFFFFF;
-   font-size: 13px;
-   font-family: Arial;
-   font-style: normal;
-}
-.MenuBar1MainItem, .MenuBar1MainItemHover, .MenuBar1MainItemActive,
-.MenuBar1MenuItem, .MenuBar1MenuItemHover, .MenuBar1MenuItemActive
-{
-   white-space: nowrap;
-}
-.MenuBar1SpacerDiv
-{
-   background: transparent;
-   margin: 0;
-   padding: 0;
-   border: 0;
-   font-size: 1px;
-}
-#wb_MenuBar1
-{
-}
-#wb_MenuBar1:hover
-{
-   z-index: 1111 !important;
 }
 @media only screen and (max-width: 799px)
 {
@@ -990,41 +810,30 @@ body
 }
 }
 </style>
-<script src="jscookmenu.min.js"></script>
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="wwb18.min.js"></script>
 <script>
-var cmMenuBar1 =
+$(document).ready(function()
 {
-   mainFolderLeft: '',
-   mainFolderRight: '',
-   mainItemLeft: '',
-   mainItemRight: '',
-   folderLeft: '<div style="width:25px;height:16px" class="MenuBar1SpacerDiv" />',
-   folderRight: '<div style="width:12px;height:16px" class="MenuBar1SpacerDiv" />',
-   itemLeft: '<div style="width:25px;height:16px" class="MenuBar1SpacerDiv" />',
-   itemRight: '<div style="width:12px;height:16px" class="MenuBar1SpacerDiv" />',
-   mainSpacing: 0,
-   subSpacing: 0,
-   delay: 100,
-   offsetHMainAdjust: [0, 0],
-   offsetSubAdjust: [0, 0]
-};
-var cmMenuBar1HSplit = [_cmNoClick, '<td class="MenuBar1MenuSplitLeft"><div></div></td>' +
-                                    '<td class="MenuBar1MenuSplitText"><div></div></td>' +
-                                    '<td class="MenuBar1MenuSplitRight"><div></div></td>'];
-var cmMenuBar1MainVSplit = [_cmNoClick, '<div><table width="17" cellspacing="0"><tr><td class="MenuBar1HorizontalSplit">|</td></tr></table></div>'];
-var cmMenuBar1MainHSplit = [_cmNoClick, '<td colspan="3" class="MenuBar1MainSplitText"><div></div></td>'];
-cmMenuBar1.effect = new CMFadingEffect(30, 50);
-document.addEventListener('DOMContentLoaded', function(event)
+   $("#PanelLayer").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right'});
+});
+</script>
+<script>
+$(document).ready(function()
 {
-   cmDrawFromText('MenuBar1', 'hbr', cmMenuBar1, 'MenuBar1');
+   $("#wb_CssMenu1 ul li a").click(
+   function(event) {
+       $.panel.hide($('#PanelLayer_panel'));
+   });
 });
 </script>
 </head>
 <body>
 <div id="container">
-<div id="wb_Shape4" style="position:absolute;left:0px;top:80px;width:800px;height:46px;z-index:2;">
+<div id="wb_Shape4" style="position:absolute;left:0px;top:80px;width:800px;height:46px;z-index:7;">
 <div id="Shape4"></div></div>
-<div id="wb_Text2" style="position:absolute;left:25px;top:169px;width:205px;height:141px;z-index:3;">
+<div id="wb_Text2" style="position:absolute;left:25px;top:169px;width:205px;height:141px;z-index:8;">
 <div style="position:absolute;left:0px;top:0px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:13px;"><strong>The First Message</strong></span></div>
 <div style="position:absolute;left:0px;top:15px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">Lorem ipsum dolor sit amet, autem </span></div>
 <div style="position:absolute;left:0px;top:29px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">consectetuer adipiscing elit, sed diam </span></div>
@@ -1035,12 +844,12 @@ document.addEventListener('DOMContentLoaded', function(event)
 <div style="position:absolute;left:0px;top:99px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">exerci tation ullamcorper suscipit </span></div>
 <div style="position:absolute;left:0px;top:113px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">lobortis nisl ut aliquip ex ea delenit </span></div>
 <div style="position:absolute;left:0px;top:127px;width:205px;height:16px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">commodo consequat.</span></div></div>
-<div id="wb_Text3" style="position:absolute;left:25px;top:134px;width:454px;height:28px;z-index:4;">
+<div id="wb_Text3" style="position:absolute;left:25px;top:134px;width:454px;height:28px;z-index:9;">
 <div style="position:absolute;left:0px;top:0px;width:454px;height:29px;"><span style="color:#03354E;font-family:'Trebuchet MS';font-size:24px;">Welcome</span></div></div>
-<div id="wb_Shape3" style="position:absolute;left:25px;top:167px;width:528px;height:2px;z-index:5;">
+<div id="wb_Shape3" style="position:absolute;left:25px;top:167px;width:528px;height:2px;z-index:10;">
 <div id="Shape3"></div></div>
 
-<div id="wb_Text5" style="position:absolute;left:25px;top:361px;width:205px;height:141px;z-index:7;">
+<div id="wb_Text5" style="position:absolute;left:25px;top:361px;width:205px;height:141px;z-index:12;">
 <div style="position:absolute;left:0px;top:0px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:13px;"><strong>The Second Message</strong></span></div>
 <div style="position:absolute;left:0px;top:15px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">Duis autem vel eum iriure dolor in </span></div>
 <div style="position:absolute;left:0px;top:29px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">hendrerit in vulputate velit esse et </span></div>
@@ -1051,7 +860,7 @@ document.addEventListener('DOMContentLoaded', function(event)
 <div style="position:absolute;left:0px;top:99px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">delenit augue duis dolore te feugait </span></div>
 <div style="position:absolute;left:0px;top:113px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">nulla facilisi. Lorem ipsum dolor sit&nbsp; </span></div>
 <div style="position:absolute;left:0px;top:127px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">sed diam nonummy nibh euismod.</span></div></div>
-<div id="wb_Text10" style="position:absolute;left:25px;top:562px;width:205px;height:180px;z-index:8;">
+<div id="wb_Text10" style="position:absolute;left:25px;top:562px;width:205px;height:180px;z-index:13;">
 <div style="position:absolute;left:0px;top:0px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:13px;"><strong>The Third Message</strong></span></div>
 <div style="position:absolute;left:0px;top:15px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">Tincidunt ut laoreet dolore magna </span></div>
 <div style="position:absolute;left:0px;top:29px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">aliquam erat volutpat. Ut wisi enim </span></div>
@@ -1061,9 +870,9 @@ document.addEventListener('DOMContentLoaded', function(event)
 <div style="position:absolute;left:0px;top:85px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">commodo consequat. Duis autem vel </span></div>
 <div style="position:absolute;left:0px;top:99px;width:205px;height:18px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">eum iriure dolor in hendrerit in duis </span></div>
 <div style="position:absolute;left:0px;top:113px;width:205px;height:16px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:12px;">vulputate velit esse molestie dolore.</span></div></div>
-<div id="wb_Image1" style="position:absolute;left:491px;top:185px;width:300px;height:225px;z-index:9;">
+<div id="wb_Image1" style="position:absolute;left:491px;top:185px;width:300px;height:225px;z-index:14;">
 <img src="images/img0004.jpg" id="Image1" alt="https://unsplash.com/@korkhau" title="https://unsplash.com/@korkhau" width="300" height="375"></div>
-<div id="wb_CssMenu1" style="position:absolute;left:145px;top:85px;width:504px;height:28px;z-index:10;">
+<div id="wb_CssMenu1" style="position:absolute;left:145px;top:85px;width:504px;height:28px;z-index:15;">
 <ul id="CssMenu1" role="menubar" class="nav">
 <li role="menuitem" class="nav-item firstmain"><a class="nav-link active" href="./index.html" target="_self" title="index">index</a>
 </li>
@@ -1071,47 +880,54 @@ document.addEventListener('DOMContentLoaded', function(event)
 </li>
 </ul>
 </div>
-<div id="wb_Shape5" style="position:absolute;left:10px;top:428px;width:781px;height:324px;z-index:11;">
+<div id="wb_Shape5" style="position:absolute;left:10px;top:428px;width:781px;height:324px;z-index:16;">
 <div id="Shape5"></div></div>
-<div id="wb_Text1" style="position:absolute;left:292px;top:444px;width:217px;height:98px;z-index:12;">
+<div id="wb_Text1" style="position:absolute;left:292px;top:444px;width:217px;height:98px;z-index:17;">
 <span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:20px;"><strong>Header 1</strong></span><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:13px;"><br></span><span style="color:#B7C2C8;font-family:Arial;font-size:13px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span></div>
-<div id="wb_Text4" style="position:absolute;left:558px;top:444px;width:196px;height:97px;z-index:13;">
+<div id="wb_Text4" style="position:absolute;left:558px;top:444px;width:196px;height:97px;z-index:18;">
 <span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:20px;"><strong>Header 2</strong></span><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:13px;"><br></span><span style="color:#B7C2C8;font-family:Arial;font-size:13px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span></div>
-<div id="wb_Text7" style="position:absolute;left:294px;top:594px;width:214px;height:97px;z-index:14;">
+<div id="wb_Text7" style="position:absolute;left:294px;top:594px;width:214px;height:97px;z-index:19;">
 <span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:20px;"><strong>Header 3</strong></span><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:13px;"><br></span><span style="color:#B7C2C8;font-family:Arial;font-size:13px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span></div>
-<div id="wb_Text8" style="position:absolute;left:558px;top:594px;width:207px;height:116px;z-index:15;">
+<div id="wb_Text8" style="position:absolute;left:558px;top:594px;width:207px;height:116px;z-index:20;">
 <div style="position:absolute;left:0px;top:0px;width:207px;height:26px;"><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:20px;"><strong>Header 4</strong></span></div>
 <div style="position:absolute;left:0px;top:23px;width:207px;height:18px;"><span style="color:#B7C2C8;font-family:'Trebuchet MS';font-size:13px;">Lorem ipsum dolor sit amet, </span></div>
 <div style="position:absolute;left:0px;top:39px;width:207px;height:18px;"><span style="color:#B7C2C8;font-family:'Trebuchet MS';font-size:13px;">consectetuer adipiscing elit, sed </span></div>
 <div style="position:absolute;left:0px;top:54px;width:207px;height:18px;"><span style="color:#B7C2C8;font-family:'Trebuchet MS';font-size:13px;">diam nonummy nibh euismod </span></div>
 <div style="position:absolute;left:0px;top:70px;width:207px;height:18px;"><span style="color:#B7C2C8;font-family:'Trebuchet MS';font-size:13px;">tincidunt ut laoreet dolore magna </span></div>
 <div style="position:absolute;left:0px;top:85px;width:207px;height:29px;"><span style="color:#B7C2C8;font-family:'Trebuchet MS';font-size:13px;">aliquam erat volutpat. </span></div></div>
-<div id="wb_Text9" style="position:absolute;left:34px;top:183px;width:446px;height:194px;z-index:16;">
+<div id="wb_Text9" style="position:absolute;left:34px;top:183px;width:446px;height:194px;z-index:21;">
 <span style="color:#03354E;font-family:Arial;font-size:13px;">Kinder surprise egg, a quite astonishing commodity. The surprise of this excessive object, the cause of your desire, is here materialised in the Geist of an object which fills in the inner void of the chocolate egg. The whole delicate balance is between these two dimensions: what you bought, the chocolate egg, and the surplus, probably made in some Chinese gulag or whatever, that you get for free. I don't think that the chocolate frame is here just to send you on a deeper voyage towards the inner treasure, the what Plato calls the 'Agalma', which makes you a worthy person, which makes a commodity the desirable commodity. I think it's the other way around. We should aim at the higher goal, the gold in the middle of an object, precisely in order to be able to enjoy the surface.<br><br>- Slavoj iek</span></div>
-<div id="wb_MenuBar1" style="position:absolute;left:121px;top:393px;width:230px;height:43px;z-index:17;">
-<div id="MenuBar1">
-<ul style="display:none;">
-<li><span></span><a href="./index.html" target="_self" title="index">index</a>
+<div id="PanelLayer" style="text-align:left;">
+<div id="wb_CssMenu2" style="position:absolute;left:0px;top:63px;width:232px;height:229px;z-index:3;">
+<ul id="CssMenu2" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./index.html" target="_self" title="Home">Home</a>
 </li>
-<li><span></span><a href="./page1.html" target="_self" title="Gallery">Gallery</a>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./page1.html" target="_self" title="Gallery">Gallery</a>
 </li>
 </ul>
 </div>
+<div id="wb_FontAwesomeIcon5" style="position:absolute;left:173px;top:12px;width:28px;height:28px;text-align:center;z-index:4;">
+<a href="#" onclick="HidePanel('PanelLayer', event);return false;"><div id="FontAwesomeIcon5"><i class="fa fa-times"></i></div></a></div>
+<div id="wb_Text12" style="position:absolute;left:17px;top:16px;width:133px;height:18px;z-index:5;">
+<span style="color:#999999;font-family:Arial;font-size:15px;"><strong>Menu</strong></span></div>
+
 </div>
 </div>
-<div id="Layer1" style="position:fixed;text-align:center;left:0;top:0px;right:0;width:800px;height:80px;margin-left:auto;margin-right:auto;z-index:18;">
+<div id="Layer1" style="position:fixed;text-align:center;left:0;top:0px;right:0;width:800px;height:80px;margin-left:auto;margin-right:auto;z-index:23;">
 <div id="Layer1_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Text6" style="position:absolute;left:34px;top:10px;width:472px;height:56px;z-index:0;">
 <span style="color:#A5A0A4;font-family:'Trebuchet MS';font-size:48px;"><strong>NVN's</strong></span><span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:48px;"><strong> Site</strong></span></div>
+<div id="wb_FontAwesomeIcon1" style="position:absolute;left:732px;top:14px;width:28px;height:28px;text-align:center;z-index:1;">
+<a href="#" onclick="ShowPanel('PanelLayer', event);return false;"><div id="FontAwesomeIcon1"><i class="fa fa-bars"></i></div></a></div>
 </div>
 </div>
-<div id="Layer3" style="position:absolute;text-align:center;left:0px;top:772px;width:100%;height:26px;z-index:19;">
+<div id="Layer3" style="position:absolute;text-align:center;left:0px;top:772px;width:100%;height:26px;z-index:24;">
 <div id="Layer3_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 </div>
 </div>
-<div id="Layer4" style="position:absolute;text-align:center;left:0px;top:798px;width:100%;height:100px;z-index:20;">
+<div id="Layer4" style="position:absolute;text-align:center;left:0px;top:798px;width:100%;height:100px;z-index:25;">
 <div id="Layer4_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_Text11" style="position:absolute;left:7px;top:42px;width:780px;height:12px;text-align:center;z-index:1;">
+<div id="wb_Text11" style="position:absolute;left:7px;top:42px;width:780px;height:12px;text-align:center;z-index:2;">
 <span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:11px;">Copyright © 2020 by &quot;Your Name&quot;&nbsp; ·&nbsp; All Rights reserved&nbsp; ·&nbsp; E-Mail: yourname@domain.com</span></div>
 </div>
 </div>
