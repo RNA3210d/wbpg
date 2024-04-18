@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Page</title>
+<title>Welcome</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="font-awesome.min.css" rel="stylesheet">
@@ -11,15 +11,41 @@
 <script src="jquery-3.6.0.min.js"></script>
 <script src="jquery.ui.effect.min.js"></script>
 <script src="wb.panel.min.js"></script>
+<script src="wwb18.min.js"></script>
 <script>
 $(document).ready(function()
 {
+   $('#wb_Text1').addClass('visibility-hidden');
    $("a[href*='#header']").click(function(event)
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeInSine');
    });
    $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'push', position: 'left', toggle: true});
+   function onScrollText1()
+   {
+      var $obj = $("#wb_Text1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Text1', 'slide-down-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Text1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Text1').inViewPort(true))
+   {
+      $('#wb_Text1').addClass("in-viewport");
+   }
+   onScrollText1();
+   $(window).scroll(function(event)
+   {
+      onScrollText1();
+   });
 });
 </script>
 </head>
@@ -28,27 +54,27 @@ $(document).ready(function()
 <div id="header">
 <div class="row">
 <div class="col-1">
-<div id="wb_headerIcon2" style="display:inline-block;width:24px;height:33px;text-align:center;z-index:2;">
+<div id="wb_headerIcon2">
 <a href="./index.html"><div id="headerIcon2"><i class="fa fa-envelope-o"></i></div></a>
 </div>
-<label for="" id="headerLabel2" style="display:inline-block;width:212px;line-height:17px;z-index:3;">Email:rna3210d2@proton.me</label>
+<label for="" id="headerLabel2">Email: rna3210d2@proton.me</label>
 </div>
 <div class="col-2">
 </div>
 <div class="col-3">
 </div>
 <div class="col-4">
-<div id="wb_headerIcon3" style="display:inline-block;width:24px;height:40px;text-align:center;z-index:4;">
-<a href="./index.html"><div id="headerIcon3"><i class="fa fa-github"></i></div></a>
+<div id="wb_headerIcon3">
+<a href="https://github.com/RNA3210d" onmouseover="AnimateCss('wb_headerIcon3', 'animate-flash', 0, 500);return false;"><div id="headerIcon3"><i class="fa fa-github"></i></div></a>
 </div>
-<div id="wb_headerIcon4" style="display:inline-block;width:24px;height:40px;text-align:center;z-index:5;">
-<a href="./index.html"><div id="headerIcon4"><i class="fa fa-soundcloud"></i></div></a>
+<div id="wb_headerIcon4">
+<a href="https://soundcloud.com/rna3210d/tracks" onmouseover="AnimateCss('wb_headerIcon4', 'animate-flash', 0, 500);return false;"><div id="headerIcon4"><i class="fa fa-soundcloud"></i></div></a>
 </div>
-<div id="wb_headerIcon5" style="display:inline-block;width:24px;height:40px;text-align:center;z-index:6;">
-<a href="./index.html"><div id="headerIcon5"><i class="fa fa-mixcloud"></i></div></a>
+<div id="wb_headerIcon5">
+<a href="https://www.mixcloud.com/RNA3210d/"><div id="headerIcon5"><i class="fa fa-mixcloud"></i></div></a>
 </div>
-<div id="wb_headerIcon6" style="display:inline-block;width:24px;height:40px;text-align:center;z-index:7;">
-<a href="./index.html"><div id="headerIcon6"><i class="fa fa-linkedin"></i></div></a>
+<div id="wb_headerIcon6">
+<a href="https://www.linkedin.com/in/naveen-a-b-a7a85421a/"><div id="headerIcon6"><i class="fa fa-linkedin"></i></div></a>
 </div>
 </div>
 </div>
@@ -64,7 +90,7 @@ $(document).ready(function()
 </div></div>
 </div>
 <div class="col-2">
-<div id="wb_PanelMenu1" style="display:inline-block;width:34px;height:31px;text-align:center;z-index:9;">
+<div id="wb_PanelMenu1">
 <a href="#PanelMenu1_markup" id="PanelMenu1">
 <span class="line"></span>
 <span class="line"></span>
@@ -72,10 +98,10 @@ $(document).ready(function()
 </a>
 <div id="PanelMenu1_markup">
 <ul role="menu">
-<li role="menuitem"><a href="./index.html" title="Home" class="nav-link"><i class="fa fa-home fa-fw"></i><span>Home</span></a></li>
-<li role="menuitem"><a href="./page2.html" title="Gallery" class="nav-link"><i class="fa fa-user fa-fw"></i><span>Gallery</span></a></li>
-<li role="menuitem"><a href="./master_page.html" title="master_page" class="nav-link"><i class="fa fa-picture-o fa-fw"></i><span>master_page</span></a></li>
-<li role="menuitem"><a href="./page4.html" title="Greatest Hits" class="nav-link">Greatest Hits</a></li>
+<li role="menuitem"><a href="./index.html" target="_blank" title="Home" class="nav-link"><i class="fa fa-home fa-fw"></i><span>Home</span></a></li>
+<li role="menuitem"><a href="./page2.html" target="_blank" title="Gallery" class="nav-link"><i class="fa fa-user fa-fw"></i><span>Gallery</span></a></li>
+<li role="menuitem"><a href="./master_page.html" target="_blank" title="master_page" class="nav-link"><i class="fa fa-picture-o fa-fw"></i><span>master_page</span></a></li>
+<li role="menuitem"><a href="./page4.html" target="_blank" title="Greatest Hits" class="nav-link">Greatest Hits</a></li>
 </ul>
 </div>
 
@@ -84,9 +110,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Line1" style="position:absolute;left:239px;top:134px;width:2px;height:784px;z-index:0;">
+<div id="wb_Line1">
 <img src="images/img0004.png" id="Line1" alt="" width="0" height="784"></div>
-<div id="NavigationBar1" style="position:absolute;left:11px;top:138px;width:219px;height:152px;z-index:1;">
+<div id="NavigationBar1">
 <ul class="navbar">
 <li><a href="./index.html"><img title="Home" src="images/img0001_over.gif" class="hover"><span><img title="Home" src="images/img0001.gif"></span></a></li>
 <li><a href="./page2.html"><img title="Gallery" src="images/img0002_over.gif" class="hover"><span><img title="Gallery" src="images/img0002.gif"></span></a></li>
@@ -96,9 +122,9 @@ $(document).ready(function()
 </div>
 
 
-<div id="wb_Text1" style="position:absolute;left:260px;top:143px;width:338px;height:35px;z-index:15;">
+<div id="wb_Text1">
 <p>Home</p></div>
-<hr id="Line2" style="position:absolute;left:260px;top:186px;width:711px;z-index:16;">
+<hr id="Line2">
 <div id="wb_Footer">
 <div id="Footer">
 <div class="row">

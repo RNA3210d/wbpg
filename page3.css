@@ -9,12 +9,17 @@ body
 {
    background-color: #FFFFFF;
    color: #000000;
-   font-family: Arial;
-   font-weight: normal;
+   font-family: "Exo 2";
+   font-weight: 400;
+   font-weight: 400;
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
    text-align: center;
+}
+.visibility-hidden
+{
+   visibility: hidden;
 }
 #wb_Text1 
 {
@@ -32,7 +37,7 @@ body
    font-family: Tahoma;
    font-weight: 400;
    font-size: 29px;
-   line-height: 35.5px;
+   line-height: 35px;
 }
 #wb_Text1 p, #wb_Text1 ul
 {
@@ -818,4 +823,408 @@ body
    background-color: #FFFFFF;
    color: #777777;
    cursor: not-allowed;
+}
+#wb_PanelMenu1
+{
+   display: inline-block;
+   width: 34px;
+   height: 31px;
+   text-align: center;
+   z-index: 7;
+}
+#SlideShow1
+{
+   position: absolute;
+   left: 9px;
+   top: 202px;
+   width: 948px;
+   height: 711px;
+   border-radius: 0px;
+   z-index: 10;
+}
+#wb_Text1
+{
+   position: absolute;
+   left: 9px;
+   top: 143px;
+   width: 338px;
+   height: 35px;
+   z-index: 8;
+}
+#Line2
+{
+   position: absolute;
+   left: 9px;
+   top: 186px;
+   width: 711px;
+   z-index: 9;
+}
+#wb_Pagination1
+{
+   position: absolute;
+   left: 347px;
+   top: 950px;
+   width: 285px;
+   height: 100px;
+   z-index: 11;
+}
+#headerLabel2
+{
+   display: inline-block;
+   width: 212px;
+   line-height: 17px;
+   z-index: 1;
+}
+#wb_headerIcon6
+{
+   display: inline-block;
+   width: 24px;
+   height: 40px;
+   text-align: center;
+   z-index: 5;
+}
+#wb_headerIcon5
+{
+   display: inline-block;
+   width: 24px;
+   height: 40px;
+   text-align: center;
+   z-index: 4;
+}
+#wb_headerIcon4
+{
+   display: inline-block;
+   width: 24px;
+   height: 40px;
+   text-align: center;
+   z-index: 3;
+}
+#wb_headerIcon3
+{
+   display: inline-block;
+   width: 24px;
+   height: 40px;
+   text-align: center;
+   z-index: 2;
+}
+#wb_headerIcon2
+{
+   display: inline-block;
+   width: 24px;
+   height: 33px;
+   text-align: center;
+   z-index: 0;
+}
+@media only screen and (max-width: 969px)
+{
+div#container
+{
+   width: 320px;
+}
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_Text1
+{
+   left: 9px;
+   top: 143px;
+   width: 338px;
+   height: 35px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   font-family: Tahoma;
+   font-weight: 400;
+   font-size: 29px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+   line-height: 35px;
+}
+#Line2
+{
+   left: 9px;
+   top: 186px;
+   width: 711px;
+   height: 2px;
+   visibility: hidden;
+   display: none;
+   margin: 0;
+}
+#Line2
+{
+   border-color: #ACACAC;
+   border-bottom-width: 2px;
+}
+#SlideShow1
+{
+   left: 0px;
+   top: 321px;
+   width: 320px;
+   height: 239px;
+   visibility: visible;
+   display: inline-block;
+}
+#wb_header
+{
+   visibility: visible;
+   display: table;
+}
+#wb_header
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#header
+{
+   height: auto;
+   padding: 8px 15px 8px 15px;
+}
+#header .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#wb_headerIcon2
+{
+   width: 24px;
+   height: 33px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+#headerIcon2
+{
+   width: 24px;
+   height: 33px;
+}
+#headerIcon2 i
+{
+   line-height: 33px;
+   font-size: 24px;
+   width: 23px;
+}
+#headerLabel2
+{
+   width: 212px;
+   height: 33px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 8px 4px 8px 4px;
+   text-align: left;
+}
+#headerLabel2
+{
+   line-height: 17px;
+}
+#wb_headerIcon3
+{
+   width: 24px;
+   height: 40px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0 10px 0 0 ;
+   padding: 0;
+}
+#headerIcon3
+{
+   width: 24px;
+   height: 40px;
+}
+#headerIcon3 i
+{
+   line-height: 40px;
+   font-size: 24px;
+   width: 23px;
+}
+#wb_headerIcon4
+{
+   width: 24px;
+   height: 40px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0 10px 0 0 ;
+   padding: 0;
+}
+#headerIcon4
+{
+   width: 24px;
+   height: 40px;
+}
+#headerIcon4 i
+{
+   line-height: 40px;
+   font-size: 24px;
+   width: 29px;
+}
+#wb_headerIcon5
+{
+   width: 24px;
+   height: 40px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0 10px 0 0 ;
+   padding: 0;
+}
+#headerIcon5
+{
+   width: 24px;
+   height: 40px;
+}
+#headerIcon5 i
+{
+   line-height: 40px;
+   font-size: 24px;
+   width: 29px;
+}
+#wb_headerIcon6
+{
+   width: 24px;
+   height: 40px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0 10px 0 0 ;
+   padding: 0;
+}
+#headerIcon6
+{
+   width: 24px;
+   height: 40px;
+}
+#headerIcon6 i
+{
+   line-height: 40px;
+   font-size: 24px;
+   width: 23px;
+}
+#wb_navigation
+{
+   visibility: visible;
+   display: table;
+}
+#wb_navigation
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#navigation
+{
+   height: auto;
+   padding: 20px 15px 20px 15px;
+}
+#navigation .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#navigation > .row > .col-1, #navigation > .row > .col-2
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#navigation > .row > .col-1
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: left;
+}
+#navigation > .row > .col-2
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: right;
+}
+#wb_PanelMenu1
+{
+   width: 34px;
+   height: 31px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#PanelMenu1
+{
+   line-height: 31px;
+   width: 34px;
+   height: 31px;
+}
+#PanelMenu1 .line:first-child
+{
+   margin-top: 7px;
+}
+#PanelMenu1_markup li a
+{
+   color: #454545;
+   border: 1px solid #C5C5C5;
+   background-color: #F6F6F6;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_PanelMenu1 a
+{
+   color: #F7F7F7;
+   border: 1px solid #2E2E2E;
+   border-radius: 0px;
+   background-color: #3E3E3E;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   text-decoration: none;
+   text-align: center;
+}
+#PanelMenu1_markup li a:hover
+{
+   color: #2B2B2B;
+   background-color: #EDEDED;
+   border: 1px solid #CCCCCC;
+}
+#wb_PanelMenu1 a:hover
+{
+   color: #F7F7F7;
+   background-color: #484848;
+   border: 1px solid #2E2E2E;
+}
+#PanelMenu1_panel
+{
+   background-color: #F6F6F6;
+   overflow-y: auto;
+}
+#wb_Marquee1
+{
+   height: 37px;
+   visibility: visible;
+   display: block;
+}
+#wb_Marquee1
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Pagination1
+{
+   left: 66px;
+   top: 600px;
+   width: 189px;
+   height: 100px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   text-align: left;
+}
 }

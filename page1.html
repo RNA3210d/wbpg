@@ -14,11 +14,43 @@
 <link rel="stylesheet" href="galleria/theme/galleria.classic.min.css">
 <script src="galleria/galleria-1.5.4.min.js"></script>
 <script src="galleria/theme/galleria.classic.min.js"></script>
+<script src="wwb18.min.js"></script>
 <script>
 $(document).ready(function()
 {
+   $('#SlideShow2').addClass('visibility-hidden');
    $("a[data-rel='SlideShow2']").attr('rel', 'SlideShow2');
    $('#SlideShow2 img').attr('title', '');$('#SlideShow2').galleria({});
+   $("#SlideShow2").on('activate', function(event, index)
+   {
+      switch(index)
+      {
+      }
+   });
+   function onScrollSlideShow2()
+   {
+      var $obj = $("#SlideShow2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('SlideShow2', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('SlideShow2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#SlideShow2').inViewPort(true))
+   {
+      $('#SlideShow2').addClass("in-viewport");
+   }
+   onScrollSlideShow2();
+   $(window).scroll(function(event)
+   {
+      onScrollSlideShow2();
+   });
    $("a[href*='#header']").click(function(event)
    {
       event.preventDefault();
@@ -30,15 +62,15 @@ $(document).ready(function()
 </head>
 <body>
 <div id="container">
-<div id="wb_Text2" style="position:absolute;left:15px;top:143px;width:338px;height:35px;z-index:8;">
+<div id="wb_Text2">
 <p>TVM</p></div>
-<hr id="Line3" style="position:absolute;left:15px;top:186px;width:711px;z-index:9;">
-<div id="SlideShow2" style="position:absolute;left:15px;top:199px;width:945px;height:709px;border-radius:0px;z-index:10;">
+<hr id="Line3">
+<div id="SlideShow2">
 <a href="images/IMG_20240410_145353112_HDR.jpg" data-rel=""><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240410_145353112_HDR.jpg" alt="" title=""></a>
 <a href="images/IMG_20240410_151519290_HDR.jpg" data-rel=""><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240410_151519290_HDR.jpg" style="display:none;" alt="" title=""></a>
 <a href="images/IMG_20240411_092658491_HDR.jpg" data-rel=""><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240411_092658491_HDR.jpg" style="display:none;" alt="" title=""></a>
 </div>
-<div id="wb_Pagination1" style="position:absolute;left:363px;top:954px;width:285px;height:100px;z-index:11;">
+<div id="wb_Pagination1">
 <ul id="Pagination1">
 <li class="disabled"><a href="#">&laquo; Prev</a></li>
 <li class="active"><a href="./page1.html">1</a></li>
@@ -51,26 +83,26 @@ $(document).ready(function()
 <div id="header">
 <div class="row">
 <div class="col-1">
-<div id="wb_headerIcon2" style="display:inline-block;width:24px;height:33px;text-align:center;z-index:0;">
+<div id="wb_headerIcon2">
 <a href="./index.html"><div id="headerIcon2"><i class="fa fa-envelope-o"></i></div></a>
 </div>
-<label for="" id="headerLabel2" style="display:inline-block;width:212px;line-height:17px;z-index:1;">Email:rna3210d2@proton.me</label>
+<label for="" id="headerLabel2">Email:rna3210d2@proton.me</label>
 </div>
 <div class="col-2">
 </div>
 <div class="col-3">
 </div>
 <div class="col-4">
-<div id="wb_headerIcon3" style="display:inline-block;width:24px;height:40px;text-align:center;z-index:2;">
+<div id="wb_headerIcon3">
 <a href="./index.html"><div id="headerIcon3"><i class="fa fa-github"></i></div></a>
 </div>
-<div id="wb_headerIcon4" style="display:inline-block;width:24px;height:40px;text-align:center;z-index:3;">
+<div id="wb_headerIcon4">
 <a href="./index.html"><div id="headerIcon4"><i class="fa fa-soundcloud"></i></div></a>
 </div>
-<div id="wb_headerIcon5" style="display:inline-block;width:24px;height:40px;text-align:center;z-index:4;">
+<div id="wb_headerIcon5">
 <a href="./index.html"><div id="headerIcon5"><i class="fa fa-mixcloud"></i></div></a>
 </div>
-<div id="wb_headerIcon6" style="display:inline-block;width:24px;height:40px;text-align:center;z-index:5;">
+<div id="wb_headerIcon6">
 <a href="./index.html"><div id="headerIcon6"><i class="fa fa-linkedin"></i></div></a>
 </div>
 </div>
@@ -87,7 +119,7 @@ $(document).ready(function()
 </div></div>
 </div>
 <div class="col-2">
-<div id="wb_PanelMenu1" style="display:inline-block;width:34px;height:31px;text-align:center;z-index:7;">
+<div id="wb_PanelMenu1">
 <a href="#PanelMenu1_markup" id="PanelMenu1">
 <span class="line"></span>
 <span class="line"></span>
