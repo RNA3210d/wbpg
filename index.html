@@ -10,8 +10,8 @@
 <link href="wpg.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
-<script src="wb.parallax.min.js"></script>
 <script src="jquery-ui.min.js"></script>
+<script src="wb.parallax.min.js"></script>
 <script src="wb.cookie.min.js"></script>
 <link rel="stylesheet" href="galleria/theme/galleria.classic.min.css">
 <script src="galleria/galleria-1.5.4.min.js"></script>
@@ -31,6 +31,22 @@ $(document).ready(function()
 {
    $('#RollOverLayer4').addClass('visibility-hidden');
    $('#SlideShow2').addClass('visibility-hidden');
+   $('#Layer3').addClass('visibility-hidden');
+   $('#wb_FlexContainer2').addClass('visibility-hidden');
+   $('#Tabs1').addClass('visibility-hidden');
+   $('#wb_FlexContainer3').addClass('visibility-hidden');
+   $('#Tabs2').addClass('visibility-hidden');
+   $('#Button2').addClass('visibility-hidden');
+   $('#Button1').addClass('visibility-hidden');
+   $('#Button3').addClass('visibility-hidden');
+   $('#wb_links').addClass('visibility-hidden');
+   $("#RollOverLayer4").hover(function(e)
+   {
+      $("#RollOverLayer4 .default").hide('blind', {easing: 'easeInSine', direction: 'horizontal'}, 1007);
+   }, function()
+   {
+      $("#RollOverLayer4 .default").show('blind', {easing: 'easeInSine', direction: 'horizontal'}, 1007);
+   });
    function onScrollRollOverLayer4()
    {
       var $obj = $("#RollOverLayer4");
@@ -88,12 +104,115 @@ $(document).ready(function()
    {
       onScrollSlideShow2();
    });
+   function onScrollLayer3()
+   {
+      var $obj = $("#Layer3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer3', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer3').inViewPort(true))
+   {
+      $('#Layer3').addClass("in-viewport");
+   }
+   onScrollLayer3();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer3();
+   });
+   function onScrollFlexContainer2()
+   {
+      var $obj = $("#wb_FlexContainer2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FlexContainer2', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_FlexContainer2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_FlexContainer2').inViewPort(true))
+   {
+      $('#wb_FlexContainer2').addClass("in-viewport");
+   }
+   onScrollFlexContainer2();
+   $(window).scroll(function(event)
+   {
+      onScrollFlexContainer2();
+   });
    $("#Tabs1").tabs(
    {
       show: false,
       hide: false,
       event: 'click',
       collapsible: false
+   });
+   $("#Tabs1").on('tabsactivate', function(event, ui)
+   {
+      var indexNew = $(this).find('li').index(ui.newTab);
+      switch(indexNew)
+      {
+      }
+   });
+   function onScrollTabs1()
+   {
+      var $obj = $("#Tabs1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Tabs1', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Tabs1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Tabs1').inViewPort(true))
+   {
+      $('#Tabs1').addClass("in-viewport");
+   }
+   onScrollTabs1();
+   $(window).scroll(function(event)
+   {
+      onScrollTabs1();
+   });
+   function onScrollFlexContainer3()
+   {
+      var $obj = $("#wb_FlexContainer3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FlexContainer3', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_FlexContainer3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_FlexContainer3').inViewPort(true))
+   {
+      $('#wb_FlexContainer3').addClass("in-viewport");
+   }
+   onScrollFlexContainer3();
+   $(window).scroll(function(event)
+   {
+      onScrollFlexContainer3();
    });
    $("#Tabs2").tabs(
    {
@@ -102,8 +221,136 @@ $(document).ready(function()
       event: 'click',
       collapsible: false
    });
+   $("#Tabs2").on('tabsactivate', function(event, ui)
+   {
+      var indexNew = $(this).find('li').index(ui.newTab);
+      switch(indexNew)
+      {
+      }
+   });
+   function onScrollTabs2()
+   {
+      var $obj = $("#Tabs2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Tabs2', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Tabs2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Tabs2').inViewPort(true))
+   {
+      $('#Tabs2').addClass("in-viewport");
+   }
+   onScrollTabs2();
+   $(window).scroll(function(event)
+   {
+      onScrollTabs2();
+   });
+   function onScrollButton2()
+   {
+      var $obj = $("#Button2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Button2', 'swoop-in', 500, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Button2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Button2').inViewPort(true))
+   {
+      $('#Button2').addClass("in-viewport");
+   }
+   onScrollButton2();
+   $(window).scroll(function(event)
+   {
+      onScrollButton2();
+   });
+   function onScrollButton1()
+   {
+      var $obj = $("#Button1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Button1', 'animate-fade-in', 500, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Button1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Button1').inViewPort(true))
+   {
+      $('#Button1').addClass("in-viewport");
+   }
+   onScrollButton1();
+   $(window).scroll(function(event)
+   {
+      onScrollButton1();
+   });
+   function onScrollButton3()
+   {
+      var $obj = $("#Button3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Button3', 'animate-fade-in', 500, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Button3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Button3').inViewPort(true))
+   {
+      $('#Button3').addClass("in-viewport");
+   }
+   onScrollButton3();
+   $(window).scroll(function(event)
+   {
+      onScrollButton3();
+   });
+   function onScrolllinks()
+   {
+      var $obj = $("#wb_links");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_links', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_links', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_links').inViewPort(true))
+   {
+      $('#wb_links').addClass("in-viewport");
+   }
+   onScrolllinks();
+   $(window).scroll(function(event)
+   {
+      onScrolllinks();
+   });
 });
 </script>
+<!-- Insert Google Analytics code here -->
 </head>
 <body>
 <div id="Layer1">
@@ -121,8 +368,6 @@ $(document).ready(function()
 
 <div id="RollOverLayer4">
 <div class="hover">
-</div>
-<div class="default">
 <div id="wb_FontAwesomeIcon9">
 <a href="https://github.com/RNA3210d"><div id="FontAwesomeIcon9"><i class="fa fa-github"></i></div></a></div>
 <div id="wb_FontAwesomeIcon10">
@@ -133,6 +378,10 @@ $(document).ready(function()
 <a href="https://www.mixcloud.com/RNA3210d/"><div id="FontAwesomeIcon12"><i class="fa fa-mixcloud"></i></div></a></div>
 <div id="wb_Text3">
 <span style="color:#F2F2F2;font-family:'Exo 2';font-size:21px;"><strong><em>Zizek on Kinder Surprise<br></em></strong></span><span style="color:#F2F2F2;font-family:Arial;font-size:13px;"><strong><br></strong></span><span style="color:#F2F2F2;font-family:Arial;font-size:15px;">Kinder surprise egg, a quite astonishing commodity. The surprise of this excessive object, the cause of your desire, is here materialised in the Geist of an object which fills in the inner void of the chocolate egg. The whole delicate balance is between these two dimensions: what you bought, the chocolate egg, and the surplus, probably made in some Chinese gulag or whatever, that you get for free. I don't think that the chocolate frame is here just to send you on a deeper voyage towards the inner treasure, the what Plato calls the 'Agalma', which makes you a worthy person, which makes a commodity the desirable commodity. I think it's the other way around. We should aim at the higher goal, the gold in the middle of an object, precisely in order to be able to enjoy the surface. </span></div>
+<a id="Button3" href="./proj.html">Projects</a>
+</div>
+<div class="default">
+<a id="Button2" href="">Quick Nav</a>
 </div>
 </div>
 <div id="SlideShow2">
@@ -229,7 +478,6 @@ $(document).ready(function()
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1123305439&color=%2300ff4e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rna3210d" title="DropMix" target="_blank" style="color: #cccccc; text-decoration: none;">DropMix</a> · <a href="https://soundcloud.com/rna3210d/deep-blue-something-breakfast-at-tiffanys-1995-dropmix-rework" title="Deep Blue Something - Breakfast at Tiffany&#x27;s [DropMix Rework]" target="_blank" style="color: #cccccc; text-decoration: none;">Deep Blue Something - Breakfast at Tiffany&#x27;s [DropMix Rework]</a></div></div>
 </div>
 </div>
-<input type="submit" id="Button1" name="" value="See more..">
 <div id="Layer7">
 <div id="wb_links">
 <div id="links">
@@ -239,11 +487,11 @@ $(document).ready(function()
 </div>
 <div id="wb_CssMenu3">
 <ul id="CssMenu3" role="menubar" class="nav">
-<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./sw.html" target="_self" title="Software I Use">Software&nbsp;I&nbsp;Use</a>
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./proj.html" target="_self"><i class="fa fa-wrench">&nbsp;</i>Projects</a>
 </li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="./eqp.html" target="_self">My&nbsp;Equipments</a>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./sw.html" target="_self" title="Software I Use"><i class="fa fa-magic">&nbsp;</i>Software&nbsp;I&nbsp;Use</a>
 </li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Services</a>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./eqp.html" target="_self"><i class="fa fa-rocket">&nbsp;</i>My&nbsp;Equipments</a>
 </li>
 <li role="menuitem" class="nav-item"><a class="nav-link" href="" target="_self">Products</a>
 </li>
@@ -288,6 +536,7 @@ $(document).ready(function()
 </div>
 </div>
 </div>
+<input type="submit" id="Button1" name="" value="See more..">
 </div>
 </body>
 </html>

@@ -101,50 +101,188 @@ body
 {
    outline: 0;
 }
-#NavigationBar1 ul.navbar
+#wb_Panel3
 {
-   list-style: none;
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
    margin: 0;
-   padding: 0;
+   box-shadow: 1px 1px 21px #84BDDA;
 }
-#NavigationBar1 ul.navbar li
+#Panel3
 {
-   height: 30px;
-   width: 289px;
-   margin: 0 0 4px 0;
-   vertical-align: bottom;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0 0 15px 0;
+   margin-right: auto;
+   margin-left: auto;
 }
-#NavigationBar1 ul.navbar li a
+#Panel3 > .col-1
 {
-   display: block;
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
    position: relative;
 }
-#NavigationBar1 ul.navbar li a img
+#Panel3
 {
-   position: absolute;
-   left: 0;
-   z-index: 1;
-   border-width: 0;
+   width: 270px;
 }
-#NavigationBar1 ul.navbar li span
+#Panel3 > .col-1
 {
-   display: block;
-   height: 30px;
-   width: 289px;
-   position: absolute;
-   z-index: 2;
+   flex: 0 0 auto;
+   height: 433px;
 }
-#NavigationBar1 a .hover
+#Panel3 > .col-1
 {
-   visibility: hidden;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 100%;
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
 }
-#NavigationBar1 a:hover .hover
+@media (max-width: 480px)
 {
-   visibility: visible;
+#Panel3
+{
+   width: 100%;
 }
-#NavigationBar1 a:hover span
+#Panel3 > .col-1
 {
-   visibility: hidden;
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+   height: auto;
+}
+}
+#Button1
+{
+   border: 1px solid #454744;
+   border-radius: 3px;
+   background-color: #454744;
+   background-image: none;
+   color: #FFFFFF;
+   cursor: pointer;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   padding: 0;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+}
+#Button1:focus
+{
+   outline: 0;
+}
+#Button1:hover
+{
+   background-color: #47A447;
+   border-color: #3E923E;
+   transition: background-color 500ms linear 0ms, border-color 500ms linear 0ms;
+}
+#Button2
+{
+   border: 1px solid #454744;
+   border-radius: 3px;
+   background-color: #454744;
+   background-image: none;
+   color: #FFFFFF;
+   cursor: pointer;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   padding: 0;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+}
+#Button2:focus
+{
+   outline: 0;
+}
+#Button2:hover
+{
+   background-color: #47A447;
+   border-color: #3E923E;
+   transition: background-color 500ms linear 0ms, border-color 500ms linear 0ms;
+}
+#Button3
+{
+   border: 1px solid #454744;
+   border-radius: 3px;
+   background-color: #454744;
+   background-image: none;
+   color: #FFFFFF;
+   cursor: pointer;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   padding: 0;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+}
+#Button3:focus
+{
+   outline: 0;
+}
+#Button3:hover
+{
+   background-color: #47A447;
+   border-color: #3E923E;
+   transition: background-color 500ms linear 0ms, border-color 500ms linear 0ms;
+}
+#Button5
+{
+   border: 1px solid #454744;
+   border-radius: 3px;
+   background-color: #454744;
+   background-image: none;
+   color: #FFFFFF;
+   cursor: pointer;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   padding: 0;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+}
+#Button5:focus
+{
+   outline: 0;
+}
+#Button5:hover
+{
+   background-color: #47A447;
+   border-color: #3E923E;
+   transition: background-color 500ms linear 0ms, border-color 500ms linear 0ms;
 }
 #Layer3
 {
@@ -152,6 +290,11 @@ body
    background-image: none;
    border-radius: 0px;
    padding: 0;
+   margin: 0;
+}
+#Layer3
+{
+   display: inline-flex;
 }
 #wb_FlexContainer1
 {
@@ -222,12 +365,6 @@ body
    margin: 0;
    text-align: center;
    text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
-}
-#Layer6
-{
-   background-color: #FBFBFB;
-   background-image: none;
-   border-radius: 0px;
 }
 #Line2
 {
@@ -530,10 +667,694 @@ body
    transform: rotate(360deg) ;
    transition: transform 500ms linear 0ms;
 }
+#wb_portfolio
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-image: linear-gradient(to top, #EBF1F6 0%, #ABD3EE 50%, #89C3EB 51%, #D5EBFB 100%);
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#portfolio
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 25px 0 25px 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#portfolio > .col-1, #portfolio > .col-2, #portfolio > .col-3, #portfolio > .col-4
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#portfolio
+{
+   width: 1200px;
+}
+#portfolio > .col-1, #portfolio > .col-2, #portfolio > .col-3, #portfolio > .col-4
+{
+   flex: 0 0 auto;
+}
+#portfolio > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#portfolio > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#portfolio > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#portfolio > .col-4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 25%;
+   max-width: 25%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: flex-start;
+   text-align: left;
+}
+@media (max-width: 480px)
+{
+#portfolio
+{
+   width: 100%;
+}
+#portfolio > .col-1, #portfolio > .col-2, #portfolio > .col-3, #portfolio > .col-4
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
+#wb_Panel1
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+   box-shadow: 1px 1px 21px #84BDDA;
+}
+#Panel1
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0 0 15px 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#Panel1 > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
+   position: relative;
+}
+#Panel1
+{
+   width: 270px;
+}
+#Panel1 > .col-1
+{
+   flex: 0 0 auto;
+   height: 433px;
+}
+#Panel1 > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 100%;
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 480px)
+{
+#Panel1
+{
+   width: 100%;
+}
+#Panel1 > .col-1
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+   height: auto;
+}
+}
+#wb_Text9 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 15px 15px 15px 15px;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text9 div
+{
+   text-align: center;
+}
+#wb_Text9
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
+   padding: 15px 0 15px 0;
+   text-align: center;
+}
+#Heading2
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 16px;
+   margin: 0;
+   text-align: center;
+}
+#Shape5
+{
+   width: 100px;
+   height: 2px;
+   background-color: #000000;
+   background-image: none;
+   border: 0px #000000 solid;
+}
+#Shape5_text
+{
+   position: absolute;
+   pointer-events: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    left: 1%;
+   top: 50%;
+   width: 98%;
+   height: 0%;
+   box-sizing: border-box;
+   overflow: hidden;
+   text-align: center;
+   word-wrap: break-word;
+}
+#wb_sun
+{
+   margin: 0;
+   vertical-align: top;
+}
+#sun
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Panel2
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+   box-shadow: 1px 1px 21px #84BDDA;
+}
+#Panel2
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0 0 15px 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#Panel2 > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
+   position: relative;
+}
+#Panel2
+{
+   width: 270px;
+}
+#Panel2 > .col-1
+{
+   flex: 0 0 auto;
+   height: 433px;
+}
+#Panel2 > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 100%;
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 480px)
+{
+#Panel2
+{
+   width: 100%;
+}
+#Panel2 > .col-1
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+   height: auto;
+}
+}
+#wb_Text10 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 15px 15px 15px 15px;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text10 div
+{
+   text-align: center;
+}
+#wb_Text10
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Heading3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
+   padding: 15px 0 15px 0;
+   text-align: center;
+}
+#Heading3
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 16px;
+   margin: 0;
+   text-align: center;
+}
+#Shape6
+{
+   width: 100px;
+   height: 2px;
+   background-color: #000000;
+   background-image: none;
+   border: 0px #000000 solid;
+}
+#Shape6_text
+{
+   position: absolute;
+   pointer-events: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    left: 1%;
+   top: 50%;
+   width: 98%;
+   height: 0%;
+   box-sizing: border-box;
+   overflow: hidden;
+   text-align: center;
+   word-wrap: break-word;
+}
+#wb_eat
+{
+   margin: 0;
+   vertical-align: top;
+}
+#eat
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 500px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Text12 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 15px 15px 15px 15px;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text12 div
+{
+   text-align: center;
+}
+#wb_Text12
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Heading5
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
+   padding: 15px 0 15px 0;
+   text-align: center;
+}
+#Heading5
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 16px;
+   margin: 0;
+   text-align: center;
+}
+#Shape8
+{
+   width: 100px;
+   height: 2px;
+   background-color: #000000;
+   background-image: none;
+   border: 0px #000000 solid;
+}
+#Shape8_text
+{
+   position: absolute;
+   pointer-events: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    left: 1%;
+   top: 50%;
+   width: 98%;
+   height: 0%;
+   box-sizing: border-box;
+   overflow: hidden;
+   text-align: center;
+   word-wrap: break-word;
+}
+#wb_party
+{
+   margin: 0;
+   vertical-align: top;
+}
+#party
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 500px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#wb_Text11 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 15px 15px 15px 15px;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text11 div
+{
+   text-align: center;
+}
+#wb_Text11
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Heading4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
+   padding: 15px 0 15px 0;
+   text-align: center;
+}
+#Heading4
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 16px;
+   margin: 0;
+   text-align: center;
+}
+#Shape7
+{
+   width: 100px;
+   height: 2px;
+   background-color: #000000;
+   background-image: none;
+   border: 0px #000000 solid;
+}
+#Shape7_text
+{
+   position: absolute;
+   pointer-events: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    left: 1%;
+   top: 50%;
+   width: 98%;
+   height: 0%;
+   box-sizing: border-box;
+   overflow: hidden;
+   text-align: center;
+   word-wrap: break-word;
+}
+#wb_fun
+{
+   margin: 0;
+   vertical-align: top;
+}
+#fun
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 500px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#Layer6
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   border-radius: 0px;
+   margin: 0;
+}
+#wb_Panel4
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+   box-shadow: 1px 1px 21px #84BDDA;
+}
+#Panel4
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0 0 15px 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#Panel4 > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
+   position: relative;
+}
+#Panel4
+{
+   width: 270px;
+}
+#Panel4 > .col-1
+{
+   flex: 0 0 auto;
+   height: 432px;
+}
+#Panel4 > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 100%;
+   max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 480px)
+{
+#Panel4
+{
+   width: 100%;
+}
+#Panel4 > .col-1
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+   height: auto;
+}
+}
 #wb_footer
 {
-   background-color: #6B3CFC;
-   background-image: none;
+   background-image: linear-gradient(to top, #6B3CFC 0%, #000000 100%);
    border: 0px solid #6B3CFC;
    border-radius: 0px;
    box-sizing: border-box;
@@ -543,7 +1364,7 @@ body
 {
    display: flex;
    position: relative;
-   height: 53px;
+   height: 50px;
    padding: 25px 25px 25px 25px;
    flex-direction: row;
    flex-wrap: wrap;
@@ -573,17 +1394,25 @@ body
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 12;
+   z-index: 51;
 }
 #Layer6
 {
-   position: absolute;
+   position: relative;
    text-align: left;
-   left: 0%;
-   top: 367px;
-   width: 1200px;
+   width: 100%;
    height: 68px;
-   z-index: 26;
+   float: left;
+   clear: left;
+   display: block;
+   z-index: 69;
+}
+#Button3
+{
+   display: inline-block;
+   width: 96px;
+   height: 29px;
+   z-index: 23;
 }
 #wb_Image1
 {
@@ -594,13 +1423,27 @@ body
    height: 74px;
    z-index: 1;
 }
+#Button2
+{
+   display: inline-block;
+   width: 96px;
+   height: 29px;
+   z-index: 17;
+}
 #wb_Icon4
 {
    display: inline-block;
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 15;
+   z-index: 54;
+}
+#Button1
+{
+   display: inline-block;
+   width: 96px;
+   height: 29px;
+   z-index: 35;
 }
 #wb_Icon5
 {
@@ -608,16 +1451,7 @@ body
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 16;
-}
-#NavigationBar1
-{
-   position: absolute;
-   left: 456px;
-   top: 197px;
-   width: 289px;
-   height: 136px;
-   z-index: 24;
+   z-index: 55;
 }
 #Line1
 {
@@ -632,6 +1466,27 @@ body
    height: 27px;
    z-index: 0;
 }
+#wb_Heading4
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 37;
+}
+#wb_fun
+{
+   display: inline-block;
+   width: 100%;
+   height: auto;
+   z-index: 36;
+}
+#wb_Shape8
+{
+   display: inline-block;
+   width: 100px;
+   height: 2px;
+   z-index: 32;
+   position: relative;
+}
 #wb_Text2
 {
    position: absolute;
@@ -641,9 +1496,27 @@ body
    height: 27px;
    z-index: 2;
 }
+#wb_Heading5
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 31;
+}
 #Line2
 {
    display: block;
+}
+#wb_Heading2
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 19;
+}
+#wb_Heading3
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 25;
 }
 #Layer1
 {
@@ -656,11 +1529,40 @@ body
    display: block;
    z-index: 4;
 }
+#wb_sun
+{
+   display: inline-block;
+   width: 100%;
+   height: auto;
+   z-index: 18;
+}
+#wb_party
+{
+   display: inline-block;
+   width: 100%;
+   height: auto;
+   z-index: 30;
+}
+#wb_eat
+{
+   display: inline-block;
+   width: 100%;
+   height: auto;
+   z-index: 24;
+}
+#wb_Shape5
+{
+   display: inline-block;
+   width: 100px;
+   height: 2px;
+   z-index: 20;
+   position: relative;
+}
 #wb_Heading1
 {
    display: inline-block;
    width: 165px;
-   z-index: 6;
+   z-index: 11;
 }
 #wb_Icon2
 {
@@ -668,17 +1570,25 @@ body
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 13;
+   z-index: 52;
+}
+#wb_Shape6
+{
+   display: inline-block;
+   width: 100px;
+   height: 2px;
+   z-index: 26;
+   position: relative;
 }
 #Layer3
 {
-   position: absolute;
+   position: relative;
    text-align: center;
-   left: 0px;
-   top: 98px;
-   width: 1200px;
-   height: 99px;
-   z-index: 25;
+   width: 100%;
+   height: 87px;
+   float: left;
+   clear: left;
+   z-index: 68;
 }
 #Layer1_Container
 {
@@ -694,7 +1604,22 @@ body
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 14;
+   z-index: 53;
+}
+#wb_Shape7
+{
+   display: inline-block;
+   width: 100px;
+   height: 2px;
+   z-index: 38;
+   position: relative;
+}
+#Button5
+{
+   display: inline-block;
+   width: 96px;
+   height: 29px;
+   z-index: 29;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px)
 {
@@ -795,22 +1720,94 @@ body
    margin: 0;
    padding: 1px 6px 1px 6px;
 }
-#NavigationBar1
+#wb_Panel3
 {
-   left: 74px;
-   top: 185px;
    visibility: visible;
-   display: inline;
+   display: table;
+}
+#wb_Panel3
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Panel3
+{
+   height: auto;
+   padding: 0 0 15px 0;
+}
+#Panel3
+{
+   width: 100%;
+}
+#Panel3 > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#Panel3 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#Button1
+{
+   width: 96px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
    margin: 0;
+   padding: 0;
+}
+#Button2
+{
+   width: 96px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+#Button3
+{
+   width: 96px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+#Button5
+{
+   width: 96px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
 }
 #Layer3
 {
-   left: 0px;
-   top: 98px;
    width: 480px;
    height: 87px;
    visibility: visible;
    display: block;
+   margin: 0;
+}
+#Layer3
+{
+   margin: 0;
+}
+#Layer3
+{
+    width: 100%;
+    height: 87px;
 }
 #Layer3
 {
@@ -889,19 +1886,6 @@ body
    font-size: 19px;
    text-align: center;
    text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
-}
-#Layer6
-{
-   left: 0px;
-   top: 317px;
-   width: 480px;
-   height: 66px;
-   visibility: visible;
-   display: block;
-}
-#Layer6
-{
-   left: 0%;
 }
 #Line2
 {
@@ -1034,10 +2018,365 @@ body
    font-size: 16px;
    width: 15px;
 }
+#wb_portfolio
+{
+   visibility: visible;
+   display: table;
+}
+#wb_portfolio
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#portfolio
+{
+   height: auto;
+   padding: 25px 0 25px 0;
+}
+#portfolio
+{
+   width: 100%;
+}
+#portfolio > .col-1, #portfolio > .col-2, #portfolio > .col-3, #portfolio > .col-4
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#portfolio > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#portfolio > .col-2
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#portfolio > .col-3
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#portfolio > .col-4
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: flex-start;
+   text-align: left;
+}
+#wb_Panel1
+{
+   visibility: visible;
+   display: table;
+}
+#wb_Panel1
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Panel1
+{
+   padding: 0 0 15px 0;
+}
+#Panel1
+{
+   width: 100%;
+}
+#Panel1 > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#Panel1 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   height: 458px;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#wb_Text9
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text9
+{
+   margin: 0;
+   padding: 15px 15px 15px 15px;
+}
+#wb_Heading2
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 15px 0 15px 0;
+}
+#wb_Shape5
+{
+   width: 100px;
+   height: 2px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Shape5
+{
+   width: 100px;
+   height: 2px;
+}
+#wb_sun
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#wb_Panel2
+{
+   visibility: visible;
+   display: table;
+}
+#wb_Panel2
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Panel2
+{
+   padding: 0 0 15px 0;
+}
+#Panel2
+{
+   width: 100%;
+}
+#Panel2 > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#Panel2 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   height: 608px;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#wb_Text10
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text10
+{
+   margin: 0;
+   padding: 15px 15px 15px 15px;
+}
+#wb_Heading3
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 15px 0 15px 0;
+}
+#wb_Shape6
+{
+   width: 100px;
+   height: 2px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Shape6
+{
+   width: 100px;
+   height: 2px;
+}
+#wb_eat
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text12
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text12
+{
+   margin: 0;
+   padding: 15px 15px 15px 15px;
+}
+#wb_Heading5
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 15px 0 15px 0;
+}
+#wb_Shape8
+{
+   width: 100px;
+   height: 2px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Shape8
+{
+   width: 100px;
+   height: 2px;
+}
+#wb_party
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text11
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text11
+{
+   margin: 0;
+   padding: 15px 15px 15px 15px;
+}
+#wb_Heading4
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 15px 0 15px 0;
+}
+#wb_Shape7
+{
+   width: 100px;
+   height: 2px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Shape7
+{
+   width: 100px;
+   height: 2px;
+}
+#wb_fun
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#Layer6
+{
+   width: 480px;
+   height: 66px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#Layer6
+{
+   left: 0%;
+   margin: 0;
+}
+#Layer6
+{
+    width: 100%;
+    height: 66px;
+}
+#wb_Panel4
+{
+   visibility: visible;
+   display: table;
+}
+#wb_Panel4
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Panel4
+{
+   padding: 0 0 15px 0;
+}
+#Panel4
+{
+   width: 100%;
+}
+#Panel4 > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#Panel4 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   height: 608px;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
 #wb_footer
 {
    visibility: visible;
    display: block;
+   background-color: #6B3CFC;
+   background-image: none;
+   background-image: none;
 }
 #footer
 {
@@ -1151,22 +2490,94 @@ body
    margin: 0;
    padding: 1px 6px 1px 6px;
 }
-#NavigationBar1
+#wb_Panel3
 {
-   left: 15px;
-   top: 197px;
    visibility: visible;
-   display: inline;
+   display: table;
+}
+#wb_Panel3
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Panel3
+{
+   height: auto;
+   padding: 0 0 15px 0;
+}
+#Panel3
+{
+   width: 100%;
+}
+#Panel3 > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#Panel3 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#Button1
+{
+   width: 96px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
    margin: 0;
+   padding: 0;
+}
+#Button2
+{
+   width: 96px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+#Button3
+{
+   width: 96px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+#Button5
+{
+   width: 96px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
 }
 #Layer3
 {
-   left: 0px;
-   top: 118px;
    width: 320px;
    height: 99px;
    visibility: visible;
    display: block;
+   margin: 0;
+}
+#Layer3
+{
+   margin: 0;
+}
+#Layer3
+{
+    width: 100%;
+    height: 99px;
 }
 #Layer3
 {
@@ -1245,19 +2656,6 @@ body
    font-size: 20px;
    text-align: center;
    text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
-}
-#Layer6
-{
-   left: 0px;
-   top: 329px;
-   width: 320px;
-   height: 67px;
-   visibility: visible;
-   display: block;
-}
-#Layer6
-{
-   left: 0%;
 }
 #Line2
 {
@@ -1390,10 +2788,372 @@ body
    font-size: 16px;
    width: 15px;
 }
+#wb_portfolio
+{
+   visibility: visible;
+   display: table;
+}
+#wb_portfolio
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#portfolio
+{
+   height: auto;
+   padding: 25px 0 25px 0;
+}
+#portfolio
+{
+   width: 100%;
+}
+#portfolio > .col-1, #portfolio > .col-2, #portfolio > .col-3, #portfolio > .col-4
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#portfolio > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#portfolio > .col-2
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#portfolio > .col-3
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#portfolio > .col-4
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: flex-start;
+   text-align: left;
+}
+#wb_Panel1
+{
+   visibility: visible;
+   display: table;
+}
+#wb_Panel1
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Panel1
+{
+   height: auto;
+   padding: 0 0 15px 0;
+}
+#Panel1
+{
+   width: 100%;
+}
+#Panel1 > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#Panel1 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#wb_Text9
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text9
+{
+   margin: 0;
+   padding: 15px 15px 15px 15px;
+}
+#wb_Heading2
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 15px 0 15px 0;
+}
+#wb_Shape5
+{
+   width: 100px;
+   height: 2px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Shape5
+{
+   width: 100px;
+   height: 2px;
+}
+#wb_sun
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#sun
+{
+   border: 0px solid transparent;
+}
+#wb_Panel2
+{
+   visibility: visible;
+   display: table;
+}
+#wb_Panel2
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Panel2
+{
+   height: auto;
+   padding: 0 0 15px 0;
+}
+#Panel2
+{
+   width: 100%;
+}
+#Panel2 > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#Panel2 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#wb_Text10
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text10
+{
+   margin: 0;
+   padding: 15px 15px 15px 15px;
+}
+#wb_Heading3
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 15px 0 15px 0;
+}
+#wb_Shape6
+{
+   width: 100px;
+   height: 2px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Shape6
+{
+   width: 100px;
+   height: 2px;
+}
+#wb_eat
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text12
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text12
+{
+   margin: 0;
+   padding: 15px 15px 15px 15px;
+}
+#wb_Heading5
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 15px 0 15px 0;
+}
+#wb_Shape8
+{
+   width: 100px;
+   height: 2px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Shape8
+{
+   width: 100px;
+   height: 2px;
+}
+#wb_party
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text11
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text11
+{
+   margin: 0;
+   padding: 15px 15px 15px 15px;
+}
+#wb_Heading4
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 15px 0 15px 0;
+}
+#wb_Shape7
+{
+   width: 100px;
+   height: 2px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Shape7
+{
+   width: 100px;
+   height: 2px;
+}
+#wb_fun
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#Layer6
+{
+   width: 320px;
+   height: 67px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#Layer6
+{
+   left: 0%;
+   margin: 0;
+}
+#Layer6
+{
+    width: 100%;
+    height: 67px;
+}
+#wb_Panel4
+{
+   visibility: visible;
+   display: table;
+}
+#wb_Panel4
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#Panel4
+{
+   height: auto;
+   padding: 0 0 15px 0;
+}
+#Panel4
+{
+   width: 100%;
+}
+#Panel4 > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#Panel4 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
 #wb_footer
 {
    visibility: visible;
    display: block;
+   background-color: #6B3CFC;
+   background-image: none;
+   background-image: none;
 }
 #footer
 {
@@ -1413,8 +3173,8 @@ body
    background-color: #000000;
 }
 .darktheme #Layer1,
-.darktheme #NavigationBar1,
-.darktheme #wb_FlexContainer1,
+.darktheme #Layer3,
+.darktheme #wb_portfolio,
 .darktheme #Layer6
 {
    filter: invert(100%);
