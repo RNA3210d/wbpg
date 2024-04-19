@@ -2,33 +2,144 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Page</title>
+<title>RPi-TELEBOT</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="wpg.css" rel="stylesheet">
 <link href="page1.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
 <script src="wb.cookie.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
+   var progressbar_html = document.querySelector('#progressbar_html .progress-bar');
+   var progressbar_html_observer = new window.ResizeObserver(entries => 
+   {
+      var val = Math.round(((entries[0].target.clientWidth/entries[0].target.offsetParent.clientWidth)*100));
+      entries[0].target.innerText = val + '%';
+      entries[0].target.setAttribute('aria-valuenow', val);
+   });
+   progressbar_html_observer.observe(progressbar_html);
+   window.addEventListener('scroll', function(event)
+   {
+      var bounding = progressbar_html.getBoundingClientRect();
+      var top = bounding.top*100/window.innerHeight;
+      var bottom = bounding.bottom*100/window.innerHeight;
+      if (top >= 0 && bottom <= 100)
+      {
+         progressbar_html.style.width = '100%';
+      }
+   });
+   window.dispatchEvent(new CustomEvent('scroll'));
    if (hasCookie('darktheme'))
    {
       document.documentElement.classList.add('darktheme');
    }
 });
 </script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+
+<script>
+$(document).ready(function()
+{
+   var $progressbars = $('.ui-progressbar');
+   
+   $progressbars.each(function() 
+   {
+     var $obj = $(this);
+     $obj.data('value', $obj.progressbar('option', 'value'));
+     $obj.data('done', false);
+     $obj.progressbar('option', 'value', 0);
+    
+     $obj.css('position', 'relative');
+     $obj.append('<div class="progress-label">0%</div>');
+   });
+   $(window).bind('scroll', function() 
+   {
+      $progressbars.each(function() 
+      {
+         var $obj = $(this);
+         if (!$obj.data('done') && $(window).scrollTop() + $(window).height() >= $obj.offset().top) 
+         {
+            $obj.data('done', true);
+            $obj.animate({scroll: 1}, 
+            { 
+               duration: 3000, 
+               step: function(now) 
+               {
+                  var $obj = $(this);
+                  var val = Math.round($obj.data('value') * now);
+                  $obj.progressbar('option', 'value', val);
+                  $obj.find('.progress-label').text(val + '%').css('color', (val > 50) ? "#FFFFFF" : "#265A88");
+               }
+            });
+         }
+      });
+   }).triggerHandler('scroll');
+});
+</script>
 </head>
 <body>
-<div id="Layer1" style="position:relative;text-align:center;width:100%;height:98px;float:left;clear:left;display:block;z-index:4;">
-<div id="Layer1_Container" style="width:1200px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_Text1" style="position:absolute;left:142px;top:0px;width:249px;height:27px;z-index:0;">
-<span style="color:#55783E;">Is this life? Is it real?</span></div>
-<div id="wb_Image1" style="position:absolute;left:0px;top:11px;width:122px;height:74px;z-index:1;">
-<a href="#" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
-<div id="wb_Text2" style="position:absolute;left:142px;top:59px;width:328px;height:27px;z-index:2;">
+<div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Text1">
+<span style="color:#77893E;">Is this life? Is it real?</span></div>
+<div id="wb_Image1">
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<div id="wb_Text2">
 <span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
-<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light" style="position:absolute;left:1093px;top:11px;width:96px;height:24px;z-index:3;">
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
 </div>
 </div>
 
+<div id="Layer3">
+<div id="wb_FlexContainer1">
+<div id="FlexContainer1">
+<hr id="Line1">
+<div id="wb_Heading1">
+<h1 id="Heading1">RPi-TELEBOT</h1>
+</div>
+<hr id="Line2">
+</div>
+</div>
+</div>
+<div id="Layer2">
+<div id="wb_Text3">
+<span style="color:#516F91;font-family:Arial;font-size:32px;"><strong>&nbsp; Summary<br></strong></span><span style="color:#000000;font-family:Arial;font-size:17px;"><br>Python based Telegram bot to monitor and control the headless Raspberry Pi servers. </span>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="col-1">
+<div id="wb_Heading9">
+<h1 id="Heading9">Languages</h1>
+</div>
+<label for="" id="Label1">Python:</label>
+<div id="progressbar_html">
+   <div class="progress-bar" role="progressbar" aria-valuenow="0" title="100%" aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer5">
+<div id="wb_Text4">
+<span style="color:#516F91;font-family:Arial;font-size:32px;"><strong>&nbsp; Images</strong></span>
+</div>
+</div>
+<div id="Layer4">
+<picture id="wb_Picture1">
+<img src="images/snip1.png" id="Picture1" alt="" width="1200" height="956">
+</picture>
+</div>
+<div id="preloader"></div>
 </body>
 </html>

@@ -348,6 +348,11 @@ $(document).ready(function()
    {
       onScrolllinks();
    });
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
 });
 </script>
 <!-- Insert Google Analytics code here -->
@@ -358,7 +363,7 @@ $(document).ready(function()
 <div id="wb_Text1">
 <span style="color:#77893E;">Is this life? Is it real?</span></div>
 <div id="wb_Image1">
-<a href="#" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
 <div id="wb_Text2">
 <span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
 <input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
@@ -386,8 +391,8 @@ $(document).ready(function()
 </div>
 </div>
 <div id="SlideShow2">
-<a href="images/IMG_20240410_151519290_HDR.jpg" data-rel=""><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240410_151519290_HDR.jpg" alt="" title=""></a>
-<a href="images/IMG_20240410_145353112_HDR.jpg" data-rel=""><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240410_145353112_HDR.jpg" style="display:none;" alt="" title=""></a>
+<a href="images/IMG_20240410_145353112_HDR.jpg" data-rel=""><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240410_145353112_HDR.jpg" alt="" title=""></a>
+<a href="images/IMG_20240410_151519290_HDR.jpg" data-rel=""><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240410_151519290_HDR.jpg" style="display:none;" alt="" title=""></a>
 <a href="images/IMG_20240411_092658491_HDR.jpg" data-rel=""><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240411_092658491_HDR.jpg" style="display:none;" alt="" title=""></a>
 </div>
 <div id="Layer2">
@@ -454,9 +459,9 @@ $(document).ready(function()
 <ul>
 <li role="presentation"><a href="#tabs2-page-1"><span><i class="fa fa-music tabs-icon"></i><br></span></a></li>
 <li role="presentation"><a href="#tabs2-page-2"><span><i class="fa fa-music tabs-icon"></i><br></span></a></li>
-<li role="presentation"><a href="#tabs2-page-3"><span><i class="fa fa-file-audio-o tabs-icon"></i><br></span></a></li>
-<li role="presentation"><a href="#tabs2-page-4"><span><i class="fa fa-file-audio-o tabs-icon"></i><br></span></a></li>
-<li role="presentation"><a href="#tabs2-page-5"><span><i class="fa fa-file-audio-o tabs-icon"></i><br></span></a></li>
+<li role="presentation"><a href="#tabs2-page-3"><span><i class="fa fa-music tabs-icon"></i><br></span></a></li>
+<li role="presentation"><a href="#tabs2-page-4"><span><i class="fa fa-music tabs-icon"></i><br></span></a></li>
+<li role="presentation"><a href="#tabs2-page-5"><span><i class="fa fa-music tabs-icon"></i><br></span></a></li>
 </ul>
 <div id="tabs2-page-1">
 <div id="Html1">
@@ -537,7 +542,8 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<input type="submit" id="Button1" name="" value="See more..">
+<input type="submit" id="Button1" name="" value="See more in HD">
 </div>
+<div id="preloader"></div>
 </body>
 </html>

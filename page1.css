@@ -2,18 +2,28 @@ body
 {
    background-color: #FFFFFF;
    color: #000000;
-   font-family: Arial;
-   font-weight: normal;
+   font-family: "Exo 2";
+   font-weight: 400;
+   font-weight: 400;
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
    padding: 0;
 }
+#preloader
+{
+   background: #FFFFFF url("images/aero-spinner.gif") no-repeat center center;
+   bottom: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 99999;
+}
 #Layer1
 {
    background-image: linear-gradient(to top, #F6F8F9 0%, #E5EBEE 50%, #D7DEE3 51%, #F5F7F9 100%);
    border-radius: 0px;
-   box-shadow: 2px 2px 11px #4472C4;
+   box-shadow: 2px 2px 11px #0F6FC6;
    margin: 0;
 }
 #wb_Image1
@@ -43,7 +53,7 @@ body
 }
 #wb_Text1
 {
-   color: #55783E;
+   color: #77893E;
    font-family: "Exo 2";
    font-weight: normal;
    font-size: 19px;
@@ -93,7 +103,1185 @@ body
 {
    outline: 0;
 }
-.darktheme #Layer1
+#Layer3
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+}
+#Layer3
+{
+   display: inline-flex;
+}
+#Layer2
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+   box-shadow: 1px 1px 17px #0F6FC6;
+   padding: 25px 0 10px 0;
+   margin: 0;
+}
+#wb_FlexContainer1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   position: relative;
+   width: 100%;
+}
+#FlexContainer1
+{
+   display: flex;
+   position: relative;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: flex-start;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 320px;
+   background-color: transparent;
+   background-image: none;
+   box-sizing: border-box;
+   font-size: 0;
+}
+#Line1
+{
+   border-color: #1ABC9C;
+   border-style: dashed;
+   border-bottom-width: 3px;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   height: 0 !important;
+   line-height: 0 !important;
+   margin: 0;
+   padding: 0;
+   flex-grow: 1;
+   flex-shrink: 0;
+   align-self: auto;
+}
+#wb_Heading1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   flex-grow: 0;
+   flex-shrink: 0;
+   align-self: auto;
+}
+#Heading1
+{
+   color: #000000;
+   font-family: "Exo 2";
+   font-weight: bold;
+   font-style: normal;
+   font-size: 20px;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
+}
+#Line2
+{
+   border-color: #1ABC9C;
+   border-style: dashed;
+   border-bottom-width: 3px;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   height: 0 !important;
+   line-height: 0 !important;
+   margin: 0;
+   padding: 0;
+   flex-grow: 1;
+   flex-shrink: 0;
+   align-self: auto;
+}
+#wb_LayoutGrid1
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   height: 33vh;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid1
+{
+   box-sizing: border-box;
+   height: 33vh;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid1 > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
+   position: relative;
+}
+#LayoutGrid1
+{
+   width: 1200px;
+}
+#LayoutGrid1 > .col-1
+{
+   flex: 0 0 auto;
+}
+#LayoutGrid1 > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 100%;
+   max-width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid1
+{
+   width: 100%;
+}
+#LayoutGrid1 > .col-1
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
+#progressbar_html
+{
+   margin: 0 0 10px 0 ;
+   position: relative;
+}
+#progressbar_html
+{
+   background-color: #FCFDFD;
+   background-image: none;
+   border: 0px solid #A6C9E2;
+   border-radius: 0px;
+   overflow: hidden;
+}
+#progressbar_html .progress-bar
+{
+   animation: 1s linear infinite progressbar_html-animation;
+   background-color: #2191C0;
+   background-image: linear-gradient(45deg, rgba(219,239,249,0.16) 25%, transparent 25%, transparent 50%, rgba(219,239,249,0.16) 50%, rgba(219,239,249,0.16) 75%, transparent 75%, transparent);
+   background-size: 1rem 1rem;
+   color: #EAF5F7;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-size: 27px;
+   font-style: normal;
+   display: flex;
+   flex-direction: column;
+   width: 0%;
+   height: 100%;
+   justify-content: center;
+   overflow: hidden;
+   text-align: center;
+   transition: width 1000ms ease-in;
+   white-space: nowrap;
+}
+@keyframes progressbar_html-animation
+{
+   0% { background-position-x: 1rem; }
+}
+#Label1
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 13px;
+   box-sizing: border-box;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+   padding: 4px 4px 4px 4px;
+}
+#Label1:focus
+{
+   outline: 0;
+}
+#wb_Heading9
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
+   padding: 0 0 10px 0;
+   text-align: center;
+}
+#Heading9
+{
+   color: #265A88;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 32px;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text3 div
+{
+   text-align: center;
+}
+#wb_Text3
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Picture1
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Picture1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 1195px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
+#Layer5
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+   box-shadow: 1px 1px 17px #0F6FC6;
+   padding: 25px 0 10px 0;
+   margin: 0;
+}
+#Layer4
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text4 div
+{
+   text-align: center;
+}
+#wb_Text4
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#Button4
+{
+   position: absolute;
+   left: 1093px;
+   top: 11px;
+   width: 96px;
+   height: 24px;
+   z-index: 3;
+}
+#wb_Image1
+{
+   position: absolute;
+   left: 0px;
+   top: 11px;
+   width: 122px;
+   height: 74px;
+   z-index: 1;
+}
+#wb_Picture1
+{
+   display: block;
+   width: 100%;
+   height: auto;
+   z-index: 17;
+}
+#progressbar_html
+{
+   display: block;
+   width: 100%;
+   height: 36px;
+   z-index: 15;
+}
+#wb_Heading9
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 13;
+}
+#Line1
+{
+   display: block;
+}
+#wb_Text1
+{
+   position: absolute;
+   left: 142px;
+   top: 0px;
+   width: 249px;
+   height: 27px;
+   z-index: 0;
+}
+#wb_Text2
+{
+   position: absolute;
+   left: 142px;
+   top: 59px;
+   width: 328px;
+   height: 27px;
+   z-index: 2;
+}
+#Line2
+{
+   display: block;
+}
+#Layer1
+{
+   position: relative;
+   text-align: center;
+   width: 100%;
+   height: 98px;
+   float: left;
+   clear: left;
+   display: block;
+   z-index: 4;
+}
+#Layer2
+{
+   position: relative;
+   text-align: center;
+   width: 100%;
+   height: 6.0889%;
+   float: left;
+   clear: left;
+   display: block;
+   z-index: 20;
+}
+#wb_Heading1
+{
+   display: inline-block;
+   width: 165px;
+   z-index: 6;
+}
+#Layer3
+{
+   position: relative;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   float: left;
+   z-index: 19;
+}
+#Layer1_Container
+{
+   width: 1200px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+#Layer4
+{
+   position: relative;
+   text-align: left;
+   width: 100%;
+   height: 980px;
+   float: left;
+   display: inline-block;
+   z-index: 23;
+}
+#Layer5
+{
+   position: relative;
+   text-align: center;
+   width: 100%;
+   height: 3.7301%;
+   float: left;
+   clear: left;
+   display: block;
+   z-index: 22;
+}
+#Label1
+{
+   display: block;
+   width: 100%;
+   line-height: 16px;
+   z-index: 14;
+}
+@media only screen and (min-width: 480px) and (max-width: 1199px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#MasterPage1
+{
+   left: 0px;
+   top: 0px;
+   width: 480px;
+   height: 98px;
+   visibility: visible;
+   display: inline;
+}
+#Layer1
+{
+   width: 480px;
+   height: 98px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#Layer1
+{
+   margin: 0;
+}
+#Layer1_Container
+{
+   width: 480px;
+}
+#Layer1
+{
+    width: 100%;
+    height: 98px;
+}
+#wb_Image1
+{
+   left: 0px;
+   top: 12px;
+   width: 122px;
+   height: 74px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text1
+{
+   left: 142px;
+   top: 12px;
+   width: 249px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   font-family: "Exo 2";
+   font-weight: 400;
+   font-size: 19px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text2
+{
+   left: 142px;
+   top: 59px;
+   width: 328px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-family: "Exo 2";
+   font-weight: 400;
+   font-size: 19px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Button4
+{
+   left: 374px;
+   top: 15px;
+   width: 96px;
+   height: 24px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+}
+#Layer3
+{
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#Layer3
+{
+   width: 100%;
+   margin: 0;
+}
+#Layer3
+{
+    width: 100%;
+    height: 100%;
+}
+#Layer3
+{
+   padding: 0;
+}
+#Layer2
+{
+   visibility: visible;
+   display: block;
+   margin: 0;
+   background-color: #FBFBFB;
+   background-image: none;
+   background-image: none;
+   box-shadow: 0px 0px 0px #000000;
+}
+#Layer2
+{
+   width: 100%;
+   margin: 0;
+}
+#Layer2
+{
+    width: 100%;
+    height: 101px;
+}
+#Layer2
+{
+   padding: 0;
+}
+#wb_FlexContainer1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+}
+#FlexContainer1
+{
+   min-height: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: flex-start;
+}
+#Line1
+{
+   width: auto;
+   height: 3px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   flex-grow: 1;
+   flex-shrink: 0;
+   align-self: auto;
+}
+#Line1
+{
+   border-color: #1ABC9C;
+   border-bottom-width: 3px;
+}
+#wb_Heading1
+{
+   width: 165px;
+   height: 29px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   flex-grow: 0;
+   flex-shrink: 0;
+   align-self: auto;
+   padding: 0;
+}
+#Line2
+{
+   width: auto;
+   height: 3px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   flex-grow: 1;
+   flex-shrink: 0;
+   align-self: auto;
+}
+#Line2
+{
+   border-color: #1ABC9C;
+   border-bottom-width: 3px;
+}
+#wb_LayoutGrid1
+{
+   visibility: visible;
+   display: table;
+   border: 0px solid #CCCCCC;
+   box-shadow: 0px 0px 0px #000000;
+}
+#wb_LayoutGrid1
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid1
+{
+   height: auto;
+   padding: 25px 0 10px 0;
+}
+#LayoutGrid1
+{
+   width: 100%;
+}
+#LayoutGrid1 > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#LayoutGrid1 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#progressbar_html
+{
+   width: 100%;
+   height: 30px;
+   visibility: visible;
+   display: block;
+   margin: 0 0 10px 0 ;
+}
+#Label1
+{
+   width: 100%;
+   height: 24px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label1
+{
+   line-height: 16px;
+}
+#wb_Heading9
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0 0 10px 0;
+}
+#wb_Text3
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text3
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Picture1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#Layer5
+{
+   visibility: visible;
+   display: block;
+   margin: 0;
+   background-color: #FBFBFB;
+   background-image: none;
+   background-image: none;
+   box-shadow: 0px 0px 0px #000000;
+}
+#Layer5
+{
+   width: 100%;
+   margin: 0;
+}
+#Layer5
+{
+    width: 100%;
+    height: 17px;
+}
+#Layer5
+{
+   padding: 0;
+}
+#Layer4
+{
+   height: 401px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Layer4
+{
+   width: 100%;
+   margin: 0;
+}
+#Layer4
+{
+    width: 100%;
+    height: 401px;
+}
+#Layer4
+{
+   padding: 0;
+}
+#wb_Text4
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text4
+{
+   margin: 0;
+   padding: 0;
+}
+}
+@media only screen and (max-width: 479px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#MasterPage1
+{
+   left: 0px;
+   top: 0px;
+   width: 320px;
+   height: 118px;
+   visibility: visible;
+   display: inline;
+}
+#Layer1
+{
+   width: 320px;
+   height: 118px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#Layer1
+{
+   margin: 0;
+}
+#Layer1_Container
+{
+   width: 320px;
+}
+#Layer1
+{
+    width: 100%;
+    height: 118px;
+}
+#wb_Image1
+{
+   left: 1px;
+   top: 23px;
+   width: 110px;
+   height: 67px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text1
+{
+   left: 111px;
+   top: 12px;
+   width: 209px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   font-family: "Exo 2";
+   font-weight: 400;
+   font-size: 19px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text2
+{
+   left: 111px;
+   top: 59px;
+   width: 201px;
+   height: 48px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-family: "Exo 2";
+   font-weight: 400;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#Button4
+{
+   left: 12px;
+   top: 90px;
+   width: 86px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+}
+#Layer3
+{
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#Layer3
+{
+   width: 100%;
+   margin: 0;
+}
+#Layer3
+{
+    width: 100%;
+    height: 100%;
+}
+#Layer3
+{
+   padding: 0;
+}
+#Layer2
+{
+   visibility: visible;
+   display: block;
+   margin: 0;
+   background-color: #FBFBFB;
+   background-image: none;
+   background-image: none;
+   box-shadow: 1px 1px 20px #0F6FC6;
+}
+#Layer2
+{
+   width: 100%;
+   margin: 0;
+}
+#Layer2
+{
+    width: 100%;
+    height: 78px;
+}
+#Layer2
+{
+   padding: 0;
+}
+#wb_FlexContainer1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+}
+#FlexContainer1
+{
+   min-height: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: flex-start;
+   align-content: center;
+}
+#Line1
+{
+   width: auto;
+   height: 3px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   flex-grow: 1;
+   flex-shrink: 0;
+   align-self: auto;
+}
+#Line1
+{
+   border-color: #1ABC9C;
+   border-bottom-width: 3px;
+}
+#wb_Heading1
+{
+   width: 165px;
+   height: 29px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   flex-grow: 0;
+   flex-shrink: 0;
+   align-self: auto;
+   padding: 0;
+}
+#Line2
+{
+   width: auto;
+   height: 3px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   flex-grow: 1;
+   flex-shrink: 0;
+   align-self: auto;
+}
+#Line2
+{
+   border-color: #1ABC9C;
+   border-bottom-width: 3px;
+}
+#wb_LayoutGrid1
+{
+   visibility: visible;
+   display: table;
+   border: 0px solid #CCCCCC;
+   box-shadow: 1px 1px 17px #0F6FC6;
+}
+#wb_LayoutGrid1
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid1
+{
+   height: auto;
+   padding: 25px 0 10px 0;
+}
+#LayoutGrid1
+{
+   width: 100%;
+}
+#LayoutGrid1 > .col-1
+{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+#LayoutGrid1 > .col-1
+{
+   display: flex;
+   flex-basis: 100%;
+   max-width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   align-content: flex-start;
+   align-items: flex-start;
+   justify-content: center;
+   text-align: center;
+}
+#progressbar_html
+{
+   width: 100%;
+   height: 30px;
+   visibility: visible;
+   display: block;
+   margin: 0 0 10px 0 ;
+}
+#Label1
+{
+   width: 100%;
+   height: 24px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#Label1
+{
+   line-height: 16px;
+}
+#wb_Heading9
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0 0 10px 0;
+}
+#wb_Text3
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text3
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Picture1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+#Layer5
+{
+   visibility: visible;
+   display: block;
+   margin: 0;
+   background-color: #FBFBFB;
+   background-image: none;
+   background-image: none;
+   box-shadow: 1px 1px 16px #0F6FC6;
+}
+#Layer5
+{
+   width: 100%;
+   margin: 0;
+}
+#Layer5
+{
+    width: 100%;
+    height: 11px;
+}
+#Layer5
+{
+   padding: 0;
+}
+#Layer4
+{
+   height: 269px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Layer4
+{
+   width: 100%;
+   margin: 0;
+}
+#Layer4
+{
+    width: 100%;
+    height: 269px;
+}
+#Layer4
+{
+   padding: 0;
+}
+#wb_Text4
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text4
+{
+   margin: 0;
+   padding: 0;
+}
+}
+.darktheme body
+{
+   background-color: #000000;
+}
+.darktheme #Layer1,
+.darktheme #Layer3
 {
    filter: invert(100%);
+}
+.progress-label 
+{
+   position: absolute;
+   left: 50%;
+   top: 4px;
+   font-weight: bold;
+   font-size: 14px;
+   font-family: Arial;
+   color: #FFFFFF;
 }

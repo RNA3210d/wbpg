@@ -20,6 +20,15 @@ body
 {
    visibility: hidden;
 }
+#preloader
+{
+   background: #FFFFFF url("images/pulsate.gif") no-repeat center center;
+   bottom: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 99999;
+}
 #Layer1
 {
    background-image: linear-gradient(to top, #F6F8F9 0%, #E5EBEE 50%, #D7DEE3 51%, #F5F7F9 100%);
@@ -2178,6 +2187,7 @@ body
    top: 377px;
    width: 82px;
    height: 40px;
+   visibility: hidden;
    z-index: 11;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px)
@@ -3175,10 +3185,10 @@ body
 }
 #Button1
 {
-   left: 379px;
+   left: 361px;
    top: 750px;
-   width: 70px;
-   height: 23px;
+   width: 103px;
+   height: 28px;
    visibility: visible;
    display: inline;
    margin: 0;
@@ -4274,10 +4284,10 @@ body
 }
 #Button1
 {
-   left: 228px;
+   left: 214px;
    top: 750px;
-   width: 76px;
-   height: 21px;
+   width: 106px;
+   height: 35px;
    visibility: visible;
    display: inline;
    margin: 0;
