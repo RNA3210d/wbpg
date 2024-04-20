@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RPi-TELEBOT</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="wpg.css" rel="stylesheet">
+<link href="page4.css" rel="stylesheet">
+<script src="wb.cookie.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var Progressbar1 = document.querySelector('#Progressbar1 .progress-bar');
+   var Progressbar1_observer = new window.ResizeObserver(entries => 
+   {
+      var val = Math.round(((entries[0].target.clientWidth/entries[0].target.offsetParent.clientWidth)*100));
+      entries[0].target.innerText = val + '%';
+      entries[0].target.setAttribute('aria-valuenow', val);
+   });
+   Progressbar1_observer.observe(Progressbar1);
+   window.addEventListener('scroll', function(event)
+   {
+      var bounding = Progressbar1.getBoundingClientRect();
+      var top = bounding.top*100/window.innerHeight;
+      var bottom = bounding.bottom*100/window.innerHeight;
+      if (top >= 0 && bottom <= 100)
+      {
+         Progressbar1.style.width = '100%';
+      }
+   });
+   window.dispatchEvent(new CustomEvent('scroll'));
+   if (hasCookie('darktheme'))
+   {
+      document.documentElement.classList.add('darktheme');
+   }
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+</head>
+<body>
+<div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Text1">
+<span style="color:#77893E;">Is this life? Is it real?</span></div>
+<div id="wb_Image1">
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<div id="wb_Text2">
+<span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
+</div>
+</div>
+
+<div id="Layer3">
+<div id="wb_FlexContainer1">
+<div id="FlexContainer1">
+<hr id="Line1">
+<div id="wb_Heading1">
+<h1 id="Heading1">Daily Driver Laptop</h1>
+</div>
+<hr id="Line2">
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading3">
+<h2 id="Heading3">Summary</h2>
+</div>
+<div id="wb_Text7">
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">Python based Telegram bot to monitor and control headless Raspberry Pi servers.</span>
+</div>
+<a id="Button1" href="https://github.com/RNA3210d/RPi-TELEBOT">Source</a>
+<div id="wb_Heading2">
+<h2 id="Heading2">Languages:</h2>
+</div>
+<div id="wb_Text3">
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">Python:</span>
+</div>
+<div id="Progressbar1">
+   <div class="progress-bar" role="progressbar" aria-valuenow="0" title="100%" aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image4">
+<img src="images/snip1.png" id="Image4" alt="" width="600" height="478">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="preloader"></div>
+</body>
+</html>

@@ -202,6 +202,10 @@ body
 }
 #Button2
 {
+   box-sizing: border-box;
+   line-height: 27px;
+   text-decoration: none;
+   vertical-align: top;
    border: 1px solid #454744;
    border-radius: 3px;
    background-color: #454744;
@@ -1775,6 +1779,10 @@ body
    margin: 0;
    padding: 0;
 }
+#Button2
+{
+   line-height: 27px;
+}
 #Button3
 {
    width: 96px;
@@ -2144,6 +2152,25 @@ body
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: center;
+}
+#Heading2
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 16px;
+   text-align: center;
 }
 #wb_Shape5
 {
@@ -2546,6 +2573,10 @@ body
    margin: 0;
    padding: 0;
 }
+#Button2
+{
+   line-height: 27px;
+}
 #Button3
 {
    width: 96px;
@@ -2916,6 +2947,25 @@ body
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: center;
+}
+#Heading2
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 16px;
+   text-align: center;
 }
 #wb_Shape5
 {
