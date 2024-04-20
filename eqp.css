@@ -174,6 +174,10 @@ body
 }
 #Button1
 {
+   box-sizing: border-box;
+   line-height: 27px;
+   text-decoration: none;
+   vertical-align: top;
    border: 1px solid #454744;
    border-radius: 3px;
    background-color: #454744;
@@ -234,6 +238,10 @@ body
 }
 #Button3
 {
+   box-sizing: border-box;
+   line-height: 27px;
+   text-decoration: none;
+   vertical-align: top;
    border: 1px solid #454744;
    border-radius: 3px;
    background-color: #454744;
@@ -262,6 +270,10 @@ body
 }
 #Button5
 {
+   box-sizing: border-box;
+   line-height: 27px;
+   text-decoration: none;
+   vertical-align: top;
    border: 1px solid #454744;
    border-radius: 3px;
    background-color: #454744;
@@ -1422,7 +1434,7 @@ body
 {
    position: absolute;
    left: 0px;
-   top: 11px;
+   top: 12px;
    width: 122px;
    height: 74px;
    z-index: 1;
@@ -1770,6 +1782,10 @@ body
    margin: 0;
    padding: 0;
 }
+#Button1
+{
+   line-height: 27px;
+}
 #Button2
 {
    width: 96px;
@@ -1792,6 +1808,10 @@ body
    margin: 0;
    padding: 0;
 }
+#Button3
+{
+   line-height: 27px;
+}
 #Button5
 {
    width: 96px;
@@ -1800,6 +1820,10 @@ body
    display: inline-block;
    margin: 0;
    padding: 0;
+}
+#Button5
+{
+   line-height: 27px;
 }
 #Layer3
 {
@@ -2284,6 +2308,25 @@ body
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Heading5
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: center;
+}
+#Heading5
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 16px;
+   text-align: center;
 }
 #wb_Shape8
 {
@@ -2564,6 +2607,10 @@ body
    margin: 0;
    padding: 0;
 }
+#Button1
+{
+   line-height: 27px;
+}
 #Button2
 {
    width: 96px;
@@ -2586,6 +2633,10 @@ body
    margin: 0;
    padding: 0;
 }
+#Button3
+{
+   line-height: 27px;
+}
 #Button5
 {
    width: 96px;
@@ -2594,6 +2645,10 @@ body
    display: inline-block;
    margin: 0;
    padding: 0;
+}
+#Button5
+{
+   line-height: 27px;
 }
 #Layer3
 {
@@ -3084,6 +3139,25 @@ body
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Heading5
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: center;
+}
+#Heading5
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 16px;
+   text-align: center;
 }
 #wb_Shape8
 {

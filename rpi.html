@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RPi-TELEBOT</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="wpg.css" rel="stylesheet">
+<link href="rpi.css" rel="stylesheet">
+<script src="wb.cookie.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   if (hasCookie('darktheme'))
+   {
+      document.documentElement.classList.add('darktheme');
+   }
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+</head>
+<body>
+<div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Text1">
+<span style="color:#77893E;">Is this life? Is it real?</span></div>
+<div id="wb_Image1">
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<div id="wb_Text2">
+<span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
+</div>
+</div>
+
+<div id="Layer3">
+<div id="wb_FlexContainer1">
+<div id="FlexContainer1">
+<hr id="Line1">
+<div id="wb_Heading1">
+<h1 id="Heading1">Backup Server</h1>
+</div>
+<hr id="Line2">
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading2">
+<h2 id="Heading2">Host:</h2>
+</div>
+<div id="wb_Image2">
+<img src="images/emepld10sl.jpg" id="Image2" alt="" width="570" height="480">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Heading4">
+<h2 id="Heading4">INXI log:</h2>
+</div>
+<textarea name="TextArea1" id="TextArea1" rows="25" cols="60" readonly spellcheck="false">System:
+  Kernel: 6.1.21-v8+ arch: aarch64 bits: 64 compiler: N/A
+    parameters: coherent_pool=1M 8250.nr_uarts=0 snd_bcm2835.enable_headphones=0
+    snd_bcm2835.enable_headphones=0 snd_bcm2835.enable_hdmi=0
+    bcm2708_fb.fbwidth=720 bcm2708_fb.fbheight=480 bcm2708_fb.fbdepth=16
+    bcm2708_fb.fbswap=1 vc_mem.mem_base=0x3f000000 vc_mem.mem_size=0x3f600000
+    root=PARTUUID=e68d129d-02 rootfstype=ext4 rootwait net.ifnames=0
+    logo.nologo console=tty1
+  Console: pty pts/0 Distro: Debian GNU/Linux 12 (bookworm)
+Machine:
+  Type: ARM System: Raspberry Pi 3 Model B Rev 1.2 details: BCM2835 rev: a02082
+    serial: <filter>
+CPU:
+  Info: model: N/A variant: cortex-a53 bits: 64 type: MCP arch: ARMv8 family: 8
+    model-id: 0 stepping: 4
+  Topology: cpus: 1x cores: 4 smt: N/A cache: L1: 256 KiB
+    desc: d-4x32 KiB; i-4x32 KiB L2: 512 KiB desc: 1x512 KiB
+  Speed (MHz): avg: 1200 min/max: 600/1200 scaling: driver: cpufreq-dt
+    governor: schedutil cores: 1: 1200 2: 1200 3: 1200 4: 1200 bogomips: N/A
+  Features: Use -f option to see features
+  Vulnerabilities:
+  Type: itlb_multihit status: Not affected
+  Type: l1tf status: Not affected
+  Type: mds status: Not affected
+  Type: meltdown status: Not affected
+  Type: mmio_stale_data status: Not affected
+  Type: retbleed status: Not affected
+  Type: spec_store_bypass status: Not affected
+  Type: spectre_v1 mitigation: __user pointer sanitization
+  Type: spectre_v2 status: Not affected
+  Type: srbds status: Not affected
+  Type: tsx_async_abort status: Not affected
+Graphics:
+  Device-1: bcm2708-fb driver: N/A bus-ID: N/A chip-ID: brcm:soc class-ID: fb
+  Device-2: bcm2835-hdmi driver: N/A bus-ID: N/A chip-ID: brcm:soc
+    class-ID: hdmi
+  Display: server: No display server data found. Headless machine?
+    tty: 120x50
+  API: OpenGL Message: GL data unavailable in console. Try -G --display
+Audio:
+  Device-1: bcm2835-hdmi driver: N/A bus-ID: N/A chip-ID: brcm:soc
+    class-ID: hdmi
+Network:
+  Device-1: bcm2835-sdhci driver: N/A port: N/A bus-ID: N/A chip-ID: brcm:soc
+    class-ID: mmcnr
+  IF: eth0 state: up speed: 100 Mbps duplex: full mac: <filter>
+  Device-2: Microchip (formerly SMSC) SMSC9512/9514 Fast Ethernet Adapter
+    type: USB driver: smsc95xx bus-ID: 1-1.1:3 chip-ID: 0424:ec00 class-ID: ff00
+  IF: eth0 state: up speed: 100 Mbps duplex: full mac: <filter>
+Bluetooth:
+  Device-1: pl011 driver: uart_pl011 bus-ID: N/A chip-ID: arm:3f201000
+    class-ID: serial
+  Report: hciconfig ID: hci0 rfk-id: 0 state: up address: <filter> bt-v: 2.1
+    lmp-v: 4.1 sub-v: 2209 hci-v: 4.1 rev: 1fc
+  Info: acl-mtu: 1021:8 sco-mtu: 64:1 link-policy: rswitch sniff
+    link-mode: peripheral accept
+Drives:
+  Local Storage: total: 29.72 GiB used: 1.22 GiB (4.1%)
+  ID-1: /dev/mmcblk0 maj-min: 179:0 vendor: SanDisk model: SC32G
+    size: 29.72 GiB block-size: physical: 512 B logical: 512 B type: SSD
+    serial: <filter> scheme: MBR
+  SMART Message: Unknown smartctl error. Unable to generate data.
+Partition:
+  ID-1: / raw-size: 29.6 GiB size: 29.11 GiB (98.36%) used: 1.19 GiB (4.1%)
+    fs: ext4 dev: /dev/mmcblk0p2 maj-min: 179:2
+  ID-2: /boot raw-size: 128 MiB size: 127 MiB (99.21%) used: 32 MiB (25.2%)
+    fs: vfat dev: /dev/mmcblk0p1 maj-min: 179:1
+Swap:
+  Alert: No swap data was found.
+Sensors:
+  System Temperatures: cpu: 45.1 C mobo: N/A
+  Fan Speeds (RPM): N/A
+Info:
+  Processes: 103 Uptime: 12h 23m Memory: 959.5 MiB used: 125.9 MiB (13.1%)
+  Init: systemd v: 252 target: graphical (5) default: graphical tool: systemctl
+  Compilers: N/A Packages: pm: dpkg pkgs: 443 libs: 258 tools: apt,apt-get
+  Shell: Bash v: 5.2.15 running-in: pty pts/0 (SSH) inxi: 3.3.26</textarea>
+<a id="Button1" href="https://linux-hardware.org/?probe=0022401c37">HW Probe link</a>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer6">
+<div id="wb_footer">
+<div id="footer">
+<div id="wb_Icon5">
+<a href="./index.html" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon5"><i class="fa fa-home"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+<div id="preloader"></div>
+</body>
+</html>

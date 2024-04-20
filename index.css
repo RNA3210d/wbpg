@@ -22,7 +22,7 @@ body
 }
 #preloader
 {
-   background: #FFFFFF url("images/pulsate.gif") no-repeat center center;
+   background: #FFFFFF url("images/rotating-dots.gif") no-repeat center center;
    bottom: 0;
    position: fixed;
    top: 0;
@@ -1445,9 +1445,13 @@ body
 }
 #Button1
 {
+   box-sizing: border-box;
+   line-height: 41px;
+   text-decoration: none;
+   vertical-align: top;
    border: 0px dotted #FFFFFF;
    border-radius: 6px;
-   background-image: linear-gradient(to top, #959595 0%, #0D0D0D 46%, #010101 50%, #0A0A0A 52%, #4E4E4E 76%, #383838 87%, #1B1B1B 100%);
+   background-image: linear-gradient(to top, #CCCCFF 0%, #9ACCFF 17%, #9966FF 36%, #CB9AFF 58%, #A4CCFF 81%, #CCCCFF 100%);
    color: #FFFFFF;
    cursor: pointer;
    font-family: Arial;
@@ -1578,6 +1582,32 @@ body
    font-style: normal;
    font-size: 21px;
 }
+#wb_FlexContainer4
+{
+   background-image: linear-gradient(to top, #6B3CFC 0%, #000000 100%);
+   border: 0px solid #6B3CFC;
+   border-radius: 16px;
+   box-sizing: border-box;
+   position: relative;
+}
+#FlexContainer4
+{
+   display: flex;
+   position: relative;
+   padding: 25px 25px 25px 25px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   align-content: flex-start;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 3000px;
+   box-sizing: border-box;
+   font-size: 0;
+}
 #wb_links
 {
    clear: both;
@@ -1657,32 +1687,6 @@ body
    max-width: 100% !important;
 }
 }
-#wb_FlexContainer4
-{
-   background-image: linear-gradient(to top, #6B3CFC 0%, #000000 100%);
-   border: 0px solid #6B3CFC;
-   border-radius: 4px;
-   box-sizing: border-box;
-   position: relative;
-}
-#FlexContainer4
-{
-   display: flex;
-   position: relative;
-   padding: 25px 25px 25px 25px;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: flex-start;
-   align-items: center;
-   align-content: flex-start;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 3000px;
-   box-sizing: border-box;
-   font-size: 0;
-}
 #Button4
 {
    position: absolute;
@@ -1699,7 +1703,7 @@ body
    top: 6px;
    width: 1170px;
    height: 187px;
-   z-index: 44;
+   z-index: 42;
 }
 #wb_Icon6
 {
@@ -1741,7 +1745,7 @@ body
 {
    position: absolute;
    left: 0px;
-   top: 11px;
+   top: 12px;
    width: 122px;
    height: 74px;
    z-index: 1;
@@ -1767,7 +1771,7 @@ body
    top: 8px;
    width: 1169px;
    height: 182px;
-   z-index: 42;
+   z-index: 43;
 }
 #Line5
 {
@@ -2071,7 +2075,7 @@ body
    top: 6px;
    width: 1169px;
    height: 184px;
-   z-index: 43;
+   z-index: 44;
 }
 #Layer5
 {
@@ -3026,6 +3030,10 @@ body
    margin: 0;
    padding: 1px 6px 1px 6px;
 }
+#Button1
+{
+   line-height: 26px;
+}
 #Button3
 {
    left: 379px;
@@ -3112,6 +3120,23 @@ body
 {
    text-align: left;
 }
+#wb_FlexContainer4
+{
+   visibility: visible;
+   display: block;
+}
+#FlexContainer4
+{
+   min-height: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 25px 25px 25px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   align-content: flex-start;
+}
 #wb_links
 {
    visibility: visible;
@@ -3156,23 +3181,6 @@ body
    align-items: flex-start;
    justify-content: flex-start;
    text-align: left;
-}
-#wb_FlexContainer4
-{
-   visibility: visible;
-   display: block;
-}
-#FlexContainer4
-{
-   min-height: 0;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 25px 25px 25px 25px;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: flex-start;
-   align-items: center;
-   align-content: flex-start;
 }
 }
 @media only screen and (max-width: 479px)
@@ -4108,6 +4116,10 @@ body
    margin: 0;
    padding: 1px 6px 1px 6px;
 }
+#Button1
+{
+   line-height: 33px;
+}
 #Button3
 {
    left: 228px;
@@ -4194,6 +4206,23 @@ body
 {
    text-align: left;
 }
+#wb_FlexContainer4
+{
+   visibility: visible;
+   display: block;
+}
+#FlexContainer4
+{
+   min-height: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 25px 25px 25px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   align-content: flex-start;
+}
 #wb_links
 {
    visibility: visible;
@@ -4236,23 +4265,6 @@ body
    align-items: flex-start;
    justify-content: flex-start;
    text-align: left;
-}
-#wb_FlexContainer4
-{
-   visibility: visible;
-   display: block;
-}
-#FlexContainer4
-{
-   min-height: 0;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 25px 25px 25px 25px;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: flex-start;
-   align-items: center;
-   align-content: flex-start;
 }
 }
 .darktheme body

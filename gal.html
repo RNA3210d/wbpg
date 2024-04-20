@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="wpg.css" rel="stylesheet">
+<link href="gal.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="wb.cookie.min.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   if (hasCookie('darktheme'))
+   {
+      document.documentElement.classList.add('darktheme');
+   }
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $('#Layer3').addClass('visibility-hidden');
+   function onScrollLayer3()
+   {
+      var $obj = $("#Layer3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer3', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer3').inViewPort(true))
+   {
+      $('#Layer3').addClass("in-viewport");
+   }
+   onScrollLayer3();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer3();
+   });
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $("#PhotoGallery1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+</head>
+<body>
+<div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Text1">
+<span style="color:#77893E;">Is this life? Is it real?</span></div>
+<div id="wb_Image1">
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<div id="wb_Text2">
+<span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
+</div>
+</div>
+
+<div id="Layer3">
+<div id="wb_FlexContainer1">
+<div id="FlexContainer1">
+<hr id="Line1">
+<div id="wb_Heading1">
+<h1 id="Heading1">Gallery</h1>
+</div>
+<hr id="Line2">
+</div>
+</div>
+</div>
+<div id="Layer4">
+<div id="wb_PhotoGallery1">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/Picture1.png" data-rel="" title="One of the best Rangolis spotted at Telephone Colony during Sankranthi Festival"><img alt="" src="images/tn_Picture1.png" loading="lazy" class="image" title="One of the best Rangolis spotted at Telephone Colony during Sankranthi Festival" width="394" height="341"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/IMG_2024-01-23-17-15-18-449.jpg" data-rel="" title="Near Sanjeeviah Park Rly. Station."><img alt="" src="images/tn_IMG_2024-01-23-17-15-18-449.jpg" loading="lazy" class="image" title="Near Sanjeeviah Park Rly. Station." width="394" height="296"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/IMG_20240419_173000955[1].jpg" data-rel=""><img alt="" src="images/tn_IMG_20240419_173000955[1].jpg" loading="lazy" class="image" width="394" height="296"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="images/IMG_20240419_200013216[1].jpg" data-rel=""><img alt="" src="images/tn_IMG_20240419_200013216[1].jpg" loading="lazy" class="image" width="394" height="296"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/IMG_20240416_064013011_HDR[1].jpg" data-rel=""><img alt="" src="images/tn_IMG_20240416_064013011_HDR[1].jpg" loading="lazy" class="image" width="394" height="296"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="IMG_20240410_145353112_HDR.jpeg" data-rel=""><img alt="" src="tn_IMG_20240410_145353112_HDR.jpg" loading="lazy" class="image" width="394" height="525"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="images/IMG_20240410_151508260_HDR.jpg" data-rel=""><img alt="" src="images/tn_IMG_20240410_151508260_HDR.jpg" loading="lazy" class="image" width="394" height="296"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/IMG_20240410_151519290_HDR.jpg" data-rel=""><img alt="" src="images/tn_IMG_20240410_151519290_HDR.jpg" loading="lazy" class="image" width="394" height="296"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/IMG_20240411_092658491_HDR.jpg" data-rel=""><img alt="" src="images/tn_IMG_20240411_092658491_HDR.jpg" loading="lazy" class="image" width="394" height="296"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="images/SHA_20240406_123159_blossom_64bit_gcam_config.jpg" data-rel=""><img alt="" src="images/tn_SHA_20240406_123159_blossom_64bit_gcam_config.jpg" loading="lazy" class="image" width="394" height="525"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+   </div>
+</div>
+</div>
+</div>
+<div id="preloader"></div>
+</body>
+</html>

@@ -599,6 +599,97 @@ body
 {
    display: block;
 }
+#Layer6
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+   margin: 0;
+}
+#wb_Icon5
+{
+   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
+   border: 2px solid #FFFFFF;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0 10px 0 0 ;
+   padding: 10px 10px 10px 10px;
+   vertical-align: top;
+   flex-grow: 0;
+   flex-shrink: 0;
+   align-self: auto;
+}
+#wb_Icon5 a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
+#wb_Icon5:hover
+{
+   background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
+   border: 2px solid #FFFFFF;
+}
+#Icon5
+{
+   height: 16px;
+   width: 16px;
+}
+#Icon5 i
+{
+   color: #FFFFFF;
+   display: inline-block;
+   font-size: 16px;
+   line-height: 16px;
+   vertical-align: middle;
+   width: 15px;
+}
+#wb_Icon5:hover #Icon5 i
+{
+   color: #13A89E;
+}
+#wb_Icon5
+{
+   transform: rotate(0deg) ;
+   transition: transform 500ms linear 0ms;
+}
+#wb_Icon5:hover
+{
+   transform: rotate(360deg) ;
+   transition: transform 500ms linear 0ms;
+}
+#wb_footer
+{
+   background-image: linear-gradient(to top, #6B3CFC 0%, #000000 100%);
+   border: 0px solid #6B3CFC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   position: relative;
+}
+#footer
+{
+   display: flex;
+   position: relative;
+   height: 53px;
+   padding: 25px 25px 25px 25px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 3000px;
+   box-sizing: border-box;
+   font-size: 0;
+}
 #Button4
 {
    position: absolute;
@@ -608,11 +699,22 @@ body
    height: 24px;
    z-index: 3;
 }
+#Layer6
+{
+   position: relative;
+   text-align: left;
+   width: 100%;
+   height: 68px;
+   float: left;
+   clear: left;
+   display: block;
+   z-index: 29;
+}
 #wb_Image1
 {
    position: absolute;
    left: 0px;
-   top: 11px;
+   top: 12px;
    width: 122px;
    height: 74px;
    z-index: 1;
@@ -623,6 +725,14 @@ body
    width: 137px;
    height: 47px;
    z-index: 14;
+}
+#wb_Icon5
+{
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   text-align: center;
+   z-index: 23;
 }
 #wb_PhotoGallery1
 {
@@ -713,7 +823,7 @@ body
    width: 100%;
    height: 100%;
    float: left;
-   z-index: 24;
+   z-index: 27;
 }
 #Layer1_Container
 {
@@ -1073,6 +1183,64 @@ body
 {
    display: block;
 }
+#Layer6
+{
+   width: 480px;
+   height: 66px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#Layer6
+{
+   left: 0%;
+   margin: 0;
+}
+#Layer6
+{
+    width: 100%;
+    height: 66px;
+}
+#wb_Icon5
+{
+   width: 16px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   margin: 0 10px 0 0 ;
+   flex-grow: 0;
+   flex-shrink: 0;
+   align-self: auto;
+   padding: 10px 10px 10px 10px;
+}
+#Icon5
+{
+   width: 16px;
+   height: 16px;
+}
+#Icon5 i
+{
+   line-height: 16px;
+   font-size: 16px;
+   width: 15px;
+}
+#wb_footer
+{
+   visibility: visible;
+   display: block;
+}
+#footer
+{
+   height: 0px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 25px 25px 25px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
 }
 @media only screen and (max-width: 479px)
 {
@@ -1424,6 +1592,64 @@ body
 {
    display: block;
 }
+#Layer6
+{
+   width: 320px;
+   height: 67px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#Layer6
+{
+   left: 0%;
+   margin: 0;
+}
+#Layer6
+{
+    width: 100%;
+    height: 67px;
+}
+#wb_Icon5
+{
+   width: 16px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   margin: 0 10px 0 0 ;
+   flex-grow: 0;
+   flex-shrink: 0;
+   align-self: auto;
+   padding: 10px 10px 10px 10px;
+}
+#Icon5
+{
+   width: 16px;
+   height: 16px;
+}
+#Icon5 i
+{
+   line-height: 16px;
+   font-size: 16px;
+   width: 15px;
+}
+#wb_footer
+{
+   visibility: visible;
+   display: block;
+}
+#footer
+{
+   height: 0px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 25px 25px 25px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
 }
 .darktheme body
 {
@@ -1440,7 +1666,8 @@ body
 .darktheme #Progressbar2,
 .darktheme #Button1,
 .darktheme #wb_Text6,
-.darktheme #Progressbar3
+.darktheme #Progressbar3,
+.darktheme #Layer6
 {
    filter: invert(100%);
 }
