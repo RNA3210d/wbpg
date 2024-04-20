@@ -115,36 +115,6 @@ body
 {
    display: inline-flex;
 }
-#wb_FlexContainer1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   border-radius: 0px;
-   box-sizing: border-box;
-   position: relative;
-   width: 100%;
-}
-#FlexContainer1
-{
-   display: flex;
-   position: relative;
-   padding: 25px 15px 25px 15px;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: space-around;
-   align-items: center;
-   align-content: flex-start;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 320px;
-   background-color: transparent;
-   background-image: none;
-   box-sizing: border-box;
-   font-size: 0;
-}
 #Line1
 {
    border-color: #1ABC9C;
@@ -200,6 +170,36 @@ body
    flex-grow: 1;
    flex-shrink: 0;
    align-self: auto;
+}
+#wb_FlexContainer1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   position: relative;
+   width: 100%;
+}
+#FlexContainer1
+{
+   display: flex;
+   position: relative;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: flex-start;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 320px;
+   background-color: transparent;
+   background-image: none;
+   box-sizing: border-box;
+   font-size: 0;
 }
 #wb_LayoutGrid4
 {
@@ -279,26 +279,6 @@ body
    float: none;
    width: 100%;
 }
-}
-#wb_Image4
-{
-   margin: 15px 0 15px 0 ;
-   vertical-align: top;
-}
-#Image4
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   box-sizing: border-box;
-   padding: 0;
-   filter: drop-shadow(1px 1px 10px rgba(23,64,109,1.00));
-   display: block;
-   width: 100%;
-   height: auto;
-   max-width: 600px;
-   margin-left: auto;
-   margin-right: auto;
-   vertical-align: top;
 }
 #wb_Heading3
 {
@@ -424,6 +404,65 @@ body
    box-sizing: border-box;
    width: 100%;
 }
+#wb_Text4 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0 0 15px 0 ;
+   text-align: justify;
+}
+#wb_Text4 div
+{
+   text-align: justify;
+}
+#wb_Text4
+{
+   display: block;
+   margin: 0 0 15px 0 ;
+   box-sizing: border-box;
+   width: 100%;
+}
+#Progressbar2
+{
+   margin: 0;
+   position: relative;
+}
+#Progressbar2
+{
+   background-color: #FCFDFD;
+   background-image: none;
+   border: 1px solid #A6C9E2;
+   border-radius: 6px;
+   overflow: hidden;
+}
+#Progressbar2 .progress-bar
+{
+   animation: 1s linear infinite Progressbar2-animation;
+   background-color: #2191C0;
+   background-image: linear-gradient(45deg, rgba(219,239,249,0.16) 25%, transparent 25%, transparent 50%, rgba(219,239,249,0.16) 50%, rgba(219,239,249,0.16) 75%, transparent 75%, transparent);
+   background-size: 1rem 1rem;
+   color: #EAF5F7;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-size: 20px;
+   font-style: normal;
+   display: flex;
+   flex-direction: column;
+   width: 0%;
+   height: 100%;
+   justify-content: center;
+   overflow: hidden;
+   text-align: center;
+   transition: width 1500ms ease;
+   white-space: nowrap;
+}
+@keyframes Progressbar2-animation
+{
+   0% { background-position-x: 1rem; }
+}
 #Button1
 {
    box-sizing: border-box;
@@ -448,6 +487,117 @@ body
 #Button1:focus
 {
    outline: 0;
+}
+#wb_Text6 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0 0 15px 0 ;
+   text-align: justify;
+}
+#wb_Text6 div
+{
+   text-align: justify;
+}
+#wb_Text6
+{
+   display: block;
+   margin: 0 0 15px 0 ;
+   box-sizing: border-box;
+   width: 100%;
+}
+#Progressbar3
+{
+   margin: 0;
+   position: relative;
+}
+#Progressbar3
+{
+   background-color: #FCFDFD;
+   background-image: none;
+   border: 1px solid #A6C9E2;
+   border-radius: 6px;
+   overflow: hidden;
+}
+#Progressbar3 .progress-bar
+{
+   animation: 1s linear infinite Progressbar3-animation;
+   background-color: #2191C0;
+   background-image: linear-gradient(45deg, rgba(219,239,249,0.16) 25%, transparent 25%, transparent 50%, rgba(219,239,249,0.16) 50%, rgba(219,239,249,0.16) 75%, transparent 75%, transparent);
+   background-size: 1rem 1rem;
+   color: #EAF5F7;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-size: 20px;
+   font-style: normal;
+   display: flex;
+   flex-direction: column;
+   width: 0%;
+   height: 100%;
+   justify-content: center;
+   overflow: hidden;
+   text-align: center;
+   transition: width 1500ms ease;
+   white-space: nowrap;
+}
+@keyframes Progressbar3-animation
+{
+   0% { background-position-x: 1rem; }
+}
+#PhotoGallery1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   width: 100%;
+   height: 100%;
+   table-layout: fixed;
+   display: table;
+   margin: 0;
+}
+#PhotoGallery1 .thumbnails
+{
+   margin: 0;
+}
+#PhotoGallery1 .thumbnail
+{
+   position: relative;
+   min-height: 1px;
+   box-sizing: border-box;
+   float: left;
+   padding: 3px 3px 3px 3px;
+   width: 50%;
+   text-align: center;
+   vertical-align: top;
+}
+#PhotoGallery1 .thumbnail img
+{
+   border: 0px #000000 solid;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 100%;
+   box-sizing: border-box;
+   border-radius: 0px;
+}
+#PhotoGallery1 .clearfix:before,
+#PhotoGallery1 .clearfix:after,
+#PhotoGallery1 .thumbnails:before,
+#PhotoGallery1 .thumbnails:after
+{
+   display: table;
+   content: " ";
+}
+#PhotoGallery1 .clearfix:after,
+#PhotoGallery1 .thumbnails:after
+{
+   clear: both;
+}
+#PhotoGallery1 .visible-col2
+{
+   display: block;
 }
 #Button4
 {
@@ -474,12 +624,11 @@ body
    height: 47px;
    z-index: 14;
 }
-#wb_Image4
+#wb_PhotoGallery1
 {
    display: inline-block;
    width: 100%;
-   height: auto;
-   z-index: 18;
+   z-index: 22;
 }
 #Line1
 {
@@ -493,6 +642,20 @@ body
    width: 249px;
    height: 27px;
    z-index: 0;
+}
+#Progressbar3
+{
+   display: block;
+   width: 100%;
+   height: 37px;
+   z-index: 21;
+}
+#Progressbar2
+{
+   display: block;
+   width: 100%;
+   height: 37px;
+   z-index: 19;
 }
 #Progressbar1
 {
@@ -550,7 +713,7 @@ body
    width: 100%;
    height: 100%;
    float: left;
-   z-index: 20;
+   z-index: 24;
 }
 #Layer1_Container
 {
@@ -678,24 +841,6 @@ body
 {
    padding: 0;
 }
-#wb_FlexContainer1
-{
-   width: 100%;
-   visibility: visible;
-   display: block;
-}
-#FlexContainer1
-{
-   min-height: 0;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 25px 15px 25px 15px;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: space-around;
-   align-items: center;
-   align-content: flex-start;
-}
 #Line1
 {
    width: auto;
@@ -715,7 +860,7 @@ body
 #wb_Heading1
 {
    width: 165px;
-   height: 29px;
+   height: 87px;
    visibility: visible;
    display: inline;
    margin: 0;
@@ -739,6 +884,24 @@ body
 {
    border-color: #1ABC9C;
    border-bottom-width: 3px;
+}
+#wb_FlexContainer1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+}
+#FlexContainer1
+{
+   min-height: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: flex-start;
 }
 #wb_LayoutGrid4
 {
@@ -781,14 +944,6 @@ body
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    text-align: center;
-}
-#wb_Image4
-{
-   width: 100%;
-   visibility: visible;
-   display: block;
-   margin: 15px 0 15px 0 ;
-   padding: 0;
 }
 #wb_Heading3
 {
@@ -853,6 +1008,24 @@ body
    margin: 0 0 15px 0 ;
    padding: 0;
 }
+#wb_Text4
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text4
+{
+   margin: 0 0 15px 0 ;
+   padding: 0;
+}
+#Progressbar2
+{
+   width: 100%;
+   height: 48px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
 #Button1
 {
    width: 137px;
@@ -865,6 +1038,39 @@ body
 #Button1
 {
    line-height: 43px;
+}
+#wb_Text6
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text6
+{
+   margin: 0 0 15px 0 ;
+   padding: 0;
+}
+#Progressbar3
+{
+   width: 100%;
+   height: 48px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#wb_PhotoGallery1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#PhotoGallery1 .thumbnail
+{
+   width: 50%;
+}
+#PhotoGallery1 .visible-col2
+{
+   display: block;
 }
 }
 @media only screen and (max-width: 479px)
@@ -985,24 +1191,6 @@ body
 {
    padding: 0;
 }
-#wb_FlexContainer1
-{
-   width: 100%;
-   visibility: visible;
-   display: block;
-}
-#FlexContainer1
-{
-   min-height: 0;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 25px 15px 25px 15px;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   align-items: flex-start;
-   align-content: center;
-}
 #Line1
 {
    width: auto;
@@ -1022,7 +1210,7 @@ body
 #wb_Heading1
 {
    width: 165px;
-   height: 29px;
+   height: 87px;
    visibility: visible;
    display: inline;
    margin: 0;
@@ -1046,6 +1234,24 @@ body
 {
    border-color: #1ABC9C;
    border-bottom-width: 3px;
+}
+#wb_FlexContainer1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+}
+#FlexContainer1
+{
+   min-height: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: flex-start;
+   align-content: center;
 }
 #wb_LayoutGrid4
 {
@@ -1088,14 +1294,6 @@ body
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    text-align: center;
-}
-#wb_Image4
-{
-   width: 100%;
-   visibility: visible;
-   display: block;
-   margin: 15px 0 15px 0 ;
-   padding: 0;
 }
 #wb_Heading3
 {
@@ -1160,6 +1358,24 @@ body
    margin: 0 0 15px 0 ;
    padding: 0;
 }
+#wb_Text4
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text4
+{
+   margin: 0 0 15px 0 ;
+   padding: 0;
+}
+#Progressbar2
+{
+   width: 100%;
+   height: 40px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
 #Button1
 {
    width: 137px;
@@ -1173,6 +1389,39 @@ body
 {
    line-height: 43px;
 }
+#wb_Text6
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text6
+{
+   margin: 0 0 15px 0 ;
+   padding: 0;
+}
+#Progressbar3
+{
+   width: 100%;
+   height: 36px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#wb_PhotoGallery1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#PhotoGallery1 .thumbnail
+{
+   width: 50%;
+}
+#PhotoGallery1 .visible-col2
+{
+   display: block;
+}
 }
 .darktheme body
 {
@@ -1185,7 +1434,11 @@ body
 .darktheme #wb_Heading2,
 .darktheme #Progressbar1,
 .darktheme #wb_Text3,
-.darktheme #Button1
+.darktheme #wb_Text4,
+.darktheme #Progressbar2,
+.darktheme #Button1,
+.darktheme #wb_Text6,
+.darktheme #Progressbar3
 {
    filter: invert(100%);
 }

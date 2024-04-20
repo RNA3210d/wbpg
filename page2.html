@@ -6,7 +6,7 @@
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="wpg.css" rel="stylesheet">
-<link href="page1.css" rel="stylesheet">
+<link href="page2.css" rel="stylesheet">
 <script src="wb.cookie.min.js"></script>
 <script src="jquery-3.6.0.min.js"></script>
 <script>
@@ -27,7 +27,26 @@ document.addEventListener('DOMContentLoaded', function(event)
       var bottom = bounding.bottom*100/window.innerHeight;
       if (top >= 0 && bottom <= 100)
       {
-         Progressbar1.style.width = '100%';
+         Progressbar1.style.width = '83%';
+      }
+   });
+   window.dispatchEvent(new CustomEvent('scroll'));
+   var Progressbar2 = document.querySelector('#Progressbar2 .progress-bar');
+   var Progressbar2_observer = new window.ResizeObserver(entries => 
+   {
+      var val = Math.round(((entries[0].target.clientWidth/entries[0].target.offsetParent.clientWidth)*100));
+      entries[0].target.innerText = val + '%';
+      entries[0].target.setAttribute('aria-valuenow', val);
+   });
+   Progressbar2_observer.observe(Progressbar2);
+   window.addEventListener('scroll', function(event)
+   {
+      var bounding = Progressbar2.getBoundingClientRect();
+      var top = bounding.top*100/window.innerHeight;
+      var bottom = bounding.bottom*100/window.innerHeight;
+      if (top >= 0 && bottom <= 100)
+      {
+         Progressbar2.style.width = '17%';
       }
    });
    window.dispatchEvent(new CustomEvent('scroll'));
@@ -66,7 +85,7 @@ $(window).on('load', function()
 <div id="FlexContainer1">
 <hr id="Line1">
 <div id="wb_Heading1">
-<h1 id="Heading1">RPi-TELEBOT</h1>
+<h1 id="Heading1">Buck and Boost Converter Designer</h1>
 </div>
 <hr id="Line2">
 </div>
@@ -77,25 +96,46 @@ $(window).on('load', function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Heading3">
-<h2 id="Heading3">Summary</h2>
+<h2 id="Heading3">Summary:</h2>
 </div>
 <div id="wb_Text7">
-<span style="color:#000000;font-family:'Exo 2';font-size:19px;">Python based Telegram bot to monitor and control headless Raspberry Pi servers.</span>
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">Buck and boost converter designer built with Qt Framework .</span>
 </div>
-<a id="Button1" href="https://github.com/RNA3210d/RPi-TELEBOT">Source</a>
+<a id="Button2" href="https://github.com/Cubesat-EPS-Project/project_driver/releases/download/v1.0.1/v1.zip">Download</a>
+<a id="Button1" href="https://github.com/Cubesat-EPS-Project/project_driver">Source</a>
 <div id="wb_Heading2">
 <h2 id="Heading2">Languages:</h2>
 </div>
 <div id="wb_Text3">
-<span style="color:#000000;font-family:'Exo 2';font-size:19px;">Python:</span>
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">C++:</span>
 </div>
 <div id="Progressbar1">
-   <div class="progress-bar" role="progressbar" aria-valuenow="0" title="100%" aria-valuemin="0" aria-valuemax="100">0%</div>
+   <div class="progress-bar" role="progressbar" aria-valuenow="0" title="83%" aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">CMake:</span>
+</div>
+<div id="Progressbar2">
+   <div class="progress-bar" role="progressbar" aria-valuenow="0" title="17%" aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+<div id="wb_Heading4">
+<h2 id="Heading4">Notes:</h2>
+</div>
+<div id="wb_Text5">
+<ul style="list-style-type:disc;">
+<li style="margin:0 0 0 24px;">Buck-boost pending
+</li>
+<li style="margin:0 0 0 24px;">Voltage&nbsp;ripple suggestion pending
+</li>
+<li style="margin:0 0 0 24px;">ONLY INDUCTOR DESIGN WORKS!!
+</li>
+</ul>
+<p style="font-family:Arial;font-size:181px;line-height:194px;">&nbsp;</p>
 </div>
 </div>
 <div class="col-2">
 <div id="wb_Image4">
-<img src="images/snip1.png" id="Image4" alt="" width="600" height="478">
+<img src="images/Picture1.png" id="Image4" alt="" width="600" height="754">
 </div>
 </div>
 </div>

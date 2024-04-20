@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RPi-TELEBOT</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="wpg.css" rel="stylesheet">
+<link href="page3.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="wb.cookie.min.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var Progressbar1 = document.querySelector('#Progressbar1 .progress-bar');
+   var Progressbar1_observer = new window.ResizeObserver(entries => 
+   {
+      var val = Math.round(((entries[0].target.clientWidth/entries[0].target.offsetParent.clientWidth)*100));
+      entries[0].target.innerText = val + '%';
+      entries[0].target.setAttribute('aria-valuenow', val);
+   });
+   Progressbar1_observer.observe(Progressbar1);
+   window.addEventListener('scroll', function(event)
+   {
+      var bounding = Progressbar1.getBoundingClientRect();
+      var top = bounding.top*100/window.innerHeight;
+      var bottom = bounding.bottom*100/window.innerHeight;
+      if (top >= 0 && bottom <= 100)
+      {
+         Progressbar1.style.width = '79%';
+      }
+   });
+   window.dispatchEvent(new CustomEvent('scroll'));
+   var Progressbar2 = document.querySelector('#Progressbar2 .progress-bar');
+   var Progressbar2_observer = new window.ResizeObserver(entries => 
+   {
+      var val = Math.round(((entries[0].target.clientWidth/entries[0].target.offsetParent.clientWidth)*100));
+      entries[0].target.innerText = val + '%';
+      entries[0].target.setAttribute('aria-valuenow', val);
+   });
+   Progressbar2_observer.observe(Progressbar2);
+   window.addEventListener('scroll', function(event)
+   {
+      var bounding = Progressbar2.getBoundingClientRect();
+      var top = bounding.top*100/window.innerHeight;
+      var bottom = bounding.bottom*100/window.innerHeight;
+      if (top >= 0 && bottom <= 100)
+      {
+         Progressbar2.style.width = '12%';
+      }
+   });
+   window.dispatchEvent(new CustomEvent('scroll'));
+   var Progressbar3 = document.querySelector('#Progressbar3 .progress-bar');
+   var Progressbar3_observer = new window.ResizeObserver(entries => 
+   {
+      var val = Math.round(((entries[0].target.clientWidth/entries[0].target.offsetParent.clientWidth)*100));
+      entries[0].target.innerText = val + '%';
+      entries[0].target.setAttribute('aria-valuenow', val);
+   });
+   Progressbar3_observer.observe(Progressbar3);
+   window.addEventListener('scroll', function(event)
+   {
+      var bounding = Progressbar3.getBoundingClientRect();
+      var top = bounding.top*100/window.innerHeight;
+      var bottom = bounding.bottom*100/window.innerHeight;
+      if (top >= 0 && bottom <= 100)
+      {
+         Progressbar3.style.width = '9%';
+      }
+   });
+   window.dispatchEvent(new CustomEvent('scroll'));
+   if (hasCookie('darktheme'))
+   {
+      document.documentElement.classList.add('darktheme');
+   }
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $("#PhotoGallery1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+</head>
+<body>
+<div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Text1">
+<span style="color:#77893E;">Is this life? Is it real?</span></div>
+<div id="wb_Image1">
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<div id="wb_Text2">
+<span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
+</div>
+</div>
+
+<div id="Layer3">
+<div id="wb_FlexContainer1">
+<div id="FlexContainer1">
+<hr id="Line1">
+<div id="wb_Heading1">
+<h1 id="Heading1">Buck and Boost Converter Designer</h1>
+</div>
+<hr id="Line2">
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading3">
+<h2 id="Heading3">Summary:</h2>
+</div>
+<div id="wb_Text7">
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">Qt browser with some random stuff </span>
+</div>
+<a id="Button1" href="https://github.com/RNA3210d/Qt-webengineview-browser">Source</a>
+<div id="wb_Heading2">
+<h2 id="Heading2">Languages:</h2>
+</div>
+<div id="wb_Text3">
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">C++:</span>
+</div>
+<div id="Progressbar1">
+   <div class="progress-bar" role="progressbar" aria-valuenow="0" title="79%" aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">QMake:</span>
+</div>
+<div id="Progressbar2">
+   <div class="progress-bar" role="progressbar" aria-valuenow="0" title="12%" aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+<div id="wb_Text6">
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">QML:</span>
+</div>
+<div id="Progressbar3">
+   <div class="progress-bar" role="progressbar" aria-valuenow="0" title="9%" aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_PhotoGallery1">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/1.png" data-rel="" title="1"><img alt="" src="images/tn_1.png" loading="lazy" class="image" title="1" width="279" height="185"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/2.png" data-rel="" title="2"><img alt="" src="images/tn_2.png" loading="lazy" class="image" title="2" width="279" height="151"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+      <div class="thumbnail">
+         <a href="images/3.png" data-rel="" title="3"><img alt="" src="images/tn_3.png" loading="lazy" class="image" title="3" width="279" height="188"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/4.png" data-rel="" title="4"><img alt="" src="images/tn_4.png" loading="lazy" class="image" title="4" width="279" height="188"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="preloader"></div>
+</body>
+</html>

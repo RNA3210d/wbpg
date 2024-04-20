@@ -115,36 +115,6 @@ body
 {
    display: inline-flex;
 }
-#wb_FlexContainer1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   border-radius: 0px;
-   box-sizing: border-box;
-   position: relative;
-   width: 100%;
-}
-#FlexContainer1
-{
-   display: flex;
-   position: relative;
-   padding: 25px 15px 25px 15px;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: space-around;
-   align-items: center;
-   align-content: flex-start;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 320px;
-   background-color: transparent;
-   background-image: none;
-   box-sizing: border-box;
-   font-size: 0;
-}
 #Line1
 {
    border-color: #1ABC9C;
@@ -200,6 +170,36 @@ body
    flex-grow: 1;
    flex-shrink: 0;
    align-self: auto;
+}
+#wb_FlexContainer1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   position: relative;
+   width: 100%;
+}
+#FlexContainer1
+{
+   display: flex;
+   position: relative;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: flex-start;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 320px;
+   background-color: transparent;
+   background-image: none;
+   box-sizing: border-box;
+   font-size: 0;
 }
 #wb_LayoutGrid4
 {
@@ -291,7 +291,7 @@ body
    border-radius: 0px;
    box-sizing: border-box;
    padding: 0;
-   filter: drop-shadow(1px 1px 10px rgba(23,64,109,1.00));
+   filter: drop-shadow(1px 1px 10px rgba(36,0,192,1.00));
    display: block;
    width: 100%;
    height: auto;
@@ -424,6 +424,117 @@ body
    box-sizing: border-box;
    width: 100%;
 }
+#wb_Text4 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0 0 15px 0 ;
+   text-align: justify;
+}
+#wb_Text4 div
+{
+   text-align: justify;
+}
+#wb_Text4
+{
+   display: block;
+   margin: 0 0 15px 0 ;
+   box-sizing: border-box;
+   width: 100%;
+}
+#Progressbar2
+{
+   margin: 0;
+   position: relative;
+}
+#Progressbar2
+{
+   background-color: #FCFDFD;
+   background-image: none;
+   border: 1px solid #A6C9E2;
+   border-radius: 6px;
+   overflow: hidden;
+}
+#Progressbar2 .progress-bar
+{
+   animation: 1s linear infinite Progressbar2-animation;
+   background-color: #2191C0;
+   background-image: linear-gradient(45deg, rgba(219,239,249,0.16) 25%, transparent 25%, transparent 50%, rgba(219,239,249,0.16) 50%, rgba(219,239,249,0.16) 75%, transparent 75%, transparent);
+   background-size: 1rem 1rem;
+   color: #EAF5F7;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-size: 20px;
+   font-style: normal;
+   display: flex;
+   flex-direction: column;
+   width: 0%;
+   height: 100%;
+   justify-content: center;
+   overflow: hidden;
+   text-align: center;
+   transition: width 1500ms ease;
+   white-space: nowrap;
+}
+@keyframes Progressbar2-animation
+{
+   0% { background-position-x: 1rem; }
+}
+#wb_Heading4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 15px 0 15px 0 ;
+   padding: 0;
+   text-align: center;
+}
+#Heading4
+{
+   color: #454545;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 32px;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text5 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0 0 15px 0 ;
+   text-align: justify;
+}
+#wb_Text5
+{
+   color: #000000;
+   font-family: "Exo 2";
+   font-weight: 400;
+   font-size: 19px;
+   line-height: 27.5px;
+}
+#wb_Text5 p, #wb_Text5 ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text5
+{
+   display: block;
+   margin: 0 0 15px 0 ;
+   box-sizing: border-box;
+   width: 100%;
+}
 #Button1
 {
    box-sizing: border-box;
@@ -449,6 +560,31 @@ body
 {
    outline: 0;
 }
+#Button2
+{
+   box-sizing: border-box;
+   line-height: 43px;
+   text-decoration: none;
+   vertical-align: top;
+   border: 1px solid #2E6DA4;
+   border-radius: 4px;
+   background-image: linear-gradient(to top, #3370B7 0%, #000000 100%);
+   color: #FFFFFF;
+   box-shadow: 1px 1px 15px #0F6FC6;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 20px;
+   padding: 1px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+}
+#Button2:focus
+{
+   outline: 0;
+}
 #Button4
 {
    position: absolute;
@@ -467,19 +603,26 @@ body
    height: 74px;
    z-index: 1;
 }
-#Button1
+#Button2
 {
    display: inline-block;
    width: 137px;
    height: 47px;
    z-index: 14;
 }
+#Button1
+{
+   display: inline-block;
+   width: 137px;
+   height: 47px;
+   z-index: 15;
+}
 #wb_Image4
 {
    display: inline-block;
    width: 100%;
    height: auto;
-   z-index: 18;
+   z-index: 23;
 }
 #Line1
 {
@@ -494,12 +637,25 @@ body
    height: 27px;
    z-index: 0;
 }
+#wb_Heading4
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 21;
+}
+#Progressbar2
+{
+   display: block;
+   width: 100%;
+   height: 37px;
+   z-index: 20;
+}
 #Progressbar1
 {
    display: block;
    width: 100%;
    height: 37px;
-   z-index: 17;
+   z-index: 18;
 }
 #wb_Text2
 {
@@ -518,7 +674,7 @@ body
 {
    display: inline-block;
    width: 100%;
-   z-index: 15;
+   z-index: 16;
 }
 #wb_Heading3
 {
@@ -550,7 +706,7 @@ body
    width: 100%;
    height: 100%;
    float: left;
-   z-index: 20;
+   z-index: 25;
 }
 #Layer1_Container
 {
@@ -678,24 +834,6 @@ body
 {
    padding: 0;
 }
-#wb_FlexContainer1
-{
-   width: 100%;
-   visibility: visible;
-   display: block;
-}
-#FlexContainer1
-{
-   min-height: 0;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 25px 15px 25px 15px;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: space-around;
-   align-items: center;
-   align-content: flex-start;
-}
 #Line1
 {
    width: auto;
@@ -715,7 +853,7 @@ body
 #wb_Heading1
 {
    width: 165px;
-   height: 29px;
+   height: 87px;
    visibility: visible;
    display: inline;
    margin: 0;
@@ -739,6 +877,24 @@ body
 {
    border-color: #1ABC9C;
    border-bottom-width: 3px;
+}
+#wb_FlexContainer1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+}
+#FlexContainer1
+{
+   min-height: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: flex-start;
 }
 #wb_LayoutGrid4
 {
@@ -853,6 +1009,42 @@ body
    margin: 0 0 15px 0 ;
    padding: 0;
 }
+#wb_Text4
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text4
+{
+   margin: 0 0 15px 0 ;
+   padding: 0;
+}
+#Progressbar2
+{
+   width: 100%;
+   height: 48px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#wb_Heading4
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 15px 0 15px 0 ;
+   padding: 0;
+}
+#wb_Text5
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text5
+{
+   margin: 0 0 15px 0 ;
+   padding: 0;
+}
 #Button1
 {
    width: 137px;
@@ -863,6 +1055,19 @@ body
    padding: 1px 6px 1px 6px;
 }
 #Button1
+{
+   line-height: 43px;
+}
+#Button2
+{
+   width: 137px;
+   height: 47px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+}
+#Button2
 {
    line-height: 43px;
 }
@@ -985,24 +1190,6 @@ body
 {
    padding: 0;
 }
-#wb_FlexContainer1
-{
-   width: 100%;
-   visibility: visible;
-   display: block;
-}
-#FlexContainer1
-{
-   min-height: 0;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 25px 15px 25px 15px;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   align-items: flex-start;
-   align-content: center;
-}
 #Line1
 {
    width: auto;
@@ -1022,7 +1209,7 @@ body
 #wb_Heading1
 {
    width: 165px;
-   height: 29px;
+   height: 87px;
    visibility: visible;
    display: inline;
    margin: 0;
@@ -1046,6 +1233,24 @@ body
 {
    border-color: #1ABC9C;
    border-bottom-width: 3px;
+}
+#wb_FlexContainer1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+}
+#FlexContainer1
+{
+   min-height: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: flex-start;
+   align-content: center;
 }
 #wb_LayoutGrid4
 {
@@ -1160,6 +1365,42 @@ body
    margin: 0 0 15px 0 ;
    padding: 0;
 }
+#wb_Text4
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text4
+{
+   margin: 0 0 15px 0 ;
+   padding: 0;
+}
+#Progressbar2
+{
+   width: 100%;
+   height: 40px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#wb_Heading4
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 15px 0 15px 0 ;
+   padding: 0;
+}
+#wb_Text5
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text5
+{
+   margin: 0 0 15px 0 ;
+   padding: 0;
+}
 #Button1
 {
    width: 137px;
@@ -1170,6 +1411,19 @@ body
    padding: 1px 6px 1px 6px;
 }
 #Button1
+{
+   line-height: 43px;
+}
+#Button2
+{
+   width: 137px;
+   height: 47px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+}
+#Button2
 {
    line-height: 43px;
 }
@@ -1185,7 +1439,12 @@ body
 .darktheme #wb_Heading2,
 .darktheme #Progressbar1,
 .darktheme #wb_Text3,
-.darktheme #Button1
+.darktheme #wb_Text4,
+.darktheme #Progressbar2,
+.darktheme #wb_Heading4,
+.darktheme #wb_Text5,
+.darktheme #Button1,
+.darktheme #Button2
 {
    filter: invert(100%);
 }
