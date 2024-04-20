@@ -8,6 +8,8 @@
 <link href="wpg.css" rel="stylesheet">
 <link href="mastuh.css" rel="stylesheet">
 <script src="wb.cookie.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="wwb18.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
@@ -15,6 +17,36 @@ document.addEventListener('DOMContentLoaded', function(event)
    {
       document.documentElement.classList.add('darktheme');
    }
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $('#Layer1').addClass('visibility-hidden');
+   function onScrollLayer1()
+   {
+      var $obj = $("#Layer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer1', 'slide-down-in', 0, 750);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer1').inViewPort(true))
+   {
+      $('#Layer1').addClass("in-viewport");
+   }
+   onScrollLayer1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer1();
+   });
 });
 </script>
 </head>

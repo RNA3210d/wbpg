@@ -41,7 +41,32 @@ $(document).ready(function()
    $('#Button2').addClass('visibility-hidden');
    $('#Button1').addClass('visibility-hidden');
    $('#Button3').addClass('visibility-hidden');
+   $('#wb_Card8').addClass('visibility-hidden');
    $('#wb_links').addClass('visibility-hidden');
+   function onScrollLayer1()
+   {
+      var $obj = $("#Layer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer1', 'slide-down-in', 0, 750);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer1').inViewPort(true))
+   {
+      $('#Layer1').addClass("in-viewport");
+   }
+   onScrollLayer1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer1();
+   });
    $("#RollOverLayer4").hover(function(e)
    {
       $("#RollOverLayer4 .default").hide('blind', {easing: 'easeInSine', direction: 'horizontal'}, 1007);
@@ -323,6 +348,30 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollButton3();
+   });
+   function onScrollCard8()
+   {
+      var $obj = $("#wb_Card8");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card8', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card8', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card8').inViewPort(true))
+   {
+      $('#wb_Card8').addClass("in-viewport");
+   }
+   onScrollCard8();
+   $(window).scroll(function(event)
+   {
+      onScrollCard8();
    });
    function onScrolllinks()
    {

@@ -5,6 +5,7 @@
 <title>Untitled Page</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
 <link href="wpg.css" rel="stylesheet">
 <link href="gal.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
@@ -25,6 +26,30 @@ document.addEventListener('DOMContentLoaded', function(event)
 $(document).ready(function()
 {
    $('#Layer3').addClass('visibility-hidden');
+   function onScrollLayer1()
+   {
+      var $obj = $("#Layer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer1', 'slide-down-in', 0, 750);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer1').inViewPort(true))
+   {
+      $('#Layer1').addClass("in-viewport");
+   }
+   onScrollLayer1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer1();
+   });
    function onScrollLayer3()
    {
       var $obj = $("#Layer3");
@@ -75,6 +100,15 @@ $(window).on('load', function()
 <div id="Layer3">
 <div id="wb_FlexContainer1">
 <div id="FlexContainer1">
+<div id="wb_Icon2">
+<a href="./index.html" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon2"><i class="fa fa-home"></i></div></a>
+</div>
+<div id="wb_Icon1">
+<a href="./index.html" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon1"><i class="fa fa-home"></i></div></a>
+</div>
+<div id="wb_Icon5">
+<a href="./index.html" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon5"><i class="fa fa-home"></i></div></a>
+</div>
 <hr id="Line1">
 <div id="wb_Heading1">
 <h1 id="Heading1">Gallery</h1>

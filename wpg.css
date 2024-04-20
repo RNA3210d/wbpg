@@ -24,6 +24,11 @@
    75% { opacity: 0;  }
    100% { opacity: 1;  }
 }
+@keyframes slide-down-in
+{
+   0% { transform: translate(0px,-100%) rotate(1deg) ; opacity: 0; transform-origin: 0 0;  }
+   100% { opacity: 1; transform: translate(0px,0px) rotate(0deg) ; transform-origin: 0 0;  }
+}
 @keyframes swoop-in
 {
    0% { transform: translate(-400px,0px) rotate(0deg) scale(1.5,1) ; opacity: 0;  }
