@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Tunes</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="wpg.css" rel="stylesheet">
+<link href="prodn.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="jquery.ui.tabs.rotate.min.js"></script>
+<script src="wb.cookie.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   if (hasCookie('darktheme'))
+   {
+      document.documentElement.classList.add('darktheme');
+   }
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $('#Tabs1').addClass('visibility-hidden');
+   $('#wb_FlexContainer2').addClass('visibility-hidden');
+   $('#Tabs2').addClass('visibility-hidden');
+   $('#wb_FlexContainer3').addClass('visibility-hidden');
+   function onScrollLayer1()
+   {
+      var $obj = $("#Layer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer1', 'slide-down-in', 0, 750);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer1').inViewPort(true))
+   {
+      $('#Layer1').addClass("in-viewport");
+   }
+   onScrollLayer1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer1();
+   });
+   $("#Tabs1").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: true
+   }).find(".ui-tabs-nav").sortable();
+   $("#Tabs1").tabs('rotate', 3997, false);
+   $("#Tabs1").on('tabsactivate', function(event, ui)
+   {
+      var indexNew = $(this).find('li').index(ui.newTab);
+      switch(indexNew)
+      {
+      }
+   });
+   function onScrollTabs1()
+   {
+      var $obj = $("#Tabs1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Tabs1', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Tabs1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Tabs1').inViewPort(true))
+   {
+      $('#Tabs1').addClass("in-viewport");
+   }
+   onScrollTabs1();
+   $(window).scroll(function(event)
+   {
+      onScrollTabs1();
+   });
+   function onScrollFlexContainer2()
+   {
+      var $obj = $("#wb_FlexContainer2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FlexContainer2', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_FlexContainer2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_FlexContainer2').inViewPort(true))
+   {
+      $('#wb_FlexContainer2').addClass("in-viewport");
+   }
+   onScrollFlexContainer2();
+   $(window).scroll(function(event)
+   {
+      onScrollFlexContainer2();
+   });
+   $("#Tabs2").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: true
+   }).find(".ui-tabs-nav").sortable();
+   $("#Tabs2").tabs('rotate', 4000, false);
+   $("#Tabs2").on('tabsactivate', function(event, ui)
+   {
+      var indexNew = $(this).find('li').index(ui.newTab);
+      switch(indexNew)
+      {
+      }
+   });
+   function onScrollTabs2()
+   {
+      var $obj = $("#Tabs2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Tabs2', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Tabs2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Tabs2').inViewPort(true))
+   {
+      $('#Tabs2').addClass("in-viewport");
+   }
+   onScrollTabs2();
+   $(window).scroll(function(event)
+   {
+      onScrollTabs2();
+   });
+   function onScrollFlexContainer3()
+   {
+      var $obj = $("#wb_FlexContainer3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FlexContainer3', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_FlexContainer3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_FlexContainer3').inViewPort(true))
+   {
+      $('#wb_FlexContainer3').addClass("in-viewport");
+   }
+   onScrollFlexContainer3();
+   $(window).scroll(function(event)
+   {
+      onScrollFlexContainer3();
+   });
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+</head>
+<body>
+<div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Text1">
+<span style="color:#77893E;">Is this life? Is it real?</span></div>
+<div id="wb_Image1">
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<div id="wb_Text2">
+<span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
+</div>
+</div>
+<div id="container">
+
+</div>
+<div id="Layer2">
+<div id="wb_FlexContainer2">
+<div id="FlexContainer2">
+<hr id="Line3">
+<div id="wb_Heading3">
+<h1 id="Heading3">OC Tunes</h1>
+</div>
+<hr id="Line4">
+</div>
+</div>
+<div id="Tabs1">
+<ul>
+<li role="presentation"><a href="#tabs1-page-1"><span><i class="fa fa-music tabs-icon"></i><br>Unsent Letters</span></a></li>
+<li role="presentation"><a href="#tabs1-page-2"><span><i class="fa fa-music tabs-icon"></i><br>Underground</span></a></li>
+</ul>
+<div id="tabs1-page-1">
+<div id="Html9">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1207053490&color=%2300ff4e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rna3210d" title="DropMix" target="_blank" style="color: #cccccc; text-decoration: none;">DropMix</a> · <a href="https://soundcloud.com/rna3210d/no-id" title="Unsent Letters" target="_blank" style="color: #cccccc; text-decoration: none;">Unsent Letters</a></div>
+</div>
+</div>
+<div id="tabs1-page-2">
+<div id="Html10">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1053468433&color=%2300ff4e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rna3210d" title="DropMix" target="_blank" style="color: #cccccc; text-decoration: none;">DropMix</a> · <a href="https://soundcloud.com/rna3210d/underground" title="Underground" target="_blank" style="color: #cccccc; text-decoration: none;">Underground</a></div>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer3">
+<div id="wb_FlexContainer3">
+<div id="FlexContainer3">
+<hr id="Line5">
+<div id="wb_Heading4">
+<h1 id="Heading4">Remixes</h1>
+</div>
+<hr id="Line6">
+</div>
+</div>
+<div id="Tabs2">
+<ul>
+<li role="presentation"><a href="#tabs2-page-1"><span><i class="fa fa-music tabs-icon"></i><br></span></a></li>
+<li role="presentation"><a href="#tabs2-page-2"><span><i class="fa fa-music tabs-icon"></i><br></span></a></li>
+<li role="presentation"><a href="#tabs2-page-3"><span><i class="fa fa-music tabs-icon"></i><br></span></a></li>
+<li role="presentation"><a href="#tabs2-page-4"><span><i class="fa fa-music tabs-icon"></i><br></span></a></li>
+<li role="presentation"><a href="#tabs2-page-5"><span><i class="fa fa-music tabs-icon"></i><br></span></a></li>
+</ul>
+<div id="tabs2-page-1">
+<div id="Html3">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1065647689&color=%2300ff4e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rna3210d" title="DropMix" target="_blank" style="color: #cccccc; text-decoration: none;">DropMix</a> · <a href="https://soundcloud.com/rna3210d/nobody-compares-to-you-dropmixz-edit" title="Gryffin - Nobody Compares To You ft. Katie Pearlman [DropMix Rework]" target="_blank" style="color: #cccccc; text-decoration: none;">Gryffin - Nobody Compares To You ft. Katie Pearlman [DropMix Rework]</a></div></div>
+</div>
+<div id="tabs2-page-2">
+<div id="Html1">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1399927549&color=%2300ff4e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rna3210d" title="DropMix" target="_blank" style="color: #cccccc; text-decoration: none;">DropMix</a> · <a href="https://soundcloud.com/rna3210d/all-you-need-to-know" title="Gryffin, SLANDER, Calle Lehmann - All You Need To Know [DropMix Rework]" target="_blank" style="color: #cccccc; text-decoration: none;">Gryffin, SLANDER, Calle Lehmann - All You Need To Know [DropMix Rework]</a></div></div>
+</div>
+<div id="tabs2-page-3">
+<div id="Html2">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1387469197&color=%2300ff4e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rna3210d" title="DropMix" target="_blank" style="color: #cccccc; text-decoration: none;">DropMix</a> · <a href="https://soundcloud.com/rna3210d/blackpink" title="BLACKPINK - Ready for Love [DropMix Rework]" target="_blank" style="color: #cccccc; text-decoration: none;">BLACKPINK - Ready for Love [DropMix Rework]</a></div></div>
+</div>
+<div id="tabs2-page-4">
+<div id="Html4">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1169705755&color=%2300ff4e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rna3210d" title="DropMix" target="_blank" style="color: #cccccc; text-decoration: none;">DropMix</a> · <a href="https://soundcloud.com/rna3210d/sadwm-2" title="WALK THE MOON - Shut Up and Dance [DropMix Rework]" target="_blank" style="color: #cccccc; text-decoration: none;">WALK THE MOON - Shut Up and Dance [DropMix Rework]</a></div></div>
+</div>
+<div id="tabs2-page-5">
+<div id="Html5">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1123305439&color=%2300ff4e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rna3210d" title="DropMix" target="_blank" style="color: #cccccc; text-decoration: none;">DropMix</a> · <a href="https://soundcloud.com/rna3210d/deep-blue-something-breakfast-at-tiffanys-1995-dropmix-rework" title="Deep Blue Something - Breakfast at Tiffany&#x27;s [DropMix Rework]" target="_blank" style="color: #cccccc; text-decoration: none;">Deep Blue Something - Breakfast at Tiffany&#x27;s [DropMix Rework]</a></div></div>
+</div>
+</div>
+</div>
+<div id="Layer6">
+<div id="wb_footer">
+<div id="footer">
+<div id="wb_Icon5">
+<a href="./index.html" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon5"><i class="fa fa-home"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+<div id="preloader"></div>
+</body>
+</html>

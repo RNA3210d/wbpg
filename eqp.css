@@ -230,12 +230,6 @@ body
 {
    outline: 0;
 }
-#Button2:hover
-{
-   background-color: #47A447;
-   border-color: #3E923E;
-   transition: background-color 500ms linear 0ms, border-color 500ms linear 0ms;
-}
 #Button3
 {
    box-sizing: border-box;

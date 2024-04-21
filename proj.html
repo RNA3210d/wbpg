@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', function(event)
 <script>
 $(document).ready(function()
 {
+   $('#wb_Card7').addClass('visibility-hidden');
+   $('#wb_Card1').addClass('visibility-hidden');
+   $('#wb_Card2').addClass('visibility-hidden');
    function onScrollLayer1()
    {
       var $obj = $("#Layer1");
@@ -60,6 +63,78 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollLayer1();
+   });
+   function onScrollCard7()
+   {
+      var $obj = $("#wb_Card7");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card7', 'transform-scale-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card7', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card7').inViewPort(true))
+   {
+      $('#wb_Card7').addClass("in-viewport");
+   }
+   onScrollCard7();
+   $(window).scroll(function(event)
+   {
+      onScrollCard7();
+   });
+   function onScrollCard1()
+   {
+      var $obj = $("#wb_Card1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card1', 'transform-scale-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card1').inViewPort(true))
+   {
+      $('#wb_Card1').addClass("in-viewport");
+   }
+   onScrollCard1();
+   $(window).scroll(function(event)
+   {
+      onScrollCard1();
+   });
+   function onScrollCard2()
+   {
+      var $obj = $("#wb_Card2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card2', 'transform-scale-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card2').inViewPort(true))
+   {
+      $('#wb_Card2').addClass("in-viewport");
+   }
+   onScrollCard2();
+   $(window).scroll(function(event)
+   {
+      onScrollCard2();
    });
 });
 </script>
