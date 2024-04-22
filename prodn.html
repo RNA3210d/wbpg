@@ -30,6 +30,12 @@ $(document).ready(function()
    $('#wb_FlexContainer2').addClass('visibility-hidden');
    $('#Tabs2').addClass('visibility-hidden');
    $('#wb_FlexContainer3').addClass('visibility-hidden');
+   $('#wb_FlexContainer1').addClass('visibility-hidden');
+   $('#wb_MediaPlayer1').addClass('visibility-hidden');
+   $('#wb_MediaPlayer2').addClass('visibility-hidden');
+   $('#wb_MediaPlayer3').addClass('visibility-hidden');
+   $('#wb_MediaPlayer4').addClass('visibility-hidden');
+   $('#wb_MediaPlayer5').addClass('visibility-hidden');
    function onScrollLayer1()
    {
       var $obj = $("#Layer1");
@@ -180,6 +186,150 @@ $(document).ready(function()
    {
       onScrollFlexContainer3();
    });
+   function onScrollFlexContainer1()
+   {
+      var $obj = $("#wb_FlexContainer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_FlexContainer1', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_FlexContainer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_FlexContainer1').inViewPort(true))
+   {
+      $('#wb_FlexContainer1').addClass("in-viewport");
+   }
+   onScrollFlexContainer1();
+   $(window).scroll(function(event)
+   {
+      onScrollFlexContainer1();
+   });
+   function onScrollMediaPlayer1()
+   {
+      var $obj = $("#wb_MediaPlayer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_MediaPlayer1', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_MediaPlayer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_MediaPlayer1').inViewPort(true))
+   {
+      $('#wb_MediaPlayer1').addClass("in-viewport");
+   }
+   onScrollMediaPlayer1();
+   $(window).scroll(function(event)
+   {
+      onScrollMediaPlayer1();
+   });
+   function onScrollMediaPlayer2()
+   {
+      var $obj = $("#wb_MediaPlayer2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_MediaPlayer2', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_MediaPlayer2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_MediaPlayer2').inViewPort(true))
+   {
+      $('#wb_MediaPlayer2').addClass("in-viewport");
+   }
+   onScrollMediaPlayer2();
+   $(window).scroll(function(event)
+   {
+      onScrollMediaPlayer2();
+   });
+   function onScrollMediaPlayer3()
+   {
+      var $obj = $("#wb_MediaPlayer3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_MediaPlayer3', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_MediaPlayer3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_MediaPlayer3').inViewPort(true))
+   {
+      $('#wb_MediaPlayer3').addClass("in-viewport");
+   }
+   onScrollMediaPlayer3();
+   $(window).scroll(function(event)
+   {
+      onScrollMediaPlayer3();
+   });
+   function onScrollMediaPlayer4()
+   {
+      var $obj = $("#wb_MediaPlayer4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_MediaPlayer4', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_MediaPlayer4', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_MediaPlayer4').inViewPort(true))
+   {
+      $('#wb_MediaPlayer4').addClass("in-viewport");
+   }
+   onScrollMediaPlayer4();
+   $(window).scroll(function(event)
+   {
+      onScrollMediaPlayer4();
+   });
+   function onScrollMediaPlayer5()
+   {
+      var $obj = $("#wb_MediaPlayer5");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_MediaPlayer5', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_MediaPlayer5', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_MediaPlayer5').inViewPort(true))
+   {
+      $('#wb_MediaPlayer5').addClass("in-viewport");
+   }
+   onScrollMediaPlayer5();
+   $(window).scroll(function(event)
+   {
+      onScrollMediaPlayer5();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -270,13 +420,65 @@ $(window).on('load', function()
 </div>
 </div>
 </div>
-<div id="Layer6">
-<div id="wb_footer">
-<div id="footer">
-<div id="wb_Icon5">
-<a href="./index.html" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon5"><i class="fa fa-home"></i></div></a>
+<div id="Layer4">
+<div id="wb_FlexContainer1">
+<div id="FlexContainer1">
+<hr id="Line1">
+<div id="wb_Heading1">
+<h1 id="Heading1">Unreleased and VIP Remixes</h1>
+</div>
+<hr id="Line2">
 </div>
 </div>
+<div id="wb_Text3">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Bruno Mars - Just the way you are (10/2021 edit)</span>
+</div>
+<div id="wb_MediaPlayer1">
+<audio id="MediaPlayer1" autoplay controls>
+<source src="">
+<source src="just the way.ogg" type="audio/ogg">
+</audio>
+
+</div>
+<div id="wb_Text4">
+<span style="color:#000000;font-family:Arial;font-size:13px;">melody1_3.wav (last worked on 07/2022)</span>
+</div>
+<div id="wb_MediaPlayer2">
+<audio id="MediaPlayer2" autoplay controls>
+<source src="">
+<source src="mld1.3.ogg" type="audio/ogg">
+</audio>
+
+</div>
+<div id="wb_Text6">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Gryffin - Nobody Compares To You ft. Katie Pearlman [DropMix Rework] - Instrumental Mix</span>
+</div>
+<div id="wb_MediaPlayer4">
+<audio id="MediaPlayer4" autoplay controls>
+<source src="">
+<source src="ncty inst.ogg" type="audio/ogg">
+</audio>
+
+</div>
+<div id="wb_Text5">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Adele - Rolling in the Deep (DropMix Rework Vocal Mix) - Unreleased</span>
+</div>
+<div id="wb_MediaPlayer3">
+<audio id="MediaPlayer3" autoplay controls>
+<source src="">
+<source src="rollin.ogg" type="audio/ogg">
+</audio>
+
+</div>
+<div id="wb_Text7">
+<span style="color:#000000;font-family:Arial;font-size:13px;">The Weeknd - Save Your Tears [DropMix Rework] - (Render 4)</span>
+</div>
+<div id="wb_MediaPlayer5">
+<audio id="MediaPlayer5" autoplay controls>
+<source src="">
+<source src="save.ogg" type="audio/ogg">
+</audio>
+
 </div>
 </div>
 <div id="preloader"></div>
