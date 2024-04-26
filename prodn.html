@@ -11,7 +11,6 @@
 <link href="prodn.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
 <script src="jquery-ui.min.js"></script>
-<script src="jquery.ui.tabs.rotate.min.js"></script>
 <script src="wb.cookie.min.js"></script>
 <script src="wwb18.min.js"></script>
 <script>
@@ -67,7 +66,6 @@ $(document).ready(function()
       event: 'click',
       collapsible: true
    }).find(".ui-tabs-nav").sortable();
-   $("#Tabs1").tabs('rotate', 3997, false);
    $("#Tabs1").on('tabsactivate', function(event, ui)
    {
       var indexNew = $(this).find('li').index(ui.newTab);
@@ -130,7 +128,6 @@ $(document).ready(function()
       event: 'click',
       collapsible: true
    }).find(".ui-tabs-nav").sortable();
-   $("#Tabs2").tabs('rotate', 4000, false);
    $("#Tabs2").on('tabsactivate', function(event, ui)
    {
       var indexNew = $(this).find('li').index(ui.newTab);
@@ -345,9 +342,9 @@ $(window).on('load', function()
 <span style="color:#77893E;">Is this life? Is it real?</span></div>
 <div id="wb_Image1">
 <a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
 <div id="wb_Text2">
 <span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
-<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
 </div>
 </div>
 <div id="container">
@@ -461,7 +458,7 @@ $(window).on('load', function()
 
 </div>
 <div id="wb_Text5">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Adele - Rolling in the Deep (DropMix Rework Vocal Mix) - Unreleased</span>
+<span style="color:#000000;font-family:Arial;font-size:13px;">Adele - Rolling in the Deep (DropMix Rework Vocal Mix) - Unreleased (Starts at 1:30)</span>
 </div>
 <div id="wb_MediaPlayer3">
 <audio id="MediaPlayer3" autoplay controls>

@@ -68,6 +68,26 @@ body
 {
    text-align: left;
 }
+#Button4
+{
+   border: 1px solid #2E6DA4;
+   border-radius: 4px;
+   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   padding: 1px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+}
+#Button4:focus
+{
+   outline: 0;
+}
 #wb_Text2 
 {
    background-color: transparent;
@@ -88,26 +108,6 @@ body
 #wb_Text2 div
 {
    text-align: left;
-}
-#Button4
-{
-   border: 1px solid #2E6DA4;
-   border-radius: 4px;
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
-   color: #FFFFFF;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
-   padding: 1px 6px 1px 6px;
-   text-align: center;
-   -webkit-appearance: none;
-   margin: 0;
-}
-}
-#Button4:focus
-{
-   outline: 0;
 }
 #Layer2
 {

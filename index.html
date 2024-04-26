@@ -5,13 +5,14 @@
 <title>Home</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="ui-lightness/jquery-ui.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
 <link href="wpg.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
 <script src="wb.parallax.min.js"></script>
 <script src="jquery-ui.min.js"></script>
+<script src="jscookmenu.min.js"></script>
 <script src="wb.cookie.min.js"></script>
 <link rel="stylesheet" href="glight/css/glightbox.min.css">
 <link rel="stylesheet" href="glight/css/plyr.css">
@@ -29,6 +30,33 @@ function searchPage(features)
    $('#SiteSearch1-dialog').dialog('option', 'position', 'center');
    return false;
 }
+</script>
+<script>
+var cmMenuBar1 =
+{
+   mainFolderLeft: '',
+   mainFolderRight: '',
+   mainItemLeft: '',
+   mainItemRight: '',
+   folderLeft: '',
+   folderRight: '',
+   itemLeft: '',
+   itemRight: '',
+   mainSpacing: 0,
+   subSpacing: 0,
+   delay: 100,
+   offsetHMainAdjust: [0, 0],
+   offsetSubAdjust: [0, 0]
+};
+var cmMenuBar1HSplit = [_cmNoClick, '<td class="MenuBar1MenuSplitLeft"><div></div></td>' +
+                                    '<td class="MenuBar1MenuSplitText"><div></div></td>' +
+                                    '<td class="MenuBar1MenuSplitRight"><div></div></td>'];
+var cmMenuBar1MainVSplit = [_cmNoClick, '<div><table width="17" cellspacing="0"><tr><td class="MenuBar1HorizontalSplit">|</td></tr></table></div>'];
+var cmMenuBar1MainHSplit = [_cmNoClick, '<td colspan="3" class="MenuBar1MainSplitText"><div></div></td>'];
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   cmDrawFromText('MenuBar1', 'hbr', cmMenuBar1, 'MenuBar1');
+});
 </script>
 <script src="wwb18.min.js"></script>
 <script>
@@ -320,8 +348,8 @@ $(document).ready(function()
       resizable: true,
       draggable: true,
       closeOnEscape: true,
-      show: { effect: 'pulsate', duration: 400, easing: 'easeInCirc' },
-      hide: { effect: 'fade', duration: 400, easing: 'easeInCirc' },
+      show: { effect: 'clip', duration: 400 },
+      hide: { effect: 'fade', duration: 400 },
       autoOpen: false,
       buttons: 
       {
@@ -347,9 +375,9 @@ $(window).on('load', function()
 <span style="color:#77893E;">Is this life? Is it real?</span></div>
 <div id="wb_Image1">
 <a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
 <div id="wb_Text2">
 <span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
-<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
 </div>
 </div>
 <div id="container">
@@ -366,6 +394,49 @@ $(window).on('load', function()
 <span style="color:#F2F2F2;font-family:'Exo 2';font-size:21px;"><strong><em>Zizek on Kinder Surprise<br></em></strong></span><span style="color:#F2F2F2;font-family:Arial;font-size:13px;"><strong><br></strong></span><span style="color:#F2F2F2;font-family:Arial;font-size:15px;">Kinder surprise egg, a quite astonishing commodity. The surprise of this excessive object, the cause of your desire, is here materialised in the Geist of an object which fills in the inner void of the chocolate egg. The whole delicate balance is between these two dimensions: what you bought, the chocolate egg, and the surplus, probably made in some Chinese gulag or whatever, that you get for free. I don't think that the chocolate frame is here just to send you on a deeper voyage towards the inner treasure, the what Plato calls the 'Agalma', which makes you a worthy person, which makes a commodity the desirable commodity. I think it's the other way around. We should aim at the higher goal, the gold in the middle of an object, precisely in order to be able to enjoy the surface. </span></div>
 <a id="Button3" href="./proj.html">Projects</a>
 <a id="Button5" href="./proj.html">Projects</a>
+<div id="wb_MenuBar1">
+<div id="MenuBar1">
+<ul style="display:none;">
+<li><span></span><a href="./index.html" target="_self" title="Home">Home</a>
+</li>
+<li><span></span><a href="./sw.html" target="_self" title="Software I Use">Software&nbsp;I&nbsp;Use</a>
+</li>
+<li><span></span><a href="./eqp.html" target="_self" title="My Equipments">My&nbsp;Equipments</a>
+
+<ul>
+<li><span></span><a href="./lap.html" target="_self" title="Laptop">Laptop</a>
+</li>
+<li><span></span><a href="./rpi.html" target="_self" title="RPi ">RPi&nbsp;</a>
+</li>
+<li><span></span><a href="./ntbk.html" target="_self" title="Netbook">Netbook</a>
+</li>
+</ul>
+</li>
+<li><span></span><a href="./proj.html" target="_self" title="Projects">Projects</a>
+
+<ul>
+<li><span></span><a href="./page1.html" target="_self" title="RPi-TELEBOT">RPi-TELEBOT</a>
+</li>
+<li><span></span><a href="./page2.html" target="_self" title="Buck and Boost Converter Designer">Buck&nbsp;and&nbsp;Boost&nbsp;Converter&nbsp;Designer</a>
+</li>
+<li><span></span><a href="./page3.html" target="_self" title="Web Browser based on Qt Web Engine VIew">Web&nbsp;Browser&nbsp;based&nbsp;on&nbsp;Qt&nbsp;Web&nbsp;Engine&nbsp;VIew</a>
+</li>
+</ul>
+</li>
+<li><span></span><a href="./gal.html" target="_self" title="Gallery">Gallery</a>
+</li>
+<li><span></span><a href="./prodn.html" target="_self" title="My Tunes">My&nbsp;Tunes</a>
+</li>
+<li><span></span><a href="./misc.html" target="_self" title="Help">Help</a>
+
+<ul>
+<li><span></span><a href="./xtra.html" target="_self" title="xtra">xtra</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div class="default">
 <a id="Button2" href="#">Quick Nav</a>
@@ -450,6 +521,9 @@ $(window).on('load', function()
 </div>
 <div id="wb_Icon8">
 <a href="https://www.mixcloud.com/RNA3210d/" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon8"><i class="fa fa-mixcloud"></i></div></a>
+</div>
+<div id="wb_Icon1">
+<a href="mailto:rna3210d2@proton.me" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon1"><i class="fa fa-envelope-o"></i></div></a>
 </div>
 </div>
 </div>
