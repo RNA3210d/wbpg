@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Help</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="wpg.css" rel="stylesheet">
+<link href="misc.css" rel="stylesheet">
+<script src="wb.cookie.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   if (hasCookie('darktheme'))
+   {
+      document.documentElement.classList.add('darktheme');
+   }
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   function onScrollLayer1()
+   {
+      var $obj = $("#Layer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer1', 'slide-down-in', 0, 750);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer1').inViewPort(true))
+   {
+      $('#Layer1').addClass("in-viewport");
+   }
+   onScrollLayer1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer1();
+   });
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+</head>
+<body>
+<div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Text1">
+<span style="color:#77893E;">Is this life? Is it real?</span></div>
+<div id="wb_Image1">
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<div id="wb_Text2">
+<span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
+</div>
+</div>
+<div id="container">
+
+</div>
+<div id="Layer2">
+<div id="wb_Text3">
+<span style="color:#000000;font-family:'Exo 2';font-size:29px;"><strong>Help and More</strong></span>
+</div>
+</div>
+<div id="Layer3">
+<div id="wb_Text4">
+<span style="color:#000000;font-family:'Exo 2';font-size:16px;">If you are thinking of deleting all social media or feeling like social media is affecting your life negatively:</span><span style="color:#000000;font-family:'Exo 2';font-size:13px;"><br><a href="https://www.youtube.com/watch?v=r0RqucKwIcw&list=PLrz13RcLOQKgp6EgY2do-v0Z6P5UJHsuc" title="I deleted all my social media and made a website - by Lrnjulie">https://www.youtube.com/watch?v=r0RqucKwIcw&amp;list=PLrz13RcLOQKgp6EgY2do-v0Z6P5UJHsuc</a></span>
+</div>
+<div id="wb_Text5">
+<span style="color:#000000;font-family:'Exo 2';font-size:16px;">Jordan Peterson on Slaying the Dragon Within Us: One of my favourite JP Lectures:</span><span style="color:#000000;font-family:'Exo 2';font-size:13px;"><br><a href="https://www.youtube.com/watch?v=REjUkEj1O_0" title="Jordan Peterson on Slaying the Dragon Within Us">https://www.youtube.com/watch?v=REjUkEj1O_0</a></span>
+</div>
+</div>
+<div id="preloader"></div>
+</body>
+</html>

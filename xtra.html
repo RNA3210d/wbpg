@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EXTRAS</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<link href="wpg.css" rel="stylesheet">
+<link href="xtra.css" rel="stylesheet">
+<script src="wb.cookie.min.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   if (hasCookie('darktheme'))
+   {
+      document.documentElement.classList.add('darktheme');
+   }
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   function onScrollLayer1()
+   {
+      var $obj = $("#Layer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer1', 'slide-down-in', 0, 750);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer1').inViewPort(true))
+   {
+      $('#Layer1').addClass("in-viewport");
+   }
+   onScrollLayer1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer1();
+   });
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+</head>
+<body>
+<div id="Layer1" style="position:relative;text-align:center;width:100%;height:98px;float:left;clear:left;display:block;z-index:4;">
+<div id="Layer1_Container" style="width:1200px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Text1" style="position:absolute;left:142px;top:0px;width:249px;height:27px;z-index:0;">
+<span style="color:#77893E;">Is this life? Is it real?</span></div>
+<div id="wb_Image1" style="position:absolute;left:0px;top:12px;width:122px;height:74px;z-index:1;">
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<div id="wb_Text2" style="position:absolute;left:142px;top:59px;width:328px;height:27px;z-index:2;">
+<span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light" style="position:absolute;left:1093px;top:11px;width:96px;height:24px;z-index:3;">
+</div>
+</div>
+<div id="container">
+
+</div>
+<div id="Layer2" style="position:relative;text-align:left;width:100%;;height:97px;float:left;display:inline-block;z-index:7;">
+<div id="wb_Text3">
+<span style="color:#000000;font-family:'Exo 2';font-size:29px;"><strong>EXTRAs</strong></span>
+</div>
+</div>
+<div id="preloader"></div>
+</body>
+</html>

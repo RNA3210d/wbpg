@@ -5,16 +5,31 @@
 <title>Home</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="base/jquery-ui.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
 <link href="wpg.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
 <script src="wb.parallax.min.js"></script>
+<script src="jquery-ui.min.js"></script>
 <script src="wb.cookie.min.js"></script>
 <link rel="stylesheet" href="glight/css/glightbox.min.css">
 <link rel="stylesheet" href="glight/css/plyr.css">
 <link rel="stylesheet" href="glight/css/plyr.min.css">
 <script src="glight/js/glightbox.min.js"></script>
+<script src="searchindex.js"></script>
+<script src="wb.sitesearch.min.js"></script>
+<script>
+var features = '';
+function searchPage(features)
+{
+   $('#SiteSearch1-dialog').dialog('open');
+   $('#SiteSearch1-dialog').empty();
+   searchResults('SiteSearch1', 'SiteSearch1-dialog', 250, 5, true, true, true, true, '_parent', 'No results', ' result(s) found for search term: ', 'seconds');
+   $('#SiteSearch1-dialog').dialog('option', 'position', 'center');
+   return false;
+}
+</script>
 <script src="wwb18.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
@@ -294,6 +309,28 @@ $(document).ready(function()
    {
       onScrolllinks();
    });
+   searchParseURL('SiteSearch1');
+   searchAutoComplete('SiteSearch1', 0, '_parent');
+   $("#SiteSearch1-dialog").dialog(
+   {
+      modal: true,
+      width: 470,
+      height: 300,
+      position: { my: 'center', at: 'center', of: window },
+      resizable: true,
+      draggable: true,
+      closeOnEscape: true,
+      show: { effect: 'pulsate', duration: 400, easing: 'easeInCirc' },
+      hide: { effect: 'fade', duration: 400, easing: 'easeInCirc' },
+      autoOpen: false,
+      buttons: 
+      {
+         Close: function() 
+         {
+            $(this).dialog('close');
+         }
+      }
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -364,6 +401,7 @@ $(window).on('load', function()
 <div id="Layer7">
 <div id="wb_links">
 <div id="links">
+<div class="row">
 <div class="col-1">
 <div id="wb_Text11">
 <span style="color:#6B3CFC;"><strong>EXPLORE MORE</strong></span>
@@ -381,8 +419,13 @@ $(window).on('load', function()
 </ul>
 
 </div>
+<input type="button" id="Button6" onclick="searchPage();return false;" name="Search" value="Search">
+<form name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
+<input type="text" id="SiteSearch1" name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
+<div id="SiteSearch1-dialog" title="Search results"></div>
 </div>
 <div class="col-2">
+</div>
 </div>
 </div>
 </div>

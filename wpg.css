@@ -174,9 +174,3 @@ h6, .h6
    background-color: #17406D;
    --background-color: rgba(23,64,109,1.00);
 }
-@media only screen and (min-width: 480px) and (max-width: 1199px)
-{
-}
-@media only screen and (max-width: 479px)
-{
-}
