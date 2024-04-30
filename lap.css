@@ -62,26 +62,6 @@ body
 {
    text-align: left;
 }
-#Button4
-{
-   border: 1px solid #2E6DA4;
-   border-radius: 4px;
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
-   color: #FFFFFF;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 13px;
-   padding: 1px 6px 1px 6px;
-   text-align: center;
-   -webkit-appearance: none;
-   margin: 0;
-}
-}
-#Button4:focus
-{
-   outline: 0;
-}
 #wb_Text2 
 {
    background-color: transparent;
@@ -102,6 +82,26 @@ body
 #wb_Text2 div
 {
    text-align: left;
+}
+#Button4
+{
+   border: 1px solid #2E6DA4;
+   border-radius: 4px;
+   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   padding: 1px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+}
+#Button4:focus
+{
+   outline: 0;
 }
 #Layer3
 {
@@ -489,7 +489,7 @@ body
    top: 11px;
    width: 96px;
    height: 24px;
-   z-index: 2;
+   z-index: 3;
 }
 #Layer6
 {
@@ -563,10 +563,10 @@ body
 {
    position: absolute;
    left: 142px;
-   top: 40px;
-   width: 412px;
-   height: 46px;
-   z-index: 3;
+   top: 59px;
+   width: 328px;
+   height: 27px;
+   z-index: 2;
 }
 #Line2
 {
@@ -624,14 +624,14 @@ body
    left: 0px;
    top: 0px;
    width: 480px;
-   height: 110px;
+   height: 98px;
    visibility: visible;
    display: inline;
 }
 #Layer1
 {
    width: 480px;
-   height: 110px;
+   height: 98px;
    visibility: visible;
    display: block;
    margin: 0;
@@ -648,12 +648,12 @@ body
 #Layer1
 {
     width: 100%;
-    height: 110px;
+    height: 98px;
 }
 #wb_Image1
 {
-   left: 21px;
-   top: 18px;
+   left: 0px;
+   top: 12px;
    width: 122px;
    height: 74px;
    visibility: visible;
@@ -663,14 +663,32 @@ body
 }
 #wb_Text1
 {
-   left: 166px;
-   top: 14px;
+   left: 142px;
+   top: 12px;
    width: 249px;
    height: 27px;
    visibility: visible;
    display: inline;
 }
 #wb_Text1
+{
+   font-family: "Exo 2";
+   font-weight: 400;
+   font-size: 19px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text2
+{
+   left: 142px;
+   top: 59px;
+   width: 328px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
 {
    font-family: "Exo 2";
    font-weight: 400;
@@ -689,24 +707,6 @@ body
    display: inline;
    margin: 0;
    padding: 1px 6px 1px 6px;
-}
-#wb_Text2
-{
-   left: 166px;
-   top: 64px;
-   width: 309px;
-   height: 27px;
-   visibility: visible;
-   display: inline;
-}
-#wb_Text2
-{
-   font-family: "Exo 2";
-   font-weight: 400;
-   font-size: 19px;
-   margin: 0;
-   padding: 0;
-   text-align: left;
 }
 #Layer3
 {
@@ -998,7 +998,7 @@ body
 #wb_Text1
 {
    left: 111px;
-   top: 11px;
+   top: 12px;
    width: 209px;
    height: 27px;
    visibility: visible;
@@ -1013,6 +1013,24 @@ body
    padding: 0;
    text-align: center;
 }
+#wb_Text2
+{
+   left: 111px;
+   top: 59px;
+   width: 201px;
+   height: 48px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-family: "Exo 2";
+   font-weight: 400;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
 #Button4
 {
    left: 12px;
@@ -1023,24 +1041,6 @@ body
    display: inline;
    margin: 0;
    padding: 1px 6px 1px 6px;
-}
-#wb_Text2
-{
-   left: 123px;
-   top: 64px;
-   width: 184px;
-   height: 54px;
-   visibility: visible;
-   display: inline;
-}
-#wb_Text2
-{
-   font-family: "Exo 2";
-   font-weight: 400;
-   font-size: 19px;
-   margin: 0;
-   padding: 0;
-   text-align: left;
 }
 #Layer3
 {
