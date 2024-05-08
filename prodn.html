@@ -35,6 +35,7 @@ $(document).ready(function()
    $('#wb_MediaPlayer3').addClass('visibility-hidden');
    $('#wb_MediaPlayer4').addClass('visibility-hidden');
    $('#wb_MediaPlayer5').addClass('visibility-hidden');
+   $('#wb_MediaPlayer6').addClass('visibility-hidden');
    function onScrollLayer1()
    {
       var $obj = $("#Layer1");
@@ -327,6 +328,30 @@ $(document).ready(function()
    {
       onScrollMediaPlayer5();
    });
+   function onScrollMediaPlayer6()
+   {
+      var $obj = $("#wb_MediaPlayer6");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_MediaPlayer6', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_MediaPlayer6', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_MediaPlayer6').inViewPort(true))
+   {
+      $('#wb_MediaPlayer6').addClass("in-viewport");
+   }
+   onScrollMediaPlayer6();
+   $(window).scroll(function(event)
+   {
+      onScrollMediaPlayer6();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -442,7 +467,7 @@ $(window).on('load', function()
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bruno Mars - Just the way you are (10/2021 edit)</span>
 </div>
 <div id="wb_MediaPlayer1">
-<audio id="MediaPlayer1" autoplay controls>
+<audio id="MediaPlayer1" autoplay controls preload="auto">
 <source src="">
 <source src="just the way.ogg" type="audio/ogg">
 </audio>
@@ -462,7 +487,7 @@ $(window).on('load', function()
 <span style="color:#000000;font-family:Arial;font-size:13px;">Gryffin - Nobody Compares To You ft. Katie Pearlman [DropMix Rework] - Instrumental Mix</span>
 </div>
 <div id="wb_MediaPlayer4">
-<audio id="MediaPlayer4" autoplay controls>
+<audio id="MediaPlayer4" autoplay controls preload="auto">
 <source src="">
 <source src="ncty inst.ogg" type="audio/ogg">
 </audio>
@@ -472,7 +497,7 @@ $(window).on('load', function()
 <span style="color:#000000;font-family:Arial;font-size:13px;">Adele - Rolling in the Deep (DropMix Rework Vocal Mix) - Unreleased (Starts at 1:30)</span>
 </div>
 <div id="wb_MediaPlayer3">
-<audio id="MediaPlayer3" autoplay controls>
+<audio id="MediaPlayer3" autoplay controls preload="auto">
 <source src="">
 <source src="rollin.ogg" type="audio/ogg">
 </audio>
@@ -482,9 +507,18 @@ $(window).on('load', function()
 <span style="color:#000000;font-family:Arial;font-size:13px;">The Weeknd - Save Your Tears [DropMix Rework] - (Render 4)</span>
 </div>
 <div id="wb_MediaPlayer5">
-<audio id="MediaPlayer5" autoplay controls>
+<audio id="MediaPlayer5" autoplay controls preload="auto">
 <source src="">
 <source src="save.ogg" type="audio/ogg">
+</audio>
+
+</div>
+<div id="wb_Text8">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Spongebob Tears (WIP), I'm just memeing at this point. (Worked on 05/2024)</span>
+</div>
+<div id="wb_MediaPlayer6">
+<audio id="MediaPlayer6" autoplay controls preload="auto">
+<source src="Project_3 - Spongebob Tears.ogg" type="audio/ogg">
 </audio>
 
 </div>
