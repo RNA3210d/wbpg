@@ -1,23 +1,20 @@
-div#container
-{
-   width: 1200px;
-   position: relative;
+div#container {
    margin: 0 auto 0 auto;
+   position: relative;
    text-align: left;
+   width: 1200px;
 }
-body
-{
+body {
    background-color: #FFFFFF;
    color: #000000;
    font-family: Arial;
-   font-weight: normal;
    font-size: 13px;
+   font-weight: normal;
    line-height: 1.1875;
    margin: 0;
    text-align: center;
 }
-#preloader
-{
+#preloader {
    background: #FFFFFF url("images/box.gif") no-repeat center center;
    bottom: 0;
    position: fixed;
@@ -25,233 +22,206 @@ body
    width: 100%;
    z-index: 99999;
 }
-#Layer1
-{
+#Layer1 {
    background-image: linear-gradient(to top, #F6F8F9 0%, #E5EBEE 50%, #D7DEE3 51%, #F5F7F9 100%);
    border-radius: 12px;
    box-shadow: 2px 2px 11px #0F6FC6;
    margin: 0;
 }
-#wb_Image1
-{
+#wb_Image1 {
    vertical-align: top;
 }
-#Image1
-{
+#Image1 {
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 0;
-   margin: 0;
+   height: 100%;
    left: 0;
+   margin: 0;
+   padding: 0;
    top: 0;
    width: 100%;
-   height: 100%;
 }
-#wb_Text1 
-{
+#wb_Text1 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 0;
    margin: 0;
+   padding: 0;
    text-align: left;
 }
-#wb_Text1
-{
+#wb_Text1 {
    color: #77893E;
    font-family: "Exo 2";
-   font-weight: normal;
    font-size: 19px;
+   font-weight: normal;
 }
-#wb_Text1 div
-{
+#wb_Text1 div {
    text-align: left;
 }
-#wb_Text2 
-{
+#wb_Text2 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 0;
    margin: 0;
+   padding: 0;
    text-align: left;
 }
-#wb_Text2
-{
+#wb_Text2 {
    color: #000000;
    font-family: "Exo 2";
-   font-weight: normal;
    font-size: 19px;
+   font-weight: normal;
 }
-#wb_Text2 div
-{
+#wb_Text2 div {
    text-align: left;
 }
-#Button4
-{
+#Button4 {
+   -webkit-appearance: none;
+   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 1px solid #2E6DA4;
    border-radius: 4px;
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    color: #FFFFFF;
    font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
    font-size: 13px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
    padding: 1px 6px 1px 6px;
    text-align: center;
-   -webkit-appearance: none;
-   margin: 0;
 }
 }
-#Button4:focus
-{
+#Button4:focus {
    outline: 0;
 }
-#Layer2
-{
+#Layer2 {
    background-color: transparent;
    background-image: none;
    border-radius: 0px;
-   padding: 0;
    margin: 0;
+   padding: 0;
 }
-#wb_Text3 
-{
+#wb_Text3 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 0;
    margin: 0;
+   padding: 0;
    text-align: center;
 }
-#wb_Text3 div
-{
+#wb_Text3 div {
    text-align: center;
 }
-#wb_Text3
-{
+#wb_Text3 {
+   box-sizing: border-box;
    display: block;
    margin: 0;
-   box-sizing: border-box;
    width: 100%;
 }
-#Layer3
-{
+#Layer3 {
    background-color: transparent;
    background-image: none;
    border-radius: 0px;
-   padding: 0;
    margin: 0;
+   padding: 0;
 }
-#TextArea1
-{
-   box-sizing: border-box;
-   border: 1px solid #CCCCCC;
-   border-radius: 4px;
+#TextArea1 {
    background-color: #FFFFFF;
    background-image: none;
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   box-sizing: border-box;
    color: #000000;
    font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
    font-size: 13px;
-   text-align: left;
-   padding: 4px 4px 4px 4px;
+   font-style: normal;
+   font-weight: normal;
    margin: 0;
    overflow: auto;
+   padding: 4px 4px 4px 4px;
    resize: none;
+   text-align: left;
 }
-#TextArea1:focus
-{
+#TextArea1:focus {
    border-color: #66AFE9;
    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
    outline: 0;
 }
-#wb_Heading1
-{
+#wb_Heading1 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
-   vertical-align: top;
    margin: 0;
    padding: 0;
    text-align: left;
+   vertical-align: top;
 }
-#Heading1
-{
+#Heading1 {
    color: #000000;
    font-family: "Exo 2";
-   font-weight: bold;
-   font-style: normal;
    font-size: 32px;
+   font-style: normal;
+   font-weight: bold;
    margin: 0;
    text-align: left;
 }
-#Layer4
-{
+#Layer4 {
    background-color: transparent;
    background-image: none;
    border-radius: 0px;
-   padding: 0;
    margin: 0;
+   padding: 0;
 }
-#wb_Heading2
-{
+#wb_Heading2 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
-   vertical-align: top;
    margin: 0;
    padding: 0;
    text-align: left;
+   vertical-align: top;
 }
-#Heading2
-{
+#Heading2 {
    color: #000000;
    font-family: "Exo 2";
-   font-weight: bold;
-   font-style: normal;
    font-size: 32px;
+   font-style: normal;
+   font-weight: bold;
    margin: 0;
    text-align: left;
 }
-#TextArea2
-{
-   box-sizing: border-box;
-   border: 1px solid #CCCCCC;
-   border-radius: 4px;
+#TextArea2 {
    background-color: #FFFFFF;
    background-image: none;
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   box-sizing: border-box;
    color: #000000;
    font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
    font-size: 13px;
-   text-align: left;
-   padding: 4px 4px 4px 4px;
+   font-style: normal;
+   font-weight: normal;
    margin: 0;
    overflow: auto;
+   padding: 4px 4px 4px 4px;
    resize: none;
+   text-align: left;
 }
-#TextArea2:focus
-{
+#TextArea2:focus {
    border-color: #66AFE9;
    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
    outline: 0;
 }
-.darktheme body
-{
+.darktheme body {
    background-color: #000000;
 }
 .darktheme #Layer1,
-.darktheme #wb_Text3
-{
+.darktheme #wb_Text3 {
    filter: invert(100%);
 }

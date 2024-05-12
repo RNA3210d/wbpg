@@ -1,313 +1,277 @@
-div#container
-{
-   width: 1200px;
-   position: relative;
+div#container {
    margin: 0 auto 0 auto;
+   position: relative;
    text-align: left;
+   width: 1200px;
 }
-body
-{
+body {
    background-color: #FFFFFF;
    color: #000000;
    font-family: "Exo 2";
-   font-weight: 400;
-   font-weight: 400;
    font-size: 13px;
+   font-weight: 400;
+   font-weight: 400;
    line-height: 1.1875;
    margin: 0;
    text-align: center;
 }
-#Layer1
-{
+#Layer1 {
    background-image: linear-gradient(to top, #F6F8F9 0%, #E5EBEE 50%, #D7DEE3 51%, #F5F7F9 100%);
    border-radius: 12px;
    box-shadow: 2px 2px 11px #0F6FC6;
    margin: 0;
 }
-#wb_Image1
-{
+#wb_Image1 {
    vertical-align: top;
 }
-#Image1
-{
+#Image1 {
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 0;
-   margin: 0;
+   height: 100%;
    left: 0;
+   margin: 0;
+   padding: 0;
    top: 0;
    width: 100%;
-   height: 100%;
 }
-#wb_Text1 
-{
+#wb_Text1 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 0;
    margin: 0;
+   padding: 0;
    text-align: left;
 }
-#wb_Text1
-{
+#wb_Text1 {
    color: #77893E;
    font-family: "Exo 2";
-   font-weight: normal;
    font-size: 19px;
+   font-weight: normal;
 }
-#wb_Text1 div
-{
+#wb_Text1 div {
    text-align: left;
 }
-#wb_Text2 
-{
+#wb_Text2 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 0;
    margin: 0;
+   padding: 0;
    text-align: left;
 }
-#wb_Text2
-{
+#wb_Text2 {
    color: #000000;
    font-family: "Exo 2";
-   font-weight: normal;
    font-size: 19px;
+   font-weight: normal;
 }
-#wb_Text2 div
-{
+#wb_Text2 div {
    text-align: left;
 }
-#Button4
-{
+#Button4 {
+   -webkit-appearance: none;
+   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 1px solid #2E6DA4;
    border-radius: 4px;
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    color: #FFFFFF;
    font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
    font-size: 13px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
    padding: 1px 6px 1px 6px;
    text-align: center;
-   -webkit-appearance: none;
-   margin: 0;
 }
 }
-#Button4:focus
-{
+#Button4:focus {
    outline: 0;
 }
-#wb_Panel3
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
+#wb_Panel3 {
    background-color: #FFFFFF;
    background-image: none;
    border: 0px solid #CCCCCC;
    border-radius: 0px;
-   box-sizing: border-box;
-   margin: 0;
    box-shadow: 1px 1px 21px #84BDDA;
+   box-sizing: border-box;
+   clear: both;
+   display: table;
+   margin: 0;
+   position: relative;
+   table-layout: fixed;
+   text-align: center;
+   width: 100%;
 }
-#Panel3
-{
+#Panel3 {
    box-sizing: border-box;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   padding: 0 0 15px 0;
-   margin-right: auto;
    margin-left: auto;
+   margin-right: auto;
+   padding: 0 0 15px 0;
 }
-#Panel3 > .col-1
-{
+#Panel3 > .col-1 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-right: 0px;
    padding-left: 0px;
+   padding-right: 0px;
    position: relative;
 }
-#Panel3
-{
+#Panel3 {
    width: 270px;
 }
-#Panel3 > .col-1
-{
+#Panel3 > .col-1 {
    flex: 0 0 auto;
    height: 433px;
 }
-#Panel3 > .col-1
-{
+#Panel3 > .col-1 {
+   align-items: flex-start;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 100%;
-   max-width: 100%;
    display: flex;
+   flex-basis: 100%;
    flex-direction: column;
-   align-items: flex-start;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-@media (max-width: 480px)
-{
-#Panel3
-{
+@media (max-width: 480px) {
+#Panel3 {
    width: 100%;
 }
-#Panel3 > .col-1
-{
-   flex-basis: 100% !important;
-   max-width: 100% !important;
+#Panel3 > .col-1 {
+   flex-basis: 100%  !important;
    height: auto;
+   max-width: 100%  !important;
 }
 }
-#Button1
-{
-   box-sizing: border-box;
-   line-height: 27px;
-   text-decoration: none;
-   vertical-align: top;
-   border: 1px solid #454744;
-   border-radius: 3px;
+#Button1 {
+   -webkit-appearance: none;
    background-color: #454744;
    background-image: none;
+   border: 1px solid #454744;
+   border-radius: 3px;
+   box-sizing: border-box;
    color: #FFFFFF;
    cursor: pointer;
    font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
    font-size: 13px;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 27px;
+   margin: 0;
    padding: 0;
    text-align: center;
-   -webkit-appearance: none;
-   margin: 0;
+   text-decoration: none;
+   vertical-align: top;
 }
 }
-#Button1:focus
-{
+#Button1:focus {
    outline: 0;
 }
-#Button1:hover
-{
+#Button1:hover {
    background-color: #47A447;
    border-color: #3E923E;
    transition: background-color 500ms linear 0ms, border-color 500ms linear 0ms;
 }
-#Button2
-{
-   box-sizing: border-box;
-   line-height: 27px;
-   text-decoration: none;
-   vertical-align: top;
-   border: 1px solid #454744;
-   border-radius: 3px;
+#Button2 {
+   -webkit-appearance: none;
    background-color: #454744;
    background-image: none;
+   border: 1px solid #454744;
+   border-radius: 3px;
+   box-sizing: border-box;
    color: #FFFFFF;
    cursor: pointer;
    font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
    font-size: 13px;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 27px;
+   margin: 0;
    padding: 0;
    text-align: center;
-   -webkit-appearance: none;
-   margin: 0;
-}
-}
-#Button2:focus
-{
-   outline: 0;
-}
-#Button3
-{
-   box-sizing: border-box;
-   line-height: 27px;
    text-decoration: none;
    vertical-align: top;
-   border: 1px solid #454744;
-   border-radius: 3px;
+}
+}
+#Button2:focus {
+   outline: 0;
+}
+#Button3 {
+   -webkit-appearance: none;
    background-color: #454744;
    background-image: none;
+   border: 1px solid #454744;
+   border-radius: 3px;
+   box-sizing: border-box;
    color: #FFFFFF;
    cursor: pointer;
    font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
    font-size: 13px;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 27px;
+   margin: 0;
    padding: 0;
    text-align: center;
-   -webkit-appearance: none;
-   margin: 0;
+   text-decoration: none;
+   vertical-align: top;
 }
 }
-#Button3:focus
-{
+#Button3:focus {
    outline: 0;
 }
-#Button3:hover
-{
+#Button3:hover {
    background-color: #47A447;
    border-color: #3E923E;
    transition: background-color 500ms linear 0ms, border-color 500ms linear 0ms;
 }
-#Button5
-{
-   box-sizing: border-box;
-   line-height: 27px;
-   text-decoration: none;
-   vertical-align: top;
-   border: 1px solid #454744;
-   border-radius: 3px;
+#Button5 {
+   -webkit-appearance: none;
    background-color: #454744;
    background-image: none;
+   border: 1px solid #454744;
+   border-radius: 3px;
+   box-sizing: border-box;
    color: #FFFFFF;
    cursor: pointer;
    font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
    font-size: 13px;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 27px;
+   margin: 0;
    padding: 0;
    text-align: center;
-   -webkit-appearance: none;
-   margin: 0;
+   text-decoration: none;
+   vertical-align: top;
 }
 }
-#Button5:focus
-{
+#Button5:focus {
    outline: 0;
 }
-#Button5:hover
-{
+#Button5:hover {
    background-color: #47A447;
    border-color: #3E923E;
    transition: background-color 500ms linear 0ms, border-color 500ms linear 0ms;
 }
-#Layer3
-{
+#Layer3 {
    background-color: transparent;
    background-image: none;
    border-radius: 0px;
-   padding: 0;
    margin: 0;
+   padding: 0;
 }
-#Layer3
-{
+#Layer3 {
    display: inline-flex;
 }
-#wb_FlexContainer1
-{
+#wb_FlexContainer1 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #CCCCCC;
@@ -316,118 +280,108 @@ body
    position: relative;
    width: 100%;
 }
-#FlexContainer1
-{
-   display: flex;
-   position: relative;
-   padding: 25px 15px 25px 15px;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: space-around;
-   align-items: center;
+#FlexContainer1 {
    align-content: flex-start;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 320px;
+   align-items: center;
    background-color: transparent;
    background-image: none;
    box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
    font-size: 0;
+   justify-content: space-around;
+   margin-bottom: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0px;
+   max-width: 320px;
+   padding: 25px 15px 25px 15px;
+   position: relative;
 }
-#Line1
-{
-   border-color: #1ABC9C;
-   border-style: dashed;
+#Line1 {
+   align-self: auto;
    border-bottom-width: 3px;
-   border-top: 0;
+   border-color: #1ABC9C;
    border-left: 0;
    border-right: 0;
-   height: 0 !important;
-   line-height: 0 !important;
-   margin: 0;
-   padding: 0;
+   border-style: dashed;
+   border-top: 0;
    flex-grow: 1;
    flex-shrink: 0;
-   align-self: auto;
+   height: 0  !important;
+   line-height: 0  !important;
+   margin: 0;
+   padding: 0;
 }
-#wb_Heading1
-{
+#wb_Heading1 {
+   align-self: auto;
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
+   flex-grow: 0;
+   flex-shrink: 0;
    margin: 0;
    padding: 0;
    text-align: center;
-   flex-grow: 0;
-   flex-shrink: 0;
-   align-self: auto;
 }
-#Heading1
-{
+#Heading1 {
    color: #000000;
    font-family: "Exo 2";
-   font-weight: bold;
-   font-style: normal;
    font-size: 20px;
+   font-style: normal;
+   font-weight: bold;
    margin: 0;
    text-align: center;
    text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
 }
-#Line2
-{
-   border-color: #1ABC9C;
-   border-style: dashed;
+#Line2 {
+   align-self: auto;
    border-bottom-width: 3px;
-   border-top: 0;
+   border-color: #1ABC9C;
    border-left: 0;
    border-right: 0;
-   height: 0 !important;
-   line-height: 0 !important;
-   margin: 0;
-   padding: 0;
+   border-style: dashed;
+   border-top: 0;
    flex-grow: 1;
    flex-shrink: 0;
-   align-self: auto;
+   height: 0  !important;
+   line-height: 0  !important;
+   margin: 0;
+   padding: 0;
 }
-#wb_Icon1
-{
+#wb_Icon1 {
+   align-self: auto;
    background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   text-align: center;
+   vertical-align: top;
 }
-#wb_Icon1 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
+#wb_Icon1 a::after {
    bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
    content: "";
+   left: 0;
+   pointer-events: auto;
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: 1;
 }
-#wb_Icon1:hover
-{
+#wb_Icon1:hover {
    background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
    border: 2px solid #FFFFFF;
 }
-#Icon1
-{
+#Icon1 {
    height: 16px;
    width: 16px;
 }
-#Icon1 i
-{
+#Icon1 i {
    color: #FFFFFF;
    display: inline-block;
    font-size: 16px;
@@ -435,56 +389,48 @@ body
    vertical-align: middle;
    width: 15px;
 }
-#wb_Icon1:hover #Icon1 i
-{
+#wb_Icon1:hover #Icon1 i {
    color: #13A89E;
 }
-#wb_Icon1
-{
-   transform: rotate(0deg) ;
+#wb_Icon1 {
+   transform: rotate(0deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon1:hover
-{
-   transform: rotate(360deg) ;
+#wb_Icon1:hover {
+   transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon2
-{
+#wb_Icon2 {
+   align-self: auto;
    background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   text-align: center;
+   vertical-align: top;
 }
-#wb_Icon2 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
+#wb_Icon2 a::after {
    bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
    content: "";
+   left: 0;
+   pointer-events: auto;
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: 1;
 }
-#wb_Icon2:hover
-{
+#wb_Icon2:hover {
    background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
    border: 2px solid #FFFFFF;
 }
-#Icon2
-{
+#Icon2 {
    height: 16px;
    width: 16px;
 }
-#Icon2 i
-{
+#Icon2 i {
    color: #FFFFFF;
    display: inline-block;
    font-size: 16px;
@@ -492,56 +438,48 @@ body
    vertical-align: middle;
    width: 19px;
 }
-#wb_Icon2:hover #Icon2 i
-{
+#wb_Icon2:hover #Icon2 i {
    color: #13A89E;
 }
-#wb_Icon2
-{
-   transform: rotate(0deg) ;
+#wb_Icon2 {
+   transform: rotate(0deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon2:hover
-{
-   transform: rotate(360deg) ;
+#wb_Icon2:hover {
+   transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon3
-{
+#wb_Icon3 {
+   align-self: auto;
    background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   text-align: center;
+   vertical-align: top;
 }
-#wb_Icon3 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
+#wb_Icon3 a::after {
    bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
    content: "";
+   left: 0;
+   pointer-events: auto;
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: 1;
 }
-#wb_Icon3:hover
-{
+#wb_Icon3:hover {
    background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
    border: 2px solid #FFFFFF;
 }
-#Icon3
-{
+#Icon3 {
    height: 16px;
    width: 16px;
 }
-#Icon3 i
-{
+#Icon3 i {
    color: #FFFFFF;
    display: inline-block;
    font-size: 16px;
@@ -549,56 +487,48 @@ body
    vertical-align: middle;
    width: 15px;
 }
-#wb_Icon3:hover #Icon3 i
-{
+#wb_Icon3:hover #Icon3 i {
    color: #13A89E;
 }
-#wb_Icon3
-{
-   transform: rotate(0deg) ;
+#wb_Icon3 {
+   transform: rotate(0deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon3:hover
-{
-   transform: rotate(360deg) ;
+#wb_Icon3:hover {
+   transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon4
-{
+#wb_Icon4 {
+   align-self: auto;
    background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   text-align: center;
+   vertical-align: top;
 }
-#wb_Icon4 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
+#wb_Icon4 a::after {
    bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
    content: "";
+   left: 0;
+   pointer-events: auto;
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: 1;
 }
-#wb_Icon4:hover
-{
+#wb_Icon4:hover {
    background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
    border: 2px solid #FFFFFF;
 }
-#Icon4
-{
+#Icon4 {
    height: 16px;
    width: 16px;
 }
-#Icon4 i
-{
+#Icon4 i {
    color: #FFFFFF;
    display: inline-block;
    font-size: 16px;
@@ -606,56 +536,48 @@ body
    vertical-align: middle;
    width: 19px;
 }
-#wb_Icon4:hover #Icon4 i
-{
+#wb_Icon4:hover #Icon4 i {
    color: #13A89E;
 }
-#wb_Icon4
-{
-   transform: rotate(0deg) ;
+#wb_Icon4 {
+   transform: rotate(0deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon4:hover
-{
-   transform: rotate(360deg) ;
+#wb_Icon4:hover {
+   transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon5
-{
+#wb_Icon5 {
+   align-self: auto;
    background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   text-align: center;
+   vertical-align: top;
 }
-#wb_Icon5 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
+#wb_Icon5 a::after {
    bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
    content: "";
+   left: 0;
+   pointer-events: auto;
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: 1;
 }
-#wb_Icon5:hover
-{
+#wb_Icon5:hover {
    background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
    border: 2px solid #FFFFFF;
 }
-#Icon5
-{
+#Icon5 {
    height: 16px;
    width: 16px;
 }
-#Icon5 i
-{
+#Icon5 i {
    color: #FFFFFF;
    display: inline-block;
    font-size: 16px;
@@ -663,2639 +585,2306 @@ body
    vertical-align: middle;
    width: 15px;
 }
-#wb_Icon5:hover #Icon5 i
-{
+#wb_Icon5:hover #Icon5 i {
    color: #13A89E;
 }
-#wb_Icon5
-{
-   transform: rotate(0deg) ;
+#wb_Icon5 {
+   transform: rotate(0deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon5:hover
-{
-   transform: rotate(360deg) ;
+#wb_Icon5:hover {
+   transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_portfolio
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
+#wb_portfolio {
    background-image: linear-gradient(to top, #EBF1F6 0%, #ABD3EE 50%, #89C3EB 51%, #D5EBFB 100%);
    border: 0px solid #CCCCCC;
    border-radius: 0px;
    box-sizing: border-box;
+   clear: both;
+   display: table;
    margin: 0;
+   position: relative;
+   table-layout: fixed;
+   text-align: center;
+   width: 100%;
 }
-#portfolio
-{
+#portfolio {
    box-sizing: border-box;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   padding: 25px 0 25px 0;
-   margin-right: auto;
    margin-left: auto;
+   margin-right: auto;
+   padding: 25px 0 25px 0;
 }
-#portfolio > .col-1, #portfolio > .col-2, #portfolio > .col-3, #portfolio > .col-4
-{
+#portfolio > .col-1,
+#portfolio > .col-2,
+#portfolio > .col-3,
+#portfolio > .col-4 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-right: 15px;
    padding-left: 15px;
+   padding-right: 15px;
    position: relative;
 }
-#portfolio
-{
+#portfolio {
    width: 1200px;
 }
-#portfolio > .col-1, #portfolio > .col-2, #portfolio > .col-3, #portfolio > .col-4
-{
+#portfolio > .col-1,
+#portfolio > .col-2,
+#portfolio > .col-3,
+#portfolio > .col-4 {
    flex: 0 0 auto;
 }
-#portfolio > .col-1
-{
+#portfolio > .col-1 {
+   align-content: flex-start;
+   align-items: flex-start;
+   align-self: stretch;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 25%;
-   max-width: 25%;
    display: flex;
+   flex-basis: 25%;
    flex-wrap: wrap;
-   align-content: flex-start;
-   align-self: stretch;
-   align-items: flex-start;
    justify-content: center;
+   max-width: 25%;
    text-align: center;
 }
-#portfolio > .col-2
-{
+#portfolio > .col-2 {
+   align-content: flex-start;
+   align-items: flex-start;
+   align-self: stretch;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 25%;
-   max-width: 25%;
    display: flex;
+   flex-basis: 25%;
    flex-wrap: wrap;
-   align-content: flex-start;
-   align-self: stretch;
-   align-items: flex-start;
    justify-content: center;
+   max-width: 25%;
    text-align: center;
 }
-#portfolio > .col-3
-{
+#portfolio > .col-3 {
+   align-content: flex-start;
+   align-items: flex-start;
+   align-self: stretch;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 25%;
-   max-width: 25%;
    display: flex;
+   flex-basis: 25%;
    flex-wrap: wrap;
-   align-content: flex-start;
-   align-self: stretch;
-   align-items: flex-start;
    justify-content: center;
+   max-width: 25%;
    text-align: center;
 }
-#portfolio > .col-4
-{
+#portfolio > .col-4 {
+   align-content: flex-start;
+   align-items: flex-start;
+   align-self: stretch;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 25%;
-   max-width: 25%;
    display: flex;
+   flex-basis: 25%;
    flex-wrap: wrap;
-   align-content: flex-start;
-   align-self: stretch;
-   align-items: flex-start;
    justify-content: flex-start;
+   max-width: 25%;
    text-align: left;
 }
-@media (max-width: 480px)
-{
-#portfolio
-{
+@media (max-width: 480px) {
+#portfolio {
    width: 100%;
 }
-#portfolio > .col-1, #portfolio > .col-2, #portfolio > .col-3, #portfolio > .col-4
-{
-   flex-basis: 100% !important;
-   max-width: 100% !important;
+#portfolio > .col-1,
+#portfolio > .col-2,
+#portfolio > .col-3,
+#portfolio > .col-4 {
+   flex-basis: 100%  !important;
+   max-width: 100%  !important;
 }
 }
-#wb_Panel1
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
+#wb_Panel1 {
    background-color: #FFFFFF;
    background-image: none;
    border: 0px solid #CCCCCC;
    border-radius: 0px;
-   box-sizing: border-box;
-   margin: 0;
    box-shadow: 1px 1px 21px #84BDDA;
+   box-sizing: border-box;
+   clear: both;
+   display: table;
+   margin: 0;
+   position: relative;
+   table-layout: fixed;
+   text-align: center;
+   width: 100%;
 }
-#Panel1
-{
+#Panel1 {
    box-sizing: border-box;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   padding: 0 0 15px 0;
-   margin-right: auto;
    margin-left: auto;
+   margin-right: auto;
+   padding: 0 0 15px 0;
 }
-#Panel1 > .col-1
-{
+#Panel1 > .col-1 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-right: 0px;
    padding-left: 0px;
+   padding-right: 0px;
    position: relative;
 }
-#Panel1
-{
+#Panel1 {
    width: 270px;
 }
-#Panel1 > .col-1
-{
+#Panel1 > .col-1 {
    flex: 0 0 auto;
    height: 433px;
 }
-#Panel1 > .col-1
-{
+#Panel1 > .col-1 {
+   align-items: flex-start;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 100%;
-   max-width: 100%;
    display: flex;
+   flex-basis: 100%;
    flex-direction: column;
-   align-items: flex-start;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-@media (max-width: 480px)
-{
-#Panel1
-{
+@media (max-width: 480px) {
+#Panel1 {
    width: 100%;
 }
-#Panel1 > .col-1
-{
-   flex-basis: 100% !important;
-   max-width: 100% !important;
+#Panel1 > .col-1 {
+   flex-basis: 100%  !important;
    height: auto;
+   max-width: 100%  !important;
 }
 }
-#wb_Text9 
-{
+#wb_Text9 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 15px 15px 15px 15px;
    margin: 0;
+   padding: 15px 15px 15px 15px;
    text-align: center;
 }
-#wb_Text9 div
-{
+#wb_Text9 div {
    text-align: center;
 }
-#wb_Text9
-{
+#wb_Text9 {
+   box-sizing: border-box;
    display: block;
    margin: 0;
-   box-sizing: border-box;
    width: 100%;
 }
-#wb_Heading2
-{
+#wb_Heading2 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
-   vertical-align: top;
    margin: 0;
    padding: 15px 0 15px 0;
    text-align: center;
+   vertical-align: top;
 }
-#Heading2
-{
+#Heading2 {
    color: #000000;
    font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
    font-size: 16px;
+   font-style: normal;
+   font-weight: bold;
    margin: 0;
    text-align: center;
 }
-#Shape5
-{
-   width: 100px;
-   height: 2px;
+#Shape5 {
    background-color: #000000;
    background-image: none;
    border: 0px #000000 solid;
+   height: 2px;
+   width: 100px;
 }
-#Shape5_text
-{
-   position: absolute;
-   pointer-events: none;
-   display: flex;
+#Shape5_text {
    align-items: center;
-   justify-content: center;
+   box-sizing: border-box;
+   display: flex;
    flex-direction: column;
-    left: 1%;
+   height: 0%;
+   justify-content: center;
+   left: 1%;
+   overflow: hidden;
+   pointer-events: none;
+   position: absolute;
+   text-align: center;
    top: 50%;
    width: 98%;
-   height: 0%;
-   box-sizing: border-box;
-   overflow: hidden;
-   text-align: center;
    word-wrap: break-word;
 }
-#wb_sun
-{
+#wb_sun {
    margin: 0;
    vertical-align: top;
 }
-#sun
-{
+#sun {
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
-   padding: 0;
    display: block;
-   width: 100%;
    height: auto;
+   margin-left: auto;
+   margin-right: auto;
    max-width: 300px;
-   margin-left: auto;
-   margin-right: auto;
+   padding: 0;
    vertical-align: top;
-}
-#wb_Panel2
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
    width: 100%;
+}
+#wb_Panel2 {
    background-color: #FFFFFF;
    background-image: none;
    border: 0px solid #CCCCCC;
    border-radius: 0px;
-   box-sizing: border-box;
-   margin: 0;
    box-shadow: 1px 1px 21px #84BDDA;
+   box-sizing: border-box;
+   clear: both;
+   display: table;
+   margin: 0;
+   position: relative;
+   table-layout: fixed;
+   text-align: center;
+   width: 100%;
 }
-#Panel2
-{
+#Panel2 {
    box-sizing: border-box;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   padding: 0 0 15px 0;
-   margin-right: auto;
    margin-left: auto;
+   margin-right: auto;
+   padding: 0 0 15px 0;
 }
-#Panel2 > .col-1
-{
+#Panel2 > .col-1 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-right: 0px;
    padding-left: 0px;
+   padding-right: 0px;
    position: relative;
 }
-#Panel2
-{
+#Panel2 {
    width: 270px;
 }
-#Panel2 > .col-1
-{
+#Panel2 > .col-1 {
    flex: 0 0 auto;
    height: 433px;
 }
-#Panel2 > .col-1
-{
+#Panel2 > .col-1 {
+   align-items: flex-start;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
+   display: flex;
    flex-basis: 100%;
+   flex-direction: column;
+   justify-content: center;
    max-width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   justify-content: center;
    text-align: center;
 }
-@media (max-width: 480px)
-{
-#Panel2
-{
+@media (max-width: 480px) {
+#Panel2 {
    width: 100%;
 }
-#Panel2 > .col-1
-{
-   flex-basis: 100% !important;
-   max-width: 100% !important;
+#Panel2 > .col-1 {
+   flex-basis: 100%  !important;
    height: auto;
+   max-width: 100%  !important;
 }
 }
-#wb_Text10 
-{
+#wb_Text10 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   padding: 15px 15px 15px 15px;
    margin: 0;
+   padding: 15px 15px 15px 15px;
    text-align: center;
 }
-#wb_Text10 div
-{
+#wb_Text10 div {
    text-align: center;
 }
-#wb_Text10
-{
+#wb_Text10 {
+   box-sizing: border-box;
    display: block;
    margin: 0;
-   box-sizing: border-box;
    width: 100%;
 }
-#wb_Heading3
-{
+#wb_Heading3 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
-   vertical-align: top;
    margin: 0;
    padding: 15px 0 15px 0;
    text-align: center;
+   vertical-align: top;
 }
-#Heading3
-{
+#Heading3 {
    color: #000000;
    font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
    font-size: 16px;
+   font-style: normal;
+   font-weight: bold;
    margin: 0;
    text-align: center;
 }
-#Shape6
-{
-   width: 100px;
-   height: 2px;
+#Shape6 {
    background-color: #000000;
    background-image: none;
    border: 0px #000000 solid;
+   height: 2px;
+   width: 100px;
 }
-#Shape6_text
-{
-   position: absolute;
-   pointer-events: none;
-   display: flex;
+#Shape6_text {
    align-items: center;
-   justify-content: center;
+   box-sizing: border-box;
+   display: flex;
    flex-direction: column;
-    left: 1%;
+   height: 0%;
+   justify-content: center;
+   left: 1%;
+   overflow: hidden;
+   pointer-events: none;
+   position: absolute;
+   text-align: center;
    top: 50%;
    width: 98%;
-   height: 0%;
-   box-sizing: border-box;
-   overflow: hidden;
-   text-align: center;
    word-wrap: break-word;
 }
-#wb_eat
-{
+#wb_eat {
    margin: 0;
    vertical-align: top;
 }
-#eat
-{
+#eat {
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
-   padding: 0;
    display: block;
-   width: 100%;
    height: auto;
-   max-width: 500px;
    margin-left: auto;
    margin-right: auto;
+   max-width: 500px;
+   padding: 0;
    vertical-align: top;
-}
-#wb_Text12 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 15px 15px 15px 15px;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text12 div
-{
-   text-align: center;
-}
-#wb_Text12
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
    width: 100%;
 }
-#wb_Heading5
-{
+#wb_Text12 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 15px 15px 15px 15px;
+   text-align: center;
+}
+#wb_Text12 div {
+   text-align: center;
+}
+#wb_Text12 {
+   box-sizing: border-box;
+   display: block;
+   margin: 0;
+   width: 100%;
+}
+#wb_Heading5 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
-   vertical-align: top;
    margin: 0;
    padding: 15px 0 15px 0;
    text-align: center;
+   vertical-align: top;
 }
-#Heading5
-{
+#Heading5 {
    color: #000000;
    font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
    font-size: 16px;
+   font-style: normal;
+   font-weight: bold;
    margin: 0;
    text-align: center;
 }
-#Shape8
-{
-   width: 100px;
-   height: 2px;
+#Shape8 {
    background-color: #000000;
    background-image: none;
    border: 0px #000000 solid;
+   height: 2px;
+   width: 100px;
 }
-#Shape8_text
-{
-   position: absolute;
-   pointer-events: none;
-   display: flex;
+#Shape8_text {
    align-items: center;
-   justify-content: center;
+   box-sizing: border-box;
+   display: flex;
    flex-direction: column;
-    left: 1%;
+   height: 0%;
+   justify-content: center;
+   left: 1%;
+   overflow: hidden;
+   pointer-events: none;
+   position: absolute;
+   text-align: center;
    top: 50%;
    width: 98%;
-   height: 0%;
-   box-sizing: border-box;
-   overflow: hidden;
-   text-align: center;
    word-wrap: break-word;
 }
-#wb_party
-{
+#wb_party {
    margin: 0;
    vertical-align: top;
 }
-#party
-{
+#party {
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
-   padding: 0;
    display: block;
-   width: 100%;
    height: auto;
-   max-width: 500px;
    margin-left: auto;
    margin-right: auto;
+   max-width: 500px;
+   padding: 0;
    vertical-align: top;
-}
-#wb_Text11 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 15px 15px 15px 15px;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text11 div
-{
-   text-align: center;
-}
-#wb_Text11
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
    width: 100%;
 }
-#wb_Heading4
-{
+#wb_Text11 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 15px 15px 15px 15px;
+   text-align: center;
+}
+#wb_Text11 div {
+   text-align: center;
+}
+#wb_Text11 {
+   box-sizing: border-box;
+   display: block;
+   margin: 0;
+   width: 100%;
+}
+#wb_Heading4 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
-   vertical-align: top;
    margin: 0;
    padding: 15px 0 15px 0;
    text-align: center;
+   vertical-align: top;
 }
-#Heading4
-{
+#Heading4 {
    color: #000000;
    font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
    font-size: 16px;
+   font-style: normal;
+   font-weight: bold;
    margin: 0;
    text-align: center;
 }
-#Shape7
-{
-   width: 100px;
-   height: 2px;
+#Shape7 {
    background-color: #000000;
    background-image: none;
    border: 0px #000000 solid;
+   height: 2px;
+   width: 100px;
 }
-#Shape7_text
-{
-   position: absolute;
-   pointer-events: none;
-   display: flex;
+#Shape7_text {
    align-items: center;
-   justify-content: center;
+   box-sizing: border-box;
+   display: flex;
    flex-direction: column;
-    left: 1%;
+   height: 0%;
+   justify-content: center;
+   left: 1%;
+   overflow: hidden;
+   pointer-events: none;
+   position: absolute;
+   text-align: center;
    top: 50%;
    width: 98%;
-   height: 0%;
-   box-sizing: border-box;
-   overflow: hidden;
-   text-align: center;
    word-wrap: break-word;
 }
-#wb_fun
-{
+#wb_fun {
    margin: 0;
    vertical-align: top;
 }
-#fun
-{
+#fun {
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
-   padding: 0;
    display: block;
-   width: 100%;
    height: auto;
-   max-width: 500px;
    margin-left: auto;
    margin-right: auto;
+   max-width: 500px;
+   padding: 0;
    vertical-align: top;
+   width: 100%;
 }
-#Layer6
-{
+#Layer6 {
    background-color: #FBFBFB;
    background-image: none;
    border-radius: 0px;
    margin: 0;
 }
-#wb_Panel4
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
+#wb_Panel4 {
    background-color: #FFFFFF;
    background-image: none;
    border: 0px solid #CCCCCC;
    border-radius: 0px;
-   box-sizing: border-box;
-   margin: 0;
    box-shadow: 1px 1px 21px #84BDDA;
+   box-sizing: border-box;
+   clear: both;
+   display: table;
+   margin: 0;
+   position: relative;
+   table-layout: fixed;
+   text-align: center;
+   width: 100%;
 }
-#Panel4
-{
+#Panel4 {
    box-sizing: border-box;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   padding: 0 0 15px 0;
-   margin-right: auto;
    margin-left: auto;
+   margin-right: auto;
+   padding: 0 0 15px 0;
 }
-#Panel4 > .col-1
-{
+#Panel4 > .col-1 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-right: 0px;
    padding-left: 0px;
+   padding-right: 0px;
    position: relative;
 }
-#Panel4
-{
+#Panel4 {
    width: 270px;
 }
-#Panel4 > .col-1
-{
+#Panel4 > .col-1 {
    flex: 0 0 auto;
    height: 432px;
 }
-#Panel4 > .col-1
-{
+#Panel4 > .col-1 {
+   align-items: flex-start;
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   flex-basis: 100%;
-   max-width: 100%;
    display: flex;
+   flex-basis: 100%;
    flex-direction: column;
-   align-items: flex-start;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-@media (max-width: 480px)
-{
-#Panel4
-{
+@media (max-width: 480px) {
+#Panel4 {
    width: 100%;
 }
-#Panel4 > .col-1
-{
-   flex-basis: 100% !important;
-   max-width: 100% !important;
+#Panel4 > .col-1 {
+   flex-basis: 100%  !important;
    height: auto;
+   max-width: 100%  !important;
 }
 }
-#wb_footer
-{
+#wb_footer {
    background-image: linear-gradient(to top, #6B3CFC 0%, #000000 100%);
    border: 0px solid #6B3CFC;
    border-radius: 0px;
    box-sizing: border-box;
    position: relative;
 }
-#footer
-{
+#footer {
+   align-content: center;
+   align-items: center;
+   box-sizing: border-box;
    display: flex;
-   position: relative;
-   height: 50px;
-   padding: 25px 25px 25px 25px;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 3000px;
-   box-sizing: border-box;
    font-size: 0;
+   height: 50px;
+   justify-content: center;
+   margin-bottom: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0px;
+   max-width: 3000px;
+   padding: 25px 25px 25px 25px;
+   position: relative;
 }
-#Button4
-{
-   position: absolute;
+#Button4 {
+   height: 24px;
    left: 1093px;
+   position: absolute;
    top: 11px;
    width: 96px;
-   height: 24px;
    z-index: 3;
 }
-#wb_Icon1
-{
+#wb_Icon1 {
    display: inline-block;
-   width: 16px;
    height: 16px;
    text-align: center;
+   width: 16px;
    z-index: 51;
 }
-#Layer6
-{
+#Layer6 {
+   clear: left;
+   display: block;
+   float: left;
+   height: 68px;
    position: relative;
    text-align: left;
    width: 100%;
-   height: 68px;
-   float: left;
-   clear: left;
-   display: block;
    z-index: 69;
 }
-#Button3
-{
+#Button3 {
    display: inline-block;
-   width: 96px;
    height: 29px;
+   width: 96px;
    z-index: 23;
 }
-#wb_Image1
-{
-   position: absolute;
+#wb_Image1 {
+   height: 74px;
    left: 0px;
+   position: absolute;
    top: 12px;
    width: 122px;
-   height: 74px;
    z-index: 1;
 }
-#Button2
-{
+#Button2 {
    display: inline-block;
-   width: 96px;
    height: 29px;
+   width: 96px;
    z-index: 17;
 }
-#wb_Icon4
-{
+#wb_Icon4 {
    display: inline-block;
-   width: 16px;
    height: 16px;
    text-align: center;
+   width: 16px;
    z-index: 54;
 }
-#Button1
-{
+#Button1 {
    display: inline-block;
-   width: 96px;
    height: 29px;
+   width: 96px;
    z-index: 35;
 }
-#wb_Icon5
-{
+#wb_Icon5 {
    display: inline-block;
-   width: 16px;
    height: 16px;
    text-align: center;
+   width: 16px;
    z-index: 55;
 }
-#Line1
-{
+#Line1 {
    display: block;
 }
-#wb_Text1
-{
-   position: absolute;
+#wb_Text1 {
+   height: 27px;
    left: 142px;
+   position: absolute;
    top: 0px;
    width: 249px;
-   height: 27px;
    z-index: 0;
 }
-#wb_Heading4
-{
+#wb_Heading4 {
    display: inline-block;
    width: 100%;
    z-index: 37;
 }
-#wb_fun
-{
+#wb_fun {
    display: inline-block;
-   width: 100%;
    height: auto;
+   width: 100%;
    z-index: 36;
 }
-#wb_Shape8
-{
+#wb_Shape8 {
    display: inline-block;
-   width: 100px;
    height: 2px;
-   z-index: 32;
    position: relative;
+   width: 100px;
+   z-index: 32;
 }
-#wb_Text2
-{
-   position: absolute;
+#wb_Text2 {
+   height: 27px;
    left: 142px;
+   position: absolute;
    top: 59px;
    width: 328px;
-   height: 27px;
    z-index: 2;
 }
-#wb_Heading5
-{
+#wb_Heading5 {
    display: inline-block;
    width: 100%;
    z-index: 31;
 }
-#Line2
-{
+#Line2 {
    display: block;
 }
-#wb_Heading2
-{
+#wb_Heading2 {
    display: inline-block;
    width: 100%;
    z-index: 19;
 }
-#wb_Heading3
-{
+#wb_Heading3 {
    display: inline-block;
    width: 100%;
    z-index: 25;
 }
-#Layer1
-{
+#Layer1 {
+   clear: left;
+   display: block;
+   float: left;
+   height: 98px;
    position: relative;
    text-align: center;
    width: 100%;
-   height: 98px;
-   float: left;
-   clear: left;
-   display: block;
    z-index: 4;
 }
-#wb_sun
-{
+#wb_sun {
    display: inline-block;
-   width: 100%;
    height: auto;
+   width: 100%;
    z-index: 18;
 }
-#wb_party
-{
+#wb_party {
    display: inline-block;
-   width: 100%;
    height: auto;
+   width: 100%;
    z-index: 30;
 }
-#wb_eat
-{
+#wb_eat {
    display: inline-block;
-   width: 100%;
    height: auto;
+   width: 100%;
    z-index: 24;
 }
-#wb_Shape5
-{
+#wb_Shape5 {
    display: inline-block;
-   width: 100px;
    height: 2px;
-   z-index: 20;
    position: relative;
+   width: 100px;
+   z-index: 20;
 }
-#wb_Heading1
-{
+#wb_Heading1 {
    display: inline-block;
    width: 165px;
    z-index: 11;
 }
-#wb_Icon2
-{
+#wb_Icon2 {
    display: inline-block;
-   width: 16px;
    height: 16px;
    text-align: center;
+   width: 16px;
    z-index: 52;
 }
-#wb_Shape6
-{
+#wb_Shape6 {
    display: inline-block;
-   width: 100px;
    height: 2px;
-   z-index: 26;
    position: relative;
+   width: 100px;
+   z-index: 26;
 }
-#Layer3
-{
+#Layer3 {
+   clear: left;
+   float: left;
+   height: 87px;
    position: relative;
    text-align: center;
    width: 100%;
-   height: 87px;
-   float: left;
-   clear: left;
    z-index: 68;
 }
-#Layer1_Container
-{
-   width: 1200px;
-   position: relative;
+#Layer1_Container {
    margin-left: auto;
    margin-right: auto;
+   position: relative;
    text-align: left;
+   width: 1200px;
 }
-#wb_Icon3
-{
+#wb_Icon3 {
    display: inline-block;
-   width: 16px;
    height: 16px;
    text-align: center;
+   width: 16px;
    z-index: 53;
 }
-#wb_Shape7
-{
+#wb_Shape7 {
    display: inline-block;
-   width: 100px;
    height: 2px;
-   z-index: 38;
    position: relative;
+   width: 100px;
+   z-index: 38;
 }
-#Button5
-{
+#Button5 {
    display: inline-block;
-   width: 96px;
    height: 29px;
+   width: 96px;
    z-index: 29;
 }
-@media only screen and (min-width: 480px) and (max-width: 1199px)
-{
-div#container
-{
+@media only screen and (min-width: 480px) and (max-width: 1199px) {
+div#container {
    width: 480px;
 }
-body
-{
+body {
    background-color: #FFFFFF;
    background-image: none;
 }
-#MasterPage1
-{
+#MasterPage1 {
+   display: inline;
+   height: 98px;
    left: 0px;
    top: 0px;
-   width: 480px;
-   height: 98px;
    visibility: visible;
-   display: inline;
+   width: 480px;
 }
-#Layer1
-{
-   width: 480px;
-   height: 98px;
-   visibility: visible;
-   display: block;
-   margin: 0;
+#Layer1 {
    border-radius: 0px;
-}
-#Layer1
-{
+   display: block;
+   height: 98px;
    margin: 0;
-}
-#Layer1_Container
-{
+   visibility: visible;
    width: 480px;
 }
-#Layer1
-{
-    width: 100%;
-    height: 98px;
+#Layer1 {
+   margin: 0;
 }
-#wb_Image1
-{
-   left: 0px;
-   top: 12px;
-   width: 122px;
-   height: 74px;
-   visibility: visible;
+#Layer1_Container {
+   width: 480px;
+}
+#Layer1 {
+   height: 98px;
+   width: 100%;
+}
+#wb_Image1 {
    display: inline;
+   height: 74px;
+   left: 0px;
    margin: 0;
    padding: 0;
+   top: 12px;
+   visibility: visible;
+   width: 122px;
 }
-#wb_Text1
-{
+#wb_Text1 {
+   display: inline;
+   height: 27px;
    left: 142px;
    top: 12px;
-   width: 249px;
-   height: 27px;
    visibility: visible;
-   display: inline;
+   width: 249px;
 }
-#wb_Text1
-{
+#wb_Text1 {
    font-family: "Exo 2";
-   font-weight: 400;
    font-size: 19px;
+   font-weight: 400;
    margin: 0;
    padding: 0;
    text-align: left;
 }
-#wb_Text2
-{
+#wb_Text2 {
+   display: inline;
+   height: 27px;
    left: 142px;
    top: 59px;
-   width: 328px;
-   height: 27px;
    visibility: visible;
-   display: inline;
+   width: 328px;
 }
-#wb_Text2
-{
+#wb_Text2 {
    font-family: "Exo 2";
-   font-weight: 400;
    font-size: 19px;
+   font-weight: 400;
    margin: 0;
    padding: 0;
    text-align: left;
 }
-#Button4
-{
-   left: 374px;
-   top: 15px;
-   width: 96px;
-   height: 24px;
-   visibility: visible;
+#Button4 {
    display: inline;
+   height: 24px;
+   left: 374px;
    margin: 0;
    padding: 1px 6px 1px 6px;
-}
-#wb_Panel3
-{
+   top: 15px;
    visibility: visible;
+   width: 96px;
+}
+#wb_Panel3 {
    display: table;
+   visibility: visible;
 }
-#wb_Panel3
-{
+#wb_Panel3 {
    height: auto;
-   margin-top: 0px;
    margin-bottom: 0px;
+   margin-top: 0px;
 }
-#Panel3
-{
+#Panel3 {
    height: auto;
    padding: 0 0 15px 0;
 }
-#Panel3
-{
+#Panel3 {
    width: 100%;
 }
-#Panel3 > .col-1
-{
-   padding-right: 0px;
+#Panel3 > .col-1 {
    padding-left: 0px;
+   padding-right: 0px;
 }
-#Panel3 > .col-1
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
+#Panel3 > .col-1 {
+   align-items: flex-start;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   align-items: flex-start;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#Button1
-{
-   width: 96px;
-   height: 29px;
-   visibility: visible;
+#Button1 {
    display: inline-block;
+   height: 29px;
    margin: 0;
    padding: 0;
+   visibility: visible;
+   width: 96px;
 }
-#Button1
-{
+#Button1 {
    line-height: 27px;
 }
-#Button2
-{
-   width: 96px;
-   height: 29px;
-   visibility: visible;
+#Button2 {
    display: inline-block;
+   height: 29px;
    margin: 0;
    padding: 0;
+   visibility: visible;
+   width: 96px;
 }
-#Button2
-{
+#Button2 {
    line-height: 27px;
 }
-#Button3
-{
-   width: 96px;
-   height: 29px;
-   visibility: visible;
+#Button3 {
    display: inline-block;
+   height: 29px;
    margin: 0;
    padding: 0;
+   visibility: visible;
+   width: 96px;
 }
-#Button3
-{
+#Button3 {
    line-height: 27px;
 }
-#Button5
-{
-   width: 96px;
-   height: 29px;
-   visibility: visible;
+#Button5 {
    display: inline-block;
+   height: 29px;
    margin: 0;
    padding: 0;
+   visibility: visible;
+   width: 96px;
 }
-#Button5
-{
+#Button5 {
    line-height: 27px;
 }
-#Layer3
-{
-   width: 480px;
+#Layer3 {
+   display: block;
    height: 87px;
+   margin: 0;
    visibility: visible;
-   display: block;
+   width: 480px;
+}
+#Layer3 {
    margin: 0;
 }
-#Layer3
-{
-   margin: 0;
+#Layer3 {
+   height: 87px;
+   width: 100%;
 }
-#Layer3
-{
-    width: 100%;
-    height: 87px;
-}
-#Layer3
-{
+#Layer3 {
    padding: 0;
 }
-#wb_FlexContainer1
-{
-   width: 100%;
-   visibility: visible;
-   display: block;
+#wb_FlexContainer1 {
    background-color: transparent;
    background-image: none;
+   display: block;
+   visibility: visible;
+   width: 100%;
 }
-#FlexContainer1
-{
-   min-height: 0;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 25px 15px 25px 15px;
+#FlexContainer1 {
+   align-content: flex-start;
+   align-items: center;
    flex-direction: row;
    flex-wrap: nowrap;
    justify-content: space-around;
-   align-items: center;
-   align-content: flex-start;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   min-height: 0;
+   padding: 25px 15px 25px 15px;
 }
-#Line1
-{
-   width: auto;
-   height: 3px;
-   visibility: visible;
+#Line1 {
+   align-self: auto;
    display: inline;
-   margin: 0;
    flex-grow: 1;
    flex-shrink: 0;
-   align-self: auto;
-}
-#Line1
-{
-   border-color: #1ABC9C;
-   border-bottom-width: 3px;
-}
-#wb_Heading1
-{
-   width: 165px;
-   height: 29px;
-   visibility: visible;
-   display: inline;
+   height: 3px;
    margin: 0;
+   visibility: visible;
+   width: auto;
+}
+#Line1 {
+   border-bottom-width: 3px;
+   border-color: #1ABC9C;
+}
+#wb_Heading1 {
+   align-self: auto;
+   display: inline;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 0;
-   font-size: 19px;
    font-family: "Exo 2";
-   font-weight: bold;
+   font-size: 19px;
    font-style: normal;
+   font-weight: bold;
+   height: 29px;
+   margin: 0;
+   padding: 0;
    text-decoration: none;
+   visibility: visible;
+   width: 165px;
 }
-#wb_Heading1
-{
+#wb_Heading1 {
+   align-self: auto;
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   text-align: center;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
+   text-align: center;
 }
-#Heading1
-{
+#Heading1 {
    color: #000000;
    font-family: "Exo 2";
-   font-weight: bold;
-   font-style: normal;
    font-size: 19px;
+   font-style: normal;
+   font-weight: bold;
    text-align: center;
    text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
 }
-#Line2
-{
-   width: auto;
-   height: 3px;
-   visibility: visible;
+#Line2 {
+   align-self: auto;
    display: inline;
-   margin: 0;
    flex-grow: 1;
    flex-shrink: 0;
-   align-self: auto;
+   height: 3px;
+   margin: 0;
+   visibility: visible;
+   width: auto;
 }
-#Line2
-{
-   border-color: #1ABC9C;
+#Line2 {
    border-bottom-width: 3px;
+   border-color: #1ABC9C;
 }
-#wb_Icon1
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
+#wb_Icon1 {
+   align-self: auto;
    display: inline;
-   margin: 0 10px 0 0 ;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 10px 10px 10px 10px;
-}
-#Icon1
-{
-   width: 16px;
    height: 16px;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   visibility: visible;
+   width: 16px;
 }
-#Icon1 i
-{
-   line-height: 16px;
+#Icon1 {
+   height: 16px;
+   width: 16px;
+}
+#Icon1 i {
    font-size: 16px;
+   line-height: 16px;
    width: 15px;
 }
-#wb_Icon2
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
+#wb_Icon2 {
+   align-self: auto;
    display: inline;
-   margin: 0 10px 0 0 ;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 10px 10px 10px 10px;
-}
-#Icon2
-{
-   width: 16px;
    height: 16px;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   visibility: visible;
+   width: 16px;
 }
-#Icon2 i
-{
-   line-height: 16px;
+#Icon2 {
+   height: 16px;
+   width: 16px;
+}
+#Icon2 i {
    font-size: 16px;
+   line-height: 16px;
    width: 19px;
 }
-#wb_Icon3
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
+#wb_Icon3 {
+   align-self: auto;
    display: inline;
-   margin: 0 10px 0 0 ;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 10px 10px 10px 10px;
-}
-#Icon3
-{
-   width: 16px;
    height: 16px;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   visibility: visible;
+   width: 16px;
 }
-#Icon3 i
-{
-   line-height: 16px;
+#Icon3 {
+   height: 16px;
+   width: 16px;
+}
+#Icon3 i {
    font-size: 16px;
+   line-height: 16px;
    width: 15px;
 }
-#wb_Icon4
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
+#wb_Icon4 {
+   align-self: auto;
    display: inline;
-   margin: 0 10px 0 0 ;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 10px 10px 10px 10px;
-}
-#Icon4
-{
-   width: 16px;
    height: 16px;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   visibility: visible;
+   width: 16px;
 }
-#Icon4 i
-{
-   line-height: 16px;
+#Icon4 {
+   height: 16px;
+   width: 16px;
+}
+#Icon4 i {
    font-size: 16px;
+   line-height: 16px;
    width: 19px;
 }
-#wb_Icon5
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
+#wb_Icon5 {
+   align-self: auto;
    display: inline;
-   margin: 0 10px 0 0 ;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 10px 10px 10px 10px;
-}
-#Icon5
-{
-   width: 16px;
    height: 16px;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   visibility: visible;
+   width: 16px;
 }
-#Icon5 i
-{
-   line-height: 16px;
+#Icon5 {
+   height: 16px;
+   width: 16px;
+}
+#Icon5 i {
    font-size: 16px;
+   line-height: 16px;
    width: 15px;
 }
-#wb_portfolio
-{
-   visibility: visible;
+#wb_portfolio {
    display: table;
+   visibility: visible;
 }
-#wb_portfolio
-{
+#wb_portfolio {
    height: auto;
-   margin-top: 0px;
    margin-bottom: 0px;
+   margin-top: 0px;
 }
-#portfolio
-{
+#portfolio {
    height: auto;
    padding: 25px 0 25px 0;
 }
-#portfolio
-{
+#portfolio {
    width: 100%;
 }
-#portfolio > .col-1, #portfolio > .col-2, #portfolio > .col-3, #portfolio > .col-4
-{
-   padding-right: 15px;
+#portfolio > .col-1,
+#portfolio > .col-2,
+#portfolio > .col-3,
+#portfolio > .col-4 {
    padding-left: 15px;
+   padding-right: 15px;
 }
-#portfolio > .col-1
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
+#portfolio > .col-1 {
    align-content: flex-start;
    align-items: flex-start;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#portfolio > .col-2
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
+#portfolio > .col-2 {
    align-content: flex-start;
    align-items: flex-start;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#portfolio > .col-3
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
+#portfolio > .col-3 {
    align-content: flex-start;
    align-items: flex-start;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#portfolio > .col-4
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
+#portfolio > .col-4 {
    align-content: flex-start;
    align-items: flex-start;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   display: flex;
+   flex-basis: 100%;
    justify-content: flex-start;
+   max-width: 100%;
    text-align: left;
 }
-#wb_Panel1
-{
-   visibility: visible;
+#wb_Panel1 {
    display: table;
+   visibility: visible;
 }
-#wb_Panel1
-{
-   margin-top: 0px;
+#wb_Panel1 {
    margin-bottom: 0px;
+   margin-top: 0px;
 }
-#Panel1
-{
+#Panel1 {
    padding: 0 0 15px 0;
 }
-#Panel1
-{
+#Panel1 {
    width: 100%;
 }
-#Panel1 > .col-1
-{
-   padding-right: 0px;
+#Panel1 > .col-1 {
    padding-left: 0px;
+   padding-right: 0px;
 }
-#Panel1 > .col-1
-{
+#Panel1 > .col-1 {
+   align-items: flex-start;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
    display: flex;
    flex-basis: 100%;
-   max-width: 100%;
    height: 458px;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   align-items: flex-start;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#wb_Text9
-{
-   visibility: visible;
+#wb_Text9 {
    display: block;
+   visibility: visible;
 }
-#wb_Text9
-{
+#wb_Text9 {
    margin: 0;
    padding: 15px 15px 15px 15px;
 }
-#wb_Heading2
-{
-   width: 100%;
-   visibility: visible;
+#wb_Heading2 {
+   background-color: transparent;
+   background-image: none;
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
-   background-color: transparent;
-   background-image: none;
+   visibility: visible;
+   width: 100%;
 }
-#wb_Heading2
-{
+#wb_Heading2 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    text-align: center;
 }
-#Heading2
-{
+#Heading2 {
    color: #000000;
    font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
    font-size: 16px;
+   font-style: normal;
+   font-weight: bold;
    text-align: center;
 }
-#wb_Shape5
-{
-   width: 100px;
-   height: 2px;
-   visibility: visible;
+#wb_Shape5 {
    display: inline-block;
-   margin: 0;
-}
-#Shape5
-{
-   width: 100px;
    height: 2px;
-}
-#wb_sun
-{
-   width: 100%;
+   margin: 0;
    visibility: visible;
+   width: 100px;
+}
+#Shape5 {
+   height: 2px;
+   width: 100px;
+}
+#wb_sun {
    display: block;
    margin: 0;
    padding: 0;
-}
-#wb_Panel2
-{
    visibility: visible;
+   width: 100%;
+}
+#wb_Panel2 {
    display: table;
+   visibility: visible;
 }
-#wb_Panel2
-{
-   margin-top: 0px;
+#wb_Panel2 {
    margin-bottom: 0px;
+   margin-top: 0px;
 }
-#Panel2
-{
+#Panel2 {
    padding: 0 0 15px 0;
 }
-#Panel2
-{
+#Panel2 {
    width: 100%;
 }
-#Panel2 > .col-1
-{
-   padding-right: 0px;
+#Panel2 > .col-1 {
    padding-left: 0px;
+   padding-right: 0px;
 }
-#Panel2 > .col-1
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
-   height: 608px;
+#Panel2 > .col-1 {
+   align-items: flex-start;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   align-items: flex-start;
+   display: flex;
+   flex-basis: 100%;
+   height: 608px;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#wb_Text10
-{
-   visibility: visible;
+#wb_Text10 {
    display: block;
+   visibility: visible;
 }
-#wb_Text10
-{
+#wb_Text10 {
    margin: 0;
    padding: 15px 15px 15px 15px;
 }
-#wb_Heading3
-{
-   width: 100%;
-   visibility: visible;
+#wb_Heading3 {
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
-}
-#wb_Shape6
-{
-   width: 100px;
-   height: 2px;
    visibility: visible;
-   display: inline-block;
-   margin: 0;
-}
-#Shape6
-{
-   width: 100px;
-   height: 2px;
-}
-#wb_eat
-{
    width: 100%;
+}
+#wb_Shape6 {
+   display: inline-block;
+   height: 2px;
+   margin: 0;
    visibility: visible;
+   width: 100px;
+}
+#Shape6 {
+   height: 2px;
+   width: 100px;
+}
+#wb_eat {
    display: block;
    margin: 0;
    padding: 0;
-}
-#wb_Text12
-{
    visibility: visible;
-   display: block;
+   width: 100%;
 }
-#wb_Text12
-{
+#wb_Text12 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text12 {
    margin: 0;
    padding: 15px 15px 15px 15px;
 }
-#wb_Heading5
-{
-   width: 100%;
-   visibility: visible;
+#wb_Heading5 {
+   background-color: transparent;
+   background-image: none;
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
-   background-color: transparent;
-   background-image: none;
+   visibility: visible;
+   width: 100%;
 }
-#wb_Heading5
-{
+#wb_Heading5 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    text-align: center;
 }
-#Heading5
-{
+#Heading5 {
    color: #000000;
    font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
    font-size: 16px;
+   font-style: normal;
+   font-weight: bold;
    text-align: center;
 }
-#wb_Shape8
-{
-   width: 100px;
-   height: 2px;
-   visibility: visible;
+#wb_Shape8 {
    display: inline-block;
-   margin: 0;
-}
-#Shape8
-{
-   width: 100px;
    height: 2px;
-}
-#wb_party
-{
-   width: 100%;
+   margin: 0;
    visibility: visible;
+   width: 100px;
+}
+#Shape8 {
+   height: 2px;
+   width: 100px;
+}
+#wb_party {
    display: block;
    margin: 0;
    padding: 0;
-}
-#wb_Text11
-{
    visibility: visible;
-   display: block;
+   width: 100%;
 }
-#wb_Text11
-{
+#wb_Text11 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text11 {
    margin: 0;
    padding: 15px 15px 15px 15px;
 }
-#wb_Heading4
-{
-   width: 100%;
-   visibility: visible;
+#wb_Heading4 {
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
-}
-#wb_Shape7
-{
-   width: 100px;
-   height: 2px;
    visibility: visible;
-   display: inline-block;
-   margin: 0;
-}
-#Shape7
-{
-   width: 100px;
-   height: 2px;
-}
-#wb_fun
-{
    width: 100%;
+}
+#wb_Shape7 {
+   display: inline-block;
+   height: 2px;
+   margin: 0;
    visibility: visible;
+   width: 100px;
+}
+#Shape7 {
+   height: 2px;
+   width: 100px;
+}
+#wb_fun {
    display: block;
    margin: 0;
    padding: 0;
-}
-#Layer6
-{
-   width: 480px;
-   height: 66px;
    visibility: visible;
-   display: block;
-   margin: 0;
+   width: 100%;
 }
-#Layer6
-{
+#Layer6 {
+   display: block;
+   height: 66px;
+   margin: 0;
+   visibility: visible;
+   width: 480px;
+}
+#Layer6 {
    left: 0%;
    margin: 0;
 }
-#Layer6
-{
-    width: 100%;
-    height: 66px;
-}
-#wb_Panel4
-{
-   visibility: visible;
-   display: table;
-}
-#wb_Panel4
-{
-   margin-top: 0px;
-   margin-bottom: 0px;
-}
-#Panel4
-{
-   padding: 0 0 15px 0;
-}
-#Panel4
-{
+#Layer6 {
+   height: 66px;
    width: 100%;
 }
-#Panel4 > .col-1
-{
-   padding-right: 0px;
-   padding-left: 0px;
+#wb_Panel4 {
+   display: table;
+   visibility: visible;
 }
-#Panel4 > .col-1
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
-   height: 608px;
+#wb_Panel4 {
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+#Panel4 {
+   padding: 0 0 15px 0;
+}
+#Panel4 {
+   width: 100%;
+}
+#Panel4 > .col-1 {
+   padding-left: 0px;
+   padding-right: 0px;
+}
+#Panel4 > .col-1 {
+   align-items: flex-start;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   align-items: flex-start;
+   display: flex;
+   flex-basis: 100%;
+   height: 608px;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#wb_footer
-{
-   visibility: visible;
-   display: block;
+#wb_footer {
    background-color: #6B3CFC;
    background-image: none;
    background-image: none;
+   display: block;
+   visibility: visible;
 }
-#footer
-{
-   height: 0px;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 25px 25px 25px 25px;
+#footer {
+   align-content: center;
+   align-items: center;
    flex-direction: row;
    flex-wrap: wrap;
+   height: 0px;
    justify-content: center;
-   align-items: center;
-   align-content: center;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   padding: 25px 25px 25px 25px;
 }
 }
-@media only screen and (max-width: 479px)
-{
-div#container
-{
+@media only screen and (max-width: 479px) {
+div#container {
    width: 320px;
 }
-body
-{
+body {
    background-color: #FFFFFF;
    background-image: none;
 }
-#MasterPage1
-{
+#MasterPage1 {
+   display: inline;
+   height: 118px;
    left: 0px;
    top: 0px;
-   width: 320px;
-   height: 118px;
    visibility: visible;
-   display: inline;
+   width: 320px;
 }
-#Layer1
-{
-   width: 320px;
-   height: 118px;
-   visibility: visible;
-   display: block;
-   margin: 0;
+#Layer1 {
    border-radius: 0px;
-}
-#Layer1
-{
+   display: block;
+   height: 118px;
    margin: 0;
-}
-#Layer1_Container
-{
+   visibility: visible;
    width: 320px;
 }
-#Layer1
-{
-    width: 100%;
-    height: 118px;
+#Layer1 {
+   margin: 0;
 }
-#wb_Image1
-{
-   left: 1px;
-   top: 23px;
-   width: 110px;
-   height: 67px;
-   visibility: visible;
+#Layer1_Container {
+   width: 320px;
+}
+#Layer1 {
+   height: 118px;
+   width: 100%;
+}
+#wb_Image1 {
    display: inline;
+   height: 67px;
+   left: 1px;
    margin: 0;
    padding: 0;
+   top: 23px;
+   visibility: visible;
+   width: 110px;
 }
-#wb_Text1
-{
+#wb_Text1 {
+   display: inline;
+   height: 27px;
    left: 111px;
    top: 12px;
-   width: 209px;
-   height: 27px;
    visibility: visible;
-   display: inline;
+   width: 209px;
 }
-#wb_Text1
-{
+#wb_Text1 {
    font-family: "Exo 2";
-   font-weight: 400;
    font-size: 19px;
+   font-weight: 400;
    margin: 0;
    padding: 0;
    text-align: center;
 }
-#wb_Text2
-{
+#wb_Text2 {
+   display: inline;
+   height: 48px;
    left: 111px;
    top: 59px;
-   width: 201px;
-   height: 48px;
    visibility: visible;
-   display: inline;
+   width: 201px;
 }
-#wb_Text2
-{
+#wb_Text2 {
    font-family: "Exo 2";
-   font-weight: 400;
    font-size: 16px;
+   font-weight: 400;
    margin: 0;
    padding: 0;
    text-align: center;
 }
-#Button4
-{
-   left: 12px;
-   top: 90px;
-   width: 86px;
-   height: 28px;
-   visibility: visible;
+#Button4 {
    display: inline;
+   height: 28px;
+   left: 12px;
    margin: 0;
    padding: 1px 6px 1px 6px;
-}
-#wb_Panel3
-{
+   top: 90px;
    visibility: visible;
+   width: 86px;
+}
+#wb_Panel3 {
    display: table;
+   visibility: visible;
 }
-#wb_Panel3
-{
+#wb_Panel3 {
    height: auto;
-   margin-top: 0px;
    margin-bottom: 0px;
+   margin-top: 0px;
 }
-#Panel3
-{
+#Panel3 {
    height: auto;
    padding: 0 0 15px 0;
 }
-#Panel3
-{
+#Panel3 {
    width: 100%;
 }
-#Panel3 > .col-1
-{
-   padding-right: 0px;
+#Panel3 > .col-1 {
    padding-left: 0px;
+   padding-right: 0px;
 }
-#Panel3 > .col-1
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
+#Panel3 > .col-1 {
+   align-items: flex-start;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   align-items: flex-start;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#Button1
-{
-   width: 96px;
-   height: 29px;
-   visibility: visible;
+#Button1 {
    display: inline-block;
+   height: 29px;
    margin: 0;
    padding: 0;
+   visibility: visible;
+   width: 96px;
 }
-#Button1
-{
+#Button1 {
    line-height: 27px;
 }
-#Button2
-{
-   width: 96px;
-   height: 29px;
-   visibility: visible;
+#Button2 {
    display: inline-block;
+   height: 29px;
    margin: 0;
    padding: 0;
+   visibility: visible;
+   width: 96px;
 }
-#Button2
-{
+#Button2 {
    line-height: 27px;
 }
-#Button3
-{
-   width: 96px;
-   height: 29px;
-   visibility: visible;
+#Button3 {
    display: inline-block;
+   height: 29px;
    margin: 0;
    padding: 0;
+   visibility: visible;
+   width: 96px;
 }
-#Button3
-{
+#Button3 {
    line-height: 27px;
 }
-#Button5
-{
-   width: 96px;
-   height: 29px;
-   visibility: visible;
+#Button5 {
    display: inline-block;
+   height: 29px;
    margin: 0;
    padding: 0;
+   visibility: visible;
+   width: 96px;
 }
-#Button5
-{
+#Button5 {
    line-height: 27px;
 }
-#Layer3
-{
-   width: 320px;
+#Layer3 {
+   display: block;
    height: 99px;
+   margin: 0;
    visibility: visible;
-   display: block;
+   width: 320px;
+}
+#Layer3 {
    margin: 0;
 }
-#Layer3
-{
-   margin: 0;
+#Layer3 {
+   height: 99px;
+   width: 100%;
 }
-#Layer3
-{
-    width: 100%;
-    height: 99px;
-}
-#Layer3
-{
+#Layer3 {
    padding: 0;
 }
-#wb_FlexContainer1
-{
-   width: 100%;
-   visibility: visible;
-   display: block;
+#wb_FlexContainer1 {
    background-color: transparent;
    background-image: none;
+   display: block;
+   visibility: visible;
+   width: 100%;
 }
-#FlexContainer1
-{
-   min-height: 0;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 25px 15px 25px 15px;
+#FlexContainer1 {
+   align-content: center;
+   align-items: flex-start;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-around;
-   align-items: flex-start;
-   align-content: center;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   min-height: 0;
+   padding: 25px 15px 25px 15px;
 }
-#Line1
-{
-   width: auto;
-   height: 3px;
-   visibility: visible;
+#Line1 {
+   align-self: auto;
    display: inline;
-   margin: 0;
    flex-grow: 1;
    flex-shrink: 0;
-   align-self: auto;
-}
-#Line1
-{
-   border-color: #1ABC9C;
-   border-bottom-width: 3px;
-}
-#wb_Heading1
-{
-   width: 165px;
-   height: 29px;
-   visibility: visible;
-   display: inline;
+   height: 3px;
    margin: 0;
+   visibility: visible;
+   width: auto;
+}
+#Line1 {
+   border-bottom-width: 3px;
+   border-color: #1ABC9C;
+}
+#wb_Heading1 {
+   align-self: auto;
+   display: inline;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 0;
-   font-size: 20px;
    font-family: "Exo 2";
-   font-weight: bold;
+   font-size: 20px;
    font-style: normal;
+   font-weight: bold;
+   height: 29px;
+   margin: 0;
+   padding: 0;
    text-decoration: none;
+   visibility: visible;
+   width: 165px;
 }
-#wb_Heading1
-{
+#wb_Heading1 {
+   align-self: auto;
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   text-align: center;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
+   text-align: center;
 }
-#Heading1
-{
+#Heading1 {
    color: #000000;
    font-family: "Exo 2";
-   font-weight: bold;
-   font-style: normal;
    font-size: 20px;
+   font-style: normal;
+   font-weight: bold;
    text-align: center;
    text-shadow: 0px 0px 1px rgba(0,0,0,0.50);
 }
-#Line2
-{
-   width: auto;
-   height: 3px;
-   visibility: visible;
+#Line2 {
+   align-self: auto;
    display: inline;
-   margin: 0;
    flex-grow: 1;
    flex-shrink: 0;
-   align-self: auto;
+   height: 3px;
+   margin: 0;
+   visibility: visible;
+   width: auto;
 }
-#Line2
-{
-   border-color: #1ABC9C;
+#Line2 {
    border-bottom-width: 3px;
+   border-color: #1ABC9C;
 }
-#wb_Icon1
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
+#wb_Icon1 {
+   align-self: auto;
    display: inline;
-   margin: 0 10px 0 0 ;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 10px 10px 10px 10px;
-}
-#Icon1
-{
-   width: 16px;
    height: 16px;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   visibility: visible;
+   width: 16px;
 }
-#Icon1 i
-{
-   line-height: 16px;
+#Icon1 {
+   height: 16px;
+   width: 16px;
+}
+#Icon1 i {
    font-size: 16px;
+   line-height: 16px;
    width: 15px;
 }
-#wb_Icon2
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
+#wb_Icon2 {
+   align-self: auto;
    display: inline;
-   margin: 0 10px 0 0 ;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 10px 10px 10px 10px;
-}
-#Icon2
-{
-   width: 16px;
    height: 16px;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   visibility: visible;
+   width: 16px;
 }
-#Icon2 i
-{
-   line-height: 16px;
+#Icon2 {
+   height: 16px;
+   width: 16px;
+}
+#Icon2 i {
    font-size: 16px;
+   line-height: 16px;
    width: 19px;
 }
-#wb_Icon3
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
+#wb_Icon3 {
+   align-self: auto;
    display: inline;
-   margin: 0 10px 0 0 ;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 10px 10px 10px 10px;
-}
-#Icon3
-{
-   width: 16px;
    height: 16px;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   visibility: visible;
+   width: 16px;
 }
-#Icon3 i
-{
-   line-height: 16px;
+#Icon3 {
+   height: 16px;
+   width: 16px;
+}
+#Icon3 i {
    font-size: 16px;
+   line-height: 16px;
    width: 15px;
 }
-#wb_Icon4
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
+#wb_Icon4 {
+   align-self: auto;
    display: inline;
-   margin: 0 10px 0 0 ;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 10px 10px 10px 10px;
-}
-#Icon4
-{
-   width: 16px;
    height: 16px;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   visibility: visible;
+   width: 16px;
 }
-#Icon4 i
-{
-   line-height: 16px;
+#Icon4 {
+   height: 16px;
+   width: 16px;
+}
+#Icon4 i {
    font-size: 16px;
+   line-height: 16px;
    width: 19px;
 }
-#wb_Icon5
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
+#wb_Icon5 {
+   align-self: auto;
    display: inline;
-   margin: 0 10px 0 0 ;
    flex-grow: 0;
    flex-shrink: 0;
-   align-self: auto;
-   padding: 10px 10px 10px 10px;
-}
-#Icon5
-{
-   width: 16px;
    height: 16px;
+   margin: 0 10px 0 0;
+   padding: 10px 10px 10px 10px;
+   visibility: visible;
+   width: 16px;
 }
-#Icon5 i
-{
-   line-height: 16px;
+#Icon5 {
+   height: 16px;
+   width: 16px;
+}
+#Icon5 i {
    font-size: 16px;
+   line-height: 16px;
    width: 15px;
 }
-#wb_portfolio
-{
-   visibility: visible;
+#wb_portfolio {
    display: table;
+   visibility: visible;
 }
-#wb_portfolio
-{
+#wb_portfolio {
    height: auto;
-   margin-top: 0px;
    margin-bottom: 0px;
+   margin-top: 0px;
 }
-#portfolio
-{
+#portfolio {
    height: auto;
    padding: 25px 0 25px 0;
 }
-#portfolio
-{
+#portfolio {
    width: 100%;
 }
-#portfolio > .col-1, #portfolio > .col-2, #portfolio > .col-3, #portfolio > .col-4
-{
-   padding-right: 15px;
+#portfolio > .col-1,
+#portfolio > .col-2,
+#portfolio > .col-3,
+#portfolio > .col-4 {
    padding-left: 15px;
+   padding-right: 15px;
 }
-#portfolio > .col-1
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
+#portfolio > .col-1 {
    align-content: flex-start;
    align-items: flex-start;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#portfolio > .col-2
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
+#portfolio > .col-2 {
    align-content: flex-start;
    align-items: flex-start;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#portfolio > .col-3
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
+#portfolio > .col-3 {
    align-content: flex-start;
    align-items: flex-start;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#portfolio > .col-4
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
+#portfolio > .col-4 {
    align-content: flex-start;
    align-items: flex-start;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   display: flex;
+   flex-basis: 100%;
    justify-content: flex-start;
+   max-width: 100%;
    text-align: left;
 }
-#wb_Panel1
-{
-   visibility: visible;
+#wb_Panel1 {
    display: table;
+   visibility: visible;
 }
-#wb_Panel1
-{
+#wb_Panel1 {
    height: auto;
-   margin-top: 0px;
    margin-bottom: 0px;
+   margin-top: 0px;
 }
-#Panel1
-{
+#Panel1 {
    height: auto;
    padding: 0 0 15px 0;
 }
-#Panel1
-{
+#Panel1 {
    width: 100%;
 }
-#Panel1 > .col-1
-{
-   padding-right: 0px;
+#Panel1 > .col-1 {
    padding-left: 0px;
+   padding-right: 0px;
 }
-#Panel1 > .col-1
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
+#Panel1 > .col-1 {
+   align-items: flex-start;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   align-items: flex-start;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#wb_Text9
-{
-   visibility: visible;
+#wb_Text9 {
    display: block;
+   visibility: visible;
 }
-#wb_Text9
-{
+#wb_Text9 {
    margin: 0;
    padding: 15px 15px 15px 15px;
 }
-#wb_Heading2
-{
-   width: 100%;
-   visibility: visible;
+#wb_Heading2 {
+   background-color: transparent;
+   background-image: none;
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
-   background-color: transparent;
-   background-image: none;
+   visibility: visible;
+   width: 100%;
 }
-#wb_Heading2
-{
+#wb_Heading2 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    text-align: center;
 }
-#Heading2
-{
+#Heading2 {
    color: #000000;
    font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
    font-size: 16px;
+   font-style: normal;
+   font-weight: bold;
    text-align: center;
 }
-#wb_Shape5
-{
-   width: 100px;
-   height: 2px;
-   visibility: visible;
+#wb_Shape5 {
    display: inline-block;
-   margin: 0;
-}
-#Shape5
-{
-   width: 100px;
    height: 2px;
-}
-#wb_sun
-{
-   width: 100%;
+   margin: 0;
    visibility: visible;
+   width: 100px;
+}
+#Shape5 {
+   height: 2px;
+   width: 100px;
+}
+#wb_sun {
    display: block;
    margin: 0;
    padding: 0;
+   visibility: visible;
+   width: 100%;
 }
-#sun
-{
+#sun {
    border: 0px solid transparent;
 }
-#wb_Panel2
-{
-   visibility: visible;
+#wb_Panel2 {
    display: table;
+   visibility: visible;
 }
-#wb_Panel2
-{
+#wb_Panel2 {
    height: auto;
-   margin-top: 0px;
    margin-bottom: 0px;
+   margin-top: 0px;
 }
-#Panel2
-{
+#Panel2 {
    height: auto;
    padding: 0 0 15px 0;
 }
-#Panel2
-{
+#Panel2 {
    width: 100%;
 }
-#Panel2 > .col-1
-{
-   padding-right: 0px;
+#Panel2 > .col-1 {
    padding-left: 0px;
+   padding-right: 0px;
 }
-#Panel2 > .col-1
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
+#Panel2 > .col-1 {
+   align-items: flex-start;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   align-items: flex-start;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#wb_Text10
-{
-   visibility: visible;
+#wb_Text10 {
    display: block;
+   visibility: visible;
 }
-#wb_Text10
-{
+#wb_Text10 {
    margin: 0;
    padding: 15px 15px 15px 15px;
 }
-#wb_Heading3
-{
-   width: 100%;
-   visibility: visible;
+#wb_Heading3 {
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
-}
-#wb_Shape6
-{
-   width: 100px;
-   height: 2px;
    visibility: visible;
-   display: inline-block;
-   margin: 0;
-}
-#Shape6
-{
-   width: 100px;
-   height: 2px;
-}
-#wb_eat
-{
    width: 100%;
+}
+#wb_Shape6 {
+   display: inline-block;
+   height: 2px;
+   margin: 0;
    visibility: visible;
+   width: 100px;
+}
+#Shape6 {
+   height: 2px;
+   width: 100px;
+}
+#wb_eat {
    display: block;
    margin: 0;
    padding: 0;
-}
-#wb_Text12
-{
    visibility: visible;
-   display: block;
+   width: 100%;
 }
-#wb_Text12
-{
+#wb_Text12 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text12 {
    margin: 0;
    padding: 15px 15px 15px 15px;
 }
-#wb_Heading5
-{
-   width: 100%;
-   visibility: visible;
+#wb_Heading5 {
+   background-color: transparent;
+   background-image: none;
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
-   background-color: transparent;
-   background-image: none;
+   visibility: visible;
+   width: 100%;
 }
-#wb_Heading5
-{
+#wb_Heading5 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
    text-align: center;
 }
-#Heading5
-{
+#Heading5 {
    color: #000000;
    font-family: Arial;
-   font-weight: bold;
-   font-style: normal;
    font-size: 16px;
+   font-style: normal;
+   font-weight: bold;
    text-align: center;
 }
-#wb_Shape8
-{
-   width: 100px;
-   height: 2px;
-   visibility: visible;
+#wb_Shape8 {
    display: inline-block;
-   margin: 0;
-}
-#Shape8
-{
-   width: 100px;
    height: 2px;
-}
-#wb_party
-{
-   width: 100%;
+   margin: 0;
    visibility: visible;
+   width: 100px;
+}
+#Shape8 {
+   height: 2px;
+   width: 100px;
+}
+#wb_party {
    display: block;
    margin: 0;
    padding: 0;
-}
-#wb_Text11
-{
    visibility: visible;
-   display: block;
+   width: 100%;
 }
-#wb_Text11
-{
+#wb_Text11 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text11 {
    margin: 0;
    padding: 15px 15px 15px 15px;
 }
-#wb_Heading4
-{
-   width: 100%;
-   visibility: visible;
+#wb_Heading4 {
    display: block;
    margin: 0;
    padding: 15px 0 15px 0;
-}
-#wb_Shape7
-{
-   width: 100px;
-   height: 2px;
    visibility: visible;
-   display: inline-block;
-   margin: 0;
-}
-#Shape7
-{
-   width: 100px;
-   height: 2px;
-}
-#wb_fun
-{
    width: 100%;
+}
+#wb_Shape7 {
+   display: inline-block;
+   height: 2px;
+   margin: 0;
    visibility: visible;
+   width: 100px;
+}
+#Shape7 {
+   height: 2px;
+   width: 100px;
+}
+#wb_fun {
    display: block;
    margin: 0;
    padding: 0;
-}
-#Layer6
-{
-   width: 320px;
-   height: 67px;
    visibility: visible;
-   display: block;
-   margin: 0;
+   width: 100%;
 }
-#Layer6
-{
+#Layer6 {
+   display: block;
+   height: 67px;
+   margin: 0;
+   visibility: visible;
+   width: 320px;
+}
+#Layer6 {
    left: 0%;
    margin: 0;
 }
-#Layer6
-{
-    width: 100%;
-    height: 67px;
+#Layer6 {
+   height: 67px;
+   width: 100%;
 }
-#wb_Panel4
-{
-   visibility: visible;
+#wb_Panel4 {
    display: table;
+   visibility: visible;
 }
-#wb_Panel4
-{
+#wb_Panel4 {
    height: auto;
-   margin-top: 0px;
    margin-bottom: 0px;
+   margin-top: 0px;
 }
-#Panel4
-{
+#Panel4 {
    height: auto;
    padding: 0 0 15px 0;
 }
-#Panel4
-{
+#Panel4 {
    width: 100%;
 }
-#Panel4 > .col-1
-{
-   padding-right: 0px;
+#Panel4 > .col-1 {
    padding-left: 0px;
+   padding-right: 0px;
 }
-#Panel4 > .col-1
-{
-   display: flex;
-   flex-basis: 100%;
-   max-width: 100%;
+#Panel4 > .col-1 {
+   align-items: flex-start;
    border: 0px solid #FFFFFF;
    border-radius: 0px;
-   align-items: flex-start;
+   display: flex;
+   flex-basis: 100%;
    justify-content: center;
+   max-width: 100%;
    text-align: center;
 }
-#wb_footer
-{
-   visibility: visible;
-   display: block;
+#wb_footer {
    background-color: #6B3CFC;
    background-image: none;
    background-image: none;
+   display: block;
+   visibility: visible;
 }
-#footer
-{
-   height: 0px;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 25px 25px 25px 25px;
+#footer {
+   align-content: center;
+   align-items: center;
    flex-direction: row;
    flex-wrap: wrap;
+   height: 0px;
    justify-content: center;
-   align-items: center;
-   align-content: center;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   padding: 25px 25px 25px 25px;
 }
 }
-.darktheme body
-{
+.darktheme body {
    background-color: #000000;
 }
 .darktheme #Layer1,
 .darktheme #Layer3,
 .darktheme #wb_portfolio,
-.darktheme #Layer6
-{
+.darktheme #Layer6 {
    filter: invert(100%);
 }

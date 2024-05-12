@@ -1,176 +1,204 @@
-@font-face
-{
+@font-face {
+   font-display: swap;
    font-family: "Exo 2";
    font-weight: 400;
-   font-display: swap;
-   src: url('Exo-2.woff2') format('woff2'),
-        url('Exo-2.woff') format('woff');
+   src: url('Exo-2.woff2') format('woff2'), url('Exo-2.woff') format('woff');
 }
-@keyframes animate-fade-in
-{
-   0% { opacity: 0;  }
-   100% { opacity: 1;  }
+@keyframes animate-fade-in {
+0% {
+   opacity: 0;
 }
-@keyframes animate-fade-out
-{
-   0% { opacity: 1;  }
-   100% { opacity: 0;  }
+100% {
+   opacity: 1;
 }
-@keyframes animate-flash
-{
-   0% { opacity: 1;  }
-   25% { opacity: 0;  }
-   50% { opacity: 1;  }
-   75% { opacity: 0;  }
-   100% { opacity: 1;  }
 }
-@keyframes slide-down-in
-{
-   0% { transform: translate(0px,-100%) rotate(1deg) ; opacity: 0; transform-origin: 0 0;  }
-   100% { opacity: 1; transform: translate(0px,0px) rotate(0deg) ; transform-origin: 0 0;  }
+@keyframes animate-fade-out {
+0% {
+   opacity: 1;
 }
-@keyframes swoop-in
-{
-   0% { transform: translate(-400px,0px) rotate(0deg) scale(1.5,1) ; opacity: 0;  }
-   40% { transform: translate(0px,0px) rotate(0deg) scale(1.2,1.0) ; opacity: 1;  }
-   60% { transform: translate(20px,0px) rotate(0deg) scale(1.0,1.0) ;  }
-   100% { transform: translate(0px,0px) rotate(0deg) scale(1,1) ;  }
+100% {
+   opacity: 0;
 }
-@keyframes transform-scale-in
-{
-   0% { opacity: 0; transform: rotate(0deg) scale(0,0) ;  }
-   100% { opacity: 1; transform: rotate(0deg) scale(1.0,1.0) ;  }
 }
-h1, .h1
-{
+@keyframes animate-flash {
+0% {
+   opacity: 1;
+}
+25% {
+   opacity: 0;
+}
+50% {
+   opacity: 1;
+}
+75% {
+   opacity: 0;
+}
+100% {
+   opacity: 1;
+}
+}
+@keyframes slide-down-in {
+0% {
+   opacity: 0;
+   transform-origin: 0 0;
+   transform: translate(0px,-100%) rotate(1deg);
+}
+100% {
+   opacity: 1;
+   transform-origin: 0 0;
+   transform: translate(0px,0px) rotate(0deg);
+}
+}
+@keyframes swoop-in {
+0% {
+   opacity: 0;
+   transform: translate(-400px,0px) rotate(0deg) scale(1.5,1);
+}
+40% {
+   opacity: 1;
+   transform: translate(0px,0px) rotate(0deg) scale(1.2,1.0);
+}
+60% {
+   transform: translate(20px,0px) rotate(0deg) scale(1.0,1.0);
+}
+100% {
+   transform: translate(0px,0px) rotate(0deg) scale(1,1);
+}
+}
+@keyframes transform-scale-in {
+0% {
+   opacity: 0;
+   transform: rotate(0deg) scale(0,0);
+}
+100% {
+   opacity: 1;
+   transform: rotate(0deg) scale(1.0,1.0);
+}
+}
+h1,
+.h1 {
+   --color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   color: #000000;
+   display: inline-block;
    font-family: Arial;
-   font-weight: bold;
    font-size: 32px;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
+   font-weight: bold;
    margin: 0 0 0 0;
    padding: 0 0 0 0;
-   --color: #000000;
-   display: inline-block;
+   text-decoration: none;
 }
-h2, .h2
-{
+h2,
+.h2 {
+   --color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   color: #000000;
+   display: inline-block;
    font-family: Arial;
-   font-weight: bold;
    font-size: 27px;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
+   font-weight: bold;
    margin: 0 0 0 0;
    padding: 0 0 0 0;
-   --color: #000000;
-   display: inline-block;
+   text-decoration: none;
 }
-h3, .h3
-{
+h3,
+.h3 {
+   --color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   color: #000000;
+   display: inline-block;
    font-family: Arial;
-   font-weight: bold;
    font-size: 24px;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
+   font-weight: bold;
    margin: 0 0 0 0;
    padding: 0 0 0 0;
-   --color: #000000;
-   display: inline-block;
+   text-decoration: none;
 }
-h4, .h4
-{
+h4,
+.h4 {
+   --color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   color: #000000;
+   display: inline-block;
    font-family: Arial;
-   font-weight: bold;
    font-size: 21px;
    font-style: italic;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
+   font-weight: bold;
    margin: 0 0 0 0;
    padding: 0 0 0 0;
-   --color: #000000;
-   display: inline-block;
+   text-decoration: none;
 }
-h5, .h5
-{
+h5,
+.h5 {
+   --color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   color: #000000;
+   display: inline-block;
    font-family: Arial;
-   font-weight: bold;
    font-size: 19px;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
+   font-weight: bold;
    margin: 0 0 0 0;
    padding: 0 0 0 0;
-   --color: #000000;
-   display: inline-block;
+   text-decoration: none;
 }
-h6, .h6
-{
+h6,
+.h6 {
+   --color: #000000;
+   --color: #000000;
+   background-color: transparent;
+   color: #000000;
+   display: inline-block;
    font-family: Arial;
-   font-weight: bold;
    font-size: 16px;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
+   font-weight: bold;
    margin: 0 0 0 0;
    padding: 0 0 0 0;
-   --color: #000000;
-   display: inline-block;
-}
-.CustomStyle
-{
-   font-family: "Courier New";
-   font-weight: bold;
-   font-size: 16px;
    text-decoration: none;
+}
+.CustomStyle {
+   --color: #2E74B5;
+   --color: #2E74B5;
+   background-color: transparent;
    color: #2E74B5;
-   --color: #2E74B5;
-   background-color: transparent;
-   --color: #2E74B5;
-}
-.style1
-{
+   font-family: "Courier New";
+   font-size: 16px;
+   font-weight: bold;
    text-decoration: none;
-   background-color: transparent;
 }
-.darktheme .style1
-{
-   background-color: #000000;
+.style1 {
+   background-color: transparent;
+   text-decoration: none;
+}
+.darktheme .style1 {
    --background-color: rgba(0,0,0,1.00);
+   background-color: #000000;
    background-image: linear-gradient(to top, #000000 0%, #000000 100%);
 }
-.darktheme .style1
-{
-   text-decoration: none;
+.darktheme .style1 {
+   --background-color: rgba(0,0,0,1.00);
+   --background-color: rgba(0,0,0,1.00);
    background-color: #000000;
-   --background-color: rgba(0,0,0,1.00);
    background-image: url('linear-gradient(to top, #000000 0%, #000000 100%');
-   --background-color: rgba(0,0,0,1.00);
-}
-.style2
-{
-   font-family: "Exo 2";
-   font-weight: 400;
-   font-size: 16px;
    text-decoration: none;
-   color: #17406D;
+}
+.style2 {
+   --background-color: rgba(219,239,249,1.00);
    --color: #17406D;
    background-color: #DBEFF9;
-   --background-color: rgba(219,239,249,1.00);
+   color: #17406D;
+   font-family: "Exo 2";
+   font-size: 16px;
+   font-weight: 400;
+   text-decoration: none;
 }
-.darktheme .style2
-{
-   color: #FFFFFF;
+.darktheme .style2 {
+   --background-color: rgba(23,64,109,1.00);
    --color: #FFFFFF;
    background-color: #17406D;
-   --background-color: rgba(23,64,109,1.00);
+   color: #FFFFFF;
 }
