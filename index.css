@@ -699,9 +699,9 @@ body {
 #wb_Text6 {
    color: #4B93D4;
    font-family: "Exo 2";
-   font-size: 32px;
+   font-size: 29px;
    font-weight: 400;
-   line-height: 47px;
+   line-height: 41px;
 }
 #wb_Text6 p,
 #wb_Text6 ul {
@@ -1280,9 +1280,9 @@ body {
 #wb_Text1 {
    color: #FFFFFF;
    font-family: "Exo 2";
-   font-size: 24px;
+   font-size: 21px;
    font-weight: 400;
-   line-height: 33px;
+   line-height: 31.5px;
 }
 #wb_Text1 p,
 #wb_Text1 ul {
@@ -1597,9 +1597,9 @@ body {
 #wb_Text7 {
    color: #FFFFFF;
    font-family: "Exo 2";
-   font-size: 27px;
+   font-size: 24px;
    font-weight: 400;
-   line-height: 38.5px;
+   line-height: 35.5px;
 }
 #wb_Text7 p,
 #wb_Text7 ul {
@@ -3935,7 +3935,7 @@ body {
    box-sizing: border-box;
    color: #17406D;
    font-family: Arial;
-   font-size: 24px;
+   font-size: 21px;
    font-style: normal;
    font-weight: normal;
    margin: -40px 0 0 80px;
@@ -3945,7 +3945,7 @@ body {
    box-sizing: border-box;
    color: #17406D;
    font-family: Arial;
-   font-size: 16px;
+   font-size: 13px;
    font-style: normal;
    font-weight: normal;
    margin: 20px 20px 30px 80px;
@@ -4003,7 +4003,7 @@ body {
    box-sizing: border-box;
    color: #17406D;
    font-family: Arial;
-   font-size: 24px;
+   font-size: 21px;
    font-style: normal;
    font-weight: normal;
    margin: -40px 0 0 80px;
@@ -4013,7 +4013,7 @@ body {
    box-sizing: border-box;
    color: #17406D;
    font-family: Arial;
-   font-size: 16px;
+   font-size: 13px;
    font-style: normal;
    font-weight: normal;
    margin: 20px 20px 30px 80px;
@@ -4076,7 +4076,7 @@ body {
    box-sizing: border-box;
    color: #17406D;
    font-family: Arial;
-   font-size: 24px;
+   font-size: 21px;
    font-style: normal;
    font-weight: normal;
    margin: -40px 0 0 80px;
@@ -4086,7 +4086,7 @@ body {
    box-sizing: border-box;
    color: #17406D;
    font-family: Arial;
-   font-size: 16px;
+   font-size: 13px;
    font-style: normal;
    font-weight: normal;
    margin: 20px 20px 30px 80px;
@@ -4119,16 +4119,16 @@ body {
 }
 #wb_ThemeableButton1 {
    display: inline-block;
-   height: 54px;
+   height: 35px;
    margin: 0;
    visibility: visible;
-   width: 196px;
+   width: 183px;
 }
 #ThemeableButton1 {
    font-size: 21px;
 }
 #wb_ThemeableButton1 .ui-button {
-   line-height: 52px;
+   line-height: 33px;
    padding: 0;
 }
 #wb_Card8 {
@@ -4351,7 +4351,7 @@ body {
 }
 #wb_ThemeableButton2 {
    display: inline-block;
-   height: 62px;
+   height: 46px;
    margin: 0;
    visibility: visible;
    width: 190px;
@@ -4360,7 +4360,7 @@ body {
    font-size: 21px;
 }
 #wb_ThemeableButton2 .ui-button {
-   line-height: 60px;
+   line-height: 44px;
    padding: 0;
 }
 #wb_Text2 {
@@ -4467,8 +4467,8 @@ body {
    padding: 0;
 }
 #wb_Text8 {
-   display: block;
-   visibility: visible;
+   display: none;
+   visibility: hidden;
 }
 #wb_Text8 {
    font-family: Arial;
@@ -4842,8 +4842,8 @@ body {
    width: 100%;
 }
 #wb_Text11 {
-   display: block;
-   visibility: visible;
+   display: none;
+   visibility: hidden;
 }
 #wb_Text11 {
    font-family: Arial;
