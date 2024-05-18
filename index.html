@@ -5,13 +5,27 @@
 <title>Home</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="ui-lightness/jquery-ui.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
 <link href="wpg.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
-<script src="jquery.ui.effect.min.js"></script>
 <script src="popper.min.js"></script>
 <script src="bootstrap.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="searchindex.js"></script>
+<script src="wb.sitesearch.min.js"></script>
+<script>
+var features = '';
+function searchPage(features)
+{
+   $('#SiteSearch1-dialog').dialog('open');
+   $('#SiteSearch1-dialog').empty();
+   searchResults('SiteSearch1', 'SiteSearch1-dialog', 250, 5, true, true, true, false, '_parent', 'No results', ' result(s) found for search term: ', 'seconds');
+   $('#SiteSearch1-dialog').dialog('option', 'position', 'center');
+   return false;
+}
+</script>
 <script src="wwb18.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
@@ -45,6 +59,7 @@ $(document).ready(function()
    $('#wb_LayoutGrid6').addClass('visibility-hidden');
    $('#wb_LayoutGrid5').addClass('visibility-hidden');
    $('#wb_LayoutGrid7').addClass('visibility-hidden');
+   $('#wb_LayoutGrid8').addClass('visibility-hidden');
    $("a[href*='#LayoutGrid1']").click(function(event)
    {
       event.preventDefault();
@@ -397,6 +412,62 @@ $(document).ready(function()
    {
       onScrollLayoutGrid7();
    });
+   $("a[href*='#Layer1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#Layer1').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#LayoutGrid8']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid8').offset().top }, 600, 'linear');
+   });
+   function onScrollLayoutGrid8()
+   {
+      var $obj = $("#wb_LayoutGrid8");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid8', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid8', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid8').inViewPort(true))
+   {
+      $('#wb_LayoutGrid8').addClass("in-viewport");
+   }
+   onScrollLayoutGrid8();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid8();
+   });
+   searchParseURL('SiteSearch1');
+   searchAutoComplete('SiteSearch1', 0, '_parent');
+   $("#SiteSearch1-dialog").dialog(
+   {
+      modal: true,
+      width: 400,
+      height: 300,
+      position: { my: 'center', at: 'center', of: window },
+      resizable: true,
+      draggable: true,
+      closeOnEscape: true,
+      show: { effect: 'drop', duration: 400 },
+      hide: { effect: 'fade', duration: 400 },
+      autoOpen: false,
+      buttons: 
+      {
+         Close: function() 
+         {
+            $(this).dialog('close');
+         }
+      }
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -420,9 +491,9 @@ $(window).on('load', function()
 <div id="LayoutGrid1">
 <div class="col-1">
 <div id="wb_welcomeText">
-<p style="font-size:16px;line-height:23.5px;font-weight:bold;"><span style="font-size:24px;line-height:35.5px;">I o</span><span style="font-size:24px;line-height:35.5px;">wn a musket for home defense </span></p>
-<p style="font-size:16px;line-height:23.5px;font-weight:bold;">&nbsp;</p>
-<p style="font-size:16px;line-height:23.5px;font-weight:bold;"><span style="font-size:19px;line-height:27.5px;font-weight:normal;">I </span><span style="font-size:19px;line-height:27.5px;font-weight:normal;">o</span><span style="font-size:19px;line-height:27.5px;font-weight:normal;">wn a musket for home defense, since that's what the founding fathers intended. Four ruffians break into my house. "What the devil?" As I grab my powdered wig and Kentucky rifle. Blow a golf ball sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbors dog. I have to resort to the cannon mounted at the top of the stairs loaded with grape shot, "Tally ho lads" the grape shot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He </span><span style="font-size:19px;line-height:27.5px;font-weight:normal;">b</span><span style="font-size:19px;line-height:27.5px;font-weight:normal;">leeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended..</span><span style="font-size:19px;line-height:27.5px;font-weight:normal;">..</span></p>
+<p style="font-weight:bold;">I own a musket for home defense </p>
+<p style="font-weight:bold;">&nbsp;</p>
+<p style="font-weight:bold;"><span style="font-weight:normal;">I </span><span style="font-weight:normal;">o</span><span style="font-weight:normal;">wn a musket for home defense, since that's what the founding fathers intended. Four ruffians break into my house. "What the devil?" As I grab my powdered wig and Kentucky rifle. Blow a golf ball sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbors dog. I have to resort to the cannon mounted at the top of the stairs loaded with grape shot, "Tally ho lads" the grape shot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He </span><span style="font-weight:normal;">b</span><span style="font-weight:normal;">leeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended..</span><span style="font-weight:normal;">..</span></p>
 </div>
 <div id="wb_Text3">
 <p>Ahoy, Matey!</p>
@@ -490,7 +561,7 @@ $(window).on('load', function()
    <div id="Card1-card-body">
       <div id="Card1-card-item0"><a href="./page2.html" class="stretched-link"><i class="fa fa-comments-o"></i></a></div>
       <div id="Card1-card-item1">Buck and Boost Converter Designer</div>
-      <div id="Card1-card-item2">Buck and boost converter designer built with Qt Framework</div>
+      <div id="Card1-card-item2">Buck and boost converter designer built with <br>Qt Framework</div>
    </div>
 </div>
 <div id="wb_Card2" class="card">
@@ -623,9 +694,7 @@ $(window).on('load', function()
 <div class="col-1">
 <div id="wb_Text7">
 <p style="font-size:32px;line-height:47px;"><span style="font-size:21px;line-height:31.5px;">How do you know someone uses linux? Don't worry they'll tell you.</span></p>
-<p style="font-size:32px;line-height:47px;color:#000000;"><img alt="" width="32" height="32" src="images/Text71.png"></p>
-<p style="font-size:32px;line-height:47px;"><span style="font-size:27px;line-height:38.5px;">"I use Arch, btw"</span></p>
-<p style="font-size:19px;line-height:27.5px;">&nbsp;</p>
+<p style="font-size:19px;line-height:27.5px;"><span style="font-size:27px;line-height:38.5px;">"I use Arch, btw"</span></p>
 </div>
 <div id="wb_Text8">
 <p>&nbsp;</p>
@@ -642,7 +711,7 @@ $(window).on('load', function()
 <h2 id="Heading1">Relevant XKCD (#1806)</h2>
 </div>
 <div id="wb_Image1">
-<img src="images/322e2.png" loading="lazy" id="Image1" alt="" title="Relevant XKCD" width="270" height="403">
+<img src="images/322e2.png" loading="lazy" id="Image1" alt="" title="Relevant XKCD" width="288" height="430">
 </div>
 </div>
 </div>
@@ -651,7 +720,7 @@ $(window).on('load', function()
 <div id="LayoutGrid6">
 <div class="col-1">
 <div id="wb_Text15">
-<p>My FL Studio renders and mixes</p>
+<p style="font-size:32px;line-height:47px;"><span style="font-size:29px;line-height:43px;">My FL Studio renders and mixes</span></p>
 <p style="font-size:19px;line-height:27.5px;">&nbsp;</p>
 </div>
 <div id="wb_Text16">
@@ -677,13 +746,103 @@ $(window).on('load', function()
 <div class="col-1">
 <div id="wb_Text18">
 <p>My Equipments</p>
-<p style="font-size:19px;line-height:27.5px;">&nbsp;</p>
+<p>&nbsp;</p>
 </div>
 <div id="wb_Text19">
 <p>&nbsp;</p>
 </div>
 <div id="wb_ThemeableButton6">
 <a class="ui-button ui-corner-all" id="ThemeableButton6" href="./prodn.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>My Equipments</a>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Icon2">
+<a href="https://github.com/RNA3210d" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon2"><i class="fa fa-github"></i></div></a>
+</div>
+<div id="wb_Icon3">
+<a href="https://soundcloud.com/rna3210d/tracks" title="My FL Studio render dump yard"><div id="Icon3"><i class="fa fa-soundcloud"></i></div></a>
+</div>
+<div id="wb_Icon4">
+<a href="https://www.linkedin.com/in/naveen-a-b-a7a85421a/" title="Although my LinkedIn profile is currently inactive, feel free to connect with me elsewhere or check back soon for updates. Thank you for your understanding!"><div id="Icon4"><i class="fa fa-linkedin"></i></div></a>
+</div>
+<div id="wb_Icon9">
+<a href="mailto:rna3210d2@proton.me" title="Email "><div id="Icon9"><i class="fa fa-envelope-o"></i></div></a>
+</div>
+<div id="wb_Icon10">
+<a href="https://www.mixcloud.com/RNA3210d/" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon10"><i class="fa fa-mixcloud"></i></div></a>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="col-1">
+<div id="wb_CssMenu6">
+<ul id="CssMenu6" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link active" href="./index.html" target="_self" title="Home">Home</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./mastuh.html" target="_self"></a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./sw.html" target="_self" title="Software I Use">Software&nbsp;I&nbsp;Use</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu" href="./eqp.html" target="_self" title="My Equipments">My&nbsp;Equipments</a>
+
+<ul role="menu">
+<li role="menuitem" class="nav-item firstitem"><a class="nav-link" href="./lap.html" target="_self" title="Laptop">Laptop</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./rpi.html" target="_self" title="RPi">RPi</a>
+</li>
+<li role="menuitem" class="nav-item lastitem"><a class="nav-link" href="./ntbk.html" target="_self" title="Netbook">Netbook</a>
+</li>
+</ul>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu" href="./proj.html" target="_self" title="Projects">Projects</a>
+
+<ul role="menu">
+<li role="menuitem" class="nav-item firstitem"><a class="nav-link" href="./page1.html" target="_self" title="RPi-TELEBOT">RPi-TELEBOT</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./page2.html" target="_self" title="BU &amp; BO Designer">BU&nbsp;&amp;&nbsp;BO&nbsp;Designer</a>
+</li>
+<li role="menuitem" class="nav-item lastitem"><a class="nav-link" href="./page3.html" target="_self" title="Qt Demo">Qt&nbsp;Demo</a>
+</li>
+</ul>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./gal.html" target="_self" title="Gallery">Gallery</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./prodn.html" target="_self" title="My Tunes">My&nbsp;Tunes</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu" href="./misc.html" target="_self" title="Help">Help</a>
+
+<ul role="menu">
+<li role="menuitem" class="nav-item firstitem lastitem"><a class="nav-link" href="./xtra.html" target="_self" title="EXTRAS">EXTRAS</a>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<form name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
+<input type="text" id="SiteSearch1" name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
+<div id="SiteSearch1-dialog" title="Search results"></div>
+<input type="button" id="Button1" onclick="searchPage();return false;" name="Search" value="Search">
+<div id="wb_Icon16">
+<a href="https://github.com/RNA3210d" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon16"><i class="fa fa-github"></i></div></a>
+</div>
+<div id="wb_Icon17">
+<a href="https://soundcloud.com/rna3210d/tracks" title="My FL Studio render dump yard"><div id="Icon17"><i class="fa fa-soundcloud"></i></div></a>
+</div>
+<div id="wb_Icon18">
+<a href="https://www.linkedin.com/in/naveen-a-b-a7a85421a/" title="Although my LinkedIn profile is currently inactive, feel free to connect with me elsewhere or check back soon for updates. Thank you for your understanding!"><div id="Icon18"><i class="fa fa-linkedin"></i></div></a>
+</div>
+<div id="wb_Icon19">
+<a href="mailto:rna3210d2@proton.me" title="Email "><div id="Icon19"><i class="fa fa-envelope-o"></i></div></a>
+</div>
+<div id="wb_Icon20">
+<a href="https://www.mixcloud.com/RNA3210d/" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon20"><i class="fa fa-mixcloud"></i></div></a>
 </div>
 </div>
 </div>

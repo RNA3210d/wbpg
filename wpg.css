@@ -20,23 +20,6 @@
    opacity: 0;
 }
 }
-@keyframes animate-flash {
-0% {
-   opacity: 1;
-}
-25% {
-   opacity: 0;
-}
-50% {
-   opacity: 1;
-}
-75% {
-   opacity: 0;
-}
-100% {
-   opacity: 1;
-}
-}
 @keyframes slide-down-in {
 0% {
    opacity: 0;
@@ -185,8 +168,4 @@ h6,
    --color: #FFFFFF;
    background-color: #17406D;
    color: #FFFFFF;
-}
-@media only screen and (min-width: 480px) and (max-width: 1199px) {
-}
-@media only screen and (max-width: 479px) {
 }
