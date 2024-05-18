@@ -1,36 +1,51 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>RPi-TELEBOT</title>
+<title>Home</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="ui-lightness/jquery-ui.min.css" rel="stylesheet">
+<link href="font-awesome.min.css" rel="stylesheet">
 <link href="wpg.css" rel="stylesheet">
 <link href="page4.css" rel="stylesheet">
-<script src="wb.cookie.min.js"></script>
 <script src="jquery-3.6.0.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="wb.cookie.min.js"></script>
+<script src="searchindex.js"></script>
+<script src="wb.sitesearch.min.js"></script>
+<script>
+var features = '';
+function searchPage(features)
+{
+   $('#SiteSearch1-dialog').dialog('open');
+   $('#SiteSearch1-dialog').empty();
+   searchResults('SiteSearch1', 'SiteSearch1-dialog', 250, 5, true, true, true, true, '_parent', 'No results', ' result(s) found for search term: ', 'seconds');
+   $('#SiteSearch1-dialog').dialog('option', 'position', 'center');
+   return false;
+}
+</script>
+<script src="wwb18.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
-   var Progressbar1 = document.querySelector('#Progressbar1 .progress-bar');
-   var Progressbar1_observer = new window.ResizeObserver(entries => 
+   var Toast1 = document.getElementById('Toast1');
+   var bsToast1 = new bootstrap.Toast(Toast1, {animation: true, autohide: true, delay: 10000});
+   if (!hasCookie('Toast1'))
    {
-      var val = Math.round(((entries[0].target.clientWidth/entries[0].target.offsetParent.clientWidth)*100));
-      entries[0].target.innerText = val + '%';
-      entries[0].target.setAttribute('aria-valuenow', val);
-   });
-   Progressbar1_observer.observe(Progressbar1);
-   window.addEventListener('scroll', function(event)
+      setTimeout(function(){ bsToast1.show(); }, 10);
+   }
+   Toast1.addEventListener('hidden.bs.toast', function()
    {
-      var bounding = Progressbar1.getBoundingClientRect();
-      var top = bounding.top*100/window.innerHeight;
-      var bottom = bounding.bottom*100/window.innerHeight;
-      if (top >= 0 && bottom <= 100)
-      {
-         Progressbar1.style.width = '100%';
-      }
+      setCookie('Toast1', true, 1);
    });
-   window.dispatchEvent(new CustomEvent('scroll'));
+   var Carousel1 = new bootstrap.Carousel('#Carousel1', {interval: 3000, pause: 'hover'});
    if (hasCookie('darktheme'))
    {
       document.documentElement.classList.add('darktheme');
@@ -40,11 +55,151 @@ document.addEventListener('DOMContentLoaded', function(event)
 <script>
 $(document).ready(function()
 {
+   $('#wb_Card8').addClass('visibility-hidden');
+   $('#wb_links').addClass('visibility-hidden');
+   $('#wb_Card1').addClass('visibility-hidden');
+   function onScrollLayer1()
+   {
+      var $obj = $("#Layer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer1', 'slide-down-in', 0, 750);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer1').inViewPort(true))
+   {
+      $('#Layer1').addClass("in-viewport");
+   }
+   onScrollLayer1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer1();
+   });
+   function onScrollCard8()
+   {
+      var $obj = $("#wb_Card8");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card8', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card8', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card8').inViewPort(true))
+   {
+      $('#wb_Card8').addClass("in-viewport");
+   }
+   onScrollCard8();
+   $(window).scroll(function(event)
+   {
+      onScrollCard8();
+   });
+   searchParseURL('SiteSearch1');
+   searchAutoComplete('SiteSearch1', 0, '_parent');
+   $("#SiteSearch1-dialog").dialog(
+   {
+      modal: true,
+      width: 470,
+      height: 300,
+      position: { my: 'center', at: 'center', of: window },
+      resizable: true,
+      draggable: true,
+      closeOnEscape: true,
+      show: { effect: 'clip', duration: 400 },
+      hide: { effect: 'fade', duration: 400 },
+      autoOpen: false,
+      buttons: 
+      {
+         Close: function() 
+         {
+            $(this).dialog('close');
+         }
+      }
+   });
+   $("#PanelLayer").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right'});
+   function onScrolllinks()
+   {
+      var $obj = $("#wb_links");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_links', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_links', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_links').inViewPort(true))
+   {
+      $('#wb_links').addClass("in-viewport");
+   }
+   onScrolllinks();
+   $(window).scroll(function(event)
+   {
+      onScrolllinks();
+   });
+   function onScrollCard1()
+   {
+      var $obj = $("#wb_Card1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card1', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card1').inViewPort(true))
+   {
+      $('#wb_Card1').addClass("in-viewport");
+   }
+   onScrollCard1();
+   $(window).scroll(function(event)
+   {
+      onScrollCard1();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
 {
    $('#preloader').remove();
+});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-699B0MCBHH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-699B0MCBHH');
+</script>
+<script>
+$(document).ready(function()
+{
+   $("#wb_CssMenu1 ul li a").click(
+   function(event) {
+       $.panel.hide($('#PanelLayer_panel'));
+   });
 });
 </script>
 </head>
@@ -56,50 +211,175 @@ $(window).on('load', function()
 <div id="wb_Image1">
 <a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
 <div id="wb_Text2">
-<span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
+<span style="color:#000000;">© 2024 NVN | Personal Webpage</span></div>
 <input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
 </div>
 </div>
 
-<div id="Layer3">
-<div id="wb_FlexContainer1">
-<div id="FlexContainer1">
-<hr id="Line1">
-<div id="wb_Heading1">
-<h1 id="Heading1">Daily Driver Laptop</h1>
+<div id="Layer2">
+<div id="wb_Carousel1">
+<div id="Carousel1" class="carousel slide" data-bs-ride="carousel">
+<ol class="carousel-indicators">
+<li data-bs-target="#Carousel1" data-bs-slide-to="0" class="active"></li>
+<li data-bs-target="#Carousel1" data-bs-slide-to="1"></li>
+<li data-bs-target="#Carousel1" data-bs-slide-to="2"></li>
+<li data-bs-target="#Carousel1" data-bs-slide-to="3"></li>
+<li data-bs-target="#Carousel1" data-bs-slide-to="4"></li>
+</ol>
+<div class="carousel-inner">
+<div class="carousel-item frame-1 active">
+<div class="carousel-item-inner">
+<div id="wb_Card1" class="card" onclick="$('#Toast1').toast('show');return false;">
+   <div id="Card1-card-body">
+      <div id="Card1-card-item0">“</div>
+      <div id="Card1-card-item1">Kinder surprise egg, a quite astonishing commodity. The surprise of this excessive object, the cause of your desire, is here materialised in the Geist of an object which fills in the inner void of the chocolate egg. The whole delicate balance is between these two dimensions: what you bought, the chocolate egg, and the surplus, probably made in some Chinese gulag or whatever, that you get for free. I don't think that the chocolate frame is here just to send you on a deeper voyage towards the inner treasure, the what Plato calls the 'Agalma', which makes you a worthy person, which makes a commodity the desirable commodity. I think it's the other way around. We should aim at the higher goal, the gold in the middle of an object, precisely in order to be able to enjoy the surface. </div>
+      <hr id="Card1-card-item2">
+      <div id="Card1-card-item3">Zizek on Kinder Surprise</div>
+   </div>
 </div>
-<hr id="Line2">
+</div>
+</div>
+<div class="carousel-item">
+<div class="carousel-item-inner">
+</div>
+</div>
+<div class="carousel-item">
+<div class="carousel-item-inner">
+</div>
+</div>
+<div class="carousel-item">
+<div class="carousel-item-inner">
+</div>
+</div>
+<div class="carousel-item">
+<div class="carousel-item-inner">
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid4">
-<div id="LayoutGrid4">
-<div class="row">
+<a class="carousel-item-start carousel-control" href="#Carousel1" role="button" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+</a>
+<a class="carousel-item-end carousel-control" href="#Carousel1" role="button" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+
+</div>
+<div id="wb_Icon5">
+<a href="https://github.com/RNA3210d" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon5"><i class="fa fa-github"></i></div></a></div>
+<div id="wb_Icon6">
+<a href="https://soundcloud.com/rna3210d/tracks" title="My FL Studio render dump yard"><div id="Icon6"><i class="fa fa-soundcloud"></i></div></a></div>
+<div id="wb_Icon7">
+<a href="https://www.linkedin.com/in/naveen-a-b-a7a85421a/" title="Although my LinkedIn profile is currently inactive, feel free to connect with me elsewhere or check back soon for updates. Thank you for your understanding!"><div id="Icon7"><i class="fa fa-linkedin"></i></div></a></div>
+<div id="wb_Icon8">
+<a href="https://www.mixcloud.com/RNA3210d/" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon8"><i class="fa fa-mixcloud"></i></div></a></div>
+<a id="Button5" href="./proj.html">Projects</a>
+<div id="wb_Card8" class="card" onclick="$('#Toast1').toast('show');return false;">
+   <div id="Card8-card-body">
+      <div id="Card8-card-item0">“</div>
+      <div id="Card8-card-item1">Perhaps the heaviest things that we lift are not our weights, but our feelings</div>
+      <hr id="Card8-card-item2">
+      <div id="Card8-card-item3">Anon</div>
+   </div></div>
+<div id="wb_Icon1">
+<a href="mailto:rna3210d2@proton.me" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon1"><i class="fa fa-envelope-o"></i></div></a></div>
+<div id="PanelLayer">
+<div id="wb_CssMenu1">
+<ul id="CssMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link CssMenu1-effect" href="./index.html" target="_self" title="Home">Home</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./mastuh.html" target="_self"></a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./sw.html" target="_self" title="Software I Use">Software&nbsp;I&nbsp;Use</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu CssMenu1-effect" href="./eqp.html" target="_self" title="My Equipments">My&nbsp;Equipments</a>
+
+<ul role="menu">
+<li role="menuitem" class="nav-item firstitem"><a class="nav-link CssMenu1-sub-effect" href="./lap.html" target="_self" title="Laptop">Laptop</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-sub-effect" href="./rpi.html" target="_self" title="RPi">RPi</a>
+</li>
+<li role="menuitem" class="nav-item lastitem"><a class="nav-link CssMenu1-sub-effect" href="./ntbk.html" target="_self" title="Netbook">Netbook</a>
+</li>
+</ul>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu CssMenu1-effect" href="./proj.html" target="_self" title="Projects">Projects</a>
+
+<ul role="menu">
+<li role="menuitem" class="nav-item firstitem"><a class="nav-link CssMenu1-sub-effect" href="./page1.html" target="_self" title="RPi-TELEBOT">RPi-TELEBOT</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-sub-effect" href="./page2.html" target="_self" title="BU &amp; BO Designer">BU&nbsp;&amp;&nbsp;BO&nbsp;Designer</a>
+</li>
+<li role="menuitem" class="nav-item lastitem"><a class="nav-link CssMenu1-sub-effect" href="./page3.html" target="_self" title="Qt Demo">Qt&nbsp;Demo</a>
+</li>
+</ul>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./gal.html" target="_self" title="Gallery">Gallery</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./prodn.html" target="_self" title="My Tunes">My&nbsp;Tunes</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu CssMenu1-effect" href="./misc.html" target="_self" title="Help">Help</a>
+
+<ul role="menu">
+<li role="menuitem" class="nav-item firstitem lastitem"><a class="nav-link CssMenu1-sub-effect" href="./xtra.html" target="_self" title="EXTRAS">EXTRAS</a>
+</li>
+</ul>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./page4.html" target="_self" title="page4">page4</a>
+</li>
+</ul>
+</div>
+<div id="wb_FontAwesomeIcon5">
+<a href="#" onclick="HidePanel('PanelLayer', event);return false;"><div id="FontAwesomeIcon5"><i class="fa fa-times"></i></div></a></div>
+<div id="wb_Text6">
+<span style="color:#999999;font-family:Arial;font-size:15px;"><strong>Menu</strong></span></div>
+
+</div>
+<div id="wb_links">
+<div id="links">
 <div class="col-1">
-<div id="wb_Heading3">
-<h2 id="Heading3">Summary</h2>
+<div id="wb_Text11">
+<span style="color:#6B3CFC;"><strong>EXPLORE MORE</strong></span>
 </div>
-<div id="wb_Text7">
-<span style="color:#000000;font-family:'Exo 2';font-size:19px;">Python based Telegram bot to monitor and control headless Raspberry Pi servers.</span>
+<div id="wb_CssMenu3">
+<ul id="CssMenu3" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./proj.html" target="_self"><i class="fa fa-wrench">&nbsp;</i>Projects</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./sw.html" target="_self" title="Software I Use"><i class="fa fa-magic">&nbsp;</i>Software&nbsp;I&nbsp;Use</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./eqp.html" target="_self"><i class="fa fa-rocket">&nbsp;</i>My&nbsp;Equipments</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./gal.html" target="_self"><i class="fa fa-camera-retro">&nbsp;</i>Gallery</a>
+</li>
+</ul>
+
 </div>
-<a id="Button1" href="https://github.com/RNA3210d/RPi-TELEBOT">Source</a>
-<div id="wb_Heading2">
-<h2 id="Heading2">Languages:</h2>
-</div>
-<div id="wb_Text3">
-<span style="color:#000000;font-family:'Exo 2';font-size:19px;">Python:</span>
-</div>
-<div id="Progressbar1">
-   <div class="progress-bar" role="progressbar" aria-valuenow="0" title="100%" aria-valuemin="0" aria-valuemax="100">0%</div>
-</div>
+<input type="button" id="Button6" onclick="searchPage();return false;" name="Search" value="Search">
+<form name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
+<input type="text" id="SiteSearch1" name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
+<div id="SiteSearch1-dialog" title="Search results"></div>
 </div>
 <div class="col-2">
-<div id="wb_Image4">
-<img src="images/snip1.png" id="Image4" alt="" width="600" height="478">
 </div>
 </div>
 </div>
+
+<div id="wb_FlexContainer4">
+<div id="FlexContainer4">
 </div>
+</div>
+<div aria-live="polite" aria-atomic="true" id="toasts">
+   <div id="Toast1" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" dir="ltr">
+      <div class="toast-header">
+      <strong>Notification</strong>
+      <small class="text-muted">just now</small>
+      <button type="button" class="close" data-bs-dismiss="toast" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+      </button>
+      </div>
+      <div class="toast-body"><p>Double click to edit</p></div>
+   </div>
 </div>
 <div id="preloader"></div>
 </body>

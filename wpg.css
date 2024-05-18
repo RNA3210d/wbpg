@@ -49,22 +49,6 @@
    transform: translate(0px,0px) rotate(0deg);
 }
 }
-@keyframes swoop-in {
-0% {
-   opacity: 0;
-   transform: translate(-400px,0px) rotate(0deg) scale(1.5,1);
-}
-40% {
-   opacity: 1;
-   transform: translate(0px,0px) rotate(0deg) scale(1.2,1.0);
-}
-60% {
-   transform: translate(20px,0px) rotate(0deg) scale(1.0,1.0);
-}
-100% {
-   transform: translate(0px,0px) rotate(0deg) scale(1,1);
-}
-}
 @keyframes transform-scale-in {
 0% {
    opacity: 0;
@@ -201,4 +185,8 @@ h6,
    --color: #FFFFFF;
    background-color: #17406D;
    color: #FFFFFF;
+}
+@media only screen and (min-width: 480px) and (max-width: 1199px) {
+}
+@media only screen and (max-width: 479px) {
 }

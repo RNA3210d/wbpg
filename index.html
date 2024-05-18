@@ -1,290 +1,257 @@
 <!doctype html>
-<html>
+<html lang="en-gb">
 <head>
 <meta charset="utf-8">
 <title>Home</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="ui-lightness/jquery-ui.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
 <link href="wpg.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
-<script src="wb.parallax.min.js"></script>
-<script src="jquery-ui.min.js"></script>
-<script src="wb.panel.min.js"></script>
-<script src="wb.cookie.min.js"></script>
-<link rel="stylesheet" href="glight/css/glightbox.min.css">
-<link rel="stylesheet" href="glight/css/plyr.css">
-<link rel="stylesheet" href="glight/css/plyr.min.css">
-<script src="glight/js/glightbox.min.js"></script>
-<script src="searchindex.js"></script>
-<script src="wb.sitesearch.min.js"></script>
-<script>
-var features = '';
-function searchPage(features)
-{
-   $('#SiteSearch1-dialog').dialog('open');
-   $('#SiteSearch1-dialog').empty();
-   searchResults('SiteSearch1', 'SiteSearch1-dialog', 250, 5, true, true, true, true, '_parent', 'No results', ' result(s) found for search term: ', 'seconds');
-   $('#SiteSearch1-dialog').dialog('option', 'position', 'center');
-   return false;
-}
-</script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
 <script src="wwb18.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
-GLightbox({selector: "a[data-rel^='SlideShow2']", autoplayVideos:true});
-   if (hasCookie('darktheme'))
+   var Card1 = new bootstrap.Popover("#",
    {
-      document.documentElement.classList.add('darktheme');
-   }
+      content: function()
+      {
+         return document.querySelector('#wb_Card1').innerHTML;
+      },
+      html : true,
+      placement: 'right',
+      template: '<div class="popover Card1" role="tooltip"><div class="popover-arrow"></div><div class="popover-body"></div></div>',
+      title: '',
+      trigger: 'hover'
+   });
 });
 </script>
 <script>
 $(document).ready(function()
 {
-   $('#RollOverLayer4').addClass('visibility-hidden');
-   $('#SlideShow2').addClass('visibility-hidden');
-   $('#Layer3').addClass('visibility-hidden');
-   $('#Button2').addClass('visibility-hidden');
-   $('#Button1').addClass('visibility-hidden');
-   $('#Button3').addClass('visibility-hidden');
-   $('#wb_Card8').addClass('visibility-hidden');
-   $('#welcome').addClass('visibility-hidden');
+   $('#wb_LayoutGrid1').addClass('visibility-hidden');
+   $('#wb_LayoutGrid2').addClass('visibility-hidden');
+   $('#wb_LayoutGrid3').addClass('visibility-hidden');
+   $('#wb_Card2').addClass('visibility-hidden');
+   $('#wb_Card1').addClass('visibility-hidden');
+   $('#wb_Card7').addClass('visibility-hidden');
    $('#wb_links').addClass('visibility-hidden');
-   function onScrollLayer1()
+   $('#wb_LayoutGrid4').addClass('visibility-hidden');
+   $('#wb_Card3').addClass('visibility-hidden');
+   $('#wb_LayoutGrid6').addClass('visibility-hidden');
+   $('#wb_LayoutGrid5').addClass('visibility-hidden');
+   $('#wb_LayoutGrid7').addClass('visibility-hidden');
+   $("a[href*='#LayoutGrid1']").click(function(event)
    {
-      var $obj = $("#Layer1");
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'linear');
+   });
+   function onScrollLayoutGrid1()
+   {
+      var $obj = $("#wb_LayoutGrid1");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('Layer1', 'slide-down-in', 0, 750);
+         AnimateCss('wb_LayoutGrid1', 'animate-fade-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('Layer1', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_LayoutGrid1', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#Layer1').inViewPort(true))
+   if (!$('#wb_LayoutGrid1').inViewPort(true))
    {
-      $('#Layer1').addClass("in-viewport");
+      $('#wb_LayoutGrid1').addClass("in-viewport");
    }
-   onScrollLayer1();
+   onScrollLayoutGrid1();
    $(window).scroll(function(event)
    {
-      onScrollLayer1();
+      onScrollLayoutGrid1();
    });
-   $("#RollOverLayer4").hover(function(e)
+   $("a[href*='#LayoutGrid2']").click(function(event)
    {
-      $('.default, .hover', this).removeClass('animate reverse').width();
-      $('.default, .hover', this).addClass('animate');
-   }, function()
-   {
-      $('.default, .hover', this).removeClass('animate').width();
-      $('.default, .hover', this).addClass('animate reverse');
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'linear');
    });
-   function onScrollRollOverLayer4()
+   function onScrollLayoutGrid2()
    {
-      var $obj = $("#RollOverLayer4");
+      var $obj = $("#wb_LayoutGrid2");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('RollOverLayer4', 'animate-fade-in', 0, 1250);
+         AnimateCss('wb_LayoutGrid2', 'animate-fade-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('RollOverLayer4', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_LayoutGrid2', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#RollOverLayer4').inViewPort(true))
+   if (!$('#wb_LayoutGrid2').inViewPort(true))
    {
-      $('#RollOverLayer4').addClass("in-viewport");
+      $('#wb_LayoutGrid2').addClass("in-viewport");
    }
-   onScrollRollOverLayer4();
+   onScrollLayoutGrid2();
    $(window).scroll(function(event)
    {
-      onScrollRollOverLayer4();
+      onScrollLayoutGrid2();
    });
-   $('#RollOverLayer4').parallax();
-   $("#SlideShow2").on('activate', function(event, index)
+   $("a[href*='#LayoutGrid3']").click(function(event)
    {
-      switch(index)
-      {
-      }
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'swing');
    });
-   function onScrollSlideShow2()
+   function onScrollLayoutGrid3()
    {
-      var $obj = $("#SlideShow2");
+      var $obj = $("#wb_LayoutGrid3");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('SlideShow2', 'animate-fade-in', 0, 1250);
+         AnimateCss('wb_LayoutGrid3', 'animate-fade-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('SlideShow2', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_LayoutGrid3', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#SlideShow2').inViewPort(true))
+   if (!$('#wb_LayoutGrid3').inViewPort(true))
    {
-      $('#SlideShow2').addClass("in-viewport");
+      $('#wb_LayoutGrid3').addClass("in-viewport");
    }
-   onScrollSlideShow2();
+   onScrollLayoutGrid3();
    $(window).scroll(function(event)
    {
-      onScrollSlideShow2();
+      onScrollLayoutGrid3();
    });
-   function onScrollLayer3()
+   $("a[href*='#CardContainer1']").click(function(event)
    {
-      var $obj = $("#Layer3");
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#CardContainer1').offset().top }, 600, 'linear');
+   });
+   function onScrollCard2DividerBottom()
+   {
+      var $obj = $('#Card2-divider-bottom');
+      if (!$obj.hasClass('show') && $obj.inViewPort(false))
+      {
+         $obj.addClass('show');
+      }
+   }
+   onScrollCard2DividerBottom();
+   $(window).scroll(function(event)
+   {
+      onScrollCard2DividerBottom();
+   });
+   function onScrollCard2()
+   {
+      var $obj = $("#wb_Card2");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('Layer3', 'animate-fade-in', 0, 1250);
+         AnimateCss('wb_Card2', 'transform-scale-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('Layer3', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_Card2', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#Layer3').inViewPort(true))
+   if (!$('#wb_Card2').inViewPort(true))
    {
-      $('#Layer3').addClass("in-viewport");
+      $('#wb_Card2').addClass("in-viewport");
    }
-   onScrollLayer3();
+   onScrollCard2();
    $(window).scroll(function(event)
    {
-      onScrollLayer3();
+      onScrollCard2();
    });
-   function onScrollButton2()
+   function onScrollCard1DividerBottom()
    {
-      var $obj = $("#Button2");
+      var $obj = $('#Card1-divider-bottom');
+      if (!$obj.hasClass('show') && $obj.inViewPort(false))
+      {
+         $obj.addClass('show');
+      }
+   }
+   onScrollCard1DividerBottom();
+   $(window).scroll(function(event)
+   {
+      onScrollCard1DividerBottom();
+   });
+   function onScrollCard1()
+   {
+      var $obj = $("#wb_Card1");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('Button2', 'swoop-in', 500, 1250);
+         AnimateCss('wb_Card1', 'transform-scale-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('Button2', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_Card1', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#Button2').inViewPort(true))
+   if (!$('#wb_Card1').inViewPort(true))
    {
-      $('#Button2').addClass("in-viewport");
+      $('#wb_Card1').addClass("in-viewport");
    }
-   onScrollButton2();
+   onScrollCard1();
    $(window).scroll(function(event)
    {
-      onScrollButton2();
+      onScrollCard1();
    });
-   function onScrollButton1()
+   function onScrollCard7DividerBottom()
    {
-      var $obj = $("#Button1");
+      var $obj = $('#Card7-divider-bottom');
+      if (!$obj.hasClass('show') && $obj.inViewPort(false))
+      {
+         $obj.addClass('show');
+      }
+   }
+   onScrollCard7DividerBottom();
+   $(window).scroll(function(event)
+   {
+      onScrollCard7DividerBottom();
+   });
+   function onScrollCard7()
+   {
+      var $obj = $("#wb_Card7");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('Button1', 'animate-fade-in', 500, 1250);
+         AnimateCss('wb_Card7', 'transform-scale-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('Button1', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_Card7', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#Button1').inViewPort(true))
+   if (!$('#wb_Card7').inViewPort(true))
    {
-      $('#Button1').addClass("in-viewport");
+      $('#wb_Card7').addClass("in-viewport");
    }
-   onScrollButton1();
+   onScrollCard7();
    $(window).scroll(function(event)
    {
-      onScrollButton1();
+      onScrollCard7();
    });
-   function onScrollButton3()
+   $("a[href*='#Layer2']").click(function(event)
    {
-      var $obj = $("#Button3");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('Button3', 'animate-fade-in', 500, 1250);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('Button3', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#Button3').inViewPort(true))
-   {
-      $('#Button3').addClass("in-viewport");
-   }
-   onScrollButton3();
-   $(window).scroll(function(event)
-   {
-      onScrollButton3();
-   });
-   function onScrollCard8()
-   {
-      var $obj = $("#wb_Card8");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Card8', 'animate-fade-in', 0, 1250);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Card8', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_Card8').inViewPort(true))
-   {
-      $('#wb_Card8').addClass("in-viewport");
-   }
-   onScrollCard8();
-   $(window).scroll(function(event)
-   {
-      onScrollCard8();
-   });
-   function onScrollwelcome()
-   {
-      var $obj = $("#welcome");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('welcome', 'animate-fade-in', 0, 1250);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('welcome', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#welcome').inViewPort(true))
-   {
-      $('#welcome').addClass("in-viewport");
-   }
-   onScrollwelcome();
-   $(window).scroll(function(event)
-   {
-      onScrollwelcome();
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#Layer2').offset().top }, 600, 'linear');
    });
    function onScrolllinks()
    {
@@ -310,29 +277,126 @@ $(document).ready(function()
    {
       onScrolllinks();
    });
-   searchParseURL('SiteSearch1');
-   searchAutoComplete('SiteSearch1', 0, '_parent');
-   $("#SiteSearch1-dialog").dialog(
+   function onScrollLayoutGrid4()
    {
-      modal: true,
-      width: 470,
-      height: 300,
-      position: { my: 'center', at: 'center', of: window },
-      resizable: true,
-      draggable: true,
-      closeOnEscape: true,
-      show: { effect: 'clip', duration: 400 },
-      hide: { effect: 'fade', duration: 400 },
-      autoOpen: false,
-      buttons: 
+      var $obj = $("#wb_LayoutGrid4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
-         Close: function() 
-         {
-            $(this).dialog('close');
-         }
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid4', 'animate-fade-in', 0, 1250);
       }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid4', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid4').inViewPort(true))
+   {
+      $('#wb_LayoutGrid4').addClass("in-viewport");
+   }
+   onScrollLayoutGrid4();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid4();
    });
-   $("#PanelLayer").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'right'});
+   function onScrollCard3()
+   {
+      var $obj = $("#wb_Card3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card3', 'animate-fade-in', 0, 2000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card3').inViewPort(true))
+   {
+      $('#wb_Card3').addClass("in-viewport");
+   }
+   onScrollCard3();
+   $(window).scroll(function(event)
+   {
+      onScrollCard3();
+   });
+   function onScrollLayoutGrid6()
+   {
+      var $obj = $("#wb_LayoutGrid6");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid6', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid6', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid6').inViewPort(true))
+   {
+      $('#wb_LayoutGrid6').addClass("in-viewport");
+   }
+   onScrollLayoutGrid6();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid6();
+   });
+   function onScrollLayoutGrid5()
+   {
+      var $obj = $("#wb_LayoutGrid5");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid5', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid5', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid5').inViewPort(true))
+   {
+      $('#wb_LayoutGrid5').addClass("in-viewport");
+   }
+   onScrollLayoutGrid5();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid5();
+   });
+   function onScrollLayoutGrid7()
+   {
+      var $obj = $("#wb_LayoutGrid7");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid7', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid7', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid7').inViewPort(true))
+   {
+      $('#wb_LayoutGrid7').addClass("in-viewport");
+   }
+   onScrollLayoutGrid7();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid7();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -349,117 +413,167 @@ $(window).on('load', function()
 
   gtag('config', 'G-699B0MCBHH');
 </script>
-<script>
-$(document).ready(function()
-{
-   $("#wb_CssMenu1 ul li a").click(
-   function(event) {
-       $.panel.hide($('#PanelLayer_panel'));
-   });
-});
-</script>
+
 </head>
 <body>
-<div id="Layer1">
-<div id="Layer1_Container">
-<div id="wb_Text1">
-<span style="color:#77893E;">Is this life? Is it real?</span></div>
-<div id="wb_Image1">
-<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
-<div id="wb_Text2">
-<span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
-<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
-</div>
-</div>
-<div id="container">
-
-<div id="RollOverLayer4">
-<div class="hover">
-<div id="wb_FontAwesomeIcon9">
-<a href="https://github.com/RNA3210d"><div id="FontAwesomeIcon9"><i class="fa fa-github"></i></div></a></div>
-<div id="wb_FontAwesomeIcon10">
-<a href="https://soundcloud.com/rna3210d/tracks"><div id="FontAwesomeIcon10"><i class="fa fa-soundcloud"></i></div></a></div>
-<div id="wb_FontAwesomeIcon11">
-<a href="https://www.linkedin.com/in/naveen-a-b-a7a85421a/"><div id="FontAwesomeIcon11"><i class="fa fa-linkedin"></i></div></a></div>
-<div id="wb_Text3">
-<span style="color:#F2F2F2;font-family:'Exo 2';font-size:21px;"><strong><em>Zizek on Kinder Surprise<br></em></strong></span><span style="color:#F2F2F2;font-family:Arial;font-size:13px;"><strong><br></strong></span><span style="color:#F2F2F2;font-family:Arial;font-size:15px;">Kinder surprise egg, a quite astonishing commodity. The surprise of this excessive object, the cause of your desire, is here materialised in the Geist of an object which fills in the inner void of the chocolate egg. The whole delicate balance is between these two dimensions: what you bought, the chocolate egg, and the surplus, probably made in some Chinese gulag or whatever, that you get for free. I don't think that the chocolate frame is here just to send you on a deeper voyage towards the inner treasure, the what Plato calls the 'Agalma', which makes you a worthy person, which makes a commodity the desirable commodity. I think it's the other way around. We should aim at the higher goal, the gold in the middle of an object, precisely in order to be able to enjoy the surface. </span></div>
-<a id="Button3" href="./proj.html">Projects</a>
-<a id="Button5" href="./proj.html">Projects</a>
-<div id="wb_FontAwesomeIcon1">
-<a href="#" onclick="ShowPanel('PanelLayer', event);return false;"><div id="FontAwesomeIcon1"><i class="fa fa-bars"></i></div></a></div>
-</div>
-<div class="default">
-<a id="Button2" href="#">Quick Nav</a>
-</div>
-</div>
-<div id="SlideShow2">
-<a href="images/IMG_20240410_151519290_HDR.jpg" data-rel="SlideShow2"><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240410_151519290_HDR.jpg" alt="" title=""></a>
-<a href="images/IMG_20240410_145353112_HDR.jpg" data-rel="SlideShow2"><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240410_145353112_HDR.jpg" style="display:none;" alt="" title=""></a>
-<a href="images/IMG_20240411_092658491_HDR.jpg" data-rel="SlideShow2"><img class="image" loading="lazy" width="8192" height="6144" src="images/IMG_20240411_092658491_HDR.jpg" style="display:none;" alt="" title=""></a>
-</div>
-<div id="Layer2">
-<div id="wb_Divider4">
-<div id="Divider4">
-<hr id="DividerLine5">
-<div id="wb_Heading2">
-<h1 id="Heading2">HOME</h1>
-</div>
-<hr id="DividerLine7">
-</div>
-</div>
-</div>
-<div id="Layer3">
-<div id="wb_FlexContainer1">
-<div id="FlexContainer1">
-<hr id="Line1">
-<div id="wb_Heading1">
-<h1 id="Heading1">Gallery</h1>
-</div>
-<hr id="Line2">
-</div>
-</div>
-</div>
-<div id="Layer7">
-<div id="wb_links">
-<div id="links">
-<div class="row">
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
 <div class="col-1">
-<div id="wb_Text11">
-<span style="color:#6B3CFC;"><strong>EXPLORE MORE</strong></span>
+<div id="wb_welcomeText">
+<p style="font-size:16px;line-height:23.5px;font-weight:bold;"><span style="font-size:24px;line-height:35.5px;">I o</span><span style="font-size:24px;line-height:35.5px;">wn a musket for home defense </span></p>
+<p style="font-size:16px;line-height:23.5px;font-weight:bold;">&nbsp;</p>
+<p style="font-size:16px;line-height:23.5px;font-weight:bold;"><span style="font-size:19px;line-height:27.5px;font-weight:normal;">I </span><span style="font-size:19px;line-height:27.5px;font-weight:normal;">o</span><span style="font-size:19px;line-height:27.5px;font-weight:normal;">wn a musket for home defense, since that's what the founding fathers intended. Four ruffians break into my house. "What the devil?" As I grab my powdered wig and Kentucky rifle. Blow a golf ball sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbors dog. I have to resort to the cannon mounted at the top of the stairs loaded with grape shot, "Tally ho lads" the grape shot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He </span><span style="font-size:19px;line-height:27.5px;font-weight:normal;">b</span><span style="font-size:19px;line-height:27.5px;font-weight:normal;">leeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended..</span><span style="font-size:19px;line-height:27.5px;font-weight:normal;">..</span></p>
 </div>
-<div id="wb_CssMenu3">
-<ul id="CssMenu3" role="menubar" class="nav">
-<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="./proj.html" target="_self"><i class="fa fa-wrench">&nbsp;</i>Projects</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="./sw.html" target="_self" title="Software I Use"><i class="fa fa-magic">&nbsp;</i>Software&nbsp;I&nbsp;Use</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="./eqp.html" target="_self"><i class="fa fa-rocket">&nbsp;</i>My&nbsp;Equipments</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="./gal.html" target="_self"><i class="fa fa-camera-retro">&nbsp;</i>Gallery</a>
-</li>
-</ul>
-
+<div id="wb_Text3">
+<p>Ahoy, Matey!</p>
 </div>
-<input type="button" id="Button6" onclick="searchPage();return false;" name="Search" value="Search">
-<form name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
-<input type="text" id="SiteSearch1" name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
-<div id="SiteSearch1-dialog" title="Search results"></div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="col-1">
+<div id="wb_Text5">
+<span style="color:#C8E5F4;font-family:'Exo 2';font-size:32px;">About Me<br></span><span style="color:#C8E5F4;font-family:'Exo 2';font-size:19px;"><br><br>Just a 22-year-old guy passionate about electronics, heavy machinery, switchgear, coding and more</span>
+</div>
 </div>
 <div class="col-2">
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Card8" class="card">
+<div id="wb_Card8" class="card" onclick="ShowObject('Toast1', 1);return false;">
    <div id="Card8-card-body">
       <div id="Card8-card-item0">“</div>
-      <div id="Card8-card-item1">Perhaps the heaviest things that we lift are not our weights, but our feelings</div>
+      <div id="Card8-card-item1">Perhaps the heaviest things that we lift are not our weights, but our feelings.</div>
       <hr id="Card8-card-item2">
       <div id="Card8-card-item3">Anon</div>
    </div>
 </div>
-<div id="wb_FlexContainer4">
-<div id="FlexContainer4">
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="col-1">
+<div id="wb_Text6">
+<p><span style="background-color:#CCEBF7;">Projects: Why y'all still letting me cook?</span><img alt="" width="32" height="32" src="images/Text61.png"></p>
+<p>&nbsp;</p>
+</div>
+<div id="CardContainer1">
+<div id="wb_Card1" class="card">
+<div id="Card1-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.01 129" preserveAspectRatio="none">
+<g id="Layer_2" data-name="Layer 2">
+<path class="divider-fill" style="fill-opacity:0.5;" d="M46.51,87a34.3,34.3,0,0,0,15.77-3.82,34.49,34.49,0,0,0,57.59,7.56,34.48,34.48,0,0,0,41.7-9.86,34.51,34.51,0,1,0-15.13-53.76,34.53,34.53,0,0,0-38.3,10.14,34.48,34.48,0,0,0-30.41.56A34.5,34.5,0,1,0,46.51,87Z"/>
+<path class="divider-fill" style="fill-opacity:0.5;" d="M280.51,105a48.55,48.55,0,0,0,12.37-1.6,48.48,48.48,0,0,0,59.42,9.36,48.49,48.49,0,0,0,80.58-12.69,48.5,48.5,0,1,0-27.75-65.14,48.55,48.55,0,0,0-40.42,3.31A48.52,48.52,0,0,0,316.13,23.6,48.5,48.5,0,1,0,280.51,105Z"/>
+</g>
+<g id="Layer_1" data-name="Layer 1">
+<circle class="divider-fill" cx="380.12" cy="35.58" r="13.88"/>
+<circle class="divider-fill" cx="363.75" cy="44.12" r="13.88"/>
+<rect class="divider-fill" x="0.01" width="500" height="36" transform="translate(500.01 36) rotate(180)"/>
+<circle class="divider-fill" cx="348.09" cy="38.42" r="13.88"/>
+<circle class="divider-fill" cx="338.12" cy="29.88" r="13.88"/>
+<circle class="divider-fill" cx="97.43" cy="27.68" r="23.58"/>
+<circle class="divider-fill" cx="74.61" cy="49.2" r="23.58"/>
+<circle class="divider-fill" cx="46.38" cy="47.12" r="23.58"/>
+<ellipse class="divider-fill" cx="23.87" cy="36.76" rx="23.86" ry="23.58"/>
+<circle class="divider-fill" cx="168.65" cy="37.32" r="34.12"/>
+<circle class="divider-fill" cx="213.83" cy="61.3" r="34.12"/>
+<circle class="divider-fill" cx="253.75" cy="37.6" r="34.12"/>
+<circle class="divider-fill" cx="423.13" cy="34.26" r="13.74"/>
+<circle class="divider-fill" cx="440.52" cy="43.87" r="13.74"/>
+<circle class="divider-fill" cx="456.52" cy="47.87" r="13.74"/>
+<circle class="divider-fill" cx="471.52" cy="42.87" r="13.74"/>
+<circle class="divider-fill" cx="485.52" cy="33.87" r="13.74"/>
+<circle class="divider-fill" cx="399.45" cy="37.4" r="11.6"/>
+<circle class="divider-fill" cx="302.83" cy="37.98" r="23.58"/>
+<circle class="divider-fill" cx="134.52" cy="39.87" r="23.58"/>
+</g>
+</svg></div>
+   <div id="Card1-card-body">
+      <div id="Card1-card-item0"><a href="./page2.html" class="stretched-link"><i class="fa fa-comments-o"></i></a></div>
+      <div id="Card1-card-item1">Buck and Boost Converter Designer</div>
+      <div id="Card1-card-item2">Buck and boost converter designer built with Qt Framework</div>
+   </div>
+</div>
+<div id="wb_Card2" class="card">
+<div id="Card2-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.01 129" preserveAspectRatio="none">
+<g id="Layer_2" data-name="Layer 2">
+<path class="divider-fill" style="fill-opacity:0.5;" d="M46.51,87a34.3,34.3,0,0,0,15.77-3.82,34.49,34.49,0,0,0,57.59,7.56,34.48,34.48,0,0,0,41.7-9.86,34.51,34.51,0,1,0-15.13-53.76,34.53,34.53,0,0,0-38.3,10.14,34.48,34.48,0,0,0-30.41.56A34.5,34.5,0,1,0,46.51,87Z"/>
+<path class="divider-fill" style="fill-opacity:0.5;" d="M280.51,105a48.55,48.55,0,0,0,12.37-1.6,48.48,48.48,0,0,0,59.42,9.36,48.49,48.49,0,0,0,80.58-12.69,48.5,48.5,0,1,0-27.75-65.14,48.55,48.55,0,0,0-40.42,3.31A48.52,48.52,0,0,0,316.13,23.6,48.5,48.5,0,1,0,280.51,105Z"/>
+</g>
+<g id="Layer_1" data-name="Layer 1">
+<circle class="divider-fill" cx="380.12" cy="35.58" r="13.88"/>
+<circle class="divider-fill" cx="363.75" cy="44.12" r="13.88"/>
+<rect class="divider-fill" x="0.01" width="500" height="36" transform="translate(500.01 36) rotate(180)"/>
+<circle class="divider-fill" cx="348.09" cy="38.42" r="13.88"/>
+<circle class="divider-fill" cx="338.12" cy="29.88" r="13.88"/>
+<circle class="divider-fill" cx="97.43" cy="27.68" r="23.58"/>
+<circle class="divider-fill" cx="74.61" cy="49.2" r="23.58"/>
+<circle class="divider-fill" cx="46.38" cy="47.12" r="23.58"/>
+<ellipse class="divider-fill" cx="23.87" cy="36.76" rx="23.86" ry="23.58"/>
+<circle class="divider-fill" cx="168.65" cy="37.32" r="34.12"/>
+<circle class="divider-fill" cx="213.83" cy="61.3" r="34.12"/>
+<circle class="divider-fill" cx="253.75" cy="37.6" r="34.12"/>
+<circle class="divider-fill" cx="423.13" cy="34.26" r="13.74"/>
+<circle class="divider-fill" cx="440.52" cy="43.87" r="13.74"/>
+<circle class="divider-fill" cx="456.52" cy="47.87" r="13.74"/>
+<circle class="divider-fill" cx="471.52" cy="42.87" r="13.74"/>
+<circle class="divider-fill" cx="485.52" cy="33.87" r="13.74"/>
+<circle class="divider-fill" cx="399.45" cy="37.4" r="11.6"/>
+<circle class="divider-fill" cx="302.83" cy="37.98" r="23.58"/>
+<circle class="divider-fill" cx="134.52" cy="39.87" r="23.58"/>
+</g>
+</svg></div>
+   <div id="Card2-card-body">
+      <div id="Card2-card-item0"><a href="./page3.html" class="stretched-link"><i class="fa fa-search"></i></a></div>
+      <div id="Card2-card-item1">Web Browser based on Qt WebEngine</div>
+      <div id="Card2-card-item2">Qt browser with some random stuff </div>
+   </div>
+</div>
+<div id="wb_Card7" class="card">
+<div id="Card7-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.01 129" preserveAspectRatio="none">
+<g id="Layer_2" data-name="Layer 2">
+<path class="divider-fill" style="fill-opacity:0.5;" d="M46.51,87a34.3,34.3,0,0,0,15.77-3.82,34.49,34.49,0,0,0,57.59,7.56,34.48,34.48,0,0,0,41.7-9.86,34.51,34.51,0,1,0-15.13-53.76,34.53,34.53,0,0,0-38.3,10.14,34.48,34.48,0,0,0-30.41.56A34.5,34.5,0,1,0,46.51,87Z"/>
+<path class="divider-fill" style="fill-opacity:0.5;" d="M280.51,105a48.55,48.55,0,0,0,12.37-1.6,48.48,48.48,0,0,0,59.42,9.36,48.49,48.49,0,0,0,80.58-12.69,48.5,48.5,0,1,0-27.75-65.14,48.55,48.55,0,0,0-40.42,3.31A48.52,48.52,0,0,0,316.13,23.6,48.5,48.5,0,1,0,280.51,105Z"/>
+</g>
+<g id="Layer_1" data-name="Layer 1">
+<circle class="divider-fill" cx="380.12" cy="35.58" r="13.88"/>
+<circle class="divider-fill" cx="363.75" cy="44.12" r="13.88"/>
+<rect class="divider-fill" x="0.01" width="500" height="36" transform="translate(500.01 36) rotate(180)"/>
+<circle class="divider-fill" cx="348.09" cy="38.42" r="13.88"/>
+<circle class="divider-fill" cx="338.12" cy="29.88" r="13.88"/>
+<circle class="divider-fill" cx="97.43" cy="27.68" r="23.58"/>
+<circle class="divider-fill" cx="74.61" cy="49.2" r="23.58"/>
+<circle class="divider-fill" cx="46.38" cy="47.12" r="23.58"/>
+<ellipse class="divider-fill" cx="23.87" cy="36.76" rx="23.86" ry="23.58"/>
+<circle class="divider-fill" cx="168.65" cy="37.32" r="34.12"/>
+<circle class="divider-fill" cx="213.83" cy="61.3" r="34.12"/>
+<circle class="divider-fill" cx="253.75" cy="37.6" r="34.12"/>
+<circle class="divider-fill" cx="423.13" cy="34.26" r="13.74"/>
+<circle class="divider-fill" cx="440.52" cy="43.87" r="13.74"/>
+<circle class="divider-fill" cx="456.52" cy="47.87" r="13.74"/>
+<circle class="divider-fill" cx="471.52" cy="42.87" r="13.74"/>
+<circle class="divider-fill" cx="485.52" cy="33.87" r="13.74"/>
+<circle class="divider-fill" cx="399.45" cy="37.4" r="11.6"/>
+<circle class="divider-fill" cx="302.83" cy="37.98" r="23.58"/>
+<circle class="divider-fill" cx="134.52" cy="39.87" r="23.58"/>
+</g>
+</svg></div>
+   <div id="Card7-card-body">
+      <div id="Card7-card-item0"><a href="./page1.html" class="stretched-link"><i class="fa fa-paper-plane"></i></a></div>
+      <div id="Card7-card-item1">RPi-TELEBOT</div>
+      <div id="Card7-card-item2">Python based Telegram bot to monitor and control the Raspberry Pi</div>
+   </div>
+</div>
+</div>
+<div id="wb_ThemeableButton1">
+<a class="ui-button ui-corner-all" id="ThemeableButton1" href="./proj.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>See More</a>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer2">
+<div id="Layer2_Container">
 <div id="wb_Icon5">
 <a href="https://github.com/RNA3210d" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon5"><i class="fa fa-github"></i></div></a>
 </div>
@@ -469,81 +583,109 @@ $(document).ready(function()
 <div id="wb_Icon7">
 <a href="https://www.linkedin.com/in/naveen-a-b-a7a85421a/" title="Although my LinkedIn profile is currently inactive, feel free to connect with me elsewhere or check back soon for updates. Thank you for your understanding!"><div id="Icon7"><i class="fa fa-linkedin"></i></div></a>
 </div>
+<div id="wb_Icon1">
+<a href="mailto:rna3210d2@proton.me" title="Email "><div id="Icon1"><i class="fa fa-envelope-o"></i></div></a>
+</div>
 <div id="wb_Icon8">
 <a href="https://www.mixcloud.com/RNA3210d/" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon8"><i class="fa fa-mixcloud"></i></div></a>
 </div>
-<div id="wb_Icon1">
-<a href="mailto:rna3210d2@proton.me" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon1"><i class="fa fa-envelope-o"></i></div></a>
+</div>
+</div>
+<div id="wb_links">
+<div id="links">
+<div class="col-1">
+<div id="wb_Text1">
+<p style="font-size:32px;line-height:47px;">Exploring the World Through My Lens<img alt="" width="32" height="32" src="images/Text11.png"></p>
+<p style="font-size:19px;line-height:27.5px;">Just a place where I can upload images of any dimension or orientation without lossy compresssion or any other restrictions<span style="color:#C3DBF0;">.</span></p>
+</div>
+<div id="wb_Text2">
+<p>&nbsp;</p>
+</div>
+<div id="wb_ThemeableButton2">
+<a class="ui-button ui-corner-all" id="ThemeableButton2" href="./gal.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>Gallery</a>
+</div>
+<div id="wb_Text9">
+<p>&nbsp;</p>
+</div>
+<div id="wb_Card3" class="card" onclick="ShowObject('Toast1', 1);return false;">
+   <div id="Card3-card-body">
+      <div id="Card3-card-item0">“</div>
+      <div id="Card3-card-item1">One day you'll leave this world behind.<br>So live a life you will remember</div>
+      <hr id="Card3-card-item2">
+      <div id="Card3-card-item3">Avicii - The Nights</div>
+   </div>
 </div>
 </div>
 </div>
 </div>
-<a id="Button1" href="./gal.html">See more in HD</a>
-<div id="welcome">
-<div id="welcome_Container">
-<div id="wb_Text4">
-<span style="color:#17406D;font-family:Arial;font-size:32px;"><strong>Step into the realm of my digital creations! <br> </strong></span>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="col-1">
+<div id="wb_Text7">
+<p style="font-size:32px;line-height:47px;"><span style="font-size:24px;line-height:35.5px;">How do you know someone uses linux? Don't worry they'll tell you.</span></p>
+<p style="font-size:32px;line-height:47px;color:#000000;"><img alt="" width="32" height="32" src="images/Text71.png"></p>
+<p style="font-size:32px;line-height:47px;">"I use Arch, btw"</p>
+<p style="font-size:19px;line-height:27.5px;">&nbsp;</p>
 </div>
-<div id="wb_LearnMore">
-<a href="./proj.html"><div id="LearnMore"><div id="LearnMore_text"><div><span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Go to Projects</span></div></div></div></a>
+<div id="wb_Text8">
+<p>&nbsp;</p>
 </div>
-<div id="wb_Text5">
-<span style="color:#17406D;font-family:Arial;font-size:32px;"><strong><br>Enter the realm of soundscapes!<br> </strong></span>
+<div id="wb_ThemeableButton3">
+<a class="ui-button ui-corner-all" id="ThemeableButton3" href="./xtra.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>My configs and dotfiles</a>
 </div>
-<div id="wb_Shape2">
-<a href="./prodn.html"><div id="Shape2"><div id="Shape2_text"><div><span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Explore my Tunes</span></div></div></div></a>
+<div id="wb_Text11">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Heading1">
+<h2 id="Heading1">Relevant XKCD (#1806)</h2>
+</div>
+<div id="wb_Image1">
+<img src="images/322e2.png" loading="lazy" id="Image1" alt="" title="Relevant XKCD" width="270" height="403">
 </div>
 </div>
 </div>
-<div id="PanelLayer">
-<div id="wb_CssMenu1">
-<ul id="CssMenu1" role="menubar" class="nav">
-<li role="menuitem" class="nav-item firstmain"><a class="nav-link CssMenu1-effect" href="./index.html" target="_self" title="Home">Home</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./mastuh.html" target="_self"></a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./sw.html" target="_self" title="Software I Use">Software&nbsp;I&nbsp;Use</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu CssMenu1-effect" href="./eqp.html" target="_self" title="My Equipments">My&nbsp;Equipments</a>
-
-<ul role="menu">
-<li role="menuitem" class="nav-item firstitem"><a class="nav-link CssMenu1-sub-effect" href="./lap.html" target="_self" title="Laptop">Laptop</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-sub-effect" href="./rpi.html" target="_self" title="RPi">RPi</a>
-</li>
-<li role="menuitem" class="nav-item lastitem"><a class="nav-link CssMenu1-sub-effect" href="./ntbk.html" target="_self" title="Netbook">Netbook</a>
-</li>
-</ul>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu CssMenu1-effect" href="./proj.html" target="_self" title="Projects">Projects</a>
-
-<ul role="menu">
-<li role="menuitem" class="nav-item firstitem"><a class="nav-link CssMenu1-sub-effect" href="./page1.html" target="_self" title="RPi-TELEBOT">RPi-TELEBOT</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-sub-effect" href="./page2.html" target="_self" title="BU &amp; BO Designer">BU&nbsp;&amp;&nbsp;BO&nbsp;Designer</a>
-</li>
-<li role="menuitem" class="nav-item lastitem"><a class="nav-link CssMenu1-sub-effect" href="./page3.html" target="_self" title="Qt Demo">Qt&nbsp;Demo</a>
-</li>
-</ul>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./gal.html" target="_self" title="Gallery">Gallery</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link CssMenu1-effect" href="./prodn.html" target="_self" title="My Tunes">My&nbsp;Tunes</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu CssMenu1-effect" href="./misc.html" target="_self" title="Help">Help</a>
-
-<ul role="menu">
-<li role="menuitem" class="nav-item firstitem lastitem"><a class="nav-link CssMenu1-sub-effect" href="./xtra.html" target="_self" title="EXTRAS">EXTRAS</a>
-</li>
-</ul>
-</li>
-</ul>
 </div>
-<div id="wb_FontAwesomeIcon5">
-<a href="#" onclick="HidePanel('PanelLayer', event);return false;"><div id="FontAwesomeIcon5"><i class="fa fa-times"></i></div></a></div>
-<div id="wb_Text6">
-<span style="color:#999999;font-family:Arial;font-size:15px;"><strong>Menu</strong></span></div>
-
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="col-1">
+<div id="wb_Text15">
+<p>My FL Studio renders and mixes</p>
+<p style="font-size:19px;line-height:27.5px;">&nbsp;</p>
+</div>
+<div id="wb_Text16">
+<p>&nbsp;</p>
+</div>
+<div id="wb_ThemeableButton5">
+<a class="ui-button ui-corner-all" id="ThemeableButton5" href="./prodn.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>My Tracks</a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="col-1">
+<div id="wb_Text12">
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="col-1">
+<div id="wb_Text18">
+<p>My Equipments</p>
+<p style="font-size:19px;line-height:27.5px;">&nbsp;</p>
+</div>
+<div id="wb_Text19">
+<p>&nbsp;</p>
+</div>
+<div id="wb_ThemeableButton6">
+<a class="ui-button ui-corner-all" id="ThemeableButton6" href="./prodn.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>My Equipments</a>
+</div>
+</div>
 </div>
 </div>
 <div id="preloader"></div>

@@ -16,15 +16,15 @@
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
-   var Card1 = new bootstrap.Popover("#",
+   var Card3 = new bootstrap.Popover("#",
    {
       content: function()
       {
-         return document.querySelector('#wb_Card1').innerHTML;
+         return document.querySelector('#wb_Card3').innerHTML;
       },
       html : true,
       placement: 'right',
-      template: '<div class="popover Card1" role="tooltip"><div class="popover-arrow"></div><div class="popover-body"></div></div>',
+      template: '<div class="popover Card3" role="tooltip"><div class="popover-arrow"></div><div class="popover-body"></div></div>',
       title: '',
       trigger: 'hover'
    });
@@ -37,9 +37,9 @@ document.addEventListener('DOMContentLoaded', function(event)
 <script>
 $(document).ready(function()
 {
-   $('#wb_Card7').addClass('visibility-hidden');
-   $('#wb_Card1').addClass('visibility-hidden');
-   $('#wb_Card2').addClass('visibility-hidden');
+   $('#wb_Card3').addClass('visibility-hidden');
+   $('#wb_Card4').addClass('visibility-hidden');
+   $('#wb_Card5').addClass('visibility-hidden');
    function onScrollLayer1()
    {
       var $obj = $("#Layer1");
@@ -64,77 +64,77 @@ $(document).ready(function()
    {
       onScrollLayer1();
    });
-   function onScrollCard7()
+   function onScrollCard3()
    {
-      var $obj = $("#wb_Card7");
+      var $obj = $("#wb_Card3");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('wb_Card7', 'transform-scale-in', 0, 1250);
+         AnimateCss('wb_Card3', 'transform-scale-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('wb_Card7', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_Card3', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#wb_Card7').inViewPort(true))
+   if (!$('#wb_Card3').inViewPort(true))
    {
-      $('#wb_Card7').addClass("in-viewport");
+      $('#wb_Card3').addClass("in-viewport");
    }
-   onScrollCard7();
+   onScrollCard3();
    $(window).scroll(function(event)
    {
-      onScrollCard7();
+      onScrollCard3();
    });
-   function onScrollCard1()
+   function onScrollCard4()
    {
-      var $obj = $("#wb_Card1");
+      var $obj = $("#wb_Card4");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('wb_Card1', 'transform-scale-in', 0, 1250);
+         AnimateCss('wb_Card4', 'transform-scale-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('wb_Card1', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_Card4', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#wb_Card1').inViewPort(true))
+   if (!$('#wb_Card4').inViewPort(true))
    {
-      $('#wb_Card1').addClass("in-viewport");
+      $('#wb_Card4').addClass("in-viewport");
    }
-   onScrollCard1();
+   onScrollCard4();
    $(window).scroll(function(event)
    {
-      onScrollCard1();
+      onScrollCard4();
    });
-   function onScrollCard2()
+   function onScrollCard5()
    {
-      var $obj = $("#wb_Card2");
+      var $obj = $("#wb_Card5");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('wb_Card2', 'transform-scale-in', 0, 1250);
+         AnimateCss('wb_Card5', 'transform-scale-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('wb_Card2', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_Card5', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#wb_Card2').inViewPort(true))
+   if (!$('#wb_Card5').inViewPort(true))
    {
-      $('#wb_Card2').addClass("in-viewport");
+      $('#wb_Card5').addClass("in-viewport");
    }
-   onScrollCard2();
+   onScrollCard5();
    $(window).scroll(function(event)
    {
-      onScrollCard2();
+      onScrollCard5();
    });
 });
 </script>
@@ -158,7 +158,7 @@ $(document).ready(function()
 <div id="wb_Image1">
 <a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
 <div id="wb_Text2">
-<span style="color:#000000;">© 2024 Naveen | Personal Webpage</span></div>
+<span style="color:#000000;">© 2024 NVN | Personal Webpage</span></div>
 <input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
 </div>
 </div>
@@ -176,7 +176,7 @@ $(document).ready(function()
 <div id="Shape3"></div>
 </div>
 <div id="wb_Heading6">
-<h2 id="Heading6">See more on my GitHub</h2>
+<h2 id="Heading6">See more on GitHub</h2>
 </div>
 </div>
 </div>
@@ -185,31 +185,33 @@ $(document).ready(function()
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4">
 <div class="col-1">
-<div id="wb_Card7" class="card">
-   <div id="Card7-card-body">
-      <div id="Card7-card-item0"><a href="./page1.html" class="stretched-link"><i class="fa fa-paper-plane"></i></a></div>
-      <div id="Card7-card-item1">RPi-TELEBOT</div>
-      <div id="Card7-card-item2">Python based Telegram bot to monitor and control the Raspberry Pi</div>
+<div id="CardContainer1">
+<div id="wb_Card3" class="card">
+   <div id="Card3-card-body">
+      <div id="Card3-card-item0"><a href="./page2.html" class="stretched-link"><i class="fa fa-comments-o"></i></a></div>
+      <div id="Card3-card-item1">Buck and Boost Converter Designer</div>
+      <div id="Card3-card-item2">Buck and boost converter designer built with Qt Framework</div>
    </div>
+</div>
+<div id="wb_Card4" class="card">
+   <div id="Card4-card-body">
+      <div id="Card4-card-item0"><a href="./page3.html" class="stretched-link"><i class="fa fa-search"></i></a></div>
+      <div id="Card4-card-item1">Web Browser based on Qt Web Engine VIew</div>
+      <div id="Card4-card-item2">Qt browser with some random stuff </div>
+   </div>
+</div>
+<div id="wb_Card5" class="card">
+   <div id="Card5-card-body">
+      <div id="Card5-card-item0"><a href="./page1.html" class="stretched-link"><i class="fa fa-paper-plane"></i></a></div>
+      <div id="Card5-card-item1">RPi-TELEBOT</div>
+      <div id="Card5-card-item2">Python based Telegram bot to monitor and control the Raspberry Pi</div>
+   </div>
+</div>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Card1" class="card">
-   <div id="Card1-card-body">
-      <div id="Card1-card-item0"><a href="./page2.html" class="stretched-link"><i class="fa fa-comments-o"></i></a></div>
-      <div id="Card1-card-item1">Buck and Boost Converter Designer</div>
-      <div id="Card1-card-item2">Buck and boost converter designer built with Qt Framework</div>
-   </div>
-</div>
 </div>
 <div class="col-3">
-<div id="wb_Card2" class="card">
-   <div id="Card2-card-body">
-      <div id="Card2-card-item0"><a href="./page3.html" class="stretched-link"><i class="fa fa-search"></i></a></div>
-      <div id="Card2-card-item1">Web Browser based on Qt Web Engine VIew</div>
-      <div id="Card2-card-item2">Qt browser with some random stuff </div>
-   </div>
-</div>
 </div>
 </div>
 </div>
