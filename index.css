@@ -107,33 +107,6 @@ body {
    margin: 0;
    width: 100%;
 }
-#wb_Text3 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
-#wb_Text3 {
-   color: #DBEFF9;
-   font-family: "Lucida Console";
-   font-size: 29px;
-   font-weight: 400;
-   line-height: 29px;
-}
-#wb_Text3 p,
-#wb_Text3 ul {
-   margin: 0;
-   padding: 0;
-}
-#wb_Text3 {
-   box-sizing: border-box;
-   display: block;
-   margin: 0;
-   width: 100%;
-}
 #wb_LayoutGrid2 {
    background-attachment: scroll;
    background-color: transparent;
@@ -674,6 +647,7 @@ body {
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
+   box-shadow: 0px 0px 14px #000000;
    margin: 0;
    padding: 0;
    text-align: center;
@@ -682,33 +656,6 @@ body {
    text-align: center;
 }
 #wb_Text5 {
-   box-sizing: border-box;
-   display: block;
-   margin: 0;
-   width: 100%;
-}
-#wb_Text6 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
-#wb_Text6 {
-   color: #4B93D4;
-   font-family: "Exo 2";
-   font-size: 29px;
-   font-weight: 400;
-   line-height: 41px;
-}
-#wb_Text6 p,
-#wb_Text6 ul {
-   margin: 0;
-   padding: 0;
-}
-#wb_Text6 {
    box-sizing: border-box;
    display: block;
    margin: 0;
@@ -1219,9 +1166,9 @@ body {
 #wb_Text1 {
    color: #FFFFFF;
    font-family: "Exo 2";
-   font-size: 21px;
+   font-size: 19px;
    font-weight: 400;
-   line-height: 31.5px;
+   line-height: 27.5px;
 }
 #wb_Text1 p,
 #wb_Text1 ul {
@@ -1584,33 +1531,6 @@ body {
 #Shape2 {
    border-width: 0;
    vertical-align: top;
-}
-#wb_Text7 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
-#wb_Text7 {
-   color: #FFFFFF;
-   font-family: "Exo 2";
-   font-size: 24px;
-   font-weight: 400;
-   line-height: 33px;
-}
-#wb_Text7 p,
-#wb_Text7 ul {
-   margin: 0;
-   padding: 0;
-}
-#wb_Text7 {
-   box-sizing: border-box;
-   display: block;
-   margin: 0;
-   width: 100%;
 }
 #ThemeableButton3 {
    cursor: pointer;
@@ -1978,11 +1898,11 @@ body {
    text-align: center;
 }
 #wb_Text15 {
-   color: #E6F0F9;
-   font-family: "Exo 2";
-   font-size: 29px;
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
    font-weight: 400;
-   line-height: 43px;
+   line-height: 16px;
 }
 #wb_Text15 p,
 #wb_Text15 ul {
@@ -2452,11 +2372,11 @@ body {
    text-align: center;
 }
 #wb_Text18 {
-   color: #E6F0F9;
-   font-family: "Exo 2";
-   font-size: 29px;
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
    font-weight: 400;
-   line-height: 43px;
+   line-height: 16px;
 }
 #wb_Text18 p,
 #wb_Text18 ul {
@@ -2911,10 +2831,10 @@ body {
    transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_LayoutGrid8 {
+#wb_LayoutGrid9 {
    background-attachment: scroll;
    background-color: transparent;
-   background-image: url('images/wall.jpg');
+   background-image: url('images/escape_velocity.jpg');
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -2930,7 +2850,7 @@ body {
    text-align: center;
    width: 100%;
 }
-#LayoutGrid8 {
+#LayoutGrid9 {
    box-sizing: border-box;
    display: flex;
    flex-direction: row;
@@ -2940,20 +2860,20 @@ body {
    margin-right: auto;
    padding: 55px 0 55px 0;
 }
-#LayoutGrid8 > .col-1,
-#LayoutGrid8 > .col-2 {
+#LayoutGrid9 > .col-1,
+#LayoutGrid9 > .col-2 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
-   padding-left: 0px;
-   padding-right: 0px;
+   padding-left: 10px;
+   padding-right: 10px;
    position: relative;
 }
-#LayoutGrid8 > .col-1,
-#LayoutGrid8 > .col-2 {
+#LayoutGrid9 > .col-1,
+#LayoutGrid9 > .col-2 {
    flex: 0 0 auto;
 }
-#LayoutGrid8 > .col-1 {
+#LayoutGrid9 > .col-1 {
    align-content: center;
    align-items: center;
    align-self: stretch;
@@ -2968,7 +2888,7 @@ body {
    max-width: 66.66666667%;
    text-align: center;
 }
-#LayoutGrid8 > .col-2 {
+#LayoutGrid9 > .col-2 {
    align-content: center;
    align-items: center;
    align-self: stretch;
@@ -2984,152 +2904,13 @@ body {
    text-align: center;
 }
 @media (max-width: 480px) {
-#LayoutGrid8 > .col-1,
-#LayoutGrid8 > .col-2 {
+#LayoutGrid9 > .col-1,
+#LayoutGrid9 > .col-2 {
    flex-basis: 100%  !important;
    max-width: 100%  !important;
 }
 }
-#wb_CssMenu6 {
-   background-color: transparent;
-   border: 0px solid #C0C0C0;
-   border-radius: 0px;
-   margin: 0;
-   text-align: left;
-   z-index: 1111  !important;
-}
-#wb_CssMenu6 ul {
-   display: inline-block;
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   position: relative;
-}
-#wb_CssMenu6 li {
-   float: left;
-   margin: 0;
-   padding: 0px 4px 0px 0px;
-}
-#wb_CssMenu6 a {
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 1px solid #CCCCCC;
-   border-radius: 0px;
-   color: #333333;
-   display: block;
-   float: left;
-   font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
-   font-weight: normal;
-   height: 26px;
-   line-height: 26px;
-   padding: 0px 5px 0px 5px;
-   text-align: center;
-   text-decoration: none;
-   vertical-align: middle;
-}
-#wb_CssMenu6 li:hover a,
-#wb_CssMenu6 a:hover,
-#wb_CssMenu6 .active {
-   background-color: #337AB7;
-   background-image: none;
-   border: 1px solid #2E6DA4;
-   color: #FFFFFF;
-}
-#wb_CssMenu6 li.firstmain {
-   padding-left: 0px;
-}
-#wb_CssMenu6 li.lastmain {
-   padding-right: 0px;
-}
-#wb_CssMenu6 li:hover,
-#wb_CssMenu6 li a:hover {
-   position: relative;
-}
-#wb_CssMenu6 a.withsubmenu {
-   background-image: none;
-   padding: 0 5px 0 5px;
-}
-#wb_CssMenu6 li:hover a.withsubmenu,
-#wb_CssMenu6 a.withsubmenu:hover {
-   background-image: none;
-}
-#wb_CssMenu6 ul ul {
-   background-color: transparent;
-   border: none;
-   height: auto;
-   left: 0;
-   position: absolute;
-   top: 0;
-   visibility: hidden;
-   width: 100px;
-   z-index: 9999;
-}
-#wb_CssMenu6 ul :hover ul {
-   left: 0px;
-   padding-top: 0px;
-   top: 28px;
-   visibility: visible;
-}
-#wb_CssMenu6 .firstmain:hover ul {
-   left: 0px;
-}
-#wb_CssMenu6 li li {
-   border: 0px solid #C0C0C0;
-   border-width: 0 0px;
-   padding: 0 0px 0px 0px;
-   width: 100px;
-}
-#wb_CssMenu6 li li.firstitem {
-   border-top: 0px #C0C0C0 solid;
-}
-#wb_CssMenu6 li li.lastitem {
-   border-bottom: 0px #C0C0C0 solid;
-}
-#wb_CssMenu6 ul ul a,
-#wb_CssMenu6 ul :hover ul a {
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 1px solid #CCCCCC;
-   color: #333333;
-   float: none;
-   font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
-   font-weight: normal;
-   height: auto;
-   line-height: 13px;
-   margin: 0;
-   padding: 7px 6px 6px 6px;
-   text-align: left;
-   text-decoration: none;
-   white-space: normal;
-   width: 86px;
-}
-#wb_CssMenu6 ul :hover ul .firstitem a {
-   margin-top: 0px;
-}
-#wb_CssMenu6 ul ul :hover a,
-#wb_CssMenu6 ul ul a:hover,
-#wb_CssMenu6 ul ul a.active,
-#wb_CssMenu6 ul ul a.active,
-#wb_CssMenu6 ul ul :hover ul :hover a,
-#wb_CssMenu6 ul ul :hover ul a:hover,
-#wb_CssMenu6 ul ul a.active,
-#wb_CssMenu6 ul ul :hover ul a.active {
-   background-color: #337AB7;
-   background-image: none;
-   border: 1px solid #2E6DA4;
-   color: #FFFFFF;
-}
-#wb_CssMenu6 br {
-   clear: both;
-   font-size: 1px;
-   height: 0;
-   line-height: 0;
-}
-#SiteSearch1 {
+#SiteSearch2 {
    background-color: #F6F6F6;
    background-image: none;
    border: 1px solid #CCCCCC;
@@ -3146,7 +2927,7 @@ body {
    padding: 4px 4px 4px 4px;
    text-align: left;
 }
-#SiteSearch1:focus {
+#SiteSearch2:focus {
    outline: 0;
 }
 .search-item,
@@ -3256,7 +3037,7 @@ body {
    margin: 0;
    padding: 0;
    position: absolute;
-   width: 400px;
+   width: 380px;
    z-index: 999;
 }
 .search-autocomplete li {
@@ -3292,7 +3073,7 @@ body {
    font-size: 13px;
    font-weight: normal;
 }
-#Button1 {
+#Button2 {
    -webkit-appearance: none;
    background-color: #3370B7;
    background-image: none;
@@ -3308,10 +3089,10 @@ body {
    text-align: center;
 }
 }
-#Button1:focus {
+#Button2:focus {
    outline: 0;
 }
-#wb_Icon16 {
+#wb_Icon11 {
    background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
@@ -3322,7 +3103,7 @@ body {
    text-align: center;
    vertical-align: top;
 }
-#wb_Icon16 a::after {
+#wb_Icon11 a::after {
    bottom: 0;
    content: "";
    left: 0;
@@ -3332,15 +3113,15 @@ body {
    top: 0;
    z-index: 1;
 }
-#wb_Icon16:hover {
+#wb_Icon11:hover {
    background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
    border: 2px solid #FFFFFF;
 }
-#Icon16 {
+#Icon11 {
    height: 16px;
    width: 16px;
 }
-#Icon16 i {
+#Icon11 i {
    color: #FFFFFF;
    display: inline-block;
    font-size: 16px;
@@ -3348,18 +3129,18 @@ body {
    vertical-align: middle;
    width: 15px;
 }
-#wb_Icon16:hover #Icon16 i {
+#wb_Icon11:hover #Icon11 i {
    color: #13A89E;
 }
-#wb_Icon16 {
+#wb_Icon11 {
    transform: rotate(0deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon16:hover {
+#wb_Icon11:hover {
    transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon17 {
+#wb_Icon12 {
    background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
@@ -3370,7 +3151,7 @@ body {
    text-align: center;
    vertical-align: top;
 }
-#wb_Icon17 a::after {
+#wb_Icon12 a::after {
    bottom: 0;
    content: "";
    left: 0;
@@ -3380,15 +3161,15 @@ body {
    top: 0;
    z-index: 1;
 }
-#wb_Icon17:hover {
+#wb_Icon12:hover {
    background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
    border: 2px solid #FFFFFF;
 }
-#Icon17 {
+#Icon12 {
    height: 16px;
    width: 16px;
 }
-#Icon17 i {
+#Icon12 i {
    color: #FFFFFF;
    display: inline-block;
    font-size: 16px;
@@ -3396,18 +3177,18 @@ body {
    vertical-align: middle;
    width: 19px;
 }
-#wb_Icon17:hover #Icon17 i {
+#wb_Icon12:hover #Icon12 i {
    color: #13A89E;
 }
-#wb_Icon17 {
+#wb_Icon12 {
    transform: rotate(0deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon17:hover {
+#wb_Icon12:hover {
    transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon18 {
+#wb_Icon13 {
    background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
@@ -3418,7 +3199,7 @@ body {
    text-align: center;
    vertical-align: top;
 }
-#wb_Icon18 a::after {
+#wb_Icon13 a::after {
    bottom: 0;
    content: "";
    left: 0;
@@ -3428,15 +3209,15 @@ body {
    top: 0;
    z-index: 1;
 }
-#wb_Icon18:hover {
+#wb_Icon13:hover {
    background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
    border: 2px solid #FFFFFF;
 }
-#Icon18 {
+#Icon13 {
    height: 16px;
    width: 16px;
 }
-#Icon18 i {
+#Icon13 i {
    color: #FFFFFF;
    display: inline-block;
    font-size: 16px;
@@ -3444,18 +3225,18 @@ body {
    vertical-align: middle;
    width: 15px;
 }
-#wb_Icon18:hover #Icon18 i {
+#wb_Icon13:hover #Icon13 i {
    color: #13A89E;
 }
-#wb_Icon18 {
+#wb_Icon13 {
    transform: rotate(0deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon18:hover {
+#wb_Icon13:hover {
    transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon19 {
+#wb_Icon14 {
    background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
@@ -3466,7 +3247,7 @@ body {
    text-align: center;
    vertical-align: top;
 }
-#wb_Icon19 a::after {
+#wb_Icon14 a::after {
    bottom: 0;
    content: "";
    left: 0;
@@ -3476,15 +3257,15 @@ body {
    top: 0;
    z-index: 1;
 }
-#wb_Icon19:hover {
+#wb_Icon14:hover {
    background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
    border: 2px solid #FFFFFF;
 }
-#Icon19 {
+#Icon14 {
    height: 16px;
    width: 16px;
 }
-#Icon19 i {
+#Icon14 i {
    color: #FFFFFF;
    display: inline-block;
    font-size: 16px;
@@ -3492,18 +3273,18 @@ body {
    vertical-align: middle;
    width: 15px;
 }
-#wb_Icon19:hover #Icon19 i {
+#wb_Icon14:hover #Icon14 i {
    color: #13A89E;
 }
-#wb_Icon19 {
+#wb_Icon14 {
    transform: rotate(0deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon19:hover {
+#wb_Icon14:hover {
    transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon20 {
+#wb_Icon15 {
    background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
@@ -3514,7 +3295,7 @@ body {
    text-align: center;
    vertical-align: top;
 }
-#wb_Icon20 a::after {
+#wb_Icon15 a::after {
    bottom: 0;
    content: "";
    left: 0;
@@ -3524,15 +3305,15 @@ body {
    top: 0;
    z-index: 1;
 }
-#wb_Icon20:hover {
+#wb_Icon15:hover {
    background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
    border: 2px solid #FFFFFF;
 }
-#Icon20 {
+#Icon15 {
    height: 16px;
    width: 16px;
 }
-#Icon20 i {
+#Icon15 i {
    color: #FFFFFF;
    display: inline-block;
    font-size: 16px;
@@ -3540,127 +3321,810 @@ body {
    vertical-align: middle;
    width: 19px;
 }
-#wb_Icon20:hover #Icon20 i {
+#wb_Icon15:hover #Icon15 i {
    color: #13A89E;
 }
-#wb_Icon20 {
+#wb_Icon15 {
    transform: rotate(0deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon20:hover {
+#wb_Icon15:hover {
    transform: rotate(360deg);
    transition: transform 500ms linear 0ms;
 }
-#wb_Icon20 {
-   display: inline-block;
-   height: 16px;
+#Banner1 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-size: 27px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
    text-align: center;
-   width: 16px;
-   z-index: 48;
+   text-shadow: 0px 0px 12px rgba(75,147,212,1.00);
+}
+#Banner1 span {
+   display: block;
+   height: 27px;
+   margin: 4px 0 4px 0;
+}
+#Banner1 span:before,
+#Banner1 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 48px;
+}
+Banner1 span:before {
+   content: "Explore More";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#Banner2 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-size: 27px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 13px rgba(244,145,0,1.00);
+}
+#Banner2 span {
+   display: block;
+   height: 27px;
+   margin: 4px 0 4px 0;
+}
+#Banner2 span:before,
+#Banner2 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 48px;
+}
+Banner2 span:before {
+   content: "My FL Studio renders and mixes";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#Banner3 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-size: 27px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 13px rgba(16,207,155,1.00);
+}
+#Banner3 span {
+   display: block;
+   height: 27px;
+   margin: 4px 0 4px 0;
+}
+#Banner3 span:before,
+#Banner3 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 48px;
+}
+Banner3 span:before {
+   content: ""I use Arch, btw"";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#Banner4 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-size: 27px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 13px rgba(108,226,232,1.00);
+}
+#Banner4 span {
+   display: block;
+   height: 27px;
+   margin: 4px 0 4px 0;
+}
+#Banner4 span:before,
+#Banner4 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 48px;
+}
+Banner4 span:before {
+   content: "My Equipments";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#Banner5 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-size: 21px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 14px rgba(204,235,247,1.00);
+}
+#Banner5 span {
+   display: block;
+   height: 21px;
+   margin: 49px 0 49px 0;
+}
+#Banner5 span:before,
+#Banner5 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 85px;
+}
+Banner5 span:before {
+   content: "How do you know someone uses linux? Don't worry they'll tell you.";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#wb_Text7 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text7 {
+   color: #000000;
+   font-family: Arial;
+   font-size: 29px;
+   font-weight: 400;
+   line-height: 33px;
+}
+#wb_Text7 p,
+#wb_Text7 ul {
+   margin: 0;
+   padding: 0;
+}
+#wb_Text7 {
+   box-sizing: border-box;
+   display: block;
+   margin: 0;
+   width: 100%;
+}
+#Banner6 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-size: 29px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 14px rgba(248,189,102,1.00);
+}
+#Banner6 span {
+   display: block;
+   height: 29px;
+   margin: 2px 0 2px 0;
+}
+#Banner6 span:before,
+#Banner6 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 50px;
+}
+Banner6 span:before {
+   content: "Exploring the World Through My Lens";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#Banner7 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-size: 29px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 14px rgba(160,104,22,1.00);
+}
+#Banner7 span {
+   display: block;
+   height: 29px;
+   margin: 2px 0 2px 0;
+}
+#Banner7 span:before,
+#Banner7 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 50px;
+}
+Banner7 span:before {
+   content: "My Projects: Why y'all still letting me cook?";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#Banner8 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-size: 29px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 14px rgba(255,0,0,1.00);
+}
+#Banner8 span {
+   display: block;
+   height: 29px;
+   margin: 21px 0 21px 0;
+}
+#Banner8 span:before,
+#Banner8 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 69px;
+}
+Banner8 span:before {
+   content: "About Me";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#Banner9 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-size: 21px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 14px rgba(160,104,22,1.00);
+}
+#Banner9 span {
+   display: block;
+   height: 21px;
+   margin: 16px 0 16px 0;
+}
+#Banner9 span:before,
+#Banner9 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 52px;
+}
+Banner9 span:before {
+   content: "I own a musket for home defense ";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#Banner10 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Lucida Console";
+   font-size: 29px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 14px rgba(27,138,143,1.00);
+}
+#Banner10 span {
+   display: block;
+   height: 29px;
+   margin: 17px 0 17px 0;
+}
+#Banner10 span:before,
+#Banner10 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 51px;
+}
+Banner10 span:before {
+   content: "Ahoy, Matey!";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#ThemeableButton4 {
+   cursor: pointer;
+   display: inline-block;
+   font-family: "Exo 2";
+   font-size: 21px;
+   font-style: normal;
+   font-weight: normal;
+   overflow: visible;
+   position: relative;
+   text-decoration: none;
+   user-select: none;
+   vertical-align: middle;
+}
+#wb_ThemeableButton4 {
+   border-radius: 15px;
+   box-shadow: 0px 0px 22px #4B93D4;
+   margin: 0;
+   vertical-align: top;
+}
+#ThemeableButton4 {
+   box-sizing: border-box;
+   padding: 0;
+   text-align: center;
+}
+#wb_ThemeableButton4 .ui-button {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin: 0;
+}
+#ThemeableButton4 {
+   color: #1C94C4;
+   text-decoration: none;
+}
+#ThemeableButton4 :hover {
+   color: #C77405;
+}
+#ThemeableButton4 :active {
+   color: #EB8F00;
+}
+#wb_ThemeableButton4 .ui-primary {
+   background-image: none  !important;
+   color: #FFFFFF;
+   display: inline-block;
+   font-family: FontAwesome;
+   font-size: 21px;
+   font-style: normal;
+   font-weight: normal;
+   height: 21px;
+   left: 10px;
+   line-height: 1;
+   margin-top: 0;
+   overflow: visible;
+   position: absolute;
+   text-indent: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 21px;
+}
+#wb_ThemeableButton4 .ui-primary:before {
+   content: "\f120";
+}
+#wb_ThemeableButton4:hover .ui-primary {
+   color: #C77405;
+}
+#wb_ThemeableButton4:active .ui-primary {
+   color: #EB8F00;
+}
+#wb_ThemeableButton4 .ui-corner-all,
+#wb_ThemeableButton4 .ui-corner-left {
+   border-bottom-left-radius: 15px;
+   border-top-left-radius: 15px;
+}
+#wb_ThemeableButton4 .ui-corner-all,
+#wb_ThemeableButton4 .ui-corner-right {
+   border-bottom-right-radius: 15px;
+   border-top-right-radius: 15px;
+}
+#wb_ThemeableButton4 .ui-button {
+   background-image: linear-gradient(315deg, #5878B2 0%, #0ADAD8 19%, #008080 48%, #869FC8 78%, #5878B2 100%);
+   border: 1px solid #87B7E2;
+   color: #FFFFFF;
+}
+#wb_ThemeableButton4 .ui-state-hover,
+#wb_ThemeableButton4 .ui-button:hover {
+   background-color: #FDF5CE;
+   background-image: none;
+   border-color: #FBCB09;
+   color: #C77405;
+}
+#wb_ThemeableButton4 .ui-state-active,
+#wb_ThemeableButton4 .ui-button:active {
+   background-color: #FFFFFF;
+   background-image: none;
+   border-color: #FBD850;
+   color: #EB8F00;
+}
+#ThemeableButton7 {
+   cursor: pointer;
+   display: inline-block;
+   font-family: "Exo 2";
+   font-size: 21px;
+   font-style: normal;
+   font-weight: normal;
+   overflow: visible;
+   position: relative;
+   text-decoration: none;
+   user-select: none;
+   vertical-align: middle;
+}
+#wb_ThemeableButton7 {
+   border-radius: 15px;
+   box-shadow: 0px 0px 22px #4B93D4;
+   margin: 0;
+   vertical-align: top;
+}
+#ThemeableButton7 {
+   box-sizing: border-box;
+   padding: 0;
+   text-align: center;
+}
+#wb_ThemeableButton7 .ui-button {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin: 0;
+}
+#ThemeableButton7 {
+   color: #1C94C4;
+   text-decoration: none;
+}
+#ThemeableButton7 :hover {
+   color: #C77405;
+}
+#ThemeableButton7 :active {
+   color: #EB8F00;
+}
+#wb_ThemeableButton7 .ui-primary {
+   background-image: none  !important;
+   color: #FFFFFF;
+   display: inline-block;
+   font-family: FontAwesome;
+   font-size: 21px;
+   font-style: normal;
+   font-weight: normal;
+   height: 21px;
+   left: 10px;
+   line-height: 1;
+   margin-top: 0;
+   overflow: visible;
+   position: absolute;
+   text-indent: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 21px;
+}
+#wb_ThemeableButton7 .ui-primary:before {
+   content: "\f055";
+}
+#wb_ThemeableButton7:hover .ui-primary {
+   color: #C77405;
+}
+#wb_ThemeableButton7:active .ui-primary {
+   color: #EB8F00;
+}
+#wb_ThemeableButton7 .ui-corner-all,
+#wb_ThemeableButton7 .ui-corner-left {
+   border-bottom-left-radius: 15px;
+   border-top-left-radius: 15px;
+}
+#wb_ThemeableButton7 .ui-corner-all,
+#wb_ThemeableButton7 .ui-corner-right {
+   border-bottom-right-radius: 15px;
+   border-top-right-radius: 15px;
+}
+#wb_ThemeableButton7 .ui-button {
+   background-image: linear-gradient(315deg, #5878B2 0%, #0ADAD8 19%, #008080 48%, #869FC8 78%, #5878B2 100%);
+   border: 1px solid #87B7E2;
+   color: #FFFFFF;
+}
+#wb_ThemeableButton7 .ui-state-hover,
+#wb_ThemeableButton7 .ui-button:hover {
+   background-color: #FDF5CE;
+   background-image: none;
+   border-color: #FBCB09;
+   color: #C77405;
+}
+#wb_ThemeableButton7 .ui-state-active,
+#wb_ThemeableButton7 .ui-button:active {
+   background-color: #FFFFFF;
+   background-image: none;
+   border-color: #FBD850;
+   color: #EB8F00;
+}
+#wb_Text3 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text3 {
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 16px;
+}
+#wb_Text3 p,
+#wb_Text3 ul {
+   margin: 0;
+   padding: 0;
+}
+#wb_Text3 {
+   box-sizing: border-box;
+   display: block;
+   margin: 0;
+   width: 100%;
+}
+#Banner11 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-size: 27px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 12px rgba(75,147,212,1.00);
+}
+#Banner11 span {
+   display: block;
+   height: 27px;
+   margin: 4px 0 4px 0;
+}
+#Banner11 span:before,
+#Banner11 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 48px;
+}
+Banner11 span:before {
+   content: "External Links";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#wb_Text6 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text6 {
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 16px;
+}
+#wb_Text6 p,
+#wb_Text6 ul {
+   margin: 0;
+   padding: 0;
+}
+#wb_Text6 {
+   box-sizing: border-box;
+   display: block;
+   margin: 0;
+   width: 100%;
 }
 #wb_Icon1 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 16;
+   z-index: 18;
 }
 #wb_ThemeableButton1 {
    display: inline-block;
    height: 51px;
    width: 215px;
-   z-index: 9;
+   z-index: 11;
+}
+#Banner1 {
+   display: inline-block;
+   height: 48px;
+   width: 769px;
+   z-index: 48;
 }
 #wb_Icon6 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 14;
+   z-index: 16;
 }
 #wb_Card1 {
    display: flex;
-   z-index: 4;
+   z-index: 6;
+}
+#Button2 {
+   display: inline-block;
+   height: 25px;
+   width: 96px;
+   z-index: 60;
+}
+#wb_Icon11 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 54;
 }
 #wb_Image1 {
    display: inline-block;
    height: auto;
    opacity: 0.90;
    width: 100%;
-   z-index: 28;
+   z-index: 33;
 }
 #wb_Icon7 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 15;
-}
-#Button1 {
-   display: inline-block;
-   height: 25px;
-   width: 96px;
-   z-index: 43;
+   z-index: 17;
 }
 #wb_Icon10 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 40;
+   z-index: 47;
 }
 #wb_Icon4 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 38;
+   z-index: 45;
+}
+#Banner3 {
+   display: inline-block;
+   height: 48px;
+   width: 547px;
+   z-index: 28;
 }
 #wb_Card3 {
    display: flex;
    width: 100%;
-   z-index: 22;
+   z-index: 25;
+}
+#wb_Icon13 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 56;
+}
+#Banner2 {
+   display: inline-block;
+   height: 48px;
+   width: 547px;
+   z-index: 34;
 }
 #wb_Icon5 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 13;
+   z-index: 15;
 }
 #wb_Card2 {
    display: flex;
-   z-index: 5;
+   z-index: 7;
 }
-#SiteSearch1_form {
-   display: inline;
-}
-#wb_CssMenu6 {
+#wb_Icon12 {
    display: inline-block;
-   height: 36px;
-   width: 506px;
-   z-index: 41;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 55;
+}
+#Banner5 {
+   display: inline-block;
+   height: 130px;
+   width: 854px;
+   z-index: 26;
+}
+#wb_Icon15 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 58;
+}
+#Banner4 {
+   display: inline-block;
+   height: 48px;
+   width: 547px;
+   z-index: 39;
+}
+#wb_Icon14 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 57;
 }
 #wb_Icon8 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 17;
+   z-index: 19;
 }
-#wb_Icon17 {
+#Banner7 {
    display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 45;
+   height: 48px;
+   width: 669px;
+   z-index: 9;
+}
+#ThemeableButton7 {
+   height: 100%;
+   width: 100%;
+}
+#ThemeableButton4 {
+   height: 100%;
+   width: 100%;
 }
 #wb_Icon9 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 39;
+   z-index: 46;
 }
 #ThemeableButton6 {
    height: 100%;
@@ -3678,47 +4142,53 @@ body {
    height: 100%;
    width: 100%;
 }
+#Banner6 {
+   display: inline-block;
+   height: 48px;
+   width: 547px;
+   z-index: 20;
+}
 #ThemeableButton1 {
    height: 100%;
    width: 100%;
-}
-#wb_Icon16 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 44;
 }
 #wb_ThemeableButton6 {
    display: inline-block;
    height: 61px;
    width: 309px;
-   z-index: 35;
+   z-index: 42;
 }
 #wb_Card8 {
    display: flex;
    width: 100%;
+   z-index: 5;
+}
+#Banner9 {
+   display: inline-block;
+   height: 63px;
+   width: 865px;
+   z-index: 0;
+}
+#SiteSearch2_form {
+   display: inline;
+}
+#wb_ThemeableButton7 {
+   display: inline-block;
+   height: 61px;
+   width: 661px;
+   z-index: 51;
+}
+#Banner8 {
+   display: inline-block;
+   height: 85px;
+   width: 668px;
    z-index: 3;
 }
-#wb_Icon19 {
+#wb_ThemeableButton4 {
    display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 47;
-}
-#SiteSearch1 {
-   display: block;
-   height: 26px;
-   width: 100%;
-   z-index: 42;
-}
-#wb_Icon18 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 46;
+   height: 61px;
+   width: 659px;
+   z-index: 49;
 }
 #Layer1 {
    bottom: 0px;
@@ -3728,18 +4198,30 @@ body {
    text-align: center;
    top: auto;
    width: 284px;
-   z-index: 58;
+   z-index: 70;
+}
+#Banner10 {
+   display: inline-block;
+   height: 63px;
+   width: 865px;
+   z-index: 2;
+}
+#Banner11 {
+   display: inline-block;
+   height: 48px;
+   width: 741px;
+   z-index: 52;
 }
 #wb_ThemeableButton5 {
    display: inline-block;
    height: 61px;
    width: 309px;
-   z-index: 31;
+   z-index: 37;
 }
 #wb_Heading1 {
    display: inline-block;
    width: 100%;
-   z-index: 27;
+   z-index: 32;
 }
 #Layer2 {
    bottom: 0px;
@@ -3749,27 +4231,33 @@ body {
    text-align: center;
    top: auto;
    width: 284px;
-   z-index: 52;
+   z-index: 64;
+}
+#SiteSearch2 {
+   display: block;
+   height: 26px;
+   width: 100%;
+   z-index: 59;
 }
 #wb_Icon2 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 36;
+   z-index: 43;
 }
 #wb_ThemeableButton2 {
    display: inline-block;
    height: 53px;
    width: 215px;
-   z-index: 20;
+   z-index: 23;
 }
 #wb_Icon3 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 37;
+   z-index: 44;
 }
 #Layer1_Container {
    width: 100%;
@@ -3778,14 +4266,14 @@ body {
    display: inline-block;
    height: 45px;
    width: 325px;
-   z-index: 25;
+   z-index: 30;
 }
 #Layer2_Container {
    width: 100%;
 }
 #wb_Card7 {
    display: flex;
-   z-index: 6;
+   z-index: 8;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px) {
 body {
@@ -3816,19 +4304,6 @@ body {
    line-height: 29px;
    margin: 0;
    padding: 75px 50px 75px 50px;
-   text-align: center;
-}
-#wb_Text3 {
-   display: block;
-   visibility: visible;
-}
-#wb_Text3 {
-   font-family: Arial;
-   font-size: 24px;
-   font-weight: 400;
-   line-height: 27px;
-   margin: 0;
-   padding: 0;
    text-align: center;
 }
 #wb_LayoutGrid2 {
@@ -4075,14 +4550,6 @@ body {
    visibility: visible;
 }
 #wb_Text5 {
-   margin: 0;
-   padding: 0;
-}
-#wb_Text6 {
-   display: block;
-   visibility: visible;
-}
-#wb_Text6 {
    margin: 0;
    padding: 0;
 }
@@ -4333,12 +4800,6 @@ body {
    text-align: left;
 }
 #wb_links {
-   background-attachment: scroll;
-   background-color: transparent;
-   background-image: url('https://www.youtube.com/embed/W0LHTWG-UmQ');
-   background-position: left center  !important;
-   background-repeat: no-repeat;
-   background-size: cover;
    display: table;
    visibility: visible;
 }
@@ -4418,14 +4879,6 @@ body {
    display: inline-block;
    margin: 0;
    visibility: visible;
-}
-#wb_Text7 {
-   display: block;
-   visibility: visible;
-}
-#wb_Text7 {
-   margin: 0;
-   padding: 0;
 }
 #wb_ThemeableButton3 {
    display: inline-block;
@@ -4923,95 +5376,20 @@ body {
    line-height: 16px;
    width: 19px;
 }
-#wb_LayoutGrid8 {
+#wb_LayoutGrid9 {
    display: table;
    visibility: visible;
 }
-#wb_LayoutGrid8 {
+#wb_LayoutGrid9 {
    height: 100vh;
    margin-bottom: 0px;
    margin-top: 0px;
 }
-#LayoutGrid8 {
+#LayoutGrid9 {
    height: 100vh;
    padding: 55px 0 55px 0;
 }
-#wb_CssMenu6 {
-   display: inline-block;
-   margin: 0;
-   text-align: left;
-   visibility: visible;
-}
-#wb_CssMenu6 li {
-}
-#wb_CssMenu6 a {
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 1px solid #CCCCCC;
-   border-radius: 0px;
-   color: #333333;
-   font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
-   font-weight: normal;
-   height: 26px;
-   line-height: 26px;
-   text-align: center;
-   text-decoration: none;
-}
-#wb_CssMenu6 li:hover a,
-#wb_CssMenu6 a:hover,
-#wb_CssMenu6 .active {
-   background-color: #337AB7;
-   background-image: none;
-   border: 1px solid #2E6DA4;
-   color: #FFFFFF;
-}
-#wb_CssMenu6 a.withsubmenu {
-   padding: 0 5px 0 5px;
-}
-#wb_CssMenu6 ul :hover ul {
-   left: 0px;
-   padding-top: 0px;
-   top: 28px;
-   visibility: visible;
-}
-#wb_CssMenu6 .firstmain:hover ul {
-   left: 0px;
-}
-#wb_CssMenu6 li li {
-   width: 100px;
-}
-#wb_CssMenu6 ul ul a,
-#wb_CssMenu6 ul :hover ul a {
-   background-color: #FFFFFF;
-   border: 1px solid #CCCCCC;
-   color: #333333;
-   font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
-   font-weight: normal;
-   line-height: 13px;
-   padding: 7px 6px 6px 6px;
-   text-decoration: none;
-   width: 86px;
-}
-#wb_CssMenu6 ul ul :hover a,
-#wb_CssMenu6 ul ul a:hover,
-#wb_CssMenu6 ul ul a.active,
-#wb_CssMenu6 ul ul a.active,
-#wb_CssMenu6 ul ul :hover ul :hover a,
-#wb_CssMenu6 ul ul :hover ul a:hover,
-#wb_CssMenu6 ul ul a.active,
-#wb_CssMenu6 ul ul :hover ul a.active {
-   background-color: #337AB7;
-   border: 1px solid #2E6DA4;
-   color: #FFFFFF;
-}
-#wb_CssMenu6 li {
-   padding: 0px 4px 0px 0px;
-}
-#SiteSearch1 {
+#SiteSearch2 {
    display: block;
    height: 26px;
    margin: 0;
@@ -5020,11 +5398,11 @@ body {
    visibility: visible;
    width: 100%;
 }
-#SiteSearch1 {
+#SiteSearch2 {
    height: 26px;
    width: 480px;
 }
-#Button1 {
+#Button2 {
    display: inline-block;
    height: 25px;
    margin: 0;
@@ -5032,7 +5410,7 @@ body {
    visibility: visible;
    width: 96px;
 }
-#wb_Icon16 {
+#wb_Icon11 {
    display: inline-block;
    height: 16px;
    margin: 0 10px 0 0;
@@ -5040,16 +5418,16 @@ body {
    visibility: visible;
    width: 16px;
 }
-#Icon16 {
+#Icon11 {
    height: 16px;
    width: 16px;
 }
-#Icon16 i {
+#Icon11 i {
    font-size: 16px;
    line-height: 16px;
    width: 15px;
 }
-#wb_Icon17 {
+#wb_Icon12 {
    display: inline-block;
    height: 16px;
    margin: 0 10px 0 0;
@@ -5057,16 +5435,16 @@ body {
    visibility: visible;
    width: 16px;
 }
-#Icon17 {
+#Icon12 {
    height: 16px;
    width: 16px;
 }
-#Icon17 i {
+#Icon12 i {
    font-size: 16px;
    line-height: 16px;
    width: 19px;
 }
-#wb_Icon18 {
+#wb_Icon13 {
    display: inline-block;
    height: 16px;
    margin: 0 10px 0 0;
@@ -5074,16 +5452,16 @@ body {
    visibility: visible;
    width: 16px;
 }
-#Icon18 {
+#Icon13 {
    height: 16px;
    width: 16px;
 }
-#Icon18 i {
+#Icon13 i {
    font-size: 16px;
    line-height: 16px;
    width: 15px;
 }
-#wb_Icon19 {
+#wb_Icon14 {
    display: inline-block;
    height: 16px;
    margin: 0 10px 0 0;
@@ -5091,16 +5469,16 @@ body {
    visibility: visible;
    width: 16px;
 }
-#Icon19 {
+#Icon14 {
    height: 16px;
    width: 16px;
 }
-#Icon19 i {
+#Icon14 i {
    font-size: 16px;
    line-height: 16px;
    width: 15px;
 }
-#wb_Icon20 {
+#wb_Icon15 {
    display: inline-block;
    height: 16px;
    margin: 0 10px 0 0;
@@ -5108,14 +5486,207 @@ body {
    visibility: visible;
    width: 16px;
 }
-#Icon20 {
+#Icon15 {
    height: 16px;
    width: 16px;
 }
-#Icon20 i {
+#Icon15 i {
    font-size: 16px;
    line-height: 16px;
    width: 19px;
+}
+#Banner1 {
+   display: inline-block;
+   height: 50px;
+   margin: 0;
+   visibility: visible;
+   width: 350px;
+}
+#Banner1 span {
+   height: 27px;
+   margin: 11px 0 11px 0;
+}
+#Banner2 {
+   display: inline-block;
+   height: 50px;
+   margin: 0;
+   visibility: visible;
+   width: 450px;
+}
+#Banner2 span {
+   height: 27px;
+   margin: 11px 0 11px 0;
+}
+#Banner3 {
+   display: inline-block;
+   height: 50px;
+   margin: 0;
+   visibility: visible;
+   width: 468px;
+}
+#Banner3 span {
+   height: 27px;
+   margin: 11px 0 11px 0;
+}
+#Banner4 {
+   display: inline-block;
+   height: 50px;
+   margin: 0;
+   visibility: visible;
+   width: 450px;
+}
+#Banner4 span {
+   height: 27px;
+   margin: 11px 0 11px 0;
+}
+#Banner5 {
+   display: inline-block;
+   font-family: "Exo 2";
+   font-size: 21px;
+   font-style: normal;
+   font-weight: normal;
+   height: 50px;
+   margin: 0;
+   text-decoration: none;
+   visibility: visible;
+   width: 468px;
+}
+#Banner5 span {
+   height: 21px;
+   margin: 14px 0 14px 0;
+}
+#wb_Text7 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text7 {
+   font-family: Arial;
+   font-size: 29px;
+   font-weight: 400;
+   line-height: 33px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Banner6 {
+   display: inline-block;
+   height: 50px;
+   margin: 0;
+   visibility: visible;
+   width: 450px;
+}
+#Banner6 span {
+   height: 29px;
+   margin: 10px 0 10px 0;
+}
+#Banner7 {
+   display: inline-block;
+   height: 150px;
+   margin: 0;
+   visibility: visible;
+   width: 460px;
+}
+#Banner7 span {
+   height: 29px;
+   margin: 60px 0 60px 0;
+}
+#Banner8 {
+   display: inline-block;
+   height: 150px;
+   margin: 0;
+   visibility: visible;
+   width: 460px;
+}
+#Banner8 span {
+   height: 29px;
+   margin: 60px 0 60px 0;
+}
+#Banner9 {
+   display: inline-block;
+   height: 150px;
+   margin: 0;
+   visibility: visible;
+   width: 460px;
+}
+#Banner9 span {
+   height: 21px;
+   margin: 64px 0 64px 0;
+}
+#Banner10 {
+   display: inline-block;
+   height: 150px;
+   margin: 0;
+   visibility: visible;
+   width: 460px;
+}
+#Banner10 span {
+   height: 29px;
+   margin: 60px 0 60px 0;
+}
+#wb_ThemeableButton4 {
+   display: inline-block;
+   height: 55px;
+   margin: 0;
+   visibility: visible;
+   width: 331px;
+}
+#ThemeableButton4 {
+   font-size: 21px;
+}
+#wb_ThemeableButton4 .ui-button {
+   line-height: 53px;
+   padding: 0;
+}
+#wb_ThemeableButton7 {
+   display: inline-block;
+   height: 55px;
+   margin: 0;
+   visibility: visible;
+   width: 331px;
+}
+#ThemeableButton7 {
+   font-size: 21px;
+}
+#wb_ThemeableButton7 .ui-button {
+   line-height: 53px;
+   padding: 0;
+}
+#wb_Text3 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text3 {
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Banner11 {
+   display: inline-block;
+   height: 50px;
+   margin: 0;
+   visibility: visible;
+   width: 350px;
+}
+#Banner11 span {
+   height: 27px;
+   margin: 11px 0 11px 0;
+}
+#wb_Text6 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text6 {
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
 }
 }
 @media only screen and (max-width: 479px) {
@@ -5147,19 +5718,6 @@ body {
    line-height: 29px;
    margin: 0;
    padding: 75px 50px 75px 50px;
-   text-align: center;
-}
-#wb_Text3 {
-   display: block;
-   visibility: visible;
-}
-#wb_Text3 {
-   font-family: Arial;
-   font-size: 21px;
-   font-weight: 400;
-   line-height: 24px;
-   margin: 0;
-   padding: 0;
    text-align: center;
 }
 #wb_LayoutGrid2 {
@@ -5406,14 +5964,6 @@ body {
    visibility: visible;
 }
 #wb_Text5 {
-   margin: 0;
-   padding: 0;
-}
-#wb_Text6 {
-   display: block;
-   visibility: visible;
-}
-#wb_Text6 {
    margin: 0;
    padding: 0;
 }
@@ -5664,12 +6214,6 @@ body {
    text-align: left;
 }
 #wb_links {
-   background-attachment: scroll;
-   background-color: transparent;
-   background-image: url('images/Sunset-room.png');
-   background-position: left center  !important;
-   background-repeat: no-repeat;
-   background-size: cover;
    display: table;
    visibility: visible;
 }
@@ -5749,14 +6293,6 @@ body {
    display: inline-block;
    margin: 0;
    visibility: visible;
-}
-#wb_Text7 {
-   display: block;
-   visibility: visible;
-}
-#wb_Text7 {
-   margin: 0;
-   padding: 0;
 }
 #wb_ThemeableButton3 {
    display: inline-block;
@@ -6254,95 +6790,20 @@ body {
    line-height: 16px;
    width: 19px;
 }
-#wb_LayoutGrid8 {
+#wb_LayoutGrid9 {
    display: table;
    visibility: visible;
 }
-#wb_LayoutGrid8 {
+#wb_LayoutGrid9 {
    height: 100vh;
    margin-bottom: 0px;
    margin-top: 0px;
 }
-#LayoutGrid8 {
+#LayoutGrid9 {
    height: 100vh;
    padding: 55px 0 55px 0;
 }
-#wb_CssMenu6 {
-   display: inline-block;
-   margin: 0;
-   text-align: left;
-   visibility: visible;
-}
-#wb_CssMenu6 li {
-}
-#wb_CssMenu6 a {
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 1px solid #CCCCCC;
-   border-radius: 0px;
-   color: #333333;
-   font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
-   font-weight: normal;
-   height: 26px;
-   line-height: 26px;
-   text-align: center;
-   text-decoration: none;
-}
-#wb_CssMenu6 li:hover a,
-#wb_CssMenu6 a:hover,
-#wb_CssMenu6 .active {
-   background-color: #337AB7;
-   background-image: none;
-   border: 1px solid #2E6DA4;
-   color: #FFFFFF;
-}
-#wb_CssMenu6 a.withsubmenu {
-   padding: 0 5px 0 5px;
-}
-#wb_CssMenu6 ul :hover ul {
-   left: 0px;
-   padding-top: 0px;
-   top: 28px;
-   visibility: visible;
-}
-#wb_CssMenu6 .firstmain:hover ul {
-   left: 0px;
-}
-#wb_CssMenu6 li li {
-   width: 100px;
-}
-#wb_CssMenu6 ul ul a,
-#wb_CssMenu6 ul :hover ul a {
-   background-color: #FFFFFF;
-   border: 1px solid #CCCCCC;
-   color: #333333;
-   font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
-   font-weight: normal;
-   line-height: 13px;
-   padding: 7px 6px 6px 6px;
-   text-decoration: none;
-   width: 86px;
-}
-#wb_CssMenu6 ul ul :hover a,
-#wb_CssMenu6 ul ul a:hover,
-#wb_CssMenu6 ul ul a.active,
-#wb_CssMenu6 ul ul a.active,
-#wb_CssMenu6 ul ul :hover ul :hover a,
-#wb_CssMenu6 ul ul :hover ul a:hover,
-#wb_CssMenu6 ul ul a.active,
-#wb_CssMenu6 ul ul :hover ul a.active {
-   background-color: #337AB7;
-   border: 1px solid #2E6DA4;
-   color: #FFFFFF;
-}
-#wb_CssMenu6 li {
-   padding: 0px 4px 0px 0px;
-}
-#SiteSearch1 {
+#SiteSearch2 {
    display: block;
    height: 26px;
    margin: 0;
@@ -6351,11 +6812,11 @@ body {
    visibility: visible;
    width: 100%;
 }
-#SiteSearch1 {
+#SiteSearch2 {
    height: 26px;
    width: 320px;
 }
-#Button1 {
+#Button2 {
    display: inline-block;
    height: 25px;
    margin: 0;
@@ -6363,7 +6824,7 @@ body {
    visibility: visible;
    width: 96px;
 }
-#wb_Icon16 {
+#wb_Icon11 {
    display: inline-block;
    height: 16px;
    margin: 0 10px 0 0;
@@ -6371,16 +6832,16 @@ body {
    visibility: visible;
    width: 16px;
 }
-#Icon16 {
+#Icon11 {
    height: 16px;
    width: 16px;
 }
-#Icon16 i {
+#Icon11 i {
    font-size: 16px;
    line-height: 16px;
    width: 15px;
 }
-#wb_Icon17 {
+#wb_Icon12 {
    display: inline-block;
    height: 16px;
    margin: 0 10px 0 0;
@@ -6388,16 +6849,16 @@ body {
    visibility: visible;
    width: 16px;
 }
-#Icon17 {
+#Icon12 {
    height: 16px;
    width: 16px;
 }
-#Icon17 i {
+#Icon12 i {
    font-size: 16px;
    line-height: 16px;
    width: 19px;
 }
-#wb_Icon18 {
+#wb_Icon13 {
    display: inline-block;
    height: 16px;
    margin: 0 10px 0 0;
@@ -6405,16 +6866,16 @@ body {
    visibility: visible;
    width: 16px;
 }
-#Icon18 {
+#Icon13 {
    height: 16px;
    width: 16px;
 }
-#Icon18 i {
+#Icon13 i {
    font-size: 16px;
    line-height: 16px;
    width: 15px;
 }
-#wb_Icon19 {
+#wb_Icon14 {
    display: inline-block;
    height: 16px;
    margin: 0 10px 0 0;
@@ -6422,16 +6883,16 @@ body {
    visibility: visible;
    width: 16px;
 }
-#Icon19 {
+#Icon14 {
    height: 16px;
    width: 16px;
 }
-#Icon19 i {
+#Icon14 i {
    font-size: 16px;
    line-height: 16px;
    width: 15px;
 }
-#wb_Icon20 {
+#wb_Icon15 {
    display: inline-block;
    height: 16px;
    margin: 0 10px 0 0;
@@ -6439,14 +6900,207 @@ body {
    visibility: visible;
    width: 16px;
 }
-#Icon20 {
+#Icon15 {
    height: 16px;
    width: 16px;
 }
-#Icon20 i {
+#Icon15 i {
    font-size: 16px;
    line-height: 16px;
    width: 19px;
+}
+#Banner1 {
+   display: inline-block;
+   height: 50px;
+   margin: 0;
+   visibility: visible;
+   width: 320px;
+}
+#Banner1 span {
+   height: 27px;
+   margin: 11px 0 11px 0;
+}
+#Banner2 {
+   display: inline-block;
+   height: 130px;
+   margin: 0;
+   visibility: visible;
+   width: 290px;
+}
+#Banner2 span {
+   height: 27px;
+   margin: 51px 0 51px 0;
+}
+#Banner3 {
+   display: inline-block;
+   height: 50px;
+   margin: 0;
+   visibility: visible;
+   width: 308px;
+}
+#Banner3 span {
+   height: 27px;
+   margin: 11px 0 11px 0;
+}
+#Banner4 {
+   display: inline-block;
+   height: 130px;
+   margin: 0;
+   visibility: visible;
+   width: 290px;
+}
+#Banner4 span {
+   height: 27px;
+   margin: 51px 0 51px 0;
+}
+#Banner5 {
+   display: inline-block;
+   font-family: "Exo 2";
+   font-size: 19px;
+   font-style: normal;
+   font-weight: normal;
+   height: 152px;
+   margin: 0;
+   text-decoration: none;
+   visibility: visible;
+   width: 308px;
+}
+#Banner5 span {
+   height: 19px;
+   margin: 66px 0 66px 0;
+}
+#wb_Text7 {
+   display: none;
+   visibility: hidden;
+}
+#wb_Text7 {
+   font-family: Arial;
+   font-size: 29px;
+   font-weight: 400;
+   line-height: 33px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Banner6 {
+   display: inline-block;
+   height: 150px;
+   margin: 0;
+   visibility: visible;
+   width: 288px;
+}
+#Banner6 span {
+   height: 29px;
+   margin: 60px 0 60px 0;
+}
+#Banner7 {
+   display: inline-block;
+   height: 197px;
+   margin: 0;
+   visibility: visible;
+   width: 289px;
+}
+#Banner7 span {
+   height: 29px;
+   margin: 83px 0 83px 0;
+}
+#Banner8 {
+   display: inline-block;
+   height: 197px;
+   margin: 0;
+   visibility: visible;
+   width: 289px;
+}
+#Banner8 span {
+   height: 29px;
+   margin: 83px 0 83px 0;
+}
+#Banner9 {
+   display: inline-block;
+   height: 111px;
+   margin: 0;
+   visibility: visible;
+   width: 289px;
+}
+#Banner9 span {
+   height: 21px;
+   margin: 44px 0 44px 0;
+}
+#Banner10 {
+   display: inline-block;
+   height: 197px;
+   margin: 0;
+   visibility: visible;
+   width: 289px;
+}
+#Banner10 span {
+   height: 29px;
+   margin: 83px 0 83px 0;
+}
+#wb_ThemeableButton4 {
+   display: inline-block;
+   height: 48px;
+   margin: 0;
+   visibility: visible;
+   width: 279px;
+}
+#ThemeableButton4 {
+   font-size: 21px;
+}
+#wb_ThemeableButton4 .ui-button {
+   line-height: 46px;
+   padding: 0;
+}
+#wb_ThemeableButton7 {
+   display: inline-block;
+   height: 48px;
+   margin: 0;
+   visibility: visible;
+   width: 279px;
+}
+#ThemeableButton7 {
+   font-size: 21px;
+}
+#wb_ThemeableButton7 .ui-button {
+   line-height: 46px;
+   padding: 0;
+}
+#wb_Text3 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text3 {
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Banner11 {
+   display: inline-block;
+   height: 50px;
+   margin: 0;
+   visibility: visible;
+   width: 320px;
+}
+#Banner11 span {
+   height: 27px;
+   margin: 11px 0 11px 0;
+}
+#wb_Text6 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text6 {
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
 }
 }
 .darktheme #wb_Card2,

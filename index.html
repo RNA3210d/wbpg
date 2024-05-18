@@ -19,10 +19,10 @@
 var features = '';
 function searchPage(features)
 {
-   $('#SiteSearch1-dialog').dialog('open');
-   $('#SiteSearch1-dialog').empty();
-   searchResults('SiteSearch1', 'SiteSearch1-dialog', 250, 5, true, true, true, false, '_parent', 'No results', ' result(s) found for search term: ', 'seconds');
-   $('#SiteSearch1-dialog').dialog('option', 'position', 'center');
+   $('#SiteSearch2-dialog').dialog('open');
+   $('#SiteSearch2-dialog').empty();
+   searchResults('SiteSearch2', 'SiteSearch2-dialog', 250, 5, true, true, true, false, '_parent', 'No results', ' result(s) found for search term: ', 'seconds');
+   $('#SiteSearch2-dialog').dialog('option', 'position', 'center');
    return false;
 }
 </script>
@@ -59,7 +59,7 @@ $(document).ready(function()
    $('#wb_LayoutGrid6').addClass('visibility-hidden');
    $('#wb_LayoutGrid5').addClass('visibility-hidden');
    $('#wb_LayoutGrid7').addClass('visibility-hidden');
-   $('#wb_LayoutGrid8').addClass('visibility-hidden');
+   $('#wb_LayoutGrid9').addClass('visibility-hidden');
    $("a[href*='#LayoutGrid1']").click(function(event)
    {
       event.preventDefault();
@@ -417,38 +417,38 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#Layer1').offset().top }, 600, 'linear');
    });
-   $("a[href*='#LayoutGrid8']").click(function(event)
+   $("a[href*='#LayoutGrid9']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid8').offset().top }, 600, 'linear');
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid9').offset().top }, 600, 'linear');
    });
-   function onScrollLayoutGrid8()
+   function onScrollLayoutGrid9()
    {
-      var $obj = $("#wb_LayoutGrid8");
+      var $obj = $("#wb_LayoutGrid9");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('wb_LayoutGrid8', 'animate-fade-in', 0, 1250);
+         AnimateCss('wb_LayoutGrid9', 'animate-fade-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
       {
          $obj.removeClass("in-viewport");
-         AnimateCss('wb_LayoutGrid8', 'animate-fade-out', 0, 0);
+         AnimateCss('wb_LayoutGrid9', 'animate-fade-out', 0, 0);
       }
    }
-   if (!$('#wb_LayoutGrid8').inViewPort(true))
+   if (!$('#wb_LayoutGrid9').inViewPort(true))
    {
-      $('#wb_LayoutGrid8').addClass("in-viewport");
+      $('#wb_LayoutGrid9').addClass("in-viewport");
    }
-   onScrollLayoutGrid8();
+   onScrollLayoutGrid9();
    $(window).scroll(function(event)
    {
-      onScrollLayoutGrid8();
+      onScrollLayoutGrid9();
    });
-   searchParseURL('SiteSearch1');
-   searchAutoComplete('SiteSearch1', 0, '_parent');
-   $("#SiteSearch1-dialog").dialog(
+   searchParseURL('SiteSearch2');
+   searchAutoComplete('SiteSearch2', 0, '_parent');
+   $("#SiteSearch2-dialog").dialog(
    {
       modal: true,
       width: 400,
@@ -490,22 +490,20 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="col-1">
+<div id="Banner9"><span>I own a musket for home defense </span></div>
 <div id="wb_welcomeText">
-<p style="font-weight:bold;">I own a musket for home defense </p>
-<p style="font-weight:bold;">&nbsp;</p>
 <p style="font-weight:bold;"><span style="font-weight:normal;">I </span><span style="font-weight:normal;">o</span><span style="font-weight:normal;">wn a musket for home defense, since that's what the founding fathers intended. Four ruffians break into my house. "What the devil?" As I grab my powdered wig and Kentucky rifle. Blow a golf ball sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbors dog. I have to resort to the cannon mounted at the top of the stairs loaded with grape shot, "Tally ho lads" the grape shot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He </span><span style="font-weight:normal;">b</span><span style="font-weight:normal;">leeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended..</span><span style="font-weight:normal;">..</span></p>
 </div>
-<div id="wb_Text3">
-<p>Ahoy, Matey!</p>
-</div>
+<div id="Banner10"><span>Ahoy, Matey!</span></div>
 </div>
 </div>
 </div>
 <div id="wb_LayoutGrid2">
 <div id="LayoutGrid2">
 <div class="col-1">
+<div id="Banner8"><span>About Me</span></div>
 <div id="wb_Text5">
-<span style="color:#C8E5F4;font-family:'Exo 2';font-size:32px;">About Me<br></span><span style="color:#C8E5F4;font-family:'Exo 2';font-size:19px;"><br><br>Just a 22-year-old guy passionate about electronics, heavy machinery, switchgear, coding and more</span>
+<span style="color:#C8E5F4;font-family:'Exo 2';font-size:19px;">Just a 22-year-old guy passionate about electronics, heavy machinery, switchgear, coding and more.<br><br>DOB: 28 June 2001<br>Blood type: B+<br>EMail: rna3210d2@proton.me<br>Education: B.Tech in Electrical and Electronics Engineering</span>
 </div>
 </div>
 <div class="col-2">
@@ -523,10 +521,7 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid3">
 <div id="LayoutGrid3">
 <div class="col-1">
-<div id="wb_Text6">
-<p style="font-size:32px;line-height:47px;"><span style="background-color:#CCEBF7;font-size:27px;line-height:38.5px;">Projects: Why y'all still letting me cook?</span><img alt="" width="32" height="32" src="images/Text61.png"></p>
-<p style="font-size:32px;line-height:47px;">&nbsp;</p>
-</div>
+<div id="Banner7"><span>My Projects: Why y&apos;all still letting me cook?</span></div>
 <div id="CardContainer1">
 <div id="wb_Card1" class="card">
 <div id="Card1-divider-bottom">
@@ -665,9 +660,9 @@ $(window).on('load', function()
 <div id="wb_links">
 <div id="links">
 <div class="col-1">
+<div id="Banner6"><span>Exploring the World Through My Lens</span></div>
 <div id="wb_Text1">
-<p style="font-size:32px;line-height:47px;"><span style="font-size:29px;line-height:43px;">Exploring the World Through My Lens</span><img alt="" width="32" height="32" src="images/Text11.png"></p>
-<p style="font-size:19px;line-height:27.5px;">Just a place where I can upload images of any dimension or orientation without lossy compresssion or any other restrictions<span style="color:#C3DBF0;">.</span></p>
+<p>Just a place where I can upload images of any dimension or orientation without lossy compresssion or any other restrictions<span style="color:#C3DBF0;">.</span></p>
 </div>
 <div id="wb_Text2">
 <p>&nbsp;</p>
@@ -692,10 +687,11 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4">
 <div class="col-1">
+<div id="Banner5"><span>How do you know someone uses linux? Don&apos;t worry they&apos;ll tell you.</span></div>
 <div id="wb_Text7">
-<p style="font-size:32px;line-height:47px;"><span style="font-size:21px;line-height:31.5px;">How do you know someone uses linux? Don't worry they'll tell you.</span></p>
-<p style="font-size:19px;line-height:27.5px;"><span style="font-size:27px;line-height:38.5px;">"I use Arch, btw"</span></p>
+<p>&nbsp;</p>
 </div>
+<div id="Banner3"><span>&quot;I use Arch, btw&quot;</span></div>
 <div id="wb_Text8">
 <p>&nbsp;</p>
 </div>
@@ -719,9 +715,9 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid6">
 <div id="LayoutGrid6">
 <div class="col-1">
+<div id="Banner2"><span>My FL Studio renders and mixes</span></div>
 <div id="wb_Text15">
-<p style="font-size:32px;line-height:47px;"><span style="font-size:29px;line-height:43px;">My FL Studio renders and mixes</span></p>
-<p style="font-size:19px;line-height:27.5px;">&nbsp;</p>
+<p style="font-size:13px;line-height:16px;">&nbsp;</p>
 </div>
 <div id="wb_Text16">
 <p>&nbsp;</p>
@@ -744,9 +740,9 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid7">
 <div id="LayoutGrid7">
 <div class="col-1">
+<div id="Banner4"><span>My Equipments</span></div>
 <div id="wb_Text18">
-<p>My Equipments</p>
-<p>&nbsp;</p>
+<p style="font-size:13px;line-height:16px;">&nbsp;</p>
 </div>
 <div id="wb_Text19">
 <p>&nbsp;</p>
@@ -776,74 +772,44 @@ $(window).on('load', function()
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid8">
-<div id="LayoutGrid8">
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
 <div class="col-1">
-<div id="wb_CssMenu6">
-<ul id="CssMenu6" role="menubar" class="nav">
-<li role="menuitem" class="nav-item firstmain"><a class="nav-link active" href="./index.html" target="_self" title="Home">Home</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="./mastuh.html" target="_self"></a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="./sw.html" target="_self" title="Software I Use">Software&nbsp;I&nbsp;Use</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu" href="./eqp.html" target="_self" title="My Equipments">My&nbsp;Equipments</a>
-
-<ul role="menu">
-<li role="menuitem" class="nav-item firstitem"><a class="nav-link" href="./lap.html" target="_self" title="Laptop">Laptop</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="./rpi.html" target="_self" title="RPi">RPi</a>
-</li>
-<li role="menuitem" class="nav-item lastitem"><a class="nav-link" href="./ntbk.html" target="_self" title="Netbook">Netbook</a>
-</li>
-</ul>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu" href="./proj.html" target="_self" title="Projects">Projects</a>
-
-<ul role="menu">
-<li role="menuitem" class="nav-item firstitem"><a class="nav-link" href="./page1.html" target="_self" title="RPi-TELEBOT">RPi-TELEBOT</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="./page2.html" target="_self" title="BU &amp; BO Designer">BU&nbsp;&amp;&nbsp;BO&nbsp;Designer</a>
-</li>
-<li role="menuitem" class="nav-item lastitem"><a class="nav-link" href="./page3.html" target="_self" title="Qt Demo">Qt&nbsp;Demo</a>
-</li>
-</ul>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="./gal.html" target="_self" title="Gallery">Gallery</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link" href="./prodn.html" target="_self" title="My Tunes">My&nbsp;Tunes</a>
-</li>
-<li role="menuitem" class="nav-item"><a class="nav-link withsubmenu" href="./misc.html" target="_self" title="Help">Help</a>
-
-<ul role="menu">
-<li role="menuitem" class="nav-item firstitem lastitem"><a class="nav-link" href="./xtra.html" target="_self" title="EXTRAS">EXTRAS</a>
-</li>
-</ul>
-</li>
-</ul>
-
+<div id="Banner1"><span>Explore More</span></div>
+<div id="wb_ThemeableButton4">
+<a class="ui-button ui-corner-all" id="ThemeableButton4" href="./sw.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>Software I use</a>
+</div>
+<div id="wb_Text6">
+<p>&nbsp;</p>
+</div>
+<div id="wb_ThemeableButton7">
+<a class="ui-button ui-corner-all" id="ThemeableButton7" href="./sw.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>Extras</a>
+</div>
+<div id="Banner11"><span>External Links</span></div>
+<div id="wb_Text3">
+<p>&nbsp;</p>
+</div>
+<div id="wb_Icon11">
+<a href="https://github.com/RNA3210d" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon11"><i class="fa fa-github"></i></div></a>
+</div>
+<div id="wb_Icon12">
+<a href="https://soundcloud.com/rna3210d/tracks" title="My FL Studio render dump yard"><div id="Icon12"><i class="fa fa-soundcloud"></i></div></a>
+</div>
+<div id="wb_Icon13">
+<a href="https://www.linkedin.com/in/naveen-a-b-a7a85421a/" title="Although my LinkedIn profile is currently inactive, feel free to connect with me elsewhere or check back soon for updates. Thank you for your understanding!"><div id="Icon13"><i class="fa fa-linkedin"></i></div></a>
+</div>
+<div id="wb_Icon14">
+<a href="mailto:rna3210d2@proton.me" title="Email "><div id="Icon14"><i class="fa fa-envelope-o"></i></div></a>
+</div>
+<div id="wb_Icon15">
+<a href="https://www.mixcloud.com/RNA3210d/" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon15"><i class="fa fa-mixcloud"></i></div></a>
 </div>
 </div>
 <div class="col-2">
-<form name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
-<input type="text" id="SiteSearch1" name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
-<div id="SiteSearch1-dialog" title="Search results"></div>
-<input type="button" id="Button1" onclick="searchPage();return false;" name="Search" value="Search">
-<div id="wb_Icon16">
-<a href="https://github.com/RNA3210d" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon16"><i class="fa fa-github"></i></div></a>
-</div>
-<div id="wb_Icon17">
-<a href="https://soundcloud.com/rna3210d/tracks" title="My FL Studio render dump yard"><div id="Icon17"><i class="fa fa-soundcloud"></i></div></a>
-</div>
-<div id="wb_Icon18">
-<a href="https://www.linkedin.com/in/naveen-a-b-a7a85421a/" title="Although my LinkedIn profile is currently inactive, feel free to connect with me elsewhere or check back soon for updates. Thank you for your understanding!"><div id="Icon18"><i class="fa fa-linkedin"></i></div></a>
-</div>
-<div id="wb_Icon19">
-<a href="mailto:rna3210d2@proton.me" title="Email "><div id="Icon19"><i class="fa fa-envelope-o"></i></div></a>
-</div>
-<div id="wb_Icon20">
-<a href="https://www.mixcloud.com/RNA3210d/" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon20"><i class="fa fa-mixcloud"></i></div></a>
-</div>
+<form name="SiteSearch2_form" id="SiteSearch2_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
+<input type="text" id="SiteSearch2" name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
+<div id="SiteSearch2-dialog" title="Search results"></div>
+<input type="button" id="Button2" onclick="searchPage();return false;" name="Search" value="Search">
 </div>
 </div>
 </div>
