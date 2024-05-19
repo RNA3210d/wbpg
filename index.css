@@ -22,7 +22,7 @@ body {
 #wb_LayoutGrid1 {
    background-attachment: scroll;
    background-color: transparent;
-   background-image: url('images/rain_world1.png');
+   background-image: url('images/rain_world1.webp');
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -110,7 +110,7 @@ body {
 #wb_LayoutGrid2 {
    background-attachment: scroll;
    background-color: transparent;
-   background-image: url('images/Red_Eclipse.png');
+   background-image: url('images/red ecl.webp');
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -189,7 +189,7 @@ body {
 #wb_LayoutGrid3 {
    background-attachment: scroll;
    background-color: transparent;
-   background-image: url('images/Lofi-Desktop-Man-Studying.png');
+   background-image: url('images/Lofi-Desktop-Man-Studying.webp');
    background-position: left center;
    background-repeat: space;
    background-size: cover;
@@ -378,26 +378,26 @@ body {
 #Card2-divider-bottom.show {
    height: 50px;
 }
-#wb_Card1,
-.Card1 {
+#wb_Card1 {
+   align-self: auto;
    background-image: linear-gradient(315deg, #CCCCFF 0%, #A4CCFF 19%, #CB9AFF 41%, #9966FF 64%, #9ACCFF 83%, #CCCCFF 100%);
    border: 0px inset #DEDEDE;
    border-radius: 12px;
    box-shadow: 0px 0px 21px rgba(0,157,217,0.20);
    box-sizing: border-box;
+   display: flex;
+   flex-basis: 0%;
+   flex-direction: column;
+   flex-grow: 1;
+   flex-shrink: 1;
    margin: 13px 13px 13px 13px;
+   position: relative;
    text-align: left;
 }
 #Card1-card-body {
+   flex: 1 1 auto;
    font-size: 0;
    padding: 0;
-}
-.fade {
-   opacity: 0;
-   transition: opacity .15s linear;
-}
-.fade.show {
-   opacity: 1;
 }
 .stretched-link::after {
    background-color: rgba(0,0,0,0);
@@ -457,54 +457,6 @@ body {
    font-weight: normal;
    margin: 20px 20px 30px 80px;
    padding: 12px 20px 12px 20px;
-}
-.Card1 {
-   display: block;
-   height: 267px;
-   left: 0;
-   max-width: 386px;
-   position: absolute;
-   top: 0;
-   width: 386px;
-   z-index: 9999;
-}
-.Card1.popover .popover-arrow {
-   display: block;
-   height: 0.5rem;
-   margin: 0 0.5rem;
-   position: absolute;
-   width: 1rem;
-}
-.Card1.popover .popover-arrow::before,
-.Card1.popover .popover-arrow::after {
-   border-color: transparent;
-   border-style: solid;
-   content: "";
-   display: block;
-   position: absolute;
-}
-.Card1.bs-popover-end,
-.Card1.bs-popover-auto[x-placement^="right"] {
-   margin-left: 0.5rem;
-}
-.Card1.bs-popover-end > .popover-arrow,
-.Card1.bs-popover-auto[x-placement^="right"] > .popover-arrow {
-   height: 1rem;
-   left: calc((0.5rem + 1px) * -1);
-   margin: 0.5rem 0;
-   width: 0.5rem;
-}
-.Card1.bs-popover-end > .popover-arrow::before,
-.Card1.bs-popover-auto[x-placement^="right"] > .popover-arrow::before {
-   border-right-color: #DEDEDE;
-   border-width: 0.5rem 0.5rem 0.5rem 0;
-   left: 0;
-}
-.Card1.bs-popover-end > .popover-arrow::after,
-.Card1.bs-popover-auto[x-placement^="right"] > .popover-arrow::after {
-   border-right-color: #FFFFFF;
-   border-width: 0.5rem 0.5rem 0.5rem 0;
-   left: 1px;
 }
 #Card1-divider-bottom {
    bottom: 0%;
@@ -1308,7 +1260,7 @@ body {
 #wb_links {
    background-attachment: scroll;
    background-color: transparent;
-   background-image: url('images/Sunset-room.png');
+   background-image: url('images/Sunset-room.webp');
    background-position: left center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -1369,7 +1321,7 @@ body {
 #wb_LayoutGrid4 {
    background-attachment: scroll;
    background-color: transparent;
-   background-image: url('images/Linux-user-Room.png');
+   background-image: url('images/Linux-user-Room.webp');
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -1395,8 +1347,7 @@ body {
    margin-right: auto;
    padding: 35px 0 35px 0;
 }
-#LayoutGrid4 > .col-1,
-#LayoutGrid4 > .col-2 {
+#LayoutGrid4 > .col-1 {
    box-sizing: border-box;
    font-size: 0;
    min-height: 1px;
@@ -1404,8 +1355,7 @@ body {
    padding-right: 6px;
    position: relative;
 }
-#LayoutGrid4 > .col-1,
-#LayoutGrid4 > .col-2 {
+#LayoutGrid4 > .col-1 {
    flex: 0 0 auto;
 }
 #LayoutGrid4 > .col-1 {
@@ -1423,22 +1373,8 @@ body {
    max-width: 100%;
    text-align: center;
 }
-#LayoutGrid4 > .col-2 {
-   align-content: center;
-   align-items: center;
-   align-self: stretch;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   text-align: center;
-}
 @media (max-width: 800px) {
-#LayoutGrid4 > .col-1,
-#LayoutGrid4 > .col-2 {
+#LayoutGrid4 > .col-1 {
    flex-basis: 100%  !important;
    max-width: 100%  !important;
 }
@@ -1741,7 +1677,7 @@ body {
 #wb_LayoutGrid6 {
    background-attachment: scroll;
    background-color: transparent;
-   background-image: url('images/3d-music-related-scene.jpg');
+   background-image: url('images/32add72722609c67fb99dc6b67a9a294ec6d7945_s2_n3_y2.jpg');
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -2874,7 +2810,7 @@ body {
    background-image: none;
    border: 1px solid #CCCCCC;
    border-radius: 4px;
-   box-shadow: 0px 0px 12px #0F6FC6;
+   box-shadow: 0px 0px 14px #0F6FC6;
    box-sizing: border-box;
    color: #1C94C4;
    font-family: Arial;
@@ -3034,11 +2970,12 @@ body {
 }
 #Button2 {
    -webkit-appearance: none;
-   background-color: #3370B7;
-   background-image: none;
+   background-image: linear-gradient(to top, #02A8E4 0%, #00ACE5 6%, #47BDF0 7%, #147BB6 30%, #005081 52%, #7295B5 96%, #023661 100%);
    border: 1px solid #2E6DA4;
    border-radius: 4px;
+   box-shadow: 0px 0px 15px #009DD9;
    color: #FFFFFF;
+   cursor: pointer;
    font-family: Arial;
    font-size: 13px;
    font-style: normal;
@@ -3937,8 +3874,8 @@ Banner11 span:before {
 }
 #Button2 {
    display: inline-block;
-   height: 25px;
-   width: 96px;
+   height: 28px;
+   width: 100px;
    z-index: 58;
 }
 #wb_Icon11 {
@@ -4396,11 +4333,6 @@ body {
    font-weight: normal;
    margin: 20px 20px 30px 80px;
    padding: 12px 20px 12px 20px;
-}
-.Card1 {
-   height: 267px;
-   max-width: 414px;
-   width: 414px;
 }
 #wb_Card1 {
    text-align: left;
@@ -5796,11 +5728,6 @@ body {
    font-weight: normal;
    margin: 20px 20px 30px 80px;
    padding: 12px 20px 12px 20px;
-}
-.Card1 {
-   height: 267px;
-   max-width: 254px;
-   width: 254px;
 }
 #wb_Card1 {
    text-align: left;

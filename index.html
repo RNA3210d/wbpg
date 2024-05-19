@@ -10,8 +10,6 @@
 <link href="wpg.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
-<script src="popper.min.js"></script>
-<script src="bootstrap.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="searchindex.js"></script>
 <script src="wb.sitesearch.min.js"></script>
@@ -28,23 +26,6 @@ function searchPage(features)
 </script>
 <script src="wwb18.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function(event)
-{
-   var Card1 = new bootstrap.Popover("#",
-   {
-      content: function()
-      {
-         return document.querySelector('#wb_Card1').innerHTML;
-      },
-      html : true,
-      placement: 'right',
-      template: '<div class="popover Card1" role="tooltip"><div class="popover-arrow"></div><div class="popover-body"></div></div>',
-      title: '',
-      trigger: 'hover'
-   });
-});
-</script>
-<script>
 $(document).ready(function()
 {
    $('#wb_LayoutGrid1').addClass('visibility-hidden');
@@ -60,6 +41,7 @@ $(document).ready(function()
    $('#wb_LayoutGrid5').addClass('visibility-hidden');
    $('#wb_LayoutGrid7').addClass('visibility-hidden');
    $('#wb_LayoutGrid9').addClass('visibility-hidden');
+   $('#Banner3').addClass('visibility-hidden');
    $("a[href*='#LayoutGrid1']").click(function(event)
    {
       event.preventDefault();
@@ -468,6 +450,20 @@ $(document).ready(function()
          }
       }
    });
+   function onScrollBanner3()
+   {
+      var $obj = $("#Banner3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Banner3', 'animate-fire-text-shadow', 0, 6000);
+      }
+   }
+   onScrollBanner3();
+   $(window).scroll(function(event)
+   {
+      onScrollBanner3();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -494,7 +490,7 @@ $(window).on('load', function()
 <div id="wb_welcomeText">
 <p style="font-weight:bold;"><span style="font-weight:normal;">I </span><span style="font-weight:normal;">o</span><span style="font-weight:normal;">wn a musket for home defense, since that's what the founding fathers intended. Four ruffians break into my house. "What the devil?" As I grab my powdered wig and Kentucky rifle. Blow a golf ball sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbors dog. I have to resort to the cannon mounted at the top of the stairs loaded with grape shot, "Tally ho lads" the grape shot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He </span><span style="font-weight:normal;">b</span><span style="font-weight:normal;">leeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended..</span><span style="font-weight:normal;">..</span></p>
 </div>
-<div id="Banner10"><span>Ahoy, Matey!</span></div>
+<a href="#" onmouseleave="AnimateCss('Banner10', '', 0, 500);return false;" onmouseover="AnimateCss('Banner10', 'animate-neon-text-shadow', 0, 25000);return false;"><div id="Banner10"><span>Ahoy, Matey!</span></div></a>
 </div>
 </div>
 </div>
@@ -503,11 +499,11 @@ $(window).on('load', function()
 <div class="col-1">
 <div id="Banner8"><span>About Me</span></div>
 <div id="wb_Text5">
-<span style="color:#C8E5F4;font-family:'Exo 2';font-size:19px;">Just a 22-year-old guy passionate about electronics, heavy machinery, switchgear, coding and more.<br><br>DOB: 28 June 2001<br>Blood type: B+<br>EMail: rna3210d2@proton.me<br>Education: B.Tech in Electrical and Electronics Engineering</span>
+<span style="color:#C8E5F4;font-family:'Exo 2';font-size:20px;">Just a 22-year-old guy passionate about electronics, heavy machinery, switchgear, coding and more.<br><br>DOB: 28 June 2001<br>Blood type: B+<br>EMail: rna3210d2@proton.me<br>Education: B.Tech in Electrical and Electronics Engineering</span>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Card8" class="card" onclick="ShowObject('Toast1', 1);return false;">
+<div id="wb_Card8" class="card" onmouseenter="AnimateCss('wb_Card8', 'animate-fire-text-shadow', 0, 2500);return false;">
    <div id="Card8-card-body">
       <div id="Card8-card-item0">“</div>
       <div id="Card8-card-item1">Perhaps the heaviest things that we lift are not our weights, but our feelings.</div>
@@ -673,7 +669,7 @@ $(window).on('load', function()
 <div id="wb_Text9">
 <p>&nbsp;</p>
 </div>
-<div id="wb_Card3" class="card" onclick="ShowObject('Toast1', 1);return false;">
+<div id="wb_Card3" class="card" onclick="AnimateCss('wb_Card3', 'animate-fire-text-shadow', 0, 2000);return false;">
    <div id="Card3-card-body">
       <div id="Card3-card-item0">“</div>
       <div id="Card3-card-item1">One day you'll leave this world behind.<br>So live a life you will remember</div>
@@ -701,8 +697,6 @@ $(window).on('load', function()
 <div id="wb_Text11">
 <p>&nbsp;</p>
 </div>
-</div>
-<div class="col-2">
 </div>
 </div>
 </div>
@@ -803,7 +797,7 @@ $(window).on('load', function()
 <form name="SiteSearch2_form" id="SiteSearch2_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
 <input type="text" id="SiteSearch2" name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
 <div id="SiteSearch2-dialog" title="Search results"></div>
-<input type="button" id="Button2" onclick="searchPage();return false;" name="Search" value="Search">
+<input type="button" id="Button2" onclick="searchPage();return false;" onmouseleave="AnimateCss('Button2', '', 0, 500);return false;" onmouseover="AnimateCss('Button2', 'animate-neon-text-shadow', 0, 55500);return false;" name="Search" value="Search">
 </div>
 </div>
 </div>
