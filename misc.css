@@ -128,41 +128,295 @@ body {
    margin: 0;
    padding: 0;
 }
-#wb_Text4 {
+#Article1 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
+   display: inline-block;
+   font-family: "Exo 2";
+   font-size: 15px;
+   font-weight: normal;
+   line-height: 1.2;
    margin: 0;
-   padding: 0;
+   position: relative;
    text-align: left;
-}
-#wb_Text4 div {
-   text-align: left;
-}
-#wb_Text4 {
-   box-sizing: border-box;
-   display: block;
-   margin: 0;
    width: 100%;
 }
-#wb_Text5 {
+#Article1 .blogitem {
+   margin-bottom: 6px;
+   padding: 2px;
+   text-align: left;
+}
+#Article1 .blogdate {
+   color: #000000;
+   font-family: "Exo 2";
+   font-size: 13px;
+   font-style: normal;
+   font-weight: bold;
+   text-decoration: none;
+}
+#Article1 .blogsubject {
+   color: #0F6FC6;
+   font-family: "Exo 2";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: none;
+}
+#Article1 .blogcomments {
+   color: #000000;
+   font-family: "Exo 2";
+   font-size: 15px;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+}
+#Article1 .blogsubject a:link,
+#Article1 .blogsubject a:visited,
+#Article1 .blogsubject a:hover {
+   color: inherit;
+   text-decoration: inherit;
+}
+#Article1 .blogcomments a:link,
+#Article1 .blogcomments a:visited,
+#Article1 .blogcomments a:hover {
+   color: inherit;
+   text-decoration: inherit;
+}
+#Article1 .blogcomments {
+   text-decoration: none;
+}
+#Article1 .no-thumb {
+   display: none;
+}
+#Article1 .blogitem {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   background-color: transparent;
+   box-sizing: border-box;
+   display: inline-block;
+   padding: 0;
+   width: 100%;
+}
+#Article1 .blogblock {
+   border: 1px solid #cccccc;
+   -moz-border-radius: 4px;
+   -moz-box-sizing: border-box;
+   -webkit-border-radius: 4px;
+   -webkit-box-sizing: border-box;
+   background-color: #EEEEEE;
+   border-radius: 4px;
+   box-sizing: border-box;
+   display: inline-block;
+   padding: 10px;
+   width: 100%;
+}
+#Article1 .blogsubject {
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   background-color: #EEEEEE;
+   border: 1px solid #cccccc;
+   border-radius: 4px;
+   display: block;
+   margin: 0 0 6px 0;
+   padding: 10px;
+}
+#Article1 .blogtext {
+   display: inline-block;
+   height: 100%;
+}
+#Article1 .blogthumb {
+   -moz-border-radius: 4px;
+   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -webkit-border-radius: 4px;
+   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+   -webkit-transition: all 0.2s ease-in-out;
+   background-color: #FFFFFF;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
+   display: inline-block;
+   float: right;
+   margin: 5px;
+   padding: 4px;
+   transition: all 0.2s ease-in-out;
+}
+#Article1 .blogthumb img {
+   border-width: 0;
+   height: auto;
+   margin: 0px 0px 0px 0px;
+   vertical-align: middle;
+   width: 120px;
+}
+#Article1 .blogbutton {
+   color: #000000;
+   cursor: pointer;
+   font-family: Exo 2;
+   font-size: 15px;
+   margin-top: 6px;
+   text-decoration: underline;
+}
+#Article1 .blogdate,
+#Article1 .blogcomments {
+   display: none;
+}
+#Article1 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
+   font-family: "Exo 2";
+   font-style: normal;
+   font-weight: normal;
    margin: 0;
-   padding: 0;
-   text-align: left;
 }
-#wb_Text5 div {
-   text-align: left;
-}
-#wb_Text5 {
-   box-sizing: border-box;
-   display: block;
+#Article2 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   display: inline-block;
+   font-family: "Exo 2";
+   font-size: 15px;
+   font-weight: normal;
+   line-height: 1.2;
    margin: 0;
+   position: relative;
+   text-align: left;
    width: 100%;
+}
+#Article2 .blogitem {
+   margin-bottom: 6px;
+   padding: 2px;
+   text-align: left;
+}
+#Article2 .blogdate {
+   color: #000000;
+   font-family: "Exo 2";
+   font-size: 13px;
+   font-style: normal;
+   font-weight: bold;
+   text-decoration: none;
+}
+#Article2 .blogsubject {
+   color: #0F6FC6;
+   font-family: "Exo 2";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: none;
+}
+#Article2 .blogcomments {
+   color: #000000;
+   font-family: "Exo 2";
+   font-size: 15px;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+}
+#Article2 .blogsubject a:link,
+#Article2 .blogsubject a:visited,
+#Article2 .blogsubject a:hover {
+   color: inherit;
+   text-decoration: inherit;
+}
+#Article2 .blogcomments a:link,
+#Article2 .blogcomments a:visited,
+#Article2 .blogcomments a:hover {
+   color: inherit;
+   text-decoration: inherit;
+}
+#Article2 .blogcomments {
+   text-decoration: none;
+}
+#Article2 .no-thumb {
+   display: none;
+}
+#Article2 .blogitem {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   background-color: transparent;
+   box-sizing: border-box;
+   display: inline-block;
+   padding: 0;
+   width: 100%;
+}
+#Article2 .blogblock {
+   border: 1px solid #cccccc;
+   -moz-border-radius: 4px;
+   -moz-box-sizing: border-box;
+   -webkit-border-radius: 4px;
+   -webkit-box-sizing: border-box;
+   background-color: #EEEEEE;
+   border-radius: 4px;
+   box-sizing: border-box;
+   display: inline-block;
+   padding: 10px;
+   width: 100%;
+}
+#Article2 .blogsubject {
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   background-color: #EEEEEE;
+   border: 1px solid #cccccc;
+   border-radius: 4px;
+   display: block;
+   margin: 0 0 6px 0;
+   padding: 10px;
+}
+#Article2 .blogtext {
+   display: inline-block;
+   height: 100%;
+}
+#Article2 .blogthumb {
+   -moz-border-radius: 4px;
+   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -webkit-border-radius: 4px;
+   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+   -webkit-transition: all 0.2s ease-in-out;
+   background-color: #FFFFFF;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
+   display: inline-block;
+   float: right;
+   margin: 5px;
+   padding: 4px;
+   transition: all 0.2s ease-in-out;
+}
+#Article2 .blogthumb img {
+   border-width: 0;
+   height: auto;
+   margin: 0px 0px 0px 0px;
+   vertical-align: middle;
+   width: 120px;
+}
+#Article2 .blogbutton {
+   color: #000000;
+   cursor: pointer;
+   font-family: Exo 2;
+   font-size: 15px;
+   margin-top: 6px;
+   text-decoration: underline;
+}
+#Article2 .blogdate,
+#Article2 .blogcomments {
+   display: none;
+}
+#Article2 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   font-family: "Exo 2";
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
 }
 #Button4 {
    height: 24px;
@@ -179,6 +433,12 @@ body {
    top: 12px;
    width: 122px;
    z-index: 1;
+}
+#Article2 {
+   overflow: hidden;
+}
+#Article1 {
+   overflow: hidden;
 }
 #wb_Text1 {
    height: 27px;
@@ -218,7 +478,7 @@ body {
 #Layer3 {
    display: inline-block;
    float: left;
-   height: 556px;
+   height: 1099px;
    position: relative;
    text-align: left;
    width: 100%;
@@ -347,7 +607,7 @@ body {
 }
 #Layer3 {
    display: inline-block;
-   height: 629px;
+   height: 1241px;
    margin: 0;
    visibility: visible;
 }
@@ -356,27 +616,71 @@ body {
    width: 100%;
 }
 #Layer3 {
-   height: 629px;
+   height: 1241px;
    width: 100%;
 }
 #Layer3 {
    padding: 0;
 }
-#wb_Text4 {
+#Article1 {
    display: block;
    visibility: visible;
 }
-#wb_Text4 {
-   margin: 0;
-   padding: 0;
+#Article1 {
+   font-family: "Exo 2";
+   font-size: 15px;
 }
-#wb_Text5 {
+#Article1 .blogdate {
+   font-family: "Exo 2";
+   font-size: 13px;
+}
+#Article1 .blogsubject {
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Article1 .blogcomments {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article1 .blogbutton {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article1 .blogcolumn {
+   width: 100%;
+}
+#Article1 .visible-col1 {
+   display: block;
+}
+#Article2 {
    display: block;
    visibility: visible;
 }
-#wb_Text5 {
-   margin: 0;
-   padding: 0;
+#Article2 {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article2 .blogdate {
+   font-family: "Exo 2";
+   font-size: 13px;
+}
+#Article2 .blogsubject {
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Article2 .blogcomments {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article2 .blogbutton {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article2 .blogcolumn {
+   width: 100%;
+}
+#Article2 .visible-col1 {
+   display: block;
 }
 }
 @media only screen and (max-width: 479px) {
@@ -495,7 +799,7 @@ body {
 }
 #Layer3 {
    display: inline-block;
-   height: 441px;
+   height: 1581px;
    margin: 0;
    visibility: visible;
 }
@@ -504,33 +808,58 @@ body {
    width: 100%;
 }
 #Layer3 {
-   height: 441px;
+   height: 1581px;
    width: 100%;
 }
 #Layer3 {
    padding: 0;
 }
-#wb_Text4 {
+#Article1 {
    display: block;
    visibility: visible;
 }
-#wb_Text4 {
-   margin: 0;
-   padding: 0;
+#Article1 .blogcolumn {
+   width: 100%;
 }
-#wb_Text5 {
+#Article1 .visible-col1 {
+   display: block;
+}
+#Article2 {
    display: block;
    visibility: visible;
 }
-#wb_Text5 {
-   margin: 0;
-   padding: 0;
+#Article2 {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article2 .blogdate {
+   font-family: "Exo 2";
+   font-size: 13px;
+}
+#Article2 .blogsubject {
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Article2 .blogcomments {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article2 .blogbutton {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article2 .blogcolumn {
+   width: 100%;
+}
+#Article2 .visible-col1 {
+   display: block;
 }
 }
 .darktheme body {
    background-color: #000000;
 }
 .darktheme #Layer1,
+.darktheme #Layer2,
 .darktheme #wb_Text3,
 .darktheme #Layer3 {
    filter: invert(100%);

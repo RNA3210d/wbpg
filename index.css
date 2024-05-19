@@ -3632,20 +3632,7 @@ Banner8 span:before {
 #Banner9 span {
    display: block;
    height: 21px;
-   margin: 16px 0 16px 0;
-}
-#Banner9 span:before,
-#Banner9 span:after {
-   display: block;
-   left: 0;
-   position: absolute;
-   right: 0;
-   top: 52px;
-}
-Banner9 span:before {
-   content: "I own a musket for home defense ";
-   opacity: .3;
-   transform: scaleY(-1);
+   margin: -3px 0 -3px 0;
 }
 #Banner10 {
    background-color: transparent;
@@ -3664,7 +3651,7 @@ Banner9 span:before {
 #Banner10 span {
    display: block;
    height: 29px;
-   margin: 17px 0 17px 0;
+   margin: 0;
 }
 #Banner10 span:before,
 #Banner10 span:after {
@@ -3672,7 +3659,7 @@ Banner9 span:before {
    left: 0;
    position: absolute;
    right: 0;
-   top: 51px;
+   top: 34px;
 }
 Banner10 span:before {
    content: "Ahoy, Matey!";
@@ -4165,7 +4152,7 @@ Banner11 span:before {
 }
 #Banner9 {
    display: inline-block;
-   height: 63px;
+   height: 24px;
    width: 865px;
    z-index: 0;
 }
@@ -4202,7 +4189,7 @@ Banner11 span:before {
 }
 #Banner10 {
    display: inline-block;
-   height: 63px;
+   height: 28px;
    width: 865px;
    z-index: 2;
 }
@@ -5400,7 +5387,7 @@ body {
 }
 #SiteSearch2 {
    height: 26px;
-   width: 480px;
+   width: 460px;
 }
 #Button2 {
    display: inline-block;
@@ -5713,9 +5700,9 @@ body {
 }
 #wb_welcomeText {
    font-family: "Exo 2";
-   font-size: 20px;
+   font-size: 19px;
    font-weight: 400;
-   line-height: 29px;
+   line-height: 27px;
    margin: 0;
    padding: 75px 50px 75px 50px;
    text-align: center;
@@ -6814,7 +6801,7 @@ body {
 }
 #SiteSearch2 {
    height: 26px;
-   width: 320px;
+   width: 300px;
 }
 #Button2 {
    display: inline-block;
@@ -6914,7 +6901,7 @@ body {
    height: 50px;
    margin: 0;
    visibility: visible;
-   width: 320px;
+   width: 300px;
 }
 #Banner1 span {
    height: 27px;
@@ -6995,14 +6982,14 @@ body {
 }
 #Banner7 {
    display: inline-block;
-   height: 197px;
+   height: 71px;
    margin: 0;
    visibility: visible;
    width: 289px;
 }
 #Banner7 span {
    height: 29px;
-   margin: 83px 0 83px 0;
+   margin: 20px 0 20px 0;
 }
 #Banner8 {
    display: inline-block;
@@ -7017,25 +7004,25 @@ body {
 }
 #Banner9 {
    display: inline-block;
-   height: 111px;
+   height: 29px;
    margin: 0;
    visibility: visible;
    width: 289px;
 }
 #Banner9 span {
    height: 21px;
-   margin: 44px 0 44px 0;
+   margin: 3px 0 3px 0;
 }
 #Banner10 {
    display: inline-block;
-   height: 197px;
+   height: 32px;
    margin: 0;
    visibility: visible;
    width: 289px;
 }
 #Banner10 span {
    height: 29px;
-   margin: 83px 0 83px 0;
+   margin: 1px 0 1px 0;
 }
 #wb_ThemeableButton4 {
    display: inline-block;
@@ -7083,7 +7070,7 @@ body {
    height: 50px;
    margin: 0;
    visibility: visible;
-   width: 320px;
+   width: 300px;
 }
 #Banner11 span {
    height: 27px;
