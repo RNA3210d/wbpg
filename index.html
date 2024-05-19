@@ -41,6 +41,7 @@ $(document).ready(function()
    $('#wb_LayoutGrid5').addClass('visibility-hidden');
    $('#wb_LayoutGrid7').addClass('visibility-hidden');
    $('#wb_LayoutGrid9').addClass('visibility-hidden');
+   $('#Banner2').addClass('visibility-hidden');
    $('#Banner3').addClass('visibility-hidden');
    $("a[href*='#LayoutGrid1']").click(function(event)
    {
@@ -449,6 +450,20 @@ $(document).ready(function()
             $(this).dialog('close');
          }
       }
+   });
+   function onScrollBanner2()
+   {
+      var $obj = $("#Banner2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Banner2', 'animate-fire-text-shadow', 0, 2000);
+      }
+   }
+   onScrollBanner2();
+   $(window).scroll(function(event)
+   {
+      onScrollBanner2();
    });
    function onScrollBanner3()
    {

@@ -3267,7 +3267,7 @@ Banner1 span:before {
    border-radius: 0px;
    color: #FFFFFF;
    font-family: "Exo 2";
-   font-size: 27px;
+   font-size: 29px;
    font-style: normal;
    font-weight: normal;
    margin: 0;
@@ -3276,8 +3276,8 @@ Banner1 span:before {
 }
 #Banner2 span {
    display: block;
-   height: 27px;
-   margin: 4px 0 4px 0;
+   height: 29px;
+   margin: 2px 0 2px 0;
 }
 #Banner2 span:before,
 #Banner2 span:after {
@@ -3285,7 +3285,7 @@ Banner1 span:before {
    left: 0;
    position: absolute;
    right: 0;
-   top: 48px;
+   top: 50px;
 }
 Banner2 span:before {
    content: "My FL Studio renders and mixes";
@@ -3331,7 +3331,7 @@ Banner3 span:before {
    border-radius: 0px;
    color: #FFFFFF;
    font-family: "Exo 2";
-   font-size: 27px;
+   font-size: 29px;
    font-style: normal;
    font-weight: normal;
    margin: 0;
@@ -3340,8 +3340,8 @@ Banner3 span:before {
 }
 #Banner4 span {
    display: block;
-   height: 27px;
-   margin: 4px 0 4px 0;
+   height: 29px;
+   margin: 2px 0 2px 0;
 }
 #Banner4 span:before,
 #Banner4 span:after {
@@ -3349,7 +3349,7 @@ Banner3 span:before {
    left: 0;
    position: absolute;
    right: 0;
-   top: 48px;
+   top: 50px;
 }
 Banner4 span:before {
    content: "My Equipments";
@@ -5366,8 +5366,8 @@ body {
    width: 450px;
 }
 #Banner2 span {
-   height: 27px;
-   margin: 11px 0 11px 0;
+   height: 29px;
+   margin: 10px 0 10px 0;
 }
 #Banner3 {
    display: inline-block;
@@ -5388,8 +5388,8 @@ body {
    width: 450px;
 }
 #Banner4 span {
-   height: 27px;
-   margin: 11px 0 11px 0;
+   height: 29px;
+   margin: 10px 0 10px 0;
 }
 #Banner5 {
    display: inline-block;
@@ -6761,8 +6761,8 @@ body {
    width: 290px;
 }
 #Banner2 span {
-   height: 27px;
-   margin: 51px 0 51px 0;
+   height: 29px;
+   margin: 50px 0 50px 0;
 }
 #Banner3 {
    display: inline-block;
@@ -6783,8 +6783,8 @@ body {
    width: 290px;
 }
 #Banner4 span {
-   height: 27px;
-   margin: 51px 0 51px 0;
+   height: 29px;
+   margin: 50px 0 50px 0;
 }
 #Banner5 {
    display: inline-block;
