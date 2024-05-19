@@ -892,11 +892,13 @@ body {
    z-index: 36;
 }
 #Layer2 {
-   display: inline-block;
-   float: left;
+   clear: both;
+   display: block;
+   float: none;
    height: 355px;
    position: relative;
    text-align: center;
+   vertical-align: top;
    width: 100%;
    z-index: 55;
 }
@@ -1213,7 +1215,7 @@ body {
    padding: 25px 15px 25px 15px;
 }
 #Layer2 {
-   display: inline-block;
+   display: block;
    height: 355px;
    margin: 0;
    visibility: visible;
@@ -1224,7 +1226,7 @@ body {
 }
 #Layer2 {
    height: 355px;
-   width: 66.6667%;
+   width: 100%;
 }
 #Layer2 {
    padding: 0;
@@ -1668,7 +1670,7 @@ body {
    padding: 25px 15px 25px 15px;
 }
 #Layer2 {
-   display: inline-block;
+   display: block;
    height: 355px;
    margin: 0;
    visibility: visible;

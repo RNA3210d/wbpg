@@ -2125,7 +2125,7 @@ body {
    background-attachment: scroll;
    background-color: transparent;
    background-image: url('images/mecha-nostalgia.png');
-   background-position: center center;
+   background-position: left center;
    background-repeat: no-repeat;
    background-size: cover;
    border: 0px solid #CCCCCC;
@@ -3213,7 +3213,7 @@ body {
    font-weight: normal;
    margin: 0;
    text-align: center;
-   text-shadow: 0px 0px 12px rgba(75,147,212,1.00);
+   text-shadow: 0px 0px 10px rgba(75,147,212,1.00);
 }
 #Banner1 span {
    display: block;
@@ -3341,7 +3341,7 @@ Banner4 span:before {
    font-weight: normal;
    margin: 0;
    text-align: center;
-   text-shadow: 0px 0px 14px rgba(204,235,247,1.00);
+   text-shadow: 0px 0px 11px rgba(204,235,247,1.00);
 }
 #Banner5 span {
    display: block;
@@ -3400,7 +3400,7 @@ Banner5 span:before {
    font-weight: normal;
    margin: 0;
    text-align: center;
-   text-shadow: 0px 0px 14px rgba(248,189,102,1.00);
+   text-shadow: 0px 0px 8px rgba(250,211,153,1.00);
 }
 #Banner6 span {
    display: block;
@@ -3432,7 +3432,7 @@ Banner6 span:before {
    font-weight: normal;
    margin: 0;
    text-align: center;
-   text-shadow: 0px 0px 14px rgba(160,104,22,1.00);
+   text-shadow: 0px 0px 8px rgba(160,104,22,1.00);
 }
 #Banner7 span {
    display: block;
@@ -3464,7 +3464,7 @@ Banner7 span:before {
    font-weight: normal;
    margin: 0;
    text-align: center;
-   text-shadow: 0px 0px 14px rgba(255,0,0,1.00);
+   text-shadow: 0px 0px 9px rgba(255,0,0,1.00);
 }
 #Banner8 span {
    display: block;
@@ -3483,7 +3483,7 @@ Banner7 span:before {
    font-weight: normal;
    margin: 0;
    text-align: center;
-   text-shadow: 0px 0px 14px rgba(27,138,143,1.00);
+   text-shadow: 0px 0px 9px rgba(27,138,143,1.00);
 }
 #Banner10 span {
    display: block;
@@ -3806,7 +3806,7 @@ Banner11 span:before {
 }
 #Icon16 {
    height: 24px;
-   width: 73px;
+   width: 24px;
 }
 #Icon16 i {
    color: #FFFFFF;
@@ -3839,7 +3839,7 @@ Banner11 span:before {
    font-weight: normal;
    margin: 0;
    text-align: center;
-   text-shadow: 0px 0px 14px rgba(248,189,102,1.00);
+   text-shadow: 0px 0px 4px rgba(23,64,109,1.00);
 }
 #Banner12 span {
    display: block;
@@ -4025,7 +4025,7 @@ Banner12 span:before {
 }
 #wb_Card1 {
    display: flex;
-   z-index: 5;
+   z-index: 6;
 }
 #Button2 {
    display: inline-block;
@@ -4094,7 +4094,7 @@ Banner12 span:before {
 }
 #wb_Card2 {
    display: flex;
-   z-index: 6;
+   z-index: 7;
 }
 #wb_Icon12 {
    display: inline-block;
@@ -4187,7 +4187,7 @@ Banner12 span:before {
    display: inline-block;
    height: 24px;
    text-align: center;
-   width: 73px;
+   width: 24px;
    z-index: 14;
 }
 #wb_ThemeableButton6 {
@@ -4311,7 +4311,7 @@ Banner12 span:before {
 }
 #wb_Card7 {
    display: flex;
-   z-index: 7;
+   z-index: 5;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px) {
 body {
@@ -5734,11 +5734,11 @@ body {
    margin: 0 10px 0 0;
    padding: 10px 10px 10px 10px;
    visibility: visible;
-   width: 57px;
+   width: 28px;
 }
 #Icon16 {
    height: 27px;
-   width: 57px;
+   width: 28px;
 }
 #Icon16 i {
    font-size: 27px;
@@ -5822,7 +5822,7 @@ body {
    box-sizing: border-box;
    color: #E9FFE9;
    font-family: "Exo 2";
-   font-size: 19px;
+   font-size: 16px;
    font-style: normal;
    font-weight: normal;
    margin: -40px 20px 20px 20px;
@@ -7271,16 +7271,16 @@ body {
    margin: 0 10px 0 0;
    padding: 10px 10px 10px 10px;
    visibility: visible;
-   width: 32px;
+   width: 12px;
 }
 #Icon16 {
    height: 13px;
-   width: 32px;
+   width: 12px;
 }
 #Icon16 i {
-   font-size: 13px;
+   font-size: 12px;
    line-height: 13px;
-   width: 12px;
+   width: 11px;
 }
 #Banner12 {
    display: inline-block;
