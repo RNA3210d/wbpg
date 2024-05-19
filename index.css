@@ -1417,10 +1417,10 @@ body {
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    display: flex;
-   flex-basis: 75%;
+   flex-basis: 100%;
    flex-wrap: wrap;
    justify-content: center;
-   max-width: 75%;
+   max-width: 100%;
    text-align: center;
 }
 #LayoutGrid4 > .col-2 {
@@ -1432,10 +1432,8 @@ body {
    border: 0px solid #FFFFFF;
    border-radius: 0px;
    display: flex;
-   flex-basis: 25%;
    flex-wrap: wrap;
    justify-content: center;
-   max-width: 25%;
    text-align: center;
 }
 @media (max-width: 800px) {
@@ -2512,45 +2510,6 @@ body {
    display: block;
    margin: 0;
    width: 100%;
-}
-#wb_Image1 {
-   margin: 0;
-   vertical-align: top;
-}
-#Image1 {
-   border: 0px solid #000000;
-   border-radius: 18px;
-   box-shadow: 0px 0px 20px #FFFFFF;
-   box-sizing: border-box;
-   display: block;
-   height: auto;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 849px;
-   padding: 0;
-   vertical-align: top;
-   width: 100%;
-}
-#wb_Heading1 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-   vertical-align: top;
-}
-#Heading1 {
-   color: #FFFFFF;
-   font-family: "Exo 2";
-   font-size: 20px;
-   font-style: normal;
-   font-weight: normal;
-   margin: 0;
-   text-align: center;
-   text-shadow: 0px 0px 20px rgba(192,0,157,0.50);
 }
 #wb_Text11 {
    background-color: transparent;
@@ -3963,7 +3922,7 @@ Banner11 span:before {
    display: inline-block;
    height: 48px;
    width: 769px;
-   z-index: 48;
+   z-index: 46;
 }
 #wb_Icon6 {
    display: inline-block;
@@ -3980,21 +3939,14 @@ Banner11 span:before {
    display: inline-block;
    height: 25px;
    width: 96px;
-   z-index: 60;
+   z-index: 58;
 }
 #wb_Icon11 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 54;
-}
-#wb_Image1 {
-   display: inline-block;
-   height: auto;
-   opacity: 0.90;
-   width: 100%;
-   z-index: 33;
+   z-index: 52;
 }
 #wb_Icon7 {
    display: inline-block;
@@ -4008,14 +3960,14 @@ Banner11 span:before {
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 47;
+   z-index: 45;
 }
 #wb_Icon4 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 45;
+   z-index: 43;
 }
 #Banner3 {
    display: inline-block;
@@ -4033,13 +3985,13 @@ Banner11 span:before {
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 56;
+   z-index: 54;
 }
 #Banner2 {
    display: inline-block;
    height: 48px;
    width: 547px;
-   z-index: 34;
+   z-index: 32;
 }
 #wb_Icon5 {
    display: inline-block;
@@ -4057,7 +4009,7 @@ Banner11 span:before {
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 55;
+   z-index: 53;
 }
 #Banner5 {
    display: inline-block;
@@ -4070,20 +4022,20 @@ Banner11 span:before {
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 58;
+   z-index: 56;
 }
 #Banner4 {
    display: inline-block;
    height: 48px;
    width: 547px;
-   z-index: 39;
+   z-index: 37;
 }
 #wb_Icon14 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 57;
+   z-index: 55;
 }
 #wb_Icon8 {
    display: inline-block;
@@ -4111,7 +4063,7 @@ Banner11 span:before {
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 46;
+   z-index: 44;
 }
 #ThemeableButton6 {
    height: 100%;
@@ -4143,7 +4095,7 @@ Banner11 span:before {
    display: inline-block;
    height: 61px;
    width: 309px;
-   z-index: 42;
+   z-index: 40;
 }
 #wb_Card8 {
    display: flex;
@@ -4163,7 +4115,7 @@ Banner11 span:before {
    display: inline-block;
    height: 61px;
    width: 661px;
-   z-index: 51;
+   z-index: 49;
 }
 #Banner8 {
    display: inline-block;
@@ -4175,7 +4127,7 @@ Banner11 span:before {
    display: inline-block;
    height: 61px;
    width: 659px;
-   z-index: 49;
+   z-index: 47;
 }
 #Layer1 {
    bottom: 0px;
@@ -4185,7 +4137,7 @@ Banner11 span:before {
    text-align: center;
    top: auto;
    width: 284px;
-   z-index: 70;
+   z-index: 68;
 }
 #Banner10 {
    display: inline-block;
@@ -4197,18 +4149,13 @@ Banner11 span:before {
    display: inline-block;
    height: 48px;
    width: 741px;
-   z-index: 52;
+   z-index: 50;
 }
 #wb_ThemeableButton5 {
    display: inline-block;
    height: 61px;
    width: 309px;
-   z-index: 37;
-}
-#wb_Heading1 {
-   display: inline-block;
-   width: 100%;
-   z-index: 32;
+   z-index: 35;
 }
 #Layer2 {
    bottom: 0px;
@@ -4218,20 +4165,20 @@ Banner11 span:before {
    text-align: center;
    top: auto;
    width: 284px;
-   z-index: 64;
+   z-index: 62;
 }
 #SiteSearch2 {
    display: block;
    height: 26px;
    width: 100%;
-   z-index: 59;
+   z-index: 57;
 }
 #wb_Icon2 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 43;
+   z-index: 41;
 }
 #wb_ThemeableButton2 {
    display: inline-block;
@@ -4244,7 +4191,7 @@ Banner11 span:before {
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 44;
+   z-index: 42;
 }
 #Layer1_Container {
    width: 100%;
@@ -5241,20 +5188,6 @@ body {
    margin: 0;
    padding: 0;
    text-align: left;
-}
-#wb_Image1 {
-   display: block;
-   margin: 0;
-   padding: 0;
-   visibility: visible;
-   width: 100%;
-}
-#wb_Heading1 {
-   display: block;
-   margin: 0;
-   padding: 0;
-   visibility: visible;
-   width: 100%;
 }
 #wb_Text11 {
    display: block;
@@ -6655,20 +6588,6 @@ body {
    margin: 0;
    padding: 0;
    text-align: left;
-}
-#wb_Image1 {
-   display: block;
-   margin: 0;
-   padding: 0;
-   visibility: visible;
-   width: 100%;
-}
-#wb_Heading1 {
-   display: block;
-   margin: 0;
-   padding: 0;
-   visibility: visible;
-   width: 100%;
 }
 #wb_Text11 {
    display: none;

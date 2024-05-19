@@ -411,6 +411,56 @@ Banner6 span:before {
    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
    outline: 0;
 }
+#wb_Image2 {
+   margin: 0;
+   vertical-align: top;
+}
+#Image2 {
+   border: 0px solid #000000;
+   border-radius: 18px;
+   box-shadow: 0px 0px 20px #FFFFFF;
+   box-sizing: border-box;
+   display: block;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 360px;
+   padding: 0;
+   vertical-align: top;
+   width: 100%;
+}
+#Banner7 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #0F6FC6;
+   font-family: "Exo 2";
+   font-size: 27px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: center;
+   text-shadow: 0px 0px 14px rgba(153,215,239,1.00);
+}
+#Banner7 span {
+   display: block;
+   height: 27px;
+   margin: 19px 0 19px 0;
+}
+#Banner7 span:before,
+#Banner7 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 63px;
+}
+Banner7 span:before {
+   content: "Relevant XKCD (#1806)";
+   opacity: .3;
+   transform: scaleY(-1);
+}
 #Button4 {
    height: 24px;
    left: 1093px;
@@ -423,13 +473,13 @@ Banner6 span:before {
    display: block;
    height: 522px;
    width: 100%;
-   z-index: 9;
+   z-index: 11;
 }
 #Banner1 {
    display: inline-block;
    height: 108px;
    width: 1149px;
-   z-index: 8;
+   z-index: 10;
 }
 #wb_Image1 {
    height: 74px;
@@ -443,13 +493,19 @@ Banner6 span:before {
    display: block;
    height: 204px;
    width: 100%;
-   z-index: 7;
+   z-index: 9;
 }
 #TextArea2 {
    display: block;
    height: 373px;
    width: 100%;
-   z-index: 11;
+   z-index: 13;
+}
+#wb_Image2 {
+   display: inline-block;
+   height: auto;
+   width: 100%;
+   z-index: 7;
 }
 #Banner3 {
    display: inline-block;
@@ -461,31 +517,37 @@ Banner6 span:before {
    display: block;
    height: 406px;
    width: 100%;
-   z-index: 15;
+   z-index: 17;
 }
 #Banner2 {
    display: inline-block;
    height: 77px;
    width: 1149px;
-   z-index: 6;
+   z-index: 8;
 }
 #TextArea4 {
    display: block;
    height: 406px;
    width: 100%;
-   z-index: 13;
+   z-index: 15;
 }
 #Banner5 {
    display: inline-block;
    height: 77px;
    width: 1195px;
-   z-index: 12;
+   z-index: 14;
 }
 #Banner4 {
    display: inline-block;
    height: 110px;
    width: 1182px;
-   z-index: 10;
+   z-index: 12;
+}
+#Banner7 {
+   display: inline-block;
+   height: 77px;
+   width: 1196px;
+   z-index: 6;
 }
 #wb_Text1 {
    height: 27px;
@@ -499,7 +561,7 @@ Banner6 span:before {
    display: inline-block;
    height: 100px;
    width: 1195px;
-   z-index: 14;
+   z-index: 16;
 }
 #wb_Text2 {
    height: 27px;
@@ -528,7 +590,7 @@ Banner6 span:before {
    text-align: center;
    vertical-align: top;
    width: 100%;
-   z-index: 17;
+   z-index: 19;
 }
 #Layer3 {
    display: inline-block;
@@ -539,7 +601,7 @@ Banner6 span:before {
    text-align: left;
    vertical-align: top;
    width: 1200px;
-   z-index: 18;
+   z-index: 20;
 }
 #Layer1_Container {
    margin-left: auto;
@@ -780,6 +842,24 @@ body {
    visibility: visible;
    width: 100%;
 }
+#wb_Image2 {
+   display: block;
+   margin: 0;
+   padding: 0;
+   visibility: visible;
+   width: 100%;
+}
+#Banner7 {
+   display: inline-block;
+   height: 79px;
+   margin: 0;
+   visibility: visible;
+   width: 477px;
+}
+#Banner7 span {
+   height: 27px;
+   margin: 25px 0 25px 0;
+}
 }
 @media only screen and (max-width: 479px) {
 div#container {
@@ -1012,6 +1092,24 @@ body {
    text-align: left;
    visibility: visible;
    width: 100%;
+}
+#wb_Image2 {
+   display: block;
+   margin: 0;
+   padding: 0;
+   visibility: visible;
+   width: 100%;
+}
+#Banner7 {
+   display: inline-block;
+   height: 79px;
+   margin: 0;
+   visibility: visible;
+   width: 317px;
+}
+#Banner7 span {
+   height: 27px;
+   margin: 25px 0 25px 0;
 }
 }
 .darktheme body {
