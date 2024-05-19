@@ -43,6 +43,7 @@ $(document).ready(function()
    $('#wb_LayoutGrid9').addClass('visibility-hidden');
    $('#Banner2').addClass('visibility-hidden');
    $('#Banner3').addClass('visibility-hidden');
+   $('#wb_Card4').addClass('visibility-hidden');
    $("a[href*='#LayoutGrid1']").click(function(event)
    {
       event.preventDefault();
@@ -479,6 +480,30 @@ $(document).ready(function()
    {
       onScrollBanner3();
    });
+   function onScrollCard4()
+   {
+      var $obj = $("#wb_Card4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card4', 'animate-fade-in', 0, 2000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card4', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card4').inViewPort(true))
+   {
+      $('#wb_Card4').addClass("in-viewport");
+   }
+   onScrollCard4();
+   $(window).scroll(function(event)
+   {
+      onScrollCard4();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -501,9 +526,13 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="col-1">
-<div id="Banner9"><span>I own a musket for home defense </span></div>
-<div id="wb_welcomeText">
-<p style="font-weight:bold;"><span style="font-weight:normal;">I </span><span style="font-weight:normal;">o</span><span style="font-weight:normal;">wn a musket for home defense, since that's what the founding fathers intended. Four ruffians break into my house. "What the devil?" As I grab my powdered wig and Kentucky rifle. Blow a golf ball sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbors dog. I have to resort to the cannon mounted at the top of the stairs loaded with grape shot, "Tally ho lads" the grape shot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He </span><span style="font-weight:normal;">b</span><span style="font-weight:normal;">leeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended..</span><span style="font-weight:normal;">..</span></p>
+<div id="wb_Card4" class="card" onclick="AnimateCss('wb_Card4', 'animate-fire-text-shadow', 0, 2000);return false;">
+   <div id="Card4-card-body">
+      <div id="Card4-card-item0">“</div>
+      <div id="Card4-card-item1">Kinder surprise egg, a quite astonishing commodity. The surprise of this excessive object, the cause of your desire, is here materialised in the Geist of an object which fills in the inner void of the chocolate egg. The whole delicate balance is between these two dimensions: what you bought, the chocolate egg, and the surplus, probably made in some Chinese gulag or whatever, that you get for free. I don't think that the chocolate frame is here just to send you on a deeper voyage towards the inner treasure, the what Plato calls the 'Agalma', which makes you a worthy person, which makes a commodity the desirable commodity. I think it's the other way around. We should aim at the higher goal, the gold in the middle of an object, precisely in order to be able to enjoy the surface. </div>
+      <hr id="Card4-card-item2">
+      <div id="Card4-card-item3">Slavoj Žižek</div>
+   </div>
 </div>
 <a href="#" onmouseleave="AnimateCss('Banner10', '', 0, 500);return false;" onmouseover="AnimateCss('Banner10', 'animate-neon-text-shadow', 0, 25000);return false;"><div id="Banner10"><span>Ahoy, Matey!</span></div></a>
 </div>
@@ -532,7 +561,11 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid3">
 <div id="LayoutGrid3">
 <div class="col-1">
-<div id="Banner7"><span>My Projects: Why y&apos;all still letting me cook?</span></div>
+<div id="Banner7"><span>My Projects</span></div>
+<div id="wb_Text20">
+<p>&nbsp;</p>
+</div>
+<div id="Banner12"><span>A collection of my projects, code contributions, and experiments.</span></div>
 <div id="CardContainer1">
 <div id="wb_Card1" class="card">
 <div id="Card1-divider-bottom">
@@ -643,8 +676,14 @@ $(window).on('load', function()
    </div>
 </div>
 </div>
+<div id="wb_Text21">
+<p>&nbsp;</p>
+</div>
 <div id="wb_ThemeableButton1">
-<a class="ui-button ui-corner-all" id="ThemeableButton1" href="./proj.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>See More</a>
+<a class="ui-button ui-corner-all" id="ThemeableButton1" href="./proj.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>Go</a>
+</div>
+<div id="wb_Icon16">
+<a href="https://github.com/RNA3210d" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon16"><i class="fa fa-github"></i></div></a>
 </div>
 </div>
 </div>
@@ -672,6 +711,9 @@ $(window).on('load', function()
 <div id="links">
 <div class="col-1">
 <div id="Banner6"><span>Exploring the World Through My Lens</span></div>
+<div id="wb_Text9">
+<p>&nbsp;</p>
+</div>
 <div id="wb_Text1">
 <p>Just a place where I can upload images of any dimension or orientation without lossy compresssion or any other restrictions<span style="color:#C3DBF0;">.</span></p>
 </div>
@@ -680,9 +722,6 @@ $(window).on('load', function()
 </div>
 <div id="wb_ThemeableButton2">
 <a class="ui-button ui-corner-all" id="ThemeableButton2" href="./gal.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>Gallery</a>
-</div>
-<div id="wb_Text9">
-<p>&nbsp;</p>
 </div>
 <div id="wb_Card3" class="card" onclick="AnimateCss('wb_Card3', 'animate-fire-text-shadow', 0, 2000);return false;">
    <div id="Card3-card-body">
@@ -787,6 +826,9 @@ $(window).on('load', function()
 </div>
 <div id="wb_ThemeableButton7">
 <a class="ui-button ui-corner-all" id="ThemeableButton7" href="./misc.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>Extras</a>
+</div>
+<div id="wb_Text22">
+<p>&nbsp;</p>
 </div>
 <div id="Banner11"><span>External Links</span></div>
 <div id="wb_Text3">
