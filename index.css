@@ -627,7 +627,7 @@ body {
    vertical-align: middle;
 }
 #wb_ThemeableButton1 {
-   border-radius: 15px;
+   border-radius: 12px;
    box-shadow: 0px 0px 18px #84BDDA;
    margin: 0;
    vertical-align: top;
@@ -683,13 +683,13 @@ body {
 }
 #wb_ThemeableButton1 .ui-corner-all,
 #wb_ThemeableButton1 .ui-corner-left {
-   border-bottom-left-radius: 15px;
-   border-top-left-radius: 15px;
+   border-bottom-left-radius: 12px;
+   border-top-left-radius: 12px;
 }
 #wb_ThemeableButton1 .ui-corner-all,
 #wb_ThemeableButton1 .ui-corner-right {
-   border-bottom-right-radius: 15px;
-   border-top-right-radius: 15px;
+   border-bottom-right-radius: 12px;
+   border-top-right-radius: 12px;
 }
 #wb_ThemeableButton1 .ui-button {
    background-image: linear-gradient(to bottom, #F8F8FF 0%, #E4E4FF 10%, #CDCDFF 50%, #B8CCFF 50%, #E0E0FF 100%);
@@ -1118,9 +1118,9 @@ body {
 #wb_Text1 {
    color: #FFFFFF;
    font-family: "Exo 2";
-   font-size: 19px;
+   font-size: 16px;
    font-weight: 400;
-   line-height: 27.5px;
+   line-height: 23.5px;
 }
 #wb_Text1 p,
 #wb_Text1 ul {
@@ -1480,7 +1480,7 @@ body {
    vertical-align: middle;
 }
 #wb_ThemeableButton3 {
-   border-radius: 15px;
+   border-radius: 12px;
    box-shadow: 0px 0px 22px #4B93D4;
    margin: 0;
    vertical-align: top;
@@ -1536,13 +1536,13 @@ body {
 }
 #wb_ThemeableButton3 .ui-corner-all,
 #wb_ThemeableButton3 .ui-corner-left {
-   border-bottom-left-radius: 15px;
-   border-top-left-radius: 15px;
+   border-bottom-left-radius: 12px;
+   border-top-left-radius: 12px;
 }
 #wb_ThemeableButton3 .ui-corner-all,
 #wb_ThemeableButton3 .ui-corner-right {
-   border-bottom-right-radius: 15px;
-   border-top-right-radius: 15px;
+   border-bottom-right-radius: 12px;
+   border-top-right-radius: 12px;
 }
 #wb_ThemeableButton3 .ui-button {
    background-image: linear-gradient(315deg, #5878B2 0%, #0ADAD8 19%, #008080 48%, #869FC8 78%, #5878B2 100%);
@@ -1863,7 +1863,7 @@ body {
    vertical-align: middle;
 }
 #wb_ThemeableButton5 {
-   border-radius: 15px;
+   border-radius: 12px;
    box-shadow: 0px 0px 22px #F8BD66;
    margin: 0;
    vertical-align: top;
@@ -1919,13 +1919,13 @@ body {
 }
 #wb_ThemeableButton5 .ui-corner-all,
 #wb_ThemeableButton5 .ui-corner-left {
-   border-bottom-left-radius: 15px;
-   border-top-left-radius: 15px;
+   border-bottom-left-radius: 12px;
+   border-top-left-radius: 12px;
 }
 #wb_ThemeableButton5 .ui-corner-all,
 #wb_ThemeableButton5 .ui-corner-right {
-   border-bottom-right-radius: 15px;
-   border-top-right-radius: 15px;
+   border-bottom-right-radius: 12px;
+   border-top-right-radius: 12px;
 }
 #wb_ThemeableButton5 .ui-button {
    background-image: linear-gradient(315deg, #FEE6EF 0%, #FBD5A3 19%, #FBAB7F 39%, #FAC77D 63%, #FEE7F1 84%, #FBEAC7 100%);
@@ -3498,19 +3498,6 @@ Banner7 span:before {
    height: 29px;
    margin: 21px 0 21px 0;
 }
-#Banner8 span:before,
-#Banner8 span:after {
-   display: block;
-   left: 0;
-   position: absolute;
-   right: 0;
-   top: 69px;
-}
-Banner8 span:before {
-   content: "About Me";
-   opacity: .3;
-   transform: scaleY(-1);
-}
 #Banner9 {
    background-color: transparent;
    background-image: none;
@@ -3576,7 +3563,7 @@ Banner10 span:before {
    vertical-align: middle;
 }
 #wb_ThemeableButton4 {
-   border-radius: 15px;
+   border-radius: 12px;
    box-shadow: 0px 0px 22px #4B93D4;
    margin: 0;
    vertical-align: top;
@@ -3632,13 +3619,13 @@ Banner10 span:before {
 }
 #wb_ThemeableButton4 .ui-corner-all,
 #wb_ThemeableButton4 .ui-corner-left {
-   border-bottom-left-radius: 15px;
-   border-top-left-radius: 15px;
+   border-bottom-left-radius: 12px;
+   border-top-left-radius: 12px;
 }
 #wb_ThemeableButton4 .ui-corner-all,
 #wb_ThemeableButton4 .ui-corner-right {
-   border-bottom-right-radius: 15px;
-   border-top-right-radius: 15px;
+   border-bottom-right-radius: 12px;
+   border-top-right-radius: 12px;
 }
 #wb_ThemeableButton4 .ui-button {
    background-image: linear-gradient(315deg, #5878B2 0%, #0ADAD8 19%, #008080 48%, #869FC8 78%, #5878B2 100%);
@@ -3673,7 +3660,7 @@ Banner10 span:before {
    vertical-align: middle;
 }
 #wb_ThemeableButton7 {
-   border-radius: 15px;
+   border-radius: 12px;
    box-shadow: 0px 0px 22px #4B93D4;
    margin: 0;
    vertical-align: top;
@@ -3729,13 +3716,13 @@ Banner10 span:before {
 }
 #wb_ThemeableButton7 .ui-corner-all,
 #wb_ThemeableButton7 .ui-corner-left {
-   border-bottom-left-radius: 15px;
-   border-top-left-radius: 15px;
+   border-bottom-left-radius: 12px;
+   border-top-left-radius: 12px;
 }
 #wb_ThemeableButton7 .ui-corner-all,
 #wb_ThemeableButton7 .ui-corner-right {
-   border-bottom-right-radius: 15px;
-   border-top-right-radius: 15px;
+   border-bottom-right-radius: 12px;
+   border-top-right-radius: 12px;
 }
 #wb_ThemeableButton7 .ui-button {
    background-image: linear-gradient(315deg, #5878B2 0%, #0ADAD8 19%, #008080 48%, #869FC8 78%, #5878B2 100%);
@@ -5349,8 +5336,13 @@ body {
 }
 #Banner1 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 27px;
+   font-style: normal;
+   font-weight: normal;
    height: 50px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 350px;
 }
@@ -5360,8 +5352,13 @@ body {
 }
 #Banner2 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 29px;
+   font-style: normal;
+   font-weight: normal;
    height: 50px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 450px;
 }
@@ -5371,8 +5368,13 @@ body {
 }
 #Banner3 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 27px;
+   font-style: normal;
+   font-weight: normal;
    height: 50px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 468px;
 }
@@ -5382,8 +5384,13 @@ body {
 }
 #Banner4 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 29px;
+   font-style: normal;
+   font-weight: normal;
    height: 50px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 450px;
 }
@@ -5422,8 +5429,13 @@ body {
 }
 #Banner6 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 29px;
+   font-style: normal;
+   font-weight: normal;
    height: 50px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 450px;
 }
@@ -5433,8 +5445,13 @@ body {
 }
 #Banner7 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 29px;
+   font-style: normal;
+   font-weight: normal;
    height: 150px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 460px;
 }
@@ -5444,8 +5461,13 @@ body {
 }
 #Banner8 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 29px;
+   font-style: normal;
+   font-weight: normal;
    height: 150px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 460px;
 }
@@ -5455,8 +5477,13 @@ body {
 }
 #Banner9 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 21px;
+   font-style: normal;
+   font-weight: normal;
    height: 150px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 460px;
 }
@@ -5466,8 +5493,13 @@ body {
 }
 #Banner10 {
    display: inline-block;
+   font-family: "Lucida Console";
+   font-size: 29px;
+   font-style: normal;
+   font-weight: normal;
    height: 150px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 460px;
 }
@@ -5518,8 +5550,13 @@ body {
 }
 #Banner11 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 27px;
+   font-style: normal;
+   font-weight: normal;
    height: 50px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 350px;
 }
@@ -5565,9 +5602,9 @@ body {
 }
 #wb_welcomeText {
    font-family: "Exo 2";
-   font-size: 19px;
+   font-size: 15px;
    font-weight: 400;
-   line-height: 27px;
+   line-height: 21px;
    margin: 0;
    padding: 75px 50px 75px 50px;
    text-align: center;
@@ -5816,16 +5853,16 @@ body {
 }
 #wb_ThemeableButton1 {
    display: inline-block;
-   height: 35px;
+   height: 30px;
    margin: 0;
    visibility: visible;
-   width: 183px;
+   width: 170px;
 }
 #ThemeableButton1 {
    font-size: 21px;
 }
 #wb_ThemeableButton1 .ui-button {
-   line-height: 33px;
+   line-height: 28px;
    padding: 0;
 }
 #wb_Card8 {
@@ -5849,7 +5886,7 @@ body {
    box-sizing: border-box;
    color: #E4F4DF;
    font-family: "Exo 2";
-   font-size: 19px;
+   font-size: 16px;
    font-style: normal;
    font-weight: normal;
    margin: -40px 20px 20px 20px;
@@ -6143,16 +6180,16 @@ body {
 }
 #wb_ThemeableButton3 {
    display: inline-block;
-   height: 47px;
+   height: 49px;
    margin: 0;
    visibility: visible;
-   width: 290px;
+   width: 288px;
 }
 #ThemeableButton3 {
    font-size: 21px;
 }
 #wb_ThemeableButton3 .ui-button {
-   line-height: 45px;
+   line-height: 47px;
    padding: 0;
 }
 #wb_Text8 {
@@ -6189,7 +6226,7 @@ body {
    box-sizing: border-box;
    color: #E4F4DF;
    font-family: "Exo 2";
-   font-size: 19px;
+   font-size: 16px;
    font-style: normal;
    font-weight: normal;
    margin: -40px 20px 20px 20px;
@@ -6491,16 +6528,16 @@ body {
 }
 #wb_ThemeableButton6 {
    display: inline-block;
-   height: 48px;
+   height: 40px;
    margin: 0;
    visibility: visible;
-   width: 279px;
+   width: 268px;
 }
 #ThemeableButton6 {
    font-size: 21px;
 }
 #wb_ThemeableButton6 .ui-button {
-   line-height: 46px;
+   line-height: 38px;
    padding: 0;
 }
 #wb_Text19 {
@@ -6744,52 +6781,72 @@ body {
 }
 #Banner1 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
    height: 50px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 300px;
 }
 #Banner1 span {
-   height: 27px;
-   margin: 11px 0 11px 0;
+   height: 20px;
+   margin: 14px 0 14px 0;
 }
 #Banner2 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
    height: 130px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 290px;
 }
 #Banner2 span {
-   height: 29px;
-   margin: 50px 0 50px 0;
+   height: 20px;
+   margin: 54px 0 54px 0;
 }
 #Banner3 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
    height: 50px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 308px;
 }
 #Banner3 span {
-   height: 27px;
-   margin: 11px 0 11px 0;
+   height: 20px;
+   margin: 14px 0 14px 0;
 }
 #Banner4 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
    height: 130px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 290px;
 }
 #Banner4 span {
-   height: 29px;
-   margin: 50px 0 50px 0;
+   height: 20px;
+   margin: 54px 0 54px 0;
 }
 #Banner5 {
    display: inline-block;
    font-family: "Exo 2";
-   font-size: 19px;
+   font-size: 16px;
    font-style: normal;
    font-weight: normal;
    height: 152px;
@@ -6799,8 +6856,8 @@ body {
    width: 308px;
 }
 #Banner5 span {
-   height: 19px;
-   margin: 66px 0 66px 0;
+   height: 16px;
+   margin: 67px 0 67px 0;
 }
 #wb_Text7 {
    display: none;
@@ -6817,85 +6874,110 @@ body {
 }
 #Banner6 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
    height: 150px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 288px;
 }
 #Banner6 span {
-   height: 29px;
-   margin: 60px 0 60px 0;
+   height: 20px;
+   margin: 64px 0 64px 0;
 }
 #Banner7 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
    height: 71px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 289px;
 }
 #Banner7 span {
-   height: 29px;
-   margin: 20px 0 20px 0;
+   height: 20px;
+   margin: 24px 0 24px 0;
 }
 #Banner8 {
    display: inline-block;
-   height: 197px;
+   font-family: "Exo 2";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
+   height: 72px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 289px;
 }
 #Banner8 span {
-   height: 29px;
-   margin: 83px 0 83px 0;
+   height: 20px;
+   margin: 25px 0 25px 0;
 }
 #Banner9 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
    height: 29px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 289px;
 }
 #Banner9 span {
-   height: 21px;
+   height: 20px;
    margin: 3px 0 3px 0;
 }
 #Banner10 {
    display: inline-block;
+   font-family: "Lucida Console";
+   font-size: 21px;
+   font-style: normal;
+   font-weight: normal;
    height: 32px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 289px;
 }
 #Banner10 span {
-   height: 29px;
-   margin: 1px 0 1px 0;
+   height: 21px;
+   margin: 5px 0 5px 0;
 }
 #wb_ThemeableButton4 {
    display: inline-block;
-   height: 48px;
+   height: 32px;
    margin: 0;
    visibility: visible;
-   width: 279px;
+   width: 212px;
 }
 #ThemeableButton4 {
    font-size: 21px;
 }
 #wb_ThemeableButton4 .ui-button {
-   line-height: 46px;
+   line-height: 30px;
    padding: 0;
 }
 #wb_ThemeableButton7 {
    display: inline-block;
-   height: 48px;
+   height: 32px;
    margin: 0;
    visibility: visible;
-   width: 279px;
+   width: 207px;
 }
 #ThemeableButton7 {
    font-size: 21px;
 }
 #wb_ThemeableButton7 .ui-button {
-   line-height: 46px;
+   line-height: 30px;
    padding: 0;
 }
 #wb_Text3 {
@@ -6913,14 +6995,19 @@ body {
 }
 #Banner11 {
    display: inline-block;
+   font-family: "Exo 2";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: normal;
    height: 50px;
    margin: 0;
+   text-decoration: none;
    visibility: visible;
    width: 300px;
 }
 #Banner11 span {
-   height: 27px;
-   margin: 11px 0 11px 0;
+   height: 20px;
+   margin: 14px 0 14px 0;
 }
 #wb_Text6 {
    display: block;
