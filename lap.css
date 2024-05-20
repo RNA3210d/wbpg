@@ -255,8 +255,8 @@ body {
    -webkit-appearance: none;
    background-image: linear-gradient(to top, #3370B7 0%, #000000 100%);
    border: 1px solid #2E6DA4;
-   border-radius: 4px;
-   box-shadow: 1px 1px 15px #0F6FC6;
+   border-radius: 9px;
+   box-shadow: 1px 1px 11px #0F6FC6;
    box-sizing: border-box;
    color: #FFFFFF;
    cursor: pointer;
@@ -279,7 +279,8 @@ body {
    background-color: #FFFFFF;
    background-image: none;
    border: 1px solid #CCCCCC;
-   border-radius: 4px;
+   border-radius: 7px;
+   box-shadow: 0px 0px 9px #0BD0D9;
    box-sizing: border-box;
    color: #000000;
    font-family: "Exo 2";

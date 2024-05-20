@@ -1,9 +1,12 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en-gb">
 <head>
 <meta charset="utf-8">
 <title>Home</title>
-<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="author" content="NVN">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="ui-lightness/jquery-ui.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
@@ -11,6 +14,7 @@
 <link href="index.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
 <script src="jquery-ui.min.js"></script>
+<script src="jquery.scrollify.min.js"></script>
 <script src="searchindex.js"></script>
 <script src="wb.sitesearch.min.js"></script>
 <script>
@@ -44,18 +48,13 @@ $(document).ready(function()
    $('#Banner2').addClass('visibility-hidden');
    $('#Banner3').addClass('visibility-hidden');
    $('#wb_Card4').addClass('visibility-hidden');
-   $("a[href*='#LayoutGrid1']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'linear');
-   });
    function onScrollLayoutGrid1()
    {
       var $obj = $("#wb_LayoutGrid1");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('wb_LayoutGrid1', 'animate-fade-in', 0, 1250);
+         AnimateCss('wb_LayoutGrid1', 'transform-scale-in', 0, 1250);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
@@ -72,11 +71,6 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollLayoutGrid1();
-   });
-   $("a[href*='#LayoutGrid2']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'linear');
    });
    function onScrollLayoutGrid2()
    {
@@ -247,10 +241,39 @@ $(document).ready(function()
    {
       onScrollCard7();
    });
+   function onScrollCard8_card_item0()
+   {
+      var $obj = $("#Card8-card-item0");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Card8-card-item0', 'transform-pulse', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Card8-card-item0', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Card8-card-item0').inViewPort(true))
+   {
+      $('#Card8-card-item0').addClass("in-viewport");
+   }
+   onScrollCard8_card_item0();
+   $(window).scroll(function(event)
+   {
+      onScrollCard8_card_item0();
+   });
    $("a[href*='#Layer2']").click(function(event)
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#Layer2').offset().top }, 600, 'linear');
+   });
+   $("a[href*='#links']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_links').offset().top }, 600, 'linear');
    });
    function onScrolllinks()
    {
@@ -323,6 +346,30 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollCard3();
+   });
+   function onScrollCard3_card_item0()
+   {
+      var $obj = $("#Card3-card-item0");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Card3-card-item0', 'transform-pulse', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Card3-card-item0', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Card3-card-item0').inViewPort(true))
+   {
+      $('#Card3-card-item0').addClass("in-viewport");
+   }
+   onScrollCard3_card_item0();
+   $(window).scroll(function(event)
+   {
+      onScrollCard3_card_item0();
    });
    function onScrollLayoutGrid6()
    {
@@ -504,6 +551,53 @@ $(document).ready(function()
    {
       onScrollCard4();
    });
+   function onScrollCard4_card_item0()
+   {
+      var $obj = $("#Card4-card-item0");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Card4-card-item0', 'transform-pulse', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Card4-card-item0', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Card4-card-item0').inViewPort(true))
+   {
+      $('#Card4-card-item0').addClass("in-viewport");
+   }
+   onScrollCard4_card_item0();
+   $(window).scroll(function(event)
+   {
+      onScrollCard4_card_item0();
+   });
+   var $sections = $('#wb_LayoutGrid1,#wb_LayoutGrid2,#wb_LayoutGrid3,#wb_links,#wb_LayoutGrid4,#wb_LayoutGrid6,#wb_LayoutGrid5,#wb_LayoutGrid7,#wb_LayoutGrid9');
+   $sections.addClass('snap-scroll');
+   if ($(window).width() >= 800)
+   {
+      $.scrollify(
+      {
+         section: ".snap-scroll",
+         setHeights: false,
+         scrollbars: false,
+         scrollSpeed: 1000,
+         easing: 'easeInQuad',
+         afterRender: function()
+         {
+            $('#SnapScroll1 a').on('click', $.scrollify.move);
+         },
+         before: function(i, sections)
+         {
+            var href = ($('.snap-scroll').index(sections[i])+1);
+            $('#SnapScroll1 .active').removeClass('active');
+            $('#SnapScroll1').find("a[href='#" + href + "']").addClass('active');
+         }
+      });
+   }
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -544,6 +638,10 @@ $(window).on('load', function()
 <div id="Banner8"><span>About Me</span></div>
 <div id="wb_Text5">
 <span style="color:#C8E5F4;font-family:'Exo 2';font-size:16px;">Just a 22-year-old guy passionate about electronics, heavy machinery, switchgear, coding and more.<br><br>DOB: 28 June 2001<br>Blood type: B+<br>EMail: rna3210d2@proton.me<br>Education: B.Tech in Electrical and Electronics Engineering</span>
+</div>
+<div id="wb_Bookmark1">
+<div id="Bookmark1"></div>
+
 </div>
 </div>
 <div class="col-2">
@@ -723,6 +821,9 @@ $(window).on('load', function()
 <div id="wb_ThemeableButton2">
 <a class="ui-button ui-corner-all" id="ThemeableButton2" href="./gal.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>Gallery</a>
 </div>
+<div id="wb_Text23">
+<p>&nbsp;</p>
+</div>
 <div id="wb_Card3" class="card" onclick="AnimateCss('wb_Card3', 'animate-fire-text-shadow', 0, 2000);return false;">
    <div id="Card3-card-body">
       <div id="Card3-card-item0">“</div>
@@ -858,6 +959,17 @@ $(window).on('load', function()
 </div>
 </div>
 </div>
+<ul id="SnapScroll1">
+<li><a class="active" href="#1"><span class="label">Welcome</span></a></li>
+<li><a href="#2"><span class="label">About Me</span></a></li>
+<li><a href="#3"><span class="label">Projects</span></a></li>
+<li><a href="#4"><span class="label">Gallery</span></a></li>
+<li><a href="#5"><span class="label">Dotfiles</span></a></li>
+<li><a href="#6"><span class="label">My Mixes</span></a></li>
+<li><a href="#7"><span class="label">GTFO</span></a></li>
+<li><a href="#8"><span class="label">My Equipments</span></a></li>
+<li><a href="#9"><span class="label">More</span></a></li>
+</ul>
 <div id="preloader"></div>
 </body>
 </html>

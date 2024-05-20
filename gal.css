@@ -189,16 +189,17 @@ body {
    width: 100%;
 }
 #PhotoGallery1 .thumbnails {
+   font-size: 0;
    margin: 0;
 }
 #PhotoGallery1 .thumbnail {
    box-sizing: border-box;
-   float: left;
+   display: inline-block;
    min-height: 1px;
    padding: 3px 3px 3px 3px;
    position: relative;
    text-align: center;
-   vertical-align: top;
+   vertical-align: middle;
    width: 33.33333333%;
 }
 #PhotoGallery1 .thumbnail img {

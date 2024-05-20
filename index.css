@@ -1,18 +1,20 @@
 body {
-   background-color: transparent;
+   background-color: #000000;
    color: #000000;
-   font-family: Arial;
+   font-family: "Exo 2";
    font-size: 13px;
-   font-weight: normal;
+   font-weight: 400;
+   font-weight: 400;
    line-height: 1.1875;
    margin: 0;
+   overflow-y: scroll;
    padding: 0;
 }
 .visibility-hidden {
    visibility: hidden;
 }
 #preloader {
-   background: #FFFFFF url("images/rotating-dots.gif") no-repeat center center;
+   background: #000000 url("images/rotating-dots.gif") no-repeat center center;
    bottom: 0;
    position: fixed;
    top: 0;
@@ -706,7 +708,7 @@ body {
    box-sizing: border-box;
    color: #E4F4DF;
    font-family: "Times New Roman";
-   font-size: 107px;
+   font-size: 96px;
    font-style: normal;
    font-weight: bold;
    margin: 10px 20px 0 20px;
@@ -1568,7 +1570,7 @@ body {
    background-image: none;
    border: 0px solid transparent;
    border-radius: 16px;
-   box-shadow: 0px 0px 29px rgba(248,189,102,0.20);
+   box-shadow: 0px 0px 29px rgba(248,189,102,0.20) inset;
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
@@ -1586,7 +1588,7 @@ body {
    box-sizing: border-box;
    color: #E4F4DF;
    font-family: "Times New Roman";
-   font-size: 107px;
+   font-size: 96px;
    font-style: normal;
    font-weight: bold;
    margin: 10px 20px 0 20px;
@@ -3997,150 +3999,248 @@ Banner12 span:before {
    margin: 20px 0 20px 20px;
    padding: 12px 20px 12px 20px;
 }
-#wb_Icon1 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 21;
+#wb_Text23 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
 }
-#wb_ThemeableButton1 {
-   display: inline-block;
-   height: 51px;
-   width: 215px;
-   z-index: 13;
+#wb_Text23 {
+   color: #000000;
+   font-family: Arial;
+   font-size: 29px;
+   font-weight: 400;
+   line-height: 33px;
 }
-#Banner1 {
-   display: inline-block;
-   height: 48px;
-   width: 769px;
-   z-index: 49;
+#wb_Text23 p,
+#wb_Text23 ul {
+   margin: 0;
+   padding: 0;
 }
-#wb_Icon6 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 19;
-}
-#wb_Card1 {
-   display: flex;
-   z-index: 6;
-}
-#Button2 {
-   display: inline-block;
-   height: 28px;
-   width: 100px;
-   z-index: 62;
-}
-#wb_Icon11 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 56;
-}
-#wb_Icon7 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 20;
-}
-#wb_Icon10 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 48;
-}
-#wb_Icon4 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 46;
-}
-#Banner3 {
-   display: inline-block;
-   height: 48px;
-   width: 547px;
-   z-index: 31;
-}
-#wb_Card3 {
-   display: flex;
+#wb_Text23 {
+   box-sizing: border-box;
+   display: block;
+   margin: 0;
    width: 100%;
-   z-index: 28;
 }
-#wb_Icon13 {
+#SnapScroll1 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 14px;
+   font-family: "Exo 2";
+   font-size: 13px;
+   font-style: normal;
+   font-weight: normal;
+   left: 0;
+   list-style: none;
+   margin: 0;
+   padding: 10px 10px 10px 10px;
+   position: fixed;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 9997;
+}
+#SnapScroll1 a {
+   color: #000000;
+   display: block;
+   height: 9px;
+   line-height: 9px;
+   margin: 0 0 6px 0;
+   position: relative;
+   width: 9px;
+}
+#SnapScroll1 li:last-child a {
+   margin-bottom: 0;
+}
+#SnapScroll1 a .label {
+   color: #1C94C4;
+   left: 28px;
+   opacity: 0;
+   position: absolute;
+   top: 0;
+   transition: opacity 0.5s ease;
+   white-space: nowrap;
+}
+#SnapScroll1 a:hover .label {
    display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 58;
+   opacity: 1;
 }
-#Banner2 {
-   display: inline-block;
-   height: 48px;
-   width: 547px;
-   z-index: 35;
+#SnapScroll1 a:after {
+   background-color: #FFFFFF;
+   border-radius: 50%;
+   border-radius: 50%;
+   bottom: 0;
+   box-shadow: inset 0 0 0 4px rgba(0,0,0,0.00);
+   content: "";
+   display: block;
+   height: 7px;
+   left: 0;
+   position: absolute;
+   top: 0;
+   transition: box-shadow 0.3s ease;
+   width: 7px;
 }
-#wb_Icon5 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 18;
+#SnapScroll1 a.active:after {
+   box-shadow: inset 0 0 0 1px rgba(0,0,0,1.00);
 }
-#wb_Card2 {
-   display: flex;
-   z-index: 7;
+@media all and (max-width:800px) {
+#SnapScroll1 {
+   display: none;
 }
-#wb_Icon12 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 57;
 }
-#Banner5 {
-   display: inline-block;
-   height: 130px;
-   width: 854px;
-   z-index: 29;
-}
-#wb_Icon15 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 60;
-}
-#Banner4 {
-   display: inline-block;
-   height: 48px;
-   width: 547px;
-   z-index: 40;
-}
-#wb_Icon14 {
-   display: inline-block;
-   height: 16px;
-   text-align: center;
-   width: 16px;
-   z-index: 59;
-}
-#wb_Icon8 {
+#wb_Icon1 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
    z-index: 22;
 }
+#wb_ThemeableButton1 {
+   display: inline-block;
+   height: 51px;
+   width: 215px;
+   z-index: 14;
+}
+#Banner1 {
+   display: inline-block;
+   height: 48px;
+   width: 769px;
+   z-index: 51;
+}
+#wb_Icon6 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 20;
+}
+#wb_Card1 {
+   display: flex;
+   z-index: 7;
+}
+#Button2 {
+   display: inline-block;
+   height: 28px;
+   width: 100px;
+   z-index: 64;
+}
+#wb_Icon11 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 58;
+}
+#wb_Icon7 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 21;
+}
+#wb_Bookmark1 {
+   display: inline-block;
+   width: 100%;
+   z-index: 4;
+}
+#wb_Icon10 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 50;
+}
+#wb_Icon4 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 48;
+}
+#Banner3 {
+   display: inline-block;
+   height: 48px;
+   width: 547px;
+   z-index: 33;
+}
+#wb_Card3 {
+   display: flex;
+   width: 100%;
+   z-index: 30;
+}
+#wb_Icon13 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 60;
+}
+#Banner2 {
+   display: inline-block;
+   height: 48px;
+   width: 547px;
+   z-index: 37;
+}
+#wb_Icon5 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 19;
+}
+#wb_Card2 {
+   display: flex;
+   z-index: 8;
+}
+#wb_Icon12 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 59;
+}
+#Banner5 {
+   display: inline-block;
+   height: 130px;
+   width: 854px;
+   z-index: 31;
+}
+#wb_Icon15 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 62;
+}
+#Banner4 {
+   display: inline-block;
+   height: 48px;
+   width: 547px;
+   z-index: 42;
+}
+#wb_Icon14 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 61;
+}
+#wb_Icon8 {
+   display: inline-block;
+   height: 16px;
+   text-align: center;
+   width: 16px;
+   z-index: 23;
+}
 #Banner7 {
    display: inline-block;
    height: 48px;
    width: 1155px;
-   z-index: 8;
+   z-index: 9;
 }
 #ThemeableButton7 {
    height: 100%;
@@ -4155,7 +4255,7 @@ Banner12 span:before {
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 47;
+   z-index: 49;
 }
 #ThemeableButton6 {
    height: 100%;
@@ -4177,7 +4277,7 @@ Banner12 span:before {
    display: inline-block;
    height: 48px;
    width: 547px;
-   z-index: 23;
+   z-index: 24;
 }
 #ThemeableButton1 {
    height: 100%;
@@ -4188,18 +4288,18 @@ Banner12 span:before {
    height: 24px;
    text-align: center;
    width: 24px;
-   z-index: 14;
+   z-index: 15;
 }
 #wb_ThemeableButton6 {
    display: inline-block;
    height: 61px;
    width: 309px;
-   z-index: 43;
+   z-index: 45;
 }
 #wb_Card8 {
    display: flex;
    width: 100%;
-   z-index: 4;
+   z-index: 5;
 }
 #SiteSearch2_form {
    display: inline;
@@ -4208,7 +4308,7 @@ Banner12 span:before {
    display: inline-block;
    height: 61px;
    width: 661px;
-   z-index: 52;
+   z-index: 54;
 }
 #Banner8 {
    display: inline-block;
@@ -4220,7 +4320,7 @@ Banner12 span:before {
    display: inline-block;
    height: 61px;
    width: 659px;
-   z-index: 50;
+   z-index: 52;
 }
 #Layer1 {
    bottom: 0px;
@@ -4230,7 +4330,7 @@ Banner12 span:before {
    text-align: center;
    top: auto;
    width: 284px;
-   z-index: 72;
+   z-index: 74;
 }
 #Banner10 {
    display: inline-block;
@@ -4242,13 +4342,13 @@ Banner12 span:before {
    display: inline-block;
    height: 48px;
    width: 741px;
-   z-index: 54;
+   z-index: 56;
 }
 #wb_ThemeableButton5 {
    display: inline-block;
    height: 61px;
    width: 309px;
-   z-index: 38;
+   z-index: 40;
 }
 #Layer2 {
    bottom: 0px;
@@ -4258,39 +4358,42 @@ Banner12 span:before {
    text-align: center;
    top: auto;
    width: 284px;
-   z-index: 66;
+   z-index: 68;
+}
+#Bookmark1 {
+   visibility: hidden;
 }
 #SiteSearch2 {
    display: block;
    height: 26px;
    width: 100%;
-   z-index: 61;
+   z-index: 63;
 }
 #wb_Icon2 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 44;
+   z-index: 46;
 }
 #wb_ThemeableButton2 {
    display: inline-block;
    height: 53px;
    width: 215px;
-   z-index: 27;
+   z-index: 28;
 }
 #Banner12 {
    display: inline-block;
    height: 48px;
    width: 669px;
-   z-index: 10;
+   z-index: 11;
 }
 #wb_Icon3 {
    display: inline-block;
    height: 16px;
    text-align: center;
    width: 16px;
-   z-index: 45;
+   z-index: 47;
 }
 #Layer1_Container {
    width: 100%;
@@ -4299,7 +4402,7 @@ Banner12 span:before {
    display: inline-block;
    height: 45px;
    width: 325px;
-   z-index: 33;
+   z-index: 35;
 }
 #Layer2_Container {
    width: 100%;
@@ -4311,11 +4414,11 @@ Banner12 span:before {
 }
 #wb_Card7 {
    display: flex;
-   z-index: 5;
+   z-index: 6;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px) {
 body {
-   background-color: transparent;
+   background-color: #000000;
    background-image: none;
 }
 #wb_LayoutGrid1 {
@@ -4598,7 +4701,7 @@ body {
    box-sizing: border-box;
    color: #E4F4DF;
    font-family: "Times New Roman";
-   font-size: 107px;
+   font-size: 96px;
    font-style: normal;
    font-weight: bold;
    margin: 10px 20px 0 20px;
@@ -5849,10 +5952,31 @@ body {
 #wb_Card4 {
    text-align: left;
 }
+#wb_Text23 {
+   display: none;
+   visibility: hidden;
+}
+#wb_Text23 {
+   font-family: Arial;
+   font-size: 29px;
+   font-weight: 400;
+   line-height: 33px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Bookmark1 {
+   display: inline-block;
+   visibility: visible;
+}
+#SnapScroll1 {
+   margin: 0;
+   padding: 10px 10px 10px 10px;
+}
 }
 @media only screen and (max-width: 479px) {
 body {
-   background-color: transparent;
+   background-color: #000000;
    background-image: none;
 }
 #wb_LayoutGrid1 {
@@ -6135,7 +6259,7 @@ body {
    box-sizing: border-box;
    color: #E4F4DF;
    font-family: "Times New Roman";
-   font-size: 107px;
+   font-size: 75px;
    font-style: normal;
    font-weight: bold;
    margin: 10px 20px 0 20px;
@@ -6475,7 +6599,7 @@ body {
    box-sizing: border-box;
    color: #E4F4DF;
    font-family: "Times New Roman";
-   font-size: 107px;
+   font-size: 75px;
    font-style: normal;
    font-weight: bold;
    margin: 10px 20px 0 20px;
@@ -7359,7 +7483,7 @@ body {
    box-sizing: border-box;
    color: #E9FFE9;
    font-family: "Exo 2";
-   font-size: 15px;
+   font-size: 13px;
    font-style: normal;
    font-weight: normal;
    margin: -40px 20px 20px 20px;
@@ -7386,6 +7510,30 @@ body {
 #wb_Card4 {
    text-align: left;
 }
+#wb_Text23 {
+   display: none;
+   visibility: hidden;
+}
+#wb_Text23 {
+   font-family: Arial;
+   font-size: 29px;
+   font-weight: 400;
+   line-height: 33px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Bookmark1 {
+   display: inline-block;
+   visibility: visible;
+}
+#SnapScroll1 {
+   margin: 0;
+   padding: 10px 10px 10px 10px;
+}
+}
+.darktheme body {
+   background-color: #FFFFFF;
 }
 .darktheme #wb_Card2,
 .darktheme #wb_Card1,

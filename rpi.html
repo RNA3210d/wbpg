@@ -75,7 +75,7 @@ $(window).on('load', function()
 <a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
 <div id="wb_Text2">
 <span style="color:#000000;">© 2024 NVN | Personal Webpage</span></div>
-<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" name="" value="Dark/Light">
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" onmouseenter="AnimateCss('Button4', 'animate-neon-text-shadow', 0, 3000);return false;" onmouseleave="AnimateCss('Button4', '', 0, 500);return false;" name="" value="Dark/Light">
 </div>
 </div>
 
@@ -142,7 +142,7 @@ Graphics:
   Device-2: bcm2835-hdmi driver: N/A bus-ID: N/A chip-ID: brcm:soc
     class-ID: hdmi
   Display: server: No display server data found. Headless machine?
-    tty: 120x50
+    tty: 120x30
   API: OpenGL Message: GL data unavailable in console. Try -G --display
 Audio:
   Device-1: bcm2835-hdmi driver: N/A bus-ID: N/A chip-ID: brcm:soc
@@ -154,15 +154,8 @@ Network:
   Device-2: Microchip (formerly SMSC) SMSC9512/9514 Fast Ethernet Adapter
     type: USB driver: smsc95xx bus-ID: 1-1.1:3 chip-ID: 0424:ec00 class-ID: ff00
   IF: eth0 state: up speed: 100 Mbps duplex: full mac: <filter>
-Bluetooth:
-  Device-1: pl011 driver: uart_pl011 bus-ID: N/A chip-ID: arm:3f201000
-    class-ID: serial
-  Report: hciconfig ID: hci0 rfk-id: 0 state: up address: <filter> bt-v: 2.1
-    lmp-v: 4.1 sub-v: 2209 hci-v: 4.1 rev: 1fc
-  Info: acl-mtu: 1021:8 sco-mtu: 64:1 link-policy: rswitch sniff
-    link-mode: peripheral accept
 Drives:
-  Local Storage: total: 29.72 GiB used: 1.22 GiB (4.1%)
+  Local Storage: total: 29.72 GiB used: 1.23 GiB (4.1%)
   ID-1: /dev/mmcblk0 maj-min: 179:0 vendor: SanDisk model: SC32G
     size: 29.72 GiB block-size: physical: 512 B logical: 512 B type: SSD
     serial: <filter> scheme: MBR
@@ -175,12 +168,12 @@ Partition:
 Swap:
   Alert: No swap data was found.
 Sensors:
-  System Temperatures: cpu: 45.1 C mobo: N/A
+  System Temperatures: cpu: 50.5 C mobo: N/A
   Fan Speeds (RPM): N/A
 Info:
-  Processes: 103 Uptime: 12h 23m Memory: 959.5 MiB used: 125.9 MiB (13.1%)
+  Processes: 106 Uptime: 28m Memory: 959.5 MiB used: 142.7 MiB (14.9%)
   Init: systemd v: 252 target: graphical (5) default: graphical tool: systemctl
-  Compilers: N/A Packages: pm: dpkg pkgs: 443 libs: 258 tools: apt,apt-get
+  Compilers: N/A Packages: pm: dpkg pkgs: 444 libs: 258 tools: apt,apt-get
   Shell: Bash v: 5.2.15 running-in: pty pts/0 (SSH) inxi: 3.3.26</textarea>
 <a id="Button1" href="https://linux-hardware.org/?probe=0022401c37">HW Probe link</a>
 </div>
