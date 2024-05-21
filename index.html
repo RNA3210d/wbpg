@@ -48,6 +48,7 @@ $(document).ready(function()
    $('#Banner2').addClass('visibility-hidden');
    $('#Banner3').addClass('visibility-hidden');
    $('#wb_Card4').addClass('visibility-hidden');
+   $('#SnapScroll1').addClass('visibility-hidden');
    function onScrollLayoutGrid1()
    {
       var $obj = $("#wb_LayoutGrid1");
@@ -598,6 +599,30 @@ $(document).ready(function()
          }
       });
    }
+   function onScrollSnapScroll1()
+   {
+      var $obj = $("#SnapScroll1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('SnapScroll1', 'puff-in', 0, 2000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('SnapScroll1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#SnapScroll1').inViewPort(true))
+   {
+      $('#SnapScroll1').addClass("in-viewport");
+   }
+   onScrollSnapScroll1();
+   $(window).scroll(function(event)
+   {
+      onScrollSnapScroll1();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()

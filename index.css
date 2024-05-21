@@ -164,7 +164,7 @@ body {
 #wb_LayoutGrid3 {
    background-attachment: scroll;
    background-color: transparent;
-   background-image: url('images/Lofi-Desktop-Man-Studying.webp');
+   background-image: url('images/Relaxed_Mario.png');
    background-position: left center;
    background-repeat: space;
    background-size: cover;
@@ -667,7 +667,7 @@ body {
    border-top-right-radius: 12px;
 }
 #wb_ThemeableButton1 .ui-button {
-   background-image: linear-gradient(315deg, #CCCCFF 0%, #A4CCFF 19%, #CB9AFF 41%, #9966FF 64%, #9ACCFF 83%, #CCCCFF 100%);
+   background-image: linear-gradient(315deg, #005CBF 0%, #1FD6DC 75%, #03D4A8 100%);
    border: 1px solid #CCCCCC;
    color: #FFFFFF;
 }
@@ -1601,7 +1601,7 @@ body {
    font-size: 19px;
    font-style: normal;
    font-weight: normal;
-   margin: -40px 20px 20px 20px;
+   margin: -32px 20px 12px 20px;
    padding: 12px 20px 12px 20px;
 }
 #Card3-card-item2 {
@@ -1610,7 +1610,7 @@ body {
    box-sizing: border-box;
    height: 0;
    line-height: 0;
-   margin: 0 20px 0 20px;
+   margin: 0 25px 0 25px;
 }
 #Card3-card-item3 {
    box-sizing: border-box;
@@ -1619,7 +1619,7 @@ body {
    font-size: 24px;
    font-style: normal;
    font-weight: bold;
-   margin: 20px 0 20px 20px;
+   margin: 12px 0 12px 20px;
    padding: 12px 20px 12px 20px;
 }
 #wb_Text9 {
@@ -3786,7 +3786,7 @@ Banner11 span:before {
    width: 100%;
 }
 #wb_Icon16 {
-   background-image: linear-gradient(to top, #CCCCFF 0%, #9ACCFF 17%, #9966FF 36%, #CB9AFF 58%, #A4CCFF 81%, #CCCCFF 100%);
+   background-image: linear-gradient(to top, #3B679E 0%, #2B88D9 50%, #207CCA 51%, #7DB9E8 100%);
    border: 2px solid #FFFFFF;
    border-radius: 50%;
    display: inline-block;
@@ -3805,6 +3805,10 @@ Banner11 span:before {
    right: 0;
    top: 0;
    z-index: 1;
+}
+#wb_Icon16:hover {
+   background-image: linear-gradient(to top, #CCCCFF 0%, #9ACCFF 17%, #9966FF 36%, #CB9AFF 58%, #A4CCFF 81%, #CCCCFF 100%);
+   border: 2px solid #FFFFFF;
 }
 #Icon16 {
    height: 24px;
@@ -3968,7 +3972,7 @@ Banner12 span:before {
    font-size: 107px;
    font-style: normal;
    font-weight: bold;
-   margin: 10px 20px 0 20px;
+   margin: 9px 20px 0 20px;
    padding: 0;
 }
 #Card4-card-item1 {
@@ -3978,7 +3982,7 @@ Banner12 span:before {
    font-size: 19px;
    font-style: normal;
    font-weight: normal;
-   margin: -40px 20px 20px 20px;
+   margin: -30px 20px 12px 20px;
    padding: 12px 20px 12px 20px;
 }
 #Card4-card-item2 {
@@ -3987,7 +3991,11 @@ Banner12 span:before {
    box-sizing: border-box;
    height: 0;
    line-height: 0;
-   margin: 0 20px 0 20px;
+   margin: 0 25px 0 25px;
+}
+#wb_Card4:hover #Card4-card-item2 {
+   color: #F49100;
+   transition: color 500ms linear 0ms;
 }
 #Card4-card-item3 {
    box-sizing: border-box;
@@ -3996,7 +4004,7 @@ Banner12 span:before {
    font-size: 24px;
    font-style: normal;
    font-weight: bold;
-   margin: 20px 0 20px 20px;
+   margin: 12px 0 12px 20px;
    padding: 12px 20px 12px 20px;
 }
 #wb_Text23 {
@@ -4448,6 +4456,12 @@ body {
    padding: 0;
 }
 #wb_LayoutGrid3 {
+   background-attachment: scroll;
+   background-color: transparent;
+   background-image: url('images/Lofi-Desktop-Man-Studying.webp');
+   background-position: left center  !important;
+   background-repeat: space;
+   background-size: cover;
    display: table;
    visibility: visible;
 }
@@ -4461,8 +4475,8 @@ body {
    padding: 0;
 }
 #CardContainer1 {
-   display: flex;
-   visibility: visible;
+   display: none;
+   visibility: hidden;
 }
 #wb_Card2 {
    align-self: auto;
@@ -5939,6 +5953,10 @@ body {
    line-height: 0;
    margin: 0 20px 0 20px;
 }
+#wb_Card4:hover #Card4-card-item2 {
+   color: #F49100;
+   transition: color 500ms linear 0ms;
+}
 #Card4-card-item3 {
    box-sizing: border-box;
    color: #CAE9C0;
@@ -6006,6 +6024,12 @@ body {
    padding: 0;
 }
 #wb_LayoutGrid3 {
+   background-attachment: scroll;
+   background-color: transparent;
+   background-image: url('images/Lofi-Desktop-Man-Studying.webp');
+   background-position: left center  !important;
+   background-repeat: space;
+   background-size: cover;
    display: table;
    visibility: visible;
 }
@@ -7496,6 +7520,10 @@ body {
    height: 0;
    line-height: 0;
    margin: 0 20px 0 20px;
+}
+#wb_Card4:hover #Card4-card-item2 {
+   color: #F49100;
+   transition: color 500ms linear 0ms;
 }
 #Card4-card-item3 {
    box-sizing: border-box;
