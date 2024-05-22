@@ -731,6 +731,154 @@ Banner3 span:before {
    font-weight: normal;
    margin: 0;
 }
+#Article5 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   display: inline-block;
+   font-family: "Exo 2";
+   font-size: 15px;
+   font-weight: normal;
+   line-height: 1.2;
+   margin: 0;
+   position: relative;
+   text-align: left;
+   width: 100%;
+}
+#Article5 .blogitem {
+   margin-bottom: 6px;
+   padding: 2px;
+   text-align: left;
+}
+#Article5 .blogdate {
+   color: #000000;
+   font-family: "Exo 2";
+   font-size: 13px;
+   font-style: normal;
+   font-weight: bold;
+   text-decoration: none;
+}
+#Article5 .blogsubject {
+   color: #0F6FC6;
+   font-family: "Exo 2";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: none;
+}
+#Article5 .blogcomments {
+   color: #000000;
+   font-family: "Exo 2";
+   font-size: 15px;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+}
+#Article5 .blogsubject a:link,
+#Article5 .blogsubject a:visited,
+#Article5 .blogsubject a:hover {
+   color: inherit;
+   text-decoration: inherit;
+}
+#Article5 .blogcomments a:link,
+#Article5 .blogcomments a:visited,
+#Article5 .blogcomments a:hover {
+   color: inherit;
+   text-decoration: inherit;
+}
+#Article5 .blogcomments {
+   text-decoration: none;
+}
+#Article5 .no-thumb {
+   display: none;
+}
+#Article5 .blogbutton {
+   display: none  !important;
+}
+#Article5 .blogitem {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   background-color: transparent;
+   box-sizing: border-box;
+   display: inline-block;
+   padding: 0;
+   width: 100%;
+}
+#Article5 .blogblock {
+   border: 1px solid #cccccc;
+   -moz-border-radius: 4px;
+   -moz-box-sizing: border-box;
+   -webkit-border-radius: 4px;
+   -webkit-box-sizing: border-box;
+   background-color: #EEEEEE;
+   border-radius: 4px;
+   box-sizing: border-box;
+   display: inline-block;
+   padding: 10px;
+   width: 100%;
+}
+#Article5 .blogsubject {
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   background-color: #EEEEEE;
+   border: 1px solid #cccccc;
+   border-radius: 4px;
+   display: block;
+   margin: 0 0 6px 0;
+   padding: 10px;
+}
+#Article5 .blogtext {
+   display: inline-block;
+   height: 100%;
+}
+#Article5 .blogthumb {
+   -moz-border-radius: 4px;
+   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -webkit-border-radius: 4px;
+   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+   -webkit-transition: all 0.2s ease-in-out;
+   background-color: #FFFFFF;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
+   display: inline-block;
+   float: right;
+   margin: 5px;
+   padding: 4px;
+   transition: all 0.2s ease-in-out;
+}
+#Article5 .blogthumb img {
+   border-width: 0;
+   height: auto;
+   margin: 0px 0px 0px 0px;
+   vertical-align: middle;
+   width: 120px;
+}
+#Article5 .blogbutton {
+   color: #000000;
+   cursor: pointer;
+   font-family: Exo 2;
+   font-size: 15px;
+   margin-top: 6px;
+   text-decoration: underline;
+}
+#Article5 .blogdate,
+#Article5 .blogcomments {
+   display: none;
+}
+#Article5 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   font-family: "Exo 2";
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+}
 #Button4 {
    height: 24px;
    left: 1093px;
@@ -738,6 +886,9 @@ Banner3 span:before {
    top: 11px;
    width: 96px;
    z-index: 3;
+}
+#Article5 {
+   overflow: hidden;
 }
 #Article4 {
    overflow: hidden;
@@ -762,7 +913,7 @@ Banner3 span:before {
    position: absolute;
    top: 98px;
    width: 1198px;
-   z-index: 10;
+   z-index: 11;
 }
 #Article1 {
    overflow: hidden;
@@ -801,16 +952,16 @@ Banner3 span:before {
    position: relative;
    text-align: center;
    width: 100%;
-   z-index: 11;
+   z-index: 12;
 }
 #Layer3 {
    display: inline-block;
    float: left;
-   height: 1099px;
+   height: 1599px;
    position: relative;
    text-align: left;
    width: 100%;
-   z-index: 12;
+   z-index: 13;
 }
 #Layer1_Container {
    margin-left: auto;
@@ -1078,6 +1229,36 @@ body {
 #Article4 .visible-col1 {
    display: block;
 }
+#Article5 {
+   display: block;
+   visibility: visible;
+}
+#Article5 {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article5 .blogdate {
+   font-family: "Exo 2";
+   font-size: 13px;
+}
+#Article5 .blogsubject {
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Article5 .blogcomments {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article5 .blogbutton {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article5 .blogcolumn {
+   width: 100%;
+}
+#Article5 .visible-col1 {
+   display: block;
+}
 }
 @media only screen and (max-width: 479px) {
 div#container {
@@ -1313,6 +1494,36 @@ body {
    width: 100%;
 }
 #Article4 .visible-col1 {
+   display: block;
+}
+#Article5 {
+   display: block;
+   visibility: visible;
+}
+#Article5 {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article5 .blogdate {
+   font-family: "Exo 2";
+   font-size: 13px;
+}
+#Article5 .blogsubject {
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Article5 .blogcomments {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article5 .blogbutton {
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Article5 .blogcolumn {
+   width: 100%;
+}
+#Article5 .visible-col1 {
    display: block;
 }
 }
