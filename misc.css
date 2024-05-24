@@ -879,6 +879,89 @@ Banner3 span:before {
    font-weight: normal;
    margin: 0;
 }
+#NewsFeedTicker1 {
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid #CCCCCC;
+   border-radius: 0px;
+   margin: 0;
+   text-align: left;
+}
+#NewsFeedTicker1 .headline {
+   color: #000000;
+   font-family: "Exo 2";
+   font-size: 11px;
+   font-style: normal;
+   font-weight: normal;
+   height: 100%;
+   margin: 0 0 8px 0;
+   overflow: hidden;
+   padding: 8px;
+   position: absolute;
+   text-decoration: none;
+   top: 110%;
+}
+#NewsFeedTicker1 h4 {
+   color: #000000;
+   display: block;
+   font-family: "Exo 2";
+   font-size: 13px;
+   font-style: normal;
+   font-weight: bold;
+   margin: 0;
+   margin-top: 0;
+   text-decoration: none;
+}
+#NewsFeedTicker1 h4 a {
+   color: #000000;
+   text-decoration: none;
+}
+#NewsFeedTicker1 .publication-date {
+   color: #000000;
+   font-family: "Exo 2";
+   font-size: 11px;
+   font-style: normal;
+   font-weight: normal;
+   margin-bottom: 0px;
+   text-decoration: none;
+}
+#NewsFeedTicker1 .news-wait {
+   height: 32px;
+   left: 50%;
+   margin-left: -10px;
+   position: absolute;
+   top: 30%;
+   width: 32px;
+   z-index: 4;
+}
+#NewsFeedTicker1 .pager {
+   margin: 1px 0px 1px 0px;
+   padding: 8px 0 0 8px;
+}
+#NewsFeedTicker1 .page-number {
+   background-color: #FFFFFF;
+   border: 1px #93BEEB solid;
+   color: #000000;
+   cursor: pointer;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: normal;
+   margin-right: 2px;
+   padding: 0px 2px 0px 2px;
+   text-decoration: none;
+}
+#NewsFeedTicker1 .active {
+   background-color: #000000;
+   color: #FFFFFF;
+}
+#NewsFeedTicker1 {
+   box-sizing: border-box;
+   display: block;
+   float: left;
+   height: 129px;
+   position: relative;
+   width: 100%;
+}
 #Button4 {
    height: 24px;
    left: 1093px;
@@ -908,12 +991,10 @@ Banner3 span:before {
    overflow: hidden;
 }
 #Banner3 {
+   display: inline-block;
    height: 77px;
-   left: 0px;
-   position: absolute;
-   top: 98px;
    width: 1198px;
-   z-index: 11;
+   z-index: 5;
 }
 #Article1 {
    overflow: hidden;
@@ -934,6 +1015,11 @@ Banner3 span:before {
    width: 328px;
    z-index: 2;
 }
+#NewsFeedTicker1 {
+   height: 129px;
+   overflow: hidden;
+   z-index: 6;
+}
 #Layer1 {
    clear: left;
    display: block;
@@ -952,7 +1038,7 @@ Banner3 span:before {
    position: relative;
    text-align: center;
    width: 100%;
-   z-index: 12;
+   z-index: 13;
 }
 #Layer3 {
    display: inline-block;
@@ -961,7 +1047,7 @@ Banner3 span:before {
    position: relative;
    text-align: left;
    width: 100%;
-   z-index: 13;
+   z-index: 14;
 }
 #Layer1_Container {
    margin-left: auto;
@@ -1060,8 +1146,7 @@ body {
    width: 96px;
 }
 #Layer2 {
-   background-color: #FBFBFB;
-   background-image: none;
+   background-color: transparent;
    background-image: none;
    display: inline-flex;
    height: 87px;
@@ -1187,13 +1272,11 @@ body {
    display: block;
 }
 #Banner3 {
-   display: block;
+   display: inline-block;
    height: 79px;
-   left: 80px;
    margin: 0;
-   top: 98px;
    visibility: visible;
-   width: 320px;
+   width: 387px;
 }
 #Banner3 span {
    height: 27px;
@@ -1454,11 +1537,9 @@ body {
    display: block;
 }
 #Banner3 {
-   display: block;
+   display: inline-block;
    height: 79px;
-   left: 0px;
    margin: 0;
-   top: 118px;
    visibility: visible;
    width: 320px;
 }

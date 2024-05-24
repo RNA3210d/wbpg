@@ -9,10 +9,15 @@
 <link href="xtra.css" rel="stylesheet">
 <script src="wb.cookie.min.js"></script>
 <script src="jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="glight/css/glightbox.min.css">
+<link rel="stylesheet" href="glight/css/plyr.css">
+<link rel="stylesheet" href="glight/css/plyr.min.css">
+<script src="glight/js/glightbox.min.js"></script>
 <script src="wwb18.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
+GLightbox({selector: "a[data-rel^='PhotoGallery1']", autoplayVideos:true});
    if (hasCookie('darktheme'))
    {
       document.documentElement.classList.add('darktheme');
@@ -79,6 +84,8 @@ $(window).on('load', function()
 </div>
 <div id="container">
 
+<div id="wb_Text3">
+<p>Double click to edit</p></div>
 </div>
 <div id="Layer2">
 <div id="Banner3"><span>For future reference... (Work in progress)</span></div>
@@ -87,6 +94,23 @@ $(window).on('load', function()
 <div id="Banner7"><span>Relevant XKCD (#1806)</span></div>
 <div id="wb_Image2">
 <img src="images/322e2.png" loading="lazy" id="Image2" alt="" title="Relevant XKCD" width="1200" height="1679">
+</div>
+<div id="Banner8"><span>Current setup on laptop</span></div>
+<div id="wb_PhotoGallery1">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/Screenshot_24-May_14-40-32_2787.png" data-rel="PhotoGallery1" title="From JaKooLit&apos;s Hyprland configs"><img alt="Get the configs here (for ARCH LINUX): https://github.com/JaKooLit/Arch-Hyprland" src="images/tn_Screenshot_24-May_14-40-32_2787.png" loading="lazy" class="image" title="From JaKooLit&apos;s Hyprland configs" width="594" height="334"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/Screenshot_24-May_14-32-03_23315.webp" data-rel="PhotoGallery1" title="Get the configs here (for ARCH LINUX): https://github.com/JaKooLit/Arch-Hyprland"><img alt="" src="images/tn_Screenshot_24-May_14-32-03_23315.webp" loading="lazy" class="image" title="Get the configs here (for ARCH LINUX): https://github.com/JaKooLit/Arch-Hyprland" width="594" height="334"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+   </div>
+</div>
+</div>
+<div id="wb_Text4">
+<p>Get the configs here (for ARCH LINUX): https://github.com/JaKooLit/Arch-Hyprland</p>
 </div>
 <div id="Banner2"><span>MPV Config</span></div>
 <textarea name="TextArea1" id="TextArea3" rows="12" cols="146" readonly spellcheck="false">
@@ -968,6 +992,9 @@ OPTIONS=(!debug)</textarea>
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
 }</textarea>
+<div id="wb_Image3">
+<img src="images/Screenshot_24-May_14-40-32_2787.png" id="Image3" alt="" width="1200" height="675">
+</div>
 </div>
 <div id="preloader"></div>
 </body>

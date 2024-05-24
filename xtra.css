@@ -303,6 +303,27 @@ Banner4 span:before {
    opacity: .3;
    transform: scaleY(-1);
 }
+#wb_Text3 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text3 {
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 16px;
+}
+#wb_Text3 p,
+#wb_Text3 ul {
+   margin: 0;
+   padding: 0;
+}
 #Banner5 {
    background-color: transparent;
    background-image: none;
@@ -461,6 +482,127 @@ Banner7 span:before {
    opacity: .3;
    transform: scaleY(-1);
 }
+#PhotoGallery1 {
+   box-sizing: border-box;
+   display: table;
+   font-size: 0;
+   height: 100%;
+   margin: 0;
+   table-layout: fixed;
+   width: 100%;
+}
+#PhotoGallery1 .thumbnails {
+   margin: 0;
+}
+#PhotoGallery1 .thumbnail {
+   box-sizing: border-box;
+   float: left;
+   min-height: 1px;
+   padding: 3px 3px 3px 3px;
+   position: relative;
+   text-align: center;
+   vertical-align: top;
+   width: 50%;
+}
+#PhotoGallery1 .thumbnail img {
+   border: 0px #000000 solid;
+   border-radius: 0px;
+   box-sizing: border-box;
+   display: block;
+   height: auto;
+   max-width: 100%;
+   width: 100%;
+}
+#PhotoGallery1 .clearfix:before,
+#PhotoGallery1 .clearfix:after,
+#PhotoGallery1 .thumbnails:before,
+#PhotoGallery1 .thumbnails:after {
+   content: " ";
+   display: table;
+}
+#PhotoGallery1 .clearfix:after,
+#PhotoGallery1 .thumbnails:after {
+   clear: both;
+}
+#PhotoGallery1 .visible-col3 {
+   display: none;
+}
+#Banner8 {
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #0F6FC6;
+   font-family: "Exo 2";
+   font-size: 27px;
+   font-style: normal;
+   font-weight: normal;
+   margin: 0;
+   text-align: left;
+   text-shadow: 0px 0px 14px rgba(153,215,239,1.00);
+}
+#Banner8 span {
+   display: block;
+   height: 27px;
+   margin: 19px 0 19px 0;
+}
+#Banner8 span:before,
+#Banner8 span:after {
+   display: block;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 63px;
+}
+Banner8 span:before {
+   content: "Current setup on laptop";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#wb_Image3 {
+   margin: 0;
+   vertical-align: top;
+}
+#Image3 {
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   display: block;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 679px;
+   padding: 0;
+   vertical-align: top;
+   width: 100%;
+}
+#wb_Text4 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text4 {
+   color: #000000;
+   font-family: Arial;
+   font-size: 19px;
+   font-weight: 400;
+   line-height: 21px;
+}
+#wb_Text4 p,
+#wb_Text4 ul {
+   margin: 0;
+   padding: 0;
+}
+#wb_Text4 {
+   box-sizing: border-box;
+   display: block;
+   margin: 0;
+   width: 100%;
+}
 #Button4 {
    height: 24px;
    left: 1093px;
@@ -473,13 +615,13 @@ Banner7 span:before {
    display: block;
    height: 522px;
    width: 100%;
-   z-index: 11;
+   z-index: 14;
 }
 #Banner1 {
    display: inline-block;
    height: 108px;
    width: 1149px;
-   z-index: 10;
+   z-index: 13;
 }
 #wb_Image1 {
    height: 74px;
@@ -493,13 +635,13 @@ Banner7 span:before {
    display: block;
    height: 204px;
    width: 100%;
-   z-index: 9;
+   z-index: 12;
 }
 #TextArea2 {
    display: block;
    height: 373px;
    width: 100%;
-   z-index: 13;
+   z-index: 16;
 }
 #wb_Image2 {
    display: inline-block;
@@ -513,35 +655,46 @@ Banner7 span:before {
    width: 1195px;
    z-index: 5;
 }
+#wb_Image3 {
+   display: inline-block;
+   height: auto;
+   width: 100%;
+   z-index: 21;
+}
 #TextArea5 {
    display: block;
    height: 406px;
    width: 100%;
-   z-index: 17;
+   z-index: 20;
 }
 #Banner2 {
    display: inline-block;
    height: 77px;
    width: 1149px;
-   z-index: 8;
+   z-index: 11;
 }
 #TextArea4 {
    display: block;
    height: 661px;
    width: 100%;
-   z-index: 15;
+   z-index: 18;
 }
 #Banner5 {
    display: inline-block;
    height: 77px;
    width: 1195px;
-   z-index: 14;
+   z-index: 17;
+}
+#wb_PhotoGallery1 {
+   display: inline-block;
+   width: 100%;
+   z-index: 9;
 }
 #Banner4 {
    display: inline-block;
    height: 110px;
    width: 1182px;
-   z-index: 12;
+   z-index: 15;
 }
 #Banner7 {
    display: inline-block;
@@ -561,7 +714,7 @@ Banner7 span:before {
    display: inline-block;
    height: 100px;
    width: 1195px;
-   z-index: 16;
+   z-index: 19;
 }
 #wb_Text2 {
    height: 27px;
@@ -570,6 +723,20 @@ Banner7 span:before {
    top: 59px;
    width: 328px;
    z-index: 2;
+}
+#wb_Text3 {
+   height: 15px;
+   left: 0px;
+   position: absolute;
+   top: 4231px;
+   width: 1200px;
+   z-index: 23;
+}
+#Banner8 {
+   display: inline-block;
+   height: 77px;
+   width: 1149px;
+   z-index: 8;
 }
 #Layer1 {
    clear: left;
@@ -590,7 +757,7 @@ Banner7 span:before {
    text-align: center;
    vertical-align: top;
    width: 100%;
-   z-index: 19;
+   z-index: 24;
 }
 #Layer3 {
    display: inline-block;
@@ -601,7 +768,7 @@ Banner7 span:before {
    text-align: left;
    vertical-align: top;
    width: 1200px;
-   z-index: 20;
+   z-index: 25;
 }
 #Layer1_Container {
    margin-left: auto;
@@ -802,6 +969,23 @@ body {
    height: 27px;
    margin: 25px 0 25px 0;
 }
+#wb_Text3 {
+   display: inline;
+   height: 6px;
+   left: 0px;
+   top: 1692px;
+   visibility: visible;
+   width: 480px;
+}
+#wb_Text3 {
+   font-family: Arial;
+   font-size: 11px;
+   font-weight: 400;
+   line-height: 12px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
 #Banner5 {
    display: inline-block;
    height: 79px;
@@ -859,6 +1043,49 @@ body {
 #Banner7 span {
    height: 27px;
    margin: 25px 0 25px 0;
+}
+#wb_PhotoGallery1 {
+   display: block;
+   margin: 0;
+   visibility: visible;
+   width: 100%;
+}
+#PhotoGallery1 .thumbnail {
+   width: 50%;
+}
+#PhotoGallery1 .visible-col3 {
+   display: none;
+}
+#Banner8 {
+   display: inline-block;
+   height: 79px;
+   margin: 0;
+   visibility: visible;
+   width: 308px;
+}
+#Banner8 span {
+   height: 27px;
+   margin: 25px 0 25px 0;
+}
+#wb_Image3 {
+   display: block;
+   margin: 0;
+   padding: 0;
+   visibility: visible;
+   width: 100%;
+}
+#wb_Text4 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text4 {
+   font-family: Arial;
+   font-size: 11px;
+   font-weight: 400;
+   line-height: 12px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
 }
 }
 @media only screen and (max-width: 479px) {
@@ -1053,6 +1280,23 @@ body {
    height: 27px;
    margin: 25px 0 25px 0;
 }
+#wb_Text3 {
+   display: inline;
+   height: 4px;
+   left: 0px;
+   top: 1128px;
+   visibility: visible;
+   width: 320px;
+}
+#wb_Text3 {
+   font-family: Arial;
+   font-size: 11px;
+   font-weight: 400;
+   line-height: 12px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
 #Banner5 {
    display: inline-block;
    height: 79px;
@@ -1111,6 +1355,49 @@ body {
    height: 27px;
    margin: 25px 0 25px 0;
 }
+#wb_PhotoGallery1 {
+   display: block;
+   margin: 0;
+   visibility: visible;
+   width: 100%;
+}
+#PhotoGallery1 .thumbnail {
+   width: 50%;
+}
+#PhotoGallery1 .visible-col3 {
+   display: none;
+}
+#Banner8 {
+   display: inline-block;
+   height: 79px;
+   margin: 0;
+   visibility: visible;
+   width: 307px;
+}
+#Banner8 span {
+   height: 27px;
+   margin: 25px 0 25px 0;
+}
+#wb_Image3 {
+   display: block;
+   margin: 0;
+   padding: 0;
+   visibility: visible;
+   width: 100%;
+}
+#wb_Text4 {
+   display: block;
+   visibility: visible;
+}
+#wb_Text4 {
+   font-family: Arial;
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 13px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
 }
 .darktheme body {
    background-color: #000000;
@@ -1120,6 +1407,7 @@ body {
 .darktheme #TextArea2,
 .darktheme #TextArea3,
 .darktheme #TextArea4,
-.darktheme #TextArea5 {
+.darktheme #TextArea5,
+.darktheme #wb_Text4 {
    filter: invert(100%);
 }
