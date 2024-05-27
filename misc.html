@@ -48,6 +48,33 @@ $(document).ready(function()
       onScrollLayer1();
    });
    $("#NewsFeedTicker1").newsviewer({ mode: 'paginate', numPerPage: 1, sortOrder: 0, dataSource: 'rss', url: 'https://www.nasa.gov/feed/', target: '_self', dateFormat: 'dd/mm/yy', maxItems: 12});
+   $('#Blog1').each(function()
+   {
+      var currentPage = 0;
+      var numPerPage = 4;
+      var $blog = $(this);
+      var repaginate = function()
+      {
+         $blog.find('.blogitem').hide()
+              .slice(currentPage * numPerPage, (currentPage + 1) * numPerPage)
+              .show();
+      };
+      var numRows = $blog.find('.blogitem').length;
+      var numPages = Math.ceil(numRows / numPerPage);
+      var $pager = $('<div class="pager"></div>');
+      for (var page = 0; page < numPages; page++)
+      {
+         $('<span class="page-number"></span>').text(page + 1)
+         .bind('click', {newPage: page}, function(event)
+         {
+            currentPage = event.data['newPage'];
+            repaginate();
+            $(this).addClass('active').siblings().removeClass('active');
+         }).appendTo($pager).addClass('clickable');
+      }
+      $pager.prependTo($blog).find('span.page-number:first').addClass('active');
+      repaginate();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -90,9 +117,64 @@ $(window).on('load', function()
 <div id="Layer3">
 <div id="NewsFeedTicker1">
 </div>
-<div id="Article1">
+<div id="Blog1">
 <div class="blogitem">
-   <span class="blogsubject">Sunday, May 19, 2024 - <a href="https://www.youtube.com/watch?v=VB12a87D-Rs">Bryan Kearney & Plumb - All Over Again (God's Love)</a></span>
+   <span class="blogsubject">Thursday, May 23, 2024 - <a href="https://www.amazon.com/1-5-Tungsten-Magnesium-Cube-Set/product-reviews/B08WFSL8YQ"> Tungsten cube cured my mortality</a></span>
+   <div class="blogblock">
+   <div class="blogthumb"><a href="https://www.amazon.com/1-5-Tungsten-Magnesium-Cube-Set/product-reviews/B08WFSL8YQ"><img alt=" Tungsten cube cured my mortality" src="images/tg.jpg" loading="lazy"></a></div>
+   <p class="blogtext"><span style="color:#000000;">All the people here who bought this wireless tungsten cube to admire its surreal heft have precisely the wrong mindset. I, in my exalted wisdom and unbridled ambition, bought this cube to become fully accustomed to the intensity of its density, to make its weight bearable and in fact normal to me, so that all the world around me may fade into a fluffy arena of gravitational inconsequence. And it has worked, to profound success. I have carried the tungsten with me, have grown attached to the downward pull of its small form, its desire to be one with the floor. This force has become so normal to me that lifting any other object now feels like lifting cotton candy, or a fluffy pillow. Big burly manly men who pump iron now seem to me as little children who raise mere aluminum.<br>
+<br>
+I can hardly remember the days before I became a man of tungsten. How distant those days seem now, how burdened by the apparent heaviness of everyday objects. I laugh at the philistines who still operate in a world devoid of tungsten, their shoulders thin and unempowered by the experience of bearing tungsten. Ha, what fools, blissful in their ignorance, anesthetized by their lack of meaningful struggle, devoid of passion.<br>
+<br>
+Nietzsche once said that a man who has a why can bear almost any how. But a man who has a tungsten cube can bear any object less dense, and all this talk of why and how becomes unnecessary.<br>
+<br>
+Schopenhauer once said that every man takes the limits of his own field of vision for the limits of the world. Tungsten expands the limits of a man’s field of vision by showing him an example of increased density, in comparison to which the everyday objects to which he was formerly accustomed gain a light and airy quality. Who can lament the tragedy of life, when surrounded by such lightweight objects? Who can cry in a world of styrofoam and cushions?<br>
+<br>
+Have you yet understood? This is no ordinary metal. In this metal is the alchemical potential to transform your world, by transforming your expectations. Those who have not yet held the cube in their hands and mouths will not understand, for they still live in a world of normal density, like Plato’s cave dwellers. Those who have opened their mind to the density of tungsten will shift their expectations of weight and density accordingly.<br>
+<br>
+To give this cube a rating of anything less than five stars would be to condemn life itself. Who am I, as a mere mortal, to judge the most compact of all affordable materials? No. I say gratefully to whichever grand being may have created this universe: good job on the tungsten. It sure is dense.<br>
+<br>
+I sit here with my tungsten cube, transcendent above death itself. For insofar as this tungsten cube will last forever, I am in the presence of immortality.<br>
+</span>    
+   <a class="blogbutton" href="https://www.amazon.com/1-5-Tungsten-Magnesium-Cube-Set/product-reviews/B08WFSL8YQ"></a>
+   </p>
+   </div>
+</div>
+<div class="clearfix visible-col1"></div>
+<div class="blogitem">
+   <span class="blogsubject">Wednesday, May 22, 2024 - <a href="https://www.washingtonpost.com/wp-srv/national/longterm/unabomber/manifesto.text.htm">Industrial Society and Its Future</a></span>
+   <div class="blogblock">
+   <div class="no-thumb"></div>
+   <p class="blogtext"><span style="color:#000000;">&quot;We give up a piece of ourselves whenever we adjust to conform to society's standards. That, and we're too plugged in. We're letting technology take over our lives, willingly.&quot;<br>
+- Ted Kaczynski, The Unabomber</span><span style="color:#000000;"><br>
+</span>    
+   <a class="blogbutton" href="https://www.washingtonpost.com/wp-srv/national/longterm/unabomber/manifesto.text.htm"></a>
+   </p>
+   </div>
+</div>
+<div class="clearfix visible-col1"></div>
+<div class="blogitem">
+   <span class="blogsubject">Monday, May 20, 2024 - Previous homepage intro: I own a musket for home defense</span>
+   <div class="blogblock">
+   <div class="blogthumb"><a href="images/musket.jpg"><img alt="Previous homepage intro: I own a musket for home defense" src="images/musket.jpg" loading="lazy"></a></div>
+   <p class="blogtext"><span style="color:#000000;">I own a musket for home defense, since that's what the founding fathers intended. Four ruffians break into my house. &quot;What the devil?&quot; As I grab my powdered wig and Kentucky rifle. Blow a golf ball sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbors dog. I have to resort to the cannon mounted at the top of the stairs loaded with grape shot, &quot;Tally ho lads&quot; the grape shot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He bleeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended....</span>    
+   <a class="blogbutton" href=""></a>
+   </p>
+   </div>
+</div>
+<div class="clearfix visible-col1"></div>
+<div class="blogitem">
+   <span class="blogsubject">Sunday, May 19, 2024 - <a href="https://www.youtube.com/watch?v=REjUkEj1O_0">Jordan Peterson on Slaying the Dragon </a></span>
+   <div class="blogblock">
+   <div class="no-thumb"></div>
+   <p class="blogtext"><span style="color:#000000;">This is the first Big Ideas Lecture performed by Jordan Peterson, back in 2002. He reads a book for very young children by Jack Kent called &quot;There's no Such Thing as a Dragon&quot; to a group of University of Toronto alumni (most over 65). He explains what it means: Pay attention -- or else.</span>    
+   <a class="blogbutton" href="https://www.youtube.com/watch?v=REjUkEj1O_0"></a>
+   </p>
+   </div>
+</div>
+<div class="clearfix visible-col1"></div>
+<div class="blogitem">
+   <span class="blogsubject">Sunday, May 19, 2024 - <a href="https://www.youtube.com/watch?v=VB12a87D-Rs">Bryan Kearney & Plumb - All Over Again</a></span>
    <div class="blogblock">
    <div class="no-thumb"></div>
    <p class="blogtext"><span style="color:#000000;">I call your name<br>
@@ -115,69 +197,9 @@ All over again for you<br>
 I am reckless for your heart<br>
 Let me feel, let me heal the deepest part<br>
 Again, and again and again <br>
-All over again for you</span>    
-   <a class="blogbutton" href="https://www.youtube.com/watch?v=VB12a87D-Rs">Read more</a>
-   </p>
-   </div>
-</div>
-<div class="clearfix visible-col1"></div>
-</div>
-<div id="Article2">
-<div class="blogitem">
-   <span class="blogsubject">Sunday, May 19, 2024 - <a href="https://www.youtube.com/watch?v=REjUkEj1O_0">Jordan Peterson on Slaying the Dragon </a></span>
-   <div class="blogblock">
-   <div class="no-thumb"></div>
-   <p class="blogtext"><span style="color:#000000;">This is the first Big Ideas Lecture performed by Jordan Peterson, back in 2002. He reads a book for very young children by Jack Kent called &quot;There's no Such Thing as a Dragon&quot; to a group of University of Toronto alumni (most over 65). He explains what it means: Pay attention -- or else.</span>    
-   <a class="blogbutton" href="https://www.youtube.com/watch?v=REjUkEj1O_0">Read more</a>
-   </p>
-   </div>
-</div>
-<div class="clearfix visible-col1"></div>
-</div>
-<div id="Article3">
-<div class="blogitem">
-   <span class="blogsubject">Monday, May 20, 2024 - Previous homepage intro: I own a musket for home defense</span>
-   <div class="blogblock">
-   <div class="blogthumb"><a href="images/musket.jpg"><img alt="Previous homepage intro: I own a musket for home defense" src="images/musket.jpg" loading="lazy"></a></div>
-   <p class="blogtext"><span style="color:#000000;">I own a musket for home defense, since that's what the founding fathers intended. Four ruffians break into my house. &quot;What the devil?&quot; As I grab my powdered wig and Kentucky rifle. Blow a golf ball sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbors dog. I have to resort to the cannon mounted at the top of the stairs loaded with grape shot, &quot;Tally ho lads&quot; the grape shot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He bleeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended....</span>    
-   <a class="blogbutton" href="">More</a>
-   </p>
-   </div>
-</div>
-<div class="clearfix visible-col1"></div>
-</div>
-<div id="Article4">
-<div class="blogitem">
-   <span class="blogsubject">Wednesday, May 22, 2024 - <a href="https://www.washingtonpost.com/wp-srv/national/longterm/unabomber/manifesto.text.htm">Industrial Society and Its Future</a></span>
-   <div class="blogblock">
-   <div class="no-thumb"></div>
-   <p class="blogtext"><span style="color:#000000;">&quot;We give up a piece of ourselves whenever we adjust to conform to society's standards. That, and we're too plugged in. We're letting technology take over our lives, willingly.&quot;<br>
-- Ted Kaczynski, The Unabomber</span>    
-   <a class="blogbutton" href="https://www.washingtonpost.com/wp-srv/national/longterm/unabomber/manifesto.text.htm"></a>
-   </p>
-   </div>
-</div>
-<div class="clearfix visible-col1"></div>
-</div>
-<div id="Article5">
-<div class="blogitem">
-   <span class="blogsubject">Wednesday, May 22, 2024 - <a href="https://www.amazon.com/1-5-Tungsten-Magnesium-Cube-Set/product-reviews/B08WFSL8YQ"> Tungsten cube cured my mortality</a></span>
-   <div class="blogblock">
-   <div class="blogthumb"><a href="https://www.amazon.com/1-5-Tungsten-Magnesium-Cube-Set/product-reviews/B08WFSL8YQ"><img alt=" Tungsten cube cured my mortality" src="images/tg.jpg" loading="lazy"></a></div>
-   <p class="blogtext"><span style="color:#000000;">All the people here who bought this wireless tungsten cube to admire its surreal heft have precisely the wrong mindset. I, in my exalted wisdom and unbridled ambition, bought this cube to become fully accustomed to the intensity of its density, to make its weight bearable and in fact normal to me, so that all the world around me may fade into a fluffy arena of gravitational inconsequence. And it has worked, to profound success. I have carried the tungsten with me, have grown attached to the downward pull of its small form, its desire to be one with the floor. This force has become so normal to me that lifting any other object now feels like lifting cotton candy, or a fluffy pillow. Big burly manly men who pump iron now seem to me as little children who raise mere aluminum.<br>
-<br>
-I can hardly remember the days before I became a man of tungsten. How distant those days seem now, how burdened by the apparent heaviness of everyday objects. I laugh at the philistines who still operate in a world devoid of tungsten, their shoulders thin and unempowered by the experience of bearing tungsten. Ha, what fools, blissful in their ignorance, anesthetized by their lack of meaningful struggle, devoid of passion.<br>
-<br>
-Nietzsche once said that a man who has a why can bear almost any how. But a man who has a tungsten cube can bear any object less dense, and all this talk of why and how becomes unnecessary.<br>
-<br>
-Schopenhauer once said that every man takes the limits of his own field of vision for the limits of the world. Tungsten expands the limits of a man’s field of vision by showing him an example of increased density, in comparison to which the everyday objects to which he was formerly accustomed gain a light and airy quality. Who can lament the tragedy of life, when surrounded by such lightweight objects? Who can cry in a world of styrofoam and cushions?<br>
-<br>
-Have you yet understood? This is no ordinary metal. In this metal is the alchemical potential to transform your world, by transforming your expectations. Those who have not yet held the cube in their hands and mouths will not understand, for they still live in a world of normal density, like Plato’s cave dwellers. Those who have opened their mind to the density of tungsten will shift their expectations of weight and density accordingly.<br>
-<br>
-To give this cube a rating of anything less than five stars would be to condemn life itself. Who am I, as a mere mortal, to judge the most compact of all affordable materials? No. I say gratefully to whichever grand being may have created this universe: good job on the tungsten. It sure is dense.<br>
-<br>
-I sit here with my tungsten cube, transcendent above death itself. For insofar as this tungsten cube will last forever, I am in the presence of immortality.</span>    
-   <a class="blogbutton" href="https://www.amazon.com/1-5-Tungsten-Magnesium-Cube-Set/product-reviews/B08WFSL8YQ"></a>
+All over again for you<br>
+</span>    
+   <a class="blogbutton" href="https://www.youtube.com/watch?v=VB12a87D-Rs"></a>
    </p>
    </div>
 </div>

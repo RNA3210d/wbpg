@@ -116,441 +116,6 @@ body {
    margin: 0;
    padding: 0;
 }
-#Article1 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   display: inline-block;
-   font-family: "Exo 2";
-   font-size: 15px;
-   font-weight: normal;
-   line-height: 1.2;
-   margin: 0;
-   position: relative;
-   text-align: left;
-   width: 100%;
-}
-#Article1 .blogitem {
-   margin-bottom: 6px;
-   padding: 2px;
-   text-align: left;
-}
-#Article1 .blogdate {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 13px;
-   font-style: normal;
-   font-weight: bold;
-   text-decoration: none;
-}
-#Article1 .blogsubject {
-   color: #0F6FC6;
-   font-family: "Exo 2";
-   font-size: 16px;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: none;
-}
-#Article1 .blogcomments {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 15px;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: underline;
-}
-#Article1 .blogsubject a:link,
-#Article1 .blogsubject a:visited,
-#Article1 .blogsubject a:hover {
-   color: inherit;
-   text-decoration: inherit;
-}
-#Article1 .blogcomments a:link,
-#Article1 .blogcomments a:visited,
-#Article1 .blogcomments a:hover {
-   color: inherit;
-   text-decoration: inherit;
-}
-#Article1 .blogcomments {
-   text-decoration: none;
-}
-#Article1 .no-thumb {
-   display: none;
-}
-#Article1 .blogitem {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   background-color: transparent;
-   box-sizing: border-box;
-   display: inline-block;
-   padding: 0;
-   width: 100%;
-}
-#Article1 .blogblock {
-   border: 1px solid #cccccc;
-   -moz-border-radius: 4px;
-   -moz-box-sizing: border-box;
-   -webkit-border-radius: 4px;
-   -webkit-box-sizing: border-box;
-   background-color: #EEEEEE;
-   border-radius: 4px;
-   box-sizing: border-box;
-   display: inline-block;
-   padding: 10px;
-   width: 100%;
-}
-#Article1 .blogsubject {
-   -moz-border-radius: 4px;
-   -webkit-border-radius: 4px;
-   background-color: #EEEEEE;
-   border: 1px solid #cccccc;
-   border-radius: 4px;
-   display: block;
-   margin: 0 0 6px 0;
-   padding: 10px;
-}
-#Article1 .blogtext {
-   display: inline-block;
-   height: 100%;
-}
-#Article1 .blogthumb {
-   -moz-border-radius: 4px;
-   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -webkit-border-radius: 4px;
-   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -webkit-transition: all 0.2s ease-in-out;
-   background-color: #FFFFFF;
-   border: 1px solid #ddd;
-   border-radius: 4px;
-   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
-   display: inline-block;
-   float: right;
-   margin: 5px;
-   padding: 4px;
-   transition: all 0.2s ease-in-out;
-}
-#Article1 .blogthumb img {
-   border-width: 0;
-   height: auto;
-   margin: 0px 0px 0px 0px;
-   vertical-align: middle;
-   width: 120px;
-}
-#Article1 .blogbutton {
-   color: #000000;
-   cursor: pointer;
-   font-family: Exo 2;
-   font-size: 15px;
-   margin-top: 6px;
-   text-decoration: underline;
-}
-#Article1 .blogdate,
-#Article1 .blogcomments {
-   display: none;
-}
-#Article1 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   font-family: "Exo 2";
-   font-style: normal;
-   font-weight: normal;
-   margin: 0;
-}
-#Article2 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   display: inline-block;
-   font-family: "Exo 2";
-   font-size: 15px;
-   font-weight: normal;
-   line-height: 1.2;
-   margin: 0;
-   position: relative;
-   text-align: left;
-   width: 100%;
-}
-#Article2 .blogitem {
-   margin-bottom: 6px;
-   padding: 2px;
-   text-align: left;
-}
-#Article2 .blogdate {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 13px;
-   font-style: normal;
-   font-weight: bold;
-   text-decoration: none;
-}
-#Article2 .blogsubject {
-   color: #0F6FC6;
-   font-family: "Exo 2";
-   font-size: 16px;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: none;
-}
-#Article2 .blogcomments {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 15px;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: underline;
-}
-#Article2 .blogsubject a:link,
-#Article2 .blogsubject a:visited,
-#Article2 .blogsubject a:hover {
-   color: inherit;
-   text-decoration: inherit;
-}
-#Article2 .blogcomments a:link,
-#Article2 .blogcomments a:visited,
-#Article2 .blogcomments a:hover {
-   color: inherit;
-   text-decoration: inherit;
-}
-#Article2 .blogcomments {
-   text-decoration: none;
-}
-#Article2 .no-thumb {
-   display: none;
-}
-#Article2 .blogitem {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   background-color: transparent;
-   box-sizing: border-box;
-   display: inline-block;
-   padding: 0;
-   width: 100%;
-}
-#Article2 .blogblock {
-   border: 1px solid #cccccc;
-   -moz-border-radius: 4px;
-   -moz-box-sizing: border-box;
-   -webkit-border-radius: 4px;
-   -webkit-box-sizing: border-box;
-   background-color: #EEEEEE;
-   border-radius: 4px;
-   box-sizing: border-box;
-   display: inline-block;
-   padding: 10px;
-   width: 100%;
-}
-#Article2 .blogsubject {
-   -moz-border-radius: 4px;
-   -webkit-border-radius: 4px;
-   background-color: #EEEEEE;
-   border: 1px solid #cccccc;
-   border-radius: 4px;
-   display: block;
-   margin: 0 0 6px 0;
-   padding: 10px;
-}
-#Article2 .blogtext {
-   display: inline-block;
-   height: 100%;
-}
-#Article2 .blogthumb {
-   -moz-border-radius: 4px;
-   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -webkit-border-radius: 4px;
-   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -webkit-transition: all 0.2s ease-in-out;
-   background-color: #FFFFFF;
-   border: 1px solid #ddd;
-   border-radius: 4px;
-   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
-   display: inline-block;
-   float: right;
-   margin: 5px;
-   padding: 4px;
-   transition: all 0.2s ease-in-out;
-}
-#Article2 .blogthumb img {
-   border-width: 0;
-   height: auto;
-   margin: 0px 0px 0px 0px;
-   vertical-align: middle;
-   width: 120px;
-}
-#Article2 .blogbutton {
-   color: #000000;
-   cursor: pointer;
-   font-family: Exo 2;
-   font-size: 15px;
-   margin-top: 6px;
-   text-decoration: underline;
-}
-#Article2 .blogdate,
-#Article2 .blogcomments {
-   display: none;
-}
-#Article2 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   font-family: "Exo 2";
-   font-style: normal;
-   font-weight: normal;
-   margin: 0;
-}
-#Article3 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   display: inline-block;
-   font-family: "Exo 2";
-   font-size: 15px;
-   font-weight: normal;
-   line-height: 1.2;
-   margin: 0;
-   position: relative;
-   text-align: left;
-   width: 100%;
-}
-#Article3 .blogitem {
-   margin-bottom: 6px;
-   padding: 2px;
-   text-align: left;
-}
-#Article3 .blogdate {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 13px;
-   font-style: normal;
-   font-weight: bold;
-   text-decoration: none;
-}
-#Article3 .blogsubject {
-   color: #0F6FC6;
-   font-family: "Exo 2";
-   font-size: 16px;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: none;
-}
-#Article3 .blogcomments {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 15px;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: underline;
-}
-#Article3 .blogsubject a:link,
-#Article3 .blogsubject a:visited,
-#Article3 .blogsubject a:hover {
-   color: inherit;
-   text-decoration: inherit;
-}
-#Article3 .blogcomments a:link,
-#Article3 .blogcomments a:visited,
-#Article3 .blogcomments a:hover {
-   color: inherit;
-   text-decoration: inherit;
-}
-#Article3 .blogcomments {
-   text-decoration: none;
-}
-#Article3 .no-thumb {
-   display: none;
-}
-#Article3 .blogitem {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   background-color: transparent;
-   box-sizing: border-box;
-   display: inline-block;
-   padding: 0;
-   width: 100%;
-}
-#Article3 .blogblock {
-   border: 1px solid #cccccc;
-   -moz-border-radius: 4px;
-   -moz-box-sizing: border-box;
-   -webkit-border-radius: 4px;
-   -webkit-box-sizing: border-box;
-   background-color: #EEEEEE;
-   border-radius: 4px;
-   box-sizing: border-box;
-   display: inline-block;
-   padding: 10px;
-   width: 100%;
-}
-#Article3 .blogsubject {
-   -moz-border-radius: 4px;
-   -webkit-border-radius: 4px;
-   background-color: #EEEEEE;
-   border: 1px solid #cccccc;
-   border-radius: 4px;
-   display: block;
-   margin: 0 0 6px 0;
-   padding: 10px;
-}
-#Article3 .blogtext {
-   display: inline-block;
-   height: 100%;
-}
-#Article3 .blogthumb {
-   -moz-border-radius: 4px;
-   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -webkit-border-radius: 4px;
-   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -webkit-transition: all 0.2s ease-in-out;
-   background-color: #FFFFFF;
-   border: 1px solid #ddd;
-   border-radius: 4px;
-   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
-   display: inline-block;
-   float: right;
-   margin: 5px;
-   padding: 4px;
-   transition: all 0.2s ease-in-out;
-}
-#Article3 .blogthumb img {
-   border-width: 0;
-   height: auto;
-   margin: 0px 0px 0px 0px;
-   vertical-align: middle;
-   width: 120px;
-}
-#Article3 .blogbutton {
-   color: #000000;
-   cursor: pointer;
-   font-family: Exo 2;
-   font-size: 15px;
-   margin-top: 6px;
-   text-decoration: underline;
-}
-#Article3 .blogdate,
-#Article3 .blogcomments {
-   display: none;
-}
-#Article3 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   font-family: "Exo 2";
-   font-style: normal;
-   font-weight: normal;
-   margin: 0;
-}
 #Banner3 {
    background-color: transparent;
    background-image: none;
@@ -583,302 +148,6 @@ Banner3 span:before {
    opacity: .3;
    transform: scaleY(-1);
 }
-#Article4 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   display: inline-block;
-   font-family: "Exo 2";
-   font-size: 15px;
-   font-weight: normal;
-   line-height: 1.2;
-   margin: 0;
-   position: relative;
-   text-align: left;
-   width: 100%;
-}
-#Article4 .blogitem {
-   margin-bottom: 6px;
-   padding: 2px;
-   text-align: left;
-}
-#Article4 .blogdate {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 13px;
-   font-style: normal;
-   font-weight: bold;
-   text-decoration: none;
-}
-#Article4 .blogsubject {
-   color: #0F6FC6;
-   font-family: "Exo 2";
-   font-size: 16px;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: none;
-}
-#Article4 .blogcomments {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 15px;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: underline;
-}
-#Article4 .blogsubject a:link,
-#Article4 .blogsubject a:visited,
-#Article4 .blogsubject a:hover {
-   color: inherit;
-   text-decoration: inherit;
-}
-#Article4 .blogcomments a:link,
-#Article4 .blogcomments a:visited,
-#Article4 .blogcomments a:hover {
-   color: inherit;
-   text-decoration: inherit;
-}
-#Article4 .blogcomments {
-   text-decoration: none;
-}
-#Article4 .no-thumb {
-   display: none;
-}
-#Article4 .blogbutton {
-   display: none  !important;
-}
-#Article4 .blogitem {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   background-color: transparent;
-   box-sizing: border-box;
-   display: inline-block;
-   padding: 0;
-   width: 100%;
-}
-#Article4 .blogblock {
-   border: 1px solid #cccccc;
-   -moz-border-radius: 4px;
-   -moz-box-sizing: border-box;
-   -webkit-border-radius: 4px;
-   -webkit-box-sizing: border-box;
-   background-color: #EEEEEE;
-   border-radius: 4px;
-   box-sizing: border-box;
-   display: inline-block;
-   padding: 10px;
-   width: 100%;
-}
-#Article4 .blogsubject {
-   -moz-border-radius: 4px;
-   -webkit-border-radius: 4px;
-   background-color: #EEEEEE;
-   border: 1px solid #cccccc;
-   border-radius: 4px;
-   display: block;
-   margin: 0 0 6px 0;
-   padding: 10px;
-}
-#Article4 .blogtext {
-   display: inline-block;
-   height: 100%;
-}
-#Article4 .blogthumb {
-   -moz-border-radius: 4px;
-   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -webkit-border-radius: 4px;
-   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -webkit-transition: all 0.2s ease-in-out;
-   background-color: #FFFFFF;
-   border: 1px solid #ddd;
-   border-radius: 4px;
-   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
-   display: inline-block;
-   float: right;
-   margin: 5px;
-   padding: 4px;
-   transition: all 0.2s ease-in-out;
-}
-#Article4 .blogthumb img {
-   border-width: 0;
-   height: auto;
-   margin: 0px 0px 0px 0px;
-   vertical-align: middle;
-   width: 120px;
-}
-#Article4 .blogbutton {
-   color: #000000;
-   cursor: pointer;
-   font-family: Exo 2;
-   font-size: 15px;
-   margin-top: 6px;
-   text-decoration: underline;
-}
-#Article4 .blogdate,
-#Article4 .blogcomments {
-   display: none;
-}
-#Article4 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   font-family: "Exo 2";
-   font-style: normal;
-   font-weight: normal;
-   margin: 0;
-}
-#Article5 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   display: inline-block;
-   font-family: "Exo 2";
-   font-size: 15px;
-   font-weight: normal;
-   line-height: 1.2;
-   margin: 0;
-   position: relative;
-   text-align: left;
-   width: 100%;
-}
-#Article5 .blogitem {
-   margin-bottom: 6px;
-   padding: 2px;
-   text-align: left;
-}
-#Article5 .blogdate {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 13px;
-   font-style: normal;
-   font-weight: bold;
-   text-decoration: none;
-}
-#Article5 .blogsubject {
-   color: #0F6FC6;
-   font-family: "Exo 2";
-   font-size: 16px;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: none;
-}
-#Article5 .blogcomments {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 15px;
-   font-style: normal;
-   font-weight: normal;
-   text-decoration: underline;
-}
-#Article5 .blogsubject a:link,
-#Article5 .blogsubject a:visited,
-#Article5 .blogsubject a:hover {
-   color: inherit;
-   text-decoration: inherit;
-}
-#Article5 .blogcomments a:link,
-#Article5 .blogcomments a:visited,
-#Article5 .blogcomments a:hover {
-   color: inherit;
-   text-decoration: inherit;
-}
-#Article5 .blogcomments {
-   text-decoration: none;
-}
-#Article5 .no-thumb {
-   display: none;
-}
-#Article5 .blogbutton {
-   display: none  !important;
-}
-#Article5 .blogitem {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   background-color: transparent;
-   box-sizing: border-box;
-   display: inline-block;
-   padding: 0;
-   width: 100%;
-}
-#Article5 .blogblock {
-   border: 1px solid #cccccc;
-   -moz-border-radius: 4px;
-   -moz-box-sizing: border-box;
-   -webkit-border-radius: 4px;
-   -webkit-box-sizing: border-box;
-   background-color: #EEEEEE;
-   border-radius: 4px;
-   box-sizing: border-box;
-   display: inline-block;
-   padding: 10px;
-   width: 100%;
-}
-#Article5 .blogsubject {
-   -moz-border-radius: 4px;
-   -webkit-border-radius: 4px;
-   background-color: #EEEEEE;
-   border: 1px solid #cccccc;
-   border-radius: 4px;
-   display: block;
-   margin: 0 0 6px 0;
-   padding: 10px;
-}
-#Article5 .blogtext {
-   display: inline-block;
-   height: 100%;
-}
-#Article5 .blogthumb {
-   -moz-border-radius: 4px;
-   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -webkit-border-radius: 4px;
-   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -webkit-transition: all 0.2s ease-in-out;
-   background-color: #FFFFFF;
-   border: 1px solid #ddd;
-   border-radius: 4px;
-   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
-   display: inline-block;
-   float: right;
-   margin: 5px;
-   padding: 4px;
-   transition: all 0.2s ease-in-out;
-}
-#Article5 .blogthumb img {
-   border-width: 0;
-   height: auto;
-   margin: 0px 0px 0px 0px;
-   vertical-align: middle;
-   width: 120px;
-}
-#Article5 .blogbutton {
-   color: #000000;
-   cursor: pointer;
-   font-family: Exo 2;
-   font-size: 15px;
-   margin-top: 6px;
-   text-decoration: underline;
-}
-#Article5 .blogdate,
-#Article5 .blogcomments {
-   display: none;
-}
-#Article5 {
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   font-family: "Exo 2";
-   font-style: normal;
-   font-weight: normal;
-   margin: 0;
-}
 #NewsFeedTicker1 {
    background-color: #FFFFFF;
    background-image: none;
@@ -902,18 +171,18 @@ Banner3 span:before {
    top: 110%;
 }
 #NewsFeedTicker1 h4 {
-   color: #000000;
+   color: #0F6FC6;
    display: block;
    font-family: "Exo 2";
-   font-size: 13px;
+   font-size: 15px;
    font-style: normal;
-   font-weight: bold;
+   font-weight: normal;
    margin: 0;
    margin-top: 0;
    text-decoration: none;
 }
 #NewsFeedTicker1 h4 a {
-   color: #000000;
+   color: #0F6FC6;
    text-decoration: none;
 }
 #NewsFeedTicker1 .publication-date {
@@ -958,9 +227,162 @@ Banner3 span:before {
    box-sizing: border-box;
    display: block;
    float: left;
-   height: 129px;
+   height: 146px;
    position: relative;
    width: 100%;
+}
+#Blog1 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid transparent;
+   border-radius: 0px;
+   display: inline-block;
+   font-family: "Exo 2";
+   font-size: 15px;
+   font-weight: normal;
+   line-height: 1.2;
+   margin: 0;
+   position: relative;
+   text-align: left;
+   width: 100%;
+}
+#Blog1 .blogitem {
+   background-color: #EEEEEE;
+   margin-bottom: 16px;
+   margin-bottom: 6px;
+   padding: 0px;
+   text-align: left;
+}
+#Blog1 .blogdate {
+   color: #000000;
+   font-family: "Exo 2";
+   font-size: 13px;
+   font-style: normal;
+   font-weight: bold;
+   text-decoration: none;
+}
+#Blog1 .blogsubject {
+   color: #0F6FC6;
+   font-family: "Exo 2";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: none;
+}
+#Blog1 .blogcomments {
+   color: #0F6FC6;
+   font-family: "Exo 2";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+}
+#Blog1 .blogsubject a:link,
+#Blog1 .blogsubject a:visited,
+#Blog1 .blogsubject a:hover {
+   color: inherit;
+   text-decoration: inherit;
+}
+#Blog1 .blogcomments a:link,
+#Blog1 .blogcomments a:visited,
+#Blog1 .blogcomments a:hover {
+   color: inherit;
+   text-decoration: inherit;
+}
+#Blog1 .blogcomments {
+   text-decoration: none;
+}
+#Blog1 .no-thumb {
+   display: none;
+}
+#Blog1 .blogbutton {
+   display: none  !important;
+}
+#Blog1 .blogitem {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   background-color: transparent;
+   box-sizing: border-box;
+   display: inline-block;
+   padding: 0;
+   width: 100%;
+}
+#Blog1 .blogblock {
+   border: 1px solid #cccccc;
+   -moz-border-radius: 4px;
+   -moz-box-sizing: border-box;
+   -webkit-border-radius: 4px;
+   -webkit-box-sizing: border-box;
+   background-color: #EEEEEE;
+   border-radius: 4px;
+   box-sizing: border-box;
+   display: inline-block;
+   padding: 10px;
+   width: 100%;
+}
+#Blog1 .blogsubject {
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   background-color: #EEEEEE;
+   border: 1px solid #cccccc;
+   border-radius: 4px;
+   display: block;
+   margin: 0 0 6px 0;
+   padding: 10px;
+}
+#Blog1 .blogtext {
+   display: inline-block;
+   height: 100%;
+}
+#Blog1 .blogthumb {
+   -moz-border-radius: 4px;
+   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -webkit-border-radius: 4px;
+   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+   -webkit-transition: all 0.2s ease-in-out;
+   background-color: #FFFFFF;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
+   display: inline-block;
+   float: right;
+   margin: 5px;
+   padding: 4px;
+   transition: all 0.2s ease-in-out;
+}
+#Blog1 .blogthumb img {
+   border-width: 0;
+   height: auto;
+   margin: 0px 0px 0px 0px;
+   vertical-align: middle;
+   width: 120px;
+}
+#Blog1 .blogbutton {
+   color: #0F6FC6;
+   cursor: pointer;
+   font-family: Exo 2;
+   font-size: 16px;
+   margin-top: 6px;
+   text-decoration: underline;
+}
+#Blog1 .pager {
+   margin: 2px 0px 2px 0px;
+}
+#Blog1 .page-number {
+   border: 1px #EEEEEE solid;
+   color: #000000;
+   cursor: pointer;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: normal;
+   margin-right: 2px;
+   padding: 1px 4px 1px 4px;
+   text-decoration: none;
+}
+#Blog1 .active {
+   background-color: #EEEEEE;
 }
 #Button4 {
    height: 24px;
@@ -970,12 +392,6 @@ Banner3 span:before {
    width: 96px;
    z-index: 3;
 }
-#Article5 {
-   overflow: hidden;
-}
-#Article4 {
-   overflow: hidden;
-}
 #wb_Image1 {
    height: 74px;
    left: 0px;
@@ -984,20 +400,11 @@ Banner3 span:before {
    width: 122px;
    z-index: 1;
 }
-#Article3 {
-   overflow: hidden;
-}
-#Article2 {
-   overflow: hidden;
-}
 #Banner3 {
    display: inline-block;
    height: 77px;
    width: 1198px;
    z-index: 5;
-}
-#Article1 {
-   overflow: hidden;
 }
 #wb_Text1 {
    height: 27px;
@@ -1016,7 +423,7 @@ Banner3 span:before {
    z-index: 2;
 }
 #NewsFeedTicker1 {
-   height: 129px;
+   height: 146px;
    overflow: hidden;
    z-index: 6;
 }
@@ -1030,6 +437,9 @@ Banner3 span:before {
    width: 100%;
    z-index: 4;
 }
+#Blog1 {
+   overflow: auto;
+}
 #Layer2 {
    clear: left;
    display: inline-flex;
@@ -1038,16 +448,16 @@ Banner3 span:before {
    position: relative;
    text-align: center;
    width: 100%;
-   z-index: 13;
+   z-index: 9;
 }
 #Layer3 {
    display: inline-block;
    float: left;
-   height: 1599px;
+   height: 2456px;
    position: relative;
    text-align: left;
    width: 100%;
-   z-index: 14;
+   z-index: 10;
 }
 #Layer1_Container {
    margin-left: auto;
@@ -1181,96 +591,6 @@ body {
 #Layer3 {
    padding: 0;
 }
-#Article1 {
-   display: block;
-   visibility: visible;
-}
-#Article1 {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article1 .blogdate {
-   font-family: "Exo 2";
-   font-size: 13px;
-}
-#Article1 .blogsubject {
-   font-family: "Exo 2";
-   font-size: 16px;
-}
-#Article1 .blogcomments {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article1 .blogbutton {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article1 .blogcolumn {
-   width: 100%;
-}
-#Article1 .visible-col1 {
-   display: block;
-}
-#Article2 {
-   display: block;
-   visibility: visible;
-}
-#Article2 {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article2 .blogdate {
-   font-family: "Exo 2";
-   font-size: 13px;
-}
-#Article2 .blogsubject {
-   font-family: "Exo 2";
-   font-size: 16px;
-}
-#Article2 .blogcomments {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article2 .blogbutton {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article2 .blogcolumn {
-   width: 100%;
-}
-#Article2 .visible-col1 {
-   display: block;
-}
-#Article3 {
-   display: block;
-   visibility: visible;
-}
-#Article3 {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article3 .blogdate {
-   font-family: "Exo 2";
-   font-size: 13px;
-}
-#Article3 .blogsubject {
-   font-family: "Exo 2";
-   font-size: 16px;
-}
-#Article3 .blogcomments {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article3 .blogbutton {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article3 .blogcolumn {
-   width: 100%;
-}
-#Article3 .visible-col1 {
-   display: block;
-}
 #Banner3 {
    display: inline-block;
    height: 79px;
@@ -1282,64 +602,20 @@ body {
    height: 27px;
    margin: 25px 0 25px 0;
 }
-#Article4 {
+#NewsFeedTicker1 {
+   display: block;
+   margin: 0;
+   visibility: visible;
+   width: 100%;
+}
+#Blog1 {
    display: block;
    visibility: visible;
 }
-#Article4 {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article4 .blogdate {
-   font-family: "Exo 2";
-   font-size: 13px;
-}
-#Article4 .blogsubject {
-   font-family: "Exo 2";
-   font-size: 16px;
-}
-#Article4 .blogcomments {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article4 .blogbutton {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article4 .blogcolumn {
+#Blog1 .blogcolumn {
    width: 100%;
 }
-#Article4 .visible-col1 {
-   display: block;
-}
-#Article5 {
-   display: block;
-   visibility: visible;
-}
-#Article5 {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article5 .blogdate {
-   font-family: "Exo 2";
-   font-size: 13px;
-}
-#Article5 .blogsubject {
-   font-family: "Exo 2";
-   font-size: 16px;
-}
-#Article5 .blogcomments {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article5 .blogbutton {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article5 .blogcolumn {
-   width: 100%;
-}
-#Article5 .visible-col1 {
+#Blog1 .visible-col1 {
    display: block;
 }
 }
@@ -1466,76 +742,6 @@ body {
 #Layer3 {
    padding: 0;
 }
-#Article1 {
-   display: block;
-   visibility: visible;
-}
-#Article1 .blogcolumn {
-   width: 100%;
-}
-#Article1 .visible-col1 {
-   display: block;
-}
-#Article2 {
-   display: block;
-   visibility: visible;
-}
-#Article2 {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article2 .blogdate {
-   font-family: "Exo 2";
-   font-size: 13px;
-}
-#Article2 .blogsubject {
-   font-family: "Exo 2";
-   font-size: 16px;
-}
-#Article2 .blogcomments {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article2 .blogbutton {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article2 .blogcolumn {
-   width: 100%;
-}
-#Article2 .visible-col1 {
-   display: block;
-}
-#Article3 {
-   display: block;
-   visibility: visible;
-}
-#Article3 {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article3 .blogdate {
-   font-family: "Exo 2";
-   font-size: 13px;
-}
-#Article3 .blogsubject {
-   font-family: "Exo 2";
-   font-size: 16px;
-}
-#Article3 .blogcomments {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article3 .blogbutton {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article3 .blogcolumn {
-   width: 100%;
-}
-#Article3 .visible-col1 {
-   display: block;
-}
 #Banner3 {
    display: inline-block;
    height: 79px;
@@ -1547,64 +753,20 @@ body {
    height: 27px;
    margin: 25px 0 25px 0;
 }
-#Article4 {
+#NewsFeedTicker1 {
+   display: block;
+   margin: 0;
+   visibility: visible;
+   width: 100%;
+}
+#Blog1 {
    display: block;
    visibility: visible;
 }
-#Article4 {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article4 .blogdate {
-   font-family: "Exo 2";
-   font-size: 13px;
-}
-#Article4 .blogsubject {
-   font-family: "Exo 2";
-   font-size: 16px;
-}
-#Article4 .blogcomments {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article4 .blogbutton {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article4 .blogcolumn {
+#Blog1 .blogcolumn {
    width: 100%;
 }
-#Article4 .visible-col1 {
-   display: block;
-}
-#Article5 {
-   display: block;
-   visibility: visible;
-}
-#Article5 {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article5 .blogdate {
-   font-family: "Exo 2";
-   font-size: 13px;
-}
-#Article5 .blogsubject {
-   font-family: "Exo 2";
-   font-size: 16px;
-}
-#Article5 .blogcomments {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article5 .blogbutton {
-   font-family: "Exo 2";
-   font-size: 15px;
-}
-#Article5 .blogcolumn {
-   width: 100%;
-}
-#Article5 .visible-col1 {
+#Blog1 .visible-col1 {
    display: block;
 }
 }

@@ -200,7 +200,7 @@ body {
    position: relative;
    text-align: center;
    vertical-align: middle;
-   width: 33.33333333%;
+   width: 25%;
 }
 #PhotoGallery1 .thumbnail img {
    border: 1px #DDDDDD solid;
@@ -222,7 +222,7 @@ body {
 #PhotoGallery1 .thumbnails:after {
    clear: both;
 }
-#PhotoGallery1 .visible-col3 {
+#PhotoGallery1 .visible-col4 {
    display: block;
 }
 #wb_FlexContainer2 {
@@ -691,9 +691,9 @@ body {
    width: 100%;
 }
 #PhotoGallery1 .thumbnail {
-   width: 33.33333333%;
+   width: 25%;
 }
-#PhotoGallery1 .visible-col3 {
+#PhotoGallery1 .visible-col4 {
    display: block;
 }
 #wb_FlexContainer2 {
@@ -965,9 +965,9 @@ body {
    width: 100%;
 }
 #PhotoGallery1 .thumbnail {
-   width: 33.33333333%;
+   width: 25%;
 }
-#PhotoGallery1 .visible-col3 {
+#PhotoGallery1 .visible-col4 {
    display: block;
 }
 #wb_FlexContainer2 {
