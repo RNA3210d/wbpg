@@ -15,6 +15,7 @@ session_start();
 <script src="jquery-3.6.0.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="jquery.scrollify.min.js"></script>
+<script src="wb.animatesvg.min.js"></script>
 <script src="searchindex.js"></script>
 <script src="wb.sitesearch.min.js"></script>
 <script>
@@ -623,6 +624,69 @@ $(document).ready(function()
    {
       onScrollSnapScroll1();
    });
+   $("#ClipArt1").animatesvg(
+   {
+      delay: 0,
+      duration: 1000,
+      easing: 'linear',
+      loop: true
+   });
+   function onScrollClipArt1()
+   {
+      var $obj = $("#ClipArt1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         $('#ClipArt1').animatesvg('animate');
+      }
+   }
+   onScrollClipArt1();
+   $(window).scroll(function(event)
+   {
+      onScrollClipArt1();
+   });
+   $("#ClipArt2").animatesvg(
+   {
+      delay: 366,
+      duration: 1000,
+      easing: 'linear',
+      loop: true
+   });
+   function onScrollClipArt2()
+   {
+      var $obj = $("#ClipArt2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         $('#ClipArt2').animatesvg('animate');
+      }
+   }
+   onScrollClipArt2();
+   $(window).scroll(function(event)
+   {
+      onScrollClipArt2();
+   });
+   $("#ClipArt3").animatesvg(
+   {
+      delay: 0,
+      duration: 1000,
+      easing: 'linear',
+      loop: true
+   });
+   function onScrollClipArt3()
+   {
+      var $obj = $("#ClipArt3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         $('#ClipArt3').animatesvg('animate');
+      }
+   }
+   onScrollClipArt3();
+   $(window).scroll(function(event)
+   {
+      onScrollClipArt3();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -661,6 +725,30 @@ $(window).on('load', function()
 <div id="LayoutGrid2">
 <div class="col-1">
 <div id="Banner8"><span>About Me</span></div>
+<div id="wb_ClipArt3">
+<svg id="ClipArt3" height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+   <linearGradient id="ClipArt3-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="100%" x2="0%" y2="0%">
+   <stop offset="0%" stop-color="#FF7E00" />
+   <stop offset="13%" stop-color="#FF0000" />
+   <stop offset="39%" stop-color="#AA006E" />
+   <stop offset="66%" stop-color="#7A0085" />
+   <stop offset="100%" stop-color="#000082" />
+   </linearGradient>
+   <linearGradient id="ClipArt3-gradient-stroke" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
+   <stop offset="0%" stop-color="#FFBF00" />
+   <stop offset="18%" stop-color="#BE3722" />
+   <stop offset="26%" stop-color="#760040" />
+   <stop offset="55%" stop-color="#2A0040" />
+   <stop offset="80%" stop-color="#1A0040" />
+   <stop offset="100%" stop-color="#000000" />
+   </linearGradient>
+   <path id="ClipArt3-shape" d="M30 59 C37 57, 44 56, 50 56 C56 56, 63 57, 71 59 C78 61, 85 64, 91 68 C97 72, 100 76, 100 81 L100 100 L0 100 L0 81 C0 76, 3 72, 9 68 C15 64, 22 61, 30 59 Z M33 7 C37 2, 43 0, 50 0 C57 0, 63 2, 68 7 C73 12, 75 18, 75 25 C75 32, 73 38, 68 43 C63 48, 57 50, 50 50 C43 50, 37 48, 33 43 C28 38, 25 32, 25 25 C25 18, 28 12, 33 7 Z M76 73 C67 70, 59 68, 50 68 C42 68, 33 70, 25 73 C16 76, 12 79, 12 81 L12 88 L88 88 L88 81 C88 79, 84 76, 76 73 Z M60 16 C57 13, 54 12, 50 12 C46 12, 43 13, 41 16 C38 18, 37 22, 37 25 C37 29, 38 32, 41 34 C43 37, 46 38, 50 38 C54 38, 57 37, 60 34 C62 32, 63 29, 63 25 C63 22, 62 18, 60 16" vector-effect="non-scaling-stroke" />
+</defs>
+<use xlink:href="#ClipArt3-shape" data-href="#ClipArt3-shape" style="fill:url(#ClipArt3-gradient);stroke:url(#ClipArt3-gradient-stroke);stroke-width:0"/>
+</svg>
+
+</div>
 <div id="wb_Text5">
 <span style="color:#C8E5F4;font-family:'Exo 2';font-size:16px;">Just a 22-year-old guy passionate about electronics, heavy machinery, switchgear, coding and more.<br><br>DOB: 28 June 2001<br>Blood type: B+<br>EMail: rna3210d2@proton.me<br>Education: B.Tech in Electrical and Electronics Engineering</span>
 </div>
@@ -717,7 +805,10 @@ $(window).on('load', function()
 </g>
 </svg></div>
    <div id="Card7-card-body">
-      <div id="Card7-card-item0"><a href="./page1.html" class="stretched-link"><i class="fa fa-paper-plane"></i></a></div>
+      <div id="Card7-card-item0"><a href="./page1.html" class="stretched-link"><svg class="svg-icon" viewBox="0 0 172 172" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M169 1 C171 3, 172 5, 172 7 L147 155 C147 156, 146 158, 144 159 C143 159, 142 160, 141 160 C140 160, 139 160, 139 159 L95 141 L72 170 C71 171, 69 172, 67 172 C66 172, 66 172, 65 172 C64 171, 63 170, 62 169 C61 168, 61 167, 61 166 L61 132 L144 31 L41 119 L3 104 C1 103, 0 101, 0 99 C0 96, 1 94, 3 93 L162 1 C163 0, 164 0, 165 0 C167 0, 168 0, 169 1"/>
+</svg>
+</a></div>
       <div id="Card7-card-item1">RPi-TELEBOT</div>
       <div id="Card7-card-item2">Python based Telegram bot to monitor and control the Raspberry Pi</div>
    </div>
@@ -753,7 +844,10 @@ $(window).on('load', function()
 </g>
 </svg></div>
    <div id="Card1-card-body">
-      <div id="Card1-card-item0"><a href="./page2.html" class="stretched-link"><i class="fa fa-comments-o"></i></a></div>
+      <div id="Card1-card-item0"><a href="./page2.html" class="stretched-link"><svg class="svg-icon" viewBox="0 0 172 172" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M95 36 C86 32, 77 31, 67 31 C57 31, 48 32, 40 36 C31 39, 24 44, 19 49 C14 55, 12 61, 12 68 C12 73, 14 78, 17 83 C20 88, 25 92, 31 96 L41 101 L37 109 C39 108, 41 106, 43 105 L47 102 L53 103 C58 104, 62 105, 67 105 C77 105, 86 103, 95 100 C103 96, 110 92, 115 86 C120 80, 122 74, 122 68 C122 61, 120 55, 115 49 C110 44, 103 39, 95 36 Z M33 25 C44 21, 55 19, 67 19 C79 19, 91 21, 101 25 C112 29, 120 35, 126 43 C132 51, 135 59, 135 68 C135 77, 132 85, 126 92 C120 100, 112 106, 101 110 C91 115, 79 117, 67 117 C62 117, 56 116, 50 115 C42 121, 33 125, 24 128 C21 128, 19 129, 15 129 L15 129 C14 129, 14 129, 13 128 C13 128, 12 127, 12 126 C12 126, 12 126, 12 126 C12 125, 12 125, 12 125 C12 125, 12 125, 12 124 C12 124, 12 124, 12 124 C12 124, 13 124, 13 123 C13 123, 13 123, 13 123 C13 123, 13 123, 14 123 C14 122, 14 122, 14 122 C14 122, 15 121, 16 120 C17 118, 18 118, 19 117 C19 116, 20 115, 21 114 C22 113, 23 112, 23 110 C24 109, 25 108, 25 106 C17 102, 11 96, 6 89 C2 82, 0 75, 0 68 C0 59, 3 51, 9 43 C15 35, 23 29, 33 25 Z M146 131 C147 132, 147 134, 148 135 C149 136, 150 137, 150 139 C151 140, 152 141, 153 141 C153 142, 154 143, 155 144 C156 145, 157 146, 157 147 C157 147, 158 147, 158 147 C158 147, 158 147, 158 148 C158 148, 158 148, 159 148 C159 148, 159 148, 159 149 C159 149, 159 149, 159 149 C159 149, 159 149, 159 150 C159 150, 159 150, 159 150 C159 150, 159 151, 159 151 C159 152, 159 152, 158 153 C157 154, 157 154, 156 154 C153 153, 150 153, 148 152 C138 150, 129 145, 121 140 C115 141, 110 141, 104 141 C87 141, 72 137, 59 129 C62 129, 65 129, 67 129 C78 129, 87 128, 97 125 C106 122, 115 118, 122 112 C130 107, 136 100, 141 92 C145 84, 147 76, 147 68 C147 63, 146 58, 145 53 C153 58, 160 63, 164 70 C169 77, 172 84, 172 92 C172 100, 169 107, 165 114 C160 120, 154 126, 146 131"/>
+</svg>
+</a></div>
       <div id="Card1-card-item1">Buck and Boost Converter Designer</div>
       <div id="Card1-card-item2">Buck and boost converter designer built with <br>Qt Framework</div>
    </div>
@@ -789,7 +883,10 @@ $(window).on('load', function()
 </g>
 </svg></div>
    <div id="Card2-card-body">
-      <div id="Card2-card-item0"><a href="./page3.html" class="stretched-link"><i class="fa fa-search"></i></a></div>
+      <div id="Card2-card-item0"><a href="./page3.html" class="stretched-link"><svg class="svg-icon" viewBox="0 0 172 172" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M105 104 C113 96, 117 86, 117 74 C117 62, 113 52, 105 43 C96 35, 86 31, 74 31 C62 31, 52 35, 44 43 C35 52, 31 62, 31 74 C31 86, 35 96, 44 104 C52 113, 62 117, 74 117 C86 117, 96 113, 105 104 Z M166 154 C166 157, 165 160, 163 162 C160 165, 157 166, 154 166 C151 166, 148 165, 145 162 L113 129 C101 137, 88 141, 74 141 C65 141, 56 140, 48 136 C40 133, 32 128, 26 122 C20 116, 16 108, 12 100 C8 92, 7 83, 7 74 C7 65, 8 56, 12 48 C16 39, 20 32, 26 26 C32 20, 40 15, 48 12 C56 8, 65 6, 74 6 C83 6, 92 8, 100 12 C109 15, 116 20, 122 26 C128 32, 133 39, 136 48 C140 56, 142 65, 142 74 C142 88, 138 101, 130 112 L163 145 C165 147, 166 150, 166 154"/>
+</svg>
+</a></div>
       <div id="Card2-card-item1">Web Browser based on Qt WebEngine</div>
       <div id="Card2-card-item2">Qt browser with some random stuff </div>
    </div>
@@ -886,6 +983,23 @@ $(window).on('load', function()
 <div id="wb_Text15">
 <p style="font-size:13px;line-height:16px;">&nbsp;</p>
 </div>
+<div id="wb_ClipArt2">
+<svg id="ClipArt2" height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+   <linearGradient id="ClipArt2-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="100%" x2="0%" y2="0%">
+   <stop offset="0%" stop-color="#CCCCFF" />
+   <stop offset="19%" stop-color="#A4CCFF" />
+   <stop offset="41%" stop-color="#CB9AFF" />
+   <stop offset="64%" stop-color="#9966FF" />
+   <stop offset="83%" stop-color="#9ACCFF" />
+   <stop offset="100%" stop-color="#CCCCFF" />
+   </linearGradient>
+   <path id="ClipArt2-shape" d="M0 100 L100 100 L100 0 L0 0Z  M3 3 L97 3 L97 97 L3 97Z  M81 25 L88 25 L88 69 L79 74 L78 75 L78 81 L80 83 L90 78 L91 77 L91 9 L81 9Z  M88 76 L81 79 L81 76 L88 73Z  M84 13 L88 13 L88 22 L84 22Z  M69 17 C62 10, 53 6, 43 6 C33 6, 24 10, 17 17 C10 24, 6 33, 6 43 C6 53, 10 62, 17 69 C24 76, 33 80, 43 80 C53 80, 62 76, 69 69 C76 62, 80 53, 80 43 C80 33, 76 24, 69 17 Z M67 67 C60 73, 52 77, 43 77 C34 77, 26 73, 19 67 C13 60, 9 52, 9 43 C9 34, 13 26, 19 19 C26 13, 34 9, 43 9 C52 9, 60 13, 67 19 C73 26, 77 34, 77 43 C77 52, 73 60, 67 67 Z M51 35 C49 33, 46 32, 43 32 C40 32, 37 33, 35 35 C33 38, 32 40, 32 43 C32 46, 33 49, 35 51 C37 53, 40 54, 43 54 C46 54, 49 53, 51 51 C53 49, 54 46, 54 43 C54 40, 53 38, 51 35 Z M49 49 C47 50, 45 51, 43 51 C41 51, 39 50, 38 49 C36 47, 35 45, 35 43 C35 41, 36 39, 38 38 C39 36, 41 35, 43 35 C45 35, 47 36, 49 38 C50 39, 51 41, 51 43 C51 45, 50 47, 49 49 Z M6 94 L19 94 L19 86 L6 86Z  M9 89 L16 89 L16 91 L9 91Z  M22 94 L34 94 L34 86 L22 86Z  M25 89 L31 89 L31 91 L25 91Z " vector-effect="non-scaling-stroke" />
+</defs>
+<use xlink:href="#ClipArt2-shape" data-href="#ClipArt2-shape" style="fill:url(#ClipArt2-gradient);stroke:#FFFFFF;stroke-width:0"/>
+</svg>
+
+</div>
 <div id="wb_Text16">
 <p>&nbsp;</p>
 </div>
@@ -910,6 +1024,21 @@ $(window).on('load', function()
 <div id="Banner4"><span>My Equipments</span></div>
 <div id="wb_Text18">
 <p style="font-size:13px;line-height:16px;">&nbsp;</p>
+</div>
+<div id="wb_ClipArt1">
+<svg id="ClipArt1" height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+   <linearGradient id="ClipArt1-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="100%" x2="0%" y2="0%">
+   <stop offset="0%" stop-color="#B6FBFE" />
+   <stop offset="50%" stop-color="#4AA0F7" />
+   <stop offset="51%" stop-color="#7BB2EE" />
+   <stop offset="100%" stop-color="#A5C8EA" />
+   </linearGradient>
+   <path id="ClipArt1-shape" d="M93 60 L93 10 C93 9, 93 9, 93 8 C93 8, 92 8, 92 8 L8 8 C8 8, 8 8, 7 8 C7 9, 7 9, 7 10 L7 60 C7 60, 7 61, 7 61 C8 61, 8 62, 8 62 L92 62 C92 62, 93 61, 93 61 C93 61, 93 60, 93 60 Z M100 10 L100 75 C100 78, 99 80, 98 82 C96 84, 94 85, 92 85 L63 85 C63 86, 64 88, 64 89 C65 91, 65 92, 66 94 C66 95, 67 96, 67 96 C67 97, 66 98, 66 99 C65 100, 64 100, 63 100 L37 100 C36 100, 35 100, 34 99 C34 98, 33 97, 33 96 C33 96, 34 95, 34 94 C35 92, 35 91, 36 89 C36 88, 37 86, 37 85 L8 85 C6 85, 4 84, 3 82 C1 80, 0 78, 0 75 L0 10 C0 7, 1 5, 3 3 C4 1, 6 0, 8 0 L92 0 C94 0, 96 1, 98 3 C99 5, 100 7, 100 10" vector-effect="non-scaling-stroke" />
+</defs>
+<use xlink:href="#ClipArt1-shape" data-href="#ClipArt1-shape" style="fill:url(#ClipArt1-gradient);stroke:#0963AD;stroke-width:0"/>
+</svg>
+
 </div>
 <div id="wb_Text19">
 <p>&nbsp;</p>

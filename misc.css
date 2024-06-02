@@ -1,21 +1,24 @@
-div#container {
-   margin: 0 auto 0 auto;
-   position: relative;
-   text-align: left;
+div#container
+{
    width: 1200px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
 }
-body {
+body
+{
    background-color: #FFFFFF;
    color: #000000;
    font-family: "Exo 2";
+   font-weight: 400;
+   font-weight: 400;
    font-size: 13px;
-   font-weight: 400;
-   font-weight: 400;
    line-height: 1.1875;
    margin: 0;
    text-align: center;
 }
-#preloader {
+#preloader
+{
    background: #FFFFFF url("images/box.gif") no-repeat center center;
    bottom: 0;
    position: fixed;
@@ -23,132 +26,150 @@ body {
    width: 100%;
    z-index: 99999;
 }
-#Layer1 {
+#Layer1
+{
    background-image: linear-gradient(to top, #F6F8F9 0%, #E5EBEE 50%, #D7DEE3 51%, #F5F7F9 100%);
    border-radius: 12px;
    box-shadow: 2px 2px 11px #0F6FC6;
    margin: 0;
 }
-#wb_Image1 {
+#wb_Image1
+{
    vertical-align: top;
 }
-#Image1 {
+#Image1
+{
    border: 0px solid #000000;
    border-radius: 0px;
-   height: 100%;
-   left: 0;
-   margin: 0;
    padding: 0;
+   margin: 0;
+   left: 0;
    top: 0;
    width: 100%;
+   height: 100%;
 }
-#wb_Text1 {
+#wb_Text1 
+{
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   margin: 0;
    padding: 0;
+   margin: 0;
    text-align: left;
 }
-#wb_Text1 {
+#wb_Text1
+{
    color: #77893E;
    font-family: "Exo 2";
-   font-size: 19px;
    font-weight: normal;
+   font-size: 19px;
 }
-#wb_Text1 div {
+#wb_Text1 div
+{
    text-align: left;
 }
-#wb_Text2 {
+#wb_Text2 
+{
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   margin: 0;
    padding: 0;
+   margin: 0;
    text-align: left;
 }
-#wb_Text2 {
+#wb_Text2
+{
    color: #000000;
    font-family: "Exo 2";
-   font-size: 19px;
    font-weight: normal;
+   font-size: 19px;
 }
-#wb_Text2 div {
+#wb_Text2 div
+{
    text-align: left;
 }
-#Button4 {
-   -webkit-appearance: none;
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
+#Button4
+{
    border: 1px solid #2E6DA4;
    border-radius: 4px;
+   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    color: #FFFFFF;
    font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 13px;
    padding: 1px 6px 1px 6px;
    text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
 }
 }
-#Button4:focus {
+#Button4:focus
+{
    outline: 0;
 }
-#Layer2 {
+#Layer2
+{
    background-color: transparent;
    background-image: none;
    border-radius: 0px;
-   margin: 0;
    padding: 0;
+   margin: 0;
 }
-#Layer2 {
-   align-items: center;
+#Layer2
+{
    display: flex;
+   align-items: center;
    flex-direction: column;
    justify-content: center;
 }
-#Layer3 {
+#Layer3
+{
    background-color: #FBFBFB;
    background-image: none;
    border-radius: 0px;
-   margin: 0;
    padding: 0;
+   margin: 0;
 }
-#Banner3 {
+#Banner3
+{
    background-color: transparent;
    background-image: none;
    border: 1px solid transparent;
    border-radius: 0px;
    color: #0F6FC6;
    font-family: "Exo 2";
-   font-size: 27px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 27px;
    text-align: center;
    text-shadow: 0px 0px 13px rgba(153,215,239,1.00);
+   margin: 0;
 }
-#Banner3 span {
+#Banner3 span
+{
    display: block;
    height: 27px;
-   margin: 19px 0 19px 0;
+   margin: 19px 0 19px 0 ;
 }
-#Banner3 span:before,
-#Banner3 span:after {
+#Banner3 span:before, #Banner3 span:after 
+{
    display: block;
-   left: 0;
    position: absolute;
-   right: 0;
    top: 63px;
+   left: 0;
+   right: 0;
 }
-Banner3 span:before {
+Banner3 span:before
+{
    content: "Content Dumpyard";
    opacity: .3;
    transform: scaleY(-1);
 }
-#NewsFeedTicker1 {
+#NewsFeedTicker1
+{
    background-color: #FFFFFF;
    background-image: none;
    border: 1px solid #CCCCCC;
@@ -156,625 +177,720 @@ Banner3 span:before {
    margin: 0;
    text-align: left;
 }
-#NewsFeedTicker1 .headline {
-   color: #000000;
-   font-family: "Exo 2";
-   font-size: 11px;
-   font-style: normal;
-   font-weight: normal;
+#NewsFeedTicker1 .headline
+{
+   position: absolute;
+   padding: 8px;
    height: 100%;
    margin: 0 0 8px 0;
-   overflow: hidden;
-   padding: 8px;
-   position: absolute;
-   text-decoration: none;
    top: 110%;
-}
-#NewsFeedTicker1 h4 {
-   color: #0F6FC6;
-   display: block;
+   overflow: hidden;
    font-family: "Exo 2";
-   font-size: 15px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
-   margin-top: 0;
-   text-decoration: none;
-}
-#NewsFeedTicker1 h4 a {
-   color: #0F6FC6;
-   text-decoration: none;
-}
-#NewsFeedTicker1 .publication-date {
-   color: #000000;
-   font-family: "Exo 2";
    font-size: 11px;
+   color: #000000;
    font-style: normal;
-   font-weight: normal;
-   margin-bottom: 0px;
    text-decoration: none;
 }
-#NewsFeedTicker1 .news-wait {
-   height: 32px;
-   left: 50%;
-   margin-left: -10px;
+#NewsFeedTicker1 h4
+{
+   margin-top: 0;
+   display: block;
+   margin: 0;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-size: 15px;
+   color: #0F6FC6;
+   font-style: normal;
+   text-decoration: none;
+}
+#NewsFeedTicker1 h4 a
+{
+   color: #0F6FC6;
+   text-decoration: none;
+}
+#NewsFeedTicker1 .publication-date
+{
+   margin-bottom: 0px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-size: 11px;
+   color: #000000;
+   font-style: normal;
+   text-decoration: none;
+}
+#NewsFeedTicker1 .news-wait
+{
    position: absolute;
    top: 30%;
+   left: 50%;
    width: 32px;
+   height: 32px;
+   margin-left: -10px;
    z-index: 4;
 }
-#NewsFeedTicker1 .pager {
+#NewsFeedTicker1 .pager
+{
    margin: 1px 0px 1px 0px;
    padding: 8px 0 0 8px;
 }
-#NewsFeedTicker1 .page-number {
-   background-color: #FFFFFF;
-   border: 1px #93BEEB solid;
-   color: #000000;
-   cursor: pointer;
+#NewsFeedTicker1 .page-number
+{
    font-family: Arial;
-   font-size: 13px;
    font-weight: normal;
-   margin-right: 2px;
-   padding: 0px 2px 0px 2px;
+   font-size: 13px;
+   color: #000000;
+   background-color: #FFFFFF;
    text-decoration: none;
+   padding: 0px 2px 0px 2px;
+   cursor: pointer;
+   border: 1px #93BEEB solid;
+   margin-right: 2px;
 }
-#NewsFeedTicker1 .active {
-   background-color: #000000;
+#NewsFeedTicker1 .active 
+{
    color: #FFFFFF;
+   background-color: #000000;
 }
-#NewsFeedTicker1 {
-   box-sizing: border-box;
+#NewsFeedTicker1
+{
    display: block;
    float: left;
-   height: 146px;
    position: relative;
    width: 100%;
+   box-sizing: border-box;
+   height: 146px;
 }
-#Blog1 {
+#Blog1
+{
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
    border-radius: 0px;
-   display: inline-block;
    font-family: "Exo 2";
-   font-size: 15px;
    font-weight: normal;
-   line-height: 1.2;
+   font-size: 15px;
    margin: 0;
-   position: relative;
    text-align: left;
+   line-height: 1.2;
+   display: inline-block;
+   position: relative;
    width: 100%;
 }
-#Blog1 .blogitem {
+#Blog1 .blogitem
+{
    background-color: #EEEEEE;
    margin-bottom: 16px;
    margin-bottom: 6px;
    padding: 0px;
    text-align: left;
 }
-#Blog1 .blogdate {
-   color: #000000;
+#Blog1 .blogdate
+{
    font-family: "Exo 2";
-   font-size: 13px;
-   font-style: normal;
    font-weight: bold;
+   font-size: 13px;
+   color: #000000;
+   font-style: normal;
    text-decoration: none;
 }
-#Blog1 .blogsubject {
-   color: #0F6FC6;
+#Blog1 .blogsubject
+{
    font-family: "Exo 2";
-   font-size: 16px;
-   font-style: normal;
    font-weight: normal;
+   font-size: 16px;
+   color: #0F6FC6;
+   font-style: normal;
    text-decoration: none;
 }
-#Blog1 .blogcomments {
-   color: #0F6FC6;
+#Blog1 .blogcomments
+{
    font-family: "Exo 2";
-   font-size: 16px;
-   font-style: normal;
    font-weight: normal;
+   font-size: 16px;
+   color: #0F6FC6;
+   font-style: normal;
    text-decoration: underline;
 }
-#Blog1 .blogsubject a:link,
-#Blog1 .blogsubject a:visited,
-#Blog1 .blogsubject a:hover {
+#Blog1 .blogsubject a:link, #Blog1 .blogsubject a:visited, #Blog1 .blogsubject a:hover
+{
    color: inherit;
    text-decoration: inherit;
 }
-#Blog1 .blogcomments a:link,
-#Blog1 .blogcomments a:visited,
-#Blog1 .blogcomments a:hover {
+#Blog1 .blogcomments a:link, #Blog1 .blogcomments a:visited, #Blog1 .blogcomments a:hover
+{
    color: inherit;
    text-decoration: inherit;
 }
-#Blog1 .blogcomments {
+#Blog1 .blogcomments
+{
    text-decoration: none;
 }
-#Blog1 .no-thumb {
+#Blog1 .no-thumb
+{
    display: none;
 }
-#Blog1 .blogbutton {
-   display: none  !important;
+#Blog1 .blogbutton
+{
+   display: none !important;
 }
-#Blog1 .blogitem {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
+#Blog1 .blogitem
+{
    background-color: transparent;
-   box-sizing: border-box;
    display: inline-block;
-   padding: 0;
    width: 100%;
-}
-#Blog1 .blogblock {
-   border: 1px solid #cccccc;
-   -moz-border-radius: 4px;
-   -moz-box-sizing: border-box;
-   -webkit-border-radius: 4px;
    -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   padding: 0;
+}
+#Blog1 .blogblock
+{
    background-color: #EEEEEE;
+   border: 1px solid #cccccc;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
    border-radius: 4px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
    box-sizing: border-box;
    display: inline-block;
    padding: 10px;
    width: 100%;
 }
-#Blog1 .blogsubject {
-   -moz-border-radius: 4px;
-   -webkit-border-radius: 4px;
+#Blog1 .blogsubject
+{
    background-color: #EEEEEE;
    border: 1px solid #cccccc;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
    border-radius: 4px;
    display: block;
-   margin: 0 0 6px 0;
+   margin: 0 0 6px 0;  
    padding: 10px;
 }
-#Blog1 .blogtext {
-   display: inline-block;
+#Blog1 .blogtext
+{
+//   display: inline-block;
    height: 100%;
 }
-#Blog1 .blogthumb {
+#Blog1 .blogthumb
+{
+   background-color: #FFFFFF;
+   padding: 4px;
+   margin: 5px;
+   float: right;
+   border: 1px solid #ddd;
+   -webkit-border-radius: 4px;
    -moz-border-radius: 4px;
+   border-radius: 4px;
+   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
+   -webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
    -o-transition: all 0.2s ease-in-out;
-   -webkit-border-radius: 4px;
-   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
-   -webkit-transition: all 0.2s ease-in-out;
-   background-color: #FFFFFF;
-   border: 1px solid #ddd;
-   border-radius: 4px;
-   box-shadow: 0px 1px 3px rgba(0,0,0,0.055);
-   display: inline-block;
-   float: right;
-   margin: 5px;
-   padding: 4px;
    transition: all 0.2s ease-in-out;
+   display: inline-block;
 }
-#Blog1 .blogthumb img {
+#Blog1 .blogthumb img
+{
    border-width: 0;
-   height: auto;
-   margin: 0px 0px 0px 0px;
-   vertical-align: middle;
    width: 120px;
+   height: auto;
+   vertical-align: middle;
+   margin: 0px 0px 0px 0px;
 }
-#Blog1 .blogbutton {
-   color: #0F6FC6;
-   cursor: pointer;
+#Blog1 .blogbutton
+{
    font-family: Exo 2;
    font-size: 16px;
-   margin-top: 6px;
    text-decoration: underline;
+   margin-top: 6px;
+   cursor: pointer;
+   color: #0F6FC6;
 }
-#Blog1 .pager {
+#Blog1 .pager
+{
    margin: 2px 0px 2px 0px;
 }
-#Blog1 .page-number {
-   border: 1px #EEEEEE solid;
-   color: #000000;
-   cursor: pointer;
+#Blog1 .page-number
+{
    font-family: Arial;
-   font-size: 13px;
    font-weight: normal;
-   margin-right: 2px;
-   padding: 1px 4px 1px 4px;
+   font-size: 13px;
+   color: #000000;
    text-decoration: none;
+   padding: 1px 4px 1px 4px;
+   cursor: pointer;
+   border: 1px #EEEEEE solid;
+   margin-right: 2px;
 }
-#Blog1 .active {
+#Blog1 .active 
+{
    background-color: #EEEEEE;
 }
-#Button4 {
-   height: 24px;
-   left: 1093px;
+#Button4
+{
    position: absolute;
+   left: 1093px;
    top: 11px;
    width: 96px;
+   height: 24px;
    z-index: 3;
 }
-#wb_Image1 {
-   height: 74px;
-   left: 0px;
+#wb_Image1
+{
    position: absolute;
+   left: 0px;
    top: 12px;
    width: 122px;
+   height: 74px;
    z-index: 1;
 }
-#Banner3 {
+#Banner3
+{
    display: inline-block;
-   height: 77px;
    width: 1198px;
+   height: 77px;
    z-index: 5;
 }
-#wb_Text1 {
-   height: 27px;
-   left: 142px;
+#wb_Text1
+{
    position: absolute;
+   left: 142px;
    top: 0px;
    width: 249px;
+   height: 27px;
    z-index: 0;
 }
-#wb_Text2 {
-   height: 27px;
-   left: 142px;
+#wb_Text2
+{
    position: absolute;
+   left: 142px;
    top: 59px;
    width: 328px;
+   height: 27px;
    z-index: 2;
 }
-#NewsFeedTicker1 {
-   height: 146px;
+#NewsFeedTicker1
+{
    overflow: hidden;
+   height: 146px;
    z-index: 6;
 }
-#Layer1 {
-   clear: left;
-   display: block;
-   float: left;
-   height: 98px;
+#Layer1
+{
    position: relative;
    text-align: center;
    width: 100%;
+   height: 98px;
+   float: left;
+   clear: left;
+   display: block;
    z-index: 4;
 }
-#Blog1 {
+#Blog1
+{
    overflow: auto;
 }
-#Layer2 {
+#Layer2
+{
+   position: relative;
+   text-align: center;
+   width: 100%;
+   height: 97px;
+   float: left;
    clear: left;
    display: inline-flex;
-   float: left;
-   height: 97px;
-   position: relative;
-   text-align: center;
-   width: 100%;
    z-index: 9;
 }
-#Layer3 {
-   display: inline-block;
-   float: left;
-   height: 2456px;
+#Layer3
+{
    position: relative;
    text-align: left;
    width: 100%;
+   height: 2456px;
+   float: left;
+   display: inline-block;
    z-index: 10;
 }
-#Layer1_Container {
+#Layer1_Container
+{
+   width: 1200px;
+   position: relative;
    margin-left: auto;
    margin-right: auto;
-   position: relative;
    text-align: left;
-   width: 1200px;
 }
-#Layer2_Container {
+#Layer2_Container
+{
    width: 100%;
 }
-@media only screen and (min-width: 480px) and (max-width: 1199px) {
-div#container {
+@media only screen and (min-width: 480px) and (max-width: 1199px)
+{
+div#container
+{
    width: 480px;
 }
-body {
+body
+{
    background-color: #FFFFFF;
    background-image: none;
 }
-#MasterPage1 {
-   display: inline;
-   height: 98px;
+#MasterPage1
+{
    left: 0px;
    top: 0px;
-   visibility: visible;
    width: 480px;
-}
-#Layer1 {
-   border-radius: 0px;
-   display: block;
    height: 98px;
-   margin: 0;
    visibility: visible;
-   width: 480px;
-}
-#Layer1 {
-   margin: 0;
-}
-#Layer1_Container {
-   width: 480px;
-}
-#Layer1 {
-   height: 98px;
-   width: 100%;
-}
-#wb_Image1 {
    display: inline;
-   height: 74px;
+}
+#Layer1
+{
+   width: 480px;
+   height: 98px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   border-radius: 0px;
+}
+#Layer1
+{
+   margin: 0;
+}
+#Layer1_Container
+{
+   width: 480px;
+}
+#Layer1
+{
+    width: 100%;
+    height: 98px;
+}
+#wb_Image1
+{
    left: 0px;
+   top: 12px;
+   width: 122px;
+   height: 74px;
+   visibility: visible;
+   display: inline;
    margin: 0;
    padding: 0;
-   top: 12px;
-   visibility: visible;
-   width: 122px;
 }
-#wb_Text1 {
-   display: inline;
-   height: 27px;
+#wb_Text1
+{
    left: 142px;
    top: 12px;
-   visibility: visible;
    width: 249px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
 }
-#wb_Text1 {
+#wb_Text1
+{
    font-family: "Exo 2";
-   font-size: 19px;
    font-weight: 400;
+   font-size: 19px;
    margin: 0;
    padding: 0;
    text-align: left;
 }
-#wb_Text2 {
-   display: inline;
-   height: 27px;
+#wb_Text2
+{
    left: 142px;
    top: 59px;
-   visibility: visible;
    width: 328px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
 }
-#wb_Text2 {
+#wb_Text2
+{
    font-family: "Exo 2";
-   font-size: 19px;
    font-weight: 400;
+   font-size: 19px;
    margin: 0;
    padding: 0;
    text-align: left;
 }
-#Button4 {
-   display: inline;
-   height: 24px;
+#Button4
+{
    left: 374px;
+   top: 15px;
+   width: 96px;
+   height: 24px;
+   visibility: visible;
+   display: inline;
    margin: 0;
    padding: 1px 6px 1px 6px;
-   top: 15px;
-   visibility: visible;
-   width: 96px;
 }
-#Layer2 {
+#Layer2
+{
+   width: 480px;
+   height: 87px;
+   visibility: visible;
+   display: inline-flex;
+   margin: 0;
    background-color: transparent;
    background-image: none;
-   display: inline-flex;
-   height: 87px;
-   margin: 0;
-   visibility: visible;
-   width: 480px;
 }
-#Layer2 {
+#Layer2
+{
    margin: 0;
 }
-#Layer2 {
-   height: 87px;
-   width: 100%;
+#Layer2
+{
+    width: 100%;
+    height: 87px;
 }
-#Layer2 {
+#Layer2
+{
    padding: 0;
 }
-#Layer3 {
-   display: inline-block;
+#Layer3
+{
    height: 1241px;
-   margin: 0;
    visibility: visible;
-}
-#Layer3 {
+   display: inline-block;
    margin: 0;
-   width: 100%;
 }
-#Layer3 {
-   height: 1241px;
+#Layer3
+{
    width: 100%;
+   margin: 0;
 }
-#Layer3 {
+#Layer3
+{
+    width: 100%;
+    height: 1241px;
+}
+#Layer3
+{
    padding: 0;
 }
-#Banner3 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner3
+{
    width: 387px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
 }
-#Banner3 span {
+#Banner3 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#NewsFeedTicker1 {
+#NewsFeedTicker1
+{
+   width: 100%;
+   visibility: visible;
    display: block;
    margin: 0;
+}
+#Blog1
+{
    visibility: visible;
-   width: 100%;
-}
-#Blog1 {
-   display: block;
-   visibility: visible;
-}
-#Blog1 .blogcolumn {
-   width: 100%;
-}
-#Blog1 .visible-col1 {
    display: block;
 }
+#Blog1 .blogcolumn
+{
+   width: 100%;
 }
-@media only screen and (max-width: 479px) {
-div#container {
+#Blog1 .visible-col1
+{
+   display: block;
+}
+}
+@media only screen and (max-width: 479px)
+{
+div#container
+{
    width: 320px;
 }
-body {
+body
+{
    background-color: #FFFFFF;
    background-image: none;
 }
-#MasterPage1 {
-   display: inline;
-   height: 118px;
+#MasterPage1
+{
    left: 0px;
    top: 0px;
-   visibility: visible;
    width: 320px;
-}
-#Layer1 {
-   border-radius: 0px;
-   display: block;
    height: 118px;
-   margin: 0;
    visibility: visible;
-   width: 320px;
-}
-#Layer1 {
-   margin: 0;
-}
-#Layer1_Container {
-   width: 320px;
-}
-#Layer1 {
-   height: 118px;
-   width: 100%;
-}
-#wb_Image1 {
    display: inline;
-   height: 67px;
+}
+#Layer1
+{
+   width: 320px;
+   height: 118px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   border-radius: 0px;
+}
+#Layer1
+{
+   margin: 0;
+}
+#Layer1_Container
+{
+   width: 320px;
+}
+#Layer1
+{
+    width: 100%;
+    height: 118px;
+}
+#wb_Image1
+{
    left: 1px;
+   top: 23px;
+   width: 110px;
+   height: 67px;
+   visibility: visible;
+   display: inline;
    margin: 0;
    padding: 0;
-   top: 23px;
-   visibility: visible;
-   width: 110px;
 }
-#wb_Text1 {
-   display: inline;
-   height: 27px;
+#wb_Text1
+{
    left: 111px;
    top: 12px;
-   visibility: visible;
    width: 209px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
 }
-#wb_Text1 {
+#wb_Text1
+{
    font-family: "Exo 2";
-   font-size: 19px;
    font-weight: 400;
+   font-size: 19px;
    margin: 0;
    padding: 0;
    text-align: center;
 }
-#wb_Text2 {
-   display: inline;
-   height: 48px;
+#wb_Text2
+{
    left: 111px;
    top: 59px;
-   visibility: visible;
    width: 201px;
+   height: 48px;
+   visibility: visible;
+   display: inline;
 }
-#wb_Text2 {
+#wb_Text2
+{
    font-family: "Exo 2";
-   font-size: 16px;
    font-weight: 400;
+   font-size: 16px;
    margin: 0;
    padding: 0;
    text-align: center;
 }
-#Button4 {
-   display: inline;
-   height: 28px;
+#Button4
+{
    left: 12px;
+   top: 90px;
+   width: 86px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
    margin: 0;
    padding: 1px 6px 1px 6px;
-   top: 90px;
-   visibility: visible;
-   width: 86px;
 }
-#Layer2 {
+#Layer2
+{
+   width: 320px;
+   height: 87px;
+   visibility: visible;
+   display: inline-flex;
+   margin: 0;
    background-color: #FBFBFB;
    background-image: none;
    background-image: none;
-   display: inline-flex;
-   height: 87px;
+}
+#Layer2
+{
    margin: 0;
+}
+#Layer2
+{
+    width: 100%;
+    height: 87px;
+}
+#Layer2
+{
+   padding: 0;
+}
+#Layer3
+{
+   height: 1581px;
    visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Layer3
+{
+   width: 100%;
+   margin: 0;
+}
+#Layer3
+{
+    width: 100%;
+    height: 1581px;
+}
+#Layer3
+{
+   padding: 0;
+}
+#Banner3
+{
    width: 320px;
-}
-#Layer2 {
-   margin: 0;
-}
-#Layer2 {
-   height: 87px;
-   width: 100%;
-}
-#Layer2 {
-   padding: 0;
-}
-#Layer3 {
-   display: inline-block;
-   height: 1581px;
-   margin: 0;
-   visibility: visible;
-}
-#Layer3 {
-   margin: 0;
-   width: 100%;
-}
-#Layer3 {
-   height: 1581px;
-   width: 100%;
-}
-#Layer3 {
-   padding: 0;
-}
-#Banner3 {
-   display: inline-block;
    height: 79px;
-   margin: 0;
    visibility: visible;
-   width: 320px;
+   display: inline-block;
+   margin: 0;
 }
-#Banner3 span {
+#Banner3 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#NewsFeedTicker1 {
+#NewsFeedTicker1
+{
+   width: 100%;
+   visibility: visible;
    display: block;
    margin: 0;
+}
+#Blog1
+{
    visibility: visible;
-   width: 100%;
-}
-#Blog1 {
-   display: block;
-   visibility: visible;
-}
-#Blog1 .blogcolumn {
-   width: 100%;
-}
-#Blog1 .visible-col1 {
    display: block;
 }
+#Blog1 .blogcolumn
+{
+   width: 100%;
 }
-.darktheme body {
+#Blog1 .visible-col1
+{
+   display: block;
+}
+}
+.darktheme body
+{
    background-color: #000000;
 }
 .darktheme #Layer1,
 .darktheme #Layer2,
-.darktheme #Layer3 {
+.darktheme #Layer3
+{
    filter: invert(100%);
 }

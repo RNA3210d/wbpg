@@ -1,20 +1,23 @@
-div#container {
-   margin: 0 auto 0 auto;
-   position: relative;
-   text-align: left;
+div#container
+{
    width: 1200px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
 }
-body {
+body
+{
    background-color: #FFFFFF;
    color: #000000;
    font-family: Arial;
-   font-size: 13px;
    font-weight: normal;
+   font-size: 13px;
    line-height: 1.1875;
    margin: 0;
    text-align: center;
 }
-#preloader {
+#preloader
+{
    background: #FFFFFF url("images/box.gif") no-repeat center center;
    bottom: 0;
    position: fixed;
@@ -22,1386 +25,1579 @@ body {
    width: 100%;
    z-index: 99999;
 }
-#Layer1 {
+#Layer1
+{
    background-image: linear-gradient(to top, #F6F8F9 0%, #E5EBEE 50%, #D7DEE3 51%, #F5F7F9 100%);
    border-radius: 12px;
    box-shadow: 2px 2px 11px #0F6FC6;
    margin: 0;
 }
-#wb_Image1 {
+#wb_Image1
+{
    vertical-align: top;
 }
-#Image1 {
+#Image1
+{
    border: 0px solid #000000;
    border-radius: 0px;
-   height: 100%;
-   left: 0;
-   margin: 0;
    padding: 0;
+   margin: 0;
+   left: 0;
    top: 0;
    width: 100%;
+   height: 100%;
 }
-#wb_Text1 {
+#wb_Text1 
+{
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   margin: 0;
    padding: 0;
+   margin: 0;
    text-align: left;
 }
-#wb_Text1 {
+#wb_Text1
+{
    color: #77893E;
    font-family: "Exo 2";
-   font-size: 19px;
    font-weight: normal;
+   font-size: 19px;
 }
-#wb_Text1 div {
+#wb_Text1 div
+{
    text-align: left;
 }
-#wb_Text2 {
+#wb_Text2 
+{
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   margin: 0;
    padding: 0;
+   margin: 0;
    text-align: left;
 }
-#wb_Text2 {
+#wb_Text2
+{
    color: #000000;
    font-family: "Exo 2";
-   font-size: 19px;
    font-weight: normal;
+   font-size: 19px;
 }
-#wb_Text2 div {
+#wb_Text2 div
+{
    text-align: left;
 }
-#Button4 {
-   -webkit-appearance: none;
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
+#Button4
+{
    border: 1px solid #2E6DA4;
    border-radius: 4px;
+   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    color: #FFFFFF;
    font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 13px;
    padding: 1px 6px 1px 6px;
    text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
 }
 }
-#Button4:focus {
+#Button4:focus
+{
    outline: 0;
 }
-#Layer2 {
+#Layer2
+{
    background-color: transparent;
    background-image: none;
    border-radius: 0px;
-   margin: 0;
    padding: 0;
+   margin: 0;
 }
-#Layer3 {
+#Layer3
+{
    background-color: transparent;
    background-image: none;
    border-radius: 0px;
-   margin: 0;
    padding: 0;
+   margin: 0;
 }
-#TextArea1 {
-   background-color: #FFFFFF;
-   background-image: none;
+#TextArea1
+{
+   box-sizing: border-box;
    border: 1px solid #CCCCCC;
    border-radius: 4px;
-   box-sizing: border-box;
+   background-color: #FFFFFF;
+   background-image: none;
    color: #000000;
    font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
    font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   text-align: left;
+   padding: 4px 4px 4px 4px;
    margin: 0;
    overflow: auto;
-   padding: 4px 4px 4px 4px;
    resize: none;
-   text-align: left;
 }
-#TextArea1:focus {
+#TextArea1:focus
+{
    border-color: #66AFE9;
    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
    outline: 0;
 }
-#TextArea2 {
-   background-color: #FFFFFF;
-   background-image: none;
+#TextArea2
+{
+   box-sizing: border-box;
    border: 1px solid #CCCCCC;
    border-radius: 4px;
-   box-sizing: border-box;
+   background-color: #FFFFFF;
+   background-image: none;
    color: #000000;
    font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
    font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   text-align: left;
+   padding: 4px 4px 4px 4px;
    margin: 0;
    overflow: auto;
-   padding: 4px 4px 4px 4px;
    resize: none;
-   text-align: left;
 }
-#TextArea2:focus {
+#TextArea2:focus
+{
    border-color: #66AFE9;
    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
    outline: 0;
 }
-#Banner3 {
+#Banner3
+{
    background-color: transparent;
    background-image: none;
    border: 1px solid transparent;
    border-radius: 0px;
    color: #0F6FC6;
    font-family: "Exo 2";
-   font-size: 27px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 27px;
    text-align: center;
    text-shadow: 0px 0px 13px rgba(153,215,239,1.00);
+   margin: 0;
 }
-#Banner3 span {
+#Banner3 span
+{
    display: block;
    height: 27px;
-   margin: 19px 0 19px 0;
+   margin: 19px 0 19px 0 ;
 }
-#Banner3 span:before,
-#Banner3 span:after {
+#Banner3 span:before, #Banner3 span:after 
+{
    display: block;
-   left: 0;
    position: absolute;
-   right: 0;
    top: 63px;
+   left: 0;
+   right: 0;
 }
-Banner3 span:before {
+Banner3 span:before
+{
    content: "For future reference... (Work in progress)";
    opacity: .3;
    transform: scaleY(-1);
 }
-#TextArea3 {
-   background-color: #FFFFFF;
-   background-image: none;
+#TextArea3
+{
+   box-sizing: border-box;
    border: 1px solid #CCCCCC;
    border-radius: 4px;
-   box-sizing: border-box;
+   background-color: #FFFFFF;
+   background-image: none;
    color: #000000;
    font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
    font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   text-align: left;
+   padding: 4px 4px 4px 4px;
    margin: 0;
    overflow: auto;
-   padding: 4px 4px 4px 4px;
    resize: none;
-   text-align: left;
 }
-#TextArea3:focus {
+#TextArea3:focus
+{
    border-color: #66AFE9;
    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
    outline: 0;
 }
-#Banner1 {
+#Banner1
+{
    background-color: transparent;
    background-image: none;
    border: 1px solid transparent;
    border-radius: 0px;
    color: #0F6FC6;
    font-family: "Exo 2";
-   font-size: 27px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 27px;
    text-align: left;
    text-shadow: 0px 0px 14px rgba(153,215,239,1.00);
+   margin: 0;
 }
-#Banner1 span {
+#Banner1 span
+{
    display: block;
    height: 27px;
-   margin: 34px 0 34px 0;
+   margin: 34px 0 34px 0 ;
 }
-#Banner1 span:before,
-#Banner1 span:after {
+#Banner1 span:before, #Banner1 span:after 
+{
    display: block;
-   left: 0;
    position: absolute;
-   right: 0;
    top: 78px;
+   left: 0;
+   right: 0;
 }
-Banner1 span:before {
+Banner1 span:before
+{
    content: "SwayWM Config for low RAM systems";
    opacity: .3;
    transform: scaleY(-1);
 }
-#Banner2 {
+#Banner2
+{
    background-color: transparent;
    background-image: none;
    border: 1px solid transparent;
    border-radius: 0px;
    color: #0F6FC6;
    font-family: "Exo 2";
-   font-size: 27px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 27px;
    text-align: left;
    text-shadow: 0px 0px 14px rgba(153,215,239,1.00);
+   margin: 0;
 }
-#Banner2 span {
+#Banner2 span
+{
    display: block;
    height: 27px;
-   margin: 19px 0 19px 0;
+   margin: 19px 0 19px 0 ;
 }
-#Banner2 span:before,
-#Banner2 span:after {
+#Banner2 span:before, #Banner2 span:after 
+{
    display: block;
-   left: 0;
    position: absolute;
-   right: 0;
    top: 63px;
+   left: 0;
+   right: 0;
 }
-Banner2 span:before {
+Banner2 span:before
+{
    content: "MPV Config";
    opacity: .3;
    transform: scaleY(-1);
 }
-#Banner4 {
+#Banner4
+{
    background-color: transparent;
    background-image: none;
    border: 1px solid transparent;
    border-radius: 0px;
    color: #0F6FC6;
    font-family: "Exo 2";
-   font-size: 27px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 27px;
    text-align: left;
    text-shadow: 0px 0px 14px rgba(153,215,239,1.00);
+   margin: 0;
 }
-#Banner4 span {
+#Banner4 span
+{
    display: block;
    height: 27px;
-   margin: 35px 0 35px 0;
+   margin: 35px 0 35px 0 ;
 }
-#Banner4 span:before,
-#Banner4 span:after {
+#Banner4 span:before, #Banner4 span:after 
+{
    display: block;
-   left: 0;
    position: absolute;
-   right: 0;
    top: 79px;
+   left: 0;
+   right: 0;
 }
-Banner4 span:before {
+Banner4 span:before
+{
    content: "i3 WM Config for low RAM systems (Before I switched to sway)";
    opacity: .3;
    transform: scaleY(-1);
 }
-#wb_Text3 {
+#wb_Text3 
+{
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   margin: 0;
    padding: 0;
+   margin: 0;
    text-align: left;
 }
-#wb_Text3 {
+#wb_Text3
+{
    color: #000000;
    font-family: Arial;
-   font-size: 13px;
    font-weight: 400;
+   font-size: 13px;
    line-height: 16px;
 }
-#wb_Text3 p,
-#wb_Text3 ul {
+#wb_Text3 p, #wb_Text3 ul
+{
    margin: 0;
    padding: 0;
 }
-#Banner5 {
+#Banner5
+{
    background-color: transparent;
    background-image: none;
    border: 1px solid transparent;
    border-radius: 0px;
    color: #0F6FC6;
    font-family: "Exo 2";
-   font-size: 27px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 27px;
    text-align: left;
    text-shadow: 0px 0px 14px rgba(153,215,239,1.00);
+   margin: 0;
 }
-#Banner5 span {
+#Banner5 span
+{
    display: block;
    height: 27px;
-   margin: 19px 0 19px 0;
+   margin: 19px 0 19px 0 ;
 }
-#Banner5 span:before,
-#Banner5 span:after {
+#Banner5 span:before, #Banner5 span:after 
+{
    display: block;
-   left: 0;
    position: absolute;
-   right: 0;
    top: 63px;
+   left: 0;
+   right: 0;
 }
-Banner5 span:before {
+Banner5 span:before
+{
    content: "Optimized makepkg.conf";
    opacity: .3;
    transform: scaleY(-1);
 }
-#TextArea4 {
-   background-color: #FFFFFF;
-   background-image: none;
+#TextArea4
+{
+   box-sizing: border-box;
    border: 1px solid #CCCCCC;
    border-radius: 4px;
-   box-sizing: border-box;
+   background-color: #FFFFFF;
+   background-image: none;
    color: #000000;
    font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
    font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   text-align: left;
+   padding: 4px 4px 4px 4px;
    margin: 0;
    overflow: auto;
-   padding: 4px 4px 4px 4px;
    resize: none;
-   text-align: left;
 }
-#TextArea4:focus {
+#TextArea4:focus
+{
    border-color: #66AFE9;
    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
    outline: 0;
 }
-#Banner6 {
+#Banner6
+{
    background-color: transparent;
    background-image: none;
    border: 1px solid transparent;
    border-radius: 0px;
    color: #0F6FC6;
    font-family: "Exo 2";
-   font-size: 27px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 27px;
    text-align: left;
    text-shadow: 0px 0px 14px rgba(153,215,239,1.00);
+   margin: 0;
 }
-#Banner6 span {
+#Banner6 span
+{
    display: block;
    height: 27px;
-   margin: 30px 0 30px 0;
+   margin: 30px 0 30px 0 ;
 }
-#Banner6 span:before,
-#Banner6 span:after {
+#Banner6 span:before, #Banner6 span:after 
+{
    display: block;
-   left: 0;
    position: absolute;
-   right: 0;
    top: 74px;
+   left: 0;
+   right: 0;
 }
-Banner6 span:before {
+Banner6 span:before
+{
    content: "Lightweight Waybar Config (no battery)";
    opacity: .3;
    transform: scaleY(-1);
 }
-#TextArea5 {
-   background-color: #FFFFFF;
-   background-image: none;
+#TextArea5
+{
+   box-sizing: border-box;
    border: 1px solid #CCCCCC;
    border-radius: 4px;
-   box-sizing: border-box;
+   background-color: #FFFFFF;
+   background-image: none;
    color: #000000;
    font-family: Arial;
-   font-size: 13px;
-   font-style: normal;
    font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   text-align: left;
+   padding: 4px 4px 4px 4px;
    margin: 0;
    overflow: auto;
-   padding: 4px 4px 4px 4px;
    resize: none;
-   text-align: left;
 }
-#TextArea5:focus {
+#TextArea5:focus
+{
    border-color: #66AFE9;
    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
    outline: 0;
 }
-#wb_Image2 {
+#wb_Image2
+{
    margin: 0;
    vertical-align: top;
 }
-#Image2 {
+#Image2
+{
    border: 0px solid #000000;
    border-radius: 18px;
-   box-shadow: 0px 0px 20px #FFFFFF;
    box-sizing: border-box;
+   padding: 0;
+   box-shadow: 0px 0px 20px #FFFFFF;
    display: block;
+   width: 100%;
    height: auto;
+   max-width: 360px;
    margin-left: auto;
    margin-right: auto;
-   max-width: 360px;
-   padding: 0;
    vertical-align: top;
-   width: 100%;
 }
-#Banner7 {
+#Banner7
+{
    background-color: transparent;
    background-image: none;
    border: 1px solid transparent;
    border-radius: 0px;
    color: #0F6FC6;
    font-family: "Exo 2";
-   font-size: 27px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 27px;
    text-align: center;
    text-shadow: 0px 0px 14px rgba(153,215,239,1.00);
+   margin: 0;
 }
-#Banner7 span {
+#Banner7 span
+{
    display: block;
    height: 27px;
-   margin: 19px 0 19px 0;
+   margin: 19px 0 19px 0 ;
 }
-#Banner7 span:before,
-#Banner7 span:after {
+#Banner7 span:before, #Banner7 span:after 
+{
    display: block;
-   left: 0;
    position: absolute;
-   right: 0;
    top: 63px;
+   left: 0;
+   right: 0;
 }
-Banner7 span:before {
+Banner7 span:before
+{
    content: "Relevant XKCD (#1806)";
    opacity: .3;
    transform: scaleY(-1);
 }
-#PhotoGallery1 {
+#PhotoGallery1
+{
    box-sizing: border-box;
-   display: table;
    font-size: 0;
-   height: 100%;
-   margin: 0;
-   table-layout: fixed;
    width: 100%;
-}
-#PhotoGallery1 .thumbnails {
+   height: 100%;
+   table-layout: fixed;
+   display: table;
    margin: 0;
 }
-#PhotoGallery1 .thumbnail {
+#PhotoGallery1 .thumbnails
+{
+   margin: 0;
+}
+#PhotoGallery1 .thumbnail
+{
+   position: relative;
+   min-height: 1px;
    box-sizing: border-box;
    float: left;
-   min-height: 1px;
    padding: 3px 3px 3px 3px;
-   position: relative;
+   width: 50%;
    text-align: center;
    vertical-align: top;
-   width: 50%;
 }
-#PhotoGallery1 .thumbnail img {
+#PhotoGallery1 .thumbnail img
+{
    border: 0px #000000 solid;
-   border-radius: 0px;
-   box-sizing: border-box;
    display: block;
+   width: 100%;
    height: auto;
    max-width: 100%;
-   width: 100%;
+   box-sizing: border-box;
+   border-radius: 0px;
 }
 #PhotoGallery1 .clearfix:before,
 #PhotoGallery1 .clearfix:after,
 #PhotoGallery1 .thumbnails:before,
-#PhotoGallery1 .thumbnails:after {
-   content: " ";
+#PhotoGallery1 .thumbnails:after
+{
    display: table;
+   content: " ";
 }
 #PhotoGallery1 .clearfix:after,
-#PhotoGallery1 .thumbnails:after {
+#PhotoGallery1 .thumbnails:after
+{
    clear: both;
 }
-#PhotoGallery1 .visible-col3 {
+#PhotoGallery1 .visible-col3
+{
    display: none;
 }
-#Banner8 {
+#Banner8
+{
    background-color: transparent;
    background-image: none;
    border: 1px solid transparent;
    border-radius: 0px;
    color: #0F6FC6;
    font-family: "Exo 2";
-   font-size: 27px;
-   font-style: normal;
    font-weight: normal;
-   margin: 0;
+   font-style: normal;
+   font-size: 27px;
    text-align: left;
    text-shadow: 0px 0px 14px rgba(153,215,239,1.00);
+   margin: 0;
 }
-#Banner8 span {
+#Banner8 span
+{
    display: block;
    height: 27px;
-   margin: 19px 0 19px 0;
+   margin: 19px 0 19px 0 ;
 }
-#Banner8 span:before,
-#Banner8 span:after {
+#Banner8 span:before, #Banner8 span:after 
+{
    display: block;
-   left: 0;
    position: absolute;
-   right: 0;
    top: 63px;
+   left: 0;
+   right: 0;
 }
-Banner8 span:before {
+Banner8 span:before
+{
    content: "Current setup on laptop";
    opacity: .3;
    transform: scaleY(-1);
 }
-#wb_Image3 {
+#wb_Image3
+{
    margin: 0;
    vertical-align: top;
 }
-#Image3 {
+#Image3
+{
    border: 0px solid #000000;
    border-radius: 0px;
    box-sizing: border-box;
+   padding: 0;
    display: block;
+   width: 100%;
    height: auto;
+   max-width: 679px;
    margin-left: auto;
    margin-right: auto;
-   max-width: 679px;
-   padding: 0;
    vertical-align: top;
-   width: 100%;
 }
-#wb_Text4 {
+#wb_Text4 
+{
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
    border-radius: 0px;
-   margin: 0;
    padding: 0;
+   margin: 0;
    text-align: left;
 }
-#wb_Text4 {
+#wb_Text4
+{
    color: #000000;
    font-family: Arial;
-   font-size: 19px;
    font-weight: 400;
+   font-size: 19px;
    line-height: 21px;
 }
-#wb_Text4 p,
-#wb_Text4 ul {
+#wb_Text4 p, #wb_Text4 ul
+{
    margin: 0;
    padding: 0;
 }
-#wb_Text4 {
-   box-sizing: border-box;
+#wb_Text4
+{
    display: block;
    margin: 0;
+   box-sizing: border-box;
    width: 100%;
 }
-#Button4 {
-   height: 24px;
-   left: 1093px;
+#Button4
+{
    position: absolute;
+   left: 1093px;
    top: 11px;
    width: 96px;
+   height: 24px;
    z-index: 3;
 }
-#TextArea1 {
+#TextArea1
+{
    display: block;
-   height: 522px;
    width: 100%;
+   height: 522px;
    z-index: 14;
 }
-#Banner1 {
+#Banner1
+{
    display: inline-block;
-   height: 108px;
    width: 1149px;
+   height: 108px;
    z-index: 13;
 }
-#wb_Image1 {
-   height: 74px;
-   left: 0px;
+#wb_Image1
+{
    position: absolute;
+   left: 0px;
    top: 12px;
    width: 122px;
+   height: 74px;
    z-index: 1;
 }
-#TextArea3 {
+#TextArea3
+{
    display: block;
-   height: 204px;
    width: 100%;
+   height: 204px;
    z-index: 12;
 }
-#TextArea2 {
+#TextArea2
+{
    display: block;
-   height: 373px;
    width: 100%;
+   height: 373px;
    z-index: 16;
 }
-#wb_Image2 {
+#wb_Image2
+{
    display: inline-block;
-   height: auto;
    width: 100%;
+   height: auto;
    z-index: 7;
 }
-#Banner3 {
+#Banner3
+{
    display: inline-block;
-   height: 77px;
    width: 1195px;
+   height: 77px;
    z-index: 5;
 }
-#wb_Image3 {
+#wb_Image3
+{
    display: inline-block;
-   height: auto;
    width: 100%;
+   height: auto;
    z-index: 21;
 }
-#TextArea5 {
+#TextArea5
+{
    display: block;
-   height: 406px;
    width: 100%;
+   height: 406px;
    z-index: 20;
 }
-#Banner2 {
+#Banner2
+{
    display: inline-block;
-   height: 77px;
    width: 1149px;
+   height: 77px;
    z-index: 11;
 }
-#TextArea4 {
+#TextArea4
+{
    display: block;
-   height: 661px;
    width: 100%;
+   height: 661px;
    z-index: 18;
 }
-#Banner5 {
+#Banner5
+{
    display: inline-block;
-   height: 77px;
    width: 1195px;
+   height: 77px;
    z-index: 17;
 }
-#wb_PhotoGallery1 {
+#wb_PhotoGallery1
+{
    display: inline-block;
    width: 100%;
    z-index: 9;
 }
-#Banner4 {
+#Banner4
+{
    display: inline-block;
-   height: 110px;
    width: 1182px;
+   height: 110px;
    z-index: 15;
 }
-#Banner7 {
+#Banner7
+{
    display: inline-block;
-   height: 77px;
    width: 1196px;
+   height: 77px;
    z-index: 6;
 }
-#wb_Text1 {
-   height: 27px;
-   left: 142px;
+#wb_Text1
+{
    position: absolute;
+   left: 142px;
    top: 0px;
    width: 249px;
+   height: 27px;
    z-index: 0;
 }
-#Banner6 {
+#Banner6
+{
    display: inline-block;
-   height: 100px;
    width: 1195px;
+   height: 100px;
    z-index: 19;
 }
-#wb_Text2 {
-   height: 27px;
-   left: 142px;
+#wb_Text2
+{
    position: absolute;
+   left: 142px;
    top: 59px;
    width: 328px;
+   height: 27px;
    z-index: 2;
 }
-#wb_Text3 {
-   height: 15px;
-   left: 0px;
+#wb_Text3
+{
    position: absolute;
+   left: 0px;
    top: 4231px;
    width: 1200px;
+   height: 15px;
    z-index: 23;
 }
-#Banner8 {
+#Banner8
+{
    display: inline-block;
-   height: 77px;
    width: 1149px;
+   height: 77px;
    z-index: 8;
 }
-#Layer1 {
+#Layer1
+{
+   position: relative;
+   text-align: center;
+   width: 100%;
+   height: 98px;
+   float: left;
    clear: left;
    display: block;
-   float: left;
-   height: 98px;
-   position: relative;
-   text-align: center;
-   width: 100%;
    z-index: 4;
 }
-#Layer2 {
-   clear: both;
-   display: block;
-   float: none;
-   height: 97px;
+#Layer2
+{
    position: relative;
    text-align: center;
-   vertical-align: top;
    width: 100%;
+   height: 97px;
+   float: none;
+   clear: both;
+   vertical-align: top;
+   display: block;
    z-index: 24;
 }
-#Layer3 {
-   display: inline-block;
-   float: none;
-   height: 2430px;
-   overflow: scroll;
+#Layer3
+{
    position: relative;
+   overflow: scroll;
    text-align: left;
-   vertical-align: top;
    width: 1200px;
+   height: 2430px;
+   float: none;
+   vertical-align: top;
+   display: inline-block;
    z-index: 25;
 }
-#Layer1_Container {
+#Layer1_Container
+{
+   width: 1200px;
+   position: relative;
    margin-left: auto;
    margin-right: auto;
-   position: relative;
    text-align: left;
-   width: 1200px;
 }
-@media only screen and (min-width: 480px) and (max-width: 1199px) {
-div#container {
+@media only screen and (min-width: 480px) and (max-width: 1199px)
+{
+div#container
+{
    width: 480px;
 }
-body {
+body
+{
    background-color: #FFFFFF;
    background-image: none;
 }
-#MasterPage1 {
-   display: inline;
-   height: 98px;
+#MasterPage1
+{
    left: 0px;
    top: 0px;
-   visibility: visible;
    width: 480px;
-}
-#Layer1 {
-   border-radius: 0px;
-   display: block;
    height: 98px;
-   margin: 0;
    visibility: visible;
-   width: 480px;
-}
-#Layer1 {
-   margin: 0;
-}
-#Layer1_Container {
-   width: 480px;
-}
-#Layer1 {
-   height: 98px;
-   width: 100%;
-}
-#wb_Image1 {
    display: inline;
-   height: 74px;
+}
+#Layer1
+{
+   width: 480px;
+   height: 98px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   border-radius: 0px;
+}
+#Layer1
+{
+   margin: 0;
+}
+#Layer1_Container
+{
+   width: 480px;
+}
+#Layer1
+{
+    width: 100%;
+    height: 98px;
+}
+#wb_Image1
+{
    left: 0px;
+   top: 12px;
+   width: 122px;
+   height: 74px;
+   visibility: visible;
+   display: inline;
    margin: 0;
    padding: 0;
-   top: 12px;
-   visibility: visible;
-   width: 122px;
 }
-#wb_Text1 {
-   display: inline;
-   height: 27px;
+#wb_Text1
+{
    left: 142px;
    top: 12px;
-   visibility: visible;
    width: 249px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
 }
-#wb_Text1 {
+#wb_Text1
+{
    font-family: "Exo 2";
-   font-size: 19px;
    font-weight: 400;
+   font-size: 19px;
    margin: 0;
    padding: 0;
    text-align: left;
 }
-#wb_Text2 {
-   display: inline;
-   height: 27px;
+#wb_Text2
+{
    left: 142px;
    top: 59px;
-   visibility: visible;
    width: 328px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
 }
-#wb_Text2 {
+#wb_Text2
+{
    font-family: "Exo 2";
-   font-size: 19px;
    font-weight: 400;
+   font-size: 19px;
    margin: 0;
    padding: 0;
    text-align: left;
 }
-#Button4 {
-   display: inline;
-   height: 24px;
+#Button4
+{
    left: 374px;
+   top: 15px;
+   width: 96px;
+   height: 24px;
+   visibility: visible;
+   display: inline;
    margin: 0;
    padding: 1px 6px 1px 6px;
-   top: 15px;
-   visibility: visible;
-   width: 96px;
 }
-#Layer2 {
-   display: block;
-   height: 97px;
-   margin: 0;
-   visibility: visible;
+#Layer2
+{
    width: 480px;
-}
-#Layer2 {
+   height: 97px;
+   visibility: visible;
+   display: block;
    margin: 0;
 }
-#Layer2 {
-   height: 97px;
-   width: 100%;
+#Layer2
+{
+   margin: 0;
 }
-#Layer2 {
+#Layer2
+{
+    width: 100%;
+    height: 97px;
+}
+#Layer2
+{
    padding: 0;
 }
-#Layer3 {
+#Layer3
+{
+   width: 480px;
+   height: 2875px;
+   visibility: visible;
    display: inline-block;
-   height: 2875px;
-   margin: 0;
-   visibility: visible;
-   width: 480px;
-}
-#Layer3 {
    margin: 0;
 }
-#Layer3 {
-   height: 2875px;
-   width: 480px;
+#Layer3
+{
+   margin: 0;
 }
-#Layer3 {
+#Layer3
+{
+    width: 480px;
+    height: 2875px;
+}
+#Layer3
+{
    padding: 0;
 }
-#TextArea1 {
-   display: block;
+#TextArea1
+{
+   width: 100%;
    height: 521px;
+   visibility: visible;
+   display: block;
    margin: 0;
    padding: 4px 4px 4px 4px;
    text-align: left;
-   visibility: visible;
-   width: 100%;
 }
-#TextArea2 {
-   display: block;
+#TextArea2
+{
+   width: 100%;
    height: 521px;
+   visibility: visible;
+   display: block;
    margin: 0;
    padding: 4px 4px 4px 4px;
    text-align: left;
-   visibility: visible;
-   width: 100%;
 }
-#Banner3 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner3
+{
    width: 320px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
 }
-#Banner3 span {
+#Banner3 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#TextArea3 {
-   box-shadow: 0px 0px 15px #DBEFF9;
-   display: block;
+#TextArea3
+{
+   width: 100%;
    height: 196px;
+   visibility: visible;
+   display: block;
    margin: 0;
    padding: 4px 4px 4px 4px;
    text-align: left;
-   visibility: visible;
-   width: 100%;
+   box-shadow: 0px 0px 15px #DBEFF9;
 }
-#Banner1 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner1
+{
    width: 320px;
-}
-#Banner1 span {
-   height: 27px;
-   margin: 25px 0 25px 0;
-}
-#Banner2 {
-   display: inline-block;
    height: 79px;
-   margin: 0;
    visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Banner1 span
+{
+   height: 27px;
+   margin: 25px 0 25px 0 ;
+}
+#Banner2
+{
    width: 308px;
-}
-#Banner2 span {
-   height: 27px;
-   margin: 25px 0 25px 0;
-}
-#Banner4 {
-   display: inline-block;
    height: 79px;
-   margin: 0;
    visibility: visible;
-   width: 320px;
+   display: inline-block;
+   margin: 0;
 }
-#Banner4 span {
+#Banner2 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#wb_Text3 {
-   display: inline;
-   height: 6px;
+#Banner4
+{
+   width: 320px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Banner4 span
+{
+   height: 27px;
+   margin: 25px 0 25px 0 ;
+}
+#wb_Text3
+{
    left: 0px;
    top: 1692px;
-   visibility: visible;
    width: 480px;
+   height: 6px;
+   visibility: visible;
+   display: inline;
 }
-#wb_Text3 {
+#wb_Text3
+{
    font-family: Arial;
-   font-size: 11px;
    font-weight: 400;
+   font-size: 11px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
    line-height: 12px;
-   margin: 0;
-   padding: 0;
-   text-align: left;
 }
-#Banner5 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner5
+{
    width: 308px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
 }
-#Banner5 span {
+#Banner5 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#TextArea4 {
-   display: block;
+#TextArea4
+{
+   width: 100%;
    height: 521px;
+   visibility: visible;
+   display: block;
    margin: 0;
    padding: 4px 4px 4px 4px;
    text-align: left;
-   visibility: visible;
-   width: 100%;
 }
-#Banner6 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner6
+{
    width: 308px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
 }
-#Banner6 span {
+#Banner6 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#TextArea5 {
-   display: block;
+#TextArea5
+{
+   width: 100%;
    height: 521px;
+   visibility: visible;
+   display: block;
    margin: 0;
    padding: 4px 4px 4px 4px;
    text-align: left;
-   visibility: visible;
-   width: 100%;
 }
-#wb_Image2 {
+#wb_Image2
+{
+   width: 100%;
+   visibility: visible;
    display: block;
    margin: 0;
    padding: 0;
-   visibility: visible;
-   width: 100%;
 }
-#Banner7 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner7
+{
    width: 435px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
 }
-#Banner7 span {
+#Banner7 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#wb_PhotoGallery1 {
-   color: #000000;
+#wb_PhotoGallery1
+{
+   width: 100%;
+   visibility: visible;
    display: block;
    margin: 0;
-   visibility: visible;
-   width: 100%;
+   color: #000000;
 }
-#PhotoGallery1 .thumbnail {
+#PhotoGallery1 .thumbnail
+{
    width: 50%;
 }
-#PhotoGallery1 .visible-col3 {
+#PhotoGallery1 .visible-col3
+{
    display: none;
 }
-#Banner8 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner8
+{
    width: 308px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
 }
-#Banner8 span {
+#Banner8 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#wb_Image3 {
+#wb_Image3
+{
+   width: 100%;
+   visibility: visible;
    display: block;
    margin: 0;
    padding: 0;
-   visibility: visible;
-   width: 100%;
 }
-#wb_Text4 {
+#wb_Text4
+{
+   visibility: visible;
    display: block;
-   visibility: visible;
 }
-#wb_Text4 {
+#wb_Text4
+{
    font-family: Arial;
-   font-size: 11px;
    font-weight: 400;
-   line-height: 12px;
+   font-size: 11px;
    margin: 0;
    padding: 0;
    text-align: left;
+   line-height: 12px;
 }
 }
-@media only screen and (max-width: 479px) {
-div#container {
+@media only screen and (max-width: 479px)
+{
+div#container
+{
    width: 320px;
 }
-body {
+body
+{
    background-color: #FFFFFF;
    background-image: none;
 }
-#MasterPage1 {
-   display: inline;
-   height: 118px;
+#MasterPage1
+{
    left: 0px;
    top: 0px;
-   visibility: visible;
    width: 320px;
-}
-#Layer1 {
-   border-radius: 0px;
-   display: block;
    height: 118px;
-   margin: 0;
    visibility: visible;
-   width: 320px;
-}
-#Layer1 {
-   margin: 0;
-}
-#Layer1_Container {
-   width: 320px;
-}
-#Layer1 {
-   height: 118px;
-   width: 100%;
-}
-#wb_Image1 {
    display: inline;
-   height: 67px;
+}
+#Layer1
+{
+   width: 320px;
+   height: 118px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   border-radius: 0px;
+}
+#Layer1
+{
+   margin: 0;
+}
+#Layer1_Container
+{
+   width: 320px;
+}
+#Layer1
+{
+    width: 100%;
+    height: 118px;
+}
+#wb_Image1
+{
    left: 1px;
+   top: 23px;
+   width: 110px;
+   height: 67px;
+   visibility: visible;
+   display: inline;
    margin: 0;
    padding: 0;
-   top: 23px;
-   visibility: visible;
-   width: 110px;
 }
-#wb_Text1 {
-   display: inline;
-   height: 27px;
+#wb_Text1
+{
    left: 111px;
    top: 12px;
-   visibility: visible;
    width: 209px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
 }
-#wb_Text1 {
+#wb_Text1
+{
    font-family: "Exo 2";
-   font-size: 19px;
    font-weight: 400;
+   font-size: 19px;
    margin: 0;
    padding: 0;
    text-align: center;
 }
-#wb_Text2 {
-   display: inline;
-   height: 48px;
+#wb_Text2
+{
    left: 111px;
    top: 59px;
-   visibility: visible;
    width: 201px;
+   height: 48px;
+   visibility: visible;
+   display: inline;
 }
-#wb_Text2 {
+#wb_Text2
+{
    font-family: "Exo 2";
-   font-size: 16px;
    font-weight: 400;
+   font-size: 16px;
    margin: 0;
    padding: 0;
    text-align: center;
 }
-#Button4 {
-   display: inline;
-   height: 28px;
+#Button4
+{
    left: 12px;
+   top: 90px;
+   width: 86px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
    margin: 0;
    padding: 1px 6px 1px 6px;
-   top: 90px;
-   visibility: visible;
-   width: 86px;
 }
-#Layer2 {
-   display: block;
-   height: 97px;
-   margin: 0;
-   visibility: visible;
+#Layer2
+{
    width: 320px;
-}
-#Layer2 {
+   height: 97px;
+   visibility: visible;
+   display: block;
    margin: 0;
 }
-#Layer2 {
-   height: 97px;
-   width: 100%;
+#Layer2
+{
+   margin: 0;
 }
-#Layer2 {
+#Layer2
+{
+    width: 100%;
+    height: 97px;
+}
+#Layer2
+{
    padding: 0;
 }
-#Layer3 {
+#Layer3
+{
+   width: 320px;
+   height: 2660px;
+   visibility: visible;
    display: inline-block;
-   height: 2660px;
-   margin: 0;
-   visibility: visible;
-   width: 320px;
-}
-#Layer3 {
    margin: 0;
 }
-#Layer3 {
-   height: 2660px;
-   width: 100%;
+#Layer3
+{
+   margin: 0;
 }
-#Layer3 {
+#Layer3
+{
+    width: 100%;
+    height: 2660px;
+}
+#Layer3
+{
    padding: 0;
 }
-#TextArea1 {
-   display: block;
+#TextArea1
+{
+   width: 100%;
    height: 521px;
+   visibility: visible;
+   display: block;
    margin: 0;
    padding: 4px 4px 4px 4px;
    text-align: left;
-   visibility: visible;
-   width: 100%;
 }
-#TextArea2 {
-   display: block;
+#TextArea2
+{
+   width: 100%;
    height: 521px;
+   visibility: visible;
+   display: block;
    margin: 0;
    padding: 4px 4px 4px 4px;
    text-align: left;
-   visibility: visible;
-   width: 100%;
 }
-#Banner3 {
-   display: inline-block;
+#Banner3
+{
+   width: 320px;
    height: 79px;
-   margin: 0;
    visibility: visible;
-   width: 320px;
+   display: inline-block;
+   margin: 0;
 }
-#Banner3 span {
+#Banner3 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#TextArea3 {
-   box-shadow: 0px 0px 0px #000000;
-   display: block;
+#TextArea3
+{
+   width: 100%;
    height: 287px;
+   visibility: visible;
+   display: block;
    margin: 0;
    padding: 4px 4px 4px 4px;
    text-align: left;
-   visibility: visible;
-   width: 100%;
+   box-shadow: 0px 0px 0px #000000;
 }
-#Banner1 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner1
+{
    width: 307px;
-}
-#Banner1 span {
-   height: 27px;
-   margin: 25px 0 25px 0;
-}
-#Banner2 {
-   display: inline-block;
    height: 79px;
-   margin: 0;
    visibility: visible;
-   width: 307px;
-}
-#Banner2 span {
-   height: 27px;
-   margin: 25px 0 25px 0;
-}
-#Banner4 {
    display: inline-block;
-   height: 79px;
    margin: 0;
-   visibility: visible;
-   width: 307px;
 }
-#Banner4 span {
+#Banner1 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#wb_Text3 {
-   display: inline;
-   height: 4px;
+#Banner2
+{
+   width: 307px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Banner2 span
+{
+   height: 27px;
+   margin: 25px 0 25px 0 ;
+}
+#Banner4
+{
+   width: 307px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+}
+#Banner4 span
+{
+   height: 27px;
+   margin: 25px 0 25px 0 ;
+}
+#wb_Text3
+{
    left: 0px;
    top: 1128px;
-   visibility: visible;
    width: 320px;
+   height: 4px;
+   visibility: visible;
+   display: inline;
 }
-#wb_Text3 {
+#wb_Text3
+{
    font-family: Arial;
-   font-size: 11px;
    font-weight: 400;
+   font-size: 11px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
    line-height: 12px;
-   margin: 0;
-   padding: 0;
-   text-align: left;
 }
-#Banner5 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner5
+{
    width: 307px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
 }
-#Banner5 span {
+#Banner5 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#TextArea4 {
-   display: block;
+#TextArea4
+{
+   width: 100%;
    height: 521px;
+   visibility: visible;
+   display: block;
    margin: 0;
    padding: 4px 4px 4px 4px;
    text-align: left;
-   visibility: visible;
-   width: 100%;
 }
-#Banner6 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner6
+{
    width: 307px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
 }
-#Banner6 span {
+#Banner6 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#TextArea5 {
-   display: block;
+#TextArea5
+{
+   width: 100%;
    height: 521px;
+   visibility: visible;
+   display: block;
    margin: 0;
    padding: 4px 4px 4px 4px;
    text-align: left;
-   visibility: visible;
-   width: 100%;
 }
-#wb_Image2 {
+#wb_Image2
+{
+   width: 100%;
+   visibility: visible;
    display: block;
    margin: 0;
    padding: 0;
-   visibility: visible;
-   width: 100%;
 }
-#Banner7 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner7
+{
    width: 307px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
 }
-#Banner7 span {
+#Banner7 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#wb_PhotoGallery1 {
+#wb_PhotoGallery1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
    color: #000000;
-   display: block;
-   margin: 0;
-   visibility: visible;
-   width: 100%;
 }
-#PhotoGallery1 .thumbnail {
+#PhotoGallery1 .thumbnail
+{
    width: 50%;
 }
-#PhotoGallery1 .visible-col3 {
+#PhotoGallery1 .visible-col3
+{
    display: none;
 }
-#Banner8 {
-   display: inline-block;
-   height: 79px;
-   margin: 0;
-   visibility: visible;
+#Banner8
+{
    width: 307px;
+   height: 79px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
 }
-#Banner8 span {
+#Banner8 span
+{
    height: 27px;
-   margin: 25px 0 25px 0;
+   margin: 25px 0 25px 0 ;
 }
-#wb_Image3 {
+#wb_Image3
+{
+   width: 100%;
+   visibility: visible;
    display: block;
    margin: 0;
    padding: 0;
-   visibility: visible;
-   width: 100%;
 }
-#wb_Text4 {
+#wb_Text4
+{
+   visibility: visible;
    display: block;
-   visibility: visible;
 }
-#wb_Text4 {
+#wb_Text4
+{
    font-family: Arial;
-   font-size: 12px;
    font-weight: 400;
-   line-height: 13px;
+   font-size: 12px;
    margin: 0;
    padding: 0;
    text-align: left;
+   line-height: 13px;
 }
 }
-.darktheme body {
+.darktheme body
+{
    background-color: #000000;
 }
 .darktheme #Layer1,
@@ -1410,6 +1606,7 @@ body {
 .darktheme #TextArea3,
 .darktheme #TextArea4,
 .darktheme #TextArea5,
-.darktheme #wb_Text4 {
+.darktheme #wb_Text4
+{
    filter: invert(100%);
 }
