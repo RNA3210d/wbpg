@@ -4812,7 +4812,7 @@ Banner12 span:before
    display: inline-block;
    width: 100px;
    height: 100px;
-   z-index: 3;
+   z-index: 4;
    position: relative;
 }
 #wb_ThemeableButton6
@@ -6829,6 +6829,14 @@ body
    display: inline-block;
    margin: 0;
 }
+#wb_ClipArt3
+{
+   width: 39px;
+   height: 39px;
+   visibility: hidden;
+   display: none;
+   margin: 0;
+}
 }
 @media only screen and (max-width: 479px)
 {
@@ -8663,6 +8671,14 @@ body
    height: 26px;
    visibility: visible;
    display: inline-block;
+   margin: 0;
+}
+#wb_ClipArt3
+{
+   width: 26px;
+   height: 26px;
+   visibility: hidden;
+   display: none;
    margin: 0;
 }
 }
