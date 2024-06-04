@@ -50,13 +50,18 @@ $(document).ready(function()
    $('#Banner3').addClass('visibility-hidden');
    $('#wb_Card4').addClass('visibility-hidden');
    $('#SnapScroll1').addClass('visibility-hidden');
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'linear');
+   });
    function onScrollLayoutGrid1()
    {
       var $obj = $("#wb_LayoutGrid1");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
          $obj.addClass("in-viewport");
-         AnimateCss('wb_LayoutGrid1', 'transform-scale-in', 0, 1250);
+         AnimateCss('wb_LayoutGrid1', 'transform-scale-in', 0, 750);
       }
       else
       if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
@@ -73,6 +78,11 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollLayoutGrid1();
+   });
+   $("a[href*='#LayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'easeInQuad');
    });
    function onScrollLayoutGrid2()
    {
@@ -101,7 +111,7 @@ $(document).ready(function()
    $("a[href*='#LayoutGrid3']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'swing');
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'easeInQuad');
    });
    function onScrollLayoutGrid3()
    {
@@ -275,7 +285,7 @@ $(document).ready(function()
    $("a[href*='#links']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_links').offset().top }, 600, 'linear');
+      $('html, body').stop().animate({ scrollTop: $('#wb_links').offset().top }, 600, 'easeInQuad');
    });
    function onScrolllinks()
    {
@@ -300,6 +310,11 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrolllinks();
+   });
+   $("a[href*='#LayoutGrid4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top }, 600, 'easeInQuad');
    });
    function onScrollLayoutGrid4()
    {
@@ -373,6 +388,11 @@ $(document).ready(function()
    {
       onScrollCard3_card_item0();
    });
+   $("a[href*='#LayoutGrid6']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid6').offset().top }, 600, 'easeInQuad');
+   });
    function onScrollLayoutGrid6()
    {
       var $obj = $("#wb_LayoutGrid6");
@@ -397,6 +417,11 @@ $(document).ready(function()
    {
       onScrollLayoutGrid6();
    });
+   $("a[href*='#LayoutGrid5']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid5').offset().top }, 600, 'easeInQuad');
+   });
    function onScrollLayoutGrid5()
    {
       var $obj = $("#wb_LayoutGrid5");
@@ -420,6 +445,11 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollLayoutGrid5();
+   });
+   $("a[href*='#LayoutGrid7']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid7').offset().top }, 600, 'easeInQuad');
    });
    function onScrollLayoutGrid7()
    {
@@ -453,7 +483,7 @@ $(document).ready(function()
    $("a[href*='#LayoutGrid9']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid9').offset().top }, 600, 'linear');
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid9').offset().top }, 600, 'easeInQuad');
    });
    function onScrollLayoutGrid9()
    {
@@ -586,8 +616,8 @@ $(document).ready(function()
          section: ".snap-scroll",
          setHeights: false,
          scrollbars: false,
-         scrollSpeed: 1000,
-         easing: 'easeInQuad',
+         scrollSpeed: 727,
+         easing: 'easeInOutQuad',
          afterRender: function()
          {
             $('#SnapScroll1 a').on('click', $.scrollify.move);
@@ -774,7 +804,7 @@ $(window).on('load', function()
 </div>
 <div id="Banner12"><span>A collection of my projects, code contributions, and experiments.</span></div>
 <div id="CardContainer1">
-<div id="wb_Card7" class="card">
+<div id="wb_Card7" class="card" onmouseenter="AnimateCss('wb_Card7', 'transform-wiggle', 0, 500);return false;">
 <div id="Card7-divider-bottom">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.01 129" preserveAspectRatio="none">
 <g id="Layer_2" data-name="Layer 2">
@@ -813,7 +843,7 @@ $(window).on('load', function()
       <div id="Card7-card-item2">Python based Telegram bot to monitor and control the Raspberry Pi</div>
    </div>
 </div>
-<div id="wb_Card1" class="card">
+<div id="wb_Card1" class="card" onmouseenter="AnimateCss('wb_Card1', 'transform-wiggle', 0, 500);return false;">
 <div id="Card1-divider-bottom">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.01 129" preserveAspectRatio="none">
 <g id="Layer_2" data-name="Layer 2">
@@ -852,7 +882,7 @@ $(window).on('load', function()
       <div id="Card1-card-item2">Buck and boost converter designer built with <br>Qt Framework</div>
    </div>
 </div>
-<div id="wb_Card2" class="card">
+<div id="wb_Card2" class="card" onmouseenter="AnimateCss('wb_Card2', 'transform-wiggle', 0, 500);return false;">
 <div id="Card2-divider-bottom">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.01 129" preserveAspectRatio="none">
 <g id="Layer_2" data-name="Layer 2">

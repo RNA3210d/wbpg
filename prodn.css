@@ -859,6 +859,7 @@ body
    top: 6px;
    width: 1170px;
    height: 187px;
+   overflow: auto;
    z-index: 28;
 }
 #Html10
@@ -967,6 +968,7 @@ body
    top: 8px;
    width: 1169px;
    height: 184px;
+   overflow: auto;
    z-index: 21;
 }
 #Tabs1

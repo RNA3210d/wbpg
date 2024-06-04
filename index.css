@@ -1096,7 +1096,7 @@ body
 {
    background-image: linear-gradient(225deg, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
    border-radius: 17px;
-   box-shadow: 0px 0px 21px #66C4E8;
+   box-shadow: 0px 0px 15px #66C4E8;
    padding: 0;
 }
 #Layer2
@@ -2694,7 +2694,7 @@ body
 }
 #Layer1
 {
-   background-image: linear-gradient(225deg, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
+   background-image: linear-gradient(135deg, #00FFFF 0%, #00CCCC 16%, #00CC99 33%, #008080 45%, #000080 50%, #0066CC 53%, #0099CC 68%, #0099FF 83%, #CCFFFF 100%);
    border-radius: 17px;
    box-shadow: 0px 0px 21px #66C4E8;
    padding: 0;
@@ -4448,7 +4448,7 @@ Banner12 span:before
    font-size: 13px;
    margin: 0;
    list-style: none;
-   padding: 10px 10px 10px 10px;
+   padding: 10px 10px 10px 4px;
    position: fixed;
    left: 0;
    top: 50%;
@@ -4460,11 +4460,11 @@ Banner12 span:before
    display: block;
    position: relative;
 
-   color: #000000;
-   line-height: 9px;
-   width: 9px;
-   height: 9px;
-   margin: 0 0 6px 0 ;
+   color: #0F6FC6;
+   line-height: 7px;
+   width: 7px;
+   height: 7px;
+   margin: 0 0 5px 0 ;
 }
 #SnapScroll1 li:last-child a
 {
@@ -4474,7 +4474,7 @@ Banner12 span:before
 {
    color: #1C94C4;
    position: absolute;
-   left: 28px;
+   left: 26px;
    top: 0;
    opacity: 0;
    transition: opacity 0.5s ease;
@@ -4488,13 +4488,13 @@ Banner12 span:before
 #SnapScroll1 a:after
 {
    content: "";
-   width: 7px;
-   height: 7px;
+   width: 5px;
+   height: 5px;
    display: block;
    border-radius: 50%;
    border-radius: 50%;
    background-color: #FFFFFF;
-   box-shadow: inset 0 0 0 4px rgba(0,0,0,0.00);
+   box-shadow: 0 0 0 #0F6FC6;
    transition: box-shadow 0.3s ease;
    position: absolute;
    top: 0;
@@ -4503,7 +4503,8 @@ Banner12 span:before
 }
 #SnapScroll1 a.active:after
 {
-   box-shadow: inset 0 0 0 1px rgba(0,0,0,1.00);
+   background-color: #0F6FC6;
+   box-shadow: 0 0 6px #0F6FC6;
 }
 @media all and (max-width:320px) 
 {
@@ -6796,7 +6797,7 @@ body
 #SnapScroll1
 {
    margin: 0;
-   padding: 10px 10px 10px 10px;
+   padding: 10px 10px 10px 4px;
 }
 #wb_Text24
 {
@@ -8640,7 +8641,7 @@ body
 #SnapScroll1
 {
    margin: 0;
-   padding: 10px 10px 10px 10px;
+   padding: 10px 10px 10px 4px;
 }
 #wb_Text24
 {
