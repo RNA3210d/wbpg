@@ -9,8 +9,10 @@
 <link href="miscg.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
 <script src="wb.cookie.min.js"></script>
-<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
-<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css">
+<script src="fancybox/jquery.easing-1.3.pack.js"></script>
+<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 <script src="wwb18.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
@@ -49,7 +51,7 @@ $(document).ready(function()
       onScrollLayer1();
    });
    $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
-   $("#PhotoGallery1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+   $("a[rel^='PhotoGallery1']").fancybox({});
    $("#wb_ResponsiveMenu1 ul li a").click(function(event)
    {
       $("#wb_ResponsiveMenu1 input").prop("checked", false);
@@ -87,13 +89,13 @@ $(window).on('load', function()
 <div id="PhotoGallery1">
    <div class="thumbnails">
       <div class="thumbnail">
-         <a href="images/IMG_20240419_200013216[1].jpg" data-rel=""><img alt="" src="images/tn_IMG_20240419_200013216[1].jpg" loading="lazy" class="image" width="394" height="296"></a>
+         <a href="images/IMG_20240419_200013216[1].jpg" data-rel="PhotoGallery1"><img alt="" src="images/tn_IMG_20240419_200013216[1].jpg" loading="lazy" class="image" width="394" height="296"></a>
       </div>
       <div class="thumbnail">
-         <a href="images/20240516_232511_VjM-1.1_LMC8.4R15_MotoG54.jpg" data-rel=""><img alt="" src="images/tn_20240516_232511_VjM-1.1_LMC8.4R15_MotoG54.jpg" loading="lazy" class="image" width="394" height="525"></a>
+         <a href="images/20240516_232511_VjM-1.1_LMC8.4R15_MotoG54.jpg" data-rel="PhotoGallery1"><img alt="" src="images/tn_20240516_232511_VjM-1.1_LMC8.4R15_MotoG54.jpg" loading="lazy" class="image" width="394" height="525"></a>
       </div>
       <div class="thumbnail">
-         <a href="images/20240516_124704_VjM-1.1_LMC8.4R15_MotoG54.jpg" data-rel=""><img alt="" src="images/tn_20240516_124704_VjM-1.1_LMC8.4R15_MotoG54.jpg" loading="lazy" class="image" width="394" height="525"></a>
+         <a href="images/20240516_124704_VjM-1.1_LMC8.4R15_MotoG54.jpg" data-rel="PhotoGallery1"><img alt="" src="images/tn_20240516_124704_VjM-1.1_LMC8.4R15_MotoG54.jpg" loading="lazy" class="image" width="394" height="525"></a>
       </div>
       <div class="clearfix visible-col3"></div>
    </div>

@@ -263,8 +263,7 @@ Banner3 span:before
 }
 #Blog1
 {
-   background-color: transparent;
-   background-image: none;
+   background-image: linear-gradient(to top, #EA8711 0%, #D96363 25%, #73A6DF 50%, #9085FB 75%, #52CA79 100%);
    border: 0px solid transparent;
    border-radius: 0px;
    font-family: "Exo 2";
@@ -477,7 +476,7 @@ Banner3 span:before
 {
    overflow: hidden;
    height: 146px;
-   z-index: 6;
+   z-index: 7;
 }
 #Layer1
 {
