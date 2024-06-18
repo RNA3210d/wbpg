@@ -3854,7 +3854,7 @@ Banner7 span:before
 }
 Banner10 span:before
 {
-   content: "Ahoy, Matey!";
+   content: "Ahoy!";
    opacity: .3;
    transform: scaleY(-1);
 }
@@ -4327,10 +4327,11 @@ Banner12 span:before
 #wb_Card4
 {
    position: relative;
-   display: flex;
+   display: inline-block;
    flex-direction: column;
    box-sizing: border-box;
    margin: 0;
+   vertical-align: top;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -4447,9 +4448,9 @@ Banner12 span:before
    position: relative;
 
    color: #0F6FC6;
-   line-height: 7px;
-   width: 7px;
-   height: 7px;
+   line-height: 8px;
+   width: 8px;
+   height: 8px;
    margin: 0 0 5px 0 ;
 }
 #SnapScroll1 li:last-child a
@@ -4460,7 +4461,7 @@ Banner12 span:before
 {
    color: #1C94C4;
    position: absolute;
-   left: 26px;
+   left: 27px;
    top: 0;
    opacity: 0;
    transition: opacity 0.5s ease;
@@ -4474,8 +4475,8 @@ Banner12 span:before
 #SnapScroll1 a:after
 {
    content: "";
-   width: 5px;
-   height: 5px;
+   width: 6px;
+   height: 6px;
    display: block;
    border-radius: 50%;
    border-radius: 50%;
@@ -4560,27 +4561,57 @@ Banner12 span:before
    fill-opacity: 1;
    transition: fill-opacity 1s;
 }
+#wb_Text25 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text25
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 16px;
+}
+#wb_Text25 p, #wb_Text25 ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text25
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
 #wb_Icon1
 {
    display: inline-block;
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 23;
+   z-index: 24;
 }
 #wb_ThemeableButton1
 {
    display: inline-block;
    width: 215px;
    height: 51px;
-   z-index: 14;
+   z-index: 15;
 }
 #Banner1
 {
    display: inline-block;
    width: 769px;
    height: 48px;
-   z-index: 54;
+   z-index: 55;
 }
 #wb_Icon6
 {
@@ -4588,19 +4619,19 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 21;
+   z-index: 22;
 }
 #wb_Card1
 {
    display: flex;
-   z-index: 7;
+   z-index: 8;
 }
 #Button2
 {
    display: inline-block;
    width: 100px;
    height: 28px;
-   z-index: 67;
+   z-index: 68;
 }
 #wb_Icon11
 {
@@ -4608,7 +4639,7 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 61;
+   z-index: 62;
 }
 #wb_Icon7
 {
@@ -4616,7 +4647,7 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 22;
+   z-index: 23;
 }
 #wb_Icon10
 {
@@ -4624,7 +4655,7 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 53;
+   z-index: 54;
 }
 #wb_Icon4
 {
@@ -4632,20 +4663,20 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 51;
+   z-index: 52;
 }
 #Banner3
 {
    display: inline-block;
    width: 547px;
    height: 48px;
-   z-index: 34;
+   z-index: 35;
 }
 #wb_Card3
 {
    display: flex;
    width: 100%;
-   z-index: 31;
+   z-index: 32;
 }
 #wb_Icon13
 {
@@ -4653,14 +4684,14 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 63;
+   z-index: 64;
 }
 #Banner2
 {
    display: inline-block;
    width: 547px;
    height: 48px;
-   z-index: 38;
+   z-index: 39;
 }
 #wb_Icon5
 {
@@ -4668,12 +4699,12 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 20;
+   z-index: 21;
 }
 #wb_Card2
 {
    display: flex;
-   z-index: 8;
+   z-index: 9;
 }
 #wb_Icon12
 {
@@ -4681,14 +4712,14 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 62;
+   z-index: 63;
 }
 #Banner5
 {
    display: inline-block;
    width: 854px;
    height: 130px;
-   z-index: 32;
+   z-index: 33;
 }
 #wb_Icon15
 {
@@ -4696,14 +4727,14 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 65;
+   z-index: 66;
 }
 #Banner4
 {
    display: inline-block;
    width: 547px;
    height: 48px;
-   z-index: 44;
+   z-index: 45;
 }
 #wb_Icon14
 {
@@ -4711,14 +4742,14 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 64;
+   z-index: 65;
 }
 #wb_ClipArt1
 {
    display: inline-block;
    width: 100px;
    height: 100px;
-   z-index: 46;
+   z-index: 47;
    position: relative;
 }
 #wb_Icon8
@@ -4727,14 +4758,14 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 24;
+   z-index: 25;
 }
 #Banner7
 {
    display: inline-block;
    width: 1155px;
    height: 48px;
-   z-index: 9;
+   z-index: 10;
 }
 #ThemeableButton7
 {
@@ -4752,7 +4783,7 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 52;
+   z-index: 53;
 }
 #ThemeableButton6
 {
@@ -4779,7 +4810,7 @@ Banner12 span:before
    display: inline-block;
    width: 547px;
    height: 48px;
-   z-index: 25;
+   z-index: 26;
 }
 #ThemeableButton1
 {
@@ -4792,14 +4823,14 @@ Banner12 span:before
    width: 24px;
    height: 24px;
    text-align: center;
-   z-index: 16;
+   z-index: 17;
 }
 #wb_ClipArt3
 {
    display: inline-block;
    width: 100px;
    height: 100px;
-   z-index: 4;
+   z-index: 5;
    position: relative;
 }
 #wb_ThemeableButton6
@@ -4807,7 +4838,7 @@ Banner12 span:before
    display: inline-block;
    width: 309px;
    height: 61px;
-   z-index: 48;
+   z-index: 49;
 }
 #ClipArt2
 {
@@ -4823,14 +4854,14 @@ Banner12 span:before
    display: inline-block;
    width: 100px;
    height: 100px;
-   z-index: 40;
+   z-index: 41;
    position: relative;
 }
 #wb_Card8
 {
    display: flex;
    width: 100%;
-   z-index: 5;
+   z-index: 6;
 }
 #SiteSearch2_form
 {
@@ -4841,7 +4872,7 @@ Banner12 span:before
    display: inline-block;
    width: 661px;
    height: 61px;
-   z-index: 57;
+   z-index: 58;
 }
 #ClipArt3
 {
@@ -4857,14 +4888,14 @@ Banner12 span:before
    display: inline-block;
    width: 798px;
    height: 85px;
-   z-index: 2;
+   z-index: 3;
 }
 #wb_ThemeableButton4
 {
    display: inline-block;
    width: 659px;
    height: 61px;
-   z-index: 55;
+   z-index: 56;
 }
 #Layer1
 {
@@ -4875,21 +4906,21 @@ Banner12 span:before
    bottom: 0px;
    width: 284px;
    height: 49px;
-   z-index: 77;
+   z-index: 78;
 }
 #Banner10
 {
    display: inline-block;
    width: 1191px;
    height: 28px;
-   z-index: 1;
+   z-index: 2;
 }
 #Banner11
 {
    display: inline-block;
    width: 741px;
    height: 48px;
-   z-index: 59;
+   z-index: 60;
 }
 #ClipArt1
 {
@@ -4905,7 +4936,7 @@ Banner12 span:before
    display: inline-block;
    width: 309px;
    height: 61px;
-   z-index: 42;
+   z-index: 43;
 }
 #Layer2
 {
@@ -4916,14 +4947,14 @@ Banner12 span:before
    bottom: 0px;
    width: 284px;
    height: 49px;
-   z-index: 71;
+   z-index: 72;
 }
 #SiteSearch2
 {
    display: block;
    width: 100%;
    height: 26px;
-   z-index: 66;
+   z-index: 67;
 }
 #wb_Icon2
 {
@@ -4931,21 +4962,21 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 49;
+   z-index: 50;
 }
 #wb_ThemeableButton2
 {
    display: inline-block;
    width: 215px;
    height: 53px;
-   z-index: 29;
+   z-index: 30;
 }
 #Banner12
 {
    display: inline-block;
    width: 669px;
    height: 48px;
-   z-index: 11;
+   z-index: 12;
 }
 #wb_Icon3
 {
@@ -4953,7 +4984,7 @@ Banner12 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 50;
+   z-index: 51;
 }
 #Layer1_Container
 {
@@ -4964,7 +4995,7 @@ Banner12 span:before
    display: inline-block;
    width: 325px;
    height: 45px;
-   z-index: 36;
+   z-index: 37;
 }
 #Layer2_Container
 {
@@ -4972,14 +5003,15 @@ Banner12 span:before
 }
 #wb_Card4
 {
-   display: flex;
-   width: 100%;
+   display: inline-block;
+   width: 1200px;
+   height: 389px;
    z-index: 0;
 }
 #wb_Card7
 {
    display: flex;
-   z-index: 6;
+   z-index: 7;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px)
 {
@@ -6707,9 +6739,10 @@ body
 }
 #wb_Card4
 {
-   width: 100%;
+   width: 480px;
+   height: 640px;
    visibility: visible;
-   display: flex;
+   display: inline-block;
    margin: 0;
    box-shadow: 0px 0px 29px rgba(248,189,102,0.20);
 }
@@ -6823,6 +6856,21 @@ body
    visibility: hidden;
    display: none;
    margin: 0;
+}
+#wb_Text25
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text25
+{
+   font-family: Arial;
+   font-weight: 400;
+   font-size: 13px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+   line-height: 16px;
 }
 }
 @media only screen and (max-width: 479px)
@@ -8551,9 +8599,10 @@ body
 }
 #wb_Card4
 {
-   width: 100%;
+   width: 320px;
+   height: 733px;
    visibility: visible;
-   display: flex;
+   display: inline-block;
    margin: 0;
    box-shadow: 0px 0px 59px rgba(250,211,153,0.20) inset;
 }
@@ -8667,6 +8716,21 @@ body
    visibility: hidden;
    display: none;
    margin: 0;
+}
+#wb_Text25
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text25
+{
+   font-family: Arial;
+   font-weight: 400;
+   font-size: 13px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+   line-height: 16px;
 }
 }
 .darktheme body

@@ -44,6 +44,11 @@
    50% { transform: rotate(0deg) scale(1.1,1.1) ;  }
    100% { transform: rotate(0deg) scale(1.0,1.0) ;  }
 }
+@keyframes transform-roll-in
+{
+   0% { transform: translate(-100%,0px) rotate(-120deg) ; opacity: 0;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
+}
 @keyframes transform-scale-in
 {
    0% { opacity: 0; transform: rotate(0deg) scale(0,0) ;  }

@@ -1,9 +1,10 @@
 body
 {
-   background-color: transparent;
+   background-color: #000000;
    color: #000000;
-   font-family: Arial;
-   font-weight: normal;
+   font-family: "Exo 2";
+   font-weight: 400;
+   font-weight: 400;
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
@@ -448,7 +449,7 @@ Banner10 span:before
 {
 body
 {
-   background-color: transparent;
+   background-color: #000000;
    background-image: none;
 }
 #wb_LayoutGrid1
@@ -498,7 +499,7 @@ body
 {
 body
 {
-   background-color: transparent;
+   background-color: #000000;
    background-image: none;
 }
 #wb_LayoutGrid1
@@ -543,4 +544,8 @@ body
    margin: 0;
    text-align: center;
 }
+}
+.darktheme body
+{
+   background-color: #FFFFFF;
 }
