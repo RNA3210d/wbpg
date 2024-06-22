@@ -15,7 +15,6 @@ session_start();
 <script src="jquery-3.6.0.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="jquery.scrollify.min.js"></script>
-<script src="wb.animatesvg.min.js"></script>
 <script src="searchindex.js"></script>
 <script src="wb.sitesearch.min.js"></script>
 <script>
@@ -42,11 +41,8 @@ $(document).ready(function()
    $('#wb_links').addClass('visibility-hidden');
    $('#wb_LayoutGrid4').addClass('visibility-hidden');
    $('#wb_Card3').addClass('visibility-hidden');
-   $('#wb_LayoutGrid6').addClass('visibility-hidden');
    $('#wb_LayoutGrid5').addClass('visibility-hidden');
-   $('#wb_LayoutGrid7').addClass('visibility-hidden');
    $('#wb_LayoutGrid9').addClass('visibility-hidden');
-   $('#Banner2').addClass('visibility-hidden');
    $('#Banner3').addClass('visibility-hidden');
    $('#wb_Card4').addClass('visibility-hidden');
    $('#SnapScroll1').addClass('visibility-hidden');
@@ -388,35 +384,6 @@ $(document).ready(function()
    {
       onScrollCard3_card_item0();
    });
-   $("a[href*='#LayoutGrid6']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid6').offset().top }, 600, 'easeInQuad');
-   });
-   function onScrollLayoutGrid6()
-   {
-      var $obj = $("#wb_LayoutGrid6");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_LayoutGrid6', 'animate-fade-in', 0, 1250);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_LayoutGrid6', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_LayoutGrid6').inViewPort(true))
-   {
-      $('#wb_LayoutGrid6').addClass("in-viewport");
-   }
-   onScrollLayoutGrid6();
-   $(window).scroll(function(event)
-   {
-      onScrollLayoutGrid6();
-   });
    $("a[href*='#LayoutGrid5']").click(function(event)
    {
       event.preventDefault();
@@ -445,35 +412,6 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollLayoutGrid5();
-   });
-   $("a[href*='#LayoutGrid7']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid7').offset().top }, 600, 'easeInQuad');
-   });
-   function onScrollLayoutGrid7()
-   {
-      var $obj = $("#wb_LayoutGrid7");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_LayoutGrid7', 'animate-fade-in', 0, 1250);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_LayoutGrid7', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_LayoutGrid7').inViewPort(true))
-   {
-      $('#wb_LayoutGrid7').addClass("in-viewport");
-   }
-   onScrollLayoutGrid7();
-   $(window).scroll(function(event)
-   {
-      onScrollLayoutGrid7();
    });
    $("a[href*='#Layer1']").click(function(event)
    {
@@ -530,20 +468,6 @@ $(document).ready(function()
             $(this).dialog('close');
          }
       }
-   });
-   function onScrollBanner2()
-   {
-      var $obj = $("#Banner2");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('Banner2', 'animate-fire-text-shadow', 0, 2000);
-      }
-   }
-   onScrollBanner2();
-   $(window).scroll(function(event)
-   {
-      onScrollBanner2();
    });
    function onScrollBanner3()
    {
@@ -607,7 +531,7 @@ $(document).ready(function()
    {
       onScrollCard4_card_item0();
    });
-   var $sections = $('#wb_LayoutGrid1,#wb_LayoutGrid2,#wb_LayoutGrid3,#wb_links,#wb_LayoutGrid4,#wb_LayoutGrid6,#wb_LayoutGrid5,#wb_LayoutGrid7,#wb_LayoutGrid9');
+   var $sections = $('#wb_LayoutGrid1,#wb_LayoutGrid2,#wb_LayoutGrid3,#wb_links,#wb_LayoutGrid4,#wb_LayoutGrid5,#wb_LayoutGrid9');
    $sections.addClass('snap-scroll');
    if ($(window).width() >= 320)
    {
@@ -653,69 +577,6 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollSnapScroll1();
-   });
-   $("#ClipArt1").animatesvg(
-   {
-      delay: 0,
-      duration: 1000,
-      easing: 'linear',
-      loop: true
-   });
-   function onScrollClipArt1()
-   {
-      var $obj = $("#ClipArt1");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         $('#ClipArt1').animatesvg('animate');
-      }
-   }
-   onScrollClipArt1();
-   $(window).scroll(function(event)
-   {
-      onScrollClipArt1();
-   });
-   $("#ClipArt2").animatesvg(
-   {
-      delay: 366,
-      duration: 1000,
-      easing: 'linear',
-      loop: true
-   });
-   function onScrollClipArt2()
-   {
-      var $obj = $("#ClipArt2");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         $('#ClipArt2').animatesvg('animate');
-      }
-   }
-   onScrollClipArt2();
-   $(window).scroll(function(event)
-   {
-      onScrollClipArt2();
-   });
-   $("#ClipArt3").animatesvg(
-   {
-      delay: 0,
-      duration: 1000,
-      easing: 'linear',
-      loop: true
-   });
-   function onScrollClipArt3()
-   {
-      var $obj = $("#ClipArt3");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         $('#ClipArt3').animatesvg('animate');
-      }
-   }
-   onScrollClipArt3();
-   $(window).scroll(function(event)
-   {
-      onScrollClipArt3();
    });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
@@ -763,30 +624,6 @@ $(window).on('load', function()
 </div>
 </div>
 <div class="col-2">
-<div id="wb_ClipArt3">
-<svg id="ClipArt3" height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-<defs>
-   <linearGradient id="ClipArt3-gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="0%">
-   <stop offset="0%" stop-color="#FF7E00" />
-   <stop offset="13%" stop-color="#FF0000" />
-   <stop offset="39%" stop-color="#AA006E" />
-   <stop offset="66%" stop-color="#7A0085" />
-   <stop offset="100%" stop-color="#000082" />
-   </linearGradient>
-   <linearGradient id="ClipArt3-gradient-stroke" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="0%" y2="100%">
-   <stop offset="0%" stop-color="#FFBF00" />
-   <stop offset="18%" stop-color="#BE3722" />
-   <stop offset="26%" stop-color="#760040" />
-   <stop offset="55%" stop-color="#2A0040" />
-   <stop offset="80%" stop-color="#1A0040" />
-   <stop offset="100%" stop-color="#000000" />
-   </linearGradient>
-   <path id="ClipArt3-shape" d="M78 44 C80 44, 82 45, 84 46 C86 47, 88 48, 90 50 C92 52, 94 54, 95 56 C96 59, 98 62, 99 66 C100 70, 100 74, 100 79 C100 85, 98 90, 94 94 C89 98, 84 100, 78 100 L22 100 C16 100, 11 98, 7 94 C2 90, 0 85, 0 79 C0 74, 1 70, 2 66 C2 62, 4 59, 5 56 C7 54, 8 52, 10 50 C12 48, 14 47, 16 46 C18 45, 20 44, 22 44 C18 39, 17 34, 17 29 C17 25, 18 21, 19 18 C21 14, 24 11, 26 8 C29 6, 33 4, 37 2 C41 1, 46 0, 50 0 C55 0, 59 1, 63 2 C67 4, 71 6, 74 8 C77 11, 79 14, 81 18 C83 21, 83 25, 83 29 C83 34, 82 39, 78 44 Z M68 13 C63 9, 57 7, 50 7 C43 7, 37 9, 32 13 C27 18, 25 23, 25 29 C25 34, 27 40, 32 44 C37 48, 43 50, 50 50 C57 50, 63 48, 68 44 C73 40, 75 34, 75 29 C75 23, 73 18, 68 13 Z M78 93 C82 93, 85 92, 88 89 C90 86, 92 83, 92 79 C92 70, 90 63, 87 58 C83 53, 78 50, 72 50 C66 55, 58 57, 50 57 C42 57, 34 55, 28 50 C22 50, 17 53, 14 58 C10 63, 8 70, 8 79 C8 83, 10 86, 12 89 C15 92, 18 93, 22 93" vector-effect="non-scaling-stroke" />
-</defs>
-<use xlink:href="#ClipArt3-shape" data-href="#ClipArt3-shape" style="fill:url(#ClipArt3-gradient);stroke:url(#ClipArt3-gradient-stroke);stroke-width:0"/>
-</svg>
-
-</div>
 <div id="wb_Card8" class="card" onmouseenter="AnimateCss('wb_Card8', 'animate-fire-text-shadow', 0, 2500);return false;">
    <div id="Card8-card-body">
       <div id="Card8-card-item0">“</div>
@@ -966,6 +803,9 @@ $(window).on('load', function()
 <div id="wb_Text9">
 <p>&nbsp;</p>
 </div>
+<div id="wb_Text17">
+<p>Just a place where I can upload images of any dimension or orientation without lossy compresssion or any other restrictions<span style="color:#C3DBF0;">.</span></p>
+</div>
 <div id="wb_Text1">
 <p>Just a place where I can upload images of any dimension or orientation without lossy compresssion or any other restrictions<span style="color:#C3DBF0;">.</span></p>
 </div>
@@ -1009,75 +849,11 @@ $(window).on('load', function()
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid6">
-<div id="LayoutGrid6">
-<div class="col-1">
-<div id="Banner2"><span>My FL Studio renders and mixes</span></div>
-<div id="wb_Text15">
-<p style="font-size:13px;line-height:16px;">&nbsp;</p>
-</div>
-<div id="wb_ClipArt2">
-<svg id="ClipArt2" height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-<defs>
-   <linearGradient id="ClipArt2-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="100%" x2="0%" y2="0%">
-   <stop offset="0%" stop-color="#CCCCFF" />
-   <stop offset="19%" stop-color="#A4CCFF" />
-   <stop offset="41%" stop-color="#CB9AFF" />
-   <stop offset="64%" stop-color="#9966FF" />
-   <stop offset="83%" stop-color="#9ACCFF" />
-   <stop offset="100%" stop-color="#CCCCFF" />
-   </linearGradient>
-   <path id="ClipArt2-shape" d="M0 100 L100 100 L100 0 L0 0Z  M3 3 L97 3 L97 97 L3 97Z  M81 25 L88 25 L88 69 L79 74 L78 75 L78 81 L80 83 L90 78 L91 77 L91 9 L81 9Z  M88 76 L81 79 L81 76 L88 73Z  M84 13 L88 13 L88 22 L84 22Z  M69 17 C62 10, 53 6, 43 6 C33 6, 24 10, 17 17 C10 24, 6 33, 6 43 C6 53, 10 62, 17 69 C24 76, 33 80, 43 80 C53 80, 62 76, 69 69 C76 62, 80 53, 80 43 C80 33, 76 24, 69 17 Z M67 67 C60 73, 52 77, 43 77 C34 77, 26 73, 19 67 C13 60, 9 52, 9 43 C9 34, 13 26, 19 19 C26 13, 34 9, 43 9 C52 9, 60 13, 67 19 C73 26, 77 34, 77 43 C77 52, 73 60, 67 67 Z M51 35 C49 33, 46 32, 43 32 C40 32, 37 33, 35 35 C33 38, 32 40, 32 43 C32 46, 33 49, 35 51 C37 53, 40 54, 43 54 C46 54, 49 53, 51 51 C53 49, 54 46, 54 43 C54 40, 53 38, 51 35 Z M49 49 C47 50, 45 51, 43 51 C41 51, 39 50, 38 49 C36 47, 35 45, 35 43 C35 41, 36 39, 38 38 C39 36, 41 35, 43 35 C45 35, 47 36, 49 38 C50 39, 51 41, 51 43 C51 45, 50 47, 49 49 Z M6 94 L19 94 L19 86 L6 86Z  M9 89 L16 89 L16 91 L9 91Z  M22 94 L34 94 L34 86 L22 86Z  M25 89 L31 89 L31 91 L25 91Z " vector-effect="non-scaling-stroke" />
-</defs>
-<use xlink:href="#ClipArt2-shape" data-href="#ClipArt2-shape" style="fill:url(#ClipArt2-gradient);stroke:#FFFFFF;stroke-width:0"/>
-</svg>
-
-</div>
-<div id="wb_Text16">
-<p>&nbsp;</p>
-</div>
-<div id="wb_ThemeableButton5">
-<a class="ui-button ui-corner-all" id="ThemeableButton5" href="./prodn.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>My Tracks</a>
-</div>
-</div>
-</div>
-</div>
 <div id="wb_LayoutGrid5">
 <div id="LayoutGrid5">
 <div class="col-1">
 <div id="wb_Text12">
 <p>&nbsp;</p>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid7">
-<div id="LayoutGrid7">
-<div class="col-1">
-<div id="Banner4"><span>My Equipments</span></div>
-<div id="wb_Text18">
-<p style="font-size:13px;line-height:16px;">&nbsp;</p>
-</div>
-<div id="wb_ClipArt1">
-<svg id="ClipArt1" height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-<defs>
-   <linearGradient id="ClipArt1-gradient" gradientUnits="userSpaceOnUse" x1="100%" y1="100%" x2="0%" y2="0%">
-   <stop offset="0%" stop-color="#B6FBFE" />
-   <stop offset="50%" stop-color="#4AA0F7" />
-   <stop offset="51%" stop-color="#7BB2EE" />
-   <stop offset="100%" stop-color="#A5C8EA" />
-   </linearGradient>
-   <path id="ClipArt1-shape" d="M93 60 L93 10 C93 9, 93 9, 93 8 C93 8, 92 8, 92 8 L8 8 C8 8, 8 8, 7 8 C7 9, 7 9, 7 10 L7 60 C7 60, 7 61, 7 61 C8 61, 8 62, 8 62 L92 62 C92 62, 93 61, 93 61 C93 61, 93 60, 93 60 Z M100 10 L100 75 C100 78, 99 80, 98 82 C96 84, 94 85, 92 85 L63 85 C63 86, 64 88, 64 89 C65 91, 65 92, 66 94 C66 95, 67 96, 67 96 C67 97, 66 98, 66 99 C65 100, 64 100, 63 100 L37 100 C36 100, 35 100, 34 99 C34 98, 33 97, 33 96 C33 96, 34 95, 34 94 C35 92, 35 91, 36 89 C36 88, 37 86, 37 85 L8 85 C6 85, 4 84, 3 82 C1 80, 0 78, 0 75 L0 10 C0 7, 1 5, 3 3 C4 1, 6 0, 8 0 L92 0 C94 0, 96 1, 98 3 C99 5, 100 7, 100 10" vector-effect="non-scaling-stroke" />
-</defs>
-<use xlink:href="#ClipArt1-shape" data-href="#ClipArt1-shape" style="fill:url(#ClipArt1-gradient);stroke:#0963AD;stroke-width:0"/>
-</svg>
-
-</div>
-<div id="wb_Text19">
-<p>&nbsp;</p>
-</div>
-<div id="wb_ThemeableButton6">
-<a class="ui-button ui-corner-all" id="ThemeableButton6" href="./eqp.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>My Equipments</a>
 </div>
 </div>
 </div>
@@ -1117,6 +893,15 @@ $(window).on('load', function()
 <div id="wb_Text22">
 <p>&nbsp;</p>
 </div>
+<div id="wb_ThemeableButton8">
+<a class="ui-button ui-corner-all" id="ThemeableButton8" href="./eqp.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>My Equipments</a>
+</div>
+<div id="wb_Text18">
+<p>&nbsp;</p>
+</div>
+<div id="wb_ThemeableButton6">
+<a class="ui-button ui-corner-all" id="ThemeableButton6" href="./prodn.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>FL Renders</a>
+</div>
 <div id="Banner11"><span>External Links</span></div>
 <div id="wb_Text3">
 <p>&nbsp;</p>
@@ -1151,10 +936,8 @@ $(window).on('load', function()
 <li><a href="#3"><span class="label">Projects</span></a></li>
 <li><a href="#4"><span class="label">Gallery</span></a></li>
 <li><a href="#5"><span class="label">Dotfiles</span></a></li>
-<li><a href="#6"><span class="label">My Mixes</span></a></li>
-<li><a href="#7"><span class="label">GTFO</span></a></li>
-<li><a href="#8"><span class="label">My Equipments</span></a></li>
-<li><a href="#9"><span class="label">More</span></a></li>
+<li><a href="#6"><span class="label">GTFO</span></a></li>
+<li><a href="#7"><span class="label">More</span></a></li>
 </ul>
 <div id="preloader"></div>
 </body>

@@ -430,6 +430,78 @@ Banner3 span:before
 {
    background-color: #EEEEEE;
 }
+#wb_Form1
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+}
+#Button1
+{
+   border: 1px solid #2E6DA4;
+   border-radius: 4px;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   padding: 1px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+}
+#Button1:focus
+{
+   outline: 0;
+}
+#TextArea1
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #000000;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   text-align: left;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   overflow: auto;
+   resize: none;
+}
+#TextArea1:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#Banner12
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #17406D;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 21px;
+   text-align: center;
+   text-shadow: 0px 0px 21px rgba(23,64,109,1.00);
+   margin: 0;
+}
+#Banner12 span
+{
+   display: block;
+   height: 21px;
+   margin: 21px 0 21px 0 ;
+}
 #Button4
 {
    position: absolute;
@@ -438,6 +510,15 @@ Banner3 span:before
    width: 96px;
    height: 24px;
    z-index: 3;
+}
+#TextArea1
+{
+   position: absolute;
+   left: 25px;
+   top: 18px;
+   width: 811px;
+   height: 102px;
+   z-index: 7;
 }
 #wb_Image1
 {
@@ -448,12 +529,25 @@ Banner3 span:before
    height: 74px;
    z-index: 1;
 }
+#Button1
+{
+   position: absolute;
+   left: 25px;
+   top: 139px;
+   width: 96px;
+   height: 25px;
+   z-index: 6;
+}
 #Banner3
 {
    display: inline-block;
    width: 1198px;
    height: 77px;
    z-index: 5;
+}
+#Form1
+{
+   display: inline;
 }
 #wb_Text1
 {
@@ -477,7 +571,7 @@ Banner3 span:before
 {
    overflow: hidden;
    height: 146px;
-   z-index: 7;
+   z-index: 9;
 }
 #Layer1
 {
@@ -503,17 +597,24 @@ Banner3 span:before
    float: left;
    clear: left;
    display: inline-flex;
-   z-index: 9;
+   z-index: 15;
+}
+#Banner12
+{
+   display: inline-block;
+   width: 1192px;
+   height: 73px;
+   z-index: 10;
 }
 #Layer3
 {
    position: relative;
    text-align: left;
    width: 100%;
-   height: 2456px;
+   height: 1947px;
    float: left;
    display: inline-block;
-   z-index: 10;
+   z-index: 16;
 }
 #Layer1_Container
 {
@@ -526,6 +627,14 @@ Banner3 span:before
 #Layer2_Container
 {
    width: 100%;
+}
+#wb_Form1
+{
+   display: inline-block;
+   position: relative;
+   width: 957px;
+   height: 223px;
+   z-index: 11;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px)
 {
@@ -704,6 +813,64 @@ body
 #Blog1 .visible-col1
 {
    display: block;
+}
+#wb_Form1
+{
+   width: 468px;
+   height: 250px;
+   visibility: visible;
+   display: inline-block;
+}
+#Button1
+{
+   left: 9px;
+   top: 204px;
+   width: 66px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+   font-size: 16px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+}
+#TextArea1
+{
+   left: 9px;
+   top: 8px;
+   width: 428px;
+   height: 186px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   font-size: 16px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+}
+#Banner12
+{
+   width: 478px;
+   height: 150px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   font-size: 21px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+}
+#Banner12 span
+{
+   height: 21px;
+   margin: 64px 0 64px 0 ;
 }
 }
 @media only screen and (max-width: 479px)
@@ -884,6 +1051,64 @@ body
 #Blog1 .visible-col1
 {
    display: block;
+}
+#wb_Form1
+{
+   width: 312px;
+   height: 167px;
+   visibility: visible;
+   display: inline-block;
+}
+#Button1
+{
+   left: 6px;
+   top: 136px;
+   width: 44px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+   font-size: 11px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+}
+#TextArea1
+{
+   left: 6px;
+   top: 5px;
+   width: 282px;
+   height: 121px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   font-size: 11px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+}
+#Banner12
+{
+   width: 315px;
+   height: 71px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   font-size: 16px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+}
+#Banner12 span
+{
+   height: 16px;
+   margin: 26px 0 26px 0 ;
 }
 }
 .darktheme body
