@@ -68,6 +68,27 @@
    90% { transform: rotate(0deg) skewX(0deg) ;  }
    100% { transform: rotate(0deg) skewX(0deg) ;  }
 }
+a.style1
+{
+   color: #E6F0F9;
+   text-decoration: underline;
+   text-shadow: 0px 0px 5px rgba(15,111,198,1.00);
+}
+a.style1:visited
+{
+   color: #800080;
+   text-decoration: underline;
+}
+a.style1:active
+{
+   color: #FF0000;
+   text-decoration: underline;
+}
+a.style1:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
 h1, .h1
 {
    font-family: Arial;

@@ -15,6 +15,7 @@ session_start();
 <script src="jquery-3.6.0.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="jquery.scrollify.min.js"></script>
+<script src="bootstrap.min.js"></script>
 <script src="searchindex.js"></script>
 <script src="wb.sitesearch.min.js"></script>
 <script>
@@ -578,6 +579,26 @@ $(document).ready(function()
    {
       onScrollSnapScroll1();
    });
+   $("#NavigationBar1 a").mouseenter(function(e)
+   {
+      $("#NavigationBar1_wrapper").parent().remove();
+      var $wrapper = $("<div id='NavigationBar1_wrapper'></div>");
+      var $link = $("<a></a>");
+      $link.attr('href', $(this).attr('href'));
+      $link.attr('target', $(this).attr('target'));
+      $wrapper.css('left', $(this).offset().left+'px');
+      $wrapper.css('top', $(this).offset().top+'px');
+      $wrapper.css('width', $(this).find('img').width()+'px');
+      $wrapper.css('height', $(this).find('img').height()+'px');
+      $wrapper.appendTo("body");
+      $wrapper.wrap($link);
+      $wrapper.mouseout(function()
+      {
+         $('#NavigationBar1_wrapper').parent().remove();
+         $("#NavigationBar1 span").show('drop', { easing: 'linear', direction: 'right'}, 454);
+      });
+      $(this).children("span").hide('drop', { easing: 'linear', direction: 'right'}, 454);
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -596,7 +617,7 @@ $(window).on('load', function()
 </script>
 
 </head>
-<body>
+<body data-bs-spy="scroll">
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="col-1">
@@ -881,26 +902,19 @@ $(window).on('load', function()
 <div id="LayoutGrid9">
 <div class="col-1">
 <div id="Banner1"><span>Explore More</span></div>
-<div id="wb_ThemeableButton4">
-<a class="ui-button ui-corner-all" id="ThemeableButton4" href="./sw.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>Software I use</a>
-</div>
 <div id="wb_Text6">
 <p>&nbsp;</p>
 </div>
-<div id="wb_ThemeableButton7">
-<a class="ui-button ui-corner-all" id="ThemeableButton7" href="./misc.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>Extras</a>
+<div id="NavigationBar1">
+<ul class="nav navbar">
+<li class="nav-item"><a href="./sw.html" class="nav-link"><img title="Software I Use" src="images/img0014_over.gif"><span><img title="Software I Use" src="images/img0014.gif"></span></a></li>
+<li class="nav-item"><a href="./eqp.html" class="nav-link"><img title="My Equipments" src="images/img0031_over.gif"><span><img title="My Equipments" src="images/img0031.gif"></span></a></li>
+<li class="nav-item"><a href="./prodn.html" class="nav-link"><img title="My Tunes" src="images/img0035_over.gif"><span><img title="My Tunes" src="images/img0035.gif"></span></a></li>
+<li class="nav-item"><a href="./misc.html" class="nav-link"><img title="Help" src="images/img0036_over.gif"><span><img title="Help" src="images/img0036.gif"></span></a></li>
+</ul>
 </div>
-<div id="wb_Text22">
+<div id="wb_Text14">
 <p>&nbsp;</p>
-</div>
-<div id="wb_ThemeableButton8">
-<a class="ui-button ui-corner-all" id="ThemeableButton8" href="./eqp.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>My Equipments</a>
-</div>
-<div id="wb_Text18">
-<p>&nbsp;</p>
-</div>
-<div id="wb_ThemeableButton6">
-<a class="ui-button ui-corner-all" id="ThemeableButton6" href="./prodn.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>FL Renders</a>
 </div>
 <div id="Banner11"><span>External Links</span></div>
 <div id="wb_Text3">
@@ -923,6 +937,45 @@ $(window).on('load', function()
 </div>
 </div>
 <div class="col-2">
+<div id="Banner2"><span>Site Map</span></div>
+<div id="SiteTree1" class="SiteTree1">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="mastuh.html"></a></li>
+<li><a href="sw.html">Software I Use</a></li>
+<li><a href="eqp.html">My Equipments</a>
+   <ul>
+   <li><a href="lap.html">Laptop</a></li>
+   <li><a href="rpi.html">RPi</a></li>
+   <li><a href="ntbk.html">Netbook</a></li>
+   </ul>
+</li>
+<li><a href="proj.html">Projects</a>
+   <ul>
+   <li><a href="page1.html">RPi-TELEBOT</a></li>
+   <li><a href="page2.html">BU & BO Designer</a></li>
+   <li><a href="page3.html">Qt Demo</a></li>
+   </ul>
+</li>
+<li><a href="gal.html">Gallery</a>
+   <ul>
+   <li><a href="hyb.html">Hyderabad</a></li>
+   <li><a href="nature.html">Nature</a></li>
+   <li><a href="pvr.html">Poovar</a></li>
+   <li><a href="miscg.html">Misc Images</a></li>
+   </ul>
+</li>
+<li><a href="prodn.html">My Tunes</a></li>
+<li><a href="misc.html">Help</a>
+   <ul>
+   <li><a href="xtra.html">EXTRAS</a></li>
+   </ul>
+</li>
+</ul>
+</div>
+<div id="wb_Text15">
+<p>&nbsp;</p>
+</div>
 <form name="SiteSearch2_form" id="SiteSearch2_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
 <input type="text" id="SiteSearch2" name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
 <div id="SiteSearch2-dialog" title="Search results"></div>
