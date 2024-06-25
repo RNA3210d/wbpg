@@ -4757,8 +4757,8 @@ body
 {
    width: 284px;
    height: 49px;
-   visibility: visible;
-   display: inline-flex;
+   visibility: hidden;
+   display: none;
 }
 #Layer1
 {
