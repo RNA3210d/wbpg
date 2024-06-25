@@ -810,300 +810,6 @@ body
    font-style: normal;
    font-size: 24px;
 }
-#wb_Icon5
-{
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
-   border: 2px solid #FFFFFF;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#wb_Icon5 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
-   content: "";
-}
-#wb_Icon5:hover
-{
-   background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
-   border: 2px solid #FFFFFF;
-}
-#Icon5
-{
-   height: 16px;
-   width: 16px;
-}
-#Icon5 i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 16px;
-   line-height: 16px;
-   vertical-align: middle;
-   width: 15px;
-}
-#wb_Icon5:hover #Icon5 i
-{
-   color: #13A89E;
-}
-#wb_Icon5
-{
-   transform: rotate(0deg) ;
-   transition: transform 500ms linear 0ms;
-}
-#wb_Icon5:hover
-{
-   transform: rotate(360deg) ;
-   transition: transform 500ms linear 0ms;
-}
-#wb_Icon6
-{
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
-   border: 2px solid #FFFFFF;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#wb_Icon6 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
-   content: "";
-}
-#wb_Icon6:hover
-{
-   background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
-   border: 2px solid #FFFFFF;
-}
-#Icon6
-{
-   height: 16px;
-   width: 16px;
-}
-#Icon6 i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 16px;
-   line-height: 16px;
-   vertical-align: middle;
-   width: 19px;
-}
-#wb_Icon6:hover #Icon6 i
-{
-   color: #13A89E;
-}
-#wb_Icon6
-{
-   transform: rotate(0deg) ;
-   transition: transform 500ms linear 0ms;
-}
-#wb_Icon6:hover
-{
-   transform: rotate(360deg) ;
-   transition: transform 500ms linear 0ms;
-}
-#wb_Icon7
-{
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
-   border: 2px solid #FFFFFF;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#wb_Icon7 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
-   content: "";
-}
-#wb_Icon7:hover
-{
-   background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
-   border: 2px solid #FFFFFF;
-}
-#Icon7
-{
-   height: 16px;
-   width: 16px;
-}
-#Icon7 i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 16px;
-   line-height: 16px;
-   vertical-align: middle;
-   width: 15px;
-}
-#wb_Icon7:hover #Icon7 i
-{
-   color: #13A89E;
-}
-#wb_Icon7
-{
-   transform: rotate(0deg) ;
-   transition: transform 500ms linear 0ms;
-}
-#wb_Icon7:hover
-{
-   transform: rotate(360deg) ;
-   transition: transform 500ms linear 0ms;
-}
-#wb_Icon8
-{
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
-   border: 2px solid #FFFFFF;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#wb_Icon8 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
-   content: "";
-}
-#wb_Icon8:hover
-{
-   background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
-   border: 2px solid #FFFFFF;
-}
-#Icon8
-{
-   height: 16px;
-   width: 16px;
-}
-#Icon8 i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 16px;
-   line-height: 16px;
-   vertical-align: middle;
-   width: 19px;
-}
-#wb_Icon8:hover #Icon8 i
-{
-   color: #13A89E;
-}
-#wb_Icon8
-{
-   transform: rotate(0deg) ;
-   transition: transform 500ms linear 0ms;
-}
-#wb_Icon8:hover
-{
-   transform: rotate(360deg) ;
-   transition: transform 500ms linear 0ms;
-}
-#wb_Icon1
-{
-   background-image: linear-gradient(to top, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
-   border: 2px solid #FFFFFF;
-   border-radius: 50%;
-   text-align: center;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#wb_Icon1 a::after
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 1;
-   pointer-events: auto;
-   content: "";
-}
-#wb_Icon1:hover
-{
-   background-image: linear-gradient(to top, #A5C8EA 0%, #7BB2EE 49%, #4AA0F7 50%, #B6FBFE 100%);
-   border: 2px solid #FFFFFF;
-}
-#Icon1
-{
-   height: 16px;
-   width: 16px;
-}
-#Icon1 i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 16px;
-   line-height: 16px;
-   vertical-align: middle;
-   width: 15px;
-}
-#wb_Icon1:hover #Icon1 i
-{
-   color: #13A89E;
-}
-#wb_Icon1
-{
-   transform: rotate(0deg) ;
-   transition: transform 500ms linear 0ms;
-}
-#wb_Icon1:hover
-{
-   transform: rotate(360deg) ;
-   transition: transform 500ms linear 0ms;
-}
-#Layer2
-{
-   background-image: linear-gradient(225deg, #CCFFFF 0%, #0099FF 17%, #0099CC 32%, #0066CC 46%, #000080 50%, #008080 54%, #00CC99 67%, #00CCCC 84%, #00FFFF 100%);
-   border-radius: 17px;
-   box-shadow: 0px 0px 15px #66C4E8;
-   padding: 0;
-}
-#Layer2
-{
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   justify-content: center;
-}
 #wb_Text13 
 {
    background-color: transparent;
@@ -3835,13 +3541,150 @@ Banner2 span:before
    opacity: .3;
    transform: scaleY(-1);
 }
+#wb_FlipSwitch1
+{
+   position: relative;
+   margin: 0;
+}
+#FlipSwitch1
+{
+   display: none;
+}
+#FlipSwitch1-label
+{
+   display: block;
+   overflow: hidden;
+   cursor: pointer;
+   border: 2px solid #636363;
+   border-radius: 31px;
+   box-sizing: border-box;
+   max-width: 100%;
+   height: 100%;
+   transition: border-color 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+}
+#FlipSwitch1-inner
+{
+   box-sizing: border-box;
+   display: block;
+   width: 200%;
+   margin-left: -100%;
+   transition: margin 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+}
+#FlipSwitch1-inner:before, #FlipSwitch1-inner:after
+{
+   display: block;
+   float: left;
+   width: 50%;
+   height: 31px;
+   padding: 0;
+   line-height: 31px;
+   color: #000000;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   box-sizing: border-box;
+   border-radius: 31px;
+   text-align: center;
+}
+#FlipSwitch1-inner:before
+{
+   content: "On";
+   padding-right: 31px;
+   background-color: #0275D8;
+   color: #FFFFFF;
+   border-radius: 31px 0 0 31px;
+}
+#FlipSwitch1-inner:after
+{
+   content: "Off";
+   padding-left: 31px;
+   background-color: #E9E9E9;
+   color: #000000;
+   border-radius: 0 31px 31px 0;
+}
+#FlipSwitch1-switch
+{
+   display: block;
+   width: 31px;
+   margin: 0;
+   background: #FFFFFF;
+   border: 2px solid #636363;
+   border-radius: 31px;
+   box-shadow: 0px 0px 5px rgba(15,111,198,0.30);
+   position: absolute;
+   top: 2px;
+   bottom: 2px;
+   right: 47px;
+   transition: all 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+   box-sizing: border-box;
+}
+#FlipSwitch1:checked + #FlipSwitch1-label
+{
+   border-color: #636363;
+}
+#FlipSwitch1:checked + #FlipSwitch1-label #FlipSwitch1-inner
+{
+   margin-left: 0;
+}
+#FlipSwitch1:checked + #FlipSwitch1-label #FlipSwitch1-switch
+{
+   right: 2px;
+   background: #FFFFFF;
+   border-color: #636363;
+}
+#wb_Icon1
+{
+   background-image: linear-gradient(to top, #FF3333 0%, #990000 100%);
+   border: 2px solid #FFFFFF;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0 10px 0 0 ;
+   padding: 10px 10px 10px 10px;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_Icon1:hover
+{
+   background-image: linear-gradient(to top, #000000 0%, #000000 68%, #207CCA 75%, #28F5FC 81%, #28F5FC 81%, #D200F7 91%, #000000 95%, rgba(0,0,0,0.99) 100%);
+   border: 2px solid #FFFFFF;
+}
+#Icon1
+{
+   height: 16px;
+   width: 16px;
+}
+#Icon1 i
+{
+   color: #FFFFFF;
+   display: inline-block;
+   font-size: 16px;
+   line-height: 16px;
+   vertical-align: middle;
+   width: 15px;
+}
+#wb_Icon1:hover #Icon1 i
+{
+   color: #13A89E;
+}
+#wb_Icon1
+{
+   transform: rotate(0deg) ;
+   transition: transform 500ms linear 0ms;
+}
+#wb_Icon1:hover
+{
+   transform: rotate(360deg) ;
+   transition: transform 500ms linear 0ms;
+}
 #wb_Icon1
 {
    display: inline-block;
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 23;
+   z-index: 35;
 }
 #wb_ThemeableButton1
 {
@@ -3853,17 +3696,9 @@ Banner2 span:before
 #Banner1
 {
    display: inline-block;
-   width: 769px;
+   width: 204px;
    height: 48px;
-   z-index: 45;
-}
-#wb_Icon6
-{
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 21;
+   z-index: 41;
 }
 #wb_Card1
 {
@@ -3875,7 +3710,7 @@ Banner2 span:before
    display: inline-block;
    width: 100px;
    height: 28px;
-   z-index: 60;
+   z-index: 57;
 }
 #wb_Icon11
 {
@@ -3883,15 +3718,7 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 51;
-}
-#wb_Icon7
-{
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 22;
+   z-index: 48;
 }
 #wb_Icon10
 {
@@ -3899,7 +3726,7 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 44;
+   z-index: 40;
 }
 #wb_Icon4
 {
@@ -3907,27 +3734,27 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 42;
+   z-index: 38;
 }
 #Banner3
 {
    display: inline-block;
    width: 547px;
    height: 48px;
-   z-index: 35;
+   z-index: 30;
 }
 #wb_Card3
 {
    display: flex;
    width: 100%;
-   z-index: 32;
+   z-index: 27;
 }
 #Banner2
 {
    display: inline-block;
    width: 378px;
    height: 47px;
-   z-index: 56;
+   z-index: 53;
 }
 #wb_Icon13
 {
@@ -3935,22 +3762,14 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 53;
+   z-index: 50;
 }
 #NavigationBar1
 {
    display: inline-block;
    width: 322px;
    height: 136px;
-   z-index: 47;
-}
-#wb_Icon5
-{
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 20;
+   z-index: 44;
 }
 #wb_Card2
 {
@@ -3963,14 +3782,14 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 52;
+   z-index: 49;
 }
 #Banner5
 {
    display: inline-block;
    width: 854px;
    height: 130px;
-   z-index: 33;
+   z-index: 28;
 }
 #wb_Icon15
 {
@@ -3978,7 +3797,7 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 55;
+   z-index: 52;
 }
 #wb_Icon14
 {
@@ -3986,15 +3805,14 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 54;
+   z-index: 51;
 }
-#wb_Icon8
+#wb_FlipSwitch1
 {
    display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 24;
+   width: 80px;
+   height: 35px;
+   z-index: 42;
 }
 #Banner7
 {
@@ -4009,7 +3827,7 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 43;
+   z-index: 39;
 }
 #ThemeableButton3
 {
@@ -4026,7 +3844,7 @@ Banner2 span:before
    display: inline-block;
    width: 547px;
    height: 48px;
-   z-index: 25;
+   z-index: 20;
 }
 #ThemeableButton1
 {
@@ -4067,12 +3885,13 @@ Banner2 span:before
 {
    position: fixed;
    text-align: center;
-   left: 0px;
+   left: auto;
+   right: 0px;
    top: auto;
    bottom: 0px;
-   width: 284px;
+   width: 331px;
    height: 49px;
-   z-index: 68;
+   z-index: 64;
 }
 #Banner10
 {
@@ -4086,25 +3905,14 @@ Banner2 span:before
    display: inline-block;
    width: 778px;
    height: 48px;
-   z-index: 49;
-}
-#Layer2
-{
-   position: fixed;
-   text-align: center;
-   left: 0px;
-   top: auto;
-   bottom: 0px;
-   width: 284px;
-   height: 49px;
-   z-index: 64;
+   z-index: 46;
 }
 #SiteSearch2
 {
    display: block;
    width: 100%;
    height: 26px;
-   z-index: 59;
+   z-index: 56;
 }
 #wb_Icon2
 {
@@ -4112,14 +3920,14 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 40;
+   z-index: 36;
 }
 #wb_ThemeableButton2
 {
    display: inline-block;
    width: 215px;
    height: 53px;
-   z-index: 30;
+   z-index: 25;
 }
 #Banner12
 {
@@ -4134,7 +3942,7 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 41;
+   z-index: 37;
 }
 #Layer1_Container
 {
@@ -4145,11 +3953,7 @@ Banner2 span:before
    display: inline-block;
    width: 325px;
    height: 45px;
-   z-index: 37;
-}
-#Layer2_Container
-{
-   width: 100%;
+   z-index: 32;
 }
 #wb_Card4
 {
@@ -4540,117 +4344,6 @@ body
 #wb_Card8
 {
    text-align: left;
-}
-#wb_Icon5
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-}
-#Icon5
-{
-   width: 16px;
-   height: 16px;
-}
-#Icon5 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 15px;
-}
-#wb_Icon6
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-}
-#Icon6
-{
-   width: 16px;
-   height: 16px;
-}
-#Icon6 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 19px;
-}
-#wb_Icon7
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-}
-#Icon7
-{
-   width: 16px;
-   height: 16px;
-}
-#Icon7 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 15px;
-}
-#wb_Icon8
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-}
-#Icon8
-{
-   width: 16px;
-   height: 16px;
-}
-#Icon8 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 19px;
-}
-#wb_Icon1
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-}
-#Icon1
-{
-   width: 16px;
-   height: 16px;
-}
-#Icon1 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 15px;
-}
-#Layer2
-{
-   width: 284px;
-   height: 49px;
-   visibility: visible;
-   display: inline-flex;
-}
-#Layer2
-{
-   padding: 0;
 }
 #wb_Text13
 {
@@ -5747,6 +5440,65 @@ body
    height: 27px;
    margin: 11px 0 11px 0 ;
 }
+#wb_FlipSwitch1
+{
+   width: 66px;
+   height: 33px;
+   visibility: visible;
+   display: inline-block;
+}
+#FlipSwitch1-label
+{
+   border-radius: 29px;
+   height: 100%;
+}
+#FlipSwitch1-inner:before, #FlipSwitch1-inner:after
+{
+   height: 29px;
+   padding: 0;
+   line-height: 29px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-size: 16px;
+}
+#FlipSwitch1-inner:before
+{
+   padding-right: 29px;
+   border-radius: 29px 0 0 29px;
+}
+#FlipSwitch1-inner:after
+{
+   padding-left: 29px;
+   border-radius: 0 29px 29px 0;
+}
+#FlipSwitch1-switch
+{
+   width: 29px;
+   border-radius: 29px;
+   top: 2px;
+   bottom: 2px;
+   right: 35px;
+}
+#wb_Icon1
+{
+   width: 16px;
+   height: 16px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0 10px 0 0 ;
+   padding: 10px 10px 10px 10px;
+}
+#Icon1
+{
+   width: 16px;
+   height: 16px;
+}
+#Icon1 i
+{
+   line-height: 16px;
+   font-size: 16px;
+   width: 19px;
+}
 }
 @media only screen and (max-width: 479px)
 {
@@ -6125,117 +5877,6 @@ body
 #wb_Card8
 {
    text-align: left;
-}
-#wb_Icon5
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-}
-#Icon5
-{
-   width: 16px;
-   height: 16px;
-}
-#Icon5 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 15px;
-}
-#wb_Icon6
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-}
-#Icon6
-{
-   width: 16px;
-   height: 16px;
-}
-#Icon6 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 19px;
-}
-#wb_Icon7
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-}
-#Icon7
-{
-   width: 16px;
-   height: 16px;
-}
-#Icon7 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 15px;
-}
-#wb_Icon8
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-}
-#Icon8
-{
-   width: 16px;
-   height: 16px;
-}
-#Icon8 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 19px;
-}
-#wb_Icon1
-{
-   width: 16px;
-   height: 16px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0 10px 0 0 ;
-   padding: 10px 10px 10px 10px;
-}
-#Icon1
-{
-   width: 16px;
-   height: 16px;
-}
-#Icon1 i
-{
-   line-height: 16px;
-   font-size: 16px;
-   width: 15px;
-}
-#Layer2
-{
-   width: 275px;
-   height: 43px;
-   visibility: hidden;
-   display: none;
-}
-#Layer2
-{
-   padding: 0;
 }
 #wb_Text13
 {
@@ -6898,7 +6539,7 @@ body
 }
 #Banner1
 {
-   width: 300px;
+   width: 133px;
    height: 50px;
    visibility: visible;
    display: inline-block;
@@ -7331,6 +6972,65 @@ body
 {
    height: 20px;
    margin: 14px 0 14px 0 ;
+}
+#wb_FlipSwitch1
+{
+   width: 63px;
+   height: 29px;
+   visibility: visible;
+   display: inline-block;
+}
+#FlipSwitch1-label
+{
+   border-radius: 25px;
+   height: 100%;
+}
+#FlipSwitch1-inner:before, #FlipSwitch1-inner:after
+{
+   height: 25px;
+   padding: 0;
+   line-height: 25px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-size: 11px;
+}
+#FlipSwitch1-inner:before
+{
+   padding-right: 25px;
+   border-radius: 25px 0 0 25px;
+}
+#FlipSwitch1-inner:after
+{
+   padding-left: 25px;
+   border-radius: 0 25px 25px 0;
+}
+#FlipSwitch1-switch
+{
+   width: 25px;
+   border-radius: 25px;
+   top: 2px;
+   bottom: 2px;
+   right: 36px;
+}
+#wb_Icon1
+{
+   width: 16px;
+   height: 16px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0 10px 0 0 ;
+   padding: 10px 10px 10px 10px;
+}
+#Icon1
+{
+   width: 16px;
+   height: 16px;
+}
+#Icon1 i
+{
+   line-height: 16px;
+   font-size: 16px;
+   width: 19px;
 }
 }
 .darktheme body

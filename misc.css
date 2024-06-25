@@ -263,8 +263,7 @@ Banner3 span:before
 }
 #Blog1
 {
-   background-color: #FFFFFF;
-   background-image: none;
+   background-image: linear-gradient(to top, #EA8711 0%, #D96363 25%, #73A6DF 50%, #9085FB 75%, #52CA79 100%);
    border: 0px solid transparent;
    border-radius: 0px;
    font-family: "Exo 2";
@@ -804,7 +803,6 @@ body
 {
    visibility: visible;
    display: block;
-   background-image: linear-gradient(to top, #EA8711 0%, #D96363 25%, #73A6DF 50%, #9085FB 75%, #52CA79 100%);
 }
 #Blog1 .blogcolumn
 {
@@ -1042,7 +1040,6 @@ body
 {
    visibility: visible;
    display: block;
-   background-image: linear-gradient(to top, #EA8711 0%, #D96363 25%, #73A6DF 50%, #9085FB 75%, #52CA79 100%);
 }
 #Blog1 .blogcolumn
 {

@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://www.yourwebsite.com/</loc>
-		<lastmod>2024-06-24</lastmod>
+		<lastmod>2024-06-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/sw.html</loc>
-		<lastmod>2024-06-23</lastmod>
+		<lastmod>2024-06-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/eqp.html</loc>
-		<lastmod>2024-06-02</lastmod>
+		<lastmod>2024-06-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/lap.html</loc>
-		<lastmod>2024-06-12</lastmod>
+		<lastmod>2024-06-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/rpi.html</loc>
-		<lastmod>2024-06-02</lastmod>
+		<lastmod>2024-06-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/ntbk.html</loc>
-		<lastmod>2024-06-02</lastmod>
+		<lastmod>2024-06-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/proj.html</loc>
-		<lastmod>2024-06-12</lastmod>
+		<lastmod>2024-06-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -62,7 +62,7 @@
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/gal.html</loc>
-		<lastmod>2024-06-23</lastmod>
+		<lastmod>2024-06-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -98,13 +98,13 @@
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/misc.html</loc>
-		<lastmod>2024-06-23</lastmod>
+		<lastmod>2024-06-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/xtra.html</loc>
-		<lastmod>2024-06-23</lastmod>
+		<lastmod>2024-06-25</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
