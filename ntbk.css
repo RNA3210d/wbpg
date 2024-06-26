@@ -62,27 +62,6 @@ body
 {
    text-align: left;
 }
-#wb_Text2 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_Text2
-{
-   color: #000000;
-   font-family: "Exo 2";
-   font-weight: normal;
-   font-size: 19px;
-}
-#wb_Text2 div
-{
-   text-align: left;
-}
 #Button4
 {
    border: 1px solid #2E6DA4;
@@ -778,7 +757,7 @@ body
    top: 11px;
    width: 96px;
    height: 24px;
-   z-index: 3;
+   z-index: 2;
 }
 #Layer6
 {
@@ -789,21 +768,21 @@ body
    float: left;
    clear: left;
    display: block;
-   z-index: 27;
+   z-index: 28;
 }
 #TextArea1
 {
    display: block;
    width: 100%;
    height: 518px;
-   z-index: 21;
+   z-index: 22;
 }
 #wb_ThemeableButton1
 {
    display: inline-block;
    width: 194px;
    height: 45px;
-   z-index: 19;
+   z-index: 20;
 }
 #wb_Image1
 {
@@ -821,14 +800,14 @@ body
    top: 926px;
    width: 570px;
    height: 16px;
-   z-index: 28;
+   z-index: 29;
 }
 #Button1
 {
    display: inline-block;
    width: 155px;
    height: 47px;
-   z-index: 23;
+   z-index: 24;
 }
 #wb_Image2
 {
@@ -844,7 +823,7 @@ body
    top: 926px;
    width: 570px;
    height: 16px;
-   z-index: 29;
+   z-index: 30;
 }
 #Line1
 {
@@ -854,7 +833,7 @@ body
 {
    position: absolute;
    left: 142px;
-   top: 0px;
+   top: 10px;
    width: 249px;
    height: 27px;
    z-index: 0;
@@ -863,7 +842,7 @@ body
 {
    display: inline-block;
    width: 100%;
-   z-index: 20;
+   z-index: 21;
 }
 #ThemeableButton1
 {
@@ -875,20 +854,11 @@ body
    width: 100%;
    height: 100%;
 }
-#wb_Text2
-{
-   position: absolute;
-   left: 142px;
-   top: 59px;
-   width: 328px;
-   height: 27px;
-   z-index: 2;
-}
 #wb_Heading5
 {
    display: inline-block;
    width: 100%;
-   z-index: 16;
+   z-index: 17;
 }
 #Line2
 {
@@ -904,7 +874,7 @@ body
 {
    display: inline-block;
    width: 100%;
-   z-index: 15;
+   z-index: 16;
 }
 #Layer1
 {
@@ -917,11 +887,36 @@ body
    display: block;
    z-index: 4;
 }
+#wb_JavaScript1
+{
+   position: absolute;
+   left: 142px;
+   top: 60px;
+   width: 404px;
+   height: 26px;
+   z-index: 3;
+}
+#wb_JavaScript2
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 15;
+}
 #wb_Heading1
 {
    display: inline-block;
    width: 165px;
    z-index: 6;
+}
+#copyrightnotice
+{
+   color: #000000;
+   font-size: 15px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+   text-decoration: none;
 }
 #Layer3
 {
@@ -930,7 +925,7 @@ body
    width: 100%;
    height: 100%;
    float: left;
-   z-index: 25;
+   z-index: 26;
 }
 #Layer1_Container
 {
@@ -945,7 +940,7 @@ body
    display: inline-block;
    width: 194px;
    height: 45px;
-   z-index: 17;
+   z-index: 18;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px)
 {
@@ -1014,24 +1009,6 @@ body
    padding: 0;
    text-align: left;
 }
-#wb_Text2
-{
-   left: 142px;
-   top: 59px;
-   width: 328px;
-   height: 27px;
-   visibility: visible;
-   display: inline;
-}
-#wb_Text2
-{
-   font-family: "Exo 2";
-   font-weight: 400;
-   font-size: 19px;
-   margin: 0;
-   padding: 0;
-   text-align: left;
-}
 #Button4
 {
    left: 374px;
@@ -1042,6 +1019,15 @@ body
    display: inline;
    margin: 0;
    padding: 1px 6px 1px 6px;
+}
+#wb_JavaScript1
+{
+   left: 142px;
+   top: 56px;
+   width: 328px;
+   height: 42px;
+   visibility: visible;
+   display: inline;
 }
 #Layer3
 {
@@ -1435,24 +1421,6 @@ body
    padding: 0;
    text-align: center;
 }
-#wb_Text2
-{
-   left: 111px;
-   top: 59px;
-   width: 201px;
-   height: 48px;
-   visibility: visible;
-   display: inline;
-}
-#wb_Text2
-{
-   font-family: "Exo 2";
-   font-weight: 400;
-   font-size: 16px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
 #Button4
 {
    left: 12px;
@@ -1463,6 +1431,15 @@ body
    display: inline;
    margin: 0;
    padding: 1px 6px 1px 6px;
+}
+#wb_JavaScript1
+{
+   left: 111px;
+   top: 62px;
+   width: 209px;
+   height: 47px;
+   visibility: visible;
+   display: inline;
 }
 #Layer3
 {

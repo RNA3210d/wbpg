@@ -72,9 +72,24 @@ $(window).on('load', function()
 <span style="color:#77893E;">Is this life? Is it real?</span></div>
 <div id="wb_Image1">
 <a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
-<div id="wb_Text2">
-<span style="color:#000000;">© 2024 NVN | Personal Webpage</span></div>
 <input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" onmouseenter="AnimateCss('Button4', 'animate-neon-text-shadow', 0, 3000);return false;" onmouseleave="AnimateCss('Button4', '', 0, 500);return false;" name="" value="Dark/Light">
+<div id="wb_JavaScript1">
+<div id="copyrightnotice"></div>
+<script>
+   var now = new Date();
+   var startYear = "2000";
+   var text =  "Copyright &copy; ";
+   if (startYear != '')
+   {
+      text = text + startYear + "-";
+   }
+   text = text + now.getFullYear() + ", Naveen. All rights reserved.";
+   var copyrightnotice = document.getElementById('copyrightnotice');
+   copyrightnotice.innerHTML = text;
+</script>
+
+
+</div>
 </div>
 </div>
 
@@ -101,6 +116,11 @@ $(window).on('load', function()
 </div>
 <div id="wb_Text6">
 <p>&nbsp;</p>
+</div>
+<div id="wb_JavaScript2">
+<script>
+document.write("<div style=\"color:#000000;font-size:16px;font-family:Exo 2;font-weight:normal;font-style:normal;text-align:center;text-decoration:none\">Last updated: "+document.lastModified+"<\/div>");
+</script>    
 </div>
 <div id="wb_Heading3">
 <h2 id="Heading3">Optimized custom TKG kernel:</h2>

@@ -69,27 +69,6 @@ body
 {
    text-align: left;
 }
-#wb_Text2 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_Text2
-{
-   color: #000000;
-   font-family: "Exo 2";
-   font-weight: normal;
-   font-size: 19px;
-}
-#wb_Text2 div
-{
-   text-align: left;
-}
 #Button4
 {
    border: 1px solid #2E6DA4;
@@ -509,7 +488,7 @@ Banner3 span:before
    top: 11px;
    width: 96px;
    height: 24px;
-   z-index: 3;
+   z-index: 2;
 }
 #TextArea1
 {
@@ -553,19 +532,10 @@ Banner3 span:before
 {
    position: absolute;
    left: 142px;
-   top: 0px;
+   top: 10px;
    width: 249px;
    height: 27px;
    z-index: 0;
-}
-#wb_Text2
-{
-   position: absolute;
-   left: 142px;
-   top: 59px;
-   width: 328px;
-   height: 27px;
-   z-index: 2;
 }
 #NewsFeedTicker1
 {
@@ -588,6 +558,15 @@ Banner3 span:before
 {
    overflow: auto;
 }
+#wb_JavaScript1
+{
+   position: absolute;
+   left: 142px;
+   top: 60px;
+   width: 404px;
+   height: 26px;
+   z-index: 3;
+}
 #Layer2
 {
    position: relative;
@@ -598,6 +577,16 @@ Banner3 span:before
    clear: left;
    display: inline-flex;
    z-index: 15;
+}
+#copyrightnotice
+{
+   color: #000000;
+   font-size: 15px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+   text-decoration: none;
 }
 #Banner12
 {
@@ -707,24 +696,6 @@ body
    padding: 0;
    text-align: left;
 }
-#wb_Text2
-{
-   left: 142px;
-   top: 59px;
-   width: 328px;
-   height: 27px;
-   visibility: visible;
-   display: inline;
-}
-#wb_Text2
-{
-   font-family: "Exo 2";
-   font-weight: 400;
-   font-size: 19px;
-   margin: 0;
-   padding: 0;
-   text-align: left;
-}
 #Button4
 {
    left: 374px;
@@ -735,6 +706,15 @@ body
    display: inline;
    margin: 0;
    padding: 1px 6px 1px 6px;
+}
+#wb_JavaScript1
+{
+   left: 142px;
+   top: 56px;
+   width: 328px;
+   height: 42px;
+   visibility: visible;
+   display: inline;
 }
 #Layer2
 {
@@ -944,24 +924,6 @@ body
    padding: 0;
    text-align: center;
 }
-#wb_Text2
-{
-   left: 111px;
-   top: 59px;
-   width: 201px;
-   height: 48px;
-   visibility: visible;
-   display: inline;
-}
-#wb_Text2
-{
-   font-family: "Exo 2";
-   font-weight: 400;
-   font-size: 16px;
-   margin: 0;
-   padding: 0;
-   text-align: center;
-}
 #Button4
 {
    left: 12px;
@@ -972,6 +934,15 @@ body
    display: inline;
    margin: 0;
    padding: 1px 6px 1px 6px;
+}
+#wb_JavaScript1
+{
+   left: 111px;
+   top: 62px;
+   width: 209px;
+   height: 47px;
+   visibility: visible;
+   display: inline;
 }
 #Layer2
 {

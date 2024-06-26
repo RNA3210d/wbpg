@@ -628,6 +628,32 @@ $(window).on('load', function()
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="col-1">
+<div id="wb_JavaScript4">
+<div id="greeting"></div> 
+<script>
+var datenow = new Date(); 
+var timenow = datenow.getTime(); 
+datenow.setTime(timenow); 
+var hournow = datenow.getHours(); 
+var greeting = document.getElementById('greeting');
+if (hournow >= 18)
+{ 
+   greeting.innerHTML = "Good Evening! I hope your day was as wonderful as you are!"; 
+}
+else 
+if (hournow >= 12) 
+{
+   greeting.innerHTML = "Good Afternoon! Hope your afternoon is going as smoothly as possible."; 
+}
+else 
+{
+   greeting.innerHTML = "Good Morning! Wishing you a successful day!"; 
+}
+</script>
+</div>
+<div id="wb_Text16">
+<p>&nbsp;</p>
+</div>
 <div id="wb_Card4" class="card" onclick="AnimateCss('wb_Card4', 'animate-fire-text-shadow', 0, 2000);return false;">
    <div id="Card4-card-body">
       <div id="Card4-card-item0">“</div>
@@ -648,7 +674,7 @@ $(window).on('load', function()
 <div class="col-1">
 <div id="Banner8"><span>About Me</span></div>
 <div id="wb_Text5">
-<span style="color:#C8E5F4;font-family:'Exo 2';font-size:16px;">Just a 22-year-old guy passionate about electronics, heavy machinery, switchgear, coding and more.<br><br>DOB: 28 June 2001<br>Blood type: B+<br>EMail: rna3210d2@proton.me<br>Education: B.Tech in Electrical and Electronics Engineering</span>
+<span style="color:#C8E5F4;font-family:'Exo 2';font-size:16px;">Just a 22-year-old guy passionate about electronics, heavy machinery, switchgear, coding and more.<br><br>DOB: 28 June 2001<br>EMail: rna3210d2@proton.me<br>Education: B.Tech in Electrical and Electronics Engineering</span>
 </div>
 </div>
 <div class="col-2">
@@ -864,6 +890,28 @@ $(window).on('load', function()
 <div id="wb_Text12">
 <p>&nbsp;</p>
 </div>
+<div id="wb_JavaScript1">
+<div id="basicclock"></div>
+<script>
+function clock() 
+{
+   var digital = new Date();
+   var hours = digital.getHours();
+   var minutes = digital.getMinutes();
+   var seconds = digital.getSeconds();
+   if (minutes <= 9) minutes = "0" + minutes;
+   if (seconds <= 9) seconds = "0" + seconds;
+   dispTime = hours + ":" + minutes + ":" + seconds;
+
+   var basicclock = document.getElementById('basicclock');
+   basicclock.innerHTML = dispTime;
+   setTimeout("clock()", 1000);
+}
+clock();
+</script>
+
+
+</div>
 </div>
 </div>
 </div>
@@ -933,6 +981,14 @@ $(window).on('load', function()
 <div id="wb_Icon15">
 <a href="https://www.mixcloud.com/RNA3210d/" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon15"><i class="fa fa-mixcloud"></i></div></a>
 </div>
+<div id="wb_JavaScript2">
+<script>
+document.write("<div style='font-family:Exo 2;font-size:19px;color:#DBEFF9;text-decoration:none;font-weight:normal;font-style:normal;text-align:center;text-decoration:none'>" + navigator.appName + " " + navigator.appVersion + "<\/div>");
+</script>
+
+
+
+</div>
 </div>
 <div class="col-2">
 <div id="Banner2"><span>Site Map</span></div>
@@ -978,6 +1034,11 @@ $(window).on('load', function()
 <input type="text" id="SiteSearch2" name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
 <div id="SiteSearch2-dialog" title="Search results"></div>
 <input type="button" id="Button2" onclick="searchPage();return false;" onmouseleave="AnimateCss('Button2', '', 0, 500);return false;" onmouseover="AnimateCss('Button2', 'animate-neon-text-shadow', 0, 55500);return false;" name="Search" value="Search">
+<div id="wb_JavaScript5">
+<script>
+document.write("<div style=\"color:#DBEFF9;font-size:16px;font-family:Exo 2;font-weight:normal;font-style:normal;text-align:center;text-decoration:none\">Last updated: "+document.lastModified+"<\/div>");
+</script>    
+</div>
 </div>
 </div>
 </div>
@@ -990,6 +1051,60 @@ $(window).on('load', function()
 <li><a href="#6"><span class="label">GTFO</span></a></li>
 <li><a href="#7"><span class="label">More</span></a></li>
 </ul>
+<div style="z-index:72">
+<div id="infobar">
+<a href="javascript:closeInfoBar()"><img src="icon_close.gif" style="width: 14px; height: 14px; float: right; border: 0; margin-right: 5px" /></a>
+<span style="color:#000000;font-size:16px;font-family:Exo 2;font-weight:normal;font-style:normal;text-decoration:none;padding:0px 0;">Visit legacy HTML site (for slower connections):  <a href="https://rna3210d.github.io/">rna3210d.github.io</a> </span>
+</div>
+<script>
+function showInfoBar()
+{
+   var infobar = document.getElementById("infobar");
+   var top = parseInt(infobar.style.top);
+   if (top < 0)
+   {
+      top += 5;
+      infobar.style.top = top+"px";
+      setTimeout(function(){showInfoBar()}, 50);
+   }
+   else
+   {
+      if (document.all && !window.XMLHttpRequest)
+         infobar.style.setExpression("top", 'document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px" : body.scrollTop+"px"');
+      else
+         infobar.style.top = 0;
+   }
+}
+function closeInfoBar()
+{
+   document.getElementById("infobar").style.display = "none";
+}
+function initInfoBar()
+{
+   var docWidth = 800;
+
+   if (typeof window.innerWidth != 'undefined')
+   {
+      docWidth = window.innerWidth;
+   }
+   else 
+   if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0)
+   {
+      docWidth = document.documentElement.clientWidth;
+   }
+   else
+   {
+      docWidth = document.getElementsByTagName('body')[0].clientWidth;
+   }
+  // document.getElementById("infobar").style.width = "100%";
+
+   var height = parseInt(document.getElementById("infobar").offsetHeight);
+   document.getElementById("infobar").style.top = height*(-1)+"px";
+   
+   showInfoBar();
+}
+initInfoBar();
+</script></div>
 <div id="preloader"></div>
 </body>
 </html>

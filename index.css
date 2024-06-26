@@ -3678,57 +3678,37 @@ Banner2 span:before
    transform: rotate(360deg) ;
    transition: transform 500ms linear 0ms;
 }
+#wb_Text16 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text16
+{
+   color: #000000;
+   font-family: Arial;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 16px;
+}
+#wb_Text16 p, #wb_Text16 ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text16
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
 #wb_Icon1
-{
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 35;
-}
-#wb_ThemeableButton1
-{
-   display: inline-block;
-   width: 215px;
-   height: 51px;
-   z-index: 14;
-}
-#Banner1
-{
-   display: inline-block;
-   width: 204px;
-   height: 48px;
-   z-index: 41;
-}
-#wb_Card1
-{
-   display: flex;
-   z-index: 7;
-}
-#Button2
-{
-   display: inline-block;
-   width: 100px;
-   height: 28px;
-   z-index: 57;
-}
-#wb_Icon11
-{
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 48;
-}
-#wb_Icon10
-{
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 40;
-}
-#wb_Icon4
 {
    display: inline-block;
    width: 16px;
@@ -3736,70 +3716,33 @@ Banner2 span:before
    text-align: center;
    z-index: 38;
 }
-#Banner3
+#wb_ThemeableButton1
 {
    display: inline-block;
-   width: 547px;
+   width: 215px;
+   height: 51px;
+   z-index: 16;
+}
+#Banner1
+{
+   display: inline-block;
+   width: 204px;
    height: 48px;
-   z-index: 30;
-}
-#wb_Card3
-{
-   display: flex;
-   width: 100%;
-   z-index: 27;
-}
-#Banner2
-{
-   display: inline-block;
-   width: 378px;
-   height: 47px;
-   z-index: 53;
-}
-#wb_Icon13
-{
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 50;
-}
-#NavigationBar1
-{
-   display: inline-block;
-   width: 322px;
-   height: 136px;
    z-index: 44;
 }
-#wb_Card2
+#wb_Card1
 {
    display: flex;
-   z-index: 8;
+   z-index: 9;
 }
-#wb_Icon12
+#Button2
 {
    display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 49;
+   width: 100px;
+   height: 28px;
+   z-index: 61;
 }
-#Banner5
-{
-   display: inline-block;
-   width: 854px;
-   height: 130px;
-   z-index: 28;
-}
-#wb_Icon15
-{
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   text-align: center;
-   z-index: 52;
-}
-#wb_Icon14
+#wb_Icon11
 {
    display: inline-block;
    width: 16px;
@@ -3807,19 +3750,117 @@ Banner2 span:before
    text-align: center;
    z-index: 51;
 }
+#wb_Icon10
+{
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   text-align: center;
+   z-index: 43;
+}
+#wb_Icon4
+{
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   text-align: center;
+   z-index: 41;
+}
+#Banner3
+{
+   display: inline-block;
+   width: 547px;
+   height: 48px;
+   z-index: 32;
+}
+#wb_Card3
+{
+   display: flex;
+   width: 100%;
+   z-index: 29;
+}
+#Banner2
+{
+   display: inline-block;
+   width: 378px;
+   height: 47px;
+   z-index: 57;
+}
+#wb_Icon13
+{
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   text-align: center;
+   z-index: 53;
+}
+#NavigationBar1
+{
+   display: inline-block;
+   width: 322px;
+   height: 136px;
+   z-index: 47;
+}
+#wb_Card2
+{
+   display: flex;
+   z-index: 10;
+}
+#wb_Icon12
+{
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   text-align: center;
+   z-index: 52;
+}
+#Banner5
+{
+   display: inline-block;
+   width: 854px;
+   height: 130px;
+   z-index: 30;
+}
+#wb_Icon15
+{
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   text-align: center;
+   z-index: 55;
+}
+#infobar
+{
+   padding: 4px 4px 4px 4px;
+   position: fixed;
+   z-index: 999;
+   left: 0px;
+   top: -100px;
+   width: 100%;
+   border-bottom: 1px solid #000000;
+   background-color: #FFFFE9;
+}
+#wb_Icon14
+{
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   text-align: center;
+   z-index: 54;
+}
 #wb_FlipSwitch1
 {
    display: inline-block;
    width: 80px;
    height: 35px;
-   z-index: 42;
+   z-index: 45;
 }
 #Banner7
 {
    display: inline-block;
    width: 1155px;
    height: 48px;
-   z-index: 9;
+   z-index: 11;
 }
 #wb_Icon9
 {
@@ -3827,7 +3868,17 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 39;
+   z-index: 42;
+}
+#basicclock
+{
+   color: #F49100;
+   font-size: 21px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-align: center;
+   text-decoration: none;
 }
 #ThemeableButton3
 {
@@ -3844,7 +3895,7 @@ Banner2 span:before
    display: inline-block;
    width: 547px;
    height: 48px;
-   z-index: 20;
+   z-index: 22;
 }
 #ThemeableButton1
 {
@@ -3857,13 +3908,13 @@ Banner2 span:before
    width: 24px;
    height: 24px;
    text-align: center;
-   z-index: 16;
+   z-index: 18;
 }
 #wb_Card8
 {
    display: flex;
    width: 100%;
-   z-index: 5;
+   z-index: 7;
 }
 #SiteSearch2_form
 {
@@ -3874,7 +3925,7 @@ Banner2 span:before
    display: inline-block;
    width: 798px;
    height: 85px;
-   z-index: 3;
+   z-index: 5;
 }
 #SiteTree1
 {
@@ -3891,28 +3942,52 @@ Banner2 span:before
    bottom: 0px;
    width: 331px;
    height: 49px;
-   z-index: 64;
+   z-index: 69;
 }
 #Banner10
 {
    display: inline-block;
    width: 1191px;
    height: 28px;
-   z-index: 2;
+   z-index: 4;
+}
+#wb_JavaScript5
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 62;
+}
+#wb_JavaScript2
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 56;
 }
 #Banner11
 {
    display: inline-block;
    width: 778px;
    height: 48px;
-   z-index: 46;
+   z-index: 49;
+}
+#wb_JavaScript1
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 37;
+}
+#wb_JavaScript4
+{
+   display: inline-block;
+   width: 100%;
+   z-index: 0;
 }
 #SiteSearch2
 {
    display: block;
    width: 100%;
    height: 26px;
-   z-index: 56;
+   z-index: 60;
 }
 #wb_Icon2
 {
@@ -3920,21 +3995,21 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 36;
+   z-index: 39;
 }
 #wb_ThemeableButton2
 {
    display: inline-block;
    width: 215px;
    height: 53px;
-   z-index: 25;
+   z-index: 27;
 }
 #Banner12
 {
    display: inline-block;
    width: 669px;
    height: 48px;
-   z-index: 11;
+   z-index: 13;
 }
 #wb_Icon3
 {
@@ -3942,7 +4017,7 @@ Banner2 span:before
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 37;
+   z-index: 40;
 }
 #Layer1_Container
 {
@@ -3953,19 +4028,29 @@ Banner2 span:before
    display: inline-block;
    width: 325px;
    height: 45px;
-   z-index: 32;
+   z-index: 34;
 }
 #wb_Card4
 {
    display: inline-block;
    width: 1200px;
    height: 389px;
-   z-index: 0;
+   z-index: 2;
 }
 #wb_Card7
 {
    display: flex;
-   z-index: 6;
+   z-index: 8;
+}
+#greeting
+{
+   font-family: "Exo 2";
+   font-size: 16px;
+   color: #FFFFFF;
+   font-weight: normal;
+   font-style: normal;
+   text-align: center;
+   text-decoration: none;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px)
 {
@@ -5499,6 +5584,27 @@ body
    font-size: 16px;
    width: 19px;
 }
+#wb_JavaScript1
+{
+   height: 66px;
+   visibility: visible;
+   display: block;
+}
+#wb_Text16
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text16
+{
+   font-family: Arial;
+   font-weight: 400;
+   font-size: 13px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+   line-height: 16px;
+}
 }
 @media only screen and (max-width: 479px)
 {
@@ -6791,8 +6897,8 @@ body
 }
 #wb_Card4
 {
-   width: 320px;
-   height: 733px;
+   width: 310px;
+   height: 704px;
    visibility: visible;
    display: inline-block;
    margin: 0;
@@ -7031,6 +7137,48 @@ body
    line-height: 16px;
    font-size: 16px;
    width: 19px;
+}
+#wb_JavaScript1
+{
+   height: 44px;
+   visibility: visible;
+   display: block;
+}
+#wb_JavaScript2
+{
+   height: 26px;
+   visibility: visible;
+   display: block;
+}
+#JavaScript3
+{
+   left: 122px;
+   top: 880px;
+   width: 90px;
+   height: 45px;
+   visibility: visible;
+   display: inline;
+}
+#wb_JavaScript4
+{
+   height: 26px;
+   visibility: visible;
+   display: block;
+}
+#wb_Text16
+{
+   visibility: visible;
+   display: block;
+}
+#wb_Text16
+{
+   font-family: Arial;
+   font-weight: 400;
+   font-size: 13px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+   line-height: 16px;
 }
 }
 .darktheme body
