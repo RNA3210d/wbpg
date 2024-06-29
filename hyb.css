@@ -200,7 +200,7 @@ body
 {
    display: block;
    background-color: #424242;
-   font-family: Arial;
+   font-family: "Exo 2";
    font-weight: normal;
    text-align: center;
    width: 100%;
@@ -210,7 +210,7 @@ body
 {
    display: inline-block;
    background-color: #424242;
-   height: 69px;
+   height: 73px;
 }
 #wb_ResponsiveMenu1 ul
 {
@@ -237,14 +237,14 @@ body
 {
    fill: currentColor;
    vertical-align: middle;
-   width: 24px;
-   height: 24px;
+   width: 25px;
+   height: 25px;
 }
 #wb_ResponsiveMenu1 ul li a
 {
    background-color: #424242;
    color: #FFFFFF;
-   font-family: Arial;
+   font-family: "Exo 2";
    font-weight: normal;
    font-size: 13px;
    font-style: normal;
@@ -254,7 +254,7 @@ body
 }
 #wb_ResponsiveMenu1 > ul > li > a 
 {
-   height: 39px;
+   height: 43px;
 }
 .ResponsiveMenu1 a 
 {
@@ -269,7 +269,7 @@ body
 {
    display: none;
    position: absolute;
-   top: 69px;
+   top: 73px;
 }
 #wb_ResponsiveMenu1 ul li:hover > ul
 {
@@ -279,7 +279,7 @@ body
 {
    float: none;
    position: relative;
-   width: 155px;
+   width: 156px;
 }
 #wb_ResponsiveMenu1 ul ul li a
 {
@@ -307,9 +307,9 @@ body
 }
 #wb_ResponsiveMenu1 ul ul ul li 
 {
-   left: 155px;
+   left: 156px;
    position: relative;
-   top: -69px;
+   top: -73px;
 }
 #wb_ResponsiveMenu1 .arrow-down 
 {
@@ -386,7 +386,7 @@ body
    background-color: #424242;
    color: #FFFFFF;
    padding: 0 20px 0 20px;
-   line-height: 54px;
+   line-height: 55px;
    text-decoration: none;
    border: none;
    position: relative;
@@ -402,8 +402,8 @@ body
 }
 #ResponsiveMenu1-title
 {
-   height: 69px !important;
-   line-height: 69px !important;
+   height: 73px !important;
+   line-height: 73px !important;
    text-align: center;
 }
 #wb_ResponsiveMenu1 ul li 
@@ -469,7 +469,7 @@ body
    display: block;
    position: absolute;
    left: 30px;
-   top: 22px;
+   top: 24px;
 }
 #ResponsiveMenu1-icon span 
 {

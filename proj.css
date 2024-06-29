@@ -732,12 +732,6 @@ body
    height: 26px;
    z-index: 3;
 }
-#wb_JavaScript2
-{
-   display: inline-block;
-   width: 100%;
-   z-index: 12;
-}
 #copyrightnotice
 {
    color: #000000;

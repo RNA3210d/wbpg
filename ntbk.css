@@ -768,21 +768,21 @@ body
    float: left;
    clear: left;
    display: block;
-   z-index: 28;
+   z-index: 27;
 }
 #TextArea1
 {
    display: block;
    width: 100%;
    height: 518px;
-   z-index: 22;
+   z-index: 21;
 }
 #wb_ThemeableButton1
 {
    display: inline-block;
    width: 194px;
    height: 45px;
-   z-index: 20;
+   z-index: 19;
 }
 #wb_Image1
 {
@@ -800,14 +800,14 @@ body
    top: 926px;
    width: 570px;
    height: 16px;
-   z-index: 29;
+   z-index: 28;
 }
 #Button1
 {
    display: inline-block;
    width: 155px;
    height: 47px;
-   z-index: 24;
+   z-index: 23;
 }
 #wb_Image2
 {
@@ -823,7 +823,7 @@ body
    top: 926px;
    width: 570px;
    height: 16px;
-   z-index: 30;
+   z-index: 29;
 }
 #Line1
 {
@@ -842,7 +842,7 @@ body
 {
    display: inline-block;
    width: 100%;
-   z-index: 21;
+   z-index: 20;
 }
 #ThemeableButton1
 {
@@ -858,7 +858,7 @@ body
 {
    display: inline-block;
    width: 100%;
-   z-index: 17;
+   z-index: 16;
 }
 #Line2
 {
@@ -874,7 +874,7 @@ body
 {
    display: inline-block;
    width: 100%;
-   z-index: 16;
+   z-index: 15;
 }
 #Layer1
 {
@@ -895,12 +895,6 @@ body
    width: 404px;
    height: 26px;
    z-index: 3;
-}
-#wb_JavaScript2
-{
-   display: inline-block;
-   width: 100%;
-   z-index: 15;
 }
 #wb_Heading1
 {
@@ -925,7 +919,7 @@ body
    width: 100%;
    height: 100%;
    float: left;
-   z-index: 26;
+   z-index: 25;
 }
 #Layer1_Container
 {
@@ -940,7 +934,7 @@ body
    display: inline-block;
    width: 194px;
    height: 45px;
-   z-index: 18;
+   z-index: 17;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px)
 {
