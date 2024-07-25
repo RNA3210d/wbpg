@@ -522,7 +522,7 @@ body
    box-sizing: border-box;
    margin: 13px 13px 13px 13px;
    background-image: linear-gradient(315deg, #D200F7 0%, #28F5FC 45%, #28F5FC 55%, #207CCA 100%);
-   border: 0px inset #DEDEDE;
+   border: 0px solid #DEDEDE;
    border-radius: 12px;
    box-shadow: 1px 1px 17px rgba(15,111,198,0.20);
    text-align: left;
@@ -3481,9 +3481,9 @@ Banner12 span:before
 }
 .SiteTree1
 {
-   background-image: linear-gradient(to top, #EBF1F6 0%, #ABD3EE 50%, #89C3EB 51%, #D5EBFB 100%);
-   border: 1px solid transparent;
-   border-radius: 0px;
+   background-image: linear-gradient(to top, #B7DEED 0%, #71CEEF 50%, #21B4E2 51%, #B7DEED 100%);
+   border: 0px solid #000000;
+   border-radius: 7px;
    box-sizing: border-box;
    color: #A4D2E8;
    font-family: "Exo 2";

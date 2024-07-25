@@ -5,41 +5,17 @@ session_start();
 <html lang="en-gb">
 <head>
 <meta charset="utf-8">
-<title>Home</title>
+<title>Configs & Dotfiles</title>
 <meta name="author" content="NVN">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="ui-lightness/jquery-ui.min.css" rel="stylesheet">
-<link href="font-awesome.min.css" rel="stylesheet">
 <link href="wpg.css" rel="stylesheet">
 <link href="configs2.css" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
-<script src="jquery-ui.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
 <script src="jquery.scrollify.min.js"></script>
-<script src="scrollspy.min.js"></script>
-<script src="popper.min.js"></script>
-<script src="bootstrap.min.js"></script>
-<script src="searchindex.js"></script>
-<script src="wb.sitesearch.min.js"></script>
-<script>
-var features = '';
-function searchPage(features)
-{
-   $('#SiteSearch2-dialog').dialog('open');
-   $('#SiteSearch2-dialog').empty();
-   searchResults('SiteSearch2', 'SiteSearch2-dialog', 250, 5, true, true, true, false, '_parent', 'No results', ' result(s) found for search term: ', 'seconds');
-   $('#SiteSearch2-dialog').dialog('option', 'position', 'center');
-   return false;
-}
-</script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
 <script src="wwb18.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function(event)
-{
-   var Toast1 = document.getElementById('Toast1');
-   var bsToast1 = new bootstrap.Toast(Toast1, {animation: true, autohide: true, delay: 5000});
-   setTimeout(function(){ bsToast1.show(); }, 10);
-});
-</script>
 <script>
 $(document).ready(function()
 {
@@ -140,30 +116,6 @@ $(document).ready(function()
    {
       onScrollLayoutGrid3();
    });
-   function onScrollCard8_card_item0()
-   {
-      var $obj = $("#Card8-card-item0");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('Card8-card-item0', 'transform-pulse', 0, 1250);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('Card8-card-item0', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#Card8-card-item0').inViewPort(true))
-   {
-      $('#Card8-card-item0').addClass("in-viewport");
-   }
-   onScrollCard8_card_item0();
-   $(window).scroll(function(event)
-   {
-      onScrollCard8_card_item0();
-   });
    $("a[href*='#links']").click(function(event)
    {
       event.preventDefault();
@@ -251,11 +203,6 @@ $(document).ready(function()
    {
       onScrollLayoutGrid5();
    });
-   $("a[href*='#Layer1']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#Layer1').offset().top }, 600, 'linear');
-   });
    $("a[href*='#LayoutGrid9']").click(function(event)
    {
       event.preventDefault();
@@ -284,28 +231,6 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollLayoutGrid9();
-   });
-   searchParseURL('SiteSearch2');
-   searchAutoComplete('SiteSearch2', 0, '_parent');
-   $("#SiteSearch2-dialog").dialog(
-   {
-      modal: true,
-      width: 400,
-      height: 300,
-      position: { my: 'center', at: 'center', of: window },
-      resizable: true,
-      draggable: true,
-      closeOnEscape: true,
-      show: { effect: 'drop', duration: 400 },
-      hide: { effect: 'fade', duration: 400 },
-      autoOpen: false,
-      buttons: 
-      {
-         Close: function() 
-         {
-            $(this).dialog('close');
-         }
-      }
    });
    function onScrollBanner3()
    {
@@ -416,38 +341,8 @@ $(document).ready(function()
    {
       onScrollSnapScroll1();
    });
-   $("#NavigationBar1 a").mouseenter(function(e)
-   {
-      $("#NavigationBar1_wrapper").parent().remove();
-      var $wrapper = $("<div id='NavigationBar1_wrapper'></div>");
-      var $link = $("<a></a>");
-      $link.attr('href', $(this).attr('href'));
-      $link.attr('target', $(this).attr('target'));
-      $wrapper.css('left', $(this).offset().left+'px');
-      $wrapper.css('top', $(this).offset().top+'px');
-      $wrapper.css('width', $(this).find('img').width()+'px');
-      $wrapper.css('height', $(this).find('img').height()+'px');
-      $wrapper.appendTo("body");
-      $wrapper.wrap($link);
-      $wrapper.mouseout(function()
-      {
-         $('#NavigationBar1_wrapper').parent().remove();
-         $("#NavigationBar1 span").show('drop', { easing: 'linear', direction: 'right'}, 454);
-      });
-      $(this).children("span").hide('drop', { easing: 'linear', direction: 'right'}, 454);
-   });
-   $("#FlipSwitch1").change(function()
-   {
-      if ($('#FlipSwitch1').is(':checked'))
-      {
-         ShowObjectWithEffect('NavigationBar1', 1, 'fade', 1);
-      }
-      if (!$('#FlipSwitch1').is(':checked'))
-      {
-         ShowObjectWithEffect('NavigationBar1', 0, 'fade', 1);
-      }
-   });
-   $("#FlipSwitch1").trigger('change');
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $("#PhotoGallery1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -466,67 +361,60 @@ $(window).on('load', function()
 </script>
 
 </head>
-<body data-bs-spy="scroll">
+<body>
 <div id="wb_LayoutGrid1">
 <div id="LayoutGrid1">
 <div class="col-1">
-<div id="wb_JavaScript4">
-<div id="greeting"></div> 
-<script>
-var datenow = new Date(); 
-var timenow = datenow.getTime(); 
-datenow.setTime(timenow); 
-var hournow = datenow.getHours(); 
-var greeting = document.getElementById('greeting');
-if (hournow >= 18)
-{ 
-   greeting.innerHTML = "Good Evening! I hope your day was as wonderful as you are!"; 
-}
-else 
-if (hournow >= 12) 
-{
-   greeting.innerHTML = "Good Afternoon! Hope your afternoon is going as smoothly as possible."; 
-}
-else 
-{
-   greeting.innerHTML = "Good Morning! Wishing you a successful day!"; 
-}
-</script>
-</div>
+<a href="#" onmouseleave="AnimateCss('Banner10', '', 0, 500);return false;" onmouseover="AnimateCss('Banner10', 'animate-neon-text-shadow', 0, 25000);return false;"><div id="Banner10"><span>My configs and dotfiles</span></div></a>
 <div id="wb_Text16">
+<p>&nbsp;</p>
+</div>
+<div id="Banner5"><span>(For future reference)</span></div>
+<div id="wb_Text17">
 <p>&nbsp;</p>
 </div>
 <div id="wb_Card4" class="card" onclick="AnimateCss('wb_Card4', 'animate-fire-text-shadow', 0, 2000);return false;">
    <div id="Card4-card-body">
       <div id="Card4-card-item0">“</div>
-      <div id="Card4-card-item1">Learn from the mistakes of others. You won’t live long enough to make all of them yourself.</div>
+      <div id="Card4-card-item1">My system, my rules.</div>
       <hr id="Card4-card-item2">
-      <div id="Card4-card-item3">- Pilot rules of flying to live by if you want to be an old pilot!</div>
+      <div id="Card4-card-item3">- NVN</div>
    </div>
 </div>
 <div id="wb_Text25">
 <p>&nbsp;</p>
 </div>
-<a href="#" onmouseleave="AnimateCss('Banner10', '', 0, 500);return false;" onmouseover="AnimateCss('Banner10', 'animate-neon-text-shadow', 0, 25000);return false;"><div id="Banner10"><span>Ahoy!</span></div></a>
 </div>
 </div>
 </div>
 <div id="wb_LayoutGrid2">
 <div id="LayoutGrid2">
 <div class="col-1">
-<div id="Banner8"><span>About Me</span></div>
+<div id="Banner8"><span>Current setup on laptop</span></div>
 <div id="wb_Text5">
-<span style="color:#C8E5F4;font-family:'Exo 2';font-size:16px;">Just a 22-year-old guy passionate about electronics, heavy machinery, switchgear, coding and more.<br><br>DOB: 28 June 2001<br>EMail: rna3210d2@proton.me<br>Education: B.Tech in Electrical and Electronics Engineering</span>
+<span style="color:#F8F8FF;font-family:Arial;font-size:19px;line-height:21px;">Get the configs here (for ARCH LINUX): </span><span style="background-color:#48D1CC;color:#F8F8FF;font-family:Arial;font-size:19px;line-height:21px;"><a href="https://github.com/JaKooLit/Arch-Hyprland">https://github.com/JaKooLit/Arch-Hyprland</a></span><span style="color:#F8F8FF;font-family:Arial;font-size:19px;line-height:16px;"><br></span>
+</div>
+<div id="wb_Text1">
+<p>&nbsp;</p>
+</div>
+<div id="wb_PhotoGallery1">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/Screenshot_24-May_14-32-03_23315.webp" data-rel="" title="Get the configs here (for ARCH LINUX): https://github.com/JaKooLit/Arch-Hyprland"><img alt="" src="images/tn_Screenshot_24-May_14-32-03_23315.webp" loading="lazy" class="image" title="Get the configs here (for ARCH LINUX): https://github.com/JaKooLit/Arch-Hyprland" width="386" height="217"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/Screenshot_24-May_14-40-32_2787.png" data-rel="" title="From JaKooLit&apos;s Hyprland configs"><img alt="Get the configs here (for ARCH LINUX): https://github.com/JaKooLit/Arch-Hyprland" src="images/tn_Screenshot_24-May_14-40-32_2787.png" loading="lazy" class="image" title="From JaKooLit&apos;s Hyprland configs" width="386" height="217"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+   </div>
+</div>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Card8" class="card" onmouseenter="AnimateCss('wb_Card8', 'animate-fire-text-shadow', 0, 2500);return false;">
-   <div id="Card8-card-body">
-      <div id="Card8-card-item0">“</div>
-      <div id="Card8-card-item1">Perhaps the heaviest things that we lift are not our weights, but our feelings.</div>
-      <hr id="Card8-card-item2">
-      <div id="Card8-card-item3">Anon</div>
-   </div>
+<div id="Banner4"><span>Relevant XKCD (#1806)</span></div>
+<div id="wb_Image1">
+<img src="images/322e2.png" loading="lazy" id="Image1" alt="" title="Relevant XKCD" width="400" height="560">
 </div>
 </div>
 </div>
@@ -560,12 +448,9 @@ hwdec=auto</textarea>
 <div id="wb_links">
 <div id="links">
 <div class="col-1">
-<div id="Banner6"><span>SwayWM Config for low RAM systems</span></div>
+<div id="Banner6"><span>SwayWM Config (Minimal)</span></div>
 <div id="wb_Text9">
 <p>&nbsp;</p>
-</div>
-<div id="wb_Text1">
-<p>Just a place where I can upload images of any dimension or orientation without lossy compresssion or any other restrictions<span style="color:#C3DBF0;">.</span></p>
 </div>
 <div id="wb_Text2">
 <p>&nbsp;</p>
@@ -573,8 +458,7 @@ hwdec=auto</textarea>
 <div id="wb_Text23">
 <p>&nbsp;</p>
 </div>
-<textarea name="TextArea1" id="TextArea6" rows="28" cols="102" readonly spellcheck="false">
-default_border pixel 2
+<textarea name="TextArea1" id="TextArea6" rows="28" cols="102" readonly spellcheck="false">default_border pixel 2
 default_floating_border none
 #titlebar_padding 0
 titlebar_border_thickness 0
@@ -608,12 +492,12 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term foot
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu "rofi -show drun
+set $menu "rofi -show drun"
 
 
 
@@ -622,7 +506,7 @@ exec nm-applet
 exec swaync
 exec waybar
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
-
+exec gammastep -O 5100
 
 
 
@@ -664,7 +548,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
-   input "2:7:SynPS/2_Synaptics_TouchPad" {
+   input "1267:12433:ELAN0504:00_04F3:3091_Touchpad" {
        dwt enabled
        tap enabled
        natural_scroll disabled
@@ -690,10 +574,10 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+C kill
 
     # Start your launcher
-    bindsym $mod+R exec $menu
+    bindsym $mod+Q exec $menu
     
-    bindsym $mod+Q exec wlogout
-    bindsym $mod+F exec firefox
+   # bindsym $mod+Q exec wlogout
+    bindsym $mod+F exec floorp
     bindsym $mod+E exec thunar
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -777,7 +661,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
    # bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+Shift+F floating toggle
 
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle
@@ -845,20 +729,357 @@ include @sysconfdir@/sway/config.d/*</textarea>
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4">
 <div class="col-1">
-<div id="Banner5"><span>How do you know someone uses linux? Don&apos;t worry they&apos;ll tell you.</span></div>
 <div id="wb_Text7">
 <p>&nbsp;</p>
 </div>
-<div id="Banner3"><span>&quot;I use Arch, btw&quot;</span></div>
+<div id="Banner3"><span>linux-TKG config</span></div>
 <div id="wb_Text8">
 <p>&nbsp;</p>
-</div>
-<div id="wb_ThemeableButton3">
-<a class="ui-button ui-corner-all" id="ThemeableButton3" href="./xtra.html"><span class="ui-button-icon ui-icon ui-primary"></span><span class="ui-button-icon-space"> </span>My configs and dotfiles</a>
 </div>
 <div id="wb_Text11">
 <p>&nbsp;</p>
 </div>
+<textarea name="TextArea1" id="TextArea1" rows="28" cols="102" readonly spellcheck="false"># linux-TkG config file
+
+# Linux distribution you are using, options are "Arch", "Ubuntu", "Debian", "Fedora", "Suse", "Gentoo", "Generic".
+# It is automatically set to "Arch" when using PKGBUILD.
+# If left empty, the script will prompt
+_distro=""
+
+# Kernel Version - x.x format without the subversion (will always grab latest available subversion) is recommended
+# you can also set a specific kernel version, e.g. "6.0-rc4" or "5.10.51",
+#  -> note however that a "z" too small on a "x.y.z" version may make patches fail
+#     as they got adapted for newer "z" values.
+_version=""
+
+#### MISC OPTIONS ####
+
+# External config file to use - If the given file exists in path, it will override default config (customization.cfg) - Default is ~/.config/frogminer/linux-tkg.cfg
+_EXT_CONFIG_PATH=~/.config/frogminer/linux-tkg.cfg
+
+# [Arch specific] Set to anything else than "true" to limit cleanup operations and keep source and files generated during compilation.
+# Default is "true".
+_NUKR="false"
+
+# Git mirror to use to get the kernel sources, possible values are "kernel.org", "googlesource.com", "github.com" and "torvalds"
+_git_mirror=""
+
+# Root folder where to checkout the kernel sources (linux-src-git subdir) and build
+# Note: - Leave empty to use PKGBUILD's dir
+#       - Start with a '/' for an absolute path in which `linux-tkg/linux-src-git/` will be created
+#       - This setting can be used to set the work/build folder to a tmpfs folder
+#         - Requires >= 32GB ram when building a full kernel, should work with less ram with modprobed-db
+_kernel_work_folder="/mnt/RAM"
+
+# Permanent root folder where to keep the git clone (linux-kernel.git subdir) and fetch new blobs
+# Note: - Leave empty to use PKGBUILD's dir
+#       - Start with a '/' for an absolute path in which `linux-tkg/linux-kernel.git/` will be created
+#       - If your internet is faster than your storage, it may be wise to put this folder
+#         in a tmpfs location (although it will reclone after each restart / tmpfs folder cleanup)
+_kernel_source_folder="/mnt/RAM"
+
+# Custom compiler root dirs - Leave empty to use system compilers
+# Example: CUSTOM_GCC_PATH="/home/frog/PKGBUILDS/mostlyportable-gcc/gcc-mostlyportable-9.2.0"
+CUSTOM_GCC_PATH=""
+
+# Custom LLVM compiler root dirs - Leave empty to use system llvm compiler
+# Example: CUSTOM_LLVM_PATH="/home/frog/PKGBUILDS/mostlyportable-llvm/llvm-mostlyportable-11.0.0"
+CUSTOM_LLVM_PATH=""
+
+# Set to true to bypass makepkg.conf and use all available threads for compilation. False will respect your makepkg.conf options.
+_force_all_threads="true"
+
+# Set to true to prevent ccache from being used and set CONFIG_GCC_PLUGINS=y (which needs to be disabled for ccache to work properly)
+_noccache="false"
+
+# [Experimental] Build only a subset of the default kernel modules list to speedup compile time and lower needed space to build kernel
+#                Notes:
+#                - If the kernel fails to boot with this option active, disable it and rebuild
+#                - This option cannot be used with _modprobeddb="true"
+_kernel_on_diet="false"
+
+# Set to true to use modprobed db to clean config from unneeded modules. Speeds up compilation considerably. Requires root - https://wiki.archlinux.org/index.php/Modprobed-db
+# Using this option can trigger user prompts if the config doesn't go smoothly.
+# !!!! Make sure to have a well populated db !!!!
+_modprobeddb="false"
+
+# modprobed-db database file location
+_modprobeddb_db_path=~/.config/modprobed.db
+
+# Set to "1" to call make menuconfig, "2" to call make nconfig, "3" to call make xconfig, before building the kernel. Set to false to disable and skip the prompt.
+_menunconfig=""
+
+# Set to true to generate a kernel config fragment from your changes in menuconfig/nconfig. Set to false to disable and skip the prompt.
+_diffconfig=""
+
+# Set to the file name where the generated config fragment should be written to. Only used if _diffconfig is active.
+_diffconfig_name=""
+
+# [Generic and Gentoo specific] Dracut options when generating initramfs
+_dracut_options="--lz4"
+
+#### KERNEL OPTIONS ####
+
+# Name of the default config file to use for the kernel
+# Default (empty)  : "config.x86_64" from the linux-tkg-config/5.y folder.
+# "running-kernel" : Picks the .config file from the currently running kernel.
+#                    It is recommended to be running an official kernel before running this script, to pick off a correct .config file
+# "config_hardened.x86_64" : config file for a hardened kernel, available for kernel version "5.15", "5.13", "5.11", "5.10", "5.7", "5.4".
+#                            To get a complete hardened setup, you have to use "cfs" as _cpusched.
+# User provided value : custom user provided file, the given path should be relative to the PKGBUILD file. This enables for example to use a user stripped down .config file.
+#         If the .config file isn't up to date with the chosen kernel version, any extra CONFIG_XXXX is set to its default value.
+# Note: the script copies the resulting .config file as "kernelconfig.new" next to the PKGBUILD as a convenience for an eventual re-use. It gets overwritten at each run.
+#       One can use "kernelconfig.new" here to always use the latest edited .config file. modprobed-db needs to be used only once for its changes to be picked up.
+_configfile=""
+
+# Determine whether to call "olddefconfig" (default) or "oldconfig" for manual config updating interaction.
+_config_updating="olddefconfig"
+
+# Disable some non-module debugging - See PKGBUILD for the list
+_debugdisable="true"
+
+# Strip the vmlinux file after build is done. Set to anything other than "true" if you require debug headers. Default is "true"
+_STRIP="true"
+
+# LEAVE AN EMPTY VALUE TO BE PROMPTED ABOUT FOLLOWING OPTIONS AT BUILD TIME
+
+# CPU scheduler - Options are "pds", "bmq", "cacule", "tt", "bore", "bore-eevdf", "echo", "cfs" (linux 6.5-) or "eevdf" (kernel's default, 6.6+)
+# "upds" (TkG's Undead PDS) and "muqss" are also available on legacy kernel revisions
+_cpusched=""
+
+# Compiler to use - Options are "gcc" or "llvm".
+# For advanced users.
+_compiler=""
+
+# [Generic and Gentoo specific] Replace `libunwind` with `llvm-libunwind`.
+# ! This is currently experimental.
+# ! It can only work with the `llvm-libunwind` `USE` flag in `sys-devel/clang-common` for Gentoo.
+# Set to "true" to enable.
+_libunwind_replace=""
+
+# Use the LLVM Integrated Assembler for a complete LLVM toolchain built kernel. Default is "1" when using LLVM.
+# Set to "0" to disable if desired, otherwise stick to the default behavior.
+_llvm_ias="1"
+
+# Clang LTO mode, only available with the "llvm" compiler - options are "no", "full" or "thin".
+# ! This is currently experimental and might result in an unbootable kernel - Not recommended !
+# "no: do not enable LTO"
+# "full: uses 1 thread for Linking, slow and uses more memory, theoretically with the highest performance gains."
+# "thin: uses multiple threads, faster and uses less memory, may have a lower runtime performance than Full."
+_lto_mode=""
+
+# Apply PREEMPT_RT patchset to the kernel.
+# ! Only CFS CPU scheduler is compatible with this patchset !
+# Set to "1" to enable.
+_preempt_rt=""
+
+# Forcibly apply the PREEMPT_RT patchset to the kernel, even when upstream does not officially support the kernel subversion.
+# ! This will still not apply when the patch itself or linux-tkg (see _version) do not support the kernel major version - Not recommended !
+# Set to "1" to enable.
+_preempt_rt_force=""
+
+# CPU sched_yield_type - Choose what sort of yield sched_yield will perform
+# For PDS and MuQSS: 0: No yield. (Recommended option for gaming on PDS and MuQSS)
+#                    1: Yield only to better priority/deadline tasks. (Default - can be unstable with PDS on some platforms)
+#                    2: Expire timeslice and recalculate deadline. (Usually the slowest option for PDS and MuQSS, not recommended)
+# For BMQ:           0: No yield.
+#                    1: Deboost and requeue task. (Default)
+#                    2: Set rq skip task.
+_sched_yield_type=""
+
+# Round Robin interval is the longest duration two tasks with the same nice level will be delayed for. When CPU time is requested by a task, it receives a time slice equal
+# to the rr_interval in addition to a virtual deadline. When using yield_type 2, a low value can help offset the disadvantages of rescheduling a process that has yielded.
+# MuQSS default: 6ms"
+# PDS default: 4ms"
+# BMQ default: 2ms"
+# Set to "1" for 2ms, "2" for 4ms, "3" for 6ms, "4" for 8ms, or "default" to keep the chosen scheduler defaults.
+_rr_interval=""
+
+# Set to "true" to disable FUNCTION_TRACER/GRAPH_TRACER, lowering overhead but limiting debugging and analyzing of kernel functions - Kernel default is "false"
+_ftracedisable="true"
+
+# Set to "true" to disable NUMA, lowering overhead, but breaking CUDA/NvEnc on Nvidia equipped systems - Kernel default is "false"
+_numadisable="true"
+
+# Set to "true" to enable misc additions - May contain temporary fixes pending upstream or changes that can break on non-Arch - Kernel default is "true"
+_misc_adds="true"
+
+# Set to "0" for periodic ticks, "1" to use CattaRappa mode (enabling full tickless) and "2" for tickless idle only.
+# Full tickless can give higher performances in case you use isolation of CPUs for tasks
+# and it works only when using the nohz_full kernel parameter, otherwise behaves like idle.
+# Just tickless idle perform better for most platforms.
+_tickless="0"
+
+# Set to "true" to use ACS override patch - https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Bypassing_the_IOMMU_groups_.28ACS_override_patch.29 - Kernel default is "false"
+_acs_override=""
+
+# Set to "true" to add Bcache filesystem support. You'll have to install bcachefs-tools-git from AUR for utilities - https://bcachefs.org/
+# If in doubt, leave it to "false"
+# Note:
+# - only for linux <= 6.6, upstreamed (aka included) in linux >= 6.7
+# - this fs can be buggy and isn't recommended on production machines
+# - linux <= 6.0 : this option conflicts with MGLRU
+_bcachefs="false"
+
+# Set to "true" to enable builtin support for ntsync, an experimental replacement for esync - requires patched wine - https://repo.or.cz/linux/zf.git/shortlog/refs/heads/ntsync5
+# ! Can't be used on multiple kernels installed side-by-side, which will require https://aur.archlinux.org/packages/ntsync-dkms instead of this option !
+_ntsync="false"
+
+# Set to "true" to enable Binder modules to use Waydroid Android containers
+_waydroid=""
+
+# Various patches and tweaks from Zen/Liquorix, Xanmod and the community - Default is "true"
+_glitched_base="true"
+
+# A selection of patches from Zen/Liquorix kernel and additional tweaks for a better gaming experience (ZENIFY) - Default is "true"
+# ! depends on _glitched_base="true" !
+_zenify="true"
+
+# compiler optimization level - 1. Optimize for performance (-O2); 2. Optimize harder (-O3); 3. Optimize for size (-Os) - Kernel default is "1"
+_compileroptlevel="3"
+
+# CPU compiler optimizations - Defaults to prompt at kernel config if left empty
+# AMD CPUs : "k8" "k8sse3" "k10" "barcelona" "bobcat" "jaguar" "bulldozer" "piledriver" "steamroller" "excavator" "zen" "zen2" "zen3" "zen4" (zen3 opt support depends on GCC11) (zen4 opt support depends on GCC13)
+# Intel CPUs : "mpsc"(P4 & older Netburst based Xeon) "atom" "core2" "nehalem" "westmere" "silvermont" "sandybridge" "ivybridge" "haswell" "broadwell" "skylake" "skylakex" "cannonlake" "icelake" "goldmont" "goldmontplus" "cascadelake" "cooperlake" "tigerlake" "sapphirerapids" "rocketlake" "alderlake" "raptorlake" "meteorlake" (raptorlake and meteorlake opt support require GCC13)
+# Other options :
+# - "native_amd" (use compiler autodetection - Selecting your arch manually in the list above is recommended instead of this option)
+# - "native_intel" (use compiler autodetection - Selecting your arch manually in the list above is recommended instead of this option)
+# - "generic" (kernel's default - to share the package between machines with different CPU µarch as long as they are x86-64)
+#
+# https://en.wikipedia.org/wiki/X86-64#Microarchitecture_Levels)
+# - "generic_v2" (depends on GCC11 - to share the package between machines with different CPU µarch supporting at least x86-64-v2
+# - "generic_v3" (depends on GCC11 - to share the package between machines with different CPU µarch supporting at least x86-64-v3
+# - "generic_v4" (depends on GCC11 - to share the package between machines with different CPU µarch supporting at least x86-64-v4
+_processor_opt=""
+
+# CacULE only - Enable Response Driven Balancer, an experimental load balancer for CacULE
+_cacule_rdb="false"
+
+# CacULE only - Load balance time period - Default is 19
+# https://github.com/hamadmarri/cacule-cpu-scheduler/blob/master/patches/CacULE/RDB/rdb.patch#L56
+_cacule_rdb_interval="19"
+
+# TT only - Enable High HZ patch (available for 5.15 only) - Default is "false"
+_tt_high_hz="false"
+
+# MuQSS and PDS only - SMT (Hyperthreading) aware nice priority and policy support (SMT_NICE) - Kernel default is "true" - You can disable this on non-SMT/HT CPUs for lower overhead
+_smt_nice="false"
+
+# EEVDF only (6.8+) - Add support for Sched-ext https://github.com/sched-ext/scx
+# Arch users can find scx schedulers on the AUR (https://aur.archlinux.org/packages/scx-scheds & https://aur.archlinux.org/packages/scx-scheds-git. For -git scx schedulers the latest rc kernel is reccomended) thanks to @sirlucjan (for persistence, set scheduler in "/etc/default/scx" and enable the `scx` service).
+_eevdf_sched_ext_support="true"
+
+# Trust the CPU manufacturer to initialize Linux's CRNG (RANDOM_TRUST_CPU) - Kernel default is "false"
+_random_trust_cpu="true"
+
+# Timer frequency - "100" "250" "300" "500" "750" "1000" ("2000" is available for cacule cpusched only, "625" is available for echo cpusched only) - More options available in kernel config prompt when left empty depending on selected cpusched with the default option pointed with a ">" (2000 for cacule, 100 for muqss, 625 for echo and 1000 for other cpu schedulers)
+_timer_freq=""
+
+# Default CPU governor - "performance", "ondemand", "schedutil" or leave empty for default (schedutil)
+_default_cpu_gov="schedutil"
+
+# Use an aggressive ondemand governor instead of default ondemand to improve performance on low loads/high core count CPUs while keeping some power efficiency from frequency scaling.
+# It still requires you to either set ondemand as default governor or to select it in some way at runtime.
+_aggressive_ondemand="true"
+
+# [Advanced] Default TCP IPv4 algorithm to use. Options are: "yeah", "bbr", "cubic", "reno", "vegas" and "westwood". Leave empty if unsure.
+# This config option will not be prompted
+# Can be changed at runtime with the command line `# echo "$name" > /proc/sys/net/ipv4/tcp_congestion_control` where $name is one of the options above.
+# Default (empty) and fallback : cubic
+_tcp_cong_alg=""
+
+# You can pass a default set of kernel command line options here - example: "intel_pstate=passive nowatchdog amdgpu.ppfeaturemask=0xfffd7fff mitigations=off"
+_custom_commandline="intel_pstate=passive kernel.split_lock_mitigate=0 mitigations=off nowatchdog sysctl.vm.swappiness=7"
+
+# Selection of Clearlinux patches
+_clear_patches="true"
+
+# Add OpenRGB compatibility for certain i2c controllers - https://gitlab.com/CalcProgrammer1/OpenRGB/-/blob/master/OpenRGB.patch
+_openrgb="true"
+
+
+#### SPESHUL OPTION ####
+
+# [Arch only] If you want to bypass the stock naming scheme and enforce something else (example : "linux") - Useful for some bootloaders requiring manual entry editing on each release.
+# !!! It will also change pkgname - If you don't explicitely need this, don't use it !!!
+# Use _kernel_localversion instead on non-Arch based distros
+_custom_pkgbase="linux-nvn-silvermont"
+
+# [non-Arch only] Kernel localversion. Putting it to "Mario" will make for example the kernel version be 5.7.0-tkg-Mario (given by uname -r)
+# If left empty, it will use "-tkg-${_cpusched}${_compiler}" where "${_cpusched}" will be replaced by the user chosen scheduler, ${_compiler} will be replaced by "-llvm" if clang is used (nothing for GCC).
+# Use _custom_pkgbase instead on Arch based distros
+_kernel_localversion=""
+
+# Set to your maximum number of CPUs (physical + logical cores) - Lower means less overhead - You can set it to "$(nproc)" to use the current host's CPU(s) core count, or leave empty to use default
+# If you set this to a lower value than you have cores, some cores will be disabled
+# Default Arch kernel value is 320
+_NR_CPUS_value="16"
+
+# [non-Arch only] Install kernel after the building is done ?
+# Options are: "yes", "no", "prompt"
+_install_after_building="prompt"
+
+# [non-Arch only] Use 'script' command for logging
+_logging_use_script="yes"
+
+#### LEGACY OPTIONS ####
+
+# Upstreamed version of Fsync from Linux 5.16 for previous kernel versions - https://github.com/andrealmeid/futex_waitv_patches
+# ! Only affect 5.13, 5.14 and 5.15 kernel branches. Safely ignored for 5.16 or newer !
+_fsync_backport="true"
+
+# Fsync legacy, known as FUTEX_WAIT_MULTIPLE (opcode 31) - previous version of fsync required for Valve Proton 4.11, 5.0 and 5.13 - https://steamcommunity.com/games/221410/announcements/detail/2957094910196249305
+_fsync_legacy="true"
+
+# Set to "true" to enable support for futex2, a DEPRECATED interface that can be used by proton-tkg and proton 5.13 experimental through Fsync - Can be enabled alongside fsync legacy to use it as a fallback
+# https://gitlab.collabora.com/tonyk/linux/-/tree/futex2-dev
+# ! Only affect 5.10-5.14 kernel branches. Safely ignored for 5.15 or newer !
+# ! required _fsync_backport="false" !
+_fsync_futex2="false"
+
+# Set to "true" to add back missing symbol for AES-NI/AVX support on ZFS - This is a legacy option that can be ignored on 5.10+ kernels - https://github.com/NixOS/nixpkgs/blob/master/pkgs/os-specific/linux/kernel/export_kernel_fpu_functions.patch
+_zfsfix="true"
+
+# MuQSS only - CPU scheduler runqueue sharing - No sharing (RQ_NONE), SMT (hyperthread) siblings (RQ_SMT), Multicore siblings (RQ_MC), Symmetric Multi-Processing (RQ_SMP), NUMA (RQ_ALL)
+# Valid values are "none", "smt", "mc", "mc-llc"(for zen), "smp", "all" - Kernel default is "smt"
+_runqueue_sharing=""
+
+# MuQSS only - Make IRQ threading compulsory (FORCE_IRQ_THREADING) - Default is "false"
+_irq_threading="false"
+
+# Set to "true" to add multi-generational LRU framework support for improved memory pressure handling
+# Note:
+# - For kernel >= 5.18, Upstream for kernel >= 6.1
+# - Conflicts with bcachefs for linux <= 6.0
+# - More information https://lore.kernel.org/lkml/20220706220022.968789-1-yuzhao@google.com/
+# - Older kernel versions might have a patch available in the community-patches repo
+_mglru="true"
+
+#### USER PATCHES ####
+
+# community patches - add patches (separated by a space) of your choice by name from the community-patches dir
+# example: _community_patches="clear_nack_in_tend_isr.myrevert ffb_regression_fix.mypatch 0008-drm-amd-powerplay-force-the-trim-of-the-mclk-dpm-levels-if-OD-is-enabled.mypatch"
+_community_patches=""
+
+# You can use your own patches by putting them in a subfolder called linux<VERSION><PATCHLEVEL>-tkg-userpatches (see README.md for more info) next to the PKGBUILD and giving them the .mypatch extension.
+# You can also revert patches by putting them in that same folder and giving them the .myrevert extension.
+
+# Also, userpatches variable below must be set to true for the above to work.
+_user_patches="true"
+
+# Apply all user patches without confirmation - !!! NOT RECOMMENDED !!!
+_user_patches_no_confirm="false"
+
+
+#### CONFIG FRAGMENTS ####
+
+# You can use your own kernel config fragments by putting them in the same folder as the PKGBUILD and giving them the .myfrag extension.
+
+# Also, the config fragments variable below must be set to true for the above to work.
+_config_fragments="true"
+
+# Apply all config fragments without confirmation - !!! NOT RECOMMENDED !!!
+_config_fragments_no_confirm="false"</textarea>
 </div>
 </div>
 </div>
@@ -868,152 +1089,382 @@ include @sysconfdir@/sway/config.d/*</textarea>
 <div id="wb_Text12">
 <p>&nbsp;</p>
 </div>
-<div id="wb_JavaScript1">
-<div id="basicclock"></div>
-<script>
-function clock() 
-{
-   var digital = new Date();
-   var hours = digital.getHours();
-   var minutes = digital.getMinutes();
-   var seconds = digital.getSeconds();
-   if (minutes <= 9) minutes = "0" + minutes;
-   if (seconds <= 9) seconds = "0" + seconds;
-   dispTime = hours + ":" + minutes + ":" + seconds;
+<div id="Banner1"><span>Optimized makepkg.conf</span></div>
+<textarea name="TextArea1" id="TextArea2" rows="28" cols="102" readonly spellcheck="false">#!/hint/bash
+# shellcheck disable=2034
 
-   var basicclock = document.getElementById('basicclock');
-   basicclock.innerHTML = dispTime;
-   setTimeout("clock()", 1000);
-}
-clock();
-</script>
+#
+# /etc/makepkg.conf
+#
 
+#########################################################################
+# SOURCE ACQUISITION
+#########################################################################
+#
+#-- The download utilities that makepkg should use to acquire sources
+#  Format: 'protocol::agent'
+DLAGENTS=('file::/usr/bin/curl -qgC - -o %o %u'
+          'ftp::/usr/bin/curl -qgfC - --ftp-pasv --retry 3 --retry-delay 3 -o %o %u'
+          'http::/usr/bin/curl -qgb "" -fLC - --retry 3 --retry-delay 3 -o %o %u'
+          'https::/usr/bin/curl -qgb "" -fLC - --retry 3 --retry-delay 3 -o %o %u'
+          'rsync::/usr/bin/rsync --no-motd -z %u %o'
+          'scp::/usr/bin/scp -C %u %o')
 
-</div>
-</div>
-</div>
-</div>
-<div id="Layer1">
-<div id="Layer1_Container">
-<div id="wb_Icon1">
-<a href="#" onclick="ShowObjectWithEffect('Layer1', 0, 'bounce', 1000, 'easeOutSine');return false;" title="Close floating layer"><div id="Icon1"><i class="fa fa-window-close-o"></i></div></a>
-</div>
-<div id="wb_Icon2">
-<a href="https://github.com/RNA3210d" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon2"><i class="fa fa-github"></i></div></a>
-</div>
-<div id="wb_Icon3">
-<a href="https://soundcloud.com/rna3210d/tracks" title="My FL Studio render dump yard"><div id="Icon3"><i class="fa fa-soundcloud"></i></div></a>
-</div>
-<div id="wb_Icon4">
-<a href="https://www.linkedin.com/in/naveen-a-b-a7a85421a/" title="Although my LinkedIn profile is currently inactive, feel free to connect with me elsewhere or check back soon for updates. Thank you for your understanding!"><div id="Icon4"><i class="fa fa-linkedin"></i></div></a>
-</div>
-<div id="wb_Icon9">
-<a href="mailto:rna3210d2@proton.me" title="Email "><div id="Icon9"><i class="fa fa-envelope-o"></i></div></a>
-</div>
-<div id="wb_Icon10">
-<a href="https://www.mixcloud.com/RNA3210d/" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon10"><i class="fa fa-mixcloud"></i></div></a>
+# Other common tools:
+# /usr/bin/snarf
+# /usr/bin/lftpget -c
+# /usr/bin/wget
+
+#-- The package required by makepkg to download VCS sources
+#  Format: 'protocol::package'
+VCSCLIENTS=('bzr::breezy'
+            'fossil::fossil'
+            'git::git'
+            'hg::mercurial'
+            'svn::subversion')
+
+#########################################################################
+# ARCHITECTURE, COMPILE FLAGS
+#########################################################################
+#
+CARCH="x86_64"
+CHOST="x86_64-pc-linux-gnu"
+
+#-- Compiler and Linker Flags
+#CPPFLAGS=""
+CFLAGS="-march=native  -O2 -pipe -fno-plt -fexceptions \
+        -Wp,-D_FORTIFY_SOURCE=3 -Wformat -Werror=format-security \
+        -fstack-clash-protection -fcf-protection \
+        -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
+CXXFLAGS="$CFLAGS -Wp,-D_GLIBCXX_ASSERTIONS"
+LDFLAGS="-Wl,-O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now \
+         -Wl,-z,pack-relative-relocs -fuse-ld=mold"
+LTOFLAGS="-flto=auto"
+#RUSTFLAGS="-Cforce-frame-pointers=yes"
+#-- Make Flags: change this for DistCC/SMP systems
+#MAKEFLAGS="-j2"
+#-- Debugging flags
+DEBUG_CFLAGS="-g"
+DEBUG_CXXFLAGS="$DEBUG_CFLAGS"
+DEBUG_RUSTFLAGS="-C debuginfo=2"
+RUSTFLAGS="-C opt-level=2 -C target-cpu=native link-arg=-fuse-ld=mold"
+#########################################################################
+# BUILD ENVIRONMENT
+#########################################################################
+#
+# Makepkg defaults: BUILDENV=(!distcc !color !ccache check !sign)
+#  A negated environment option will do the opposite of the comments below.
+#
+#-- distcc:   Use the Distributed C/C++/ObjC compiler
+#-- color:    Colorize output messages
+#-- ccache:   Use ccache to cache compilation
+#-- check:    Run the check() function if present in the PKGBUILD
+#-- sign:     Generate PGP signature file
+#
+BUILDENV=(!distcc color ccache check !sign !debug !lto)
+#
+#-- If using DistCC, your MAKEFLAGS will also need modification. In addition,
+#-- specify a space-delimited list of hosts running in the DistCC cluster.
+#DISTCC_HOSTS=""
+#
+#-- Specify a directory for package building.
+#BUILDDIR=/tmp/makepkg
+
+#########################################################################
+# GLOBAL PACKAGE OPTIONS
+#   These are default values for the options=() settings
+#########################################################################
+#
+# Makepkg defaults: OPTIONS=(!strip docs libtool staticlibs emptydirs !zipman !purge !debug !lto !autodeps)
+#  A negated option will do the opposite of the comments below.
+#
+#-- strip:      Strip symbols from binaries/libraries
+#-- docs:       Save doc directories specified by DOC_DIRS
+#-- libtool:    Leave libtool (.la) files in packages
+#-- staticlibs: Leave static library (.a) files in packages
+#-- emptydirs:  Leave empty directories in packages
+#-- zipman:     Compress manual (man and info) pages in MAN_DIRS with gzip
+#-- purge:      Remove files specified by PURGE_TARGETS
+#-- debug:      Add debugging flags as specified in DEBUG_* variables
+#-- lto:        Add compile flags for building with link time optimization
+#-- autodeps:   Automatically add depends/provides
+#
+OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge debug lto)
+
+#-- File integrity checks to use. Valid: md5, sha1, sha224, sha256, sha384, sha512, b2
+INTEGRITY_CHECK=(sha256)
+#-- Options to be used when stripping binaries. See `man strip' for details.
+STRIP_BINARIES="--strip-all"
+#-- Options to be used when stripping shared libraries. See `man strip' for details.
+STRIP_SHARED="--strip-unneeded"
+#-- Options to be used when stripping static libraries. See `man strip' for details.
+STRIP_STATIC="--strip-debug"
+#-- Manual (man and info) directories to compress (if zipman is specified)
+MAN_DIRS=({usr{,/local}{,/share},opt/*}/{man,info})
+#-- Doc directories to remove (if !docs is specified)
+DOC_DIRS=(usr/{,local/}{,share/}{doc,gtk-doc} opt/*/{doc,gtk-doc})
+#-- Files to be removed from all packages (if purge is specified)
+PURGE_TARGETS=(usr/{,share}/info/dir .packlist *.pod)
+#-- Directory to store source code in for debug packages
+DBGSRCDIR="/usr/src/debug"
+#-- Prefix and directories for library autodeps
+LIB_DIRS=('lib:usr/lib' 'lib32:usr/lib32')
+
+#########################################################################
+# PACKAGE OUTPUT
+#########################################################################
+#
+# Default: put built package and cached source in build directory
+#
+#-- Destination: specify a fixed directory where all packages will be placed
+#PKGDEST=/home/packages
+#-- Source cache: specify a fixed directory where source files will be cached
+#SRCDEST=/home/sources
+#-- Source packages: specify a fixed directory where all src packages will be placed
+#SRCPKGDEST=/home/srcpackages
+#-- Log files: specify a fixed directory where all log files will be placed
+#LOGDEST=/home/makepkglogs
+#-- Packager: name/email of the person or organization building packages
+#PACKAGER="John Doe <john@doe.com>"
+#-- Specify a key to use for package signing
+#GPGKEY=""
+
+#########################################################################
+# COMPRESSION DEFAULTS
+#########################################################################
+#
+COMPRESSGZ=(gzip -c -f -n)
+COMPRESSBZ2=(bzip2 -c -f)
+COMPRESSXZ=(xz -c -z -)
+COMPRESSZST=(zstd -c -T0 --ultra -20 -)
+COMPRESSLRZ=(lrzip -q)
+COMPRESSLZO=(lzop -q)
+COMPRESSZ=(compress -c -f)
+COMPRESSLZ4=(lz4 -q)
+COMPRESSLZ=(lzip -c -f)
+
+#########################################################################
+# EXTENSION DEFAULTS
+#########################################################################
+#
+PKGEXT='.pkg.tar.zst'
+SRCEXT='.src.tar.gz'
+
+#########################################################################
+# OTHER
+#########################################################################
+#
+#-- Command used to run pacman as root, instead of trying sudo and su
+#PACMAN_AUTH=()
+# vim: set ft=sh ts=2 sw=2 et:
+GITFLAGS="--filter=tree:0"
+OPTIONS=(!debug)</textarea>
 </div>
 </div>
 </div>
 <div id="wb_LayoutGrid9">
 <div id="LayoutGrid9">
 <div class="col-1">
-<div id="Banner1"><span>Explore More</span></div>
-<div id="wb_FlipSwitch1">
-<input type="checkbox" role="switch" name="" id="FlipSwitch1" accesskey="s" value="">
-<label id="FlipSwitch1-label" for="FlipSwitch1">
-<span id="FlipSwitch1-inner"></span>
-<span id="FlipSwitch1-switch"></span>
-</label>
-</div>
-<div id="wb_Text6">
-<p>&nbsp;</p>
-</div>
-<div id="NavigationBar1">
-<ul class="nav navbar">
-<li class="nav-item"><a href="./sw.html" class="nav-link"><img title="Software I Use" src="images/img0044_over.gif"><span><img title="Software I Use" src="images/img0044.gif"></span></a></li>
-<li class="nav-item"><a href="./eqp.html" class="nav-link"><img title="My Equipments" src="images/img0045_over.gif"><span><img title="My Equipments" src="images/img0045.gif"></span></a></li>
-<li class="nav-item"><a href="./prodn.html" class="nav-link"><img title="My Tunes" src="images/img0046_over.gif"><span><img title="My Tunes" src="images/img0046.gif"></span></a></li>
-<li class="nav-item"><a href="./misc.html" class="nav-link"><img title="Help" src="images/img0047_over.gif"><span><img title="Help" src="images/img0047.gif"></span></a></li>
-</ul>
-</div>
-<div id="wb_Text14">
-<p>&nbsp;</p>
-</div>
-<div id="Banner11"><span>External Links</span></div>
+<div id="Banner2"><span>Waybar Minimal Config</span></div>
+<textarea name="TextArea1" id="TextArea4" rows="28" cols="102" readonly spellcheck="false">// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+   // "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 2, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "mpd",
+        "idle_inhibitor",
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "backlight",
+        "clock",
+        "tray"
+    ],
+    // Modules configuration
+    // "sway/workspaces": {
+    //     "disable-scroll": true,
+    //     "all-outputs": true,
+    //     "warp-on-scroll": false,
+    //     "format": "{name}: {icon}",
+    //     "format-icons": {
+    //         "1": "",
+    //         "2": "",
+    //         "3": "",
+    //         "4": "",
+    //         "5": "",
+    //         "urgent": "",
+    //         "focused": "",
+    //         "default": ""
+    //     }
+    // },
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+    "mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "unknown-tag": "N/A",
+        "interval": 5,
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+         "hwmon-path": "/sys/class/hwmon/hwmon1/temp2_input",
+        "critical-threshold": 60,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": [""]
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    }
+}</textarea>
 <div id="wb_Text3">
 <p>&nbsp;</p>
 </div>
-<div id="wb_Icon11">
-<a href="https://github.com/RNA3210d" title="Explore my GitHub repository for code, configuration files, presentations, reports, and more! 🚀 #OpenSource "><div id="Icon11"><i class="fa fa-github"></i></div></a>
-</div>
-<div id="wb_Icon12">
-<a href="https://soundcloud.com/rna3210d/tracks" title="My FL Studio render dump yard"><div id="Icon12"><i class="fa fa-soundcloud"></i></div></a>
-</div>
-<div id="wb_Icon13">
-<a href="https://www.linkedin.com/in/naveen-a-b-a7a85421a/" title="Although my LinkedIn profile is currently inactive, feel free to connect with me elsewhere or check back soon for updates. Thank you for your understanding!"><div id="Icon13"><i class="fa fa-linkedin"></i></div></a>
-</div>
-<div id="wb_Icon14">
-<a href="mailto:rna3210d2@proton.me" title="Email "><div id="Icon14"><i class="fa fa-envelope-o"></i></div></a>
-</div>
-<div id="wb_Icon15">
-<a href="https://www.mixcloud.com/RNA3210d/" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon15"><i class="fa fa-mixcloud"></i></div></a>
-</div>
-<div id="wb_JavaScript2">
-<script>
-document.write("<div style='font-family:Exo 2;font-size:19px;color:#DBEFF9;text-decoration:none;font-weight:normal;font-style:normal;text-align:center;text-decoration:none'>" + navigator.appName + " " + navigator.appVersion + "<\/div>");
-</script>
-
-
-
-</div>
-</div>
-<div class="col-2">
-<div id="Banner2"><span>Site Map</span></div>
-<div id="SiteTree1" class="SiteTree1">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="mastuh.html"></a></li>
-<li><a href="sw.html">Software I Use</a></li>
-<li><a href="eqp.html">My Equipments</a>
-   <ul>
-   <li><a href="lap.html">Laptop</a></li>
-   <li><a href="rpi.html">RPi</a></li>
-   <li><a href="ntbk.html">Netbook</a></li>
-   </ul>
-</li>
-<li><a href="proj.html">Projects</a>
-   <ul>
-   <li><a href="page1.html">RPi-TELEBOT</a></li>
-   <li><a href="page2.html">BU & BO Designer</a></li>
-   <li><a href="page3.html">Qt Demo</a></li>
-   </ul>
-</li>
-<li><a href="gal.html">Gallery</a>
-   <ul>
-   <li><a href="hyb.html">Hyderabad</a></li>
-   <li><a href="nature.html">Nature</a></li>
-   <li><a href="pvr.html">Poovar</a></li>
-   <li><a href="miscg.html">Misc Images</a></li>
-   <li><a href="nature2.html">Misc Images</a></li>
-   </ul>
-</li>
-<li><a href="prodn.html">My Tunes</a></li>
-<li><a href="misc.html">Help</a>
-   <ul>
-   <li><a href="xtra.html">EXTRAS</a></li>
-   </ul>
-</li>
-<li><a href="configs2.html">Home</a></li>
-</ul>
-</div>
-<div id="wb_Text15">
-<p>&nbsp;</p>
-</div>
-<form name="SiteSearch2_form" id="SiteSearch2_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
-<input type="text" id="SiteSearch2" name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
-<div id="SiteSearch2-dialog" title="Search results"></div>
-<input type="button" id="Button2" onclick="searchPage();return false;" onmouseleave="AnimateCss('Button2', '', 0, 500);return false;" onmouseover="AnimateCss('Button2', 'animate-neon-text-shadow', 0, 55500);return false;" name="Search" value="Search">
 <div id="wb_JavaScript5">
 <script>
 document.write("<div style=\"color:#DBEFF9;font-size:16px;font-family:Exo 2;font-weight:normal;font-style:normal;text-align:center;text-decoration:none\">Last updated: "+document.lastModified+"<\/div>");
@@ -1031,22 +1482,6 @@ document.write("<div style=\"color:#DBEFF9;font-size:16px;font-family:Exo 2;font
 <li><a href="#6"><span class="label">GTFO</span></a></li>
 <li><a href="#7"><span class="label">More</span></a></li>
 </ul>
-
-<div aria-live="polite" aria-atomic="true" id="toasts">
-   <div id="Toast1" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-<svg class="svg-icon" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
-   <path d="M18 48 C19 48, 19 50, 19 51 C19 52, 19 53, 18 54 C17 55, 16 55, 15 55 C14 55, 13 55, 12 54 C11 53, 10 52, 10 51 C10 50, 11 48, 12 48 C13 47, 14 46, 15 46 C16 46, 17 47, 18 48 Z M36 55 C37 56, 37 57, 37 58 C37 59, 37 60, 36 61 C35 62, 34 63, 33 63 C31 63, 30 62, 29 61 C29 60, 28 59, 28 58 C28 57, 29 56, 29 55 C30 54, 31 54, 33 54 C34 54, 35 54, 36 55 Z M11 30 C12 31, 12 32, 12 33 C12 34, 12 35, 11 36 C10 37, 9 38, 8 38 C6 38, 5 37, 4 36 C3 35, 3 34, 3 33 C3 32, 3 31, 4 30 C5 29, 6 28, 8 28 C9 28, 10 29, 11 30 Z M55 51 C55 52, 55 53, 54 54 C53 55, 52 55, 50 55 C49 55, 48 55, 47 54 C46 53, 46 52, 46 51 C46 50, 46 48, 47 48 C48 47, 49 46, 50 46 C52 46, 53 47, 54 48 C55 48, 55 50, 55 51 Z M19 11 C20 12, 21 14, 21 15 C21 17, 20 18, 19 19 C18 20, 16 21, 15 21 C13 21, 12 20, 11 19 C10 18, 9 17, 9 15 C9 14, 10 12, 11 11 C12 10, 13 9, 15 9 C16 9, 18 10, 19 11 Z M61 30 C62 31, 62 32, 62 33 C62 34, 62 35, 61 36 C60 37, 59 38, 58 38 C57 38, 55 37, 55 36 C54 35, 53 34, 53 33 C53 32, 54 31, 55 30 C55 29, 57 28, 58 28 C59 28, 60 29, 61 30 Z M38 3 C39 4, 40 6, 40 8 C40 10, 39 11, 38 13 C36 14, 35 15, 33 15 C31 15, 29 14, 28 13 C26 11, 26 10, 26 8 C26 6, 26 4, 28 3 C29 2, 31 1, 33 1 C35 1, 36 2, 38 3 Z M58 15 C58 17, 58 19, 56 21 C55 22, 53 23, 50 23 C48 23, 46 22, 45 21 C43 19, 42 17, 42 15 C42 13, 43 11, 45 10 C46 8, 48 7, 50 7 C53 7, 55 8, 56 10 C58 11, 58 13, 58 15"/>
-</svg>
-      <strong>Notification</strong>
-      <small class="text-muted"></small>
-      <button type="button" class="close" data-bs-dismiss="toast" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-      </button>
-      </div>
-      <div class="toast-body"><p>Visit legacy HTML site (for slower connections):&nbsp; <a href="https://rna3210d.github.io">https://rna3210d.github.io</a></p></div>
-   </div>
-</div>
 <div id="preloader"></div>
 </body>
 </html>
