@@ -137,7 +137,7 @@ body
 {
    display: block;
    position: absolute;
-   top: 63px;
+   top: 62px;
    left: 0;
    right: 0;
 }
@@ -479,7 +479,7 @@ Banner3 span:before
 {
    display: block;
    height: 21px;
-   margin: 21px 0 21px 0 ;
+   margin: 20px 0 20px 0 ;
 }
 #Button4
 {

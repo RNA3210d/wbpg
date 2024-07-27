@@ -29,6 +29,7 @@ $(document).ready(function()
    $('#Banner3').addClass('visibility-hidden');
    $('#wb_Card4').addClass('visibility-hidden');
    $('#SnapScroll1').addClass('visibility-hidden');
+   $('#wb_LayoutGrid6').addClass('visibility-hidden');
    $("a[href*='#LayoutGrid1']").click(function(event)
    {
       event.preventDefault();
@@ -294,7 +295,7 @@ $(document).ready(function()
    {
       onScrollCard4_card_item0();
    });
-   var $sections = $('#wb_LayoutGrid1,#wb_LayoutGrid2,#wb_LayoutGrid3,#wb_links,#wb_LayoutGrid4,#wb_LayoutGrid5,#wb_LayoutGrid9');
+   var $sections = $('#wb_LayoutGrid1,#wb_LayoutGrid2,#wb_LayoutGrid3,#wb_links,#wb_LayoutGrid4,#wb_LayoutGrid5,#wb_LayoutGrid9,#wb_LayoutGrid6');
    $sections.addClass('snap-scroll');
    if ($(window).width() >= 320)
    {
@@ -343,6 +344,35 @@ $(document).ready(function()
    });
    $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
    $("#PhotoGallery1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+   $("a[href*='#LayoutGrid6']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid6').offset().top }, 600, 'easeInQuad');
+   });
+   function onScrollLayoutGrid6()
+   {
+      var $obj = $("#wb_LayoutGrid6");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid6', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid6', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid6').inViewPort(true))
+   {
+      $('#wb_LayoutGrid6').addClass("in-viewport");
+   }
+   onScrollLayoutGrid6();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid6();
+   });
    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
 });
 $(window).on('load', function()
@@ -392,7 +422,7 @@ $(window).on('load', function()
 <div class="col-1">
 <div id="Banner8"><span>Current setup on laptop</span></div>
 <div id="wb_Text5">
-<span style="color:#F8F8FF;font-family:Arial;font-size:19px;line-height:21px;">Get the configs here (for ARCH LINUX): </span><span style="background-color:#48D1CC;color:#F8F8FF;font-family:Arial;font-size:19px;line-height:21px;"><a href="https://github.com/JaKooLit/Arch-Hyprland">https://github.com/JaKooLit/Arch-Hyprland</a></span><span style="color:#F8F8FF;font-family:Arial;font-size:19px;line-height:16px;"><br></span>
+<span style="color:#F8F8FF;font-family:Arial;font-size:24px;line-height:20px;">Get the configs here (for ARCH LINUX): </span><span style="background-color:#48D1CC;color:#F8F8FF;font-family:Arial;font-size:24px;line-height:20px;"><a href="https://github.com/JaKooLit/Arch-Hyprland">https://github.com/JaKooLit/Arch-Hyprland</a></span><span style="color:#F8F8FF;font-family:Arial;font-size:24px;line-height:12px;"><br></span>
 </div>
 <div id="wb_Text1">
 <p>&nbsp;</p>
@@ -432,7 +462,7 @@ $(window).on('load', function()
 <div id="wb_Text24">
 <p>&nbsp;</p>
 </div>
-<textarea name="TextArea1" id="TextArea3" rows="12" cols="102" readonly spellcheck="false">
+<textarea name="TextArea1" id="TextArea3" rows="18" cols="35" readonly spellcheck="false">
 # Specify high quality video rendering preset (for --vo=gpu only)
 # Can cause performance problems with some drivers and GPUs.
 profile=gpu-hq
@@ -458,7 +488,7 @@ hwdec=auto</textarea>
 <div id="wb_Text23">
 <p>&nbsp;</p>
 </div>
-<textarea name="TextArea1" id="TextArea6" rows="28" cols="102" readonly spellcheck="false">default_border pixel 2
+<textarea name="TextArea1" id="TextArea6" rows="35" cols="32" readonly spellcheck="false">default_border pixel 2
 default_floating_border none
 #titlebar_padding 0
 titlebar_border_thickness 0
@@ -1090,6 +1120,9 @@ _config_fragments_no_confirm="false"</textarea>
 <p>&nbsp;</p>
 </div>
 <div id="Banner1"><span>Optimized makepkg.conf</span></div>
+<div id="wb_Text19">
+<p>&nbsp;</p>
+</div>
 <textarea name="TextArea1" id="TextArea2" rows="28" cols="102" readonly spellcheck="false">#!/hint/bash
 # shellcheck disable=2034
 
@@ -1265,7 +1298,12 @@ OPTIONS=(!debug)</textarea>
 <div id="wb_LayoutGrid9">
 <div id="LayoutGrid9">
 <div class="col-1">
+<div id="Banner13"><span>Waybar Minimal Config</span></div>
+<div id="Banner14"><span>Waybar Minimal Config</span></div>
 <div id="Banner2"><span>Waybar Minimal Config</span></div>
+<div id="wb_Text3">
+<p>&nbsp;</p>
+</div>
 <textarea name="TextArea1" id="TextArea4" rows="28" cols="102" readonly spellcheck="false">// -*- mode: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
@@ -1462,10 +1500,180 @@ OPTIONS=(!debug)</textarea>
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
 }</textarea>
-<div id="wb_Text3">
+</div>
+</div>
+</div>
+<ul id="SnapScroll1">
+<li><a class="active" href="#1"><span class="label"></span></a></li>
+<li><a href="#2"><span class="label"></span></a></li>
+<li><a href="#3"><span class="label"></span></a></li>
+<li><a href="#4"><span class="label"></span></a></li>
+<li><a href="#5"><span class="label"></span></a></li>
+<li><a href="#6"><span class="label"></span></a></li>
+<li><a href="#7"><span class="label"></span></a></li>
+<li><a href="#8"><span class="label"></span></a></li>
+</ul>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="col-1">
+<div id="Banner9"><span>NBFC Linux: AN515-54 config (Limited)</span></div>
+<div id="wb_Text18">
 <p>&nbsp;</p>
 </div>
-<div id="wb_JavaScript5">
+<div id="Banner11"><span>NBFC Linux: AN515-54 config (Limited)</span></div>
+<div id="Banner12"><span>NBFC Linux: AN515-54 config (Limited)</span></div>
+<textarea name="TextArea1" id="TextArea5" rows="28" cols="102" readonly spellcheck="false">{
+ "LegacyTemperatureThresholdsBehaviour": true,
+ "NotebookModel": "Acer Nitro AN515-54 Non Peaking",
+ "Author": "Chandradeep Dey (modified by nvn)",
+ "EcPollInterval": 3200,
+ "ReadWriteWords": true,
+ "CriticalTemperature": 91,
+ "FanConfigurations": [
+	{
+	 "ReadRegister": 19,
+	 "WriteRegister": 55,
+	 "MinSpeedValue": 0,
+	 "MaxSpeedValue": 100,
+	 "IndependentReadMinMaxValues": true,
+	 "MinSpeedValueRead": 0,
+	 "MaxSpeedValueRead": 6122,
+	 "ResetRequired": true,
+	 "FanSpeedResetValue": 50,
+	 "FanDisplayName": "CPU fan",
+	 "TemperatureThresholds": [
+	  {
+	   "UpThreshold": 45,
+	   "DownThreshold": 43,
+	   "FanSpeed": 0.0
+	  },
+	  {
+	   "UpThreshold": 55,
+	   "DownThreshold": 44,
+	   "FanSpeed": 39.0
+	  },
+	  {
+	   "UpThreshold": 60,
+	   "DownThreshold": 50,
+	   "FanSpeed": 50.0
+	  },
+	  {
+	   "UpThreshold": 65,
+	   "DownThreshold": 56,
+	   "FanSpeed": 57.0
+	  },
+	  {
+	   "UpThreshold": 73,
+	   "DownThreshold": 63,
+	   "FanSpeed": 65.0
+	  },
+	  {
+	   "UpThreshold": 78,
+	   "DownThreshold": 72,
+	   "FanSpeed": 75.0
+	  },
+          {
+           "UpThreshold": 81,
+           "DownThreshold": 77,
+           "FanSpeed": 82.0
+          }
+	  {
+	   "UpThreshold": 85,
+	   "DownThreshold": 80,
+	   "FanSpeed": 90.0
+	  }
+	 ],
+	 "FanSpeedPercentageOverrides": []
+	},
+	{
+	 "ReadRegister": 21,
+	 "WriteRegister": 58,
+	 "MinSpeedValue": 0,
+	 "MaxSpeedValue": 100,
+	 "IndependentReadMinMaxValues": true,
+	 "MinSpeedValueRead": 0,
+	 "MaxSpeedValueRead": 6122,
+	 "ResetRequired": true,
+	 "FanSpeedResetValue": 50,
+	 "FanDisplayName": "GPU fan",
+	 "TemperatureThresholds": [
+	  {
+	   "UpThreshold": 45,
+	   "DownThreshold": 43,
+	   "FanSpeed": 0.0
+	  },
+	  {
+	   "UpThreshold": 55,
+	   "DownThreshold": 44,
+	   "FanSpeed": 30.0
+	  },
+	  {
+	   "UpThreshold": 60,
+	   "DownThreshold": 50,
+	   "FanSpeed": 45.0
+	  },
+	  {
+	   "UpThreshold": 68,
+	   "DownThreshold": 56,
+	   "FanSpeed": 50.0
+	  },
+	  {
+	   "UpThreshold": 74,
+	   "DownThreshold": 67,
+	   "FanSpeed": 65.0
+	  },
+	  {
+	   "UpThreshold": 79,
+	   "DownThreshold": 73,
+	   "FanSpeed": 85.0
+	  },
+	  {
+	   "UpThreshold": 86,
+	   "DownThreshold": 78,
+	   "FanSpeed": 94.0
+	  }
+	 ],
+	 "FanSpeedPercentageOverrides": []
+	}
+ ],
+ "RegisterWriteConfigurations": [
+	{
+	 "WriteMode": "Set",
+	 "WriteOccasion": "OnInitialization",
+	 "Register": 34,
+	 "Value": 12,
+	 "ResetRequired": true,
+	 "ResetValue": 4,
+	 "ResetWriteMode": "Set",
+	 "Description": "CPU fan manual mode"
+	},
+	{
+	 "WriteMode": "Set",
+	 "WriteOccasion": "OnInitialization",
+	 "Register": 33,
+	 "Value": 48,
+	 "ResetRequired": true,
+	 "ResetValue": 16,
+	 "ResetWriteMode": "Set",
+	 "Description": "GPU fan manual mode"
+	},
+	{
+	 "WriteMode": "Set",
+	 "WriteOccasion": "OnInitialization",
+	 "Register": 16,
+	 "Value": 0,
+	 "ResetRequired": true,
+	 "ResetValue": 1,
+	 "ResetWriteMode": "Set",
+	 "Description": "CoolBoost off"
+	}
+ ]
+}
+</textarea>
+<div id="wb_Text6">
+<p>&nbsp;</p>
+</div>
+<div id="wb_JavaScript1">
 <script>
 document.write("<div style=\"color:#DBEFF9;font-size:16px;font-family:Exo 2;font-weight:normal;font-style:normal;text-align:center;text-decoration:none\">Last updated: "+document.lastModified+"<\/div>");
 </script>    
@@ -1473,15 +1681,6 @@ document.write("<div style=\"color:#DBEFF9;font-size:16px;font-family:Exo 2;font
 </div>
 </div>
 </div>
-<ul id="SnapScroll1">
-<li><a class="active" href="#1"><span class="label">Welcome</span></a></li>
-<li><a href="#2"><span class="label">About Me</span></a></li>
-<li><a href="#3"><span class="label">Projects</span></a></li>
-<li><a href="#4"><span class="label">Gallery</span></a></li>
-<li><a href="#5"><span class="label">Dotfiles</span></a></li>
-<li><a href="#6"><span class="label">GTFO</span></a></li>
-<li><a href="#7"><span class="label">More</span></a></li>
-</ul>
 <div id="preloader"></div>
 </body>
 </html>

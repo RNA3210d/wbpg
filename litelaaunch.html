@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Launcher</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="wpg.css" rel="stylesheet">
+<link href="litelaaunch.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wb.cookie.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   if (hasCookie('darktheme'))
+   {
+      document.documentElement.classList.add('darktheme');
+   }
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_LayoutGrid2').addClass('visibility-hidden');
+   function onScrollLayer1()
+   {
+      var $obj = $("#Layer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer1', 'slide-down-in', 0, 750);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer1').inViewPort(true))
+   {
+      $('#Layer1').addClass("in-viewport");
+   }
+   onScrollLayer1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer1();
+   });
+   $("a[href*='#LayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'easeInQuad');
+   });
+   function onScrollLayoutGrid2()
+   {
+      var $obj = $("#wb_LayoutGrid2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid2', 'animate-fade-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid2').inViewPort(true))
+   {
+      $('#wb_LayoutGrid2').addClass("in-viewport");
+   }
+   onScrollLayoutGrid2();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid2();
+   });
+   function onScrollCard8_card_item0()
+   {
+      var $obj = $("#Card8-card-item0");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Card8-card-item0', 'transform-pulse', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Card8-card-item0', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Card8-card-item0').inViewPort(true))
+   {
+      $('#Card8-card-item0').addClass("in-viewport");
+   }
+   onScrollCard8_card_item0();
+   $(window).scroll(function(event)
+   {
+      onScrollCard8_card_item0();
+   });
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+</head>
+<body>
+<div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Text1" onmouseenter="AnimateCss('wb_Text1', 'animate-neon-text-shadow', 0, 9500);return false;" onmouseleave="AnimateCss('wb_Text1', '', 0, 500);return false;">
+<span style="color:#77893E;">Is this life? Is it real?</span></div>
+<div id="wb_Image1">
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" onmouseenter="AnimateCss('Button4', 'animate-neon-text-shadow', 0, 3000);return false;" onmouseleave="AnimateCss('Button4', '', 0, 500);return false;" name="" value="Dark/Light">
+<div id="wb_JavaScript1">
+<div id="copyrightnotice"></div>
+<script>
+   var now = new Date();
+   var startYear = "2000";
+   var text =  "Copyright &copy; ";
+   if (startYear != '')
+   {
+      text = text + startYear + "-";
+   }
+   text = text + now.getFullYear() + ", Naveen. All rights reserved.";
+   var copyrightnotice = document.getElementById('copyrightnotice');
+   copyrightnotice.innerHTML = text;
+</script>
+
+
+</div>
+</div>
+</div>
+
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="col-1">
+<div id="Banner8"><span>Welcome</span></div>
+<div id="wb_ResponsiveMenu1">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Menu<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li role="menuitem"><a href="./index.html" title="Home" class="nav-link">Home</a></li>
+<li role="menuitem"><a href="./sw.html" title="Software I Use" class="nav-link">Software&nbsp;I&nbsp;Use</a></li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-0" class="toggle">My&nbsp;Equipments<b class="arrow-down"></b></label>
+<a href="./eqp.html" title="My Equipments" class="nav-link">My&nbsp;Equipments<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li role="menuitem"><a href="./lap.html" title="Laptop" class="nav-link">Laptop</a></li>
+<li role="menuitem"><a href="./rpi.html" title="RPi" class="nav-link">RPi</a></li>
+<li role="menuitem"><a href="./ntbk.html" title="Netbook" class="nav-link">Netbook</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-1" class="toggle">Projects<b class="arrow-down"></b></label>
+<a href="./proj.html" title="Projects" class="nav-link">Projects<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-1">
+<ul role="menu">
+<li role="menuitem"><a href="./page1.html" title="RPi-TELEBOT" class="nav-link">RPi-TELEBOT</a></li>
+<li role="menuitem"><a href="./page2.html" title="BU &amp; BO Designer" class="nav-link">BU&nbsp;&amp;&nbsp;BO&nbsp;Designer</a></li>
+<li role="menuitem"><a href="./page3.html" title="Qt Demo" class="nav-link">Qt&nbsp;Demo</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-2" class="toggle">Gallery<b class="arrow-down"></b></label>
+<a href="./gal.html" title="Gallery" class="nav-link">Gallery<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-2">
+<ul role="menu">
+<li role="menuitem"><a href="./hyb.html" title="Hyderabad" class="nav-link">Hyderabad</a></li>
+<li role="menuitem"><a href="./nature.html" title="Nature" class="nav-link">Nature</a></li>
+<li role="menuitem"><a href="./pvr.html" title="Poovar" class="nav-link">Poovar</a></li>
+<li role="menuitem"><a href="./miscg.html" title="Misc Images" class="nav-link">Misc&nbsp;Images</a></li>
+<li role="menuitem"><a href="./nature2.html" title="Nature 2" class="nav-link">Nature&nbsp;2</a></li>
+</ul>
+</li>
+<li role="menuitem"><a href="./prodn.html" title="My Tunes" class="nav-link">My&nbsp;Tunes</a></li>
+<li role="menuitem"><a href="./misc.html" title="Help" class="nav-link">Help</a></li>
+<li role="menuitem"><a href="./configs2.html" title="Configs &amp; Dotfiles" class="nav-link">Configs&nbsp;&amp;&nbsp;Dotfiles</a></li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card8" class="card" onmouseenter="AnimateCss('wb_Card8', 'animate-fire-text-shadow', 0, 2500);return false;">
+   <div id="Card8-card-body">
+      <div id="Card8-card-item0">“</div>
+      <div id="Card8-card-item1">Life is pleasant. Death is peaceful. It's the transition that's troublesome.</div>
+      <hr id="Card8-card-item2">
+      <div id="Card8-card-item3">Isaac Asimov</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+<div id="preloader"></div>
+</body>
+</html>
