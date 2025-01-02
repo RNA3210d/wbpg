@@ -800,7 +800,7 @@ body
 }
 #Banner8
 {
-   width: 460px;
+   width: 442px;
    height: 150px;
    visibility: visible;
    display: inline-block;
@@ -810,6 +810,14 @@ body
 {
    height: 29px;
    margin: 60px 0 60px 0 ;
+}
+#wb_ResponsiveMenu1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   text-align: left;
 }
 }
 @media only screen and (max-width: 479px)
@@ -971,7 +979,7 @@ body
 }
 #Banner8
 {
-   width: 289px;
+   width: 282px;
    height: 72px;
    visibility: visible;
    display: inline-block;
@@ -981,6 +989,14 @@ body
 {
    height: 29px;
    margin: 21px 0 21px 0 ;
+}
+#wb_ResponsiveMenu1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   text-align: left;
 }
 }
 .darktheme #Layer1

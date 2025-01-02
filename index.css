@@ -825,7 +825,7 @@ body
    color: #6B3CFC;
    font-family: Arial;
    font-weight: normal;
-   font-size: 12px;
+   font-size: 15px;
 }
 #wb_Text13 div
 {
@@ -1053,7 +1053,7 @@ body
    font-family: Arial;
    font-weight: 400;
    font-size: 29px;
-   line-height: 25px;
+   line-height: 33px;
 }
 #wb_Text2 p, #wb_Text2 ul
 {
@@ -1218,7 +1218,7 @@ body
    color: #6B3CFC;
    font-family: Arial;
    font-weight: normal;
-   font-size: 12px;
+   font-size: 15px;
 }
 #wb_Text4 div
 {
@@ -1413,7 +1413,7 @@ body
    font-family: Arial;
    font-weight: 400;
    font-size: 29px;
-   line-height: 25px;
+   line-height: 33px;
 }
 #wb_Text8 p, #wb_Text8 ul
 {
@@ -1506,7 +1506,7 @@ body
    font-family: Arial;
    font-weight: 400;
    font-size: 29px;
-   line-height: 25px;
+   line-height: 33px;
 }
 #wb_Text9 p, #wb_Text9 ul
 {
@@ -1603,7 +1603,7 @@ body
    color: #6B3CFC;
    font-family: Arial;
    font-weight: normal;
-   font-size: 12px;
+   font-size: 15px;
 }
 #wb_Text10 div
 {
@@ -1703,7 +1703,7 @@ body
    font-family: Arial;
    font-weight: 400;
    font-size: 29px;
-   line-height: 25px;
+   line-height: 33px;
 }
 #wb_Text12 p, #wb_Text12 ul
 {
@@ -1733,7 +1733,7 @@ body
    font-family: Arial;
    font-weight: 400;
    font-size: 29px;
-   line-height: 25px;
+   line-height: 33px;
 }
 #wb_Text11 p, #wb_Text11 ul
 {
@@ -2713,7 +2713,7 @@ Banner5 span:before
    font-family: Arial;
    font-weight: 400;
    font-size: 29px;
-   line-height: 25px;
+   line-height: 33px;
 }
 #wb_Text7 p, #wb_Text7 ul
 {
@@ -2869,7 +2869,7 @@ Banner10 span:before
    font-family: Arial;
    font-weight: 400;
    font-size: 13px;
-   line-height: 13px;
+   line-height: 16px;
 }
 #wb_Text3 p, #wb_Text3 ul
 {
@@ -2934,7 +2934,7 @@ Banner11 span:before
    font-family: Arial;
    font-weight: 400;
    font-size: 13px;
-   line-height: 13px;
+   line-height: 16px;
 }
 #wb_Text6 p, #wb_Text6 ul
 {
@@ -3055,7 +3055,7 @@ Banner12 span:before
    font-family: Arial;
    font-weight: 400;
    font-size: 13px;
-   line-height: 13px;
+   line-height: 16px;
 }
 #wb_Text20 p, #wb_Text20 ul
 {
@@ -3085,7 +3085,7 @@ Banner12 span:before
    font-family: Arial;
    font-weight: 400;
    font-size: 13px;
-   line-height: 13px;
+   line-height: 16px;
 }
 #wb_Text21 p, #wb_Text21 ul
 {
@@ -3184,7 +3184,7 @@ Banner12 span:before
    font-family: Arial;
    font-weight: 400;
    font-size: 29px;
-   line-height: 25px;
+   line-height: 33px;
 }
 #wb_Text23 p, #wb_Text23 ul
 {
@@ -3291,7 +3291,7 @@ Banner12 span:before
    font-family: "Exo 2";
    font-weight: 400;
    font-size: 13px;
-   line-height: 15px;
+   line-height: 19px;
 }
 #wb_Text24 p, #wb_Text24 ul
 {
@@ -3321,7 +3321,7 @@ Banner12 span:before
    font-family: Arial;
    font-weight: 400;
    font-size: 13px;
-   line-height: 13px;
+   line-height: 16px;
 }
 #wb_Text25 p, #wb_Text25 ul
 {
@@ -3383,7 +3383,7 @@ Banner12 span:before
    font-family: Arial;
    font-weight: 400;
    font-size: 13px;
-   line-height: 13px;
+   line-height: 16px;
 }
 #wb_Text14 p, #wb_Text14 ul
 {
@@ -3465,7 +3465,7 @@ Banner12 span:before
    font-family: Arial;
    font-weight: 400;
    font-size: 13px;
-   line-height: 13px;
+   line-height: 16px;
 }
 #wb_Text15 p, #wb_Text15 ul
 {
@@ -3694,7 +3694,7 @@ Banner2 span:before
    font-family: Arial;
    font-weight: 400;
    font-size: 13px;
-   line-height: 13px;
+   line-height: 16px;
 }
 #wb_Text16 p, #wb_Text16 ul
 {
@@ -3721,7 +3721,7 @@ Banner2 span:before
    color: #000000;
    font-family: "Exo 2";
    font-weight: normal;
-   font-size: 11px;
+   font-size: 13px;
 }
 #toasts
 {

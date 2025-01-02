@@ -786,6 +786,36 @@ body
    display: block;
    background-image: linear-gradient(to top, #EA8711 0%, #D96363 25%, #73A6DF 50%, #9085FB 75%, #52CA79 100%);
 }
+#Blog1
+{
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Blog1 .blogdate
+{
+   font-family: "Exo 2";
+   font-size: 13px;
+}
+#Blog1 .blogsubject
+{
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Blog1 .blogcomments
+{
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Blog1 .blogbutton
+{
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Blog1 .page-number
+{
+   font-family: "Exo 2";
+   font-size: 19px;
+}
 #Blog1 .blogcolumn
 {
    width: 100%;
@@ -851,6 +881,24 @@ body
 {
    height: 21px;
    margin: 64px 0 64px 0 ;
+}
+#JavaScript6
+{
+   left: 1260px;
+   top: 340px;
+   width: 100px;
+   height: 100px;
+   visibility: visible;
+   display: inline;
+}
+#JavaScript2
+{
+   left: 1243px;
+   top: 1871px;
+   width: 92px;
+   height: 92px;
+   visibility: visible;
+   display: inline;
 }
 }
 @media only screen and (max-width: 479px)
@@ -1015,6 +1063,36 @@ body
    display: block;
    background-image: linear-gradient(to top, #EA8711 0%, #D96363 25%, #73A6DF 50%, #9085FB 75%, #52CA79 100%);
 }
+#Blog1
+{
+   font-family: "Exo 2";
+   font-size: 15px;
+}
+#Blog1 .blogdate
+{
+   font-family: "Exo 2";
+   font-size: 13px;
+}
+#Blog1 .blogsubject
+{
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Blog1 .blogcomments
+{
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Blog1 .blogbutton
+{
+   font-family: "Exo 2";
+   font-size: 16px;
+}
+#Blog1 .page-number
+{
+   font-family: "Exo 2";
+   font-size: 19px;
+}
 #Blog1 .blogcolumn
 {
    width: 100%;
@@ -1080,6 +1158,24 @@ body
 {
    height: 16px;
    margin: 26px 0 26px 0 ;
+}
+#JavaScript6
+{
+   left: 1260px;
+   top: 340px;
+   width: 100px;
+   height: 100px;
+   visibility: visible;
+   display: inline;
+}
+#JavaScript2
+{
+   left: 1243px;
+   top: 1871px;
+   width: 92px;
+   height: 92px;
+   visibility: visible;
+   display: inline;
 }
 }
 .darktheme body
