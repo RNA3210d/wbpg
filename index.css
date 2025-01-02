@@ -3102,11 +3102,10 @@ Banner12 span:before
 #wb_Card4
 {
    position: relative;
-   display: inline-block;
+   display: flex;
    flex-direction: column;
    box-sizing: border-box;
    margin: 0;
-   vertical-align: top;
    background-color: transparent;
    background-image: none;
    border: 0px solid transparent;
@@ -3119,6 +3118,18 @@ Banner12 span:before
    padding: 0;
    flex: 1 1 auto;
    font-size: 0;
+}
+.stretched-link::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+   background-color: rgba(0,0,0,0);
 }
 #Card4-card-item0
 {
@@ -4163,9 +4174,8 @@ Banner2 span:before
 }
 #wb_Card4
 {
-   display: inline-block;
-   width: 1200px;
-   height: 389px;
+   display: flex;
+   width: 100%;
    z-index: 2;
 }
 #wb_Card7
@@ -5474,10 +5484,9 @@ body
 }
 #wb_Card4
 {
-   width: 480px;
-   height: 640px;
+   width: 100%;
    visibility: visible;
-   display: inline-block;
+   display: flex;
    margin: 0;
    box-shadow: 0px 0px 29px rgba(248,189,102,0.20);
 }
@@ -7075,10 +7084,9 @@ body
 }
 #wb_Card4
 {
-   width: 310px;
-   height: 704px;
+   width: 100%;
    visibility: visible;
-   display: inline-block;
+   display: flex;
    margin: 0;
    box-shadow: 0px 0px 59px rgba(250,211,153,0.20) inset;
 }
