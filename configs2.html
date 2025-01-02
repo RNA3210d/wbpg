@@ -421,9 +421,6 @@ $(window).on('load', function()
 <div id="LayoutGrid2">
 <div class="col-1">
 <div id="Banner8"><span>Current setup on laptop</span></div>
-<div id="wb_Text5">
-<span style="color:#F8F8FF;font-family:Arial;font-size:24px;line-height:20px;">Get the configs here (for ARCH LINUX): </span><span style="background-color:#48D1CC;color:#F8F8FF;font-family:Arial;font-size:24px;line-height:20px;"><a href="https://github.com/JaKooLit/Arch-Hyprland">https://github.com/JaKooLit/Arch-Hyprland</a></span><span style="color:#F8F8FF;font-family:Arial;font-size:24px;line-height:12px;"><br></span>
-</div>
 <div id="wb_Text1">
 <p>&nbsp;</p>
 </div>
@@ -488,28 +485,7 @@ hwdec=auto</textarea>
 <div id="wb_Text23">
 <p>&nbsp;</p>
 </div>
-<textarea name="TextArea1" id="TextArea6" rows="35" cols="32" readonly spellcheck="false">default_border pixel 2
-default_floating_border none
-#titlebar_padding 0
-titlebar_border_thickness 0
-#gaps inner 1
-
-
-
-
-
-
-
-client.background n/a #434c5e n/a
-client.focused #434c5e #434c5e #eceff4 #434c5e #434c5e
-client.focused_inactive #3b4252 #3b4252 #eceff4 #3b4252 #3b4252
-client.unfocused #3b4252 #3b4252 #eceff4 #3b4252 #3b4252
-client.urgent #434c5e #434c5e #eceff4 #434c5e #434c5e
-
-
-
-
-
+<textarea name="TextArea1" id="TextArea6" rows="35" cols="32" readonly spellcheck="false">
 
 
 ### Variables
@@ -527,17 +503,16 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu "rofi -show drun"
+set $menu "wofi --show drun"
 
 
 
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec nm-applet
-exec swaync
-exec waybar
+#exec nm-applet
+exec dunst
+#exec waybar
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
-exec gammastep -O 5100
-
+exec gammastep -O 4000
 
 
 
@@ -546,7 +521,10 @@ exec gammastep -O 5100
 
 ### Output configuration
 
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg  /home/flex/sway.webp fill
+
+
 #
 # Example configuration:
 #
@@ -578,11 +556,11 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
-   input "1267:12433:ELAN0504:00_04F3:3091_Touchpad" {
+   input "2:7:SynPS/2_Synaptics_TouchPad" {
        dwt enabled
        tap enabled
        natural_scroll disabled
-       middle_emulation enabled
+      middle_emulation enabled
    }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
@@ -604,10 +582,11 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+C kill
 
     # Start your launcher
-    bindsym $mod+Q exec $menu
+	#exec_always nwg-drawer -r
+	#bindsym $mod+Q exec nwg-drawer
     
-   # bindsym $mod+Q exec wlogout
-    bindsym $mod+F exec floorp
+    bindsym $mod+Q exec $menu
+    bindsym $mod+F exec librewolf
     bindsym $mod+E exec thunar
 
     # Drag floating windows by holding down $mod and left mouse button.
@@ -619,7 +598,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
-
+    bindsym $mod+Shift+r exec "killall -SIGUSR2 waybar"
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
@@ -750,9 +729,25 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +2%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 2%-
 
 
+bindsym $mod+bracketleft exec playerctl previous
+bindsym $mod+bracketright exec playerctl next
+
+bindsym $mod+shift+bracketleft exec playerctl position 10-
+bindsym $mod+shift+bracketright exec playerctl position 10+
 
 
-include @sysconfdir@/sway/config.d/*</textarea>
+mode passthrough {
+	bindsym $mod+P mode default
+}
+bindsym $mod+P mode passthrough
+
+
+bar {
+    status_command i3status
+    position top
+}
+
+</textarea>
 </div>
 </div>
 </div>
@@ -769,7 +764,7 @@ include @sysconfdir@/sway/config.d/*</textarea>
 <div id="wb_Text11">
 <p>&nbsp;</p>
 </div>
-<textarea name="TextArea1" id="TextArea1" rows="28" cols="102" readonly spellcheck="false"># linux-TkG config file
+<textarea name="TextArea1" id="TextArea1" rows="35" cols="32" readonly spellcheck="false"># linux-TkG config file
 
 # Linux distribution you are using, options are "Arch", "Ubuntu", "Debian", "Fedora", "Suse", "Gentoo", "Generic".
 # It is automatically set to "Arch" when using PKGBUILD.
@@ -1123,7 +1118,7 @@ _config_fragments_no_confirm="false"</textarea>
 <div id="wb_Text19">
 <p>&nbsp;</p>
 </div>
-<textarea name="TextArea1" id="TextArea2" rows="28" cols="102" readonly spellcheck="false">#!/hint/bash
+<textarea name="TextArea1" id="TextArea2" rows="35" cols="32" readonly spellcheck="false">#!/hint/bash
 # shellcheck disable=2034
 
 #
@@ -1304,7 +1299,7 @@ OPTIONS=(!debug)</textarea>
 <div id="wb_Text3">
 <p>&nbsp;</p>
 </div>
-<textarea name="TextArea1" id="TextArea4" rows="28" cols="102" readonly spellcheck="false">// -*- mode: jsonc -*-
+<textarea name="TextArea1" id="TextArea4" rows="35" cols="32" readonly spellcheck="false">// -*- mode: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
@@ -1522,7 +1517,7 @@ OPTIONS=(!debug)</textarea>
 </div>
 <div id="Banner11"><span>NBFC Linux: AN515-54 config (Limited)</span></div>
 <div id="Banner12"><span>NBFC Linux: AN515-54 config (Limited)</span></div>
-<textarea name="TextArea1" id="TextArea5" rows="28" cols="102" readonly spellcheck="false">{
+<textarea name="TextArea1" id="TextArea5" rows="31" cols="32" readonly spellcheck="false">{
  "LegacyTemperatureThresholdsBehaviour": true,
  "NotebookModel": "Acer Nitro AN515-54 Non Peaking",
  "Author": "Chandradeep Dey (modified by nvn)",

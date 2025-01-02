@@ -825,7 +825,7 @@ body
    color: #6B3CFC;
    font-family: Arial;
    font-weight: normal;
-   font-size: 15px;
+   font-size: 12px;
 }
 #wb_Text13 div
 {
@@ -927,8 +927,8 @@ body
    color: #FFFFFF;
    font-family: "Exo 2";
    font-weight: 400;
-   font-size: 20px;
-   line-height: 29px;
+   font-size: 16px;
+   line-height: 23.5px;
 }
 #wb_Text1 p, #wb_Text1 ul
 {
@@ -1218,7 +1218,7 @@ body
    color: #6B3CFC;
    font-family: Arial;
    font-weight: normal;
-   font-size: 15px;
+   font-size: 12px;
 }
 #wb_Text4 div
 {
@@ -1603,7 +1603,7 @@ body
    color: #6B3CFC;
    font-family: Arial;
    font-weight: normal;
-   font-size: 15px;
+   font-size: 12px;
 }
 #wb_Text10 div
 {
@@ -2025,7 +2025,7 @@ body
    font-size: 16px;
    line-height: 16px;
    vertical-align: middle;
-   width: 19px;
+   width: 15px;
 }
 #wb_Icon10:hover #Icon10 i
 {
@@ -2576,7 +2576,7 @@ body
    font-size: 16px;
    line-height: 16px;
    vertical-align: middle;
-   width: 19px;
+   width: 15px;
 }
 #wb_Icon15:hover #Icon15 i
 {
@@ -2611,7 +2611,7 @@ body
 {
    display: block;
    height: 27px;
-   margin: 5px 0 5px 0 ;
+   margin: 4px 0 4px 0 ;
 }
 #Banner1 span:before, #Banner1 span:after 
 {
@@ -2646,7 +2646,7 @@ Banner1 span:before
 {
    display: block;
    height: 27px;
-   margin: 5px 0 5px 0 ;
+   margin: 4px 0 4px 0 ;
 }
 #Banner3 span:before, #Banner3 span:after 
 {
@@ -2687,7 +2687,7 @@ Banner3 span:before
 {
    display: block;
    position: absolute;
-   top: 86px;
+   top: 85px;
    left: 0;
    right: 0;
 }
@@ -2752,7 +2752,7 @@ Banner5 span:before
 {
    display: block;
    position: absolute;
-   top: 51px;
+   top: 50px;
    left: 0;
    right: 0;
 }
@@ -2787,7 +2787,7 @@ Banner6 span:before
 {
    display: block;
    position: absolute;
-   top: 51px;
+   top: 50px;
    left: 0;
    right: 0;
 }
@@ -2816,7 +2816,7 @@ Banner7 span:before
 {
    display: block;
    height: 29px;
-   margin: 20px 0 20px 0 ;
+   margin: 21px 0 21px 0 ;
 }
 #Banner10
 {
@@ -2837,7 +2837,7 @@ Banner7 span:before
 {
    display: block;
    height: 29px;
-   margin: -1px 0 -1px 0 ;
+   margin: 0;
 }
 #Banner10 span:before, #Banner10 span:after 
 {
@@ -2902,7 +2902,7 @@ Banner10 span:before
 {
    display: block;
    height: 27px;
-   margin: 5px 0 5px 0 ;
+   margin: 4px 0 4px 0 ;
 }
 #Banner11 span:before, #Banner11 span:after 
 {
@@ -3029,7 +3029,7 @@ Banner11 span:before
 {
    display: block;
    position: absolute;
-   top: 45px;
+   top: 44px;
    left: 0;
    right: 0;
 }
@@ -3352,8 +3352,8 @@ Banner12 span:before
    color: #FFFFFF;
    font-family: "Exo 2";
    font-weight: 400;
-   font-size: 24px;
-   line-height: 33px;
+   font-size: 19px;
+   line-height: 27.5px;
 }
 #wb_Text17 p, #wb_Text17 ul
 {
@@ -3531,7 +3531,7 @@ Banner12 span:before
 {
    display: block;
    position: absolute;
-   top: 47px;
+   top: 48px;
    left: 0;
    right: 0;
 }
@@ -3721,7 +3721,7 @@ Banner2 span:before
    color: #000000;
    font-family: "Exo 2";
    font-weight: normal;
-   font-size: 13px;
+   font-size: 11px;
 }
 #toasts
 {
@@ -5675,7 +5675,7 @@ body
    line-height: 29px;
    font-family: "Exo 2";
    font-weight: normal;
-   font-size: 16px;
+   font-size: 13px;
 }
 #FlipSwitch1-inner:before
 {
@@ -7276,7 +7276,7 @@ body
    line-height: 25px;
    font-family: "Exo 2";
    font-weight: normal;
-   font-size: 11px;
+   font-size: 13px;
 }
 #FlipSwitch1-inner:before
 {

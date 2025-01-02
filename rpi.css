@@ -180,6 +180,36 @@ body
    flex-shrink: 0;
    align-self: auto;
 }
+#wb_FlexContainer2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   position: relative;
+   width: 100%;
+}
+#FlexContainer2
+{
+   display: flex;
+   position: relative;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: flex-start;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 320px;
+   background-color: transparent;
+   background-image: none;
+   box-sizing: border-box;
+   font-size: 0;
+}
 #wb_LayoutGrid4
 {
    clear: both;
@@ -467,6 +497,48 @@ body
    box-sizing: border-box;
    width: 100%;
 }
+#Banner5
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 0px;
+   color: #FF0000;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 27px;
+   text-align: center;
+   text-shadow: 0px 0px 13px rgba(250,128,114,1.00);
+   margin: 0;
+}
+#Banner5 span
+{
+   display: block;
+   height: 27px;
+   margin: 4px 0 4px 0 ;
+}
+#Banner5 span:before, #Banner5 span:after 
+{
+   display: block;
+   position: absolute;
+   top: 48px;
+   left: 0;
+   right: 0;
+}
+Banner5 span:before
+{
+   content: "UPDATE: It's dead. RIP.";
+   opacity: .3;
+   transform: scaleY(-1);
+}
+#Banner5
+{
+   margin: 0;
+   flex-grow: 0;
+   flex-shrink: 0;
+   align-self: auto;
+}
 #wb_footer
 {
    background-image: linear-gradient(to top, #6B3CFC 0%, #000000 100%);
@@ -512,14 +584,14 @@ body
    float: left;
    clear: left;
    display: block;
-   z-index: 24;
+   z-index: 26;
 }
 #TextArea1
 {
    display: block;
    width: 100%;
    height: 518px;
-   z-index: 15;
+   z-index: 16;
 }
 #wb_Image1
 {
@@ -535,14 +607,14 @@ body
    display: inline-block;
    width: 155px;
    height: 47px;
-   z-index: 17;
+   z-index: 18;
 }
 #wb_Image2
 {
    display: inline-block;
    width: 100%;
    height: auto;
-   z-index: 13;
+   z-index: 14;
 }
 #wb_Icon5
 {
@@ -550,7 +622,13 @@ body
    width: 16px;
    height: 16px;
    text-align: center;
-   z-index: 18;
+   z-index: 19;
+}
+#Banner5
+{
+   display: inline-block;
+   width: 1198px;
+   height: 48px;
 }
 #Line1
 {
@@ -569,7 +647,7 @@ body
 {
    display: inline-block;
    width: 100%;
-   z-index: 14;
+   z-index: 15;
 }
 #Line2
 {
@@ -579,7 +657,7 @@ body
 {
    display: inline-block;
    width: 100%;
-   z-index: 12;
+   z-index: 13;
 }
 #Layer1
 {
@@ -624,7 +702,7 @@ body
    width: 100%;
    height: 100%;
    float: left;
-   z-index: 22;
+   z-index: 23;
 }
 #Layer1_Container
 {
@@ -805,6 +883,23 @@ body
    border-color: #1ABC9C;
    border-bottom-width: 3px;
 }
+#wb_FlexContainer2
+{
+   visibility: visible;
+   display: block;
+}
+#FlexContainer2
+{
+   min-height: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   align-content: flex-start;
+}
 #wb_LayoutGrid4
 {
    visibility: visible;
@@ -949,6 +1044,27 @@ body
    padding: 0;
    text-align: left;
    line-height: 16px;
+}
+#Banner5
+{
+   width: 468px;
+   height: 50px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   flex-grow: 0;
+   flex-shrink: 0;
+   align-self: auto;
+   font-size: 27px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+}
+#Banner5 span
+{
+   height: 27px;
+   margin: 11px 0 11px 0 ;
 }
 #wb_footer
 {
@@ -1139,6 +1255,23 @@ body
    border-color: #1ABC9C;
    border-bottom-width: 3px;
 }
+#wb_FlexContainer2
+{
+   visibility: visible;
+   display: block;
+}
+#FlexContainer2
+{
+   min-height: 0;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 25px 15px 25px 15px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: flex-start;
+   align-content: center;
+}
 #wb_LayoutGrid4
 {
    visibility: visible;
@@ -1283,6 +1416,27 @@ body
    padding: 0;
    text-align: left;
    line-height: 16px;
+}
+#Banner5
+{
+   width: 308px;
+   height: 50px;
+   visibility: visible;
+   display: inline-block;
+   margin: 0;
+   flex-grow: 0;
+   flex-shrink: 0;
+   align-self: auto;
+   font-size: 20px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+}
+#Banner5 span
+{
+   height: 20px;
+   margin: 14px 0 14px 0 ;
 }
 #wb_footer
 {

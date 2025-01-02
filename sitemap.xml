@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://www.yourwebsite.com/</loc>
-		<lastmod>2024-07-27</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/sw.html</loc>
-		<lastmod>2024-07-25</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/eqp.html</loc>
-		<lastmod>2024-07-25</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/lap.html</loc>
-		<lastmod>2024-07-25</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/rpi.html</loc>
-		<lastmod>2024-07-13</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -38,7 +38,7 @@
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/proj.html</loc>
-		<lastmod>2024-07-27</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -56,43 +56,49 @@
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/page3.html</loc>
-		<lastmod>2024-07-27</lastmod>
+		<lastmod>2025-01-02</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://www.yourwebsite.com/page4.html</loc>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/gal.html</loc>
-		<lastmod>2024-07-26</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/hyb.html</loc>
-		<lastmod>2024-07-27</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/nature.html</loc>
-		<lastmod>2024-07-27</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/pvr.html</loc>
-		<lastmod>2024-07-27</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/miscg.html</loc>
-		<lastmod>2024-07-27</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/nature2.html</loc>
-		<lastmod>2024-07-27</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -104,13 +110,13 @@
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/misc.html</loc>
-		<lastmod>2024-07-26</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://www.yourwebsite.com/configs2.html</loc>
-		<lastmod>2024-07-26</lastmod>
+		<lastmod>2025-01-02</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>

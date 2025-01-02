@@ -244,28 +244,6 @@ body
    max-width: 100% !important;
 }
 }
-#wb_Text5 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-   box-shadow: 0px 0px 14px #000000;
-}
-#wb_Text5 div
-{
-   text-align: center;
-}
-#wb_Text5
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
-}
 #wb_Text13 
 {
    background-color: transparent;
@@ -281,7 +259,7 @@ body
    color: #6B3CFC;
    font-family: Arial;
    font-weight: normal;
-   font-size: 17px;
+   font-size: 15px;
 }
 #wb_Text13 div
 {
@@ -546,7 +524,7 @@ body
    color: #6B3CFC;
    font-family: Arial;
    font-weight: normal;
-   font-size: 17px;
+   font-size: 15px;
 }
 #wb_Text4 div
 {
@@ -773,7 +751,7 @@ body
    color: #6B3CFC;
    font-family: Arial;
    font-weight: normal;
-   font-size: 17px;
+   font-size: 15px;
 }
 #wb_Text10 div
 {
@@ -1004,7 +982,7 @@ body
 {
    display: block;
    height: 27px;
-   margin: 5px 0 5px 0 ;
+   margin: 4px 0 4px 0 ;
 }
 #Banner3 span:before, #Banner3 span:after 
 {
@@ -1075,7 +1053,7 @@ Banner3 span:before
 {
    display: block;
    position: absolute;
-   top: 51px;
+   top: 50px;
    left: 0;
    right: 0;
 }
@@ -1110,7 +1088,7 @@ Banner6 span:before
 {
    display: block;
    position: absolute;
-   top: 51px;
+   top: 50px;
    left: 0;
    right: 0;
 }
@@ -1139,7 +1117,7 @@ Banner7 span:before
 {
    display: block;
    height: 29px;
-   margin: 20px 0 20px 0 ;
+   margin: 21px 0 21px 0 ;
 }
 #Banner10
 {
@@ -1160,7 +1138,7 @@ Banner7 span:before
 {
    display: block;
    height: 29px;
-   margin: -1px 0 -1px 0 ;
+   margin: 0;
 }
 #Banner10 span:before, #Banner10 span:after 
 {
@@ -1551,7 +1529,7 @@ Banner10 span:before
 {
    display: block;
    height: 27px;
-   margin: 16px 0 16px 0 ;
+   margin: 15px 0 15px 0 ;
 }
 #Banner2 span:before, #Banner2 span:after 
 {
@@ -1670,7 +1648,7 @@ Banner2 span:before
 {
    display: block;
    position: absolute;
-   top: 62px;
+   top: 63px;
    left: 0;
    right: 0;
 }
@@ -1779,7 +1757,7 @@ Banner4 span:before
 {
    display: block;
    position: absolute;
-   top: 51px;
+   top: 50px;
    left: 0;
    right: 0;
 }
@@ -1862,7 +1840,7 @@ Banner1 span:before
 {
    display: block;
    position: absolute;
-   top: 45px;
+   top: 44px;
    left: 0;
    right: 0;
 }
@@ -2102,7 +2080,7 @@ Banner5 span:before
 {
    display: block;
    height: 27px;
-   margin: 49px 0 49px 0 ;
+   margin: 48px 0 48px 0 ;
 }
 #Banner9 span:before, #Banner9 span:after 
 {
@@ -2161,7 +2139,7 @@ Banner9 span:before
 {
    display: block;
    height: 27px;
-   margin: 49px 0 49px 0 ;
+   margin: 48px 0 48px 0 ;
 }
 #Banner11 span:before, #Banner11 span:after 
 {
@@ -2196,7 +2174,7 @@ Banner11 span:before
 {
    display: block;
    height: 27px;
-   margin: 5px 0 5px 0 ;
+   margin: 4px 0 4px 0 ;
 }
 #Banner12 span:before, #Banner12 span:after 
 {
@@ -2231,7 +2209,7 @@ Banner12 span:before
 {
    display: block;
    height: 27px;
-   margin: 5px 0 5px 0 ;
+   margin: 4px 0 4px 0 ;
 }
 #Banner13 span:before, #Banner13 span:after 
 {
@@ -2266,7 +2244,7 @@ Banner13 span:before
 {
    display: block;
    height: 27px;
-   margin: 16px 0 16px 0 ;
+   margin: 15px 0 15px 0 ;
 }
 #Banner14 span:before, #Banner14 span:after 
 {
@@ -2347,69 +2325,69 @@ Banner14 span:before
    display: inline-block;
    width: 846px;
    height: 419px;
-   z-index: 26;
+   z-index: 25;
 }
 #Banner1
 {
    display: inline-block;
    width: 1155px;
    height: 48px;
-   z-index: 28;
+   z-index: 27;
 }
 #TextArea3
 {
    display: inline-block;
    width: 846px;
    height: 198px;
-   z-index: 16;
+   z-index: 15;
 }
 #wb_Image1
 {
    display: inline-block;
    width: 100%;
    height: auto;
-   z-index: 11;
+   z-index: 10;
 }
 #TextArea2
 {
    display: inline-block;
    width: 846px;
    height: 419px;
-   z-index: 30;
+   z-index: 29;
 }
 #Banner3
 {
    display: inline-block;
    width: 991px;
    height: 48px;
-   z-index: 23;
+   z-index: 22;
 }
 #TextArea5
 {
    display: inline-block;
    width: 846px;
    height: 419px;
-   z-index: 40;
+   z-index: 39;
 }
 #Banner2
 {
    display: inline-block;
    width: 1178px;
    height: 70px;
-   z-index: 33;
+   z-index: 32;
 }
 #TextArea4
 {
    display: inline-block;
    width: 846px;
    height: 419px;
-   z-index: 35;
+   z-index: 34;
 }
 #wb_PhotoGallery1
 {
    display: inline-block;
    width: 100%;
-   z-index: 9;
+   z-index: 8;
 }
 #Banner5
 {
@@ -2423,35 +2401,35 @@ Banner14 span:before
    display: inline-block;
    width: 398px;
    height: 77px;
-   z-index: 10;
+   z-index: 9;
 }
 #TextArea6
 {
    display: inline-block;
    width: 846px;
    height: 419px;
-   z-index: 21;
+   z-index: 20;
 }
 #Banner7
 {
    display: inline-block;
    width: 1155px;
    height: 48px;
-   z-index: 12;
+   z-index: 11;
 }
 #Banner6
 {
    display: inline-block;
    width: 547px;
    height: 48px;
-   z-index: 17;
+   z-index: 16;
 }
 #Banner9
 {
    display: inline-block;
    width: 1178px;
    height: 136px;
-   z-index: 36;
+   z-index: 35;
 }
 #Banner8
 {
@@ -2471,28 +2449,28 @@ Banner14 span:before
 {
    display: inline-block;
    width: 100%;
-   z-index: 42;
+   z-index: 41;
 }
 #Banner11
 {
    display: none;
    width: 298px;
    height: 136px;
-   z-index: 38;
+   z-index: 37;
 }
 #Banner12
 {
    display: none;
    width: 298px;
    height: 48px;
-   z-index: 39;
+   z-index: 38;
 }
 #Banner13
 {
    display: none;
    width: 348px;
    height: 48px;
-   z-index: 31;
+   z-index: 30;
 }
 #wb_Card4
 {
@@ -2506,7 +2484,7 @@ Banner14 span:before
    display: none;
    width: 458px;
    height: 70px;
-   z-index: 32;
+   z-index: 31;
 }
 @media only screen and (min-width: 480px) and (max-width: 1199px)
 {
@@ -2567,16 +2545,6 @@ body
 #LayoutGrid3
 {
    height: 100vh;
-   padding: 0;
-}
-#wb_Text5
-{
-   visibility: visible;
-   display: block;
-}
-#wb_Text5
-{
-   margin: 0;
    padding: 0;
 }
 #wb_Text13
@@ -2980,6 +2948,11 @@ body
    visibility: visible;
    display: inline-block;
    margin: 0;
+   font-size: 29px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
 }
 #Banner8 span
 {
@@ -3236,6 +3209,11 @@ body
    visibility: visible;
    display: inline-block;
    margin: 0;
+   font-size: 27px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
 }
 #Banner4 span
 {
@@ -3594,16 +3572,6 @@ body
 #LayoutGrid3
 {
    height: 100vh;
-   padding: 0;
-}
-#wb_Text5
-{
-   visibility: visible;
-   display: block;
-}
-#wb_Text5
-{
-   margin: 0;
    padding: 0;
 }
 #wb_Text13
@@ -4007,11 +3975,16 @@ body
    visibility: visible;
    display: inline-block;
    margin: 0;
+   font-size: 20px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
 }
 #Banner8 span
 {
-   height: 29px;
-   margin: 55px 0 55px 0 ;
+   height: 20px;
+   margin: 59px 0 59px 0 ;
 }
 #Banner10
 {
@@ -4263,11 +4236,16 @@ body
    visibility: visible;
    display: inline-block;
    margin: 0;
+   font-size: 20px;
+   font-family: "Exo 2";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
 }
 #Banner4 span
 {
-   height: 27px;
-   margin: 25px 0 25px 0 ;
+   height: 20px;
+   margin: 28px 0 28px 0 ;
 }
 #wb_Image1
 {
@@ -4462,7 +4440,7 @@ body
 #TextArea5
 {
    width: 290px;
-   height: 521px;
+   height: 460px;
    visibility: visible;
    display: inline-block;
    margin: 0;

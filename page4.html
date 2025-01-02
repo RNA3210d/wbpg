@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pimp your Bike</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="wpg.css" rel="stylesheet">
+<link href="page4.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="wb.cookie.min.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var Progressbar1 = document.querySelector('#Progressbar1 .progress-bar');
+   var Progressbar1_observer = new window.ResizeObserver(entries => 
+   {
+      var val = Math.round(((entries[0].target.clientWidth/entries[0].target.offsetParent.clientWidth)*100));
+      entries[0].target.innerText = val + '%';
+      entries[0].target.setAttribute('aria-valuenow', val);
+   });
+   Progressbar1_observer.observe(Progressbar1);
+   window.addEventListener('scroll', function(event)
+   {
+      var bounding = Progressbar1.getBoundingClientRect();
+      var top = bounding.top*100/window.innerHeight;
+      var bottom = bounding.bottom*100/window.innerHeight;
+      if (top >= 0 && bottom <= 100)
+      {
+         Progressbar1.style.width = '100%';
+      }
+   });
+   window.dispatchEvent(new CustomEvent('scroll'));
+   if (hasCookie('darktheme'))
+   {
+      document.documentElement.classList.add('darktheme');
+   }
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   function onScrollLayer1()
+   {
+      var $obj = $("#Layer1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Layer1', 'slide-down-in', 0, 750);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Layer1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Layer1').inViewPort(true))
+   {
+      $('#Layer1').addClass("in-viewport");
+   }
+   onScrollLayer1();
+   $(window).scroll(function(event)
+   {
+      onScrollLayer1();
+   });
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $("#PhotoGallery1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
+});
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-699B0MCBHH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-699B0MCBHH');
+</script>
+
+</head>
+<body>
+<div id="Layer1">
+<div id="Layer1_Container">
+<div id="wb_Text1" onmouseenter="AnimateCss('wb_Text1', 'animate-neon-text-shadow', 0, 9500);return false;" onmouseleave="AnimateCss('wb_Text1', '', 0, 500);return false;">
+<span style="color:#77893E;">Is this life? Is it real?</span></div>
+<div id="wb_Image1">
+<a href="./index.html" title="Go Home"><img src="images/nvn-high-resolution-logo-transparent.png" srcset="images/nvn-high-resolution-logo-transparent.png 2x" id="Image1" alt="" width="122" height="74"></a></div>
+<input type="submit" id="Button4" onclick="document.documentElement.classList.toggle('darktheme');setCookie('darktheme', document.documentElement.classList.contains('darktheme') ? 'true' : '', 7);return false;" onmouseenter="AnimateCss('Button4', 'animate-neon-text-shadow', 0, 3000);return false;" onmouseleave="AnimateCss('Button4', '', 0, 500);return false;" name="" value="Dark/Light">
+<div id="wb_JavaScript1">
+<div id="copyrightnotice"></div>
+<script>
+   var now = new Date();
+   var startYear = "2000";
+   var text =  "Copyright &copy; ";
+   if (startYear != '')
+   {
+      text = text + startYear + "-";
+   }
+   text = text + now.getFullYear() + ", Naveen. All rights reserved.";
+   var copyrightnotice = document.getElementById('copyrightnotice');
+   copyrightnotice.innerHTML = text;
+</script>
+
+
+</div>
+</div>
+</div>
+
+<div id="Layer3">
+<div id="wb_FlexContainer1">
+<div id="FlexContainer1">
+<hr id="Line1">
+<div id="wb_Heading1">
+<h1 id="Heading1">Pimp your Bike</h1>
+</div>
+<hr id="Line2">
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading3">
+<h2 id="Heading3">Summary:</h2>
+</div>
+<div id="wb_Text7">
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">Arduino program to display voltage levels of generation by dynamo and the DC bus. It displays temperature, humidity, slope and tilt. <br><br>I will make a guide later on bicycle lighting with dynamo and/or battery and about collecting different ride parameters.</span>
+</div>
+<a id="Button1" href="https://github.com/RNA3210d/powermon-cycle">Source</a>
+<div id="wb_Heading2">
+<h2 id="Heading2">Languages:</h2>
+</div>
+<div id="wb_Text3">
+<span style="color:#000000;font-family:'Exo 2';font-size:19px;">C++:</span>
+</div>
+<div id="Progressbar1">
+   <div class="progress-bar" role="progressbar" aria-valuenow="0" title="100%" aria-valuemin="0" aria-valuemax="100">0%</div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_PhotoGallery1">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/20240703_214732_VjM1.2_LMC8.4R15_MotoG54.jpg" data-rel=""><img alt="" src="images/tn_20240703_214732_VjM1.2_LMC8.4R15_MotoG54.jpg" loading="lazy" class="image" width="279" height="372"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/20240718_173712_VjM1.2_LMC8.4R15_MotoG54.jpg" data-rel=""><img alt="" src="images/tn_20240718_173712_VjM1.2_LMC8.4R15_MotoG54.jpg" loading="lazy" class="image" width="279" height="209"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+      <div class="thumbnail">
+         <a href="images/20240918_141531_current.jpg" data-rel=""><img alt="" src="images/tn_20240918_141531_current.jpg" loading="lazy" class="image" width="279" height="174"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/20240918_144252_current.jpg" data-rel=""><img alt="" src="images/tn_20240918_144252_current.jpg" loading="lazy" class="image" width="279" height="313"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+   </div>
+</div>
+</div>
+<div id="wb_Breadcrumb2">
+<ul id="Breadcrumb2">
+<li><a href="./index.html" title="Home">Home</a></li>
+<li><a href="./proj.html" title="Projects">Projects</a></li>
+<li class="active" aria-current="page">Powermon-cycle</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer6">
+<div id="wb_footer">
+<div id="footer">
+<div id="wb_Icon5">
+<a href="./index.html" title="My old mixes, casually mixed in VirtualDJ"><div id="Icon5"><i class="fa fa-home"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+<div id="preloader"></div>
+</body>
+</html>

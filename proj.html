@@ -5,12 +5,14 @@
 <title>Projects</title>
 <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="swiper-bundle.min.css" rel="stylesheet">
 <link href="wpg.css" rel="stylesheet">
 <link href="proj.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="swiper-bundle.min.js"></script>
 <script src="popper.min.js"></script>
 <script src="bootstrap.min.js"></script>
 <script src="wb.cookie.min.js"></script>
-<script src="jquery-3.6.0.min.js"></script>
 <script src="wwb18.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
@@ -39,6 +41,7 @@ $(document).ready(function()
    $('#wb_Card3').addClass('visibility-hidden');
    $('#wb_Card4').addClass('visibility-hidden');
    $('#wb_Card5').addClass('visibility-hidden');
+   $('#wb_Card1').addClass('visibility-hidden');
    function onScrollLayer1()
    {
       var $obj = $("#Layer1");
@@ -62,6 +65,40 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollLayer1();
+   });
+   $("a[href*='#CardContainer1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#CardContainer1').offset().top }, 600, 'linear');
+   });
+   $('#CardContainer1 .card').wrap('<div class="swiper-slide"><div class="swiper-content"></div></div>');
+   var swiper = new Swiper('#CardContainer1',
+   {
+      effect: 'cube',
+      grabCursor: true,
+      centeredSlides: true,
+      autoplay:
+      {
+         delay: 2977,
+         disableOnInteraction: false,
+      },
+      cubeEffect:
+      {
+         shadow: true,
+         slideShadows: true,
+         shadowOffset: 20,
+         shadowScale: 0.94,
+      },
+      pagination:
+      {
+         clickable: true,
+         el: '.swiper-pagination'
+      },
+      navigation:
+      {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev'
+      }
    });
    function onScrollCard3()
    {
@@ -135,6 +172,30 @@ $(document).ready(function()
    {
       onScrollCard5();
    });
+   function onScrollCard1()
+   {
+      var $obj = $("#wb_Card1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card1', 'transform-scale-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card1').inViewPort(true))
+   {
+      $('#wb_Card1').addClass("in-viewport");
+   }
+   onScrollCard1();
+   $(window).scroll(function(event)
+   {
+      onScrollCard1();
+   });
 });
 </script>
 
@@ -199,7 +260,8 @@ $(document).ready(function()
 <div id="wb_LayoutGrid4">
 <div id="LayoutGrid4">
 <div class="col-1">
-<div id="CardContainer1">
+<div id="CardContainer1" class="swiper-container">
+<div class="swiper-wrapper">
 <div id="wb_Card3" class="card">
    <div id="Card3-card-body">
       <div id="Card3-card-item0"><a href="./page2.html" class="stretched-link"><svg class="svg-icon" viewBox="0 0 172 172" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -220,16 +282,30 @@ $(document).ready(function()
       <div id="Card4-card-item2">Qt browser with some random stuff </div>
    </div>
 </div>
-<div id="wb_Card5" class="card">
-   <div id="Card5-card-body">
-      <div id="Card5-card-item0"><a href="./page1.html" class="stretched-link"><svg class="svg-icon" viewBox="0 0 172 172" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<div id="wb_Card1" class="card">
+   <div id="Card1-card-body">
+      <div id="Card1-card-item0"><a href="./page1.html" class="stretched-link"><svg class="svg-icon" viewBox="0 0 172 172" version="1.1" xmlns="http://www.w3.org/2000/svg">
    <path d="M169 1 C171 3, 172 5, 172 7 L147 155 C147 156, 146 158, 144 159 C143 159, 142 160, 141 160 C140 160, 139 160, 139 159 L95 141 L72 170 C71 171, 69 172, 67 172 C66 172, 66 172, 65 172 C64 171, 63 170, 62 169 C61 168, 61 167, 61 166 L61 132 L144 31 L41 119 L3 104 C1 103, 0 101, 0 99 C0 96, 1 94, 3 93 L162 1 C163 0, 164 0, 165 0 C167 0, 168 0, 169 1"/>
 </svg>
 </a></div>
-      <div id="Card5-card-item1">RPi-TELEBOT</div>
-      <div id="Card5-card-item2">Python based Telegram bot to monitor and control the Raspberry Pi</div>
+      <div id="Card1-card-item1">RPi-TELEBOT</div>
+      <div id="Card1-card-item2">Python based Telegram bot to monitor and control the Raspberry Pi</div>
    </div>
 </div>
+<div id="wb_Card5" class="card">
+   <div id="Card5-card-body">
+      <div id="Card5-card-item0"><a href="./page4.html" class="stretched-link"><svg class="svg-icon" viewBox="0 0 172 172" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M49 111 L19 111 C16 111, 14 109, 13 107 C12 105, 12 103, 14 101 L32 77 C28 75, 23 74, 19 74 C10 74, 3 77, -3 83 C-9 89, -12 96, -12 104 C-12 113, -9 120, -3 126 C3 132, 10 135, 19 135 C26 135, 32 133, 38 128 C44 124, 47 118, 49 111 Z M31 98 L49 98 C48 93, 45 88, 42 84 Z M77 98 L105 61 L59 61 L49 74 C56 81, 60 89, 61 98 Z M175 126 C181 120, 184 113, 184 104 C184 96, 181 89, 175 83 C169 77, 162 74, 154 74 C150 74, 146 74, 142 76 L159 101 C160 102, 160 104, 160 106 C160 107, 159 109, 157 109 C156 110, 155 111, 154 111 C152 111, 150 110, 149 108 L132 83 C126 89, 123 96, 123 104 C123 113, 126 120, 132 126 C138 132, 145 135, 154 135 C162 135, 169 132, 175 126 Z M184 74 C193 82, 197 93, 197 104 C197 116, 193 126, 184 135 C176 143, 166 147, 154 147 C142 147, 132 143, 123 135 C115 126, 111 116, 111 104 C111 98, 112 92, 115 87 C117 81, 121 76, 125 72 L119 63 L85 108 C84 110, 82 111, 80 111 L61 111 C60 121, 55 130, 47 137 C39 144, 29 147, 19 147 C7 147, -3 143, -12 135 C-20 126, -24 116, -24 104 C-24 93, -20 82, -12 74 C-3 66, 7 61, 19 61 C26 61, 33 63, 39 67 L52 49 L31 49 C29 49, 28 48, 27 47 C25 46, 25 45, 25 43 C25 41, 25 40, 27 39 C28 37, 29 37, 31 37 L68 37 L68 49 L110 49 L101 37 L80 37 C78 37, 77 36, 76 35 C75 34, 74 32, 74 31 C74 29, 75 28, 76 26 C77 25, 78 25, 80 25 L105 25 C107 25, 108 25, 110 27 L135 66 C141 63, 147 61, 154 61 C166 61, 176 66, 184 74"/>
+</svg>
+</a></div>
+      <div id="Card5-card-item1">Pimp your Bike</div>
+      <div id="Card5-card-item2">Arduino program to display voltage levels of generation by dynamo and the DC bus. It displays temperature, humidity, slope and tilt. </div>
+   </div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
 </div>
 </div>
 <div class="col-2">
